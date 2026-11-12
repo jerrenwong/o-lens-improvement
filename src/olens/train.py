@@ -100,7 +100,7 @@ class Arm:
     """One lens being trained: parameters stacked over layers ([L, ...])."""
 
     name: str
-    objective: str  # "jac" | "kl"
+    objective: str  # "jac" | "kl" | "huber" | "jacent"
     m: int
     J: t.Tensor
     w_in: t.Tensor | None = None
@@ -109,6 +109,7 @@ class Arm:
     opt: t.optim.Optimizer | None = None
     sched: t.optim.lr_scheduler.LRScheduler | None = None
     hist: list = field(default_factory=list)
+    param: float = 0.0  # huber: delta^2 (in units of the per-layer mean ||g||^2); jacent: entropy weight
 
     def params(self) -> list[t.Tensor]:
         return [p for p in (self.J, self.w_in, self.w_out, self.bias) if p is not None]
@@ -135,12 +136,14 @@ class Arm:
 
 
 def make_arm(spec: str, J0: t.Tensor, lr: float, lr_j: float, steps: int, warmup: int, seed: int) -> Arm:
-    """``spec`` = "<objective>:<m>", e.g. "jac:2048", "kl:0" (= tuned lens)."""
-    objective, m = spec.split(":")
+    """``spec`` = "<objective>:<m>[:<param>]", e.g. "jac:2048", "kl:0" (= tuned lens),
+    "huber:0:1" (robust Jacobian matching), "jacent:0:0.02" (Jacobian + 0.02 * readout entropy)."""
+    objective, m, *rest = spec.split(":")
     m = int(m)
+    param = float(rest[0]) if rest else 0.0
     L, d, _ = J0.shape
     g = t.Generator(device="cuda").manual_seed(seed)
-    if objective == "jac":
+    if objective in ("jac", "huber", "jacent"):
         J = J0.clone()  # start from the pre-fitted J-lens
         bias = None
     elif objective == "kl":
@@ -148,7 +151,8 @@ def make_arm(spec: str, J0: t.Tensor, lr: float, lr_j: float, steps: int, warmup
         bias = t.zeros(L, d, device="cuda")
     else:
         raise ValueError(spec)
-    arm = Arm(name=f"{objective}_m{m}", objective=objective, m=m, J=J, bias=bias)
+    arm = Arm(name=f"{objective}_m{m}" + (f"_p{param:g}" if rest else ""), objective=objective, m=m, J=J,
+              bias=bias, param=param)
     if m > 0:
         arm.w_in = t.randn(L, m, d, device="cuda", generator=g) / math.sqrt(d)
         arm.w_out = t.zeros(L, d, m, device="cuda")  # g starts at J h exactly
@@ -301,7 +305,7 @@ def main() -> None:
 
     arms = [make_arm(s, J0, args.lr, args.lr_j, args.steps, args.warmup, args.seed + i)
             for i, s in enumerate(args.arms.split(","))]
-    need_kl = any(a.objective == "kl" for a in arms)
+    need_kl = any(a.objective in ("kl", "jacent") for a in arms)
 
     class _Fixed:  # pre-fitted J-lens as a baseline in held-out metrics
         def __init__(self, J): self.J = J
@@ -335,9 +339,21 @@ def main() -> None:
         losses = {}
         for a in arms:
             a.opt.zero_grad(set_to_none=True)
-            if a.objective == "jac":
-                loss = ((((a.vjp(h, u_rows) - g) ** 2).sum(-1)) / gsq).mean(-1).sum()
+            if a.objective in ("jac", "huber", "jacent"):
+                err = ((a.vjp(h, u_rows) - g) ** 2).sum(-1) / gsq  # [L, N], ~1 on average
+                if a.objective == "huber":  # pseudo-Huber: ~err when small, ~2 sqrt(d2 err) when large
+                    err = 2 * a.param * (t.sqrt(1 + err / a.param) - 1)
+                loss = err.mean(-1).sum()
                 loss.backward()
+                if a.objective == "jacent":  # + param * readout entropy, one layer at a time
+                    out_all = a.transport(h[:, idx])
+                    ent = 0.0
+                    for l in range(len(src)):
+                        lq = F.log_softmax(model.unembed(out_all[l]).float(), dim=-1)
+                        H = -(lq.exp() * lq).sum(-1).mean()
+                        (a.param * H).backward(retain_graph=l < len(src) - 1)
+                        ent += H.item()
+                    loss = t.tensor(loss.item() + a.param * ent)
             else:  # KL, one layer at a time to bound the [P, V] logits memory
                 out_all = a.transport(h[:, idx])
                 loss = 0.0
