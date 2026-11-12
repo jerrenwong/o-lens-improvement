@@ -1,0 +1,96 @@
+== filtered
+
+pass@1  (macro over ['association', 'multihop', 'multilingual', 'poetry', 'typo']; diff vs v2_jac_m0, paired bootstrap 95% CI)
+  huber_m0_p1    0.166  [0.123,0.214]   diff -0.011 [-0.026,+0.002]
+  jacent_m0_p0.02 0.055  [0.034,0.084]   diff -0.123 [-0.168,-0.084]
+  jacent_m0_p0.1 0.037  [0.027,0.049]   diff -0.141 [-0.188,-0.098]
+  jlens_prefit   0.160  [0.117,0.208]   diff -0.018 [-0.031,-0.008]
+  jpp_prefit     0.236  [0.188,0.288]   diff +0.058 [+0.022,+0.099]
+  logit          0.078  [0.045,0.118]   diff -0.100 [-0.141,-0.063]
+  lr1024         0.210  [0.161,0.263]   diff +0.032 [-0.000,+0.072]
+  lr16           0.000  [0.000,0.000]   diff -0.178 [-0.226,-0.135]
+  lr256          0.198  [0.148,0.252]   diff +0.020 [-0.018,+0.064]
+  lr64           0.048  [0.024,0.080]   diff -0.130 [-0.185,-0.076]
+  v2_jac_m0      0.178  [0.135,0.226]   diff +0.000 [+0.000,+0.000]
+
+pass@10  (macro over ['association', 'multihop', 'multilingual', 'poetry', 'typo']; diff vs v2_jac_m0, paired bootstrap 95% CI)
+  huber_m0_p1    0.366  [0.315,0.416]   diff +0.004 [-0.003,+0.013]
+  jacent_m0_p0.02 0.242  [0.190,0.291]   diff -0.121 [-0.176,-0.066]
+  jacent_m0_p0.1 0.238  [0.186,0.287]   diff -0.125 [-0.180,-0.069]
+  jlens_prefit   0.360  [0.309,0.410]   diff -0.003 [-0.010,+0.005]
+  jpp_prefit     0.420  [0.358,0.487]   diff +0.057 [+0.004,+0.115]
+  logit          0.210  [0.156,0.265]   diff -0.153 [-0.204,-0.107]
+  lr1024         0.369  [0.317,0.418]   diff +0.006 [-0.006,+0.018]
+  lr16           0.021  [0.007,0.039]   diff -0.341 [-0.394,-0.287]
+  lr256          0.321  [0.266,0.376]   diff -0.042 [-0.094,+0.010]
+  lr64           0.194  [0.140,0.248]   diff -0.169 [-0.235,-0.100]
+  v2_jac_m0      0.363  [0.312,0.412]   diff +0.000 [+0.000,+0.000]
+items per eval: {'association': 82, 'multihop': 16, 'multilingual': 32, 'poetry': 10, 'typo': 77}
+readout positions per eval:                min   50%   max
+eval                          
+association   18.0  27.0  38.0
+multihop       8.0  14.0  18.0
+multilingual   5.0   7.5  12.0
+poetry        16.0  17.5  19.0
+typo           5.0   7.0  13.0
+                 pos<16  pos>=16  n_items<16
+lens                                        
+huber_m0_p1       0.544    0.052         120
+jacent_m0_p0.02   0.302    0.031         120
+jacent_m0_p0.1    0.293    0.031         120
+jlens_prefit      0.535    0.052         120
+jpp_prefit        0.642    0.113         120
+logit             0.284    0.031         120
+lr1024            0.553    0.052         120
+lr16              0.028    0.031         120
+lr256             0.493    0.062         120
+lr64              0.228    0.072         120
+v2_jac_m0         0.540    0.052         120
+== unfiltered
+
+pass@1  (macro over ['association', 'multihop', 'multilingual', 'poetry', 'typo']; diff vs v2_jac_m0, paired bootstrap 95% CI)
+  huber_m0_p1    0.152  [0.110,0.201]   diff -0.005 [-0.018,+0.008]
+  jacent_m0_p0.02 0.015  [0.007,0.023]   diff -0.143 [-0.191,-0.100]
+  jacent_m0_p0.1 0.010  [0.003,0.018]   diff -0.148 [-0.196,-0.105]
+  jlens_prefit   0.152  [0.110,0.201]   diff -0.005 [-0.016,+0.005]
+  jpp_prefit     0.212  [0.164,0.265]   diff +0.055 [+0.021,+0.094]
+  logit          0.078  [0.045,0.118]   diff -0.080 [-0.121,-0.042]
+  lr1024         0.184  [0.135,0.237]   diff +0.027 [-0.004,+0.066]
+  lr16           0.000  [0.000,0.000]   diff -0.158 [-0.206,-0.115]
+  lr256          0.169  [0.122,0.220]   diff +0.011 [-0.020,+0.047]
+  lr64           0.034  [0.019,0.051]   diff -0.123 [-0.170,-0.081]
+  v2_jac_m0      0.158  [0.115,0.206]   diff +0.000 [+0.000,+0.000]
+
+pass@10  (macro over ['association', 'multihop', 'multilingual', 'poetry', 'typo']; diff vs v2_jac_m0, paired bootstrap 95% CI)
+  huber_m0_p1    0.349  [0.297,0.399]   diff -0.003 [-0.013,+0.007]
+  jacent_m0_p0.02 0.172  [0.122,0.223]   diff -0.180 [-0.234,-0.126]
+  jacent_m0_p0.1 0.135  [0.087,0.185]   diff -0.217 [-0.276,-0.156]
+  jlens_prefit   0.348  [0.296,0.398]   diff -0.004 [-0.013,+0.003]
+  jpp_prefit     0.317  [0.268,0.369]   diff -0.035 [-0.091,+0.019]
+  logit          0.210  [0.156,0.265]   diff -0.142 [-0.193,-0.095]
+  lr1024         0.357  [0.306,0.407]   diff +0.005 [-0.005,+0.016]
+  lr16           0.021  [0.007,0.039]   diff -0.331 [-0.383,-0.276]
+  lr256          0.304  [0.249,0.359]   diff -0.048 [-0.101,+0.004]
+  lr64           0.163  [0.112,0.216]   diff -0.189 [-0.250,-0.129]
+  v2_jac_m0      0.352  [0.301,0.402]   diff +0.000 [+0.000,+0.000]
+items per eval: {'association': 82, 'multihop': 16, 'multilingual': 32, 'poetry': 10, 'typo': 77}
+readout positions per eval:                min   50%   max
+eval                          
+association   18.0  27.0  38.0
+multihop       8.0  14.0  18.0
+multilingual   5.0   7.5  12.0
+poetry        16.0  17.5  19.0
+typo           5.0   7.0  13.0
+                 pos<16  pos>=16  n_items<16
+lens                                        
+huber_m0_p1       0.512    0.052         120
+jacent_m0_p0.02   0.205    0.021         120
+jacent_m0_p0.1    0.172    0.010         120
+jlens_prefit      0.512    0.052         120
+jpp_prefit        0.521    0.062         120
+logit             0.284    0.031         120
+lr1024            0.526    0.052         120
+lr16              0.028    0.031         120
+lr256             0.451    0.062         120
+lr64              0.191    0.052         120
+v2_jac_m0         0.516    0.052         120
