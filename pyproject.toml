@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "olens"
+version = "0.1.0"
+description = "Nonlinear J-lens: train J*h + W2 relu(W1 h) lenses by Jacobian matching; evaluate with the jpp_lens harness"
+requires-python = ">=3.12"
+# Runs inside the jpp_lens environment (scripts/setup_pod.sh); no extra dependencies.
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
