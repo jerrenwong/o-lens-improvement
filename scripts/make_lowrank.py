@@ -21,7 +21,8 @@ from olens.lens import TrainedLens
 src, out, ranks = sys.argv[1], Path(sys.argv[2]), [int(r) for r in sys.argv[3].split(",")]
 prefix = sys.argv[4] if len(sys.argv) > 4 else "lr"
 out.mkdir(parents=True, exist_ok=True)
-lens = load_lens_file(src, hf_model_name="Qwen/Qwen3.5-2B")
+import os
+lens = load_lens_file(src, hf_model_name=os.environ.get("MODEL", "Qwen/Qwen3.5-2B"))
 layers = lens.source_layers
 svd = {l: t.linalg.svd(lens.jacobians_L_dict_FN[l].cuda().float()) for l in layers}
 energy = {}

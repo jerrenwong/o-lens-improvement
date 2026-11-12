@@ -22,9 +22,10 @@ ap.add_argument("lenses", nargs="+")
 ap.add_argument("--out", required=True)
 ap.add_argument("--skip-first", type=int, default=1)
 ap.add_argument("--val-windows", type=int, default=64)
+ap.add_argument("--model", default="Qwen/Qwen3.5-2B")
 args = ap.parse_args()
 
-model = get_hf_model("Qwen/Qwen3.5-2B", attn_implementation="sdpa")
+model = get_hf_model(args.model, attn_implementation="sdpa")
 for p in model._hf_model.parameters():
     p.requires_grad_(False)
 tgt = len(model.layers) - 1
@@ -38,7 +39,7 @@ def stack(d):
 
 lenses = {}
 for path in args.lenses:
-    L = load_lens_file(path, hf_model_name="Qwen/Qwen3.5-2B")
+    L = load_lens_file(path, hf_model_name=args.model)
     lenses[Path(path).stem] = Arm(
         name=Path(path).stem, objective="eval", m=0, J=stack(L.jacobians_L_dict_FN),
         w_in=stack(getattr(L, "w_in_L_dict_MN", None)), w_out=stack(getattr(L, "w_out_L_dict_FM", None)),

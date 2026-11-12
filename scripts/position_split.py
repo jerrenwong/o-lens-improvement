@@ -5,7 +5,8 @@ from transformers import AutoTokenizer
 sys.path.insert(0, "/root/jpp_lens/src")
 from lens_evals.readout_evals.readout_eval_items import READOUT_EVAL_SPECS, load_readout_eval_items, MACRO_EVALS
 from lens_evals.readout_evals.readout_evals import readout_position
-tok = AutoTokenizer.from_pretrained("Qwen/Qwen3.5-2B")
+import os
+tok = AutoTokenizer.from_pretrained(os.environ.get("MODEL", "Qwen/Qwen3.5-2B"))
 items = load_readout_eval_items("/root/jpp_lens/data/jlens/evaluations", slugs=MACRO_EVALS)
 pos = {}
 for it in items:
