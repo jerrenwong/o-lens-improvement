@@ -34,21 +34,46 @@ from workspace_lens.utils import load_lens_file
 
 from olens.lens import TrainedLens
 
-SKIP_FIRST = 16  # jlens SKIP_FIRST_N_POSITIONS; the last position is also excluded
+SKIP_FIRST = 16  # default = jlens SKIP_FIRST_N_POSITIONS (--skip-first); the last position is also excluded
 
 
 # ---------------------------------------------------------------- data
 
 
-def wikitext_windows(tokenizer, split: str, n_windows: int, seq_len: int, cache: Path) -> t.Tensor:
-    """``n_windows`` consecutive ``seq_len``-token windows of WikiText-103 (raw) ``split``,
-    packed across articles. Cached as an int32 tensor."""
-    path = cache / f"wikitext103_{split}_{n_windows}x{seq_len}.pt"
+def wikitext_windows(tokenizer, split: str, n_windows: int, seq_len: int, cache: Path,
+                     para_start: bool = False) -> t.Tensor:
+    """``n_windows`` ``seq_len``-token windows of WikiText-103 (raw) ``split``.
+
+    ``para_start=False``: consecutive windows packed across articles (start mid-text).
+    ``para_start=True``: each window starts at the first token of a paragraph (a dataset row,
+    as each J-lens fit prompt is) and is filled to ``seq_len`` with the text that follows, so
+    early positions look like the start of a text, as in the eval prompts. Cached (int32)."""
+    tag = "para" if para_start else "packed"
+    path = cache / f"wikitext103_{split}_{tag}_{n_windows}x{seq_len}.pt"
     if path.exists():
         return t.load(path)
     from datasets import load_dataset
 
     ds = load_dataset("Salesforce/wikitext", "wikitext-103-raw-v1", split=split)
+    if para_start:
+        rows = [r for r in ds["text"] if r.strip()]
+        windows, i = [], 0
+        while len(windows) < n_windows and i < len(rows):
+            ids: list[int] = []
+            j = i
+            while len(ids) < seq_len and j < len(rows):
+                ids.extend(tokenizer(rows[j].lstrip(), add_special_tokens=False)["input_ids"]
+                           if j == i else tokenizer(rows[j], add_special_tokens=False)["input_ids"])
+                j += 1
+            if len(ids) >= seq_len:
+                windows.append(ids[:seq_len])
+            i = j  # next window starts at the next unused paragraph: no overlap
+        if len(windows) < n_windows:
+            raise ValueError(f"{split}: only {len(windows)} paragraph-start windows")
+        out = t.tensor(windows, dtype=t.int32)
+        cache.mkdir(parents=True, exist_ok=True)
+        t.save(out, path)
+        return out
     need, ids, buf = n_windows * seq_len, [], []
     for row in ds:
         if row["text"].strip():
@@ -144,11 +169,12 @@ def make_arm(spec: str, J0: t.Tensor, lr: float, lr_j: float, steps: int, warmup
 # ---------------------------------------------------------------- model pass
 
 
-def model_pass(model, ids: t.Tensor, src: list[int], tgt: int, u: t.Tensor, kl_pos: int, gen):
+def model_pass(model, ids: t.Tensor, src: list[int], tgt: int, u: t.Tensor, kl_pos: int, gen,
+               skip_first: int = SKIP_FIRST):
     """Returns h [L,N,d] bf16, g [L,N,d] fp32, u_rows [N,d], plus KL targets
     (positions idx into N, log-probs [P,V] fp32) — all detached."""
     B, T = ids.shape
-    valid = t.arange(SKIP_FIRST, T - 1, device=ids.device)
+    valid = t.arange(skip_first, T - 1, device=ids.device)
     with ActivationRecorder(model.layers, at=[*src, tgt], start_graph_at=min(src)) as rec, t.enable_grad():
         model.forward(ids)
         hT = rec.activations[tgt]
@@ -177,7 +203,8 @@ def kl_loss_layer(model, out_PF: t.Tensor, target_logp: t.Tensor) -> t.Tensor:
 
 
 @t.no_grad()
-def heldout_metrics(model, arms_and_baselines: dict, val: t.Tensor, src, tgt, batch: int, seed: int) -> dict:
+def heldout_metrics(model, arms_and_baselines: dict, val: t.Tensor, src, tgt, batch: int, seed: int,
+                    skip_first: int = SKIP_FIRST) -> dict:
     """Per lens and layer: relative Jacobian error E||J_g^T u - g||^2 / E||g||^2 and
     KL(final || lens) on held-out windows, with fixed u."""
     gen = t.Generator(device="cuda").manual_seed(seed)
@@ -185,7 +212,7 @@ def heldout_metrics(model, arms_and_baselines: dict, val: t.Tensor, src, tgt, ba
     for i in range(0, val.shape[0], batch):
         ids = val[i : i + batch].cuda().long()
         u = t.randn(ids.shape[0], model.d_model, device="cuda", generator=gen)
-        h, g, u_rows, idx, logp = model_pass(model, ids, src, tgt, u, 512, gen)
+        h, g, u_rows, idx, logp = model_pass(model, ids, src, tgt, u, 512, gen, skip_first)
         gsq = (g**2).sum(-1).mean(-1)  # [L]
         for name, lens in arms_and_baselines.items():
             a = acc.setdefault(name, {"jac_err": 0, "gsq": 0, "kl": 0, "n": 0})
@@ -208,7 +235,8 @@ def heldout_metrics(model, arms_and_baselines: dict, val: t.Tensor, src, tgt, ba
 # ---------------------------------------------------------------- main
 
 
-def save_arm(arm: Arm, model_name: str, src: list[int], d: int, n_seqs: int, out: Path) -> Path:
+def save_arm(arm: Arm, model_name: str, src: list[int], d: int, n_seqs: int, out: Path,
+             skip_first: int = SKIP_FIRST) -> Path:
     cfg = LensConfig(
         hf_model_name=model_name,
         checkpoint_name=arm.name,
@@ -219,7 +247,7 @@ def save_arm(arm: Arm, model_name: str, src: list[int], d: int, n_seqs: int, out
         d_model=d,
         num_prompts_trained_on=n_seqs,
         max_seq_len=128,
-        skip_first_n_positions=SKIP_FIRST,
+        skip_first_n_positions=skip_first,
     )
     def per_layer(x):
         return None if x is None else {l: x[i].detach().cpu() for i, l in enumerate(src)}
@@ -245,6 +273,8 @@ def main() -> None:
     ap.add_argument("--val-windows", type=int, default=64)
     ap.add_argument("--eval-every", type=int, default=500)
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--skip-first", type=int, default=SKIP_FIRST, help="train on positions >= this")
+    ap.add_argument("--para-start", action="store_true", help="windows start at paragraph starts")
     ap.add_argument("--out", required=True)
     ap.add_argument("--cache", default="/root/cache")
     args = ap.parse_args()
@@ -266,8 +296,8 @@ def main() -> None:
     print(f"model {args.model}: {n_layers} blocks, d={d}; source layers {src[0]}..{src[-1]}, target {tgt}", flush=True)
 
     cache = Path(args.cache)
-    train = wikitext_windows(model.tokenizer, "train", args.steps * args.batch, args.seq_len, cache)
-    val = wikitext_windows(model.tokenizer, "validation", args.val_windows, args.seq_len, cache)
+    train = wikitext_windows(model.tokenizer, "train", args.steps * args.batch, args.seq_len, cache, args.para_start)
+    val = wikitext_windows(model.tokenizer, "validation", args.val_windows, args.seq_len, cache, args.para_start)
 
     arms = [make_arm(s, J0, args.lr, args.lr_j, args.steps, args.warmup, args.seed + i)
             for i, s in enumerate(args.arms.split(","))]
@@ -285,7 +315,8 @@ def main() -> None:
     t0, tok = time.time(), 0
     for step in range(args.steps + 1):
         if step % args.eval_every == 0 or step == args.steps:
-            m = heldout_metrics(model, {**baselines, **{a.name: a for a in arms}}, val, src, tgt, args.batch, 12345)
+            m = heldout_metrics(model, {**baselines, **{a.name: a for a in arms}}, val, src, tgt, args.batch, 12345,
+                                args.skip_first)
             rec = {"step": step, "elapsed_s": round(time.time() - t0, 1), "heldout": m}
             log.write(json.dumps(rec) + "\n"); log.flush()
             summ = {k: (round(sum(v["jac_rel_err"]) / len(src), 4) if "jac_rel_err" in v else None,
@@ -293,12 +324,13 @@ def main() -> None:
             print(f"[eval step {step}] (mean jac_rel_err, mean KL): {summ}", flush=True)
         if step == args.steps:
             for a in arms:  # once, at the end: the m=8192 arm is ~3 GB on a network disk
-                print("saved", save_arm(a, args.model, src, d, step * args.batch, out), flush=True)
+                print("saved", save_arm(a, args.model, src, d, step * args.batch, out, args.skip_first), flush=True)
             break
 
         ids = train[step * args.batch : (step + 1) * args.batch].cuda().long()
         u = t.randn(ids.shape[0], d, device="cuda", generator=gen)
-        h, g, u_rows, idx, logp = model_pass(model, ids, src, tgt, u, args.kl_positions if need_kl else 0, gen)
+        h, g, u_rows, idx, logp = model_pass(model, ids, src, tgt, u, args.kl_positions if need_kl else 0, gen,
+                                             args.skip_first)
         gsq = (g**2).sum(-1).mean(-1, keepdim=True)  # [L,1] per-layer normaliser
         losses = {}
         for a in arms:
