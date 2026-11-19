@@ -15,4 +15,8 @@ uv sync --extra cu128 --frozen                      # torch 2.11 cu128, transfor
 uv pip install --python .venv/bin/python flash-linear-attention tilelang
 # This repo on the path via a .pth file (an editable build fails on /workspace: no chmod/rename).
 echo "$REPO/src" > "$(.venv/bin/python -c 'import site; print(site.getsitepackages()[0])')/olens.pth"
-.venv/bin/python -c "import torch, transformers, fla, olens; print('ok', torch.__version__, transformers.__version__, torch.cuda.get_device_name())"
+# Goodfire block-sparse featurizer (import name `bsf`), pinned. --no-deps: torch/transformers/einops are
+# already here; its other deps (matplotlib, scikit-learn) are imported by bsf.viz / bsf.kernels at import time.
+uv pip install --python .venv/bin/python --no-deps "git+https://github.com/goodfire-ai/block-sparse-featurizer@219f121ea82d2b19200d1dac918396e6058d7eb9"
+uv pip install --python .venv/bin/python matplotlib scikit-learn
+.venv/bin/python -c "import torch, transformers, fla, olens, bsf; print('ok', torch.__version__, transformers.__version__, torch.cuda.get_device_name())"
