@@ -173,9 +173,12 @@ def evaluate(tr: Trainee, x_val: t.Tensor, J: t.Tensor | None, batch: int) -> di
     sel = tr.fire_count >= 50
     sr_med = sr_mean = float("nan")
     if bool(sel.any()):
-        eig = t.linalg.eigvalsh(tr.code_cov[sel].double()).clamp_min(0)  # [n, b]
-        sr = eig.sum(-1) / eig.max(-1).values.clamp_min(1e-30)
-        sr_med, sr_mean = float(sr.median()), float(sr.mean())
+        if dd.group_size == 1:
+            sr_med = sr_mean = 1.0
+        else:  # on CPU: batched cusolver eigvalsh fails for some shapes
+            eig = t.linalg.eigvalsh(tr.code_cov[sel].double().cpu()).clamp_min(0)  # [n, b]
+            sr = eig.sum(-1) / eig.max(-1).values.clamp_min(1e-30)
+            sr_med, sr_mean = float(sr.median()), float(sr.mean())
     return {"fvu": fvu, "l0": l0, "dead_share": dead_share,
             "stable_rank_median": sr_med, "stable_rank_mean": sr_mean, "n_rank_blocks": int(sel.sum())}
 
