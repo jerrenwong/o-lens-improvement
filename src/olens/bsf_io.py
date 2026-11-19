@@ -75,10 +75,14 @@ class BlockDict(t.nn.Module):
     # ---- io
     def save(self, path: str | Path, **extra) -> None:
         Path(path).parent.mkdir(parents=True, exist_ok=True)
+        core = {"d": self.d, "n_groups": self.n_groups, "group_size": self.group_size,
+                "l0": self.l0, "layer": self.layer, "space": self.space}
+        clash = set(core) & set(extra)
+        if clash:
+            raise ValueError(f"extra meta keys clash with the dictionary's own: {sorted(clash)}")
         t.save(
             {
-                "meta": {"d": self.d, "n_groups": self.n_groups, "group_size": self.group_size,
-                         "l0": self.l0, "layer": self.layer, "space": self.space, **extra},
+                "meta": {**core, **extra},
                 "state": {k: v.detach().cpu() for k, v in self.state_dict().items()},
             },
             path,

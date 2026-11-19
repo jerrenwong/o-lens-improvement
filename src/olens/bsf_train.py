@@ -289,7 +289,7 @@ def main() -> None:
             m = evaluate(tr, val_acts[dd.layer], Js[dd.layer], args.batch)
             dd.train()
             stem = f"{dd.name}_{_label(milestone)}"
-            dd.save(out / f"{stem}.pt", tokens=int(seen), fvu=m["fvu"], dead_share=m["dead_share"], l0=m["l0"],
+            dd.save(out / f"{stem}.pt", tokens=int(seen), fvu=m["fvu"], dead_share=m["dead_share"], l0_measured=m["l0"],
                     seed=int(args.seed), model=str(args.model), stable_rank_median=m["stable_rank_median"],
                     stable_rank_mean=m["stable_rank_mean"])
             t.save({"fire_count": tr.fire_count.float().cpu(), "code_cov": tr.code_cov.float().cpu(),
