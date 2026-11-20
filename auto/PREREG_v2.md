@@ -25,3 +25,9 @@ Secondary (reported whatever they show)
 Already known before this test (old benchmark, all held-out prompts, pass@10): A - J++ = +3.2 [+0.9,+5.7] on 9B,
 +2.8 [+0.2,+5.6] on 27B, +4.5 [-1.4,+10.0] on 2B; pooled 9B+27B +3.0 [+1.3,+4.8]; top-1 not improved.
 The old test splits were scored twice on 9B/2B (gated lens, then A) and once on 27B.
+
+## Amendment 1 (2026-11-20 17:45Z, before any lens other than the J++ sanity run was scored on v2)
+- B (refined map) was fitted on 9B only. On 9B dev it equals J++ (.5949 vs .5952) and is below A (-3.2); its
+  pre-specified format rule selected a chat format whose first answer tokens are letter fragments. The 27B fit of B
+  is cancelled to free the GPU. B remains a secondary comparison on v2 for 9B only (`e3_B.py`, `e3_B_shuf.py`).
+- The primary analysis is unchanged.
