@@ -29,3 +29,10 @@ v3 benchmark files is removed from G's training concepts (list `runs/g1/exclude_
 Also secondary: AG = J++ plus both maps (ask-map E and G). Candidates `g1_G.py`, `g1_AG.py`, control `g1_G_shuf.py`.
 G is fitted after this amendment using ordinary resources only (no benchmark prompts; fit split for lam; old dev split
 for sanity). It may be scored on v3 later than A'. The PRIMARY analysis is unchanged.
+
+## Amendment 2 (2026-11-20 19:35Z, before any lens was scored on v3; the J++ sanity run had not finished either)
+The whitespace rule cannot be used on Qwen3.6-27B: after appending "\n\n" the model's top-1 next token is `<think>`
+for 1000/1000 held-out prefixes in all three formats (p >= 0.996), so every target would be the same. No A' map was
+fitted. For the v3 test, the 27B lens is the ORIGINAL frozen recipe A (`m27_A.py`, control `m27_C_shuf.py`), exactly
+as on v2. The PRIMARY analysis is therefore: A - J++, pass@10 filtered, mean over 9B and 27B, on v3 — a replication of
+the v2 primary on new prompts. Secondary additions: v2 and v3 pooled (both models), same metric.
