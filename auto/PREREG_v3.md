@@ -19,3 +19,13 @@ on v3. Paired bootstrap, 5000 draws, prompts resampled within model x task. Hold
 SECONDARY (reported whatever they show): per model (27B: A' - J++, and A' - A); pass@1; unfiltered pass@10; A' minus
 its shuffled control; v2 and v3 pooled for 9B (same lens A on both).
 Also reported: J++ refitted on 2B with 512 prompts (recipe unchanged) against the 32- and 128-prompt refits, 2B dev.
+
+## Amendment 1 (2026-11-20 19:05Z, before any lens other than the J++ sanity run was scored on v3)
+Added SECONDARY comparison on v3 for 9B: "generate-without-naming" map G (user idea). The model writes sentences
+about a given word without using it; G is a per-layer ridge map (with bias) from the last-token residual of such a
+sentence to the word's unembedding direction; lens = unit(J++ h) + lam * unit(G h + b), lam on the original fit split.
+The primary reported G variant is STRICT: every word that is an intermediate or target anywhere in the original, v2 or
+v3 benchmark files is removed from G's training concepts (list `runs/g1/exclude_concepts.txt`, used only for removal).
+Also secondary: AG = J++ plus both maps (ask-map E and G). Candidates `g1_G.py`, `g1_AG.py`, control `g1_G_shuf.py`.
+G is fitted after this amendment using ordinary resources only (no benchmark prompts; fit split for lam; old dev split
+for sanity). It may be scored on v3 later than A'. The PRIMARY analysis is unchanged.
