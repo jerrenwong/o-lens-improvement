@@ -46,9 +46,35 @@ on its task: small differences are noise.
 - Final check: the winning recipe is rebuilt on Qwen3.5-2B, which the loop never sees.
 
 ## Failure modes first
-Read `auto/failure_modes.md` (how J-lens and J++ fail on fit+dev prompts: continuation vs echo vs noise, and how deep
-the missed concepts sit) before proposing or implementing an idea. Ideas are in `auto/ideas.md`; the user's priority
-idea U1 (continuation-subtracted readout) is at the end of that file.
+User guidance (2026-11-20): do not spam ideas and judge them by the score. Read real outputs, name the failure mode,
+follow up curiosities (e.g. Chinese tokens), then design a method for a named failure mode.
+Read `auto/failure_modes.md` (token-class tables) and the findings below (scripts `auto/qual_wordonly.py`,
+`qual_zh.py`, `qual2.py`, `qual3.py`, `qual4.py`; fit+dev only).
+
+Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
+- J-lens top-10: layers 4-20 are punctuation and word-glued punctuation that slips past the filter; layers 24-28 are
+  the opening of the next sentence (She, His, But, Until).
+- Both lenses mostly output one vector per prompt format: within a task, readout vectors are 80-99% aligned with their
+  mean (poetry 97-99% for J++). At L20, 71-77% of every J++ readout is the matrix's top singular direction.
+- J++ L24 on association: 99% of top-10 slots are '@g @d @gmail ...' (L28: 'Flames, Raptors, GM, AT'). It is the 2nd
+  singular output direction of the J++ L24 matrix. It appears only at a normally written sentence-final period
+  ('word.' 99%, 'word!' 2%, 'word .' 0%, last word 1%; WikiText periods 0.4-7%). Origin of '@' unexplained.
+- Masking all non-word tokens: J++ +0.8, J-lens +1.7. Under the junk is more junk.
+- Chinese tokens are the concept in Chinese (antonym, Spanish, month, copper), not junk: Chinese-only scoring gives
+  21% (J++ dev), but only 3 of 151 J++ misses are Chinese-only hits. Masking CJK: no change.
+- Subtracting the same-task mean activation: J-lens dev .415 -> .491 (typo .56 -> .85). J++ .595 -> .483 (prompts in a
+  task share concepts such as 'opposite'; the mean removes them). Readouts become clean scene words (cashier, checkout;
+  Radio, Military) but not the inferred concept (poverty, Churchill).
+- Removing top singular directions of the matrices: hurts (J++ -8.6 with one). Projecting out the fit-association mean
+  direction everywhere: hurts. Gated (only rows > 80% aligned, L24+L28): J++ dev .595 -> .605, fit .530 -> .550
+  (two association prompts each).
+- Association ceiling: asked with the full passage in a one-word few-shot format, the model names the concept in its
+  top 10 for 33 of 61 (top 1: 11). J++ reads 18. Asked-and-read 16, asked-only 17, read-only 2, neither 26 (mostly
+  famous-name riddles: Einstein, Lincoln, Churchill, Beatles, Obama).
+- Association score depends on the readout token: 'word.' 29.5%, '!' 21%, last word 10%, newline after 7%, ' .' 3%.
+- Poetry: at the prompt end the model writes the rhyme word 100% of the time; at the newline the readout shows the
+  line just finished, not the rhyme.
+- Multilingual by slot (J++): language .47 (in Chinese .21, either .51), relation .63, source .60, answer .95.
 
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
@@ -102,3 +128,8 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   scene concepts on its own held-out riddles (.59 -> .79) but transfers to the benchmark only at the level of a
   shuffled-label control (+1.1 to +1.6). A ridge correction fitted on the 75 fit prompts gives +3.9 on dev, entirely
   from multilingual (.69 -> .83): suspected memorisation of the small set of language names shared by fit and dev.
+- Batch 3J: the +3.9 of the fit-trained ridge correction is memorisation of words repeated across multilingual
+  templates (opposite/big/small, time/night/day, place/up/down recur in different languages). Leaving out fit items
+  that share a word removes the gain; training without multilingual items gives +0.1. DISCARDED.
+  BENCHMARK CAVEAT: multilingual items share intermediates across items, so any map with many parameters fitted on
+  labelled items can score by memorising them. Only few-parameter uses of the fit labels are trustworthy.

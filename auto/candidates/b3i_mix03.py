@@ -1,10 +1,10 @@
-"""b3i: unit(JPP_l h) + 0.3 unit(E_l h) (see b3i_common)."""
+"""b3i: unit(JPP_l h) + 0.3 unit(E_l h) (see b3i_lib)."""
 
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from b3i_common import build_maps, ELens  # noqa: E402
+from b3i_lib import build_maps, ELens  # noqa: E402
 
 
 def build(ctx):

@@ -1,4 +1,4 @@
-"""Shared code for b3h_* candidates (not a candidate itself).
+"""Shared code for b3h_* candidates, v2 grouping (not a candidate itself).
 
 Round-2 idea 1, "one slot per word": readout de-duplication as a vector edit.
   For each row: logits z = (v * gamma) @ W.T (final_linear, up to the per-row 1/rms scale), punctuation ids
@@ -33,20 +33,31 @@ def log(*a):
 
 
 def build_groups(tok, V, plural):
+    """Group ids by the scorer's own surface-form rule (surface_forms: original / capitalised / lower case,
+    with or without ONE leading space). A token joins the lower-case group of its word only if its text minus
+    one leading space equals word.lower() or word.capitalize(); other casings (ALLCAPS, mixed) group only with
+    their own exact text +- leading space. So every group lies inside the candidate set of any concept that
+    owns one of its members, and keeping the group's best token cannot lose a concept (exact mode).
+    plural=True also merges a trailing "'s" / "s" (len > 3) in the lower-case groups (can lose concepts)."""
     gid = torch.empty(V, dtype=torch.long)
     table = {}
     n_tok = min(len(tok), V)
     strs = tok.batch_decode([[i] for i in range(n_tok)]) + [""] * (V - n_tok)
     for i in range(V):
-        k = strs[i].strip().lower()
-        if plural and k:
-            if k.endswith("'s") or k.endswith("’s"):
-                k = k[:-2]
-            elif k.endswith("s") and len(k) > 3:
-                k = k[:-1]
-        if not k or "�" in k:
+        s = strs[i]
+        w = s[1:] if s.startswith(" ") else s
+        if not w or w != w.strip() or "\ufffd" in w:
             gid[i] = -1 - i  # own group
             continue
+        if w in (w.lower(), w.capitalize()):
+            k = "L:" + w.lower()
+            if plural:
+                if k.endswith("'s") or k.endswith("\u2019s"):
+                    k = k[:-2]
+                elif k.endswith("s") and len(w) > 3:
+                    k = k[:-1]
+        else:
+            k = "X:" + w
         gid[i] = table.setdefault(k, len(table))
     return gid
 

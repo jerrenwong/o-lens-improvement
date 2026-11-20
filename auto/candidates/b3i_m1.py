@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from b3i_common import build_maps, fit_report, ELens  # noqa: E402
+from b3i_lib import build_maps, fit_report, ELens  # noqa: E402
 
 
 def build(ctx):

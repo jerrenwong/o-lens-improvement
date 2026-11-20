@@ -47,5 +47,17 @@ b2e_rank32es	0.5966	0.3688	125.9	discard	rank-32, early stop: tie
 b2e_rank8es_shuf	0.6063	0.3902	232.4	discard	CONTROL shuffled labels: +1.1
 b2e_ridge_gen	0.6058	0.3350	191.2	discard	ridge to target direction on generated riddles: +1.1
 b2e_rank8_fit	0.5300	0.3038	2.4	discard	rank-8 CE on fit only: -6.5 (overfits)
-b2e_ridge_fit	0.6338	0.3758	1.1	pending	J++ + ridge correction fitted on the 75 fit prompts (5-fold CV): +3.9, all from multilingual .69->.83; suspected label-set memorisation, check pending
-b2e_ridge_genfit	0.6307	0.3153	157.5	pending	ridge on generated riddles + fit: +3.6, multilingual .84
+b2e_ridge_fit	0.6338	0.3758	1.1	discard	J++ + ridge correction fitted on the 75 fit prompts (5-fold CV): +3.9, all from multilingual .69->.83; suspected label-set memorisation, check pending -> CONFIRMED memorisation of repeated multilingual template words (b3j leave-shared-word-out); discarded
+b2e_ridge_genfit	0.6307	0.3153	157.5	discard	ridge on generated riddles + fit: +3.6, multilingual .84 -> CONFIRMED memorisation of repeated multilingual template words (b3j leave-shared-word-out); discarded
+b3j_noml	0.5960	0.3324	0.4	discard	ridge-fit trained without multilingual items: +0.1 (gain gone)
+b3j_mlonly	0.6231	0.3967	0.5	discard	ridge-fit trained on multilingual items only: +2.8 (multilingual .80)
+b3j_nolang	0.6271	0.3883	0.4	discard	ridge-fit without language-name targets: +3.2 (multilingual .80)
+b3h_jpp_sf40	0.6017	0.3802	5.0	discard	READOUT CONVENTION: J++ with one top-10 slot per word (scorer-rule groups): +0.65 (under one prompt)
+b3h_jl_sf40	0.4468	0.2075	4.3	discard	READOUT CONVENTION: J-lens with one slot per word: +3.2 over J-lens .4146
+b3h_jpp_sf40_slot	0.6013	0.3579	9.3	discard	J++ dedup + slot reuse (16->L23, 24->L22): +0.6, p@1 -2.7; fit gain +8.6 did not transfer
+b3h_jl_sf40_slot	0.4486	0.2007	8.1	discard	J-lens dedup + slot reuse: +3.4 over J-lens
+b3i_mix03	0.6282	0.3889	174.2	discard	J++ + 0.3 x elicit-distilled map (suffix 'this is about'): +3.3 but ~4 prompts and suffix-specific (+0.3 with ' The topic:'); shuffled control -1.0
+b3i_mix10	0.5516	0.2964	183.7	discard	same, weight 1.0: -4.4
+b3i_slot	0.5934	0.3594	156.1	discard	slot reuse with elicit map at L24/L28: tie
+b3i_shuf_mix03	0.5851	0.3380	172.9	discard	CONTROL shuffled targets: -1.0
+b3i_t_mix03	0.5984	0.3950	155.0	discard	mix03 with suffix ' The topic:': +0.3

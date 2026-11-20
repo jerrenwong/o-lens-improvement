@@ -1,10 +1,10 @@
-"""b3i: SLOT REUSE: slots 4 and 8 return E_a(resid_all[a]), E_b(resid_all[b]) for the two layers >= 12 with best label-free held-out agreement; other slots plain J++ (see b3i_common)."""
+"""b3i: SLOT REUSE: slots 4 and 8 return E_a(resid_all[a]), E_b(resid_all[b]) for the two layers >= 12 with best label-free held-out agreement; other slots plain J++ (see b3i_lib)."""
 
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from b3i_common import build_maps, ELens  # noqa: E402
+from b3i_lib import build_maps, ELens  # noqa: E402
 
 
 def build(ctx):
