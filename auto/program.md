@@ -105,6 +105,16 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   released: present). Refit-to-refit noise ~ effect size (A at 32 prompts .493). Released 9B lens: 64 prompts.
   9B refit with replicates: agent r2, runs/r2_9b/ (PARTIAL.md has the half-budget numbers).
 
+- J++ REFIT on 9B (r2, 96 prompts per condition in 4 shards; runs/r2_9b/): no gain. Dev: released .5952; recipe
+  refit A .5735 (halves .6018, .5883); natural + skip 1 refit C .5826 (halves .5789, .5494). C - A: full +0.9
+  [-3.4,+5.8], halves -2.3 and -3.9. Refit-to-refit spread ~3 points. '@' share on association at L24: C 0%, A 100%,
+  released 99% -> the junk comes from raw WikiText formatting, but removing it at the source adds no hits.
+- FINAL TEST (one evaluation, 2026-11-20 13:19Z, auto/runs/T_*): q8_gate vs released J++.
+  9B test (153): .5858 vs .5809 = +0.5 [-1.0,+2.4]; pass@1 +1.0 [0,+2.4]; unfiltered +1.5 [0,+3.4].
+  2B test (108): .3150 vs .3150 = 0.0.
+  Pooled dev+test: 9B (309 items) +0.7 [-0.2,+2.0], 4 items better / 1 worse; unfiltered +1.2 [+0.2,+2.4].
+  2B (217 items) +1.0 [+0.2,+2.0], 4 better / 0 worse. Controls flat or negative. Marginal, not a meaningful gain.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,

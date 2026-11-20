@@ -62,3 +62,9 @@ b3i_slot	0.5934	0.3594	156.1	discard	slot reuse with elicit map at L24/L28: tie
 b3i_shuf_mix03	0.5851	0.3380	172.9	discard	CONTROL shuffled targets: -1.0
 b3i_t_mix03	0.5984	0.3950	155.0	discard	mix03 with suffix ' The topic:': +0.3
 q5_gate	0.6049	0.3899	0.2	keep	J++ with the fit-association mean direction removed at L24+L28 for rows >80% aligned with it (the '@' junk): +1.0 / +0.5, two association prompts on dev and on fit; within noise but mechanism understood
+
+r2_A_full	0.5735	0.3830	0.0	discard	J++ REFIT 9B, recipe (raw WikiText, skip 16), 96 prompts: -2.2 [-7.0,+1.9] vs released; halves .6018 / .5883
+r2_C_full	0.5826	0.3550	0.0	discard	J++ REFIT 9B, natural format + positions from 1, 96 prompts: -1.3 [-4.2,+1.5] vs released; vs matched recipe +0.9 full, -2.3 / -3.9 halves; '@' junk gone (0% vs 100%)
+q8_gate_9b	0.6049	0.3899	0.0	keep	gated junk removal (model-agnostic q5_gate): dev +1.0 [0,+2.4]; TEST .5858 vs J++ .5809 = +0.5 [-1.0,+2.4]; pooled held-out +0.7 [-0.2,+2.0], unfiltered +1.2 [+0.2,+2.4]; 2B dev +2.0 [0.5,3.9], 2B test 0.0, pooled +1.0 [0.2,2.0]
+q8_rand_9b	0.5952	0.3850	0.0	control	CONTROL random direction under the same gate: dev 0.0, test -1.5
+q8_typo_9b	0.5867	0.3766	0.0	control	CONTROL prototype from fit typo rows: dev -0.8, test -0.1
