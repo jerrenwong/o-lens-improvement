@@ -1,0 +1,5 @@
+161ac6e4ba9a9be54d6bdcf6cc5fadcf  lens-eval-association-v2.json  (115 items)
+46c35bcdbe5d100aec9cecc69e3a57b9  lens-eval-multihop-v2.json  (107 items)
+95faaa253f30f7f483f30e5f42e21291  lens-eval-multilingual-v2.json  (117 items)
+38ccef259bae8a26c4c457517aaee5f0  lens-eval-poetry-v2.json  (108 items)
+adae4e7d5e5b6217761e009e3d019e96  lens-eval-typo-v2.json  (116 items)

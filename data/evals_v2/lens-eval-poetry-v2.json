@@ -1,0 +1,760 @@
+{
+  "items": [
+    {
+      "name": "couplet-west-rest",
+      "prompt": "A rhyming couplet:\nThe sun went sinking slowly in the west,\nAnd all the tired workers took their ",
+      "intermediates": [
+        "rest"
+      ]
+    },
+    {
+      "name": "couplet-quest-chest",
+      "prompt": "A rhyming couplet:\nThe pirate sailed for years upon his quest,\nTo find the gold inside the buried ",
+      "intermediates": [
+        "chest"
+      ]
+    },
+    {
+      "name": "couplet-best-nest",
+      "prompt": "A rhyming couplet:\nThe robin built her home the way she knew best,\nAnd laid three speckled eggs inside her ",
+      "intermediates": [
+        "nest"
+      ]
+    },
+    {
+      "name": "couplet-rest-test",
+      "prompt": "A rhyming couplet:\nShe studied every night and would not rest,\nDetermined she would pass the final ",
+      "intermediates": [
+        "test"
+      ]
+    },
+    {
+      "name": "couplet-plain-rain",
+      "prompt": "A rhyming couplet:\nThe farmer gazed across the dusty plain,\nAnd prayed the sky would finally bring ",
+      "intermediates": [
+        "rain"
+      ]
+    },
+    {
+      "name": "couplet-again-chain",
+      "prompt": "A rhyming couplet:\nHe pulled and strained and tried and tried again,\nBut could not snap the heavy iron ",
+      "intermediates": [
+        "chain"
+      ]
+    },
+    {
+      "name": "couplet-rain-train",
+      "prompt": "A rhyming couplet:\nShe waved goodbye and stood out in the rain,\nAnd watched him board the early morning ",
+      "intermediates": [
+        "train"
+      ]
+    },
+    {
+      "name": "couplet-pain-gain",
+      "prompt": "A rhyming couplet:\nHe weighed up all the danger and the pain,\nAnd wondered if there'd be a thing to ",
+      "intermediates": [
+        "gain"
+      ]
+    },
+    {
+      "name": "couplet-hill-still",
+      "prompt": "A rhyming couplet:\nThe house stood lonely on the windy hill,\nThe night was dark, the air was cold and ",
+      "intermediates": [
+        "still"
+      ]
+    },
+    {
+      "name": "couplet-will-hill",
+      "prompt": "A rhyming couplet:\nThe children raced each other with a will,\nUp to the very top of the green ",
+      "intermediates": [
+        "hill"
+      ]
+    },
+    {
+      "name": "couplet-still-kill",
+      "prompt": "A rhyming couplet:\nThe wolf lay low, so perfectly and still,\nAnd waited for the moment of the ",
+      "intermediates": [
+        "kill"
+      ]
+    },
+    {
+      "name": "couplet-well-bell",
+      "prompt": "A rhyming couplet:\nThe village gathered round the old stone well,\nAnd waited for the ringing of the ",
+      "intermediates": [
+        "bell"
+      ]
+    },
+    {
+      "name": "couplet-well-tell",
+      "prompt": "A rhyming couplet:\nShe kept the secret locked away so well,\nA story that she swore she'd never ",
+      "intermediates": [
+        "tell"
+      ]
+    },
+    {
+      "name": "couplet-bell-fell",
+      "prompt": "A rhyming couplet:\nHe climbed the tower to ring the ancient bell,\nBut slipped upon the icy stairs and ",
+      "intermediates": [
+        "fell"
+      ]
+    },
+    {
+      "name": "couplet-dwell-shell",
+      "prompt": "A rhyming couplet:\nThe hermit crab had nowhere left to dwell,\nUntil he found a bigger, empty ",
+      "intermediates": [
+        "shell"
+      ]
+    },
+    {
+      "name": "couplet-spring-sing",
+      "prompt": "A rhyming couplet:\nThe birds came back to celebrate the spring,\nAnd perched upon the fence to start to ",
+      "intermediates": [
+        "sing"
+      ]
+    },
+    {
+      "name": "couplet-everything-ring",
+      "prompt": "A rhyming couplet:\nHe knelt before her, offering everything,\nAnd from his pocket drew a diamond ",
+      "intermediates": [
+        "ring"
+      ]
+    },
+    {
+      "name": "couplet-sing-wing",
+      "prompt": "A rhyming couplet:\nThe little sparrow could no longer sing,\nFor it had broken its small fragile ",
+      "intermediates": [
+        "wing"
+      ]
+    },
+    {
+      "name": "couplet-ring-king",
+      "prompt": "A rhyming couplet:\nThe trumpets blared, the bells began to ring,\nTo welcome home the young victorious ",
+      "intermediates": [
+        "king"
+      ]
+    },
+    {
+      "name": "couplet-string-thing",
+      "prompt": "A rhyming couplet:\nThe puppet danced while dangling from a string,\nIt seemed to me a strange and lifeless ",
+      "intermediates": [
+        "thing"
+      ]
+    },
+    {
+      "name": "couplet-wine-line",
+      "prompt": "A rhyming couplet:\nThe bottles of the finest vintage wine,\nWere standing on the shelf all in a ",
+      "intermediates": [
+        "line"
+      ]
+    },
+    {
+      "name": "couplet-fine-shine",
+      "prompt": "A rhyming couplet:\nThe morning came, the weather would be fine,\nAnd soon the sun would rise and start to ",
+      "intermediates": [
+        "shine"
+      ]
+    },
+    {
+      "name": "couplet-wine-mine",
+      "prompt": "A rhyming couplet:\nShe pointed to the bottle of red wine,\nAnd told him firmly, hands off, that one's ",
+      "intermediates": [
+        "mine"
+      ]
+    },
+    {
+      "name": "couplet-line-sign",
+      "prompt": "A rhyming couplet:\nThe contract lay before him, line by line,\nAnd all that he had left to do was ",
+      "intermediates": [
+        "sign"
+      ]
+    },
+    {
+      "name": "couplet-nice-ice",
+      "prompt": "A rhyming couplet:\nThe winter wind was bitter, far from nice,\nAnd turned the pond into a sheet of ",
+      "intermediates": [
+        "ice"
+      ]
+    },
+    {
+      "name": "couplet-dice-twice",
+      "prompt": "A rhyming couplet:\nThe gambler rolled and lost upon the dice,\nAnd swore he'd never make that bet ",
+      "intermediates": [
+        "twice"
+      ]
+    },
+    {
+      "name": "couplet-precise-price",
+      "prompt": "A rhyming couplet:\nThe diamond sparkled, flawless and precise,\nBut no one in the town could pay the ",
+      "intermediates": [
+        "price"
+      ]
+    },
+    {
+      "name": "couplet-guide-side",
+      "prompt": "A rhyming couplet:\nHe walked the path with no one as his guide,\nBut felt his mother's spirit at his ",
+      "intermediates": [
+        "side"
+      ]
+    },
+    {
+      "name": "couplet-aside-pride",
+      "prompt": "A rhyming couplet:\nHe would not beg, though he was cast aside,\nFor he still had his dignity and ",
+      "intermediates": [
+        "pride"
+      ]
+    },
+    {
+      "name": "couplet-wide-hide",
+      "prompt": "A rhyming couplet:\nThe thunder roared, the storm was far and wide,\nThe frightened dog searched for a place to ",
+      "intermediates": [
+        "hide"
+      ]
+    },
+    {
+      "name": "couplet-pride-ride",
+      "prompt": "A rhyming couplet:\nThe cowboy tipped his hat with easy pride,\nAnd climbed upon his horse to start his ",
+      "intermediates": [
+        "ride"
+      ]
+    },
+    {
+      "name": "couplet-side-tide",
+      "prompt": "A rhyming couplet:\nThe fishermen stood waiting side by side,\nFor the return of the incoming ",
+      "intermediates": [
+        "tide"
+      ]
+    },
+    {
+      "name": "couplet-mud-blood",
+      "prompt": "A rhyming couplet:\nThe soldiers fell and lay there in the mud,\nThe field was stained a deep, dark red with ",
+      "intermediates": [
+        "blood"
+      ]
+    },
+    {
+      "name": "couplet-mud-flood",
+      "prompt": "A rhyming couplet:\nThe rain poured down and turned the fields to mud,\nThe river burst its banks and brought a ",
+      "intermediates": [
+        "flood"
+      ]
+    },
+    {
+      "name": "couplet-close-rose",
+      "prompt": "A rhyming couplet:\nThe garden bloomed as summer drew to close,\nAnd in the center grew a single ",
+      "intermediates": [
+        "rose"
+      ]
+    },
+    {
+      "name": "couplet-toes-nose",
+      "prompt": "A rhyming couplet:\nThe frost bit at her fingers and her toes,\nAnd painted pink the tip of her small ",
+      "intermediates": [
+        "nose"
+      ]
+    },
+    {
+      "name": "couplet-flows-toes",
+      "prompt": "A rhyming couplet:\nShe dipped her feet where the cool water flows,\nAnd felt the river tickle all her ",
+      "intermediates": [
+        "toes"
+      ]
+    },
+    {
+      "name": "couplet-beat-feet",
+      "prompt": "A rhyming couplet:\nThe dancers moved to music's steady beat,\nAnd tapped the rhythm with their nimble ",
+      "intermediates": [
+        "feet"
+      ]
+    },
+    {
+      "name": "couplet-sweet-street",
+      "prompt": "A rhyming couplet:\nThe baker sold his bread, both warm and sweet,\nTo every person passing in the ",
+      "intermediates": [
+        "street"
+      ]
+    },
+    {
+      "name": "couplet-heat-sweet",
+      "prompt": "A rhyming couplet:\nShe picked the berries ripened in the heat,\nAnd found them juicy, warm, and very ",
+      "intermediates": [
+        "sweet"
+      ]
+    },
+    {
+      "name": "couplet-street-meet",
+      "prompt": "A rhyming couplet:\nHe waited at the corner of the street,\nThe place where they had promised they would ",
+      "intermediates": [
+        "meet"
+      ]
+    },
+    {
+      "name": "couplet-feet-heat",
+      "prompt": "A rhyming couplet:\nThe runners crossed the line on blistered feet,\nExhausted by the scorching summer ",
+      "intermediates": [
+        "heat"
+      ]
+    },
+    {
+      "name": "couplet-complete-seat",
+      "prompt": "A rhyming couplet:\nThe theater was packed, the crowd complete,\nAnd every person settled in their ",
+      "intermediates": [
+        "seat"
+      ]
+    },
+    {
+      "name": "couplet-coat-boat",
+      "prompt": "A rhyming couplet:\nThe fisherman pulled on his heavy coat,\nAnd pushed out from the shore in his small ",
+      "intermediates": [
+        "boat"
+      ]
+    },
+    {
+      "name": "couplet-wrote-coat",
+      "prompt": "A rhyming couplet:\nHe sealed the letter, every word he wrote,\nThen stepped into the cold and grabbed his ",
+      "intermediates": [
+        "coat"
+      ]
+    },
+    {
+      "name": "couplet-note-throat",
+      "prompt": "A rhyming couplet:\nThe singer tried to hit the final note,\nBut something caught and tightened in her ",
+      "intermediates": [
+        "throat"
+      ]
+    },
+    {
+      "name": "couplet-boat-float",
+      "prompt": "A rhyming couplet:\nThe children built a raft and called it a boat,\nAnd cheered to see the wooden thing could ",
+      "intermediates": [
+        "float"
+      ]
+    },
+    {
+      "name": "couplet-sip-ship",
+      "prompt": "A rhyming couplet:\nThe sailor took one final, salty sip,\nThen climbed the rope ladder of the ",
+      "intermediates": [
+        "ship"
+      ]
+    },
+    {
+      "name": "couplet-grip-lip",
+      "prompt": "A rhyming couplet:\nShe tried to hold her tears and keep her grip,\nBut couldn't stop the trembling of her ",
+      "intermediates": [
+        "lip"
+      ]
+    },
+    {
+      "name": "couplet-zip-trip",
+      "prompt": "A rhyming couplet:\nHe packed his bags and sealed them with a zip,\nExcited for the start of his long ",
+      "intermediates": [
+        "trip"
+      ]
+    },
+    {
+      "name": "couplet-tire-fire",
+      "prompt": "A rhyming couplet:\nThe hunters gathered close, and none would tire,\nOf telling stories round the crackling ",
+      "intermediates": [
+        "fire"
+      ]
+    },
+    {
+      "name": "couplet-fire-desire",
+      "prompt": "A rhyming couplet:\nHe looked at her with eyes of burning fire,\nAnd felt the pull of deep and strong ",
+      "intermediates": [
+        "desire"
+      ]
+    },
+    {
+      "name": "couplet-spire-higher",
+      "prompt": "A rhyming couplet:\nThe eagle circled round the church's spire,\nAnd rose on rising currents ever ",
+      "intermediates": [
+        "higher"
+      ]
+    },
+    {
+      "name": "couplet-chair-hair",
+      "prompt": "A rhyming couplet:\nShe sat in silence on the wooden chair,\nAnd let her mother gently brush her ",
+      "intermediates": [
+        "hair"
+      ]
+    },
+    {
+      "name": "couplet-stair-chair",
+      "prompt": "A rhyming couplet:\nThe old man climbed the creaking wooden stair,\nAnd settled slowly in his favorite ",
+      "intermediates": [
+        "chair"
+      ]
+    },
+    {
+      "name": "couplet-despair-prayer",
+      "prompt": "A rhyming couplet:\nThe widow knelt in sorrow and despair,\nAnd bowed her head to say a quiet ",
+      "intermediates": [
+        "prayer"
+      ]
+    },
+    {
+      "name": "couplet-everywhere-there",
+      "prompt": "A rhyming couplet:\nHe searched the house, he looked just everywhere,\nBut what he wanted simply wasn't ",
+      "intermediates": [
+        "there"
+      ]
+    },
+    {
+      "name": "couplet-late-hate",
+      "prompt": "A rhyming couplet:\nThe brothers argued, and it grew too late,\nTheir love had turned to bitterness and ",
+      "intermediates": [
+        "hate"
+      ]
+    },
+    {
+      "name": "couplet-wait-plate",
+      "prompt": "A rhyming couplet:\nThe hungry boy could hardly bear to wait,\nAnd wolfed down every morsel on his ",
+      "intermediates": [
+        "plate"
+      ]
+    },
+    {
+      "name": "couplet-straight-weight",
+      "prompt": "A rhyming couplet:\nHe tried to stand up tall and walk up straight,\nBut stumbled underneath the heavy ",
+      "intermediates": [
+        "weight"
+      ]
+    },
+    {
+      "name": "couplet-lake-snake",
+      "prompt": "A rhyming couplet:\nThe hiker stepped beside the quiet lake,\nAnd froze to see the coiling of a ",
+      "intermediates": [
+        "snake"
+      ]
+    },
+    {
+      "name": "couplet-sake-wake",
+      "prompt": "A rhyming couplet:\nThe baby slept, and for her mother's sake,\nWe tiptoed so the child would not ",
+      "intermediates": [
+        "wake"
+      ]
+    },
+    {
+      "name": "couplet-quake-shake",
+      "prompt": "A rhyming couplet:\nThe ground began to rumble and to quake,\nAnd all the walls and windows began to ",
+      "intermediates": [
+        "shake"
+      ]
+    },
+    {
+      "name": "couplet-rain-lane",
+      "prompt": "A rhyming couplet:\nHe drove for hours through the pouring rain,\nAnd never once did he switch out of his ",
+      "intermediates": [
+        "lane"
+      ]
+    },
+    {
+      "name": "couplet-away-stay",
+      "prompt": "A rhyming couplet:\nShe begged him not to leave, not go away,\nAnd pleaded with him that he'd always ",
+      "intermediates": [
+        "stay"
+      ]
+    },
+    {
+      "name": "couplet-spray-pray",
+      "prompt": "A rhyming couplet:\nThe sailors, lost and battered by the spray,\nCould do no more than kneel and start to ",
+      "intermediates": [
+        "pray"
+      ]
+    },
+    {
+      "name": "couplet-land-hand",
+      "prompt": "A rhyming couplet:\nThe castle stood above the conquered land,\nThe king held all the power in his ",
+      "intermediates": [
+        "hand"
+      ]
+    },
+    {
+      "name": "couplet-grand-sand",
+      "prompt": "A rhyming couplet:\nThey built a castle, beautiful and grand,\nAnd watched the waves wash out the walls of ",
+      "intermediates": [
+        "sand"
+      ]
+    },
+    {
+      "name": "couplet-understand-stand",
+      "prompt": "A rhyming couplet:\nHe tried to walk, but couldn't understand,\nWhy his own legs would no longer let him ",
+      "intermediates": [
+        "stand"
+      ]
+    },
+    {
+      "name": "couplet-hand-band",
+      "prompt": "A rhyming couplet:\nThe crowd stood cheering, waving every hand,\nAs on the stage appeared their favorite ",
+      "intermediates": [
+        "band"
+      ]
+    },
+    {
+      "name": "couplet-sleep-weep",
+      "prompt": "A rhyming couplet:\nThe orphan sat alone and could not sleep,\nShe hugged her pillow and began to ",
+      "intermediates": [
+        "weep"
+      ]
+    },
+    {
+      "name": "couplet-steep-sheep",
+      "prompt": "A rhyming couplet:\nThe shepherd climbed the hillside, rough and steep,\nTo gather in his scattered flock of ",
+      "intermediates": [
+        "sheep"
+      ]
+    },
+    {
+      "name": "couplet-light-white",
+      "prompt": "A rhyming couplet:\nThe bride walked down the aisle in morning light,\nHer dress was made of silk and purest ",
+      "intermediates": [
+        "white"
+      ]
+    },
+    {
+      "name": "couplet-night-bite",
+      "prompt": "A rhyming couplet:\nThe fisherman sat waiting through the night,\nAnd hoping that a fish would take a ",
+      "intermediates": [
+        "bite"
+      ]
+    },
+    {
+      "name": "couplet-bright-kite",
+      "prompt": "A rhyming couplet:\nThe wind was strong, the sky was clear and bright,\nThe boy ran through the field to fly his ",
+      "intermediates": [
+        "kite"
+      ]
+    },
+    {
+      "name": "couplet-night-tight",
+      "prompt": "A rhyming couplet:\nThe child was frightened of the coming night,\nAnd hugged her teddy bear and held it ",
+      "intermediates": [
+        "tight"
+      ]
+    },
+    {
+      "name": "couplet-years-tears",
+      "prompt": "A rhyming couplet:\nShe hadn't seen her brother in ten years,\nAnd when he walked in, she burst into ",
+      "intermediates": [
+        "tears"
+      ]
+    },
+    {
+      "name": "couplet-appears-ears",
+      "prompt": "A rhyming couplet:\nA rabbit from the magic hat appears,\nHe lifts it gently by its fluffy ",
+      "intermediates": [
+        "ears"
+      ]
+    },
+    {
+      "name": "couplet-fears-cheers",
+      "prompt": "A rhyming couplet:\nThe final whistle ended all his fears,\nThe stadium erupted into ",
+      "intermediates": [
+        "cheers"
+      ]
+    },
+    {
+      "name": "couplet-bed-bread",
+      "prompt": "A rhyming couplet:\nThe baker rose at four and left his bed,\nTo knead the dough and bake the morning ",
+      "intermediates": [
+        "bread"
+      ]
+    },
+    {
+      "name": "couplet-head-thread",
+      "prompt": "A rhyming couplet:\nThe spider spun its web above my head,\nAnd hung there dangling from a silver ",
+      "intermediates": [
+        "thread"
+      ]
+    },
+    {
+      "name": "couplet-head-said",
+      "prompt": "A rhyming couplet:\nShe looked at him and slowly shook her head,\nAnd no one heard a word of what she ",
+      "intermediates": [
+        "said"
+      ]
+    },
+    {
+      "name": "couplet-read-dread",
+      "prompt": "A rhyming couplet:\nThe letter came, and as the words were read,\nShe felt her heart fill up with sudden ",
+      "intermediates": [
+        "dread"
+      ]
+    },
+    {
+      "name": "couplet-more-floor",
+      "prompt": "A rhyming couplet:\nThe dancers twirled and glided more and more,\nAcross the polished ballroom's shining ",
+      "intermediates": [
+        "floor"
+      ]
+    },
+    {
+      "name": "couplet-floor-roar",
+      "prompt": "A rhyming couplet:\nThe lion paced along the jungle floor,\nThen raised its head and let out a mighty ",
+      "intermediates": [
+        "roar"
+      ]
+    },
+    {
+      "name": "couplet-lord-sword",
+      "prompt": "A rhyming couplet:\nThe knight knelt down before his king and lord,\nAnd pledged his loyalty upon his ",
+      "intermediates": [
+        "sword"
+      ]
+    },
+    {
+      "name": "couplet-flies-skies",
+      "prompt": "A rhyming couplet:\nThe eagle spreads its wings and swiftly flies,\nUp through the clear and endless summer ",
+      "intermediates": [
+        "skies"
+      ]
+    },
+    {
+      "name": "couplet-eyes-prize",
+      "prompt": "A rhyming couplet:\nHe couldn't quite believe his own two eyes,\nWhen they announced that he had won the ",
+      "intermediates": [
+        "prize"
+      ]
+    },
+    {
+      "name": "couplet-surprise-size",
+      "prompt": "A rhyming couplet:\nShe tried the dress on, much to her surprise,\nIt fit her perfectly, the perfect ",
+      "intermediates": [
+        "size"
+      ]
+    },
+    {
+      "name": "couplet-eyes-wise",
+      "prompt": "A rhyming couplet:\nThe owl looked down with large and knowing eyes,\nThe forest creatures said that he was ",
+      "intermediates": [
+        "wise"
+      ]
+    },
+    {
+      "name": "couplet-cry-goodbye",
+      "prompt": "A rhyming couplet:\nShe held back tears and promised not to cry,\nThen hugged him close and whispered her ",
+      "intermediates": [
+        "goodbye"
+      ]
+    },
+    {
+      "name": "couplet-sky-dry",
+      "prompt": "A rhyming couplet:\nNo rain had fallen from the cloudless sky,\nThe wells were empty and the fields were ",
+      "intermediates": [
+        "dry"
+      ]
+    },
+    {
+      "name": "couplet-by-pie",
+      "prompt": "A rhyming couplet:\nGrandmother called us in, we hurried by,\nTo taste a slice of warm fresh apple ",
+      "intermediates": [
+        "pie"
+      ]
+    },
+    {
+      "name": "couplet-joy-toy",
+      "prompt": "A rhyming couplet:\nThe puppy brought the family such joy,\nIt chased a ball and chewed the children's ",
+      "intermediates": [
+        "toy"
+      ]
+    },
+    {
+      "name": "couplet-boy-joy",
+      "prompt": "A rhyming couplet:\nHe held the tiny baby, a new boy,\nAnd felt his heart was bursting full of ",
+      "intermediates": [
+        "joy"
+      ]
+    },
+    {
+      "name": "couplet-boys-noise",
+      "prompt": "A rhyming couplet:\nThe classroom filled with rowdy girls and boys,\nWho made a dreadful, never-ending ",
+      "intermediates": [
+        "noise"
+      ]
+    },
+    {
+      "name": "couplet-mild-wild",
+      "prompt": "A rhyming couplet:\nThe garden, once so trim and neat and mild,\nHad been abandoned and was growing ",
+      "intermediates": [
+        "wild"
+      ]
+    },
+    {
+      "name": "couplet-while-smile",
+      "prompt": "A rhyming couplet:\nShe hadn't laughed or spoken for a while,\nBut then her face broke open in a ",
+      "intermediates": [
+        "smile"
+      ]
+    },
+    {
+      "name": "couplet-style-mile",
+      "prompt": "A rhyming couplet:\nThe runner pushed through every step in style,\nAnd sprinted hard to finish the last ",
+      "intermediates": [
+        "mile"
+      ]
+    },
+    {
+      "name": "couplet-sheen-clean",
+      "prompt": "A rhyming couplet:\nShe scrubbed the floor until it had a sheen,\nAnd left the kitchen spotless, bright and ",
+      "intermediates": [
+        "clean"
+      ]
+    },
+    {
+      "name": "couplet-scene-green",
+      "prompt": "A rhyming couplet:\nThe spring arrived to brighten every scene,\nAnd turned the hills a vivid shade of ",
+      "intermediates": [
+        "green"
+      ]
+    },
+    {
+      "name": "couplet-green-queen",
+      "prompt": "A rhyming couplet:\nThe crowd had gathered on the village green,\nTo catch a glimpse of their beloved ",
+      "intermediates": [
+        "queen"
+      ]
+    },
+    {
+      "name": "couplet-chance-dance",
+      "prompt": "A rhyming couplet:\nHe asked her shyly, hoping for a chance,\nIf she would join him for the final ",
+      "intermediates": [
+        "dance"
+      ]
+    },
+    {
+      "name": "couplet-gloom-bloom",
+      "prompt": "A rhyming couplet:\nThe garden lay in winter's quiet gloom,\nBut spring would bring the flowers back to ",
+      "intermediates": [
+        "bloom"
+      ]
+    },
+    {
+      "name": "couplet-gloom-room",
+      "prompt": "A rhyming couplet:\nThe candle flickered, fighting off the gloom,\nAnd cast its glow across the empty ",
+      "intermediates": [
+        "room"
+      ]
+    },
+    {
+      "name": "couplet-doom-tomb",
+      "prompt": "A rhyming couplet:\nThe explorer entered, fearful of his doom,\nAnd stepped inside the pharaoh's ancient ",
+      "intermediates": [
+        "tomb"
+      ]
+    },
+    {
+      "name": "couplet-blue-true",
+      "prompt": "A rhyming couplet:\nThe sky was painted in the softest blue,\nAnd every word she'd told him had been ",
+      "intermediates": [
+        "true"
+      ]
+    },
+    {
+      "name": "couplet-through-new",
+      "prompt": "A rhyming couplet:\nHis shoes were worn, the soles were coming through,\nSo he went out to buy a pair brand ",
+      "intermediates": [
+        "new"
+      ]
+    }
+  ]
+}

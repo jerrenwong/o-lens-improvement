@@ -1,0 +1,1291 @@
+{
+  "items": [
+    {
+      "name": "spanish-opposite-rich",
+      "prompt": "Lo opuesto de \"rico\" es \"",
+      "target": "pobre",
+      "intermediates": [
+        "Spanish",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "french-opposite-full",
+      "prompt": "Le contraire de \"plein\" est \"",
+      "target": "vide",
+      "intermediates": [
+        "French",
+        "opposite",
+        "full",
+        "empty"
+      ]
+    },
+    {
+      "name": "german-opposite-strong",
+      "prompt": "Das Gegenteil von \"stark\" ist \"",
+      "target": "schwach",
+      "intermediates": [
+        "German",
+        "opposite",
+        "strong",
+        "weak"
+      ]
+    },
+    {
+      "name": "italian-opposite-happy",
+      "prompt": "Il contrario di \"felice\" è \"",
+      "target": "triste",
+      "intermediates": [
+        "Italian",
+        "opposite",
+        "happy",
+        "sad"
+      ]
+    },
+    {
+      "name": "portuguese-opposite-clean",
+      "prompt": "O oposto de \"limpo\" é \"",
+      "target": "sujo",
+      "intermediates": [
+        "Portuguese",
+        "opposite",
+        "clean",
+        "dirty"
+      ]
+    },
+    {
+      "name": "dutch-opposite-early",
+      "prompt": "Het tegenovergestelde van \"vroeg\" is \"",
+      "target": "laat",
+      "intermediates": [
+        "Dutch",
+        "opposite",
+        "early",
+        "late"
+      ]
+    },
+    {
+      "name": "swedish-opposite-rich",
+      "prompt": "Motsatsen till \"rik\" är \"",
+      "target": "fattig",
+      "intermediates": [
+        "Swedish",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "russian-opposite-strong",
+      "prompt": "Противоположность слова \"сильный\" — \"",
+      "target": "слабый",
+      "intermediates": [
+        "Russian",
+        "opposite",
+        "strong",
+        "weak"
+      ]
+    },
+    {
+      "name": "polish-opposite-full",
+      "prompt": "Przeciwieństwo słowa \"pełny\" to \"",
+      "target": "pusty",
+      "intermediates": [
+        "Polish",
+        "opposite",
+        "full",
+        "empty"
+      ]
+    },
+    {
+      "name": "turkish-opposite-rich",
+      "prompt": "\"Zengin\" kelimesinin zıttı \"",
+      "target": "fakir",
+      "intermediates": [
+        "Turkish",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "indonesian-opposite-long",
+      "prompt": "Lawan kata \"panjang\" adalah \"",
+      "target": "pendek",
+      "intermediates": [
+        "Indonesian",
+        "opposite",
+        "long",
+        "short"
+      ]
+    },
+    {
+      "name": "malay-opposite-high",
+      "prompt": "Lawan bagi perkataan \"tinggi\" ialah \"",
+      "target": "rendah",
+      "intermediates": [
+        "Malay",
+        "opposite",
+        "high",
+        "low"
+      ]
+    },
+    {
+      "name": "catalan-opposite-full",
+      "prompt": "El contrari de \"ple\" és \"",
+      "target": "buit",
+      "intermediates": [
+        "Catalan",
+        "opposite",
+        "full",
+        "empty"
+      ]
+    },
+    {
+      "name": "welsh-opposite-good",
+      "prompt": "Y gwrthwyneb i \"da\" yw \"",
+      "target": "drwg",
+      "intermediates": [
+        "Welsh",
+        "opposite",
+        "good",
+        "bad"
+      ]
+    },
+    {
+      "name": "latin-opposite-good",
+      "prompt": "Contrarium verbi \"bonus\" est \"",
+      "target": "malus",
+      "intermediates": [
+        "Latin",
+        "opposite",
+        "good",
+        "bad"
+      ]
+    },
+    {
+      "name": "japanese-opposite-bright",
+      "prompt": "「明るい」の反対は「",
+      "target": "暗い",
+      "intermediates": [
+        "Japanese",
+        "opposite",
+        "bright",
+        "dark"
+      ]
+    },
+    {
+      "name": "chinese-opposite-buy",
+      "prompt": "\"买\"的反义词是\"",
+      "target": "卖",
+      "intermediates": [
+        "Chinese",
+        "opposite",
+        "buy",
+        "sell"
+      ]
+    },
+    {
+      "name": "korean-opposite-man",
+      "prompt": "\"남자\"의 반대말은 \"",
+      "target": "여자",
+      "intermediates": [
+        "Korean",
+        "opposite",
+        "man",
+        "woman"
+      ]
+    },
+    {
+      "name": "arabic-opposite-rich",
+      "prompt": "عكس كلمة \"غني\" هو \"",
+      "target": "فقير",
+      "intermediates": [
+        "Arabic",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "hebrew-opposite-rich",
+      "prompt": "ההפך של \"עשיר\" הוא \"",
+      "target": "עני",
+      "intermediates": [
+        "Hebrew",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "hindi-opposite-rich",
+      "prompt": "\"अमीर\" का विपरीत \"",
+      "target": "गरीब",
+      "intermediates": [
+        "Hindi",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "urdu-opposite-rich",
+      "prompt": "\"امیر\" کا الٹ \"",
+      "target": "غریب",
+      "intermediates": [
+        "Urdu",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "greek-opposite-rich",
+      "prompt": "Το αντίθετο του \"πλούσιος\" είναι \"",
+      "target": "φτωχός",
+      "intermediates": [
+        "Greek",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "vietnamese-opposite-rich",
+      "prompt": "Trái nghĩa của \"giàu\" là \"",
+      "target": "nghèo",
+      "intermediates": [
+        "Vietnamese",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "thai-opposite-rich",
+      "prompt": "ตรงข้ามของ\"รวย\"คือ\"",
+      "target": "จน",
+      "intermediates": [
+        "Thai",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "finnish-opposite-strong",
+      "prompt": "Sanan \"vahva\" vastakohta on \"",
+      "target": "heikko",
+      "intermediates": [
+        "Finnish",
+        "opposite",
+        "strong",
+        "weak"
+      ]
+    },
+    {
+      "name": "hungarian-opposite-rich",
+      "prompt": "A \"gazdag\" ellentéte \"",
+      "target": "szegény",
+      "intermediates": [
+        "Hungarian",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "czech-opposite-cheap",
+      "prompt": "Opak slova \"levný\" je \"",
+      "target": "drahý",
+      "intermediates": [
+        "Czech",
+        "opposite",
+        "cheap",
+        "expensive"
+      ]
+    },
+    {
+      "name": "romanian-opposite-rich",
+      "prompt": "Opusul cuvântului \"bogat\" este \"",
+      "target": "sărac",
+      "intermediates": [
+        "Romanian",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "danish-opposite-strong",
+      "prompt": "Det modsatte af \"stærk\" er \"",
+      "target": "svag",
+      "intermediates": [
+        "Danish",
+        "opposite",
+        "strong",
+        "weak"
+      ]
+    },
+    {
+      "name": "norwegian-opposite-early",
+      "prompt": "Det motsatte av \"tidlig\" er \"",
+      "target": "sent",
+      "intermediates": [
+        "Norwegian",
+        "opposite",
+        "early",
+        "late"
+      ]
+    },
+    {
+      "name": "ukrainian-opposite-rich",
+      "prompt": "Протилежність \"багатий\" - це \"",
+      "target": "бідний",
+      "intermediates": [
+        "Ukrainian",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "bulgarian-opposite-strong",
+      "prompt": "Обратното на \"силен\" е \"",
+      "target": "слаб",
+      "intermediates": [
+        "Bulgarian",
+        "opposite",
+        "strong",
+        "weak"
+      ]
+    },
+    {
+      "name": "serbian-opposite-full",
+      "prompt": "Супротно од \"пун\" је \"",
+      "target": "празан",
+      "intermediates": [
+        "Serbian",
+        "opposite",
+        "full",
+        "empty"
+      ]
+    },
+    {
+      "name": "croatian-opposite-strong",
+      "prompt": "Suprotno od \"jak\" je \"",
+      "target": "slab",
+      "intermediates": [
+        "Croatian",
+        "opposite",
+        "strong",
+        "weak"
+      ]
+    },
+    {
+      "name": "filipino-opposite-rich",
+      "prompt": "Ang kabaligtaran ng \"mayaman\" ay \"",
+      "target": "mahirap",
+      "intermediates": [
+        "Filipino",
+        "opposite",
+        "rich",
+        "poor"
+      ]
+    },
+    {
+      "name": "slovak-opposite-full",
+      "prompt": "Opak slova \"plný\" je \"",
+      "target": "prázdny",
+      "intermediates": [
+        "Slovak",
+        "opposite",
+        "full",
+        "empty"
+      ]
+    },
+    {
+      "name": "irish-opposite-good",
+      "prompt": "Is é an focal atá contrártha le \"maith\" ná \"",
+      "target": "olc",
+      "intermediates": [
+        "Irish",
+        "opposite",
+        "good",
+        "bad"
+      ]
+    },
+    {
+      "name": "icelandic-opposite-good",
+      "prompt": "Andstæðan við \"góður\" er \"",
+      "target": "vondur",
+      "intermediates": [
+        "Icelandic",
+        "opposite",
+        "good",
+        "bad"
+      ]
+    },
+    {
+      "name": "spanish-color-lemon",
+      "prompt": "El color del limón es \"",
+      "target": "amarillo",
+      "intermediates": [
+        "Spanish",
+        "color",
+        "lemon",
+        "yellow"
+      ]
+    },
+    {
+      "name": "french-color-tomato",
+      "prompt": "La couleur de la tomate est le \"",
+      "target": "rouge",
+      "intermediates": [
+        "French",
+        "color",
+        "tomato",
+        "red"
+      ]
+    },
+    {
+      "name": "german-color-coal",
+      "prompt": "Die Farbe der Kohle ist \"",
+      "target": "schwarz",
+      "intermediates": [
+        "German",
+        "color",
+        "coal",
+        "black"
+      ]
+    },
+    {
+      "name": "italian-color-milk",
+      "prompt": "Il colore del latte è \"",
+      "target": "bianco",
+      "intermediates": [
+        "Italian",
+        "color",
+        "milk",
+        "white"
+      ]
+    },
+    {
+      "name": "portuguese-color-coal",
+      "prompt": "A cor do carvão é \"",
+      "target": "preto",
+      "intermediates": [
+        "Portuguese",
+        "color",
+        "coal",
+        "black"
+      ]
+    },
+    {
+      "name": "dutch-color-milk",
+      "prompt": "De kleur van melk is \"",
+      "target": "wit",
+      "intermediates": [
+        "Dutch",
+        "color",
+        "milk",
+        "white"
+      ]
+    },
+    {
+      "name": "russian-color-lemon",
+      "prompt": "Цвет лимона — \"",
+      "target": "жёлтый",
+      "intermediates": [
+        "Russian",
+        "color",
+        "lemon",
+        "yellow"
+      ]
+    },
+    {
+      "name": "polish-color-tomato",
+      "prompt": "Kolor pomidora to \"",
+      "target": "czerwony",
+      "intermediates": [
+        "Polish",
+        "color",
+        "tomato",
+        "red"
+      ]
+    },
+    {
+      "name": "swedish-color-coal",
+      "prompt": "Färgen på kol är \"",
+      "target": "svart",
+      "intermediates": [
+        "Swedish",
+        "color",
+        "coal",
+        "black"
+      ]
+    },
+    {
+      "name": "japanese-color-lemon",
+      "prompt": "レモンの色は「",
+      "target": "黄色",
+      "intermediates": [
+        "Japanese",
+        "color",
+        "lemon",
+        "yellow"
+      ]
+    },
+    {
+      "name": "chinese-color-coal",
+      "prompt": "\"煤\"的颜色是\"",
+      "target": "黑",
+      "intermediates": [
+        "Chinese",
+        "color",
+        "coal",
+        "black"
+      ]
+    },
+    {
+      "name": "turkish-color-lemon",
+      "prompt": "Limonun rengi \"",
+      "target": "sarı",
+      "intermediates": [
+        "Turkish",
+        "color",
+        "lemon",
+        "yellow"
+      ]
+    },
+    {
+      "name": "vietnamese-color-milk",
+      "prompt": "Màu của sữa là \"",
+      "target": "trắng",
+      "intermediates": [
+        "Vietnamese",
+        "color",
+        "milk",
+        "white"
+      ]
+    },
+    {
+      "name": "indonesian-color-milk",
+      "prompt": "Warna susu adalah \"",
+      "target": "putih",
+      "intermediates": [
+        "Indonesian",
+        "color",
+        "milk",
+        "white"
+      ]
+    },
+    {
+      "name": "catalan-color-milk",
+      "prompt": "El color de la llet és \"",
+      "target": "blanc",
+      "intermediates": [
+        "Catalan",
+        "color",
+        "milk",
+        "white"
+      ]
+    },
+    {
+      "name": "greek-color-lemon",
+      "prompt": "Το χρώμα του λεμονιού είναι \"",
+      "target": "κίτρινο",
+      "intermediates": [
+        "Greek",
+        "color",
+        "lemon",
+        "yellow"
+      ]
+    },
+    {
+      "name": "finnish-color-coal",
+      "prompt": "Hiilen väri on \"",
+      "target": "musta",
+      "intermediates": [
+        "Finnish",
+        "color",
+        "coal",
+        "black"
+      ]
+    },
+    {
+      "name": "malay-color-coal",
+      "prompt": "Warna arang ialah \"",
+      "target": "hitam",
+      "intermediates": [
+        "Malay",
+        "color",
+        "coal",
+        "black"
+      ]
+    },
+    {
+      "name": "italian-number-six",
+      "prompt": "Dopo il \"sei\" viene il \"",
+      "target": "sette",
+      "intermediates": [
+        "Italian",
+        "number",
+        "six",
+        "seven"
+      ]
+    },
+    {
+      "name": "dutch-number-eight",
+      "prompt": "Na \"acht\" komt \"",
+      "target": "negen",
+      "intermediates": [
+        "Dutch",
+        "number",
+        "eight",
+        "nine"
+      ]
+    },
+    {
+      "name": "swedish-number-three",
+      "prompt": "Efter \"tre\" kommer \"",
+      "target": "fyra",
+      "intermediates": [
+        "Swedish",
+        "number",
+        "three",
+        "four"
+      ]
+    },
+    {
+      "name": "japanese-number-five",
+      "prompt": "「五」の次は「",
+      "target": "六",
+      "intermediates": [
+        "Japanese",
+        "number",
+        "five",
+        "six"
+      ]
+    },
+    {
+      "name": "polish-number-seven",
+      "prompt": "Po \"siedem\" jest \"",
+      "target": "osiem",
+      "intermediates": [
+        "Polish",
+        "number",
+        "seven",
+        "eight"
+      ]
+    },
+    {
+      "name": "turkish-number-four",
+      "prompt": "\"Dört\" sayısından sonra \"",
+      "target": "beş",
+      "intermediates": [
+        "Turkish",
+        "number",
+        "four",
+        "five"
+      ]
+    },
+    {
+      "name": "greek-number-two",
+      "prompt": "Μετά το \"δύο\" έρχεται το \"",
+      "target": "τρία",
+      "intermediates": [
+        "Greek",
+        "number",
+        "two",
+        "three"
+      ]
+    },
+    {
+      "name": "hindi-number-six",
+      "prompt": "\"छह\" के बाद \"",
+      "target": "सात",
+      "intermediates": [
+        "Hindi",
+        "number",
+        "six",
+        "seven"
+      ]
+    },
+    {
+      "name": "es-number-after-nine",
+      "prompt": "El número después de nueve es \"",
+      "target": "diez",
+      "intermediates": [
+        "español",
+        "number",
+        "nine",
+        "ten"
+      ]
+    },
+    {
+      "name": "pt-number-after-seven",
+      "prompt": "O número depois de sete é \"",
+      "target": "oito",
+      "intermediates": [
+        "português",
+        "number",
+        "seven",
+        "eight"
+      ]
+    },
+    {
+      "name": "portuguese-family-grandfather",
+      "prompt": "O pai do meu pai é o meu \"",
+      "target": "avô",
+      "intermediates": [
+        "Portuguese",
+        "family",
+        "father",
+        "grandfather"
+      ]
+    },
+    {
+      "name": "dutch-family-grandfather",
+      "prompt": "De vader van mijn moeder is mijn \"",
+      "target": "opa",
+      "intermediates": [
+        "Dutch",
+        "family",
+        "father",
+        "grandfather"
+      ]
+    },
+    {
+      "name": "swedish-family-niece",
+      "prompt": "Dottern till min bror är min \"",
+      "target": "brorsdotter",
+      "intermediates": [
+        "Swedish",
+        "family",
+        "daughter",
+        "niece"
+      ]
+    },
+    {
+      "name": "russian-family-niece",
+      "prompt": "Дочь моей сестры — моя \"",
+      "target": "племянница",
+      "intermediates": [
+        "Russian",
+        "family",
+        "daughter",
+        "niece"
+      ]
+    },
+    {
+      "name": "italian-body-smell",
+      "prompt": "Sentiamo gli odori con il \"",
+      "target": "naso",
+      "intermediates": [
+        "Italian",
+        "body",
+        "smell",
+        "nose"
+      ]
+    },
+    {
+      "name": "portuguese-body-chew",
+      "prompt": "Mastigamos com os \"",
+      "target": "dentes",
+      "intermediates": [
+        "Portuguese",
+        "body",
+        "chew",
+        "teeth"
+      ]
+    },
+    {
+      "name": "dutch-body-smell",
+      "prompt": "We ruiken met onze \"",
+      "target": "neus",
+      "intermediates": [
+        "Dutch",
+        "body",
+        "smell",
+        "nose"
+      ]
+    },
+    {
+      "name": "german-body-smell",
+      "prompt": "Wir riechen mit der \"",
+      "target": "Nase",
+      "intermediates": [
+        "German",
+        "body",
+        "smell",
+        "nose"
+      ]
+    },
+    {
+      "name": "spanish-body-chew",
+      "prompt": "Masticamos con los \"",
+      "target": "dientes",
+      "intermediates": [
+        "Spanish",
+        "body",
+        "chew",
+        "teeth"
+      ]
+    },
+    {
+      "name": "french-body-smell",
+      "prompt": "Nous sentons les odeurs avec le \"",
+      "target": "nez",
+      "intermediates": [
+        "French",
+        "body",
+        "smell",
+        "nose"
+      ]
+    },
+    {
+      "name": "german-boil-water",
+      "prompt": "Wenn Wasser kocht, wird es zu \"",
+      "target": "Dampf",
+      "intermediates": [
+        "German",
+        "boil",
+        "water",
+        "steam"
+      ]
+    },
+    {
+      "name": "spanish-boil-water",
+      "prompt": "Cuando el agua hierve se convierte en \"",
+      "target": "vapor",
+      "intermediates": [
+        "Spanish",
+        "boil",
+        "water",
+        "steam"
+      ]
+    },
+    {
+      "name": "french-melt-snow",
+      "prompt": "Quand la neige fond, elle devient de l'\"",
+      "target": "eau",
+      "intermediates": [
+        "French",
+        "melt",
+        "snow",
+        "water"
+      ]
+    },
+    {
+      "name": "italian-melt-ice",
+      "prompt": "Quando il ghiaccio si scioglie diventa \"",
+      "target": "acqua",
+      "intermediates": [
+        "Italian",
+        "melt",
+        "ice",
+        "water"
+      ]
+    },
+    {
+      "name": "it-month-after-mar",
+      "prompt": "Il mese dopo marzo è \"",
+      "target": "aprile",
+      "intermediates": [
+        "Italian",
+        "month",
+        "March",
+        "April"
+      ]
+    },
+    {
+      "name": "nl-month-after-may",
+      "prompt": "De maand na mei is \"",
+      "target": "juni",
+      "intermediates": [
+        "Dutch",
+        "month",
+        "May",
+        "June"
+      ]
+    },
+    {
+      "name": "pl-month-after-jan",
+      "prompt": "Miesiąc po styczniu to \"",
+      "target": "luty",
+      "intermediates": [
+        "Polish",
+        "month",
+        "January",
+        "February"
+      ]
+    },
+    {
+      "name": "sv-month-after-apr",
+      "prompt": "Månaden efter april är \"",
+      "target": "maj",
+      "intermediates": [
+        "Swedish",
+        "month",
+        "April",
+        "May"
+      ]
+    },
+    {
+      "name": "ru-month-after-jun",
+      "prompt": "Месяц после июня — \"",
+      "target": "июль",
+      "intermediates": [
+        "Russian",
+        "month",
+        "June",
+        "July"
+      ]
+    },
+    {
+      "name": "tr-month-after-oct",
+      "prompt": "Ekim ayından sonra gelen ay \"",
+      "target": "Kasım",
+      "intermediates": [
+        "Turkish",
+        "month",
+        "October",
+        "November"
+      ]
+    },
+    {
+      "name": "es-month-after-nov",
+      "prompt": "El mes después de noviembre es \"",
+      "target": "diciembre",
+      "intermediates": [
+        "español",
+        "month",
+        "November",
+        "December"
+      ]
+    },
+    {
+      "name": "pt-month-after-feb",
+      "prompt": "O mês depois de fevereiro é \"",
+      "target": "março",
+      "intermediates": [
+        "português",
+        "month",
+        "February",
+        "March"
+      ]
+    },
+    {
+      "name": "frn-month-after-aug",
+      "prompt": "Le mois après août est \"",
+      "target": "septembre",
+      "intermediates": [
+        "français",
+        "month",
+        "August",
+        "September"
+      ]
+    },
+    {
+      "name": "german-day-wednesday",
+      "prompt": "Der Tag nach Mittwoch ist \"",
+      "target": "Donnerstag",
+      "intermediates": [
+        "German",
+        "day",
+        "Wednesday",
+        "Thursday"
+      ]
+    },
+    {
+      "name": "spanish-day-friday",
+      "prompt": "El día después del viernes es el \"",
+      "target": "sábado",
+      "intermediates": [
+        "Spanish",
+        "day",
+        "Friday",
+        "Saturday"
+      ]
+    },
+    {
+      "name": "french-day-saturday",
+      "prompt": "Le jour après samedi est \"",
+      "target": "dimanche",
+      "intermediates": [
+        "French",
+        "day",
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    {
+      "name": "italian-day-thursday",
+      "prompt": "Il giorno dopo giovedì è \"",
+      "target": "venerdì",
+      "intermediates": [
+        "Italian",
+        "day",
+        "Thursday",
+        "Friday"
+      ]
+    },
+    {
+      "name": "chinese-day-friday",
+      "prompt": "星期五的后一天是星期",
+      "target": "六",
+      "intermediates": [
+        "Chinese",
+        "day",
+        "Friday",
+        "Saturday"
+      ]
+    },
+    {
+      "name": "korean-day-thursday",
+      "prompt": "목요일 다음 날은 \"",
+      "target": "금요일",
+      "intermediates": [
+        "Korean",
+        "day",
+        "Thursday",
+        "Friday"
+      ]
+    },
+    {
+      "name": "german-season-winter",
+      "prompt": "Die Jahreszeit nach dem Winter ist der \"",
+      "target": "Frühling",
+      "intermediates": [
+        "German",
+        "season",
+        "winter",
+        "spring"
+      ]
+    },
+    {
+      "name": "spanish-season-autumn",
+      "prompt": "La estación después del otoño es el \"",
+      "target": "invierno",
+      "intermediates": [
+        "Spanish",
+        "season",
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "name": "italian-season-winter",
+      "prompt": "La stagione dopo l'inverno è la \"",
+      "target": "primavera",
+      "intermediates": [
+        "Italian",
+        "season",
+        "winter",
+        "spring"
+      ]
+    },
+    {
+      "name": "polish-season-autumn",
+      "prompt": "Po jesieni przychodzi \"",
+      "target": "zima",
+      "intermediates": [
+        "Polish",
+        "season",
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "name": "russian-season-winter",
+      "prompt": "После зимы наступает \"",
+      "target": "весна",
+      "intermediates": [
+        "Russian",
+        "season",
+        "winter",
+        "spring"
+      ]
+    },
+    {
+      "name": "french-taste-sugar",
+      "prompt": "Le sucre a un goût \"",
+      "target": "sucré",
+      "intermediates": [
+        "French",
+        "taste",
+        "sugar",
+        "sweet"
+      ]
+    },
+    {
+      "name": "spanish-taste-lemon",
+      "prompt": "El limón tiene un sabor \"",
+      "target": "ácido",
+      "intermediates": [
+        "Spanish",
+        "taste",
+        "lemon",
+        "sour"
+      ]
+    },
+    {
+      "name": "german-taste-sugar",
+      "prompt": "Zucker schmeckt \"",
+      "target": "süß",
+      "intermediates": [
+        "German",
+        "taste",
+        "sugar",
+        "sweet"
+      ]
+    },
+    {
+      "name": "italian-taste-coffee",
+      "prompt": "Il caffè senza zucchero è \"",
+      "target": "amaro",
+      "intermediates": [
+        "Italian",
+        "taste",
+        "coffee",
+        "bitter"
+      ]
+    },
+    {
+      "name": "spanish-capital-france",
+      "prompt": "La capital de Francia es \"",
+      "target": "París",
+      "intermediates": [
+        "Spanish",
+        "capital",
+        "France",
+        "Paris"
+      ]
+    },
+    {
+      "name": "german-capital-italy",
+      "prompt": "Die Hauptstadt von Italien ist \"",
+      "target": "Rom",
+      "intermediates": [
+        "German",
+        "capital",
+        "Italy",
+        "Rome"
+      ]
+    },
+    {
+      "name": "french-capital-japan",
+      "prompt": "La capitale du Japon est \"",
+      "target": "Tokyo",
+      "intermediates": [
+        "French",
+        "capital",
+        "Japan",
+        "Tokyo"
+      ]
+    },
+    {
+      "name": "portuguese-capital-spain",
+      "prompt": "A capital da Espanha é \"",
+      "target": "Madrid",
+      "intermediates": [
+        "Portuguese",
+        "capital",
+        "Spain",
+        "Madrid"
+      ]
+    },
+    {
+      "name": "russian-capital-germany",
+      "prompt": "Столица Германии — \"",
+      "target": "Берлин",
+      "intermediates": [
+        "Russian",
+        "capital",
+        "Germany",
+        "Berlin"
+      ]
+    },
+    {
+      "name": "chinese-capital-japan",
+      "prompt": "\"日本\"的首都是\"",
+      "target": "东京",
+      "intermediates": [
+        "Chinese",
+        "capital",
+        "Japan",
+        "Tokyo"
+      ]
+    },
+    {
+      "name": "turkish-capital-italy",
+      "prompt": "İtalya'nın başkenti \"",
+      "target": "Roma",
+      "intermediates": [
+        "Turkish",
+        "capital",
+        "Italy",
+        "Rome"
+      ]
+    },
+    {
+      "name": "it-half-eight",
+      "prompt": "La metà di otto è \"",
+      "target": "quattro",
+      "intermediates": [
+        "Italian",
+        "half",
+        "eight",
+        "four"
+      ]
+    },
+    {
+      "name": "nl-half-ten",
+      "prompt": "De helft van tien is \"",
+      "target": "vijf",
+      "intermediates": [
+        "Dutch",
+        "half",
+        "ten",
+        "five"
+      ]
+    },
+    {
+      "name": "it-double-four",
+      "prompt": "Il doppio di quattro è \"",
+      "target": "otto",
+      "intermediates": [
+        "Italian",
+        "double",
+        "four",
+        "eight"
+      ]
+    },
+    {
+      "name": "es-double-five",
+      "prompt": "El doble de cinco es \"",
+      "target": "diez",
+      "intermediates": [
+        "español",
+        "double",
+        "five",
+        "ten"
+      ]
+    },
+    {
+      "name": "pt-half-ten",
+      "prompt": "A metade de dez é \"",
+      "target": "cinco",
+      "intermediates": [
+        "português",
+        "half",
+        "ten",
+        "five"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,816 @@
+{
+  "items": [
+    {
+      "name": "typo-necessary",
+      "prompt": "The doctor said the surgery was absolutely neccessary",
+      "intermediates": [
+        "necessary"
+      ]
+    },
+    {
+      "name": "typo-separate",
+      "prompt": "They kept their receipts in two seperate",
+      "intermediates": [
+        "separate"
+      ]
+    },
+    {
+      "name": "typo-definitely",
+      "prompt": "She said she would definately",
+      "intermediates": [
+        "definitely"
+      ]
+    },
+    {
+      "name": "typo-beginning",
+      "prompt": "The movie was confusing right from the begining",
+      "intermediates": [
+        "beginning"
+      ]
+    },
+    {
+      "name": "typo-receive",
+      "prompt": "All applicants should soon recieve",
+      "intermediates": [
+        "receive"
+      ]
+    },
+    {
+      "name": "typo-believe",
+      "prompt": "He told the story so calmly that I could hardly beleive",
+      "intermediates": [
+        "believe"
+      ]
+    },
+    {
+      "name": "typo-tomorrow",
+      "prompt": "The meeting has been moved to tommorow",
+      "intermediates": [
+        "tomorrow"
+      ]
+    },
+    {
+      "name": "typo-restaurant",
+      "prompt": "They had dinner at a fancy Italian resturant",
+      "intermediates": [
+        "restaurant"
+      ]
+    },
+    {
+      "name": "typo-weird",
+      "prompt": "The noise coming from the attic was really wierd",
+      "intermediates": [
+        "weird"
+      ]
+    },
+    {
+      "name": "typo-friend",
+      "prompt": "She went to the movies with her best freind",
+      "intermediates": [
+        "friend"
+      ]
+    },
+    {
+      "name": "typo-piece",
+      "prompt": "He cut himself a large peice",
+      "intermediates": [
+        "piece"
+      ]
+    },
+    {
+      "name": "typo-calendar",
+      "prompt": "She marked the date on the kitchen calender",
+      "intermediates": [
+        "calendar"
+      ]
+    },
+    {
+      "name": "typo-environment",
+      "prompt": "The new law aims to protect the enviroment",
+      "intermediates": [
+        "environment"
+      ]
+    },
+    {
+      "name": "typo-experience",
+      "prompt": "The job requires at least five years of experiance",
+      "intermediates": [
+        "experience"
+      ]
+    },
+    {
+      "name": "typo-knowledge",
+      "prompt": "The old librarian had an incredible breadth of knowlege",
+      "intermediates": [
+        "knowledge"
+      ]
+    },
+    {
+      "name": "typo-neighbor",
+      "prompt": "We borrowed a ladder from our next-door nieghbor",
+      "intermediates": [
+        "neighbor"
+      ]
+    },
+    {
+      "name": "typo-beautiful",
+      "prompt": "The sunset over the bay was beutiful",
+      "intermediates": [
+        "beautiful"
+      ]
+    },
+    {
+      "name": "typo-especially",
+      "prompt": "She loved every season of the year, espcially",
+      "intermediates": [
+        "especially"
+      ]
+    },
+    {
+      "name": "typo-probably",
+      "prompt": "He said the train would probaly",
+      "intermediates": [
+        "probably"
+      ]
+    },
+    {
+      "name": "typo-interesting",
+      "prompt": "The lecture turned out to be very intresting",
+      "intermediates": [
+        "interesting"
+      ]
+    },
+    {
+      "name": "typo-surprise",
+      "prompt": "They planned the birthday party as a big suprise",
+      "intermediates": [
+        "surprise"
+      ]
+    },
+    {
+      "name": "typo-temperature",
+      "prompt": "The nurse checked the patient's temprature",
+      "intermediates": [
+        "temperature"
+      ]
+    },
+    {
+      "name": "typo-weather",
+      "prompt": "They canceled the picnic because of the bad wether",
+      "intermediates": [
+        "weather"
+      ]
+    },
+    {
+      "name": "typo-Wednesday",
+      "prompt": "The package will be delivered next Wensday",
+      "intermediates": [
+        "Wednesday"
+      ]
+    },
+    {
+      "name": "typo-argument",
+      "prompt": "The two brothers got into a loud arguement",
+      "intermediates": [
+        "argument"
+      ]
+    },
+    {
+      "name": "typo-exercise",
+      "prompt": "The doctor told him to get more excercise",
+      "intermediates": [
+        "exercise"
+      ]
+    },
+    {
+      "name": "typo-foreign",
+      "prompt": "She enjoys learning about foriegn",
+      "intermediates": [
+        "foreign"
+      ]
+    },
+    {
+      "name": "typo-immediately",
+      "prompt": "The manager wanted the report on his desk immediatly",
+      "intermediates": [
+        "immediately"
+      ]
+    },
+    {
+      "name": "typo-independent",
+      "prompt": "After the war the small country finally became indepedent",
+      "intermediates": [
+        "independent"
+      ]
+    },
+    {
+      "name": "typo-minute",
+      "prompt": "Please wait here for just one minnute",
+      "intermediates": [
+        "minute"
+      ]
+    },
+    {
+      "name": "typo-official",
+      "prompt": "The results were finally made offical",
+      "intermediates": [
+        "official"
+      ]
+    },
+    {
+      "name": "typo-recommend",
+      "prompt": "Which of these books would you reccomend",
+      "intermediates": [
+        "recommend"
+      ]
+    },
+    {
+      "name": "typo-schedule",
+      "prompt": "The train was running far behind schedual",
+      "intermediates": [
+        "schedule"
+      ]
+    },
+    {
+      "name": "typo-sentence",
+      "prompt": "The teacher asked him to finish the sentance",
+      "intermediates": [
+        "sentence"
+      ]
+    },
+    {
+      "name": "typo-successful",
+      "prompt": "The launch of the new product was very succesful",
+      "intermediates": [
+        "successful"
+      ]
+    },
+    {
+      "name": "typo-technology",
+      "prompt": "The company invests heavily in new techology",
+      "intermediates": [
+        "technology"
+      ]
+    },
+    {
+      "name": "typo-vegetable",
+      "prompt": "He refused to eat a single vegtable",
+      "intermediates": [
+        "vegetable"
+      ]
+    },
+    {
+      "name": "typo-yesterday",
+      "prompt": "She finished reading the whole book yesturday",
+      "intermediates": [
+        "yesterday"
+      ]
+    },
+    {
+      "name": "typo-chocolate",
+      "prompt": "For dessert they shared a bar of dark choclate",
+      "intermediates": [
+        "chocolate"
+      ]
+    },
+    {
+      "name": "typo-animal",
+      "prompt": "The zoo had nearly every kind of aniaml",
+      "intermediates": [
+        "animal"
+      ]
+    },
+    {
+      "name": "typo-problem",
+      "prompt": "The engineers found a serious probelm",
+      "intermediates": [
+        "problem"
+      ]
+    },
+    {
+      "name": "typo-children",
+      "prompt": "The playground was full of laughing chidren",
+      "intermediates": [
+        "children"
+      ]
+    },
+    {
+      "name": "typo-answer",
+      "prompt": "She raised her hand to give the anwser",
+      "intermediates": [
+        "answer"
+      ]
+    },
+    {
+      "name": "typo-picture",
+      "prompt": "He hung the frame and straightened the pictrue",
+      "intermediates": [
+        "picture"
+      ]
+    },
+    {
+      "name": "typo-mountain",
+      "prompt": "They spent the whole day hiking up the mountian",
+      "intermediates": [
+        "mountain"
+      ]
+    },
+    {
+      "name": "typo-kitchen",
+      "prompt": "The smell of fresh bread drifted out of the kitchn",
+      "intermediates": [
+        "kitchen"
+      ]
+    },
+    {
+      "name": "typo-garden",
+      "prompt": "She planted tomatoes in the back gardne",
+      "intermediates": [
+        "garden"
+      ]
+    },
+    {
+      "name": "typo-doctor",
+      "prompt": "He felt sick all weekend and finally called the doctr",
+      "intermediates": [
+        "doctor"
+      ]
+    },
+    {
+      "name": "typo-window",
+      "prompt": "The bird flew straight into the windwo",
+      "intermediates": [
+        "window"
+      ]
+    },
+    {
+      "name": "typo-morning",
+      "prompt": "She always drinks coffee first thing in the mornign",
+      "intermediates": [
+        "morning"
+      ]
+    },
+    {
+      "name": "typo-evening",
+      "prompt": "They went for a walk in the cool eveing",
+      "intermediates": [
+        "evening"
+      ]
+    },
+    {
+      "name": "typo-question",
+      "prompt": "The student raised her hand to ask a quesiton",
+      "intermediates": [
+        "question"
+      ]
+    },
+    {
+      "name": "typo-student",
+      "prompt": "The professor met individually with each studnet",
+      "intermediates": [
+        "student"
+      ]
+    },
+    {
+      "name": "typo-hospital",
+      "prompt": "The ambulance rushed him to the nearest hosptial",
+      "intermediates": [
+        "hospital"
+      ]
+    },
+    {
+      "name": "typo-breakfast",
+      "prompt": "He skipped lunch but never skipped breakfst",
+      "intermediates": [
+        "breakfast"
+      ]
+    },
+    {
+      "name": "typo-weekend",
+      "prompt": "They drove out to the coast for the weeknd",
+      "intermediates": [
+        "weekend"
+      ]
+    },
+    {
+      "name": "typo-holiday",
+      "prompt": "The office will be closed for the holliday",
+      "intermediates": [
+        "holiday"
+      ]
+    },
+    {
+      "name": "typo-favorite",
+      "prompt": "Pizza has always been her favroite",
+      "intermediates": [
+        "favorite"
+      ]
+    },
+    {
+      "name": "typo-dinner",
+      "prompt": "They invited the new neighbors over for dinnner",
+      "intermediates": [
+        "dinner"
+      ]
+    },
+    {
+      "name": "typo-daughter",
+      "prompt": "He walked proudly down the aisle with his daugther",
+      "intermediates": [
+        "daughter"
+      ]
+    },
+    {
+      "name": "typo-brother",
+      "prompt": "She shared a bedroom with her younger brohter",
+      "intermediates": [
+        "brother"
+      ]
+    },
+    {
+      "name": "typo-sister",
+      "prompt": "He called to wish a happy birthday to his sistr",
+      "intermediates": [
+        "sister"
+      ]
+    },
+    {
+      "name": "typo-husband",
+      "prompt": "She went shopping for groceries with her husbnad",
+      "intermediates": [
+        "husband"
+      ]
+    },
+    {
+      "name": "typo-movie",
+      "prompt": "They stayed up late to watch a scary moive",
+      "intermediates": [
+        "movie"
+      ]
+    },
+    {
+      "name": "typo-money",
+      "prompt": "He had already spent all of his mony",
+      "intermediates": [
+        "money"
+      ]
+    },
+    {
+      "name": "typo-airport",
+      "prompt": "They arrived two hours early at the aiport",
+      "intermediates": [
+        "airport"
+      ]
+    },
+    {
+      "name": "typo-camera",
+      "prompt": "She took the photo with her old camra",
+      "intermediates": [
+        "camera"
+      ]
+    },
+    {
+      "name": "typo-coffee",
+      "prompt": "He poured himself another cup of coffe",
+      "intermediates": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "typo-letter",
+      "prompt": "She opened the envelope and read the leter",
+      "intermediates": [
+        "letter"
+      ]
+    },
+    {
+      "name": "typo-paper",
+      "prompt": "He wrote his name on a piece of papper",
+      "intermediates": [
+        "paper"
+      ]
+    },
+    {
+      "name": "typo-pencil",
+      "prompt": "The student sharpened her penicl",
+      "intermediates": [
+        "pencil"
+      ]
+    },
+    {
+      "name": "typo-table",
+      "prompt": "She set the plates on the kitchen tabel",
+      "intermediates": [
+        "table"
+      ]
+    },
+    {
+      "name": "typo-bottle",
+      "prompt": "He drank the whole bottel",
+      "intermediates": [
+        "bottle"
+      ]
+    },
+    {
+      "name": "typo-basket",
+      "prompt": "She packed sandwiches into the picnic baskit",
+      "intermediates": [
+        "basket"
+      ]
+    },
+    {
+      "name": "typo-bridge",
+      "prompt": "The cars crawled slowly across the brigde",
+      "intermediates": [
+        "bridge"
+      ]
+    },
+    {
+      "name": "typo-castle",
+      "prompt": "The tourists toured the medieval castel",
+      "intermediates": [
+        "castle"
+      ]
+    },
+    {
+      "name": "typo-forest",
+      "prompt": "They got lost in the dark forrest",
+      "intermediates": [
+        "forest"
+      ]
+    },
+    {
+      "name": "typo-ocean",
+      "prompt": "The ship sailed across the vast ocaen",
+      "intermediates": [
+        "ocean"
+      ]
+    },
+    {
+      "name": "typo-energy",
+      "prompt": "The new panels produce clean enrgy",
+      "intermediates": [
+        "energy"
+      ]
+    },
+    {
+      "name": "typo-health",
+      "prompt": "Regular exercise is good for your helth",
+      "intermediates": [
+        "health"
+      ]
+    },
+    {
+      "name": "typo-medicine",
+      "prompt": "The doctor prescribed a new medecine",
+      "intermediates": [
+        "medicine"
+      ]
+    },
+    {
+      "name": "typo-travel",
+      "prompt": "She saved up money so that she could travle",
+      "intermediates": [
+        "travel"
+      ]
+    },
+    {
+      "name": "typo-famous",
+      "prompt": "Overnight the young actor became incredibly famos",
+      "intermediates": [
+        "famous"
+      ]
+    },
+    {
+      "name": "typo-simple",
+      "prompt": "The instructions were surprisingly simpel",
+      "intermediates": [
+        "simple"
+      ]
+    },
+    {
+      "name": "typo-usually",
+      "prompt": "She woke up early, as she usualy",
+      "intermediates": [
+        "usually"
+      ]
+    },
+    {
+      "name": "typo-finally",
+      "prompt": "After two hours of waiting, the bus finaly",
+      "intermediates": [
+        "finally"
+      ]
+    },
+    {
+      "name": "typo-suddenly",
+      "prompt": "The lights in the room went out sudenly",
+      "intermediates": [
+        "suddenly"
+      ]
+    },
+    {
+      "name": "typo-quickly",
+      "prompt": "He finished his homework very quikly",
+      "intermediates": [
+        "quickly"
+      ]
+    },
+    {
+      "name": "typo-certainly",
+      "prompt": "She said that she would certianly",
+      "intermediates": [
+        "certainly"
+      ]
+    },
+    {
+      "name": "typo-actually",
+      "prompt": "He thought it was a joke, but it was actualy",
+      "intermediates": [
+        "actually"
+      ]
+    },
+    {
+      "name": "typo-thought",
+      "prompt": "She stared out the window, lost in thougth",
+      "intermediates": [
+        "thought"
+      ]
+    },
+    {
+      "name": "typo-enough",
+      "prompt": "No matter how much he earned, there was never enouhg",
+      "intermediates": [
+        "enough"
+      ]
+    },
+    {
+      "name": "typo-straight",
+      "prompt": "The road ahead ran perfectly striaght",
+      "intermediates": [
+        "straight"
+      ]
+    },
+    {
+      "name": "typo-tonight",
+      "prompt": "She promised she would call him tonihgt",
+      "intermediates": [
+        "tonight"
+      ]
+    },
+    {
+      "name": "typo-listen",
+      "prompt": "He talked a lot but never seemed to lisen",
+      "intermediates": [
+        "listen"
+      ]
+    },
+    {
+      "name": "typo-whole",
+      "prompt": "She spent the wohle",
+      "intermediates": [
+        "whole"
+      ]
+    },
+    {
+      "name": "typo-their",
+      "prompt": "The children forgot thier",
+      "intermediates": [
+        "their"
+      ]
+    },
+    {
+      "name": "typo-early",
+      "prompt": "She arrived at the office very eraly",
+      "intermediates": [
+        "early"
+      ]
+    },
+    {
+      "name": "typo-woman",
+      "prompt": "He held the door for an elderly womna",
+      "intermediates": [
+        "woman"
+      ]
+    },
+    {
+      "name": "typo-during",
+      "prompt": "He fell asleep durring",
+      "intermediates": [
+        "during"
+      ]
+    },
+    {
+      "name": "typo-truly",
+      "prompt": "She was sorry, trully",
+      "intermediates": [
+        "truly"
+      ]
+    },
+    {
+      "name": "typo-written",
+      "prompt": "The letter was beautifully writen",
+      "intermediates": [
+        "written"
+      ]
+    },
+    {
+      "name": "typo-system",
+      "prompt": "The company upgraded its computer sytem",
+      "intermediates": [
+        "system"
+      ]
+    },
+    {
+      "name": "typo-public",
+      "prompt": "The park is open to the pubilc",
+      "intermediates": [
+        "public"
+      ]
+    },
+    {
+      "name": "typo-service",
+      "prompt": "The restaurant was known for its excellent serivce",
+      "intermediates": [
+        "service"
+      ]
+    },
+    {
+      "name": "typo-report",
+      "prompt": "She stayed late to finish the quarterly reprot",
+      "intermediates": [
+        "report"
+      ]
+    },
+    {
+      "name": "typo-yellow",
+      "prompt": "She painted the bedroom walls bright yelow",
+      "intermediates": [
+        "yellow"
+      ]
+    },
+    {
+      "name": "typo-purple",
+      "prompt": "Her favorite color has always been purpel",
+      "intermediates": [
+        "purple"
+      ]
+    },
+    {
+      "name": "typo-orange",
+      "prompt": "He peeled and ate a juicy ornage",
+      "intermediates": [
+        "orange"
+      ]
+    },
+    {
+      "name": "typo-banana",
+      "prompt": "The monkey reached for the ripe bannana",
+      "intermediates": [
+        "banana"
+      ]
+    },
+    {
+      "name": "typo-potato",
+      "prompt": "He served the steak with a baked potatoe",
+      "intermediates": [
+        "potato"
+      ]
+    },
+    {
+      "name": "typo-pizza",
+      "prompt": "They ordered a large pepperoni piza",
+      "intermediates": [
+        "pizza"
+      ]
+    },
+    {
+      "name": "typo-guitar",
+      "prompt": "He sat on the porch strumming his gutiar",
+      "intermediates": [
+        "guitar"
+      ]
+    },
+    {
+      "name": "typo-piano",
+      "prompt": "She practiced every evening on the old pinao",
+      "intermediates": [
+        "piano"
+      ]
+    },
+    {
+      "name": "typo-soccer",
+      "prompt": "The kids played a game of socer",
+      "intermediates": [
+        "soccer"
+      ]
+    },
+    {
+      "name": "typo-dollar",
+      "prompt": "The ticket cost exactly one dollor",
+      "intermediates": [
+        "dollar"
+      ]
+    }
+  ]
+}
