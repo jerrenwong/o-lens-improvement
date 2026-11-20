@@ -1,0 +1,19 @@
+21:48:32 raw 48000; drops {'contains word/inflection': 1211, '< 6 tokens': 6, 'no sentence end': 10, 'near-duplicate': 806}; words with >=12 kept: 2398 of 2400
+21:48:32 kept-per-word distribution: [(10, 1), (11, 1), (12, 1), (13, 1), (14, 8), (15, 13), (16, 33), (17, 109), (18, 333), (19, 761), (20, 1139)]
+21:48:32 sentences kept 45946; by split Counter({'train': 38275, 'test': 3837, 'val': 3834}); words by split Counter({'train': 1998, 'val': 200, 'test': 200}); style Counter({0: 23796, 1: 22150})
+         itself s1 | The writer, a master of the craft, did not need a second opinion to craft his own story.
+       habitats s1 | Penguins, seals, and polar bears all share a cold, icy realm where icebergs float.
+           Hall s1 | The guests stood in the large, open space filled with chandeliers and waiting for the announcer.
+          Corps s1 | The soldiers stood in grey uniforms at attention, ready to lead the army into battle.
+      increased s1 | More workers arrived, and the pile of boxes grew to nearly double its original height.
+       laughing s1 | We couldn't help ourselves as the clown dropped the red balloon on the ground.
+         pushed s1 | The door wouldn't open inward, so I had to force my weight against the knob until it yielded.
+        reasons s2 | These are the explanations or motives behind why someone decided to act or think in a certain way.
+       attached s2 | When an object is joined firmly to something else or a person feels emotionally connected to another, they are not apart.
+          holds s2 | This verb means to support or keep a heavy object in your hands so that it does not drop or fall.
+     Conference s1 | Hundreds of scientists gathered in the main hall to share new discoveries and debate policies.
+      commander s2 | They are the person in charge who gives orders to the soldiers while leading the military unit.
+21:48:43 surface forms per word [(1, 525), (2, 520), (3, 358), (4, 995)]
+21:48:45 unembed check: top-20 overlap model.unembed vs (x*g)@U^T: 0.975
+21:51:17 forward done 136s
+21:51:33 saved /workspace/o-lens-improvement/.hf27/al1

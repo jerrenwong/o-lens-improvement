@@ -186,6 +186,14 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   GPU note: a 27B job must reserve memory at start (see /root/v3_greedy.py pattern: allocate blocks until 67 GB,
   free them to the cache, then load) or smaller jobs squeeze in while it loads and it dies of OOM.
 
+- THINK->WORD TRANSLATION MAP (al1; scripts/al1, .hf27/al1; 2,398 strict words x ~20 generated sentences; split by
+  word 1,998 / 200 / 200): noise-aware ridge M3 (whiten by within-word covariance, ridge on class means). UNSEEN test
+  words, top-10 over the full vocabulary, any of 7 layers: M3 .267, J++ .324, J++ + 0.3*M3 .527 (lam on val words),
+  shuffled-label .0003; sentence-ridge M1 .208; mean-ridge M2 .238. Learning curve .050/.080/.154/.267 for
+  250/500/1,000/2,000 words (not saturated). Mean of 8 sentences: M3 .43, J++ .48, mix .79. Hits overlap little
+  (both 363, J++ only 881, M3 only 663 of 3,837). BENCHMARK: no transfer (dev .5738 vs J++ .5952; M alone ~.01 on
+  fit; 0 prompts gained, 3 lost). Scale-up with 8,000 words and 5 text styles: agent al2 (.hf27/al2).
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
