@@ -1,0 +1,42 @@
+== L12 jspace_b1: P=384, active/item=64.0, median freq of active occurrences 0.2826
+  tau    0.5: blocks with freq>=tau     29/32768  active dropped/item  22.6  energy of (x-mean) dropped 0.680
+  tau   0.03: blocks with freq>=tau    247/32768  active dropped/item  46.7  energy of (x-mean) dropped 0.780
+== L16 jspace_b1: P=384, active/item=64.0, median freq of active occurrences 0.2034
+  tau    0.5: blocks with freq>=tau     26/32768  active dropped/item  20.3  energy of (x-mean) dropped 0.661
+  tau   0.03: blocks with freq>=tau    290/32768  active dropped/item  46.7  energy of (x-mean) dropped 0.773
+== L20 jspace_b1: P=384, active/item=64.0, median freq of active occurrences 0.0360
+  tau    0.5: blocks with freq>=tau     14/32768  active dropped/item  12.1  energy of (x-mean) dropped 0.512
+  tau   0.03: blocks with freq>=tau    343/32768  active dropped/item  34.7  energy of (x-mean) dropped 0.630
+== L24 jspace_b1: P=384, active/item=64.0, median freq of active occurrences 0.0190
+  tau    0.5: blocks with freq>=tau      5/32768  active dropped/item   4.6  energy of (x-mean) dropped 0.299
+  tau   0.03: blocks with freq>=tau    258/32768  active dropped/item  24.1  energy of (x-mean) dropped 0.429
+== L28 jspace_b1: P=384, active/item=64.0, median freq of active occurrences 0.0174
+  tau    0.5: blocks with freq>=tau      5/32768  active dropped/item   4.5  energy of (x-mean) dropped 0.176
+  tau   0.03: blocks with freq>=tau    212/32768  active dropped/item  22.4  energy of (x-mean) dropped 0.367
+== L4 jspace_b1: P=384, active/item=64.0, median freq of active occurrences 0.4877
+  tau    0.5: blocks with freq>=tau     43/32768  active dropped/item  31.7  energy of (x-mean) dropped 0.738
+  tau   0.03: blocks with freq>=tau    159/32768  active dropped/item  50.6  energy of (x-mean) dropped 0.843
+== L8 jspace_b1: P=384, active/item=64.0, median freq of active occurrences 0.3982
+  tau    0.5: blocks with freq>=tau     33/32768  active dropped/item  24.5  energy of (x-mean) dropped 0.640
+  tau   0.03: blocks with freq>=tau    200/32768  active dropped/item  48.2  energy of (x-mean) dropped 0.802
+== L12 resid_b1: P=384, active/item=64.0, median freq of active occurrences 0.0126
+  tau    0.5: blocks with freq>=tau      0/32768  active dropped/item   0.0  energy of (x-mean) dropped 0.000
+  tau   0.03: blocks with freq>=tau    286/32768  active dropped/item  16.1  energy of (x-mean) dropped 0.124
+== L16 resid_b1: P=384, active/item=64.0, median freq of active occurrences 0.0125
+  tau    0.5: blocks with freq>=tau      0/32768  active dropped/item   0.0  energy of (x-mean) dropped 0.000
+  tau   0.03: blocks with freq>=tau    302/32768  active dropped/item  13.9  energy of (x-mean) dropped 0.097
+== L20 resid_b1: P=384, active/item=64.0, median freq of active occurrences 0.0126
+  tau    0.5: blocks with freq>=tau      1/32768  active dropped/item   0.7  energy of (x-mean) dropped 0.018
+  tau   0.03: blocks with freq>=tau    206/32768  active dropped/item  11.0  energy of (x-mean) dropped 0.088
+== L24 resid_b1: P=384, active/item=64.0, median freq of active occurrences 0.0121
+  tau    0.5: blocks with freq>=tau      2/32768  active dropped/item   1.6  energy of (x-mean) dropped 0.025
+  tau   0.03: blocks with freq>=tau    161/32768  active dropped/item  13.0  energy of (x-mean) dropped 0.083
+== L28 resid_b1: P=384, active/item=64.0, median freq of active occurrences 0.0106
+  tau    0.5: blocks with freq>=tau      3/32768  active dropped/item   2.0  energy of (x-mean) dropped 0.016
+  tau   0.03: blocks with freq>=tau    140/32768  active dropped/item  10.7  energy of (x-mean) dropped 0.079
+== L4 resid_b1: P=384, active/item=64.0, median freq of active occurrences 0.0066
+  tau    0.5: blocks with freq>=tau      1/32768  active dropped/item   0.7  energy of (x-mean) dropped 0.018
+  tau   0.03: blocks with freq>=tau    203/32768  active dropped/item  12.7  energy of (x-mean) dropped 0.083
+== L8 resid_b1: P=384, active/item=64.0, median freq of active occurrences 0.0127
+  tau    0.5: blocks with freq>=tau      0/32768  active dropped/item   0.0  energy of (x-mean) dropped 0.000
+  tau   0.03: blocks with freq>=tau    259/32768  active dropped/item  17.6  energy of (x-mean) dropped 0.115
