@@ -151,6 +151,12 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   9B +3.2 [+0.9,+5.7]; 27B +2.8 [+0.2,+5.6]. Test splits alone: 2B +9.1 [+3.3,+15.8], 9B +3.3 [+0.4,+6.6], 27B +0.9
   [-2.0,+3.9]. Top-1 does not improve on any model. Input-specific part (A - shuffled): 2B +1.2, 9B +4.3, 27B +3.7.
 
+- FRESH-PROMPT TEST (pre-registered in auto/PREREG_v2.md; data/evals_v2, 563 new prompts frozen before scoring;
+  auto/evaluate_v2.py): PRIMARY A - J++ pass@10, mean over 9B and 27B = +2.2 [+0.6,+3.7] (p ~ 0.008). 9B +3.3
+  [+0.8,+5.9]; 27B +1.1 [-0.7,+2.9]. pass@1 -0.1 [-1.8,+1.7]. A - shuffled +6.1 [+4.7,+7.5]; shuffled - J++ -3.9.
+  Refined map B (content-word targets, prior removed, chat-format elicitation): -2.7 vs J++ on 9B (targets were letter
+  fragments; every lam below J++ on fit) -> abandoned.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,

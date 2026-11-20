@@ -31,3 +31,16 @@ The old test splits were scored twice on 9B/2B (gated lens, then A) and once on 
   pre-specified format rule selected a chat format whose first answer tokens are letter fragments. The 27B fit of B
   is cancelled to free the GPU. B remains a secondary comparison on v2 for 9B only (`e3_B.py`, `e3_B_shuf.py`).
 - The primary analysis is unchanged.
+
+## Results (scored once, 2026-11-20 17:54-18:18Z; runs auto/runs/V2_*; 469 prompts for 9B, 501 for 27B)
+PRIMARY: A - J++, pass@10 filtered, mean over 9B and 27B: 65.8 -> 68.0 = +2.2 [+0.6, +3.7] (bootstrap p ~ 0.008;
+75 prompts better, 44 worse). The interval excludes zero: the pre-registered claim holds.
+SECONDARY
+- 9B: +3.3 [+0.8,+5.9] pass@10; +1.6 [-1.0,+4.4] pass@1; +3.3 [+0.8,+5.9] unfiltered.
+- 27B: +1.1 [-0.7,+2.9] pass@10; -1.8 [-4.1,+0.5] pass@1; -0.2 [-2.1,+1.7] unfiltered.
+- Pooled pass@1: -0.1 [-1.8,+1.7]; pooled unfiltered pass@10: +1.5 [-0.0,+3.1].
+- A - shuffled control: +6.1 [+4.7,+7.5]; shuffled control - J++: -3.9 [-5.7,-2.3].
+- B (refined map, 9B only): -2.7 [-4.5,-1.0] vs J++; -5.9 [-8.4,-3.6] vs A.
+- Per task (J++ -> A): 9B association 61 -> 71, multihop 76 -> 82, multilingual 74 -> 78, poetry 12 -> 9, typo 97 -> 97;
+  27B association 76 -> 78, multihop 70 -> 72, multilingual 76 -> 77, poetry 16 -> 16, typo 99 -> 98.
+Note: v2 association prompts are easier than the originals (J++ 61% / 76% vs 29% / 39%).
