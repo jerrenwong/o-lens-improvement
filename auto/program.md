@@ -162,6 +162,24 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   .6206 / .839; 16000 .6116 / .879; 28500 .6265 / .881. The benchmark gain is flat in n (+1.3 to +3.1, no trend) while
   agreement on ordinary text keeps rising: the gain is not driven by the amount of distillation data.
 
+- WHY THE ASK-MAP HELPS (why1, 9B dev): all 14 gains are J++ near misses (rank 12-76); 0 of 59 far misses rescued. A
+  map from a BAG OF THE PROMPT'S VISIBLE WORD EMBEDDINGS (no model computation), lam chosen on fit, scores .6282 vs the
+  ask-map's .6265 -> on this benchmark the ask-map is a text-topic guess. Gain needs >= 256 directions, lives at L20-28.
+  Topic word is in the model's own next-token top-10 only 5% of the time; J++ hits it 92% when it is, 40% otherwise.
+- GENERATE-WITHOUT-NAMING MAP G (g1): 11,624 sentences / 6,000 words; ridge to the word's unembedding direction.
+  Dev +0.7 [-1.0,+2.4]; v3 9B +0.1. Memorises (train .998); on unseen words top-10 any layer: G .154, J++ .263, E .078.
+- ROUTED EXPERT READOUT (x1): using the activation's own cluster expert: .4810 (soft .455-.466; pooled .4393) vs the
+  fixed-weight refit .5735. Each expert alone is J-lens-like; J++'s reading comes from the SIGNED COMBINATION (heavy
+  cancellation: max|J| .20 vs 1.20 pooled at L28); the '@' direction is created by that combination.
+- THINK vs SAY (th1; 200 words x 50 generated sentences; runs/th1): decoding among 200 words, top-1: THINK probe
+  .88-.92 from L6 (.65 at L0 = lexical leakage), class-mean .30-.70, SAY (J++) peak .55 at L9, .34 at L21, .52 at L27.
+  98-99.9% of SAY hits are probe hits; SAY catches 52-85% of probe hits. cos(THINK_X, SAY_X) .15-.26 but SAY_X is the
+  nearest SAY direction for 90-97% of words; the 200 SAY directions hold 6-19% of THINK-offset energy (random 5%).
+  Steering at every token, k=6: THINK@L8 -> asked topic X 72%, says X 28%; SAY@L8 78% / 16%; SAY@L24 -> says X 72%,
+  topic stays Y 85%. Single-token edits never change the topic. => SAY is a thin slice of THINK; mid layers (8-16) are
+  where they overlap; late-layer SAY = "emit this token".
+- v3 9B (475 fresh prompts): A - J++ = +3.7 [+1.2,+6.4]; shuffled -3.5; G +0.1; AG +0.7.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
