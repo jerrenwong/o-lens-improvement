@@ -36,3 +36,12 @@ for 1000/1000 held-out prefixes in all three formats (p >= 0.996), so every targ
 fitted. For the v3 test, the 27B lens is the ORIGINAL frozen recipe A (`m27_A.py`, control `m27_C_shuf.py`), exactly
 as on v2. The PRIMARY analysis is therefore: A - J++, pass@10 filtered, mean over 9B and 27B, on v3 — a replication of
 the v2 primary on new prompts. Secondary additions: v2 and v3 pooled (both models), same metric.
+
+## Amendment 3 (2026-11-20 20:12Z, before any lens score on v3 was read; the automatic A / shuffled runs may be in progress)
+Added SECONDARY comparison on v3 for 9B: "W" = J++ whose expert weights are fitted on self-generated hidden-word
+sentences instead of the 75 labelled benchmark prompts. Experts: our recipe refit `runs/r2_9b/A/A_full/experts_K8.pt`
+(96 WikiText prompts). Weights: the authors' weight-fitting procedure, unchanged, on 4,000 sentences that the model
+wrote about a word without using it (g1 data, STRICT concept set: no benchmark word), the word being the item's
+intermediate. Comparisons on v3: W vs the same experts with benchmark-fit weights (`runs/r2_9b/A/A_full/jpp_A_full.pt`),
+and W vs released J++. Candidate/lens file fixed by agent w1 before it is scored on v3. PRIMARY analysis unchanged.
+Result of G (amendment 1), for the record, on the OLD dev split: G - J++ = +0.7 [-1.0,+2.4]; G will still be scored on v3.
