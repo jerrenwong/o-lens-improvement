@@ -1,0 +1,4 @@
+id	dev_pass10	dev_pass1	build_s	status	description
+jpp	0.5952	0.3850	0.0	baseline	J++ pre-fitted (h @ JPP.T)
+jlens	0.4146	0.2075	0.0	baseline	plain J-lens (h @ J.T)
+jlens_fq	0.4995	0.2511	65.2	baseline	J-lens minus J-space dict features firing on >=10% of tokens (fq0.1)
