@@ -115,6 +115,17 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   Pooled dev+test: 9B (309 items) +0.7 [-0.2,+2.0], 4 items better / 1 worse; unfiltered +1.2 [+0.2,+2.4].
   2B (217 items) +1.0 [+0.2,+2.0], 4 better / 0 worse. Controls flat or negative. Marginal, not a meaningful gain.
 
+- ELICITATION-DISTILLED MAP (e1; scripts/e1_*.py, runs/e1/E_9b.pt, auto/candidates/e1_*): per-layer ridge map from
+  the last-token residual of a text prefix to the model's final-layer state at the end of three few-shot one-word
+  "topic" questions about that prefix. 30,500 natural-format prefixes (WikiText detok 13k, TinyStories 12k, Wikipedia in
+  10 languages 5.5k), no benchmark text or labels. Held-out agreement with the elicited word, top-10: E .60-.82 per
+  layer (.88 any layer) vs J++ .02-.23 (.42) vs shuffled .06-.08.
+  Lens = unit(J++ h) + lam * unit(E h); lam = 0.5 chosen on FIT (.4964 -> .5705). Dev .6265 / .4042 (unf .6022) vs J++
+  .5952 / .3850 (.5718): +3.1 [-0.4,+6.7]. vs shuffled +3.5 [+0.7,+6.6]; vs prior-only +2.2 [-0.5,+5.1] (pass@1 +7.6).
+  Single-format maps .612 / .639 / .623. Association gains: office, art, time (also with the prior alone), free,
+  UNESCO, field (input-specific); loses pregnant. E is a topic probe (L4 already .60), not a Jacobian.
+  Frozen recipe; 2B replication + confirmatory test (second look at the test split) pending.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,

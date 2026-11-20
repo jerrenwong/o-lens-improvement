@@ -68,3 +68,11 @@ r2_C_full	0.5826	0.3550	0.0	discard	J++ REFIT 9B, natural format + positions fro
 q8_gate_9b	0.6049	0.3899	0.0	keep	gated junk removal (model-agnostic q5_gate): dev +1.0 [0,+2.4]; TEST .5858 vs J++ .5809 = +0.5 [-1.0,+2.4]; pooled held-out +0.7 [-0.2,+2.0], unfiltered +1.2 [+0.2,+2.4]; 2B dev +2.0 [0.5,3.9], 2B test 0.0, pooled +1.0 [0.2,2.0]
 q8_rand_9b	0.5952	0.3850	0.0	control	CONTROL random direction under the same gate: dev 0.0, test -1.5
 q8_typo_9b	0.5867	0.3766	0.0	control	CONTROL prototype from fit typo rows: dev -0.8, test -0.1
+e1_A_fitlam	0.6265	0.4042	0.0	pending	J++ + 0.5 x elicitation-distilled map E (30.5k natural-format prefixes, 3 one-word question formats, lam chosen on fit: fit .4964 -> .5705): dev +3.1 [-0.4,+6.7]; unf +3.0; assoc .44, multilingual .72
+e1_B_alone	0.4253	0.1241	0.0	control	E alone
+e1_C_shuf	0.5916	0.3217	0.0	control	CONTROL shuffled-target map at lam .5: -0.4; A - C = +3.5 [+0.7,+6.6]
+e1_D_prior	0.6045	0.3284	0.0	control	CONTROL prior (mean target) vector only at lam .5: +0.9; A - D = +2.2 [-0.5,+5.1], pass@1 +7.6
+e1_E0	0.6118	0.4103	0.0	variant	E from elicitation format 0 only
+e1_E1	0.6392	0.4253	0.0	variant	E from elicitation format 1 only
+e1_E2	0.6230	0.3945	0.0	variant	E from elicitation format 2 only
+e1_F_sent	0.6399	0.3905	0.0	variant	E trained on sentence-final prefixes only
