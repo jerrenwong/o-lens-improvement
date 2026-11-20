@@ -84,3 +84,4 @@ jpp_27b	0.6153	0.3731	0.0	baseline	released J++ on Qwen3.6-27B dev (165 items; s
 m27_A_27b	0.6609	0.3940	0.0	keep	27B frozen recipe J++ + 0.5*E (lam from fit .5564 -> .5898): dev +4.6 [+0.6,+9.0]; vs shuffled +4.7 [+2.2,+7.5]; vs prior +3.9 [+1.7,+6.5]; 16 gained / 5 lost
 m27_C_27b	0.6140	0.3675	0.0	control	27B shuffled-target map: -0.1 [-4.1,+4.2]
 m27_D_27b	0.6216	0.3559	0.0	control	27B prior vector only: +0.6 [-3.6,+5.0]
+T_m27_A_27b	0.5708	0.3090	0.0	test	27B TEST (single look, 162 items): J++ .5620/.3271 -> J++ + .5E .5708/.3090 = +0.9 [-2.0,+3.9], pass@1 -1.8 [-4.8,+1.0], unf +0.7; controls -1.9 / -2.2; A - shuffled +2.8 [+1.0,+4.9]. Pooled 27B dev+test (327): +2.8 [+0.2,+5.6], pass@1 +0.2 [-2.4,+2.8], unf +1.8 [-1.2,+4.9]; A - shuffled +3.7 [+2.1,+5.5]; 25 better / 12 worse
