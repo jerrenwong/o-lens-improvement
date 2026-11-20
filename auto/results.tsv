@@ -61,3 +61,4 @@ b3i_mix10	0.5516	0.2964	183.7	discard	same, weight 1.0: -4.4
 b3i_slot	0.5934	0.3594	156.1	discard	slot reuse with elicit map at L24/L28: tie
 b3i_shuf_mix03	0.5851	0.3380	172.9	discard	CONTROL shuffled targets: -1.0
 b3i_t_mix03	0.5984	0.3950	155.0	discard	mix03 with suffix ' The topic:': +0.3
+q5_gate	0.6049	0.3899	0.2	keep	J++ with the fit-association mean direction removed at L24+L28 for rows >80% aligned with it (the '@' junk): +1.0 / +0.5, two association prompts on dev and on fit; within noise but mechanism understood

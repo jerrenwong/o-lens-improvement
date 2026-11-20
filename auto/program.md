@@ -76,6 +76,18 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   line just finished, not the rhyme.
 - Multilingual by slot (J++): language .47 (in Chinese .21, either .51), relation .63, source .60, answer .95.
 
+- Multilingual misses read token by token (J++, 43 four-slot items): language slot 20/43, relation 27/43, source 26/43,
+  answer 41/43. Of the misses: 9 items label the language in its own language (português, español, français), benchmark
+  0/9, while J++ names it in English or Chinese for 5/9; 10 antonym prompts are labelled place/size/order/time and J++
+  reads 'opposite' or its Chinese form on 10/10; the English source word is read on 6/19 antonym prompts vs 20/24 other
+  prompts (at the final token the lens shows the answer and the dimension: small, size, low). Low-resource language
+  names (Ukrainian, Bulgarian, Serbian, Polish, Irish) come out as 'dialect', 'Roman', 'Gael', 'English'.
+- Period-column transplant (q5): putting the passage's final-period residual (all layers) into a neutral passage and
+  asking the one-word question gives 1.6% (floor 1.1%), even for the 18 concepts J++ reads there; replacing the period
+  column inside the real passage barely hurts (54.1 -> 50.8%). When asked, the model uses the passage tokens, not the
+  period. The test cannot show whether missed concepts are at the period.
+- q5_gate (gated junk removal at L24+L28) through the scorer: dev .6049 / .3899; kept as the entry for the final test.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
