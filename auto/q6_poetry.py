@@ -184,14 +184,14 @@ def ridge_fit(Xtr, Ytr, lam):
 def ridge_logits(f, X):
     return (f(X).float() @ WUf.T).masked_fill(punct, float("-inf"))
 def ridge_eval(pos, L, shuffle=False, return_map=False):
-    X = H[:, LAYERS.index(L), pos].cuda().double()
+    X = H[:, LAYERS.index(L), pos].cuda().double() if isinstance(pos, int) else H[:, LAYERS.index(L), pos].flatten(1).cuda().double()
     tgt_rows = tid.clone()
     if shuffle:
         sh = t.tensor(tr); tgt_rows[sh] = tid[sh[t.randperm(len(sh), generator=t.Generator().manual_seed(0))].cuda()]
     Y = WU[tgt_rows].double()
     scale = float((X[tr_in] - X[tr_in].mean(0)).pow(2).sum(1).mean())
     best = None
-    for c in (1e-3, 1e-2, 3e-2, 0.1, 0.3, 1, 3, 10):
+    for c in (1e-2, 3e-2, 0.1, 0.3, 1, 3, 10, 30, 100):
         f = ridge_fit(X[tr_in], Y[tr_in], c * scale)
         lg = ridge_logits(f, X[tr_val]).float()
         acc = float(((lg > lg.gather(1, tgt_rows[tr_val][:, None])).sum(1) + 1 <= 10).float().mean())
@@ -221,14 +221,14 @@ P = load_lens_file(f"{R}/artifacts/baselines/jpp9b_prefit.pt", hf_model_name=M).
 print("\n== 2. held-out couplets: top-10 / top-1 / rhyme-set@10 (any rhyming token in top 10), full vocab, punct masked")
 print(f"   (i)  frequency top-10 (no input):             {base_freq[0]:.3f} / {base_freq[1]:.3f} / {base_freq[2]:.3f}")
 print(f"   (ii) lookup line-1 last word -> train rhymes: {base_look[0]:.3f} / {base_look[1]:.3f} / {base_look[2]:.3f}   (line-1 word seen in train for {cov:.2f} of held-out)")
-print(f"   {'layer':5s} | {'J++ @nl':17s} | {'J-lens @nl':17s} | {'ridge @nl':17s} | {'ridge @comma':17s} | {'ridge @lastword':17s} | {'ridge shuffled @nl':17s} | ridge lam/scale nl,comma,word")
+print(f"   {'layer':5s} | {'J++ @nl':17s} | {'J-lens @nl':17s} | {'ridge @nl':17s} | {'ridge @comma':17s} | {'ridge @lastword':17s} | {'ridge shuffled @nl':17s} | {'ridge word+nl':17s} | ridge lam/scale nl,comma,word")
 fmt = lambda x: f"{x[0]:.3f}/{x[1]:.3f}/{x[2]:.3f}"
 maps = {}
 for L in LAYERS:
     jp = lens_eval(P, L, 2, te); jl = lens_eval(J, L, 2, te)
     rn, f, sc = ridge_eval(2, L, return_map=True); maps[L] = f
-    rc = ridge_eval(1, L); rw = ridge_eval(0, L); rsh = ridge_eval(2, L, shuffle=True)
-    print(f"   L{L:<4d} | {fmt(jp):17s} | {fmt(jl):17s} | {fmt(rn):17s} | {fmt(rc):17s} | {fmt(rw):17s} | {fmt(rsh):17s} | {rn[3]:g},{rc[3]:g},{rw[3]:g}", flush=True)
+    rc = ridge_eval(1, L); rw = ridge_eval(0, L); rsh = ridge_eval(2, L, shuffle=True); rwn = ridge_eval([0, 2], L)
+    print(f"   L{L:<4d} | {fmt(jp):17s} | {fmt(jl):17s} | {fmt(rn):17s} | {fmt(rc):17s} | {fmt(rw):17s} | {fmt(rsh):17s} | {fmt(rwn):17s} | {rn[3]:g},{rc[3]:g},{rw[3]:g}", flush=True)
 # examples of the ridge map at the best layer
 Lb = 20
 X = H[te[:8], LAYERS.index(Lb), 2].cuda().double()
@@ -299,26 +299,27 @@ def word(lg): return strs[int(lg.argmax())].strip().lower()
 def concept(k): return list(b.candidates[bi[k]].keys())[0].lower()
 n4 = min(30, len(bi)); sel = list(range(n4))
 bids = [tok(btext[k], return_tensors="pt", add_special_tokens=False)["input_ids"].cuda() for k in range(len(bi))]
-recd, base = {}, {}
+recd, base, basep = {}, {}, {}
 for k in sel:
     p = pmeta[k]["pos"]; assert strs[int(bids[k][0, p])] == "\n" and strs[int(bids[k][0, p - 1])] == ",", btext[k]
-    lg, rc = run(bids[k], rec_pos=[p - 2, p - 1, p]); recd[k] = rc; base[k] = word(lg)
+    lg, rc = run(bids[k], rec_pos=[p - 2, p - 1, p]); recd[k] = rc; base[k] = word(lg); basep[k] = (int(lg.argmax()), float(lg.softmax(-1).max()))
 print(f"\n== 4. causal: transplant block outputs (embedding + all {len(blocks)} blocks) at the newline from a donor couplet (n={n4} fit+dev items)")
 print(f"   unpatched next word == concept: {sum(base[k] == concept(k) for k in sel)}/{n4}")
 for variant, offs in (("newline only", [0]), ("control: last word + comma + newline", [-2, -1, 0])):
-    cnt = collections.Counter(); ex = []
+    cnt = collections.Counter(); ex = []; pdrop = []
     for n_, k in enumerate(sel):
         d = sel[(n_ + 1) % n4]
         if concept(d) == concept(k) or bw1[d][-2:] == bw1[k][-2:]: d = sel[(n_ + 2) % n4]
         pk, pd = pmeta[k]["pos"], pmeta[d]["pos"]
         patch = {L: [(pk + o, recd[d][L][pd + o]) for o in offs] for L in recd[d]}
-        lg, _ = run(bids[k], patch=patch); w = word(lg)
+        lg, _ = run(bids[k], patch=patch); w = word(lg); pdrop.append(float(lg.softmax(-1)[basep[k][0]]) - basep[k][1])
         donor_set = {concept(d)} | ({word_of(j).lower() for j in wtok.get(bw1[d][-3:], [])} if len(bw1[d]) >= 3 else set())
         if w == base[k]: c = "unchanged"
         elif w in donor_set or rhymes(w, bw1[d], 2): c = "donor rhyme"
         else: c = "other"
         cnt[c] += 1
-        if len(ex) < 6 and c != "unchanged": ex.append(f"{bw1[k]}->{base[k]} | donor {bw1[d]}->{concept(d)} | now {w}")
+        if c != "unchanged": ex.append(f"{bw1[k]}->{base[k]} | donor {bw1[d]}->{concept(d)} | now {w} [{c}]")
     print(f"   {variant:38s}: unchanged {cnt['unchanged']}/{n4}  donor rhyme {cnt['donor rhyme']}/{n4}  other {cnt['other']}/{n4}")
+    print(f"       mean change in prob of the unpatched top word: {sum(pdrop)/len(pdrop):+.3f} (unpatched mean {sum(v[1] for v in basep.values())/len(basep):.3f})")
     for e in ex: print(f"       {e}")
 log("done")

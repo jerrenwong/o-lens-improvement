@@ -51,7 +51,7 @@ def macro(d, k, split):
         if part[(b.eval_slugs[i], b.item_names[i])] == split: item[i].append(r <= k)
     ev = collections.defaultdict(list)
     for i, hs in item.items(): ev[b.eval_slugs[i]].append(sum(hs) / len(hs))
-    return sum(sum(v) / len(v) for v in ev.values()) / len(ev), {e[:5]: round(sum(v) / len(v), 2) for e, v in sorted(ev.items())}
+    return sum(sum(v) / len(v) for v in ev.values()) / len(ev), {e[:6]: round(sum(v) / len(v), 2) for e, v in sorted(ev.items())}
 def lens_best(name, edit=None, mats=None, vec_fn=None):
     best = {}
     for L in LAYERS:
@@ -207,7 +207,7 @@ for n in LENS:
     for L in LAYERS:
         U, S, Vh = t.linalg.svd(LENS[n][L].cuda().float(), full_matrices=False); SV[(n, L)] = (U, S, Vh)
         v = RO(n, L); co = (v @ U[:, :20]) ** 2 / (v ** 2).sum(-1, keepdim=True)
-        sh = {e[:5]: f"{float(co[rows, :1].sum(-1).mean()):.2f}/{float(co[rows, :5].sum(-1).mean()):.2f}/{float(co[rows].sum(-1).mean()):.2f}" for e, rows in sorted(task_rows.items())}
+        sh = {e[:6]: f"{float(co[rows, :1].sum(-1).mean()):.2f}/{float(co[rows, :5].sum(-1).mean()):.2f}/{float(co[rows].sum(-1).mean()):.2f}" for e, rows in sorted(task_rows.items())}
         print(f" {n:3s} L{L:2d} sigma = {[round(float(x / S.median()), 1) for x in S[:5]]}  energy: {sh}")
         if L in L4:
             for k in range(3): print(f"        u{k+1}+ : {dec(U[:, k])}    u{k+1}- : {dec(-U[:, k])}")
@@ -225,7 +225,12 @@ for n in LENS:
             if hot: print(f"   {n:3s} {e:13s} L{L:2d}: " + ", ".join(f"{k!r} {s:.2f}" for k, s in hot[:12]))
 print("   association junk sets (token string sets used in 4b):", {f"{n} L{L}": sorted(v) for (n, L), v in JUNK.items() if v}, flush=True)
 junkmask = {k: t.tensor([s in v for s in strs]).cuda() for k, v in JUNK.items() if v}
-print("\n== 4b. period-token test on association (junk share = share of filtered top-10 slots in that layer's association junk set)")
+at = t.tensor([s.strip().startswith("@") for s in strs]).cuda()
+print("   share of filtered top-10 slots starting with '@', per task and layer (fit+dev)")
+for n in LENS:
+    for e, rows in sorted(task_rows.items()):
+        print(f"   {n:3s} {e:13s} " + " ".join(f"L{L} {sum(strs[j].strip().startswith('@') for r in rows for j in TOPF[(n, L)][r]) / (10 * len(rows)):.2f}" for L in LAYERS))
+print("\n== 4b. period-token test on association (each cell: junk-set share / '@'-token share of filtered top-10 slots; junk set = that layer's association >60% tokens)")
 print("   token ids:", {s: tok(s, add_special_tokens=False)["input_ids"] for s in ("end.", "end .", " .", ".", "end!", ".\n")})
 lastc = collections.Counter(text[("association", b.item_names[idx[r]])][-1] for r in task_rows["association"])
 print("   last characters of association prompts:", lastc.most_common(4))
@@ -246,7 +251,7 @@ for vn, texts in variants.items():
         for L in LAYERS:
             lg = model.unembed(Hs[L] @ LENS[n][L].cuda().float().T).float().masked_fill(punct, NEG)
             tp = lg.topk(10, -1).indices
-            line.append(f"L{L} {float(junkmask[(n, L)][tp].float().mean()):.2f}" if (n, L) in junkmask else f"L{L} -")
+            line.append((f"L{L} {float(junkmask[(n, L)][tp].float().mean()):.2f}" if (n, L) in junkmask else f"L{L} -") + f"/@{float(at[tp].float().mean()):.2f}")
             for k, r in enumerate(arows):
                 for key, ids in b.candidates[idx[r]].items():
                     hits[(r, key)] = min(hits[(r, key)], int((lg[k] > lg[k, ids].max()).sum()) + 1)
@@ -270,7 +275,7 @@ for n in LENS:
         Mx = LENS[n][L].cuda().float(); line = []
         for g, m in (("period", is_p), ("other", ~is_p)):
             tp = model.unembed(acts[L][m][:3000].cuda() @ Mx.T).float().masked_fill(punct, NEG).topk(10, -1).indices
-            line.append(f"{g} n={int(m.sum())} {float(junkmask[(n, L)][tp].float().mean()):.3f}")
+            line.append(f"{g} n={int(m.sum())} {float(junkmask[(n, L)][tp].float().mean()):.3f} @{float(at[tp].float().mean()):.3f}")
         print(f"   {n:3s} L{L}: " + "  ".join(line), flush=True)
 
 # ================= 5. mean subtraction, singular-direction removal, gated removal

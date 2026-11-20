@@ -88,6 +88,15 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   period. The test cannot show whether missed concepts are at the period.
 - q5_gate (gated junk removal at L24+L28) through the scorer: dev .6049 / .3899; kept as the entry for the final test.
 
+- Poetry (q6): the rhyme word is NOT at the newline in the 9B model. A ridge probe trained on 2,694 self-generated
+  couplets reads it from the newline no better than from line 1's last word (top-10 .24-.32 vs .35-.38; lookup
+  baseline .40), newline + last word = last word, and swapping the newline's activations changes the rhyme in 0/30.
+- 2B replication (q7): same failure modes; '@' junk is u1 of the J++ L21 matrix and is triggered by the end of the
+  prompt; no Chinese-only hits; J-lens does NOT gain from task-mean subtraction on 2B; gated removal +2.0 dev (0 fit);
+  asked 16/61, J++ reads 5 of those.
+- J++ FITTING MISMATCHES (jpp_lens recipe): raw WikiText-103 (' . ', ' @-@ ', ' @,@ ') and positions 16-127 only.
+  Benchmark prompts are normally formatted and mostly read before position 30. Refit test: agent r1, runs/r1_2b/.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
