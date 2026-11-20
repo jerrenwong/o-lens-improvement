@@ -136,6 +136,13 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
      [+4.7,+13.8]; input-specific part (A - shuffled) +1.2 [+0.4,+2.3].
   Reading: on 9B a confirmed, input-specific gain of about 3 points; on 2B positive but mostly a generic effect.
 
+- 27B REPLICATION (m27; Qwen3.6-27B, released J++ koayon/jpp-lenses; auto/evaluate27.py, split_27b.json fit 79 / dev
+  165 / test 162; maps runs/e1/E_27b*.pt; model cache .hf27, run with HF_HOME=/workspace/o-lens-improvement/.hf27).
+  Dev: J++ .6153 / .3731 (unf .5938); J++ + 0.5*E .6609 / .3940 (unf .6218) = +4.6 [+0.6,+9.0]; shuffled .6140;
+  prior .6216; A - shuffled +4.7 [+2.2,+7.5]; A - prior +3.9 [+1.7,+6.5]. Caveat: 27B answers the elicitation prompts
+  with "\n\n" first in 70-96% of cases, so targets are noisy (22% of "elicited words" are <|im_end|>); recipe kept
+  frozen. Multihop gain (+.10) also in both controls.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
