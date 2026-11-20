@@ -157,6 +157,11 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   Refined map B (content-word targets, prior removed, chat-format elicitation): -2.7 vs J++ on 9B (targets were letter
   fragments; every lam below J++ on fit) -> abandoned.
 
+- DATA-SCALING CHECK (e4; scripts/e4_scale.py, auto/candidates/e4_scale.py; 9B dev, J++ .5952): frozen recipe refit on
+  n training prefixes -> dev pass@10 / held-out agreement (any layer): n=250 .6197 / .585; 1000 .6078 / .768; 4000
+  .6206 / .839; 16000 .6116 / .879; 28500 .6265 / .881. The benchmark gain is flat in n (+1.3 to +3.1, no trend) while
+  agreement on ordinary text keeps rising: the gain is not driven by the amount of distillation data.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
