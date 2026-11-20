@@ -67,3 +67,19 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
 - A dictionary feature's own readout often contains the concept, but the plain J-lens top-640 contains it as
   often: no hidden headroom from single features.
 - Reconstruction quality (Jacobian FVU) does not predict readout quality.
+
+## Learned in this loop (dev split, J++ = 0.5952 / 0.3850)
+- Batch 1 (27 candidates, all discarded):
+  - Summing J++ over neighbouring layers: +-1 ties, +-2 hurts (-2.5 to -3); disjoint bands over all 31 layers -1.7.
+    Unread layers do hold a few extra hits (fit: 7 concepts), but only as separate ranked lists, which the benchmark
+    does not allow.
+  - J++ + lam x J-lens: -0.9 (lam .3), -7.9 (lam 1). The two lenses make overlapping errors.
+  - Subtracting a fixed vector from J++ (WikiText mean readout, period/newline mean, same-token mean): -5 to -12.
+    Junk tokens in association readouts are context-dependent, not a fixed bias.
+  - Logit priors (unigram frequency, whole-word): no change.
+  - Continuation subtraction (user idea U1): on J++ ties at beta .25 and hurts beyond; projecting out top next-token
+    directions hurts (multihop .96 -> .57: the answer shares directions with the bridge entity); subtracting the
+    readout 4 layers later hurts association (.32 -> .20): the concept persists, it is not used up.
+    On the J-lens: typo .56 -> .69 but multihop .89 -> .79; net +0.3 to +1.9 (noise).
+- Per task for J++ on dev: association .32, multihop .96, multilingual .69, poetry .03, typo .97. Gains must come
+  from association, multilingual or poetry. Association and poetry misses are far misses (concept rank > 100).

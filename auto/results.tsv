@@ -2,3 +2,30 @@ id	dev_pass10	dev_pass1	build_s	status	description
 jpp	0.5952	0.3850	0.0	baseline	J++ pre-fitted (h @ JPP.T)
 jlens	0.4146	0.2075	0.0	baseline	plain J-lens (h @ J.T)
 jlens_fq	0.4995	0.2511	65.2	baseline	J-lens minus J-space dict features firing on >=10% of tokens (fq0.1)
+b1c_pool1	0.5949	0.3818	0.0	discard	J++ summed over layers l-1..l+1 (tie on dev, worse on fit)
+b1c_pool2	0.5665	0.3356	0.0	discard	J++ summed over layers l-2..l+2, uniform
+b1c_pool2tri	0.5705	0.3724	0.0	discard	J++ summed over l-2..l+2, triangular weights
+b1c_bands	0.5787	0.3152	0.0	discard	7 disjoint layer bands covering 0-30 (J++)
+b1c_mix03	0.5867	0.3538	0.0	discard	J++ + 0.3 J-lens
+b1c_mix10	0.5158	0.3183	0.0	discard	J++ + 1.0 J-lens
+b1b_mean05	0.5488	0.3038	13.2	discard	J++ minus 0.5 x WikiText mean readout
+b1b_mean10	0.4835	0.2756	23.0	discard	J++ minus 1.0 x WikiText mean readout
+b1b_bnd10	0.5210	0.2669	13.2	discard	J++ minus mean readout at period/newline positions
+b1b_freq	0.5952	0.3850	13.3	discard	J++ + unigram-frequency logit prior (fit picked b=0: identical to J++)
+b1b_word	0.5952	0.3935	1.8	discard	J++ + whole-word logit prior b=0.1 (pass@10 unchanged, pass@1 +0.9)
+b1b_tok05	0.5348	0.3000	12.8	discard	J++ minus 0.5 x same-token WikiText mean
+b1b_tok10	0.4787	0.2214	12.6	discard	J++ minus 1.0 x same-token WikiText mean
+b1a_jpp_a_b025	0.5924	0.3654	0.0	discard	U1a J++ minus 0.25 x continuation (tie)
+b1a_jpp_a_b05	0.5063	0.2897	0.0	discard	U1a J++ minus 0.5 x continuation
+b1a_jpp_a_b10	0.2629	0.1014	0.0	discard	U1a J++ minus 1.0 x continuation
+b1a_jpp_b_k5	0.5026	0.3348	0.7	discard	U1b J++ project out top-5 next-token directions
+b1a_jpp_b_k20	0.4633	0.2963	0.3	discard	U1b J++ project out top-20
+b1a_jpp_c_b05	0.5723	0.2897	0.0	discard	U1c J++ minus 0.5 x layer l+4 readout
+b1a_jpp_c_b10	0.3856	0.1228	0.0	discard	U1c J++ minus 1.0 x layer l+4 readout
+b1a_j_a_b025	0.4023	0.2235	0.0	discard	U1a J-lens minus 0.25 x continuation
+b1a_j_a_b05	0.4177	0.2290	0.0	discard	U1a J-lens minus 0.5 x continuation (typo up, multihop down)
+b1a_j_a_b10	0.3066	0.1544	0.0	discard	U1a J-lens minus 1.0 x continuation
+b1a_j_b_k5	0.3541	0.1752	0.3	discard	U1b J-lens project out top-5
+b1a_j_b_k20	0.2789	0.1089	0.3	discard	U1b J-lens project out top-20
+b1a_j_c_b05	0.4339	0.1916	0.0	discard	U1c J-lens minus 0.5 x layer l+4 (+1.9 vs J-lens, noise)
+b1a_j_c_b10	0.3368	0.1351	0.0	discard	U1c J-lens minus 1.0 x layer l+4
