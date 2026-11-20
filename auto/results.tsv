@@ -76,3 +76,7 @@ e1_E0	0.6118	0.4103	0.0	variant	E from elicitation format 0 only
 e1_E1	0.6392	0.4253	0.0	variant	E from elicitation format 1 only
 e1_E2	0.6230	0.3945	0.0	variant	E from elicitation format 2 only
 e1_F_sent	0.6399	0.3905	0.0	variant	E trained on sentence-final prefixes only
+e2_A_9b	0.6265	0.4042	0.0	keep	FROZEN RECIPE J++ + lam*E (lam .5 from fit). Dev +3.1 [-0.4,+6.7]. CONFIRMATORY TEST (2nd look at test): .6143 vs .5809 = +3.3 [+0.4,+6.6]; unfiltered +4.8 [+1.6,+8.2]; pass@1 +0.6 [-3.8,+4.7]. Pooled held-out (309): +3.2 [+0.9,+5.7], 28 better / 9 worse; vs shuffled +4.3 [+2.3,+6.4]; vs prior +4.3 [+2.2,+6.4]
+e2_C_9b	0.5916	0.3217	0.0	control	shuffled-target map: dev -0.4, test -1.8 [-5.0,+1.3]
+e2_D_9b	0.6045	0.3284	0.0	control	prior vector only: dev +0.9, test -3.1 [-5.9,-0.5]
+e2_A_2b	0.5245	0.3318	0.0	keep	2B, lam .3 from fit. Dev 0.0 [-9.2,+8.0] (pass@1 +3.8, unf +6.0); TEST .4060 vs .3150 = +9.1 [+3.3,+15.8] but shuffled control +8.1; pooled (217): +4.5 [-1.4,+10.0], pass@1 +2.9 [+0.1,+6.4], unf +9.0 [+4.7,+13.8]; A vs shuffled +1.2 [+0.4,+2.3]

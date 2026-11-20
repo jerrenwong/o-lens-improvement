@@ -126,6 +126,16 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   UNESCO, field (input-specific); loses pregnant. E is a topic probe (L4 already .60), not a Jacobian.
   Frozen recipe; 2B replication + confirmatory test (second look at the test split) pending.
 
+- CONFIRMATORY TEST of the frozen recipe J++ + lam*E (2026-11-20 ~14:25Z; auto/runs/T_e2_*; second look at the test
+  split, the first was the gate):
+  9B test (153): .6143 vs J++ .5809 = +3.3 [+0.4,+6.6]; unfiltered +4.8 [+1.6,+8.2]; pass@1 +0.6 [-3.8,+4.7].
+     Controls on test: shuffled map -1.8, prior only -3.1 [-5.9,-0.5]. A - shuffled +5.2 [+2.6,+8.1].
+     Pooled dev+test (309): +3.2 [+0.9,+5.7] (28 better / 9 worse); unfiltered +3.9 [+1.5,+6.3]; pass@1 +1.3 [-1.5,+4.3].
+  2B (lam .3): dev 0.0 [-9.2,+8.0]; test .4060 vs .3150 = +9.1 [+3.3,+15.8], but the shuffled control is +8.1 there
+     (multihop .19 -> .50 for all three). Pooled (217): +4.5 [-1.4,+10.0]; pass@1 +2.9 [+0.1,+6.4]; unfiltered +9.0
+     [+4.7,+13.8]; input-specific part (A - shuffled) +1.2 [+0.4,+2.3].
+  Reading: on 9B a confirmed, input-specific gain of about 3 points; on 2B positive but mostly a generic effect.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
