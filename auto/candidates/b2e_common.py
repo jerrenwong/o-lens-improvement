@@ -116,19 +116,21 @@ def _cut(text):
 
 
 @torch.no_grad()
-def generate_scenes(ctx, concepts, batch=64, max_new=40):
+def generate_scenes(ctx, concepts, batch=64, max_new=32):
     hf, tok = ctx.model._hf_model, ctx.model.tokenizer
     old_side = tok.padding_side
     tok.padding_side = "left"
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
+    nl_ids = [i for i in range(len(tok)) if "\n" in (t := tok.decode([i])) and t.strip() == ""] + ([tok.eos_token_id] if tok.eos_token_id is not None else [])
     jobs = [(w, tid, k) for k in range(len(FEWSHOT)) for (w, tid) in concepts]
     raw = []
     for i in range(0, len(jobs), batch):
         chunk = jobs[i:i + batch]
         enc = tok([_prompt(FEWSHOT[k], w) for w, _, k in chunk], return_tensors="pt", padding=True,
                   add_special_tokens=False).to(ctx.device)
-        out = hf.generate(**enc, max_new_tokens=max_new, do_sample=False, pad_token_id=tok.pad_token_id)
+        out = hf.generate(**enc, max_new_tokens=max_new, do_sample=False, pad_token_id=tok.pad_token_id,
+                          eos_token_id=nl_ids)
         texts = tok.batch_decode(out[:, enc.input_ids.shape[1]:], skip_special_tokens=True)
         raw += [(w, tid, k, t) for (w, tid, k), t in zip(chunk, texts)]
     tok.padding_side = old_side
@@ -283,7 +285,8 @@ def eval_pairs(ctx, lens, H, tgt, sel, mask):
 # ---------------------------------------------------------------- rank-r CE correction
 
 
-def train_rank(ctx, H, tgt, r=8, steps=300, lr=1e-3, wd=1e-2, seed=0):
+def train_rank(ctx, H, tgt, r=8, steps=300, lr=1e-3, wd=1e-2, seed=0, val=None, every=20):
+    """val = (Hval, tval): keep, per layer, the step with the best held-out top-10 (ties: lower val CE)."""
     mask = excl_mask(ctx)
     W = ctx.model._lm_head.weight  # [V, d] bf16
     d = W.shape[1]
@@ -296,6 +299,7 @@ def train_rank(ctx, H, tgt, r=8, steps=300, lr=1e-3, wd=1e-2, seed=0):
             Vm = (torch.randn(d, r, generator=g) / d ** 0.5).to(ctx.device).requires_grad_(True)
             Um = torch.zeros(d, r, device=ctx.device, requires_grad=True)
             opt = torch.optim.AdamW([Um, Vm], lr=lr, weight_decay=wd)
+            best = None
             for s in range(steps):
                 v = base + (x @ Vm) @ Um.T
                 lg = F.linear(ctx.model._final_norm(v.to(W.dtype)), W).float()
@@ -305,9 +309,27 @@ def train_rank(ctx, H, tgt, r=8, steps=300, lr=1e-3, wd=1e-2, seed=0):
                 loss.backward()
                 opt.step()
                 if s == 0:
-                    l0 = float(loss)
-            log(f"  rank{r} L{l}: CE {l0:.2f} -> {float(loss):.2f}")
-            U_, V_ = Um.detach(), Vm.detach()
+                    l0 = float(loss.detach())
+                if val is not None and (s + 1) % every == 0:
+                    with torch.no_grad():
+                        xv = unit(val[0][l])
+                        vv = unit(val[0][l] @ ctx.JPP[l].T) + (xv @ Vm) @ Um.T
+                        lgv = logits_of(ctx, vv, mask)
+                        acc = float((ranks(lgv, val[1]) <= 10).float().mean())
+                        ce = float(F.cross_entropy(lgv, val[1]))
+                    if best is None or (acc, -ce) > best[:2]:
+                        best = (acc, -ce, s + 1, Um.detach().clone(), Vm.detach().clone())
+                if s == 0 and val is not None:
+                    with torch.no_grad():
+                        lgv = logits_of(ctx, unit(val[0][l] @ ctx.JPP[l].T), mask)
+                        best = (float((ranks(lgv, val[1]) <= 10).float().mean()), -1e9, 0,
+                                torch.zeros_like(Um), Vm.detach().clone())
+            if val is not None:
+                log(f"  rank{r} L{l}: CE {l0:.2f} -> {float(loss):.2f}; best val step {best[2]} top10 {best[0]:.2f}")
+                U_, V_ = best[3], best[4]
+            else:
+                log(f"  rank{r} L{l}: CE {l0:.2f} -> {float(loss):.2f}")
+                U_, V_ = Um.detach(), Vm.detach()
             corr[l] = (lambda U_, V_: (lambda xu: (xu @ V_) @ U_.T))(U_, V_)
     return corr
 
@@ -368,7 +390,7 @@ def _cv_ridge_fit(ctx, Hf, tf, rows, grid, folds=5):
     return max(res, key=res.get)
 
 
-def build_variant(ctx, kind, src="gen", r=8, steps=300, lam=None, b=None, shuffle=False):
+def build_variant(ctx, kind, src="gen", r=8, steps=300, lam=None, b=None, shuffle=False, es=False, wd=1e-2):
     t0 = time.time()
     mask = excl_mask(ctx)
     log(f"variant kind={kind} src={src} r={r} steps={steps} lam={lam} b={b} shuffle={shuffle}")
@@ -394,7 +416,8 @@ def build_variant(ctx, kind, src="gen", r=8, steps=300, lam=None, b=None, shuffl
     else:
         Htr, ttr = Hf, tf
     if kind == "rank":
-        corr = train_rank(ctx, Htr, ttr, r=r, steps=steps)
+        val = ({l: H[l][ho] for l in H}, data["tgt"][ho]) if (es and data is not None) else None
+        corr = train_rank(ctx, Htr, ttr, r=r, steps=steps, val=val, wd=wd)
     elif kind == "ridge":
         if lam is None and data is not None:
             # choose (lam, b) on held-out generated concepts

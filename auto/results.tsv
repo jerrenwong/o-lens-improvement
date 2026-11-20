@@ -29,3 +29,23 @@ b1a_j_b_k5	0.3541	0.1752	0.3	discard	U1b J-lens project out top-5
 b1a_j_b_k20	0.2789	0.1089	0.3	discard	U1b J-lens project out top-20
 b1a_j_c_b05	0.4339	0.1916	0.0	discard	U1c J-lens minus 0.5 x layer l+4 (+1.9 vs J-lens, noise)
 b1a_j_c_b10	0.3368	0.1351	0.0	discard	U1c J-lens minus 1.0 x layer l+4
+b2d_ps_scan	0.2439	0.1641	24.4	discard	patchscope alone (repeat prompt, h replaces placeholder): association .00, typo 1.00
+b2d_ps_mix_cph05	0.6084	0.3375	0.0	discard	J++ + 0.5 x patchscope ('in one word, this text is about'): +1.3 dev but worse on fit and pass@1 -4.8 -> noise
+b2d_s16_extrap	0.5974	0.3640	0.7	discard	J++ extrapolated away from J-lens (g=.25): tie
+b2d_s15_unemb	0.5849	0.3844	16.8	discard	J++ spectrum ^1.2: -1.0
+b2g_bank8_pl	0.6036	0.3681	151.2	discard	8-expert bank, per-layer signed weights fitted on fit (CV-chosen): +0.8 p@10, p@1 -1.7 -> noise
+b2g_bank8_sh	0.5898	0.4010	80.5	discard	8-expert bank, shared weights: -0.5 p@10, p@1 +1.6
+b2g_inc	0.5974	0.3708	1.8	discard	J++ minus 0.1 x J++ two layers earlier: tie
+b2g_z	0.4329	0.2615	30.4	discard	per-token z-score readout rebuilt as vector: -16
+b2f_fbag_scan	0.4691	0.1987	29.6	discard	J++ + 0.5 x future-bag ridge map (R2 ~0.01): -12.6
+b2f_jfar_scan	0.5788	0.3472	165.0	discard	J++ + 0.5 x random-probe far Jacobian (estimator is noise: split-half cos 0.02-0.06): -1.6
+b2f_iv_scan	0.4233	0.3246	43.9	discard	J++ + 0.5 x interventional readout: -17
+b2f_ivlin_far	0.5790	0.3788	60.4	discard	J++ + 0.25 x exact far-Jacobian (targets >= 8 tokens later) x h: -1.6; far part alone 0.076 on fit
+b2e_rank8	0.5993	0.3560	291.6	discard	J++ + rank-8 correction trained on self-generated riddles: +0.4
+b2e_rank8es	0.6109	0.3531	221.6	discard	same with early stopping: +1.6 (shuffled-label control +1.1)
+b2e_rank32es	0.5966	0.3688	125.9	discard	rank-32, early stop: tie
+b2e_rank8es_shuf	0.6063	0.3902	232.4	discard	CONTROL shuffled labels: +1.1
+b2e_ridge_gen	0.6058	0.3350	191.2	discard	ridge to target direction on generated riddles: +1.1
+b2e_rank8_fit	0.5300	0.3038	2.4	discard	rank-8 CE on fit only: -6.5 (overfits)
+b2e_ridge_fit	0.6338	0.3758	1.1	pending	J++ + ridge correction fitted on the 75 fit prompts (5-fold CV): +3.9, all from multilingual .69->.83; suspected label-set memorisation, check pending
+b2e_ridge_genfit	0.6307	0.3153	157.5	pending	ridge on generated riddles + fit: +3.6, multilingual .84

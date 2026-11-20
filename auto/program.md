@@ -83,3 +83,22 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
     On the J-lens: typo .56 -> .69 but multihop .89 -> .79; net +0.3 to +1.9 (noise).
 - Per task for J++ on dev: association .32, multihop .96, multilingual .69, poetry .03, typo .97. Gains must come
   from association, multilingual or poetry. Association and poetry misses are far misses (concept rank > 100).
+- Batch 2D (patchscope): patching h into a decoding prompt and reading the model's output scores 0.00 on association
+  for every prompt tried (fit), <= 0.06 on poetry, and only recovers typo corrections that J++ already reads. So the
+  association / poetry concepts are not decodable from the single readout-token activation even by the model's own
+  later layers. Mixtures with J++ are noise (+1.3 dev, worse on fit and on pass@1). Spectrum reshaping and
+  J -> J++ extrapolation: tie or worse.
+- Batch 2G (expert bank): signed weights over 8 maps (J++, J, h, J minus always-on, SVD parts of J++, neighbours),
+  fitted on the fit split with cross-validation, stay within +-0.1 of plain J++ and give +0.8 / -0.5 on dev (noise).
+  Every map we have makes the same errors as J++. Per-token z-scoring: -16. Layer increments: tie.
+- Round-2 brainstorm facts (J++, dev): association pass@10 .32, @50 .54, @1000 .78; poetry .03, @100 .34: the concept
+  is weakly present, not absent. Multilingual by intermediate: language name .43, relation .73, source word .63,
+  answer .97. Top-10 lists often spend several slots on case/space variants of one word.
+- Batch 2F: the Jacobian to far-future positions (>= 8 tokens later), computed exactly by finite-difference JVPs,
+  scores 0.076 alone on fit (association 0.00): the J-lens's readout comes from the same-token term. A ridge map to
+  the bag of future tokens has R2 ~0.01 and hurts (-12.6). Interventional readout: -17. Random-probe estimates of a
+  4096 x 4096 Jacobian are noise within the budget.
+- Batch 2E (supervised corrections): a correction trained on ~900 self-generated "scene -> concept" pairs reads new
+  scene concepts on its own held-out riddles (.59 -> .79) but transfers to the benchmark only at the level of a
+  shuffled-label control (+1.1 to +1.6). A ridge correction fitted on the 75 fit prompts gives +3.9 on dev, entirely
+  from multilingual (.69 -> .83): suspected memorisation of the small set of language names shared by fit and dev.
