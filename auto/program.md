@@ -97,6 +97,14 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
 - J++ FITTING MISMATCHES (jpp_lens recipe): raw WikiText-103 (' . ', ' @-@ ', ' @,@ ') and positions 16-127 only.
   Benchmark prompts are normally formatted and mostly read before position 30. Refit test: agent r1, runs/r1_2b/.
 
+- J++ REFIT on 2B (r1, authors' pipeline, 128 prompts each, dev 109 items; runs/r1_2b/, scripts/r1_*):
+  A recipe (raw, skip 16) .467/.258 unf .411 | B natural, skip 16 .463/.260 unf .454 | C natural, skip 1 .496/.260
+  unf .476 | D raw, skip 1 .473/.306 unf .397 | released .525/.294 unf .391.
+  C vs A: +2.9 [+0.8, +5.4] filtered, +6.5 [+1.4, +12.8] unfiltered; C vs released: -2.9 [-11.5, +3.3] filtered,
+  +8.5 [+2.5, +15.5] unfiltered. Natural format REMOVES the '@' direction from the matrices (B, C: none; A, D,
+  released: present). Refit-to-refit noise ~ effect size (A at 32 prompts .493). Released 9B lens: 64 prompts.
+  9B refit with replicates: agent r2, runs/r2_9b/ (PARTIAL.md has the half-budget numbers).
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
