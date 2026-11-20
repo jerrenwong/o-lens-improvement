@@ -1,0 +1,940 @@
+{
+  "items": [
+    {
+      "name": "angkor-capital",
+      "prompt": "Fact: The capital city of the country where the temples of Angkor Wat stand is ",
+      "target": "Phnom",
+      "intermediates": [
+        "Cambodia"
+      ]
+    },
+    {
+      "name": "petra-capital",
+      "prompt": "Fact: The capital city of the country where the rock-cut city of Petra is located is ",
+      "target": "Amman",
+      "intermediates": [
+        "Jordan"
+      ]
+    },
+    {
+      "name": "casablanca-capital",
+      "prompt": "Fact: The capital city of the country whose largest city is Casablanca is ",
+      "target": "Rabat",
+      "intermediates": [
+        "Morocco"
+      ]
+    },
+    {
+      "name": "atacama-capital",
+      "prompt": "Fact: The capital city of the country where the Atacama Desert lies is ",
+      "target": "Santiago",
+      "intermediates": [
+        "Chile"
+      ]
+    },
+    {
+      "name": "lagos-capital",
+      "prompt": "Fact: The capital city of the country whose largest city is Lagos is ",
+      "target": "Abuja",
+      "intermediates": [
+        "Nigeria"
+      ]
+    },
+    {
+      "name": "karachi-capital",
+      "prompt": "Fact: The capital city of the country whose largest city is Karachi is ",
+      "target": "Islamabad",
+      "intermediates": [
+        "Pakistan"
+      ]
+    },
+    {
+      "name": "geysers-capital",
+      "prompt": "Fact: The capital city of the island country famous for its geysers and the Blue Lagoon is ",
+      "target": "Reykjavik",
+      "intermediates": [
+        "Iceland"
+      ]
+    },
+    {
+      "name": "waffles-capital",
+      "prompt": "Fact: The capital city of the country famous for waffles and the Manneken Pis statue is ",
+      "target": "Brussels",
+      "intermediates": [
+        "Belgium"
+      ]
+    },
+    {
+      "name": "lochness-capital",
+      "prompt": "Fact: The capital city of the country where Loch Ness lies is ",
+      "target": "Edinburgh",
+      "intermediates": [
+        "Scotland"
+      ]
+    },
+    {
+      "name": "buddha-capital",
+      "prompt": "Fact: The capital city of the Himalayan country where the Buddha was born is ",
+      "target": "Kathmandu",
+      "intermediates": [
+        "Nepal"
+      ]
+    },
+    {
+      "name": "goulash-capital",
+      "prompt": "Fact: The capital city of the country where goulash originated is ",
+      "target": "Budapest",
+      "intermediates": [
+        "Hungary"
+      ]
+    },
+    {
+      "name": "vienna-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Vienna is ",
+      "target": "German",
+      "intermediates": [
+        "Austria"
+      ]
+    },
+    {
+      "name": "tehran-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Tehran is ",
+      "target": "Persian",
+      "intermediates": [
+        "Iran"
+      ]
+    },
+    {
+      "name": "helsinki-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Helsinki is ",
+      "target": "Finnish",
+      "intermediates": [
+        "Finland"
+      ]
+    },
+    {
+      "name": "kyiv-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Kyiv is ",
+      "target": "Ukrainian",
+      "intermediates": [
+        "Ukraine"
+      ]
+    },
+    {
+      "name": "havana-language",
+      "prompt": "Fact: The language spoken in the island country whose capital is Havana is ",
+      "target": "Spanish",
+      "intermediates": [
+        "Cuba"
+      ]
+    },
+    {
+      "name": "mecca-language",
+      "prompt": "Fact: The language spoken in the country where the city of Mecca is located is ",
+      "target": "Arabic",
+      "intermediates": [
+        "Saudi"
+      ]
+    },
+    {
+      "name": "london-currency",
+      "prompt": "Fact: The currency used in the country whose capital is London is the ",
+      "target": "pound",
+      "intermediates": [
+        "Britain"
+      ]
+    },
+    {
+      "name": "dublin-currency",
+      "prompt": "Fact: The currency used in the country whose capital is Dublin is the ",
+      "target": "euro",
+      "intermediates": [
+        "Ireland"
+      ]
+    },
+    {
+      "name": "copenhagen-currency",
+      "prompt": "Fact: The currency used in the country whose capital is Copenhagen is the ",
+      "target": "krone",
+      "intermediates": [
+        "Denmark"
+      ]
+    },
+    {
+      "name": "whitehouse-currency",
+      "prompt": "Fact: The currency used in the country where the White House stands is the ",
+      "target": "dollar",
+      "intermediates": [
+        "America"
+      ]
+    },
+    {
+      "name": "addis-continent",
+      "prompt": "Fact: The continent where the country whose capital is Addis Ababa is located is ",
+      "target": "Africa",
+      "intermediates": [
+        "Ethiopia"
+      ]
+    },
+    {
+      "name": "ulaanbaatar-continent",
+      "prompt": "Fact: The continent where the country whose capital is Ulaanbaatar is located is ",
+      "target": "Asia",
+      "intermediates": [
+        "Mongolia"
+      ]
+    },
+    {
+      "name": "caracas-continent",
+      "prompt": "Fact: The continent where the country whose capital is Caracas is located is ",
+      "target": "South",
+      "intermediates": [
+        "Venezuela"
+      ]
+    },
+    {
+      "name": "manila-ocean",
+      "prompt": "Fact: The ocean east of the island country whose capital is Manila is the ",
+      "target": "Pacific",
+      "intermediates": [
+        "Philippines"
+      ]
+    },
+    {
+      "name": "hollywood-capital",
+      "prompt": "Fact: The capital city of the US state where Hollywood is located is ",
+      "target": "Sacramento",
+      "intermediates": [
+        "California"
+      ]
+    },
+    {
+      "name": "alamo-capital",
+      "prompt": "Fact: The capital city of the US state where the Alamo stands is ",
+      "target": "Austin",
+      "intermediates": [
+        "Texas"
+      ]
+    },
+    {
+      "name": "grandcanyon-capital",
+      "prompt": "Fact: The capital city of the US state where the Grand Canyon is located is ",
+      "target": "Phoenix",
+      "intermediates": [
+        "Arizona"
+      ]
+    },
+    {
+      "name": "disneyworld-capital",
+      "prompt": "Fact: The capital city of the US state where Walt Disney World is located is ",
+      "target": "Tallahassee",
+      "intermediates": [
+        "Florida"
+      ]
+    },
+    {
+      "name": "chicago-capital",
+      "prompt": "Fact: The capital city of the US state whose largest city is Chicago is ",
+      "target": "Springfield",
+      "intermediates": [
+        "Illinois"
+      ]
+    },
+    {
+      "name": "lasvegas-capital",
+      "prompt": "Fact: The capital city of the US state whose largest city is Las Vegas is ",
+      "target": "Carson",
+      "intermediates": [
+        "Nevada"
+      ]
+    },
+    {
+      "name": "inferno-country",
+      "prompt": "Fact: The country where the poet who wrote the Inferno was born is ",
+      "target": "Italy",
+      "intermediates": [
+        "Dante"
+      ]
+    },
+    {
+      "name": "odyssey-language",
+      "prompt": "Fact: The language in which the poet of the Iliad and the Odyssey composed is ",
+      "target": "Greek",
+      "intermediates": [
+        "Homer"
+      ]
+    },
+    {
+      "name": "scream-nationality",
+      "prompt": "Fact: The nationality of the painter of The Scream is ",
+      "target": "Norwegian",
+      "intermediates": [
+        "Munch"
+      ]
+    },
+    {
+      "name": "miserables-nationality",
+      "prompt": "Fact: The nationality of the author of Les Misérables is ",
+      "target": "French",
+      "intermediates": [
+        "Hugo"
+      ]
+    },
+    {
+      "name": "bluedanube-country",
+      "prompt": "Fact: The country where the composer of the Blue Danube waltz was born is ",
+      "target": "Austria",
+      "intermediates": [
+        "Strauss"
+      ]
+    },
+    {
+      "name": "messi-players",
+      "prompt": "Fact: The number of players per side on the field in the sport Lionel Messi plays is ",
+      "target": "11",
+      "intermediates": [
+        "soccer"
+      ]
+    },
+    {
+      "name": "tendulkar-players",
+      "prompt": "Fact: The number of players per side in the sport Sachin Tendulkar played is ",
+      "target": "11",
+      "intermediates": [
+        "cricket"
+      ]
+    },
+    {
+      "name": "tourdefrance-wheels",
+      "prompt": "Fact: The number of wheels on the vehicle ridden in the Tour de France is ",
+      "target": "2",
+      "intermediates": [
+        "bicycle"
+      ]
+    },
+    {
+      "name": "galaxy-country",
+      "prompt": "Fact: The country where the maker of the Galaxy smartphones is headquartered is ",
+      "target": "South",
+      "intermediates": [
+        "Samsung"
+      ]
+    },
+    {
+      "name": "prancinghorse-country",
+      "prompt": "Fact: The country where the sports car maker with the prancing horse logo is based is ",
+      "target": "Italy",
+      "intermediates": [
+        "Ferrari"
+      ]
+    },
+    {
+      "name": "playstation-country",
+      "prompt": "Fact: The country where the company that makes the PlayStation is based is ",
+      "target": "Japan",
+      "intermediates": [
+        "Sony"
+      ]
+    },
+    {
+      "name": "tuxedo-continent",
+      "prompt": "Fact: The continent where the flightless bird that looks like it wears a tuxedo mostly lives is ",
+      "target": "Antarctica",
+      "intermediates": [
+        "penguin"
+      ]
+    },
+    {
+      "name": "wool-legs",
+      "prompt": "Fact: The number of legs on the farm animal that gives us wool is ",
+      "target": "4",
+      "intermediates": [
+        "sheep"
+      ]
+    },
+    {
+      "name": "monkey-color",
+      "prompt": "Fact: The color of the fruit that monkeys are famous for eating is ",
+      "target": "yellow",
+      "intermediates": [
+        "banana"
+      ]
+    },
+    {
+      "name": "rabbit-color",
+      "prompt": "Fact: The color of the vegetable that rabbits are famous for eating is ",
+      "target": "orange",
+      "intermediates": [
+        "carrot"
+      ]
+    },
+    {
+      "name": "eggs-legs",
+      "prompt": "Fact: The number of legs on the bird that lays most of the eggs people eat is ",
+      "target": "2",
+      "intermediates": [
+        "chicken"
+      ]
+    },
+    {
+      "name": "peace-color",
+      "prompt": "Fact: The color of the bird that is a symbol of peace is ",
+      "target": "white",
+      "intermediates": [
+        "dove"
+      ]
+    },
+    {
+      "name": "mobydick-color",
+      "prompt": "Fact: The color of the animal Captain Ahab hunted in Moby-Dick is ",
+      "target": "white",
+      "intermediates": [
+        "whale"
+      ]
+    },
+    {
+      "name": "atomic-17-symbol",
+      "prompt": "Fact: The chemical symbol for the element with atomic number 17 is ",
+      "target": "Cl",
+      "intermediates": [
+        "chlorine"
+      ]
+    },
+    {
+      "name": "atomic-92-symbol",
+      "prompt": "Fact: The chemical symbol for the element with atomic number 92 is ",
+      "target": "U",
+      "intermediates": [
+        "uranium"
+      ]
+    },
+    {
+      "name": "atomic-78-symbol",
+      "prompt": "Fact: The chemical symbol for the element with atomic number 78 is ",
+      "target": "Pt",
+      "intermediates": [
+        "platinum"
+      ]
+    },
+    {
+      "name": "chem-bulb-Z",
+      "prompt": "Fact: The atomic number of the noble gas that fills ordinary incandescent light bulbs is ",
+      "target": "18",
+      "intermediates": [
+        "argon"
+      ]
+    },
+    {
+      "name": "chem-rotten-Z",
+      "prompt": "Fact: The atomic number of the yellow element that smells like rotten eggs when burned is ",
+      "target": "16",
+      "intermediates": [
+        "sulfur"
+      ]
+    },
+    {
+      "name": "chem-battery-Z",
+      "prompt": "Fact: The atomic number of the light metal used in rechargeable phone batteries is ",
+      "target": "3",
+      "intermediates": [
+        "lithium"
+      ]
+    },
+    {
+      "name": "etym-moon-position",
+      "prompt": "Fact: Counting Monday as day 1, the day of the week named after the Moon is day number ",
+      "target": "1",
+      "intermediates": [
+        "Monday"
+      ]
+    },
+    {
+      "name": "etym-saturnday-position",
+      "prompt": "Fact: Counting Monday as day 1, the day of the week named after the planet Saturn is day number ",
+      "target": "6",
+      "intermediates": [
+        "Saturday"
+      ]
+    },
+    {
+      "name": "succ-moon-nextday",
+      "prompt": "Fact: The day immediately after the one named after the Moon is ",
+      "target": "Tuesday",
+      "intermediates": [
+        "Monday"
+      ]
+    },
+    {
+      "name": "pred-tyr-prevday",
+      "prompt": "Fact: The day immediately before the one named after the Norse god Tyr is ",
+      "target": "Monday",
+      "intermediates": [
+        "Tuesday"
+      ]
+    },
+    {
+      "name": "thor-weapon",
+      "prompt": "Fact: The weapon carried by the Norse god after whom Thursday is named is a ",
+      "target": "hammer",
+      "intermediates": [
+        "Thor"
+      ]
+    },
+    {
+      "name": "heart-fluid-color",
+      "prompt": "Fact: In humans, the color of the fluid that the heart pumps is ",
+      "target": "red",
+      "intermediates": [
+        "blood"
+      ]
+    },
+    {
+      "name": "hearing-organs-count",
+      "prompt": "Fact: In humans, the number of the organs used for hearing is ",
+      "target": "2",
+      "intermediates": [
+        "ears"
+      ]
+    },
+    {
+      "name": "dod-sides",
+      "prompt": "Fact: The number of sides on the shape of the US Department of Defense headquarters building is ",
+      "target": "5",
+      "intermediates": [
+        "Pentagon"
+      ]
+    },
+    {
+      "name": "rhyme-sun-doubled",
+      "prompt": "Fact: Double the number whose name rhymes with sun is ",
+      "target": "2",
+      "intermediates": [
+        "one"
+      ]
+    },
+    {
+      "name": "rhyme-dive-squared",
+      "prompt": "Fact: The square of the number whose name rhymes with dive is ",
+      "target": "25",
+      "intermediates": [
+        "five"
+      ]
+    },
+    {
+      "name": "rhyme-gate-plusone",
+      "prompt": "Fact: One more than the number whose name rhymes with gate is ",
+      "target": "9",
+      "intermediates": [
+        "eight"
+      ]
+    },
+    {
+      "name": "rhyme-pen-halved",
+      "prompt": "Fact: Half of the number whose name rhymes with pen is ",
+      "target": "5",
+      "intermediates": [
+        "ten"
+      ]
+    },
+    {
+      "name": "rhyme-mine-tripled",
+      "prompt": "Fact: Three times the number whose name rhymes with mine is ",
+      "target": "27",
+      "intermediates": [
+        "nine"
+      ]
+    },
+    {
+      "name": "rhyme-big-mud",
+      "prompt": "Fact: The farm animal whose name rhymes with 'big' likes to roll in the ",
+      "target": "mud",
+      "intermediates": [
+        "pig"
+      ]
+    },
+    {
+      "name": "rhyme-shoe-mix",
+      "prompt": "Fact: Mixing yellow paint with the color whose name rhymes with 'shoe' gives ",
+      "target": "green",
+      "intermediates": [
+        "blue"
+      ]
+    },
+    {
+      "name": "rhyme-rose-sense",
+      "prompt": "Fact: The body part whose name rhymes with 'rose' is used to ",
+      "target": "smell",
+      "intermediates": [
+        "nose"
+      ]
+    },
+    {
+      "name": "inv-compass-opposite",
+      "prompt": "Fact: The cardinal direction opposite to the one a compass needle points to is ",
+      "target": "south",
+      "intermediates": [
+        "north"
+      ]
+    },
+    {
+      "name": "dual-oven-opposite",
+      "prompt": "Fact: The opposite of the temperature inside a hot oven is \"",
+      "target": "cold",
+      "intermediates": [
+        "hot"
+      ]
+    },
+    {
+      "name": "dual-coal-opposite",
+      "prompt": "Fact: The opposite of the color of coal is \"",
+      "target": "white",
+      "intermediates": [
+        "black"
+      ]
+    },
+    {
+      "name": "dbl-feather-antonym",
+      "prompt": "Fact: The antonym of how a feather feels when you lift it is \"",
+      "target": "heavy",
+      "intermediates": [
+        "light"
+      ]
+    },
+    {
+      "name": "dbl-cheetah-antonym",
+      "prompt": "Fact: The antonym of how a cheetah runs is \"",
+      "target": "slow",
+      "intermediates": [
+        "fast"
+      ]
+    },
+    {
+      "name": "dual-leaves-opposite",
+      "prompt": "Fact: The opposite of the season when leaves fall from the trees is \"",
+      "target": "spring",
+      "intermediates": [
+        "autumn"
+      ]
+    },
+    {
+      "name": "dbl-britain-side",
+      "prompt": "Fact: The opposite of the side of the road that cars drive on in Britain is the ",
+      "target": "right",
+      "intermediates": [
+        "left"
+      ]
+    },
+    {
+      "name": "firstletter-largest-ocean",
+      "prompt": "Fact: The first letter of the name of the largest ocean is ",
+      "target": "P",
+      "intermediates": [
+        "Pacific"
+      ]
+    },
+    {
+      "name": "firstletter-southamerica-river",
+      "prompt": "Fact: The first letter of the name of the longest river in South America is ",
+      "target": "A",
+      "intermediates": [
+        "Amazon"
+      ]
+    },
+    {
+      "name": "firstletter-japan-capital",
+      "prompt": "Fact: The first letter of the name of the capital of Japan is ",
+      "target": "T",
+      "intermediates": [
+        "Tokyo"
+      ]
+    },
+    {
+      "name": "letterpos-iodine-symbol",
+      "prompt": "Fact: The position in the alphabet of the chemical symbol for iodine is ",
+      "target": "9",
+      "intermediates": [
+        "I"
+      ]
+    },
+    {
+      "name": "letterpos-vanadium-symbol",
+      "prompt": "Fact: The position in the alphabet of the chemical symbol for vanadium is ",
+      "target": "22",
+      "intermediates": [
+        "V"
+      ]
+    },
+    {
+      "name": "roman-violin-strings",
+      "prompt": "Fact: Written as a Roman numeral, the number of strings on a violin is ",
+      "target": "IV",
+      "intermediates": [
+        "4",
+        "four"
+      ]
+    },
+    {
+      "name": "double-tricycle-wheels",
+      "prompt": "Fact: Double the number of wheels on a tricycle is ",
+      "target": "6",
+      "intermediates": [
+        "3",
+        "three"
+      ]
+    },
+    {
+      "name": "half-insect-legs",
+      "prompt": "Fact: Half the number of legs on an insect is ",
+      "target": "3",
+      "intermediates": [
+        "6",
+        "six"
+      ]
+    },
+    {
+      "name": "double-pentagon-sides",
+      "prompt": "Fact: Double the number of sides on a pentagon is ",
+      "target": "10",
+      "intermediates": [
+        "5",
+        "five"
+      ]
+    },
+    {
+      "name": "square-bicycle-wheels",
+      "prompt": "Fact: The square of the number of wheels on a bicycle is ",
+      "target": "4",
+      "intermediates": [
+        "2",
+        "two"
+      ]
+    },
+    {
+      "name": "roman-primary-paint",
+      "prompt": "Fact: Written as a Roman numeral, the number of primary colors of paint is ",
+      "target": "III",
+      "intermediates": [
+        "3",
+        "three"
+      ]
+    },
+    {
+      "name": "nhop3-pentagon-planet",
+      "prompt": "Count the wheels on a unicycle. The planet at that position from the Sun is Mercury. Count the sides on a pentagon. The planet at that position from the Sun is ",
+      "target": "Jupiter",
+      "intermediates": [
+        "5",
+        "five"
+      ]
+    },
+    {
+      "name": "nhop3-ant-planet",
+      "prompt": "Count the corners of a square. The planet at that position from the Sun is Mars. Count the legs on an ant. The planet at that position from the Sun is ",
+      "target": "Saturn",
+      "intermediates": [
+        "6",
+        "six"
+      ]
+    },
+    {
+      "name": "nhop3-tricycle-planet",
+      "prompt": "Count the eyes on a human face. The planet at that position from the Sun is Venus. Count the wheels on a tricycle. The planet at that position from the Sun is ",
+      "target": "Earth",
+      "intermediates": [
+        "3",
+        "three"
+      ]
+    },
+    {
+      "name": "nhop3-quartet-planet",
+      "prompt": "Count the toes on one foot. The planet at that position from the Sun is Jupiter. Count the musicians in a quartet. The planet at that position from the Sun is ",
+      "target": "Mars",
+      "intermediates": [
+        "4",
+        "four"
+      ]
+    },
+    {
+      "name": "nhop3-octagon-planet",
+      "prompt": "Count the legs on a stool with three legs. The planet at that position from the Sun is Earth. Count the sides on an octagon. The planet at that position from the Sun is ",
+      "target": "Neptune",
+      "intermediates": [
+        "8",
+        "eight"
+      ]
+    },
+    {
+      "name": "nhop3-pentagon-element",
+      "prompt": "Count the noses on a face. The element at that position on the periodic table is hydrogen. Count the sides on a pentagon. The element at that position on the periodic table is ",
+      "target": "boron",
+      "intermediates": [
+        "5",
+        "five"
+      ]
+    },
+    {
+      "name": "nhop3-horse-element",
+      "prompt": "Count the wheels on a tricycle. The element at that position on the periodic table is lithium. Count the legs on a horse. The element at that position on the periodic table is ",
+      "target": "beryllium",
+      "intermediates": [
+        "4",
+        "four"
+      ]
+    },
+    {
+      "name": "nhop3-ant-element",
+      "prompt": "Count the points on a star drawn with five lines. The element at that position on the periodic table is boron. Count the legs on an ant. The element at that position on the periodic table is ",
+      "target": "carbon",
+      "intermediates": [
+        "6",
+        "six"
+      ]
+    },
+    {
+      "name": "nhop3-continents-element",
+      "prompt": "Count the eyes on a cat. The element at that position on the periodic table is helium. Count the continents on Earth. The element at that position on the periodic table is ",
+      "target": "nitrogen",
+      "intermediates": [
+        "7",
+        "seven"
+      ]
+    },
+    {
+      "name": "nhop3-octagon-element",
+      "prompt": "Count the sides on a square. The element at that position on the periodic table is beryllium. Count the sides on an octagon. The element at that position on the periodic table is ",
+      "target": "oxygen",
+      "intermediates": [
+        "8",
+        "eight"
+      ]
+    },
+    {
+      "name": "bucharest-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Bucharest is ",
+      "target": "Romanian",
+      "intermediates": [
+        "Romania"
+      ]
+    },
+    {
+      "name": "kabul-continent",
+      "prompt": "Fact: The continent where the country whose capital is Kabul is located is ",
+      "target": "Asia",
+      "intermediates": [
+        "Afghanistan"
+      ]
+    },
+    {
+      "name": "accra-continent",
+      "prompt": "Fact: The continent where the country whose capital is Accra is located is ",
+      "target": "Africa",
+      "intermediates": [
+        "Ghana"
+      ]
+    },
+    {
+      "name": "republic-country",
+      "prompt": "Fact: The country where the philosopher who wrote The Republic was born is ",
+      "target": "Greece",
+      "intermediates": [
+        "Plato"
+      ]
+    },
+    {
+      "name": "penicillin-nationality",
+      "prompt": "Fact: The nationality of the scientist who discovered penicillin is ",
+      "target": "Scottish",
+      "intermediates": [
+        "Fleming"
+      ]
+    },
+    {
+      "name": "superbowl-players",
+      "prompt": "Fact: The number of players per side on the field in the sport of the Super Bowl is ",
+      "target": "11",
+      "intermediates": [
+        "football"
+      ]
+    },
+    {
+      "name": "lane-pins",
+      "prompt": "Fact: The number of pins standing at the end of the lane in the sport where you roll a heavy ball is ",
+      "target": "10",
+      "intermediates": [
+        "bowling"
+      ]
+    },
+    {
+      "name": "quack-legs",
+      "prompt": "Fact: The number of legs on the bird that says quack is ",
+      "target": "2",
+      "intermediates": [
+        "duck"
+      ]
+    },
+    {
+      "name": "caterpillar-legs",
+      "prompt": "Fact: The number of legs on the insect that begins life as a caterpillar is ",
+      "target": "6",
+      "intermediates": [
+        "butterfly"
+      ]
+    },
+    {
+      "name": "junglecat-continent",
+      "prompt": "Fact: The continent where the big cat called the king of the jungle lives in the wild is ",
+      "target": "Africa",
+      "intermediates": [
+        "lion"
+      ]
+    },
+    {
+      "name": "rhyme-sticks-minustwo",
+      "prompt": "Fact: Two less than the number whose name rhymes with sticks is ",
+      "target": "4",
+      "intermediates": [
+        "six"
+      ]
+    },
+    {
+      "name": "rhyme-zoo-plusfour",
+      "prompt": "Fact: Four more than the number whose name rhymes with zoo is ",
+      "target": "6",
+      "intermediates": [
+        "two"
+      ]
+    },
+    {
+      "name": "dbl-elephant-antonym",
+      "prompt": "Fact: The antonym of how you would describe the size of an elephant is \"",
+      "target": "small",
+      "intermediates": [
+        "big"
+      ]
+    },
+    {
+      "name": "firstletter-tallest-mountain",
+      "prompt": "Fact: The first letter of the name of the tallest mountain on Earth is ",
+      "target": "E",
+      "intermediates": [
+        "Everest"
+      ]
+    },
+    {
+      "name": "firstletter-colosseum-city",
+      "prompt": "Fact: The first letter of the name of the city where the Colosseum stands is ",
+      "target": "R",
+      "intermediates": [
+        "Rome"
+      ]
+    },
+    {
+      "name": "beachnet-players",
+      "prompt": "Fact: The number of players per side in the sport played on sand where the ball is hit over a high net is ",
+      "target": "2",
+      "intermediates": [
+        "volleyball"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,879 @@
+{
+  "items": [
+    {
+      "name": "typo-achieve",
+      "prompt": "She worked two jobs to save for college, determined to finally acheive",
+      "intermediates": [
+        "achieve"
+      ]
+    },
+    {
+      "name": "typo-apparent",
+      "prompt": "After a few minutes of silence, the reason for his anger became aparent",
+      "intermediates": [
+        "apparent"
+      ]
+    },
+    {
+      "name": "typo-appearance",
+      "prompt": "The old actor was nervous about his first television apearance",
+      "intermediates": [
+        "appearance"
+      ]
+    },
+    {
+      "name": "typo-basically",
+      "prompt": "When I asked what the movie was about, he said it was basicly",
+      "intermediates": [
+        "basically"
+      ]
+    },
+    {
+      "name": "typo-category",
+      "prompt": "The judges placed her painting in the wrong catagory",
+      "intermediates": [
+        "category"
+      ]
+    },
+    {
+      "name": "typo-ceiling",
+      "prompt": "A large brown water stain had spread across the bedroom cieling",
+      "intermediates": [
+        "ceiling"
+      ]
+    },
+    {
+      "name": "typo-cemetery",
+      "prompt": "Every year on her birthday they visit the old cemetary",
+      "intermediates": [
+        "cemetery"
+      ]
+    },
+    {
+      "name": "typo-chief",
+      "prompt": "The firefighters waited for orders from their cheif",
+      "intermediates": [
+        "chief"
+      ]
+    },
+    {
+      "name": "typo-colleague",
+      "prompt": "He asked for advice from a trusted colleage",
+      "intermediates": [
+        "colleague"
+      ]
+    },
+    {
+      "name": "typo-column",
+      "prompt": "She wrote a weekly advice colum",
+      "intermediates": [
+        "column"
+      ]
+    },
+    {
+      "name": "typo-committee",
+      "prompt": "The proposal was rejected by the budget comittee",
+      "intermediates": [
+        "committee"
+      ]
+    },
+    {
+      "name": "typo-conscience",
+      "prompt": "He returned the money because it weighed on his concience",
+      "intermediates": [
+        "conscience"
+      ]
+    },
+    {
+      "name": "typo-conscious",
+      "prompt": "After the accident he was awake but barely concious",
+      "intermediates": [
+        "conscious"
+      ]
+    },
+    {
+      "name": "typo-convenient",
+      "prompt": "The new train station is very convinient",
+      "intermediates": [
+        "convenient"
+      ]
+    },
+    {
+      "name": "typo-criticize",
+      "prompt": "His parents were always quick to critisize",
+      "intermediates": [
+        "criticize"
+      ]
+    },
+    {
+      "name": "typo-desperate",
+      "prompt": "After three days without food, the hikers were desparate",
+      "intermediates": [
+        "desperate"
+      ]
+    },
+    {
+      "name": "typo-dilemma",
+      "prompt": "Choosing between the two job offers was a real dilemna",
+      "intermediates": [
+        "dilemma"
+      ]
+    },
+    {
+      "name": "typo-disappear",
+      "prompt": "The magician made the white rabbit dissapear",
+      "intermediates": [
+        "disappear"
+      ]
+    },
+    {
+      "name": "typo-disappoint",
+      "prompt": "She studied all night because she did not want to dissapoint",
+      "intermediates": [
+        "disappoint"
+      ]
+    },
+    {
+      "name": "typo-discipline",
+      "prompt": "Learning the violin takes years of hard work and disipline",
+      "intermediates": [
+        "discipline"
+      ]
+    },
+    {
+      "name": "typo-embarrass",
+      "prompt": "Please don't tell that story at the wedding, it will embarass",
+      "intermediates": [
+        "embarrass"
+      ]
+    },
+    {
+      "name": "typo-existence",
+      "prompt": "Scientists still argue about the dinosaur's exsistence",
+      "intermediates": [
+        "existence"
+      ]
+    },
+    {
+      "name": "typo-familiar",
+      "prompt": "The man at the bus stop looked strangely familar",
+      "intermediates": [
+        "familiar"
+      ]
+    },
+    {
+      "name": "typo-fascinating",
+      "prompt": "The documentary about deep-sea creatures was facinating",
+      "intermediates": [
+        "fascinating"
+      ]
+    },
+    {
+      "name": "typo-forty",
+      "prompt": "My grandfather finally learned to swim when he was fourty",
+      "intermediates": [
+        "forty"
+      ]
+    },
+    {
+      "name": "typo-fourth",
+      "prompt": "Our team finished the season in fouth",
+      "intermediates": [
+        "fourth"
+      ]
+    },
+    {
+      "name": "typo-grammar",
+      "prompt": "The teacher marked every mistake in spelling and grammer",
+      "intermediates": [
+        "grammar"
+      ]
+    },
+    {
+      "name": "typo-grateful",
+      "prompt": "After the flood, the family was deeply greatful",
+      "intermediates": [
+        "grateful"
+      ]
+    },
+    {
+      "name": "typo-guarantee",
+      "prompt": "The new washing machine comes with a two-year guarentee",
+      "intermediates": [
+        "guarantee"
+      ]
+    },
+    {
+      "name": "typo-guard",
+      "prompt": "The prisoner slipped past the sleeping gaurd",
+      "intermediates": [
+        "guard"
+      ]
+    },
+    {
+      "name": "typo-hierarchy",
+      "prompt": "Every wolf pack has a strict social heirarchy",
+      "intermediates": [
+        "hierarchy"
+      ]
+    },
+    {
+      "name": "typo-humorous",
+      "prompt": "The best man gave a short and very humourus",
+      "intermediates": [
+        "humorous"
+      ]
+    },
+    {
+      "name": "typo-hygiene",
+      "prompt": "The dentist lectured the boy about dental hygeine",
+      "intermediates": [
+        "hygiene"
+      ]
+    },
+    {
+      "name": "typo-intelligence",
+      "prompt": "Dolphins are known for their remarkable inteligence",
+      "intermediates": [
+        "intelligence"
+      ]
+    },
+    {
+      "name": "typo-interrupt",
+      "prompt": "It is rude to talk while others are speaking, so please don't interupt",
+      "intermediates": [
+        "interrupt"
+      ]
+    },
+    {
+      "name": "typo-jewelry",
+      "prompt": "The thieves broke into the shop and took all the jewelery",
+      "intermediates": [
+        "jewelry"
+      ]
+    },
+    {
+      "name": "typo-judgment",
+      "prompt": "The court will announce its final judgement",
+      "intermediates": [
+        "judgment"
+      ]
+    },
+    {
+      "name": "typo-laboratory",
+      "prompt": "The scientist spent every weekend in her labratory",
+      "intermediates": [
+        "laboratory"
+      ]
+    },
+    {
+      "name": "typo-leisure",
+      "prompt": "After he retired he finally had time for reading and liesure",
+      "intermediates": [
+        "leisure"
+      ]
+    },
+    {
+      "name": "typo-license",
+      "prompt": "He finally passed the test and got his driver's lisence",
+      "intermediates": [
+        "license"
+      ]
+    },
+    {
+      "name": "typo-lightning",
+      "prompt": "The old oak tree was split in two by lightening",
+      "intermediates": [
+        "lightning"
+      ]
+    },
+    {
+      "name": "typo-maintenance",
+      "prompt": "The elevator was closed all week for maintainance",
+      "intermediates": [
+        "maintenance"
+      ]
+    },
+    {
+      "name": "typo-marriage",
+      "prompt": "They celebrated fifty years of a happy marrige",
+      "intermediates": [
+        "marriage"
+      ]
+    },
+    {
+      "name": "typo-medieval",
+      "prompt": "The castle was built in the late medeival",
+      "intermediates": [
+        "medieval"
+      ]
+    },
+    {
+      "name": "typo-millennium",
+      "prompt": "Fireworks lit up the sky to celebrate the new milennium",
+      "intermediates": [
+        "millennium"
+      ]
+    },
+    {
+      "name": "typo-miniature",
+      "prompt": "The museum had a collection of tiny miniture",
+      "intermediates": [
+        "miniature"
+      ]
+    },
+    {
+      "name": "typo-mortgage",
+      "prompt": "They worked for thirty years to pay off the morgage",
+      "intermediates": [
+        "mortgage"
+      ]
+    },
+    {
+      "name": "typo-muscle",
+      "prompt": "He pulled a muscel",
+      "intermediates": [
+        "muscle"
+      ]
+    },
+    {
+      "name": "typo-noticeable",
+      "prompt": "After the haircut the difference was barely noticable",
+      "intermediates": [
+        "noticeable"
+      ]
+    },
+    {
+      "name": "typo-occasion",
+      "prompt": "She saved her best dress for a special ocassion",
+      "intermediates": [
+        "occasion"
+      ]
+    },
+    {
+      "name": "typo-occurred",
+      "prompt": "Nobody could explain how the accident had occured",
+      "intermediates": [
+        "occurred"
+      ]
+    },
+    {
+      "name": "typo-opportunity",
+      "prompt": "The job offer in Paris was a once-in-a-lifetime oportunity",
+      "intermediates": [
+        "opportunity"
+      ]
+    },
+    {
+      "name": "typo-parallel",
+      "prompt": "The two roads ran side by side, perfectly paralel",
+      "intermediates": [
+        "parallel"
+      ]
+    },
+    {
+      "name": "typo-parliament",
+      "prompt": "The new law was debated for weeks in parliment",
+      "intermediates": [
+        "parliament"
+      ]
+    },
+    {
+      "name": "typo-particular",
+      "prompt": "He was very fussy and liked his coffee made in a paticular",
+      "intermediates": [
+        "particular"
+      ]
+    },
+    {
+      "name": "typo-permanent",
+      "prompt": "The ink from the marker turned out to be permenant",
+      "intermediates": [
+        "permanent"
+      ]
+    },
+    {
+      "name": "typo-persistent",
+      "prompt": "The cough was mild but very persistant",
+      "intermediates": [
+        "persistent"
+      ]
+    },
+    {
+      "name": "typo-possession",
+      "prompt": "The old pocket watch was his most treasured posession",
+      "intermediates": [
+        "possession"
+      ]
+    },
+    {
+      "name": "typo-preferred",
+      "prompt": "Of all the flavors, chocolate was the one she prefered",
+      "intermediates": [
+        "preferred"
+      ]
+    },
+    {
+      "name": "typo-privilege",
+      "prompt": "Meeting the queen was a great priviledge",
+      "intermediates": [
+        "privilege"
+      ]
+    },
+    {
+      "name": "typo-pronunciation",
+      "prompt": "The French teacher spent the whole lesson correcting our pronounciation",
+      "intermediates": [
+        "pronunciation"
+      ]
+    },
+    {
+      "name": "typo-publicly",
+      "prompt": "The mayor apologized for the mistake publically",
+      "intermediates": [
+        "publicly"
+      ]
+    },
+    {
+      "name": "typo-queue",
+      "prompt": "We waited for an hour in a very long queu",
+      "intermediates": [
+        "queue"
+      ]
+    },
+    {
+      "name": "typo-receipt",
+      "prompt": "Keep the box and the store receit",
+      "intermediates": [
+        "receipt"
+      ]
+    },
+    {
+      "name": "typo-relevant",
+      "prompt": "The lawyer argued that the old letters were not relevent",
+      "intermediates": [
+        "relevant"
+      ]
+    },
+    {
+      "name": "typo-religious",
+      "prompt": "Her grandparents were deeply relegious",
+      "intermediates": [
+        "religious"
+      ]
+    },
+    {
+      "name": "typo-remember",
+      "prompt": "It happened so long ago that I can barely rember",
+      "intermediates": [
+        "remember"
+      ]
+    },
+    {
+      "name": "typo-rhythm",
+      "prompt": "The drummer kept a steady rythm",
+      "intermediates": [
+        "rhythm"
+      ]
+    },
+    {
+      "name": "typo-ridiculous",
+      "prompt": "The hat she wore to the wedding was absolutely rediculous",
+      "intermediates": [
+        "ridiculous"
+      ]
+    },
+    {
+      "name": "typo-scissors",
+      "prompt": "She cut the ribbon with a pair of sissors",
+      "intermediates": [
+        "scissors"
+      ]
+    },
+    {
+      "name": "typo-secretary",
+      "prompt": "He left a message for the manager with his secretery",
+      "intermediates": [
+        "secretary"
+      ]
+    },
+    {
+      "name": "typo-sergeant",
+      "prompt": "The young soldier saluted the sargent",
+      "intermediates": [
+        "sergeant"
+      ]
+    },
+    {
+      "name": "typo-similar",
+      "prompt": "The two sisters have very similiar",
+      "intermediates": [
+        "similar"
+      ]
+    },
+    {
+      "name": "typo-sincerely",
+      "prompt": "She ended the formal letter with the words yours sincerly",
+      "intermediates": [
+        "sincerely"
+      ]
+    },
+    {
+      "name": "typo-souvenir",
+      "prompt": "He bought a small model of the tower as a souvenier",
+      "intermediates": [
+        "souvenir"
+      ]
+    },
+    {
+      "name": "typo-strength",
+      "prompt": "Lifting the piano took all of his strenght",
+      "intermediates": [
+        "strength"
+      ]
+    },
+    {
+      "name": "typo-succeed",
+      "prompt": "With enough practice, I know you will suceed",
+      "intermediates": [
+        "succeed"
+      ]
+    },
+    {
+      "name": "typo-threshold",
+      "prompt": "He carried his bride across the threshhold",
+      "intermediates": [
+        "threshold"
+      ]
+    },
+    {
+      "name": "typo-tongue",
+      "prompt": "The soup was so hot that he burned his tounge",
+      "intermediates": [
+        "tongue"
+      ]
+    },
+    {
+      "name": "typo-tragedy",
+      "prompt": "The sinking of the ship was a terrible tradegy",
+      "intermediates": [
+        "tragedy"
+      ]
+    },
+    {
+      "name": "typo-tyranny",
+      "prompt": "The people rose up against years of tyrany",
+      "intermediates": [
+        "tyranny"
+      ]
+    },
+    {
+      "name": "typo-vacuum",
+      "prompt": "Every Saturday morning he has to vaccum",
+      "intermediates": [
+        "vacuum"
+      ]
+    },
+    {
+      "name": "typo-vehicle",
+      "prompt": "The police stopped the suspicious vehical",
+      "intermediates": [
+        "vehicle"
+      ]
+    },
+    {
+      "name": "typo-villain",
+      "prompt": "In the final scene the hero defeats the evil villian",
+      "intermediates": [
+        "villain"
+      ]
+    },
+    {
+      "name": "typo-whether",
+      "prompt": "She could not decide wheather",
+      "intermediates": [
+        "whether"
+      ]
+    },
+    {
+      "name": "typo-cousin",
+      "prompt": "We spent the summer on the farm with my cousen",
+      "intermediates": [
+        "cousin"
+      ]
+    },
+    {
+      "name": "typo-sandwich",
+      "prompt": "For lunch he packed a cheese and tomato sandwhich",
+      "intermediates": [
+        "sandwich"
+      ]
+    },
+    {
+      "name": "typo-umbrella",
+      "prompt": "It started to rain, and she had forgotten her umbrela",
+      "intermediates": [
+        "umbrella"
+      ]
+    },
+    {
+      "name": "typo-elephant",
+      "prompt": "At the zoo the children fed peanuts to the elefant",
+      "intermediates": [
+        "elephant"
+      ]
+    },
+    {
+      "name": "typo-dinosaur",
+      "prompt": "The museum's main hall has a giant dinosuar",
+      "intermediates": [
+        "dinosaur"
+      ]
+    },
+    {
+      "name": "typo-butterfly",
+      "prompt": "The caterpillar finally turned into a beautiful butterfy",
+      "intermediates": [
+        "butterfly"
+      ]
+    },
+    {
+      "name": "typo-strawberry",
+      "prompt": "For dessert she ordered the strawbery",
+      "intermediates": [
+        "strawberry"
+      ]
+    },
+    {
+      "name": "typo-penguin",
+      "prompt": "The little girl's favorite animal is the pengiun",
+      "intermediates": [
+        "penguin"
+      ]
+    },
+    {
+      "name": "typo-squirrel",
+      "prompt": "The dog barked at a squirell",
+      "intermediates": [
+        "squirrel"
+      ]
+    },
+    {
+      "name": "typo-spaghetti",
+      "prompt": "Every Friday night the family eats spagetti",
+      "intermediates": [
+        "spaghetti"
+      ]
+    },
+    {
+      "name": "typo-cinnamon",
+      "prompt": "The kitchen smelled of apples and cinamon",
+      "intermediates": [
+        "cinnamon"
+      ]
+    },
+    {
+      "name": "typo-thousand",
+      "prompt": "The old castle is more than a thousend",
+      "intermediates": [
+        "thousand"
+      ]
+    },
+    {
+      "name": "typo-mother",
+      "prompt": "She called home every Sunday to talk to her mohter",
+      "intermediates": [
+        "mother"
+      ]
+    },
+    {
+      "name": "typo-father",
+      "prompt": "The boy wanted to grow up to be a doctor just like his fahter",
+      "intermediates": [
+        "father"
+      ]
+    },
+    {
+      "name": "typo-flower",
+      "prompt": "He bought her a single red flowr",
+      "intermediates": [
+        "flower"
+      ]
+    },
+    {
+      "name": "typo-should",
+      "prompt": "I don't know what we shuold",
+      "intermediates": [
+        "should"
+      ]
+    },
+    {
+      "name": "typo-school",
+      "prompt": "The children walked together to scool",
+      "intermediates": [
+        "school"
+      ]
+    },
+    {
+      "name": "typo-autumn",
+      "prompt": "The leaves turn red and gold every autum",
+      "intermediates": [
+        "autumn"
+      ]
+    },
+    {
+      "name": "typo-purpose",
+      "prompt": "He broke the window on purpouse",
+      "intermediates": [
+        "purpose"
+      ]
+    },
+    {
+      "name": "typo-quiet",
+      "prompt": "The library was very quite",
+      "intermediates": [
+        "quiet"
+      ]
+    },
+    {
+      "name": "typo-ready",
+      "prompt": "Put your shoes on, the car is reddy",
+      "intermediates": [
+        "ready"
+      ]
+    },
+    {
+      "name": "typo-strange",
+      "prompt": "The noise coming from the basement sounded very strnage",
+      "intermediates": [
+        "strange"
+      ]
+    },
+    {
+      "name": "typo-stomach",
+      "prompt": "He ate too much cake and got a pain in his stomache",
+      "intermediates": [
+        "stomach"
+      ]
+    },
+    {
+      "name": "typo-teacher",
+      "prompt": "The students gave a card to their favorite teahcer",
+      "intermediates": [
+        "teacher"
+      ]
+    },
+    {
+      "name": "typo-visit",
+      "prompt": "Next summer we are going to vist",
+      "intermediates": [
+        "visit"
+      ]
+    },
+    {
+      "name": "typo-voice",
+      "prompt": "She has a beautiful singing vioce",
+      "intermediates": [
+        "voice"
+      ]
+    },
+    {
+      "name": "typo-wonderful",
+      "prompt": "Thank you for dinner, it was wonderfull",
+      "intermediates": [
+        "wonderful"
+      ]
+    },
+    {
+      "name": "typo-worry",
+      "prompt": "Everything will be fine, there is nothing to wory",
+      "intermediates": [
+        "worry"
+      ]
+    },
+    {
+      "name": "typo-happen",
+      "prompt": "Nobody knows what will hapen",
+      "intermediates": [
+        "happen"
+      ]
+    },
+    {
+      "name": "typo-journey",
+      "prompt": "The ship began its long jouney",
+      "intermediates": [
+        "journey"
+      ]
+    },
+    {
+      "name": "typo-machine",
+      "prompt": "The coffee in the office comes from an old machien",
+      "intermediates": [
+        "machine"
+      ]
+    },
+    {
+      "name": "typo-perfect",
+      "prompt": "The weather on their wedding day was perfcet",
+      "intermediates": [
+        "perfect"
+      ]
+    },
+    {
+      "name": "typo-possible",
+      "prompt": "The engineers said the bridge would be finished as soon as posible",
+      "intermediates": [
+        "possible"
+      ]
+    },
+    {
+      "name": "typo-pretty",
+      "prompt": "Everyone at the party said her dress was very prety",
+      "intermediates": [
+        "pretty"
+      ]
+    },
+    {
+      "name": "typo-season",
+      "prompt": "Summer is my favorite seasn",
+      "intermediates": [
+        "season"
+      ]
+    },
+    {
+      "name": "typo-smile",
+      "prompt": "The baby gave her a big toothless smiel",
+      "intermediates": [
+        "smile"
+      ]
+    },
+    {
+      "name": "typo-soldier",
+      "prompt": "The statue in the square honors an unknown soilder",
+      "intermediates": [
+        "soldier"
+      ]
+    },
+    {
+      "name": "typo-sugar",
+      "prompt": "He takes his coffee with milk and two spoons of suger",
+      "intermediates": [
+        "sugar"
+      ]
+    },
+    {
+      "name": "typo-clothes",
+      "prompt": "She packed her suitcase with summer cloths",
+      "intermediates": [
+        "clothes"
+      ]
+    },
+    {
+      "name": "typo-planet",
+      "prompt": "Mars is the fourth plannet",
+      "intermediates": [
+        "planet"
+      ]
+    }
+  ]
+}
