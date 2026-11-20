@@ -1,0 +1,77 @@
+L3 jlens: mean diagonal 0.222, ||M - I||/||I|| 1.567
+L3 jpp: mean diagonal 0.240, ||M - I||/||I|| 1.142
+L6 jlens: mean diagonal 0.295, ||M - I||/||I|| 1.468
+L6 jpp: mean diagonal 0.722, ||M - I||/||I|| 1.794
+L9 jlens: mean diagonal 0.456, ||M - I||/||I|| 1.537
+L9 jpp: mean diagonal 0.917, ||M - I||/||I|| 1.726
+L12 jlens: mean diagonal 0.646, ||M - I||/||I|| 1.457
+L12 jpp: mean diagonal 0.467, ||M - I||/||I|| 0.913
+L15 jlens: mean diagonal 0.849, ||M - I||/||I|| 0.968
+L15 jpp: mean diagonal 0.616, ||M - I||/||I|| 0.730
+L18 jlens: mean diagonal 1.101, ||M - I||/||I|| 0.853
+L18 jpp: mean diagonal 0.447, ||M - I||/||I|| 0.671
+L21 jlens: mean diagonal 1.059, ||M - I||/||I|| 0.576
+L21 jpp: mean diagonal 0.319, ||M - I||/||I|| 0.734
+
+held-out pairs with filtered rank <= 10, per layer (n = 312 pairs)
+lens                L3    L6    L9   L12   L15   L18   L21
+logit               23    13     4     2    11    35    33
+jlens               23    32    19    40    61    88    60
+jlens-a0.1          21    31    18    39    57    88    61
+jlens-a0.25         19    28    18    39    55    92    63
+jlens-a0.5          14    26    17    39    52    92    66
+jlens-a0.75         13    24    17    32    47    91    68
+jlens-a1            10    22    17    30    37    90    65
+jlens-a1.25          9    19    17    27    32    80    38
+jlens-a1.5           5    14    15    27    26    61     6
+jpp                 57    60    62    63    80    98    67
+jpp-a0.1            54    60    64    65    83    97    68
+jpp-a0.25           50    58    63    70    86    90    42
+jpp-a0.5            40    52    65    66    86    54     8
+jpp-a0.75           31    49    61    56    69    26     1
+jpp-a1              26    43    57    52    43    19     0
+jpp-a1.25           19    41    56    47    33    11     0
+jpp-a1.5            14    39    58    39    26     6     0
+jlens+fq            28    45    32    45    62    88    62
+jlens-a1+fq         12    27    29    35    45    89    65
+jpp+fq              59    65    62    66    82    95    61
+jpp-a1+fq           26    45    66    51    41    18     1
+--
+L4 jlens: mean diagonal 0.243, ||M - I||/||I|| 2.207
+L4 jpp: mean diagonal 0.266, ||M - I||/||I|| 1.352
+L8 jlens: mean diagonal 0.259, ||M - I||/||I|| 1.420
+L8 jpp: mean diagonal 0.374, ||M - I||/||I|| 1.246
+L12 jlens: mean diagonal 0.429, ||M - I||/||I|| 1.429
+L12 jpp: mean diagonal 1.233, ||M - I||/||I|| 2.370
+L16 jlens: mean diagonal 0.640, ||M - I||/||I|| 1.335
+L16 jpp: mean diagonal 0.594, ||M - I||/||I|| 1.137
+L20 jlens: mean diagonal 0.905, ||M - I||/||I|| 0.892
+L20 jpp: mean diagonal 0.566, ||M - I||/||I|| 0.716
+L24 jlens: mean diagonal 1.107, ||M - I||/||I|| 0.732
+L24 jpp: mean diagonal 0.407, ||M - I||/||I|| 0.702
+L28 jlens: mean diagonal 1.103, ||M - I||/||I|| 0.554
+L28 jpp: mean diagonal 0.192, ||M - I||/||I|| 0.820
+
+held-out pairs with filtered rank <= 10, per layer (n = 485 pairs)
+lens                L4    L8   L12   L16   L20   L24   L28
+logit               28    18    12     5    45    91    78
+jlens               10    21    32    30    89   133   105
+jlens-a0.1           9    19    32    28    84   129   108
+jlens-a0.25          5    18    29    28    81   132   114
+jlens-a0.5           5    15    24    27    72   130   114
+jlens-a0.75          2    15    20    23    62   126   120
+jlens-a1             2    12    18    20    50   102   112
+jlens-a1.25          2    11    18    16    42    59    71
+jlens-a1.5           2     6    12    13    29    28    33
+jpp                 64   108   135   106   171   175   138
+jpp-a0.1            64   106   137   105   169   173   153
+jpp-a0.25           64   100   137   103   168   178    72
+jpp-a0.5            57    92   133   100   149   115    20
+jpp-a0.75           49    72   128    95   122    47     5
+jpp-a1              39    59   128    87    90    23     2
+jpp-a1.25           27    49   127    73    56    15     0
+jpp-a1.5            18    36   121    65    31     7     0
+jlens+fq            10    27    42    28   102   137   113
+jlens-a1+fq          2    15    25    18    59   119   118
+jpp+fq              68   107   134   104   175   174   144
+jpp-a1+fq           41    53   128    82    93    27     1
