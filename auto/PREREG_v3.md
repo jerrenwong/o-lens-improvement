@@ -52,3 +52,17 @@ same ridge recipe and targets as E, but the map's input is the mean INPUT EMBEDD
 readout position (no model computation); lens = unit(J++ h) + lam * unit(map output), lam chosen on the original fit
 split (0.2). On the old dev split T scored .6282 against A's .6265. Comparisons on v3: T vs J++, and A vs T. If A is
 not better than T, the gain of A is a text-topic prior and not a reading of model-computed content.
+
+## Results (9B scored 20:42Z, 27B scored 22:46-23:09Z on 2026-11-20; runs auto/runs/V3_*; 475 prompts for 9B, 512 for 27B)
+PRIMARY: A - J++, pass@10 filtered, mean over 9B and 27B: 55.8 -> 57.9 = +2.1 [+0.5, +3.7] (bootstrap p ~ 0.012; 65
+prompts better, 46 worse). The interval excludes zero: the registered claim holds, as on v2 (+2.2 [+0.6,+3.7]).
+SECONDARY
+- 9B: +3.7 [+1.2,+6.4] pass@10; +1.6 [-0.9,+4.3] pass@1; +3.6 [+1.3,+6.1] unfiltered.
+- 27B (recipe A, amendment 2): +0.5 [-1.5,+2.5] pass@10; -2.2 [-4.3,-0.2] pass@1; +0.6 [-1.5,+2.7] unfiltered.
+- Pooled pass@1: -0.3 [-2.0,+1.4]. A - shuffled: +7.1 [+5.7,+8.6]; shuffled - J++: -5.0 [-6.6,-3.4].
+- G (generate-without-naming map, 9B): +0.1 [-1.2,+1.4]; AG: +0.7 [-0.6,+2.0]; G - G_shuf: +0.9 [-0.3,+2.1].
+- v2 + v3 pooled: both models +2.1 [+1.0,+3.2] (pass@1 -0.2 [-1.4,+1.0]); 9B only +3.5 [+1.7,+5.4] (pass@1 +1.6
+  [-0.2,+3.5]); 27B only +0.8 [-0.6,+2.1] (pass@1 -2.0 [-3.6,-0.5]).
+- Still to score on v3 (registered): T (bag-of-visible-words control, amendment 4) and W (generated-data expert
+  weights, amendment 3).
+Reading: the gain is a 9B effect; on 27B there is no pass@10 gain and top-1 gets worse.

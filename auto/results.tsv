@@ -88,3 +88,5 @@ T_m27_A_27b	0.5708	0.3090	0.0	test	27B TEST (single look, 162 items): J++ .5620/
 V2_e2_A_9b	0.6750	0.4051	0.0	v2-test	FRESH PROMPTS (469), 9B: J++ .6421/.3890 -> A .6750/.4051 = +3.3 [+0.8,+5.9]; shuffled .6037; B .6155
 V2_m27_A_27b	0.6845	0.3866	0.0	v2-test	FRESH PROMPTS (501), 27B: J++ .6740/.4040 -> A .6845/.3866 = +1.1 [-0.7,+2.9]; shuffled .6338
 V2_PRIMARY	0.6800	0.3960	0.0	v2-test	PRE-REGISTERED PRIMARY: A - J++ pass@10, mean over 9B and 27B, fresh prompts = +2.2 [+0.6,+3.7], p~0.008; pass@1 -0.1 [-1.8,+1.7]; A - shuffled +6.1 [+4.7,+7.5]
+V3_PRIMARY	0.5790	0.3140	0.0	v3-test	REGISTERED PRIMARY on v3: A - J++ pass@10, mean of 9B and 27B = +2.1 [+0.5,+3.7] p~0.012; pass@1 -0.3 [-2.0,+1.4]. 9B +3.7 [+1.2,+6.4]; 27B +0.5 [-1.5,+2.5], 27B pass@1 -2.2 [-4.3,-0.2]. v2+v3: both +2.1 [+1.0,+3.2]; 9B +3.5 [+1.7,+5.4]; 27B +0.8 [-0.6,+2.1]
+V3_g1_G_9b	0.5199	0.2986	0.0	v3-test	generate-without-naming map on v3 9B: +0.1 [-1.2,+1.4]; AG +0.7 [-0.6,+2.0]

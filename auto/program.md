@@ -180,6 +180,12 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   where they overlap; late-layer SAY = "emit this token".
 - v3 9B (475 fresh prompts): A - J++ = +3.7 [+1.2,+6.4]; shuffled -3.5; G +0.1; AG +0.7.
 
+- v3 REGISTERED TEST complete: A - J++ pass@10 mean(9B, 27B) = +2.1 [+0.5,+3.7]; 9B +3.7, 27B +0.5 [-1.5,+2.5];
+  27B pass@1 -2.2 [-4.3,-0.2]. v2+v3 pooled: 9B +3.5 [+1.7,+5.4]; 27B +0.8 [-0.6,+2.1] with pass@1 -2.0 [-3.6,-0.5].
+  => the ask-map gain is a 9B effect; on 27B it does not help pass@10 and hurts top-1.
+  GPU note: a 27B job must reserve memory at start (see /root/v3_greedy.py pattern: allocate blocks until 67 GB,
+  free them to the cache, then load) or smaller jobs squeeze in while it loads and it dies of OOM.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
