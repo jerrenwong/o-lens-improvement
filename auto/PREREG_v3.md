@@ -45,3 +45,10 @@ wrote about a word without using it (g1 data, STRICT concept set: no benchmark w
 intermediate. Comparisons on v3: W vs the same experts with benchmark-fit weights (`runs/r2_9b/A/A_full/jpp_A_full.pt`),
 and W vs released J++. Candidate/lens file fixed by agent w1 before it is scored on v3. PRIMARY analysis unchanged.
 Result of G (amendment 1), for the record, on the OLD dev split: G - J++ = +0.7 [-1.0,+2.4]; G will still be scored on v3.
+
+## Amendment 4 (2026-11-20 20:20Z, before any lens score on v3 was read)
+Added SECONDARY comparison on v3 for 9B: "T" = J++ plus a bag-of-visible-words topic map (agent why1, map (c)): the
+same ridge recipe and targets as E, but the map's input is the mean INPUT EMBEDDING of the prompt's tokens up to the
+readout position (no model computation); lens = unit(J++ h) + lam * unit(map output), lam chosen on the original fit
+split (0.2). On the old dev split T scored .6282 against A's .6265. Comparisons on v3: T vs J++, and A vs T. If A is
+not better than T, the gain of A is a text-topic prior and not a reading of model-computed content.
