@@ -79,3 +79,7 @@ C - J++ on v2, pass@10 filtered, mean over 9B and 27B: +2.1 [+0.6, +3.6]. 9B +3.
 ## Amendment 4 (2026-11-21 10:41Z, written and committed BEFORE any fm27 lens is scored on v2 or v3)
 Same registration as PREREG_v3.md Amendment 6 (lens G = `fm27_F5s.py`, lens L = `fm27_F4.py`; primary G - C pass@1
 on 27B, mean over v2 and v3).
+
+## Results, amendment 4 (scored 2026-11-21 11:13Z; full table in PREREG_v3.md "Results, amendment 6")
+Primary (G - C pass@1 on 27B, v2 + v3): +1.2 [+0.2, +2.2]. On v2 alone: L - J++ pass@10 27B +2.8 [+1.4, +4.4], 9B +3.7
+[+1.4, +6.1], both models +3.3 [+1.9, +4.7].

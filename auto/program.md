@@ -270,6 +270,8 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
 
 - **mlp1: nonlinear translation map (2026-11-21).** Test words any-of-7 top-10, 3 seeds: ridge .2815; linear cross-entropy .3269; residual MLP .3375; scratch MLP .3451; control P0 = ridge frozen + one trained output shift .3469. In the mix with label-free J++: .401 / .413 / .411 / .422-.426 (lam 3) / .419. The ReLU adds nothing (C - P0 -1.0 [-1.7,-0.2]); the gain is an input-independent shift that suppresses junk tokens (+6.5 alone, +1.8 [0.6,3.0] in the mix). All maps memorise train words (.92-1.0 vs .17-.22). Benchmark dev unchanged. bf16 tie rule inflates al2 numbers 0.2-0.8 pts. Results scripts/mlp1/results/.
 
+- **Registered 27B repair (2026-11-21; PREREG_v3 Amdt 6 / v2 Amdt 4; scripts/results/c4_boot.txt).** Cause (fm27, FIT): the map's effective weight on 27B was ~2.3x that on 9B, so the map chose the top-1 (format/topic tokens). G (fm27_F5s.py: rank 1 must be in J++'s top-10) meets its primary: G - C pass@1 on 27B +1.2 [0.2,2.2]; G - J++ pass@1 -1.3 [-2.9,0.4]. **L (fm27_F4.py: weight chosen on FIT by pass@1 + pass@10; 0.3 on 9B, 0.2 on 27B) beats J++ on both models on both fresh sets:** 27B pass@10 +1.6 [0.1,3.2] / +2.8 [1.4,4.4], pooled +2.2 [1.2,3.3], pass@1 +0.2; 9B pass@10 +3.6 [2.0,5.4], pass@1 +2.5 [0.8,4.3]; both models +2.9 [1.9,4.0] pass@10, +1.4 [0.3,2.5] pass@1. L was a registered secondary: confirm as a primary on a new fresh set.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,

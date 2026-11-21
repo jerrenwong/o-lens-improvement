@@ -170,3 +170,26 @@ My predictions: G - C pass@1 on 27B +0.5 to +1.5; G - J++ pass@1 still about -1 
 over J++ and pass@1 about 0. I do not expect either to turn 27B into a gain.
 Scoring with --lite as in amendment 5 (guard already passed on these sets). Run names V{2,3}_G_{9b,27b},
 V{2,3}_L_{9b,27b}.
+
+## Results, amendment 6 (scored 2026-11-21 11:13Z by scripts/c4_run.sh with --lite; bootstrap scripts/c4_boot.py -> scripts/results/c4_boot.txt)
+Weights chosen at build time, as on dev: L 0.3 on 9B and 0.2 on 27B; G 0.2 / 0.5 (fixed).
+PRIMARY: G - C, pass@1 filtered, 27B, mean over v2 and v3: 34.9 -> 36.1 = +1.2 [+0.2, +2.2]. The interval excludes zero
+on the positive side: the guard repairs part of the best-guess loss. G - J++ pass@1 on 27B: -1.3 [-2.9, +0.4], which no
+longer excludes zero. By the rule fixed in the amendment, G is a valid single definition (gain on 9B, no significant
+harm on 27B). G's pass@10 equals C's (27B -0.1 [-0.5, +0.2]; 9B identical).
+SECONDARY
+- L on 27B: L - J++ pass@10 v3 +1.6 [+0.1, +3.2], v2 +2.8 [+1.4, +4.4], pooled +2.2 [+1.2, +3.3]; pass@1 pooled +0.2
+  [-1.0, +1.4]; unfiltered pass@10 +2.6 [+1.4, +3.9]; unfiltered pass@1 +1.5 [+0.2, +2.7]. L - C pass@1 +2.7 [+1.3,
+  +4.1], pass@10 +1.3 [+0.1, +2.5].
+- L on 9B: L - J++ pass@10 v3 +3.5 [+1.0, +6.3], v2 +3.7 [+1.4, +6.1], pooled +3.6 [+2.0, +5.4]; pass@1 +2.5 [+0.8,
+  +4.3]; L - C pass@10 +0.9 [-0.1, +2.0], pass@1 -0.3 [-1.3, +0.7].
+- L, mean over both models: pass@10 v3 +2.6 [+1.1, +4.1], v2 +3.3 [+1.9, +4.7], pooled +2.9 [+1.9, +4.0]; pass@1 pooled
+  +1.4 [+0.3, +2.5]; unfiltered pass@10 +3.7 [+2.7, +4.8].
+- G on 9B: G - C pass@1 -0.1 [-0.5, +0.2]; pass@10 identical.
+Reading. (1) The registered primary is met: the guard helps 27B's best guess, as predicted (+0.5..+1.5), without
+making 27B a gain. (2) My prediction for L was wrong: I expected about +0.5 pass@10 on 27B and it is +2.2 [+1.2, +3.3],
+excluding zero on each fresh set, with the best guess unharmed. Choosing the weight on the FIT split by pass@1 +
+pass@10 jointly, instead of by pass@10 alone, gives a lens that beats J++ on both models on both fresh sets. (3) Status
+of that claim: L was a registered SECONDARY, one of two lenses in this amendment, on prompt sets that have now been
+used for several registered comparisons. It should be confirmed as a PRIMARY on a new fresh set before it is called
+settled.
