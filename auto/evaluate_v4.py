@@ -39,7 +39,7 @@ MODELS = {
         dicts=lambda layer, space: f"runs/bsf9b/L{layer}_{space}_b1_10M.pt",
     ),
     "Qwen/Qwen3.5-2B": dict(
-        tag="2b", bench="artifacts/bench/qwen3.5-2b.pt", J="artifacts/baselines/jlens_prefit.pt",
+        tag="2b", bench="artifacts/bench/qwen3.5-2b.pt", bench_v4="artifacts/bench/v4_qwen3.5-2b.pt", J="artifacts/baselines/jlens_prefit.pt",
         JPP="artifacts/baselines/jpp_prefit.pt", layers=[3, 6, 9, 12, 15, 18, 21],
         dicts=lambda layer, space: (f"runs/bsf1/L18_{space}_b1_10M.pt" if layer == 18
                                     else f"runs/bsf2/L{layer}_{space}_b1_10M.pt"),

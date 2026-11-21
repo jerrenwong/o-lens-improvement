@@ -29,8 +29,10 @@ from pathlib import Path
 JPP = os.environ.get("JPP_LENS_DIR", "/root/jpp_lens")
 R = Path("/workspace/o-lens-improvement")
 V4 = R / "data/evals_v4"
-OUT = {"9b": "artifacts/bench/v4_qwen3.5-9b.pt", "27b": "artifacts/bench/v4_qwen3.6-27b.pt"}
-ORIG_BENCH = {"9b": "artifacts/bench/qwen3.5-9b.pt", "27b": "artifacts/bench/qwen3.6-27b.pt"}
+OUT = {"9b": "artifacts/bench/v4_qwen3.5-9b.pt", "27b": "artifacts/bench/v4_qwen3.6-27b.pt",
+       "2b": "artifacts/bench/v4_qwen3.5-2b.pt"}
+ORIG_BENCH = {"9b": "artifacts/bench/qwen3.5-9b.pt", "27b": "artifacts/bench/qwen3.6-27b.pt",
+              "2b": "artifacts/bench/qwen3.5-2b.pt"}
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--model", required=True)
