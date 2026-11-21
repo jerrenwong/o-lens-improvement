@@ -110,3 +110,9 @@ The 2B lens of addendum B (`m2b_L.py`, unchanged) on the ORIGINAL benchmark's te
 against the stored J++ run T_jpp_2b (.3150 / .1772), scored once with --lite. Reported: pass@10 and pass@1 with paired
 bootstrap. Secondary check on a small split that was scored before for other lenses. Prediction: +3 to +9 pass@10.
 Run name T_L_2b.
+
+## Results, addendum C (scored 2026-11-21 20:31Z, once, --lite; scripts/r2_boot.py)
+Qwen3.5-2B, original benchmark test split (108 prompts): J++ .3150 / .1772 -> lens .4476 / .2240 (weight 0.5 from the FIT
+rule). pass@10 +13.3 [+5.9, +20.3]; pass@1 +4.7 [-0.9, +11.2]; unfiltered pass@10 +15.0 [+7.2, +22.9]. Above the predicted
++3..+9. Note: the registration commit (a6cf469) was made before scoring; its push hit a stale git lock and was repeated
+right after the run.
