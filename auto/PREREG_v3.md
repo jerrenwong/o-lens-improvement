@@ -124,3 +124,26 @@ unembed verified bitwise equal to the full model on 9B, /root/perf1/a9_check.log
 fits beside other jobs. Guard: J++ (`jpp.py`) is rescored with --lite on each set and model first and must reproduce
 the stored per-item ranks of V*_jpp_* exactly; if any differ, every run of this amendment is redone without --lite.
 Run names: V{2,3}_jpplite_{9b,27b}, V{2,3}_C3_{9b,27b}, V{2,3}_C3shuf_{9b,27b}.
+
+## Results, amendment 5 (scored 2026-11-21 09:35Z by scripts/c3_run.sh with --lite; bootstrap scripts/c3_boot.py -> runs/c3_boot.txt)
+Guard: PASSED. V{2,3}_jpplite_{9b,27b} reproduce the stored J++ per-row ranks exactly (0 differing rows of 5,152-5,607
+per run, filtered and unfiltered).
+PRIMARY on v3: C - J++, pass@10 filtered, mean over 9B and 27B: 55.8 -> 57.3 = +1.5 [-0.0, +3.1] (p ~ 0.056). The
+interval touches zero: the registered primary is NOT met on v3. Registered replication on v2: 65.8 -> 67.9 = +2.1
+[+0.6, +3.6] (p ~ 0.004). v2 + v3: +1.8 [+0.8, +2.9].
+SECONDARY
+- 9B: pass@10 v3 +2.4 [+0.4, +4.8], v2 +3.1 [+1.1, +5.2], pooled +2.7 [+1.3, +4.3]; pass@1 v3 +2.6 [+0.7, +4.9], v2
+  +3.1 [+1.1, +5.1], pooled +2.8 [+1.4, +4.3]; unfiltered pass@10 +4.0 / +4.1.
+- 27B: pass@10 v3 +0.6 [-1.5, +2.9], v2 +1.1 [-1.0, +3.3], pooled +0.9 [-0.6, +2.5]; pass@1 v3 -3.1 [-5.4, -0.8], v2
+  -1.8 [-4.6, +0.9], pooled -2.5 [-4.2, -0.8]; unfiltered pass@10 v3 +2.8 [+0.4, +5.3], v2 +1.9 [-0.2, +4.0], pooled
+  +2.3 [+0.7, +4.0].
+- C - A: 9B pass@10 v3 -1.3 [-3.0, +0.1], v2 -0.2 [-2.0, +1.6]; pass@1 +1.0 / +1.4 (ns). 27B pass@10 +0.1 / +0.1;
+  unfiltered +2.2 [+0.7, +3.9] / +2.1 [+0.7, +3.7].
+- C - shuffled: 9B +2.4 [+1.2, +3.8] / +2.9 [+1.0, +4.8]; 27B +7.6 / +5.4. Shuffled - J++: 9B -0.0 / +0.2; 27B
+  -7.0 / -4.2.
+- Prompts where C is better / worse than J++ (pass@10): v3 9B 33 / 11, v2 9B 33 / 8, v3 27B 29 / 35, v2 27B 32 / 30.
+Reading, by the rule fixed in the amendment. (1) 9B: C - J++ excludes zero on both sets and C - A is within noise, so
+the leak caveat is removed and the 9B claim rests on C: +2.7 [+1.3, +4.3] pass@10 and +2.8 [+1.4, +4.3] pass@1, with
+the shuffled control flat. (2) 27B stays "no gain": pass@10 is flat and pass@1 is worse, with real (non-blank) targets
+too; only the unfiltered score improves. Fixing the 27B targets did not rescue 27B. (3) Predictions: 9B within the
+predicted +2..+4, C - A within +-2; 27B within the predicted 0..+2 and unfiltered better than A, as predicted.

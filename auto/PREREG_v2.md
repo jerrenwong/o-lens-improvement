@@ -71,3 +71,7 @@ A = released J++ + ask-map.
 Same registration as PREREG_v3.md Amendment 5 (clean chat-format ask-map C = `ask3_A.py`, control
 `ask3_C_shuf.py`, both models, --lite scoring with the J++ reproduction guard). On v2 the test C - J++ (pass@10
 filtered, macro over tasks, mean over 9B and 27B) is the registered replication; secondaries as listed there.
+
+## Results, amendment 3 (scored 2026-11-21 09:35Z; see PREREG_v3.md "Results, amendment 5" for the full table)
+C - J++ on v2, pass@10 filtered, mean over 9B and 27B: +2.1 [+0.6, +3.6]. 9B +3.1 [+1.1, +5.2] (pass@1 +3.1 [+1.1,
++5.1]); 27B +1.1 [-1.0, +3.3] (pass@1 -1.8 [-4.6, +0.9]). C - A: 9B -0.2 [-2.0, +1.6]; 27B +0.1. Guard passed.
