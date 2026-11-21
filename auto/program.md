@@ -339,3 +339,9 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   that share a word removes the gain; training without multilingual items gives +0.1. DISCARDED.
   BENCHMARK CAVEAT: multilingual items share intermediates across items, so any map with many parameters fitted on
   labelled items can score by memorising them. Only few-parameter uses of the fit labels are trustworthy.
+- WHAT J++'S NEGATIVE WEIGHTS SUBTRACT (ex1, fit split only, 9B refit A_64a + 2B; runs/ex1): the 8 experts are clusters by
+  token TYPE (names/subword pieces, content nouns, function words, punctuation, sentence-final, @-@, digits). Split lens =
+  P - N: N is ~ a scaled copy of the pooled lens (matrix cos .71-1.00; cos(Ph,Nh) .75-.99; heavy cancellation). Per-layer
+  fit pass@10 full/P/N/(P - a*pooled): L20 .31/.21/.15/.27, L28 .25/.15/.15/.14, others full .18-.24 vs P .12-.18 vs
+  P-a*pooled .16-.20. N decoded = punctuation early, sentence openers/pronouns late; only at the last layer it carries
+  the model's next token. So J++ = positive experts contrasted against the average Jacobian.
