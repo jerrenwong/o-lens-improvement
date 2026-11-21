@@ -1,0 +1,66 @@
+23:29:28 pass 0: jobs 35200 todo 35200; lines already 0; samples per job 3
+23:29:58 pass 0 batch 1/735 sentences 144 22s
+23:31:20 TIMING: first 2016 sentences in 104s (19.4/s); projected pass-0 total 90.8 min for 105600 sentences
+23:31:21 projected > 90 min: CUT to 2 samples per job for the remaining jobs
+23:32:19 pass 0 batch 26/735 sentences 3168 163s
+23:33:10 pass 0 batch 51/735 sentences 5536 214s
+23:33:51 pass 0 batch 76/735 sentences 7936 254s
+23:34:34 pass 0 batch 101/735 sentences 10336 297s
+23:35:15 pass 0 batch 126/735 sentences 12736 338s
+23:35:56 pass 0 batch 151/735 sentences 15104 379s
+23:36:37 pass 0 batch 176/735 sentences 17504 421s
+23:37:21 pass 0 batch 201/735 sentences 19904 464s
+23:38:01 pass 0 batch 226/735 sentences 22304 504s
+23:38:41 pass 0 batch 251/735 sentences 24704 544s
+23:39:24 pass 0 batch 276/735 sentences 27104 587s
+23:40:07 pass 0 batch 301/735 sentences 29504 631s
+23:40:52 pass 0 batch 326/735 sentences 31904 675s
+23:41:34 pass 0 batch 351/735 sentences 34304 718s
+23:42:28 pass 0 batch 376/735 sentences 36672 772s
+23:43:10 pass 0 batch 401/735 sentences 39072 813s
+23:43:52 pass 0 batch 426/735 sentences 41472 856s
+23:44:32 pass 0 batch 451/735 sentences 43872 896s
+23:45:24 pass 0 batch 476/735 sentences 46272 948s
+23:46:06 pass 0 batch 501/735 sentences 48672 990s
+23:46:52 pass 0 batch 526/735 sentences 51072 1035s
+23:47:33 pass 0 batch 551/735 sentences 53472 1076s
+23:48:13 pass 0 batch 576/735 sentences 55872 1116s
+23:48:52 pass 0 batch 601/735 sentences 58272 1155s
+23:49:36 pass 0 batch 626/735 sentences 60672 1200s
+23:50:16 pass 0 batch 651/735 sentences 63040 1239s
+23:51:07 pass 0 batch 676/735 sentences 65408 1290s
+23:51:48 pass 0 batch 701/735 sentences 67808 1331s
+23:52:32 pass 0 batch 726/735 sentences 70208 1375s
+23:52:48 pass 0 generation time 1392s, sentences 71072
+23:52:56 pass 1: jobs 35200 todo 34568; lines already 71072; samples per job 2
+23:53:07 pass 1 batch 1/721 sentences 96 1s
+23:53:45 pass 1 batch 26/721 sentences 2496 40s
+23:54:38 pass 1 batch 51/721 sentences 4876 93s
+23:55:23 pass 1 batch 76/721 sentences 7276 138s
+23:56:03 pass 1 batch 101/721 sentences 9676 178s
+23:56:57 pass 1 batch 126/721 sentences 12058 231s
+23:57:38 pass 1 batch 151/721 sentences 14458 273s
+23:58:20 pass 1 batch 176/721 sentences 16858 315s
+23:59:01 pass 1 batch 201/721 sentences 19258 356s
+23:59:43 pass 1 batch 226/721 sentences 21658 397s
+00:00:27 pass 1 batch 251/721 sentences 24058 441s
+00:01:10 pass 1 batch 276/721 sentences 26458 484s
+00:01:57 pass 1 batch 301/721 sentences 28858 532s
+00:02:48 pass 1 batch 326/721 sentences 31228 583s
+00:03:31 pass 1 batch 351/721 sentences 33628 625s
+00:04:11 pass 1 batch 376/721 sentences 36028 666s
+00:04:54 pass 1 batch 401/721 sentences 38428 708s
+00:05:33 pass 1 batch 426/721 sentences 40828 747s
+00:06:16 pass 1 batch 451/721 sentences 43228 790s
+00:06:58 pass 1 batch 476/721 sentences 45628 832s
+00:07:40 pass 1 batch 501/721 sentences 48028 874s
+00:08:20 pass 1 batch 526/721 sentences 50428 915s
+00:09:01 pass 1 batch 551/721 sentences 52828 956s
+00:09:40 pass 1 batch 576/721 sentences 55228 995s
+00:10:21 pass 1 batch 601/721 sentences 57628 1036s
+00:11:03 pass 1 batch 626/721 sentences 60028 1077s
+00:11:53 pass 1 batch 651/721 sentences 62420 1128s
+00:12:42 pass 1 batch 676/721 sentences 64816 1177s
+00:13:23 pass 1 batch 701/721 sentences 67216 1218s
+00:13:59 pass 1 generation time 1254s, sentences 69136
+ALL_DONE

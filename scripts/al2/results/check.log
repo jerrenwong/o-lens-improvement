@@ -1,0 +1,15 @@
+al1 words (pos<2400)   style all n= 1872 J++ 0.186 M_all 0.257 mix|M_all 0.357 | J++ L28 0.069
+al1 words (pos<2400)   style S1 n=  375 J++ 0.227 M_all 0.293 mix|M_all 0.440 | J++ L28 0.043
+al1 words (pos<2400)   style S2 n=  375 J++ 0.379 M_all 0.629 mix|M_all 0.723 | J++ L28 0.245
+pos 2400-5000          style all n= 1871 J++ 0.191 M_all 0.308 mix|M_all 0.427 | J++ L28 0.096
+pos 2400-5000          style S1 n=  375 J++ 0.237 M_all 0.323 mix|M_all 0.549 | J++ L28 0.072
+pos 2400-5000          style S2 n=  373 J++ 0.365 M_all 0.727 mix|M_all 0.772 | J++ L28 0.276
+pos >=5000             style all n= 2242 J++ 0.181 M_all 0.280 mix|M_all 0.355 | J++ L28 0.095
+pos >=5000             style S1 n=  449 J++ 0.216 M_all 0.301 mix|M_all 0.419 | J++ L28 0.060
+pos >=5000             style S2 n=  446 J++ 0.446 M_all 0.675 mix|M_all 0.735 | J++ L28 0.332
+tier3                  style all n= 4432 J++ 0.190 M_all 0.277 mix|M_all 0.386 | J++ L28 0.087
+tier3                  style S1 n=  888 J++ 0.233 M_all 0.305 mix|M_all 0.486 | J++ L28 0.056
+tier3                  style S2 n=  885 J++ 0.392 M_all 0.673 mix|M_all 0.749 | J++ L28 0.278
+tier<3                 style all n= 1553 J++ 0.173 M_all 0.295 mix|M_all 0.354 | J++ L28 0.089
+tier<3                 style S1 n=  311 J++ 0.206 M_all 0.305 mix|M_all 0.408 | J++ L28 0.064
+tier<3                 style S2 n=  309 J++ 0.421 M_all 0.686 mix|M_all 0.725 | J++ L28 0.314

@@ -1,0 +1,42 @@
+00:14:53 raw {'al1 reused raw': 48000, 'al2 pass 0': 71072, 'al2 pass 1': 69136}; CUT2 False; NK 3; words kept 7945 of 8000
+00:14:53 drops (only counted until NK reached) {'S1 < 6 tokens': 7, 'S1 contains word/inflection': 148, 'S1 near-duplicate': 23, 'S1 no clean end': 12, 'S2 < 6 tokens': 2, 'S2 contains word/inflection': 1039, 'S2 near-duplicate': 264, 'S2 no clean end': 19, 'S3 < 6 tokens': 14, 'S3 contains word/inflection': 204, 'S3 near-duplicate': 3, 'S3 no clean end': 23, 'S4 contains word/inflection': 248, 'S4 near-duplicate': 4, 'S4 no clean end': 130, 'S5 < 6 tokens': 1, 'S5 contains word/inflection': 601, 'S5 near-duplicate': 2, 'S5 no clean end': 6}
+00:14:53 per-style kept counts: S1:Counter({3: 7985, 2: 9, 1: 4, 0: 2}) S2:Counter({3: 7838, 2: 145, 1: 16, 0: 1}) S3:Counter({3: 7967, 2: 28, 1: 5}) S4:Counter({3: 7953, 2: 44, 1: 3}) S5:Counter({3: 7901, 2: 71, 1: 24, 0: 4})
+00:14:53 sentences 118892; by split Counter({'train': 106919, 'val': 5988, 'test': 5985}); by style Counter({0: 23826, 2: 23812, 3: 23797, 4: 23765, 1: 23692}); words Counter({'train': 7145, 'val': 400, 'test': 400})
+== examples S1 scene
+   [publications] The office was filled with stacks of printed newspapers and weekly magazines.
+   [revision] The student stayed up late to study his notes before the big exam came tomorrow.
+   [unusual] Nobody could believe the snow was falling in the desert on this sunny afternoon.
+   [withdrew] The soldier turned away from the front line and walked back toward safety.
+   [granted] The council gave permission for the new development to proceed.
+   [pursuant] The lawyer moved to proceed with the motion as requested in the final paragraph of the brief.
+== examples S2 description
+   [permanently] If something happens like this, it will last forever and not go back to how it was before.
+   [colored] Anything that has this quality is not plain or colorless, but shows a specific hue like red or blue.
+   [measurement] It is the act of finding the size, weight, or quantity of something using standard units like inches or grams.
+   [presenting] This is when a person stands in front of a group, holding a speech, slides or props to share information.
+   [relocated] To move your home, job or business to a completely different place or city.
+   [generous] He was a man with a big heart who always shared his food and money with anyone less fortunate than himself.
+== examples S3 indirect
+   [links] While camping in the woods, the group used a long metal chain to connect the tents so no one could walk away during the storm.
+   [plant] The corner of the room had a faded photograph, a dusty vase, and a green leafy thing that hadn't been watered in weeks.
+   [welding] He wore a heavy leather apron and gas mask, shielding his eyes as he fused two metal pipes together with a blinding flash.
+   [composite] The desk looked like solid oak but was actually made of glued-together layers that she carefully sanded down until smooth.
+   [physicians] The room was filled with men and women in white coats who listened to the doctor’s report and exchanged stern looks with each other.
+   [University] She sat in a lecture hall of hundreds, scribbled notes furiously, and stared at the clock until the final exam ended.
+== examples S4 two-sentence story
+   [nit] The cat lashed its tail and hissed at the spot under its skin. It scratched frantically at its back until its fur was full of blood.
+   [journals] He kept the last six months of his life written on yellowed pages. Every morning he sat with the pen to capture what he remembered.
+   [penalty] The referee signaled for the game to end after the goal. The opposing team ignored the final warning while the scoreboard flashed the loss.
+   [fluid] The liquid in the test tube didn't hold its shape on the table. The scientist watched it shift and ripple as the light hit it from above.
+   [crashed] The plane flew over the mountain and over the tree line. Suddenly the engines failed and the body of the aircraft dropped into the valley.
+   [confine] The librarian let the children sit only at the tables in the middle of the room. She wouldn't let them run or climb on the bookshelves in the back.
+== examples S5 dialogue
+   [inner] "I know you feel like you're trapped inside that box, but you're not alone; you have your own thoughts."
+   [exists] "Do you believe there are invisible socks floating around our living room?"
+   [officer] "I think your headlights are on high beam, which is why I'm pulling you over."
+   [blocks] "We're all out of white chocolate bars and ice cream."
+   [stone] "Watch out for that rock; it's loose and could roll down the hill."
+   [intriguing] "I've never seen a case solved in quite this manner before, and I must say, the clues were fascinating."
+00:17:47 forward done 168s
+00:18:11 saved /workspace/o-lens-improvement/.hf27/al2
+COLLECT_DONE

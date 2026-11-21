@@ -202,6 +202,15 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   collapses association (.37 -> .05-.17) but not multihop. '@' at L24 survives every truncation. One junk expert
   (3-5x larger, 0.0 alone) dominates the plain mean.
 
+- SCALED TRANSLATION MAP (al2; scripts/al2, .hf27/al2; 7,945 strict words -> 7,145 train / 400 val / 400 test; 5 text
+  styles x 3 sentences = 118,892 sentences). Unseen test words, top-10 any of 7 layers: J++ .186, M_all .282, mix
+  J++ + 0.3*M .378, shuffled-map mix .191. By style (J++ / M / mix): scene .226/.305/.466; description .400/.677/.743;
+  indirect hint .121/.166/.279; two-sentence story .123/.155/.244; dialogue .059/.105/.159. Learning curve (M / mix):
+  500 .036/.231; 1,000 .073/.271; 2,000 .145/.307; 4,000 .225/.352; 7,145 .282/.378. UNSEEN STYLE (indirect hints,
+  map never saw that style): M .131, mix .268 vs J++ .121. BENCHMARK dev: .5856 vs J++ .5952 (-1.0 [-4.4,+1.7]); M
+  alone .051; on association M reads the literal last event (poverty -> purchases) and cannot output names (names
+  are excluded from its training words).
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,

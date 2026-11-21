@@ -1,0 +1,18 @@
+[e1 fit] jpp          pass@10 0.4964  associ 0.25 multih 0.50 multil 0.61 poetry 0.12 typo 1.00
+[e1 fit] M mix 0.1    pass@10 0.4804  associ 0.25 multih 0.50 multil 0.59 poetry 0.06 typo 1.00
+[e1 fit] M mix 0.2    pass@10 0.4532  associ 0.15 multih 0.50 multil 0.55 poetry 0.06 typo 1.00
+[e1 fit] M mix 0.3    pass@10 0.4396  associ 0.10 multih 0.50 multil 0.54 poetry 0.06 typo 1.00
+[e1 fit] M mix 0.5    pass@10 0.3873  associ 0.05 multih 0.50 multil 0.48 poetry 0.06 typo 0.84
+[e1 fit] M mix 1.0    pass@10 0.2847  associ 0.05 multih 0.33 multil 0.30 poetry 0.00 typo 0.74
+[al2 fit] M mix: chosen lam 0.1 (fit 0.4804 vs J++ 0.4964)
+[e1 fit] M_shuf       pass@10 0.4729  associ 0.15 multih 0.50 multil 0.59 poetry 0.12 typo 1.00
+---
+split:            dev
+dev_pass10:       0.5903
+dev_pass1:        0.4189
+dev_pass10_unf:   0.5702
+dev_pass1_unf:    0.3703
+per_task_pass10:  association 0.29 multihop 0.96 multilingual 0.69 poetry 0.03 typo 0.97
+build_seconds:    6.6
+peak_vram_gb:     0.7
+n_items:          156

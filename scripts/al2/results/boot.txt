@@ -1,0 +1,18 @@
+
+filtered pass@10
+           al2_T - r2_released     -1.0  [ -4.4,  +1.7]
+      al2_T_shuf - r2_released     -0.5  [ -2.4,  +1.3]
+           al2_T - al2_T_shuf      -0.5  [ -4.1,  +2.5]
+           al2_T - al1_T           +1.2  [ +0.2,  +2.7]
+
+filtered pass@1
+           al2_T - r2_released     +1.0  [ -2.2,  +4.8]
+      al2_T_shuf - r2_released     +3.4  [ -0.1,  +7.7]
+           al2_T - al2_T_shuf      -2.4  [ -6.0,  +0.4]
+           al2_T - al1_T           -0.0  [ -2.8,  +3.5]
+
+unfiltered pass@10
+           al2_T - r2_released     -0.5  [ -4.0,  +2.3]
+      al2_T_shuf - r2_released     -0.2  [ -0.5,  +0.0]
+           al2_T - al2_T_shuf      -0.3  [ -3.8,  +2.4]
+           al2_T - al1_T           +1.1  [ +0.0,  +2.9]
