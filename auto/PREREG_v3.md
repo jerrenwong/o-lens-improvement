@@ -147,3 +147,26 @@ the leak caveat is removed and the 9B claim rests on C: +2.7 [+1.3, +4.3] pass@1
 the shuffled control flat. (2) 27B stays "no gain": pass@10 is flat and pass@1 is worse, with real (non-blank) targets
 too; only the unfiltered score improves. Fixing the 27B targets did not rescue 27B. (3) Predictions: 9B within the
 predicted +2..+4, C - A within +-2; 27B within the predicted 0..+2 and unfiltered better than A, as predicted.
+
+## Amendment 6 (2026-11-21 10:41Z, written and committed BEFORE any fm27 lens is scored on v2 or v3)
+Why. Amendment 5 showed C costs 27B its best guess (pass@1 -2.5 [-4.2, -0.8] over v2 + v3). Diagnosis on the FIT split
+(scripts/fm27/results/): on 27B the map's effective weight is about 2.3x higher than on 9B, C's top-1 equals J++'s
+top-1 in 41% of rows (9B 66%) and lies outside J++'s top-10 in 21% (9B 2%); the tokens that take rank 1 are format
+tokens, generic topic words and passage-topic words.
+Lens G (`auto/candidates/fm27_F5s.py`, both models): C with its registered weights (0.2 on 9B, 0.5 on 27B), except
+that at each readout layer rank 1 may only go to a token in J++'s own filtered top-10 (the one with the highest C
+logit is pushed strictly to rank 1). No free parameter, no labels. On 9B dev it is identical to C.
+Lens L (`auto/candidates/fm27_F4.py`): C with the weight re-chosen on the FIT split by the largest pass@1 + pass@10
+(dev runs chose 0.3 on 9B and 0.2 on 27B).
+Dev scores seen: 27B G .6595/.3996, L .6489/.3996 (C .6595/.3961, J++ .6153/.3731); 9B G = C, L .6392/.4061.
+PRIMARY (one test): G - C, pass@1 filtered, macro over tasks, on Qwen3.6-27B, mean over v2 and v3 (paired bootstrap,
+5000 draws, items within task).
+SECONDARY (reported whatever they show): on 27B G - J++ and L - J++ and L - C for pass@1, pass@10, unfiltered
+pass@10, per set and pooled; on 9B G - C (expected zero) and L - C.
+Reading rule, fixed now. If G - C on 27B pass@1 excludes zero on the positive side and G - J++ pass@1 no longer
+excludes zero on the negative side, G becomes the recommended single definition (gain on 9B, no harm on 27B).
+Otherwise 27B stays "the ask-map costs the best guess", and G is reported as a partial repair or as no repair.
+My predictions: G - C pass@1 on 27B +0.5 to +1.5; G - J++ pass@1 still about -1 to -2; L on 27B pass@10 about +0.5
+over J++ and pass@1 about 0. I do not expect either to turn 27B into a gain.
+Scoring with --lite as in amendment 5 (guard already passed on these sets). Run names V{2,3}_G_{9b,27b},
+V{2,3}_L_{9b,27b}.

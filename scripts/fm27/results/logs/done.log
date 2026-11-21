@@ -1,0 +1,15 @@
+09:54:21 9b:fm27_diag exit=0
+10:04:43 27b:fm27_diag exit=0
+ALLDONE 9b:fm27_diag 27b:fm27_diag
+10:07:15 9b:fm27_F1 exit=0
+10:09:03 9b:fm27_F2 exit=0
+10:11:09 9b:fm27_F3 exit=0
+10:13:56 9b:fm27_F4 exit=0
+10:18:39 9b:fm27_F3s exit=0
+10:20:16 9b:fm27_F5s exit=0
+10:23:45 27b:fm27_F1 exit=0
+10:27:12 27b:fm27_F2 exit=0
+10:30:41 27b:fm27_F3s exit=0
+10:33:58 27b:fm27_F4 exit=0
+10:37:25 27b:fm27_F5s exit=0
+ALLDONE 9b:fm27_F3s 9b:fm27_F5s 27b:fm27_F1 27b:fm27_F2 27b:fm27_F3s 27b:fm27_F4 27b:fm27_F5s

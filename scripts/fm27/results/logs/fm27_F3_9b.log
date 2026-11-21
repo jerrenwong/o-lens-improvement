@@ -1,0 +1,15 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+C                            p10 0.5633 p1 0.3747 | unf p10 0.5392 p1 0.3149 | assoc 0.40 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F3v                          p10 0.5633 p1 0.3711 | unf p10 0.5292 p1 0.3083 | assoc 0.40 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+[fm27 F3] lam 0.2; rows not fixable on FIT: 0
+---
+split:            dev
+dev_pass10:       0.6381
+dev_pass1:        0.4095
+dev_pass10_unf:   0.6126
+dev_pass1_unf:    0.3674
+per_task_pass10:  association 0.41 multihop 1.00 multilingual 0.73 poetry 0.09 typo 0.95
+build_seconds:    2.3
+peak_vram_gb:     1.1
+n_items:          156

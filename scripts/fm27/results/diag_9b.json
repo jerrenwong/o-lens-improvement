@@ -1,0 +1,1199 @@
+{
+ "stats_a": {
+  "4": {
+   "norm_J": 16.199724197387695,
+   "norm_E": 57.04319763183594,
+   "norm_Ec": 26.259723663330078,
+   "norm_b": 49.83771514892578,
+   "cos_J_E": 0.10905072838068008,
+   "cos_J_Ec": 0.09131617844104767,
+   "cos_E_prior": 0.8850381970405579,
+   "sd_J": 1.920634388923645,
+   "sd_E": 2.362546920776367,
+   "gap_J": 5.390000343322754,
+   "gap_E": 6.760833263397217,
+   "gap_C": 5.1304168701171875,
+   "C1_eq_J1": 0.8666666746139526,
+   "C1_eq_E1": 0.013333333656191826,
+   "C1_inJ10": 1.0,
+   "C1_inE10": 0.06666667014360428,
+   "C1_inJ10_notE10": 0.9333333373069763,
+   "C1_inE10_notJ10": 0.0,
+   "C1_neither": 0.0,
+   "C10_inJ10": 8.039999961853027,
+   "C10_inE10": 0.30666667222976685,
+   "C10_Jonly": 7.893333435058594,
+   "C10_Eonly": 0.1599999964237213,
+   "C10_neither": 1.8000000715255737,
+   "C1_in_prior20": 0.013333333656191826,
+   "E1_in_prior20": 0.9866666793823242,
+   "prior_top10": [
+    " **",
+    "<|im_end|>",
+    " history",
+    " *",
+    " science",
+    " nature",
+    " politics",
+    " literature",
+    " education",
+    " family"
+   ]
+  },
+  "8": {
+   "norm_J": 28.810710906982422,
+   "norm_E": 57.15119171142578,
+   "norm_Ec": 26.786609649658203,
+   "norm_b": 49.83771514892578,
+   "cos_J_E": 0.2985568940639496,
+   "cos_J_Ec": 0.22788195312023163,
+   "cos_E_prior": 0.8825201392173767,
+   "sd_J": 1.9956862926483154,
+   "sd_E": 2.3615128993988037,
+   "gap_J": 2.7683334350585938,
+   "gap_E": 6.125,
+   "gap_C": 3.307500123977661,
+   "C1_eq_J1": 0.5733333230018616,
+   "C1_eq_E1": 0.07999999821186066,
+   "C1_inJ10": 1.0,
+   "C1_inE10": 0.3333333432674408,
+   "C1_inJ10_notE10": 0.6666666865348816,
+   "C1_inE10_notJ10": 0.0,
+   "C1_neither": 0.0,
+   "C10_inJ10": 7.573333740234375,
+   "C10_inE10": 1.5600000619888306,
+   "C10_Jonly": 6.613333702087402,
+   "C10_Eonly": 0.6000000238418579,
+   "C10_neither": 1.8266667127609253,
+   "C1_in_prior20": 0.0533333346247673,
+   "E1_in_prior20": 0.9333333373069763,
+   "prior_top10": [
+    " **",
+    "<|im_end|>",
+    " history",
+    " *",
+    " science",
+    " nature",
+    " politics",
+    " literature",
+    " education",
+    " family"
+   ]
+  },
+  "12": {
+   "norm_J": 102.11371612548828,
+   "norm_E": 57.10961151123047,
+   "norm_Ec": 28.490629196166992,
+   "norm_b": 49.83771514892578,
+   "cos_J_E": 0.3743710219860077,
+   "cos_J_Ec": 0.15629038214683533,
+   "cos_E_prior": 0.866182267665863,
+   "sd_J": 1.8504341840744019,
+   "sd_E": 2.3790438175201416,
+   "gap_J": 2.893749952316284,
+   "gap_E": 5.8541669845581055,
+   "gap_C": 3.207916736602783,
+   "C1_eq_J1": 0.7333333492279053,
+   "C1_eq_E1": 0.06666667014360428,
+   "C1_inJ10": 1.0,
+   "C1_inE10": 0.2133333384990692,
+   "C1_inJ10_notE10": 0.7866666913032532,
+   "C1_inE10_notJ10": 0.0,
+   "C1_neither": 0.0,
+   "C10_inJ10": 7.306666851043701,
+   "C10_inE10": 1.3733333349227905,
+   "C10_Jonly": 6.573333263397217,
+   "C10_Eonly": 0.6399999856948853,
+   "C10_neither": 2.053333282470703,
+   "C1_in_prior20": 0.07999999821186066,
+   "E1_in_prior20": 0.9599999785423279,
+   "prior_top10": [
+    " **",
+    "<|im_end|>",
+    " history",
+    " *",
+    " science",
+    " nature",
+    " politics",
+    " literature",
+    " education",
+    " family"
+   ]
+  },
+  "16": {
+   "norm_J": 68.50540161132812,
+   "norm_E": 58.60850524902344,
+   "norm_Ec": 29.807777404785156,
+   "norm_b": 49.83771514892578,
+   "cos_J_E": 0.34240901470184326,
+   "cos_J_Ec": 0.15424752235412598,
+   "cos_E_prior": 0.861360490322113,
+   "sd_J": 1.798947811126709,
+   "sd_E": 2.364858627319336,
+   "gap_J": 1.8758333921432495,
+   "gap_E": 5.701666831970215,
+   "gap_C": 2.182500123977661,
+   "C1_eq_J1": 0.6000000238418579,
+   "C1_eq_E1": 0.02666666731238365,
+   "C1_inJ10": 0.9733333587646484,
+   "C1_inE10": 0.18666666746139526,
+   "C1_inJ10_notE10": 0.8133333325386047,
+   "C1_inE10_notJ10": 0.02666666731238365,
+   "C1_neither": 0.0,
+   "C10_inJ10": 6.600000381469727,
+   "C10_inE10": 1.2000000476837158,
+   "C10_Jonly": 6.293333530426025,
+   "C10_Eonly": 0.893333375453949,
+   "C10_neither": 2.506666660308838,
+   "C1_in_prior20": 0.09333333373069763,
+   "E1_in_prior20": 0.9866666793823242,
+   "prior_top10": [
+    " **",
+    "<|im_end|>",
+    " history",
+    " *",
+    " science",
+    " nature",
+    " politics",
+    " literature",
+    " education",
+    " family"
+   ]
+  },
+  "20": {
+   "norm_J": 98.09659576416016,
+   "norm_E": 57.47756576538086,
+   "norm_Ec": 28.03377914428711,
+   "norm_b": 49.83771514892578,
+   "cos_J_E": 0.3456032872200012,
+   "cos_J_Ec": 0.12660840153694153,
+   "cos_E_prior": 0.8730452656745911,
+   "sd_J": 1.53109872341156,
+   "sd_E": 2.3598227500915527,
+   "gap_J": 1.815833330154419,
+   "gap_E": 5.740000247955322,
+   "gap_C": 2.176666736602783,
+   "C1_eq_J1": 0.4933333396911621,
+   "C1_eq_E1": 0.0533333346247673,
+   "C1_inJ10": 0.9466667175292969,
+   "C1_inE10": 0.36000001430511475,
+   "C1_inJ10_notE10": 0.6399999856948853,
+   "C1_inE10_notJ10": 0.0533333346247673,
+   "C1_neither": 0.0,
+   "C10_inJ10": 5.840000152587891,
+   "C10_inE10": 1.9200000762939453,
+   "C10_Jonly": 5.173333644866943,
+   "C10_Eonly": 1.253333330154419,
+   "C10_neither": 2.9066667556762695,
+   "C1_in_prior20": 0.07999999821186066,
+   "E1_in_prior20": 0.8799999952316284,
+   "prior_top10": [
+    " **",
+    "<|im_end|>",
+    " history",
+    " *",
+    " science",
+    " nature",
+    " politics",
+    " literature",
+    " education",
+    " family"
+   ]
+  },
+  "24": {
+   "norm_J": 100.70285034179688,
+   "norm_E": 56.21435546875,
+   "norm_Ec": 25.40325927734375,
+   "norm_b": 49.83771514892578,
+   "cos_J_E": 0.30308589339256287,
+   "cos_J_Ec": 0.15004512667655945,
+   "cos_E_prior": 0.8917102217674255,
+   "sd_J": 1.6649264097213745,
+   "sd_E": 2.370725631713867,
+   "gap_J": 3.5612499713897705,
+   "gap_E": 6.223333358764648,
+   "gap_C": 3.923750162124634,
+   "C1_eq_J1": 0.7200000286102295,
+   "C1_eq_E1": 0.03999999910593033,
+   "C1_inJ10": 0.9866666793823242,
+   "C1_inE10": 0.2666666805744171,
+   "C1_inJ10_notE10": 0.7333333492279053,
+   "C1_inE10_notJ10": 0.013333333656191826,
+   "C1_neither": 0.0,
+   "C10_inJ10": 7.680000305175781,
+   "C10_inE10": 1.1200000047683716,
+   "C10_Jonly": 7.1066670417785645,
+   "C10_Eonly": 0.54666668176651,
+   "C10_neither": 1.7733334302902222,
+   "C1_in_prior20": 0.013333333656191826,
+   "E1_in_prior20": 0.9066666960716248,
+   "prior_top10": [
+    " **",
+    "<|im_end|>",
+    " history",
+    " *",
+    " science",
+    " nature",
+    " politics",
+    " literature",
+    " education",
+    " family"
+   ]
+  },
+  "28": {
+   "norm_J": 50.40149688720703,
+   "norm_E": 56.33382797241211,
+   "norm_Ec": 26.597612380981445,
+   "norm_b": 49.83771514892578,
+   "cos_J_E": 0.443793386220932,
+   "cos_J_Ec": 0.182325080037117,
+   "cos_E_prior": 0.8801963329315186,
+   "sd_J": 1.8941019773483276,
+   "sd_E": 2.377152442932129,
+   "gap_J": 3.236666679382324,
+   "gap_E": 6.162500381469727,
+   "gap_C": 3.587083339691162,
+   "C1_eq_J1": 0.6666666865348816,
+   "C1_eq_E1": 0.0533333346247673,
+   "C1_inJ10": 0.9600000381469727,
+   "C1_inE10": 0.3199999928474426,
+   "C1_inJ10_notE10": 0.6800000071525574,
+   "C1_inE10_notJ10": 0.03999999910593033,
+   "C1_neither": 0.0,
+   "C10_inJ10": 7.320000171661377,
+   "C10_inE10": 1.5199999809265137,
+   "C10_Jonly": 6.573333263397217,
+   "C10_Eonly": 0.7733333706855774,
+   "C10_neither": 1.9066667556762695,
+   "C1_in_prior20": 0.013333333656191826,
+   "E1_in_prior20": 0.8933333158493042,
+   "prior_top10": [
+    " **",
+    "<|im_end|>",
+    " history",
+    " *",
+    " science",
+    " nature",
+    " politics",
+    " literature",
+    " education",
+    " family"
+   ]
+  }
+ },
+ "summaries": {
+  "J++": {
+   "p1": 0.2924185463659148,
+   "p10": 0.49642857142857144,
+   "p1u": 0.2536967418546366,
+   "p10u": 0.4457330827067669,
+   "task": {
+    "association": 0.25,
+    "multihop": 0.5,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "C": {
+   "p1": 0.37466165413533836,
+   "p10": 0.5633333333333332,
+   "p1u": 0.31488721804511277,
+   "p10u": 0.5392355889724311,
+   "task": {
+    "association": 0.4,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "map_alone": {
+   "p1": 0.05479323308270676,
+   "p10": 0.3049749373433584,
+   "p1u": 0.05479323308270676,
+   "p10u": 0.2978320802005013,
+   "task": {
+    "association": 0.2,
+    "multihop": 0.3333333333333333,
+    "multilingual": 0.39285714285714285,
+    "poetry": 0.125,
+    "typo": 0.47368421052631576
+   }
+  },
+  "mix0.0": {
+   "p1": 0.2924185463659148,
+   "p10": 0.49642857142857144,
+   "p1u": 0.2536967418546366,
+   "p10u": 0.4457330827067669,
+   "task": {
+    "association": 0.25,
+    "multihop": 0.5,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "cen0.0": {
+   "p1": 0.2924185463659148,
+   "p10": 0.49642857142857144,
+   "p1u": 0.2536967418546366,
+   "p10u": 0.4457330827067669,
+   "task": {
+    "association": 0.25,
+    "multihop": 0.5,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "mix0.05": {
+   "p1": 0.33289473684210524,
+   "p10": 0.5397619047619047,
+   "p1u": 0.2836466165413534,
+   "p10u": 0.5051378446115289,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "cen0.05": {
+   "p1": 0.3095614035087719,
+   "p10": 0.5064285714285715,
+   "p1u": 0.26083959899749376,
+   "p10u": 0.4682330827067669,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.5,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "mix0.1": {
+   "p1": 0.3464661654135338,
+   "p10": 0.5397619047619047,
+   "p1u": 0.287218045112782,
+   "p10u": 0.5187092731829573,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "cen0.1": {
+   "p1": 0.3464661654135338,
+   "p10": 0.52,
+   "p1u": 0.3182706766917293,
+   "p10u": 0.4682330827067669,
+   "task": {
+    "association": 0.35,
+    "multihop": 0.5,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "mix0.2": {
+   "p1": 0.37466165413533836,
+   "p10": 0.5597619047619047,
+   "p1u": 0.31488721804511277,
+   "p10u": 0.5287092731829575,
+   "task": {
+    "association": 0.4,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "cen0.2": {
+   "p1": 0.3605639097744361,
+   "p10": 0.52,
+   "p1u": 0.33593984962406015,
+   "p10u": 0.48537593984962407,
+   "task": {
+    "association": 0.35,
+    "multihop": 0.5,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "mix0.3": {
+   "p1": 0.3802067669172932,
+   "p10": 0.5633333333333332,
+   "p1u": 0.34148496240601506,
+   "p10u": 0.5356641604010025,
+   "task": {
+    "association": 0.4,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "cen0.3": {
+   "p1": 0.3694924812030075,
+   "p10": 0.51,
+   "p1u": 0.34843984962406016,
+   "p10u": 0.49947368421052635,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.5,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "mix0.5": {
+   "p1": 0.3827067669172932,
+   "p10": 0.5569047619047619,
+   "p1u": 0.3370300751879699,
+   "p10u": 0.5222807017543859,
+   "task": {
+    "association": 0.35,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6428571428571429,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "cen0.5": {
+   "p1": 0.356109022556391,
+   "p10": 0.48661654135338345,
+   "p1u": 0.33148496240601505,
+   "p10u": 0.4830451127819549,
+   "task": {
+    "association": 0.2,
+    "multihop": 0.5,
+    "multilingual": 0.6607142857142857,
+    "poetry": 0.125,
+    "typo": 0.9473684210526315
+   }
+  },
+  "mix1.0": {
+   "p1": 0.3298872180451128,
+   "p10": 0.5158521303258146,
+   "p1u": 0.3157894736842105,
+   "p10u": 0.49818295739348367,
+   "task": {
+    "association": 0.25,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6428571428571429,
+    "poetry": 0.125,
+    "typo": 0.8947368421052632
+   }
+  },
+  "cen1.0": {
+   "p1": 0.33308270676691726,
+   "p10": 0.45894736842105266,
+   "p1u": 0.33308270676691726,
+   "p10u": 0.45894736842105266,
+   "task": {
+    "association": 0.15,
+    "multihop": 0.5,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 0.8947368421052632
+   }
+  },
+  "F1x_K20_mu0.1": {
+   "p1": 0.3364661654135338,
+   "p10": 0.5433333333333333,
+   "p1u": 0.2836466165413534,
+   "p10u": 0.5051378446115289,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K20_mu0.2": {
+   "p1": 0.3710902255639098,
+   "p10": 0.5397619047619047,
+   "p1u": 0.3013157894736842,
+   "p10u": 0.5120927318295739,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K20_mu0.3": {
+   "p1": 0.37466165413533836,
+   "p10": 0.5397619047619047,
+   "p1u": 0.3218421052631579,
+   "p10u": 0.5120927318295739,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K20_mu0.5": {
+   "p1": 0.3782330827067669,
+   "p10": 0.5433333333333333,
+   "p1u": 0.3254135338345865,
+   "p10u": 0.5156641604010025,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K20_mu1.0": {
+   "p1": 0.407875939849624,
+   "p10": 0.5433333333333333,
+   "p1u": 0.37610902255639095,
+   "p10u": 0.5156641604010025,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K20_mu2.0": {
+   "p1": 0.39734962406015034,
+   "p10": 0.5433333333333333,
+   "p1u": 0.3111967418546366,
+   "p10u": 0.5156641604010025,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K50_mu0.1": {
+   "p1": 0.3364661654135338,
+   "p10": 0.5433333333333333,
+   "p1u": 0.2836466165413534,
+   "p10u": 0.5087092731829574,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K50_mu0.2": {
+   "p1": 0.3710902255639098,
+   "p10": 0.5397619047619047,
+   "p1u": 0.3013157894736842,
+   "p10u": 0.5292355889724311,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K50_mu0.3": {
+   "p1": 0.37466165413533836,
+   "p10": 0.5533333333333333,
+   "p1u": 0.3218421052631579,
+   "p10u": 0.5256641604010025,
+   "task": {
+    "association": 0.35,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K50_mu0.5": {
+   "p1": 0.3677067669172932,
+   "p10": 0.5569047619047619,
+   "p1u": 0.3361278195488722,
+   "p10u": 0.5256641604010025,
+   "task": {
+    "association": 0.35,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6428571428571429,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K50_mu1.0": {
+   "p1": 0.4098496240601504,
+   "p10": 0.5533333333333333,
+   "p1u": 0.37522556390977446,
+   "p10u": 0.5292355889724311,
+   "task": {
+    "association": 0.35,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K50_mu2.0": {
+   "p1": 0.36469924812030075,
+   "p10": 0.6027380952380953,
+   "p1u": 0.3136967418546366,
+   "p10u": 0.5222807017543859,
+   "task": {
+    "association": 0.35,
+    "multihop": 0.8333333333333334,
+    "multilingual": 0.6428571428571429,
+    "poetry": 0.1875,
+    "typo": 1.0
+   }
+  },
+  "F1x_K100_mu0.1": {
+   "p1": 0.3364661654135338,
+   "p10": 0.5433333333333333,
+   "p1u": 0.2836466165413534,
+   "p10u": 0.5087092731829574,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K100_mu0.2": {
+   "p1": 0.3710902255639098,
+   "p10": 0.5397619047619047,
+   "p1u": 0.3013157894736842,
+   "p10u": 0.5292355889724311,
+   "task": {
+    "association": 0.3,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6071428571428571,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K100_mu0.3": {
+   "p1": 0.37466165413533836,
+   "p10": 0.5633333333333332,
+   "p1u": 0.3218421052631579,
+   "p10u": 0.5356641604010025,
+   "task": {
+    "association": 0.4,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K100_mu0.5": {
+   "p1": 0.3802067669172932,
+   "p10": 0.5704761904761905,
+   "p1u": 0.3450563909774436,
+   "p10u": 0.5328070175438596,
+   "task": {
+    "association": 0.4,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6607142857142857,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K100_mu1.0": {
+   "p1": 0.3898496240601504,
+   "p10": 0.5669047619047619,
+   "p1u": 0.3616541353383459,
+   "p10u": 0.5358521303258146,
+   "task": {
+    "association": 0.4,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.6428571428571429,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  },
+  "F1x_K100_mu2.0": {
+   "p1": 0.3370300751879699,
+   "p10": 0.5932832080200502,
+   "p1u": 0.300125313283208,
+   "p10u": 0.5419235588972431,
+   "task": {
+    "association": 0.4,
+    "multihop": 0.8333333333333334,
+    "multilingual": 0.6607142857142857,
+    "poetry": 0.125,
+    "typo": 0.9473684210526315
+   }
+  },
+  "F3x": {
+   "p1": 0.2924185463659148,
+   "p10": 0.5533333333333333,
+   "p1u": 0.2536967418546366,
+   "p10u": 0.5392355889724311,
+   "task": {
+    "association": 0.35,
+    "multihop": 0.6666666666666666,
+    "multilingual": 0.625,
+    "poetry": 0.125,
+    "typo": 1.0
+   }
+  }
+ },
+ "flips_b": {
+  "f": {
+   "lost": 0,
+   "won": 9,
+   "kinds": {},
+   "won_kinds": {
+    "function/junk": 7,
+    "other content word": 4
+   },
+   "lost_task": {},
+   "won_task": {
+    "multihop": 1,
+    "multilingual": 5,
+    "typo": 2,
+    "association": 1
+   }
+  },
+  "u": {
+   "lost": 1,
+   "won": 8,
+   "kinds": {
+    "function/junk": 1
+   },
+   "won_kinds": {
+    "function/junk": 3,
+    "other content word": 2,
+    "junk(excluded)": 3
+   },
+   "lost_task": {
+    "typo": 1
+   },
+   "won_task": {
+    "multihop": 1,
+    "multilingual": 5,
+    "typo": 1,
+    "association": 1
+   }
+  }
+ },
+ "flips_c": {
+  "f": {
+   "lost": 1,
+   "won": 6,
+   "lost_task": {
+    "multilingual": 1
+   },
+   "won_task": {
+    "multihop": 1,
+    "multilingual": 2,
+    "association": 3
+   },
+   "intruders": {
+    "other content word": 1,
+    "function/junk": 1
+   }
+  },
+  "u": {
+   "lost": 1,
+   "won": 9,
+   "lost_task": {
+    "multilingual": 1
+   },
+   "won_task": {
+    "multihop": 1,
+    "multilingual": 3,
+    "typo": 1,
+    "association": 3,
+    "poetry": 1
+   },
+   "intruders": {
+    "other content word": 1,
+    "function/junk": 1
+   }
+  }
+ },
+ "layers_d": {
+  "J++": [
+   [
+    4,
+    0.1368421052631579,
+    0.1894736842105263,
+    13,
+    15
+   ],
+   [
+    8,
+    0.10545112781954886,
+    0.21718045112781956,
+    12,
+    14
+   ],
+   [
+    12,
+    0.09511278195488722,
+    0.2145112781954887,
+    13,
+    19
+   ],
+   [
+    16,
+    0.07744360902255638,
+    0.19951127819548872,
+    10,
+    11
+   ],
+   [
+    20,
+    0.10921052631578947,
+    0.3089160401002506,
+    15,
+    27
+   ],
+   [
+    24,
+    0.10043859649122806,
+    0.2958020050125313,
+    12,
+    16
+   ],
+   [
+    28,
+    0.09166666666666666,
+    0.22870300751879696,
+    9,
+    18
+   ]
+  ],
+  "C": [
+   [
+    4,
+    0.16842105263157894,
+    0.1894736842105263,
+    16,
+    17
+   ],
+   [
+    8,
+    0.13721804511278196,
+    0.2278947368421053,
+    17,
+    18
+   ],
+   [
+    12,
+    0.10921052631578947,
+    0.22522556390977444,
+    15,
+    18
+   ],
+   [
+    16,
+    0.09154135338345865,
+    0.19612781954887218,
+    12,
+    13
+   ],
+   [
+    20,
+    0.11244360902255639,
+    0.3813659147869674,
+    18,
+    29
+   ],
+   [
+    24,
+    0.09705513784461153,
+    0.33151629072681704,
+    13,
+    19
+   ],
+   [
+    28,
+    0.13552631578947366,
+    0.2674248120300752,
+    11,
+    16
+   ]
+  ]
+ },
+ "rows": [
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "multihop",
+   "item": "atomic-29-symbol",
+   "inter": "copper",
+   "layer": 28,
+   "jpp_top1": "\u94dc",
+   "kind": "function/junk",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 2,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "multilingual",
+   "item": "french-season-summer",
+   "inter": "summer",
+   "layer": 8,
+   "jpp_top1": "\u5b63\u8282",
+   "kind": "function/junk",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 3,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "multilingual",
+   "item": "italian-number-two",
+   "inter": "Italian",
+   "layer": 20,
+   "jpp_top1": " digit",
+   "kind": "other content word",
+   "concept_in_map10": false,
+   "jpp_rank_layer": 2,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "multilingual",
+   "item": "german-family-aunt",
+   "inter": "family",
+   "layer": 20,
+   "jpp_top1": " A",
+   "kind": "function/junk",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 8,
+   "jpp_best": 8
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "multilingual",
+   "item": "de-time-after-night",
+   "inter": "night",
+   "layer": 12,
+   "jpp_top1": "@s",
+   "kind": "function/junk",
+   "concept_in_map10": false,
+   "jpp_rank_layer": 2,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "multilingual",
+   "item": "de-time-after-night",
+   "inter": "night",
+   "layer": 20,
+   "jpp_top1": "K",
+   "kind": "function/junk",
+   "concept_in_map10": false,
+   "jpp_rank_layer": 2,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "multilingual",
+   "item": "de-time-after-night",
+   "inter": "day",
+   "layer": 24,
+   "jpp_top1": " sun",
+   "kind": "other content word",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 2,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "typo",
+   "item": "typo-function",
+   "inter": "function",
+   "layer": 4,
+   "jpp_top1": "ing",
+   "kind": "other content word",
+   "concept_in_map10": false,
+   "jpp_rank_layer": 7,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "typo",
+   "item": "typo-function",
+   "inter": "function",
+   "layer": 12,
+   "jpp_top1": " called",
+   "kind": "other content word",
+   "concept_in_map10": false,
+   "jpp_rank_layer": 3,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "typo",
+   "item": "typo-several",
+   "inter": "several",
+   "layer": 4,
+   "jpp_top1": "@s",
+   "kind": "function/junk",
+   "concept_in_map10": false,
+   "jpp_rank_layer": 4,
+   "jpp_best": 4
+  },
+  {
+   "dir": "won",
+   "filt": "f",
+   "task": "association",
+   "item": "space-h",
+   "inter": "space",
+   "layer": 20,
+   "jpp_top1": " The",
+   "kind": "function/junk",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 2,
+   "jpp_best": 2
+  },
+  {
+   "dir": "lost",
+   "filt": "u",
+   "task": "typo",
+   "item": "typo-between",
+   "inter": "between",
+   "layer": 20,
+   "displacer": " the",
+   "kind": "function/junk",
+   "in_map10": false,
+   "in_jpp10": true,
+   "excluded": false,
+   "in_prior20": false,
+   "new_rank_layer": 2,
+   "new_best": 2,
+   "jpp_top1": " between"
+  },
+  {
+   "dir": "won",
+   "filt": "u",
+   "task": "multihop",
+   "item": "atomic-29-symbol",
+   "inter": "copper",
+   "layer": 28,
+   "jpp_top1": "\u94dc",
+   "kind": "function/junk",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 2,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "u",
+   "task": "multilingual",
+   "item": "french-season-summer",
+   "inter": "summer",
+   "layer": 8,
+   "jpp_top1": "\u5b63\u8282",
+   "kind": "function/junk",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 3,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "u",
+   "task": "multilingual",
+   "item": "italian-number-two",
+   "inter": "Italian",
+   "layer": 20,
+   "jpp_top1": " digit",
+   "kind": "other content word",
+   "concept_in_map10": false,
+   "jpp_rank_layer": 2,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "u",
+   "task": "multilingual",
+   "item": "german-family-aunt",
+   "inter": "sister",
+   "layer": 24,
+   "jpp_top1": "_\"",
+   "kind": "junk(excluded)",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 3,
+   "jpp_best": 3
+  },
+  {
+   "dir": "won",
+   "filt": "u",
+   "task": "multilingual",
+   "item": "de-time-after-night",
+   "inter": "night",
+   "layer": 20,
+   "jpp_top1": "K",
+   "kind": "function/junk",
+   "concept_in_map10": false,
+   "jpp_rank_layer": 2,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "u",
+   "task": "multilingual",
+   "item": "de-time-after-night",
+   "inter": "day",
+   "layer": 24,
+   "jpp_top1": " sun",
+   "kind": "other content word",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 3,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "u",
+   "task": "typo",
+   "item": "typo-future",
+   "inter": "future",
+   "layer": 12,
+   "jpp_top1": " \u201c",
+   "kind": "junk(excluded)",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 5,
+   "jpp_best": 2
+  },
+  {
+   "dir": "won",
+   "filt": "u",
+   "task": "association",
+   "item": "space-h",
+   "inter": "space",
+   "layer": 20,
+   "jpp_top1": " @",
+   "kind": "junk(excluded)",
+   "concept_in_map10": true,
+   "jpp_rank_layer": 5,
+   "jpp_best": 2
+  }
+ ]
+}

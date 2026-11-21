@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+J++                          p10 0.4964 p1 0.2924 | unf p10 0.4457 p1 0.2537 | assoc 0.25 multi 0.50 multi 0.61 poetr 0.12 typo 1.00
+F1v K20 mu0.1                p10 0.5433 p1 0.3365 | unf p10 0.5051 p1 0.2836 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1v K50 mu0.1                p10 0.5433 p1 0.3365 | unf p10 0.5051 p1 0.2836 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1v K100 mu0.1               p10 0.5433 p1 0.3365 | unf p10 0.5051 p1 0.2836 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1v K20 mu0.2                p10 0.5398 p1 0.3711 | unf p10 0.5151 p1 0.2977 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+F1v K50 mu0.2                p10 0.5398 p1 0.3711 | unf p10 0.5151 p1 0.2977 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+F1v K100 mu0.2               p10 0.5398 p1 0.3711 | unf p10 0.5151 p1 0.2977 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+F1v K20 mu0.3                p10 0.5398 p1 0.3747 | unf p10 0.5151 p1 0.2977 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+F1v K50 mu0.3                p10 0.5533 p1 0.3747 | unf p10 0.5116 p1 0.2872 | assoc 0.35 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1v K100 mu0.3               p10 0.5533 p1 0.3747 | unf p10 0.5116 p1 0.2872 | assoc 0.35 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1v K20 mu0.5                p10 0.5433 p1 0.3782 | unf p10 0.5187 p1 0.3118 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1v K50 mu0.5                p10 0.5569 p1 0.3677 | unf p10 0.5151 p1 0.3013 | assoc 0.35 multi 0.67 multi 0.64 poetr 0.12 typo 1.00
+F1v K100 mu0.5               p10 0.5705 p1 0.3802 | unf p10 0.5187 p1 0.3138 | assoc 0.40 multi 0.67 multi 0.66 poetr 0.12 typo 1.00
+F1v K20 mu1.0                p10 0.5433 p1 0.3918 | unf p10 0.5187 p1 0.3400 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1v K50 mu1.0                p10 0.5533 p1 0.4063 | unf p10 0.5151 p1 0.3299 | assoc 0.35 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1v K100 mu1.0               p10 0.5669 p1 0.3863 | unf p10 0.5287 p1 0.3299 | assoc 0.40 multi 0.67 multi 0.64 poetr 0.12 typo 1.00
+F1v K20 mu2.0                p10 0.5433 p1 0.3973 | unf p10 0.5187 p1 0.3456 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1v K50 mu2.0                p10 0.6027 p1 0.3647 | unf p10 0.5223 p1 0.3370 | assoc 0.35 multi 0.83 multi 0.64 poetr 0.19 typo 1.00
+F1v K100 mu2.0               p10 0.5705 p1 0.3370 | unf p10 0.5289 p1 0.3194 | assoc 0.40 multi 0.67 multi 0.66 poetr 0.12 typo 1.00
+[fm27 F1] chosen K 50 mu 2.0
+---
+split:            dev
+dev_pass10:       0.6434
+dev_pass1:        0.3609
+dev_pass10_unf:   0.6068
+dev_pass1_unf:    0.3103
+per_task_pass10:  association 0.49 multihop 0.96 multilingual 0.72 poetry 0.09 typo 0.95
+build_seconds:    21.9
+peak_vram_gb:     1.5
+n_items:          156

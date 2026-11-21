@@ -1,0 +1,126 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+[fm27] model 9b lamC 0.2 n_fit 75 layers [4, 8, 12, 16, 20, 24, 28]
+
+=== (a) per layer: norms, cosines, where C's top-1/top-10 come from (filtered, FIT)
+layer    norm_J    norm_E    norm_b   cos_J_E s_E_prior      sd_J      sd_E     gap_J     gap_E  C1_eq_J1  C1_eq_E1  C1_inJ10  C1_inE10 10_notE10 10_notJ10 1_neither C10_inJ10 C10_inE10 C10_Jonly C10_Eonly 0_neither n_prior20 n_prior20
+    4    16.200    57.043    49.838     0.109     0.885     1.921     2.363     5.390     6.761     0.867     0.013     1.000     0.067     0.933     0.000     0.000     8.040     0.307     7.893     0.160     1.800     0.013     0.987
+    8    28.811    57.151    49.838     0.299     0.883     1.996     2.362     2.768     6.125     0.573     0.080     1.000     0.333     0.667     0.000     0.000     7.573     1.560     6.613     0.600     1.827     0.053     0.933
+   12   102.114    57.110    49.838     0.374     0.866     1.850     2.379     2.894     5.854     0.733     0.067     1.000     0.213     0.787     0.000     0.000     7.307     1.373     6.573     0.640     2.053     0.080     0.960
+   16    68.505    58.609    49.838     0.342     0.861     1.799     2.365     1.876     5.702     0.600     0.027     0.973     0.187     0.813     0.027     0.000     6.600     1.200     6.293     0.893     2.507     0.093     0.987
+   20    98.097    57.478    49.838     0.346     0.873     1.531     2.360     1.816     5.740     0.493     0.053     0.947     0.360     0.640     0.053     0.000     5.840     1.920     5.173     1.253     2.907     0.080     0.880
+   24   100.703    56.214    49.838     0.303     0.892     1.665     2.371     3.561     6.223     0.720     0.040     0.987     0.267     0.733     0.013     0.000     7.680     1.120     7.107     0.547     1.773     0.013     0.907
+   28    50.401    56.334    49.838     0.444     0.880     1.894     2.377     3.237     6.163     0.667     0.053     0.960     0.320     0.680     0.040     0.000     7.320     1.520     6.573     0.773     1.907     0.013     0.893
+  L4 map prior top-10: [' **', '<|im_end|>', ' history', ' *', ' science', ' nature', ' politics', ' literature', ' education', ' family']
+  L8 map prior top-10: [' **', '<|im_end|>', ' history', ' *', ' science', ' nature', ' politics', ' literature', ' education', ' family']
+  L12 map prior top-10: [' **', '<|im_end|>', ' history', ' *', ' science', ' nature', ' politics', ' literature', ' education', ' family']
+  L16 map prior top-10: [' **', '<|im_end|>', ' history', ' *', ' science', ' nature', ' politics', ' literature', ' education', ' family']
+  L20 map prior top-10: [' **', '<|im_end|>', ' history', ' *', ' science', ' nature', ' politics', ' literature', ' education', ' family']
+  L24 map prior top-10: [' **', '<|im_end|>', ' history', ' *', ' science', ' nature', ' politics', ' literature', ' education', ' family']
+  L28 map prior top-10: [' **', '<|im_end|>', ' history', ' *', ' science', ' nature', ' politics', ' literature', ' education', ' family']
+
+=== FIT summaries
+J++                          p10 0.4964 p1 0.2924 | unf p10 0.4457 p1 0.2537 | assoc 0.25 multi 0.50 multi 0.61 poetr 0.12 typo 1.00
+C                            p10 0.5633 p1 0.3747 | unf p10 0.5392 p1 0.3149 | assoc 0.40 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+map_alone                    p10 0.3050 p1 0.0548 | unf p10 0.2978 p1 0.0548 | assoc 0.20 multi 0.33 multi 0.39 poetr 0.12 typo 0.47
+F3x                          p10 0.5533 p1 0.2924 | unf p10 0.5392 p1 0.2537 | assoc 0.35 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+mix0.0                       p10 0.4964 p1 0.2924 | unf p10 0.4457 p1 0.2537 | assoc 0.25 multi 0.50 multi 0.61 poetr 0.12 typo 1.00
+mix0.05                      p10 0.5398 p1 0.3329 | unf p10 0.5051 p1 0.2836 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+mix0.1                       p10 0.5398 p1 0.3465 | unf p10 0.5187 p1 0.2872 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+mix0.2                       p10 0.5598 p1 0.3747 | unf p10 0.5287 p1 0.3149 | assoc 0.40 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+mix0.3                       p10 0.5633 p1 0.3802 | unf p10 0.5357 p1 0.3415 | assoc 0.40 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+mix0.5                       p10 0.5569 p1 0.3827 | unf p10 0.5223 p1 0.3370 | assoc 0.35 multi 0.67 multi 0.64 poetr 0.12 typo 1.00
+mix1.0                       p10 0.5159 p1 0.3299 | unf p10 0.4982 p1 0.3158 | assoc 0.25 multi 0.67 multi 0.64 poetr 0.12 typo 0.89
+cen0.0                       p10 0.4964 p1 0.2924 | unf p10 0.4457 p1 0.2537 | assoc 0.25 multi 0.50 multi 0.61 poetr 0.12 typo 1.00
+cen0.05                      p10 0.5064 p1 0.3096 | unf p10 0.4682 p1 0.2608 | assoc 0.30 multi 0.50 multi 0.61 poetr 0.12 typo 1.00
+cen0.1                       p10 0.5200 p1 0.3465 | unf p10 0.4682 p1 0.3183 | assoc 0.35 multi 0.50 multi 0.62 poetr 0.12 typo 1.00
+cen0.2                       p10 0.5200 p1 0.3606 | unf p10 0.4854 p1 0.3359 | assoc 0.35 multi 0.50 multi 0.62 poetr 0.12 typo 1.00
+cen0.3                       p10 0.5100 p1 0.3695 | unf p10 0.4995 p1 0.3484 | assoc 0.30 multi 0.50 multi 0.62 poetr 0.12 typo 1.00
+cen0.5                       p10 0.4866 p1 0.3561 | unf p10 0.4830 p1 0.3315 | assoc 0.20 multi 0.50 multi 0.66 poetr 0.12 typo 0.95
+cen1.0                       p10 0.4589 p1 0.3331 | unf p10 0.4589 p1 0.3331 | assoc 0.15 multi 0.50 multi 0.62 poetr 0.12 typo 0.89
+F1x_K20_mu0.1                p10 0.5433 p1 0.3365 | unf p10 0.5051 p1 0.2836 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1x_K20_mu0.2                p10 0.5398 p1 0.3711 | unf p10 0.5121 p1 0.3013 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+F1x_K20_mu0.3                p10 0.5398 p1 0.3747 | unf p10 0.5121 p1 0.3218 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+F1x_K20_mu0.5                p10 0.5433 p1 0.3782 | unf p10 0.5157 p1 0.3254 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1x_K20_mu1.0                p10 0.5433 p1 0.4079 | unf p10 0.5157 p1 0.3761 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1x_K20_mu2.0                p10 0.5433 p1 0.3973 | unf p10 0.5157 p1 0.3112 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1x_K50_mu0.1                p10 0.5433 p1 0.3365 | unf p10 0.5087 p1 0.2836 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1x_K50_mu0.2                p10 0.5398 p1 0.3711 | unf p10 0.5292 p1 0.3013 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+F1x_K50_mu0.3                p10 0.5533 p1 0.3747 | unf p10 0.5257 p1 0.3218 | assoc 0.35 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1x_K50_mu0.5                p10 0.5569 p1 0.3677 | unf p10 0.5257 p1 0.3361 | assoc 0.35 multi 0.67 multi 0.64 poetr 0.12 typo 1.00
+F1x_K50_mu1.0                p10 0.5533 p1 0.4098 | unf p10 0.5292 p1 0.3752 | assoc 0.35 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1x_K50_mu2.0                p10 0.6027 p1 0.3647 | unf p10 0.5223 p1 0.3137 | assoc 0.35 multi 0.83 multi 0.64 poetr 0.19 typo 1.00
+F1x_K100_mu0.1               p10 0.5433 p1 0.3365 | unf p10 0.5087 p1 0.2836 | assoc 0.30 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1x_K100_mu0.2               p10 0.5398 p1 0.3711 | unf p10 0.5292 p1 0.3013 | assoc 0.30 multi 0.67 multi 0.61 poetr 0.12 typo 1.00
+F1x_K100_mu0.3               p10 0.5633 p1 0.3747 | unf p10 0.5357 p1 0.3218 | assoc 0.40 multi 0.67 multi 0.62 poetr 0.12 typo 1.00
+F1x_K100_mu0.5               p10 0.5705 p1 0.3802 | unf p10 0.5328 p1 0.3451 | assoc 0.40 multi 0.67 multi 0.66 poetr 0.12 typo 1.00
+F1x_K100_mu1.0               p10 0.5669 p1 0.3898 | unf p10 0.5359 p1 0.3617 | assoc 0.40 multi 0.67 multi 0.64 poetr 0.12 typo 1.00
+F1x_K100_mu2.0               p10 0.5933 p1 0.3370 | unf p10 0.5419 p1 0.3001 | assoc 0.40 multi 0.83 multi 0.66 poetr 0.12 typo 0.95
+
+=== (b) rank-1 flips (FIT)
+-- filtered: J++ rank1 lost by C: 0; C rank1 gained: 9
+   lost by task {}; gained by task {'multihop': 1, 'multilingual': 5, 'typo': 2, 'association': 1}
+   displacer kinds (per flip-layer): {}
+   WON  multih atomic-29-symbol             'copper'         L28 J++ had '铜'            [function/junk] concept_in_map10=1 jpp@L=2 jppbest=2
+   WON  multil french-season-summer         'summer'         L 8 J++ had '季节'           [function/junk] concept_in_map10=1 jpp@L=3 jppbest=2
+   WON  multil italian-number-two           'Italian'        L20 J++ had ' digit'       [other content word] concept_in_map10=0 jpp@L=2 jppbest=2
+   WON  multil german-family-aunt           'family'         L20 J++ had ' A'           [function/junk] concept_in_map10=1 jpp@L=8 jppbest=8
+   WON  multil de-time-after-night          'night'          L12 J++ had '@s'           [function/junk] concept_in_map10=0 jpp@L=2 jppbest=2
+   WON  multil de-time-after-night          'night'          L20 J++ had 'K'            [function/junk] concept_in_map10=0 jpp@L=2 jppbest=2
+   WON  multil de-time-after-night          'day'            L24 J++ had ' sun'         [other content word] concept_in_map10=1 jpp@L=2 jppbest=2
+   WON  typo   typo-function                'function'       L 4 J++ had 'ing'          [other content word] concept_in_map10=0 jpp@L=7 jppbest=2
+   WON  typo   typo-function                'function'       L12 J++ had ' called'      [other content word] concept_in_map10=0 jpp@L=3 jppbest=2
+   WON  typo   typo-several                 'several'        L 4 J++ had '@s'           [function/junk] concept_in_map10=0 jpp@L=4 jppbest=4
+   WON  associ space-h                      'space'          L20 J++ had ' The'         [function/junk] concept_in_map10=1 jpp@L=2 jppbest=2
+   kinds of J++'s top-1 that C displaced in its favour: {'function/junk': 7, 'other content word': 4}
+-- unfiltered: J++ rank1 lost by C: 1; C rank1 gained: 8
+   lost by task {'typo': 1}; gained by task {'multihop': 1, 'multilingual': 5, 'typo': 1, 'association': 1}
+   LOST typo   typo-between                 'between'        L20 by ' the'         [function/junk] map10=0 jpp10=1 excl=0 prior20=0 newrank@L=2 newbest=2
+   displacer kinds (per flip-layer): {'function/junk': 1}
+   WON  multih atomic-29-symbol             'copper'         L28 J++ had '铜'            [function/junk] concept_in_map10=1 jpp@L=2 jppbest=2
+   WON  multil french-season-summer         'summer'         L 8 J++ had '季节'           [function/junk] concept_in_map10=1 jpp@L=3 jppbest=2
+   WON  multil italian-number-two           'Italian'        L20 J++ had ' digit'       [other content word] concept_in_map10=0 jpp@L=2 jppbest=2
+   WON  multil german-family-aunt           'sister'         L24 J++ had '_"'           [junk(excluded)] concept_in_map10=1 jpp@L=3 jppbest=3
+   WON  multil de-time-after-night          'night'          L20 J++ had 'K'            [function/junk] concept_in_map10=0 jpp@L=2 jppbest=2
+   WON  multil de-time-after-night          'day'            L24 J++ had ' sun'         [other content word] concept_in_map10=1 jpp@L=3 jppbest=2
+   WON  typo   typo-future                  'future'         L12 J++ had ' “'           [junk(excluded)] concept_in_map10=1 jpp@L=5 jppbest=2
+   WON  associ space-h                      'space'          L20 J++ had ' @'           [junk(excluded)] concept_in_map10=1 jpp@L=5 jppbest=2
+   kinds of J++'s top-1 that C displaced in its favour: {'function/junk': 3, 'other content word': 2, 'junk(excluded)': 3}
+
+=== (c) rank<=10 gains/losses by task (FIT)
+-- filtered: lost 1 {'multilingual': 1}; gained 6 {'multihop': 1, 'multilingual': 2, 'association': 3}
+   LOST10 multil romanian-opposite-young    'Romanian'       L20 jpp@L=6 C@L=21 Cbest=21 intruders ' aging'(mix,other c), ' h'(mix,functio)
+   WON10  multih dual-photosynthesis-opposi 'day'            L20 C@L=6 jpp@L=11 jppbest=11
+   WON10  multil german-family-aunt         'German'         L12 C@L=10 jpp@L=31 jppbest=31
+   WON10  multil italian-family-grandmother 'family'         L20 C@L=2 jpp@L=20 jppbest=20
+   WON10  associ mother                     'mother'         L20 C@L=10 jpp@L=26 jppbest=21
+   WON10  associ history-h                  'history'        L20 C@L=8 jpp@L=78 jppbest=78
+   WON10  associ light-h                    'light'          L20 C@L=4 jpp@L=11 jppbest=11
+   intruder kinds in lost-10 cases: {'other content word': 1, 'function/junk': 1}
+-- unfiltered: lost 1 {'multilingual': 1}; gained 9 {'multihop': 1, 'multilingual': 3, 'typo': 1, 'association': 3, 'poetry': 1}
+   LOST10 multil romanian-opposite-young    'Romanian'       L20 jpp@L=6 C@L=22 Cbest=22 intruders ' aging'(mix,other c), ' h'(mix,functio)
+   WON10  multih dual-photosynthesis-opposi 'day'            L20 C@L=6 jpp@L=11 jppbest=11
+   WON10  multil spanish-opposite-big       'opposite'       L12 C@L=9 jpp@L=12 jppbest=12
+   WON10  multil german-family-aunt         'family'         L16 C@L=6 jpp@L=182 jppbest=33
+   WON10  multil italian-family-grandmother 'family'         L20 C@L=2 jpp@L=29 jppbest=29
+   WON10  typo   typo-those                 'those'          L 4 C@L=10 jpp@L=15 jppbest=15
+   WON10  associ history-h                  'history'        L20 C@L=10 jpp@L=119 jppbest=119
+   WON10  associ water-h                    'water'          L20 C@L=4 jpp@L=12 jppbest=12
+   WON10  associ light-h                    'light'          L20 C@L=8 jpp@L=25 jppbest=25
+   WON10  poetry couplet-heart-art          'art'            L20 C@L=2 jpp@L=11 jppbest=11
+   intruder kinds in lost-10 cases: {'other content word': 1, 'function/junk': 1}
+
+=== (d) per layer: single-layer pass@1/@10 and share of best ranks carried (filtered, FIT)
+  J++: L4 p1 0.137 p10 0.189 c1 13 c10 15  L8 p1 0.105 p10 0.217 c1 12 c10 14  L12 p1 0.095 p10 0.215 c1 13 c10 19  L16 p1 0.077 p10 0.200 c1 10 c10 11  L20 p1 0.109 p10 0.309 c1 15 c10 27  L24 p1 0.100 p10 0.296 c1 12 c10 16  L28 p1 0.092 p10 0.229 c1 9 c10 18
+  C: L4 p1 0.168 p10 0.189 c1 16 c10 17  L8 p1 0.137 p10 0.228 c1 17 c10 18  L12 p1 0.109 p10 0.225 c1 15 c10 18  L16 p1 0.092 p10 0.196 c1 12 c10 13  L20 p1 0.112 p10 0.381 c1 18 c10 29  L24 p1 0.097 p10 0.332 c1 13 c10 19  L28 p1 0.136 p10 0.267 c1 11 c10 16
+[fm27] wrote /workspace/o-lens-improvement/scripts/fm27/results/diag_9b.json
+---
+split:            dev
+dev_pass10:       0.6309
+dev_pass1:        0.3961
+dev_pass10_unf:   0.6055
+dev_pass1_unf:    0.3452
+per_task_pass10:  association 0.41 multihop 0.96 multilingual 0.73 poetry 0.09 typo 0.95
+build_seconds:    9.8
+peak_vram_gb:     1.5
+n_items:          156

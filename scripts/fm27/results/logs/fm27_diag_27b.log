@@ -1,0 +1,130 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+[fm27] model 27b lamC 0.5 n_fit 79 layers [8, 16, 24, 32, 40, 48, 56]
+
+=== (a) per layer: norms, cosines, where C's top-1/top-10 come from (filtered, FIT)
+layer    norm_J    norm_E    norm_b   cos_J_E s_E_prior      sd_J      sd_E     gap_J     gap_E  C1_eq_J1  C1_eq_E1  C1_inJ10  C1_inE10 10_notE10 10_notJ10 1_neither C10_inJ10 C10_inE10 C10_Jonly C10_Eonly 0_neither n_prior20 n_prior20
+    8    12.190    66.937    55.661     0.201     0.841     1.859     2.191     2.102     5.099     0.342     0.101     0.658     0.532     0.443     0.316     0.025     4.089     2.823     3.684     2.418     3.494     0.228     0.734
+   16    34.134    65.108    55.661     0.294     0.836     1.915     2.204     2.097     4.983     0.215     0.089     0.671     0.494     0.443     0.266     0.063     4.456     2.013     4.165     1.722     3.823     0.127     0.861
+   24    48.770    63.529    55.661     0.442     0.862     1.804     2.195     3.315     4.979     0.532     0.367     0.873     0.797     0.203     0.127     0.000     6.418     2.949     5.089     1.620     1.962     0.101     0.608
+   32   105.046    63.066    55.661     0.406     0.858     1.757     2.217     2.682     4.725     0.430     0.114     0.848     0.658     0.329     0.139     0.013     5.468     2.696     4.722     1.949     2.582     0.114     0.899
+   40    75.924    62.021    55.661     0.537     0.873     1.727     2.211     2.965     5.403     0.468     0.228     0.785     0.747     0.241     0.203     0.013     5.785     3.532     4.519     2.266     1.949     0.215     0.861
+   48   134.254    62.355    55.661     0.487     0.862     1.659     2.211     2.419     5.392     0.342     0.076     0.823     0.734     0.253     0.165     0.013     5.013     3.582     4.025     2.595     2.392     0.190     0.911
+   56   114.832    62.628    55.661     0.307     0.878     1.656     2.184     3.675     5.286     0.570     0.101     0.886     0.468     0.532     0.114     0.000     5.000     2.810     4.367     2.177     2.823     0.089     0.797
+  L8 map prior top-10: [' **', '<|im_end|>', ' history', ' science', ' education', ' music', ' *', ' nature', ' politics', ' story']
+  L16 map prior top-10: [' **', '<|im_end|>', ' history', ' science', ' education', ' music', ' *', ' nature', ' politics', ' story']
+  L24 map prior top-10: [' **', '<|im_end|>', ' history', ' science', ' education', ' music', ' *', ' nature', ' politics', ' story']
+  L32 map prior top-10: [' **', '<|im_end|>', ' history', ' science', ' education', ' music', ' *', ' nature', ' politics', ' story']
+  L40 map prior top-10: [' **', '<|im_end|>', ' history', ' science', ' education', ' music', ' *', ' nature', ' politics', ' story']
+  L48 map prior top-10: [' **', '<|im_end|>', ' history', ' science', ' education', ' music', ' *', ' nature', ' politics', ' story']
+  L56 map prior top-10: [' **', '<|im_end|>', ' history', ' science', ' education', ' music', ' *', ' nature', ' politics', ' story']
+
+=== FIT summaries
+J++                          p10 0.5564 p1 0.2891 | unf p10 0.5264 p1 0.2691 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+C                            p10 0.6023 p1 0.2814 | unf p10 0.5989 p1 0.2714 | assoc 0.40 multi 0.78 multi 0.76 poetr 0.12 typo 0.95
+map_alone                    p10 0.2181 p1 0.0599 | unf p10 0.1687 p1 0.0599 | assoc 0.20 multi 0.22 multi 0.30 poetr 0.00 typo 0.37
+F3x                          p10 0.6023 p1 0.2891 | unf p10 0.5779 p1 0.2658 | assoc 0.40 multi 0.78 multi 0.76 poetr 0.12 typo 0.95
+mix0.0                       p10 0.5564 p1 0.2891 | unf p10 0.5264 p1 0.2691 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+mix0.05                      p10 0.5564 p1 0.2925 | unf p10 0.5464 p1 0.2725 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+mix0.1                       p10 0.5564 p1 0.3025 | unf p10 0.5464 p1 0.2858 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+mix0.2                       p10 0.5689 p1 0.3091 | unf p10 0.5589 p1 0.2825 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.12 typo 0.95
+mix0.3                       p10 0.5645 p1 0.2886 | unf p10 0.5478 p1 0.2686 | assoc 0.40 multi 0.56 multi 0.79 poetr 0.12 typo 0.95
+mix0.5                       p10 0.6023 p1 0.2814 | unf p10 0.5884 p1 0.2714 | assoc 0.40 multi 0.78 multi 0.76 poetr 0.12 typo 0.95
+mix1.0                       p10 0.4913 p1 0.1843 | unf p10 0.4846 p1 0.1843 | assoc 0.40 multi 0.67 multi 0.71 poetr 0.00 typo 0.68
+cen0.0                       p10 0.5564 p1 0.2891 | unf p10 0.5264 p1 0.2691 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+cen0.05                      p10 0.5531 p1 0.2991 | unf p10 0.5364 p1 0.2891 | assoc 0.40 multi 0.61 multi 0.74 poetr 0.06 typo 0.95
+cen0.1                       p10 0.5531 p1 0.3058 | unf p10 0.5464 p1 0.2858 | assoc 0.40 multi 0.61 multi 0.74 poetr 0.06 typo 0.95
+cen0.2                       p10 0.5498 p1 0.3191 | unf p10 0.5464 p1 0.3025 | assoc 0.40 multi 0.61 multi 0.73 poetr 0.06 typo 0.95
+cen0.3                       p10 0.5326 p1 0.3311 | unf p10 0.5326 p1 0.3178 | assoc 0.40 multi 0.61 multi 0.69 poetr 0.06 typo 0.89
+cen0.5                       p10 0.5214 p1 0.3006 | unf p10 0.5214 p1 0.3006 | assoc 0.40 multi 0.56 multi 0.69 poetr 0.06 typo 0.89
+cen1.0                       p10 0.3911 p1 0.1782 | unf p10 0.3911 p1 0.1782 | assoc 0.30 multi 0.44 multi 0.62 poetr 0.06 typo 0.53
+F1x_K20_mu0.1                p10 0.5564 p1 0.3058 | unf p10 0.5464 p1 0.2858 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+F1x_K20_mu0.2                p10 0.5723 p1 0.3125 | unf p10 0.5464 p1 0.2891 | assoc 0.40 multi 0.61 multi 0.78 poetr 0.12 typo 0.95
+F1x_K20_mu0.3                p10 0.5756 p1 0.2986 | unf p10 0.5353 p1 0.2753 | assoc 0.40 multi 0.61 multi 0.79 poetr 0.12 typo 0.95
+F1x_K20_mu0.5                p10 0.5867 p1 0.2991 | unf p10 0.5609 p1 0.2819 | assoc 0.40 multi 0.67 multi 0.79 poetr 0.12 typo 0.95
+F1x_K20_mu1.0                p10 0.5834 p1 0.2891 | unf p10 0.5609 p1 0.2681 | assoc 0.40 multi 0.67 multi 0.78 poetr 0.12 typo 0.95
+F1x_K20_mu2.0                p10 0.5834 p1 0.2242 | unf p10 0.5531 p1 0.2203 | assoc 0.40 multi 0.67 multi 0.78 poetr 0.12 typo 0.95
+F1x_K50_mu0.1                p10 0.5564 p1 0.3058 | unf p10 0.5464 p1 0.2858 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+F1x_K50_mu0.2                p10 0.5723 p1 0.3125 | unf p10 0.5589 p1 0.2891 | assoc 0.40 multi 0.61 multi 0.78 poetr 0.12 typo 0.95
+F1x_K50_mu0.3                p10 0.5756 p1 0.2986 | unf p10 0.5478 p1 0.2753 | assoc 0.40 multi 0.61 multi 0.79 poetr 0.12 typo 0.95
+F1x_K50_mu0.5                p10 0.6156 p1 0.2886 | unf p10 0.5956 p1 0.2719 | assoc 0.45 multi 0.78 multi 0.78 poetr 0.12 typo 0.95
+F1x_K50_mu1.0                p10 0.6142 p1 0.2542 | unf p10 0.6064 p1 0.2442 | assoc 0.45 multi 0.78 multi 0.76 poetr 0.19 typo 0.89
+F1x_K50_mu2.0                p10 0.6037 p1 0.1892 | unf p10 0.5859 p1 0.1792 | assoc 0.45 multi 0.78 multi 0.76 poetr 0.19 typo 0.84
+F1x_K100_mu0.1               p10 0.5564 p1 0.3058 | unf p10 0.5464 p1 0.2858 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+F1x_K100_mu0.2               p10 0.5723 p1 0.3125 | unf p10 0.5589 p1 0.2891 | assoc 0.40 multi 0.61 multi 0.78 poetr 0.12 typo 0.95
+F1x_K100_mu0.3               p10 0.5756 p1 0.2986 | unf p10 0.5478 p1 0.2753 | assoc 0.40 multi 0.61 multi 0.79 poetr 0.12 typo 0.95
+F1x_K100_mu0.5               p10 0.6089 p1 0.2886 | unf p10 0.5956 p1 0.2719 | assoc 0.40 multi 0.78 multi 0.79 poetr 0.12 typo 0.95
+F1x_K100_mu1.0               p10 0.5865 p1 0.2647 | unf p10 0.5721 p1 0.2547 | assoc 0.40 multi 0.78 multi 0.78 poetr 0.19 typo 0.79
+F1x_K100_mu2.0               p10 0.5610 p1 0.1726 | unf p10 0.5543 p1 0.1759 | assoc 0.40 multi 0.78 multi 0.76 poetr 0.19 typo 0.68
+
+=== (b) rank-1 flips (FIT)
+-- filtered: J++ rank1 lost by C: 5; C rank1 gained: 3
+   lost by task {'multilingual': 3, 'typo': 2}; gained by task {'multilingual': 1, 'association': 2}
+   LOST multil ukrainian-opposite-day       'opposite'       L24 by ' language'    [other content word] map10=1 jpp10=0 excl=0 prior20=0 newrank@L=3 newbest=3
+   LOST multil de-order-first-last          'first'          L40 by ' **'          [function/junk] map10=1 jpp10=0 excl=0 prior20=1 newrank@L=2 newbest=2
+   LOST multil frn-number-after-one         'one'            L56 by ' number'      [other intermediate] map10=1 jpp10=1 excl=0 prior20=0 newrank@L=2 newbest=2
+   LOST typo   typo-around                  'around'         L 8 by ' walking'     [other content word] map10=1 jpp10=1 excl=0 prior20=0 newrank@L=2 newbest=2
+   LOST typo   typo-another                 'another'        L 8 by ' flowers'     [other content word] map10=0 jpp10=1 excl=0 prior20=0 newrank@L=5 newbest=2
+   LOST typo   typo-another                 'another'        L24 by ' mystery'     [other content word] map10=1 jpp10=0 excl=0 prior20=0 newrank@L=6 newbest=2
+   LOST typo   typo-another                 'another'        L40 by ' **'          [function/junk] map10=1 jpp10=0 excl=0 prior20=1 newrank@L=2 newbest=2
+   displacer kinds (per flip-layer): {'other content word': 4, 'function/junk': 2, 'other intermediate': 1}
+   WON  multil spanish-family-uncle         'family'         L24 J++ had ' Spanish'     [other intermediate] concept_in_map10=1 jpp@L=2 jppbest=2
+   WON  multil spanish-family-uncle         'family'         L48 J++ had ' Spanish'     [other intermediate] concept_in_map10=1 jpp@L=2 jppbest=2
+   WON  associ church-h                     'church'         L56 J++ had ' when'        [other content word] concept_in_map10=1 jpp@L=3 jppbest=3
+   WON  associ space-h                      'space'          L40 J++ had ' gravity'     [other content word] concept_in_map10=1 jpp@L=4 jppbest=4
+   kinds of J++'s top-1 that C displaced in its favour: {'other intermediate': 2, 'other content word': 2}
+-- unfiltered: J++ rank1 lost by C: 4; C rank1 gained: 5
+   lost by task {'multilingual': 2, 'typo': 2}; gained by task {'multilingual': 3, 'association': 2}
+   LOST multil es-size-big-small            'size'           L48 by ' <'           [junk(excluded)] map10=1 jpp10=1 excl=1 prior20=0 newrank@L=2 newbest=2
+   LOST multil frn-number-after-one         'one'            L56 by ' number'      [other intermediate] map10=1 jpp10=1 excl=0 prior20=0 newrank@L=2 newbest=2
+   LOST typo   typo-around                  'around'         L 8 by ' walking'     [other content word] map10=1 jpp10=0 excl=0 prior20=0 newrank@L=2 newbest=2
+   LOST typo   typo-another                 'another'        L40 by ' '            [junk(excluded)] map10=1 jpp10=1 excl=1 prior20=0 newrank@L=3 newbest=3
+   displacer kinds (per flip-layer): {'junk(excluded)': 2, 'other intermediate': 1, 'other content word': 1}
+   WON  multil spanish-family-uncle         'family'         L24 J++ had ' Spanish'     [other intermediate] concept_in_map10=1 jpp@L=2 jppbest=2
+   WON  multil spanish-family-uncle         'family'         L48 J++ had '"'            [junk(excluded)] concept_in_map10=1 jpp@L=8 jppbest=2
+   WON  multil fr-month-after-jan           'French'         L 8 J++ had '法语'           [function/junk] concept_in_map10=1 jpp@L=3 jppbest=2
+   WON  multil fr-month-after-jan           'French'         L16 J++ had ' Jean'        [other content word] concept_in_map10=0 jpp@L=2 jppbest=2
+   WON  multil fr-month-after-jan           'French'         L24 J++ had ' "'           [junk(excluded)] concept_in_map10=0 jpp@L=2 jppbest=2
+   WON  multil fr-time-after-night          'night'          L24 J++ had ' "'           [junk(excluded)] concept_in_map10=1 jpp@L=2 jppbest=2
+   WON  associ church-h                     'church'         L56 J++ had ' when'        [other content word] concept_in_map10=1 jpp@L=3 jppbest=3
+   WON  associ space-h                      'space'          L40 J++ had ' gravity'     [other content word] concept_in_map10=1 jpp@L=4 jppbest=4
+   kinds of J++'s top-1 that C displaced in its favour: {'other intermediate': 1, 'junk(excluded)': 3, 'function/junk': 1, 'other content word': 3}
+
+=== (c) rank<=10 gains/losses by task (FIT)
+-- filtered: lost 3 {'multihop': 1, 'multilingual': 2}; gained 5 {'multihop': 2, 'multilingual': 2, 'poetry': 1}
+   LOST10 multih nhop-guitar-planet         '6'              L48 jpp@L=8 C@L=27 Cbest=27 intruders ' science'(map,generic), ' planet'(mix,other c), '<|im_end|>'(map,generic), ' space'(mix,other c), ' astronomy'(map,other c), ' **'(map,functio), ' -'(mix,functio), ' Earth'(mix,other c)
+   LOST10 multil slovak-opposite-young      'young'          L40 jpp@L=9 C@L=16 Cbest=16 intruders ' language'(map,other c), ' aging'(mix,other c), ' synonyms'(mix,other c), ' synonym'(mix,other c), ' death'(mix,other c)
+   LOST10 multil de-size-big-small          'big'            L48 jpp@L=3 C@L=14 Cbest=14 intruders ' **'(map,functio), '<|im_end|>'(map,generic), ' *'(mix,functio), ' word'(mix,other c), ' a'(mix,functio), ' grammar'(map,other c), ' words'(mix,other c), ' -'(mix,functio)
+   WON10  multih inv-balloon-opposite       'up'             L56 C@L=8 jpp@L=16 jppbest=16
+   WON10  multih dbl-altitude-antonym       'high'           L56 C@L=7 jpp@L=26 jppbest=22
+   WON10  multil bulgarian-color-grass      'grass'          L48 C@L=6 jpp@L=17 jppbest=17
+   WON10  multil fr-time-after-night        'time'           L48 C@L=8 jpp@L=51 jppbest=51
+   WON10  poetry couplet-gate-fate          'fate'           L56 C@L=8 jpp@L=20 jppbest=20
+   intruder kinds in lost-10 cases: {'generic topic word': 3, 'other content word': 12, 'function/junk': 6}
+-- unfiltered: lost 2 {'multihop': 1, 'multilingual': 1}; gained 8 {'multihop': 2, 'multilingual': 3, 'association': 2, 'poetry': 1}
+   LOST10 multih nhop-guitar-planet         '6'              L48 jpp@L=8 C@L=45 Cbest=45 intruders ' #'(mix,junk(ex), ' science'(map,generic), ' ['(map,junk(ex), ' '(map,junk(ex), ' ?'(mix,junk(ex), ' planet'(mix,other c), '<|im_end|>'(map,generic), ' astronomy'(map,other c), ' space'(mix,other c)
+   LOST10 multil portuguese-direction-up    'opposite'       L48 jpp@L=2 C@L=12 Cbest=12 intruders ' ['(map,junk(ex), ' **'(map,functio), ' <'(mix,junk(ex), ' '(map,junk(ex), '<|im_end|>'(map,generic), ' geography'(map,generic), ' *'(mix,functio)
+   WON10  multih inv-balloon-opposite       'up'             L56 C@L=8 jpp@L=16 jppbest=16
+   WON10  multih dbl-altitude-antonym       'high'           L56 C@L=7 jpp@L=26 jppbest=26
+   WON10  multil bulgarian-color-grass      'grass'          L48 C@L=9 jpp@L=19 jppbest=19
+   WON10  multil fr-time-after-night        'time'           L48 C@L=9 jpp@L=58 jppbest=58
+   WON10  multil es-size-big-small          'big'            L56 C@L=10 jpp@L=35 jppbest=31
+   WON10  associ mother                     'mother'         L48 C@L=3 jpp@L=12 jppbest=12
+   WON10  associ history-h                  'history'        L32 C@L=2 jpp@L=13 jppbest=12
+   WON10  poetry couplet-gate-fate          'fate'           L56 C@L=8 jpp@L=21 jppbest=21
+   intruder kinds in lost-10 cases: {'junk(excluded)': 7, 'generic topic word': 4, 'other content word': 3, 'function/junk': 2}
+
+=== (d) per layer: single-layer pass@1/@10 and share of best ranks carried (filtered, FIT)
+  J++: L8 p1 0.080 p10 0.215 c1 9 c10 13  L16 p1 0.035 p10 0.136 c1 4 c10 6  L24 p1 0.076 p10 0.346 c1 12 c10 15  L32 p1 0.069 p10 0.289 c1 12 c10 15  L40 p1 0.181 p10 0.385 c1 20 c10 28  L48 p1 0.091 p10 0.354 c1 13 c10 25  L56 p1 0.127 p10 0.237 c1 17 c10 26
+  C: L8 p1 0.073 p10 0.250 c1 9 c10 13  L16 p1 0.076 p10 0.169 c1 10 c10 11  L24 p1 0.069 p10 0.316 c1 10 c10 13  L32 p1 0.079 p10 0.280 c1 13 c10 18  L40 p1 0.166 p10 0.344 c1 18 c10 27  L48 p1 0.088 p10 0.350 c1 12 c10 22  L56 p1 0.158 p10 0.342 c1 20 c10 32
+[fm27] wrote /workspace/o-lens-improvement/scripts/fm27/results/diag_27b.json
+---
+split:            dev
+dev_pass10:       0.6595
+dev_pass1:        0.3961
+dev_pass10_unf:   0.6543
+dev_pass1_unf:    0.3605
+per_task_pass10:  association 0.49 multihop 0.90 multilingual 0.80 poetry 0.18 typo 0.92
+build_seconds:    14.3
+peak_vram_gb:     1.8
+n_items:          165

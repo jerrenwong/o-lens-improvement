@@ -75,3 +75,7 @@ filtered, macro over tasks, mean over 9B and 27B) is the registered replication;
 ## Results, amendment 3 (scored 2026-11-21 09:35Z; see PREREG_v3.md "Results, amendment 5" for the full table)
 C - J++ on v2, pass@10 filtered, mean over 9B and 27B: +2.1 [+0.6, +3.6]. 9B +3.1 [+1.1, +5.2] (pass@1 +3.1 [+1.1,
 +5.1]); 27B +1.1 [-1.0, +3.3] (pass@1 -1.8 [-4.6, +0.9]). C - A: 9B -0.2 [-2.0, +1.6]; 27B +0.1. Guard passed.
+
+## Amendment 4 (2026-11-21 10:41Z, written and committed BEFORE any fm27 lens is scored on v2 or v3)
+Same registration as PREREG_v3.md Amendment 6 (lens G = `fm27_F5s.py`, lens L = `fm27_F4.py`; primary G - C pass@1
+on 27B, mean over v2 and v3).

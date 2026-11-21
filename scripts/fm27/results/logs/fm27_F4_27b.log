@@ -1,0 +1,20 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+F4 lam0.0                    p10 0.5564 p1 0.2891 | unf p10 0.5264 p1 0.2691 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+F4 lam0.05                   p10 0.5564 p1 0.3058 | unf p10 0.5464 p1 0.2758 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.06 typo 0.95
+F4 lam0.1                    p10 0.5689 p1 0.3025 | unf p10 0.5589 p1 0.2858 | assoc 0.40 multi 0.61 multi 0.76 poetr 0.12 typo 0.95
+F4 lam0.2                    p10 0.5723 p1 0.3125 | unf p10 0.5589 p1 0.2858 | assoc 0.40 multi 0.61 multi 0.78 poetr 0.12 typo 0.95
+F4 lam0.3                    p10 0.5645 p1 0.2886 | unf p10 0.5511 p1 0.2686 | assoc 0.40 multi 0.56 multi 0.79 poetr 0.12 typo 0.95
+F4 lam0.5                    p10 0.6023 p1 0.2814 | unf p10 0.5989 p1 0.2714 | assoc 0.40 multi 0.78 multi 0.76 poetr 0.12 typo 0.95
+F4 lam1.0                    p10 0.4913 p1 0.1876 | unf p10 0.4846 p1 0.1876 | assoc 0.40 multi 0.67 multi 0.71 poetr 0.00 typo 0.68
+[fm27 F4] chosen lam 0.2
+---
+split:            dev
+dev_pass10:       0.6489
+dev_pass1:        0.3996
+dev_pass10_unf:   0.6357
+dev_pass1_unf:    0.3649
+per_task_pass10:  association 0.49 multihop 0.90 multilingual 0.81 poetry 0.12 typo 0.92
+build_seconds:    9.0
+peak_vram_gb:     1.2
+n_items:          165
