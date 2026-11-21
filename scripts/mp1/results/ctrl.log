@@ -1,0 +1,9 @@
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1124.48it/s]
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights: 100%|██████████| 427/427 [00:00<00:00, 5479.40it/s]
+01:45:32 bags done; top-200 examples [' the', '.', ',', ' to', ' and', ' a', 'The', ' of', ' in', '."', ' or', ' on', ' that', ' for', ' is', ' with', ' his', ' it', ' you', ' was', ' her', ' at', ' from', ' as', 'This', ' he', "'s", ' into', "'t", ' before']; bagB empty 1
+01:48:04 ask forward 125s
+01:48:23 bagA {'cfg': {'f': 0.1, 'c': 1.0}, 'val_top10': 0.110387} test top10 0.09674185514450073
+01:48:25 bagB {'cfg': {'f': 0.1, 'c': 1.0}, 'val_top10': 0.090681} test top10 0.07184628397226334
+01:49:19 done 315s
+CTRL_DONE

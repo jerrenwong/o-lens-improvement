@@ -244,6 +244,15 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   J(readout) + 0.3 J(mean) .618 = +2.3 [+0.5,+4.3]; J(readout) + 0.1 M_mean +0.5 [-1.6,+2.7].
   NOTE: do not run `fleet ls` / `fleet refresh` for wong-olens2 (resets its address; re-enter 31.24.80.45:10607).
 
+- CONTROLS for the translation reader (mp1 follow-up; al2's 400 unseen test words, top-10 / top-1): bag-of-visible-
+  words map (mean input embedding, same fit) .097 / .009 alone; M_mean .309 / .076 (M_mean - bag = +.213 [.196,.229]);
+  mix gen-fit J++(mean) + bag .394 vs + M_mean .481 (+.087 [.075,.099]). ASKING THE MODEL (few-shot one-word question,
+  scored like a lens): .269 / .095; best reader - asking = +.213 [.183,.242] top-10, +.065 top-1. Asking is strong
+  only on definition-style sentences (.709). The map's value appears by layer 12 (L4 .155, L12 .207).
+- LABEL-FREE WEIGHTS, replicates on v3 (9B): label-free fits .525-.545 (5 fits) vs released .519 (filtered ns,
+  unfiltered +2.8 to +4.2, all significant); labelled fits of raw-recipe experts .475-.483 (3 draws), of
+  natural-format experts .512-.526.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,

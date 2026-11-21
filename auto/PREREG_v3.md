@@ -85,3 +85,14 @@ The standalone scorer reproduces V3_jpp_9b and V3_e2_A_9b exactly (0 of 5,152 ra
 Reading: on fresh prompts the visible-words map does NOT reproduce the ask-map's gain (it did on the old dev split,
 .6282 vs .6265). About a third of A's gains are matched by visible words, mostly on multilingual prompts; the gain on
 scene prompts needs the model's activations.
+
+## Post-hoc replicates of the W comparison on v3 (9B; scored 2026-11-21 01:45-01:56Z; NOT registered, reported as replicates)
+pass@10 / pass@1 / unfiltered pass@10. Released J++: .5189 / .2909 / .4870.
+Generated-fit (label-free) weights: A experts, 4,000 sentences .5268; subsets Wa .5374, Wb .5343, Wc .5253; C experts .5454.
+  vs released: +0.6 to +2.6 filtered (every interval spans 0); unfiltered +2.8 to +4.2 (every interval excludes 0).
+Labelled (benchmark-fit) weights: A_full .4746, A_64a .4806, A_64b .4829 (each -3.6 to -4.4 vs released, intervals
+  exclude 0); C_full .5259, C_64b .5117 (within +-1 of released).
+  C experts: label-free - labelled = +1.9 [-1.3,+5.1].
+Reading: the +5 over the labelled fit is reproducible for the raw-recipe experts (three labelled draws all near .48,
+four label-free fits near .53). For the natural-format experts the two are close. Label-free weights are never worse
+than the released lens on fresh prompts and are better unfiltered.
