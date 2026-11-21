@@ -280,6 +280,8 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
 
 - **Third model (2026-11-21; PREREG_v4 addendum B).** Same recipe on Qwen3.5-2B (maps .hf27/ask3/E_2b_t3.pt, candidate m2b_L.py, weight 0.5 by the registered FIT rule): v4 (328 prompts) J++ .3785/.2081 -> L .4492/.2292, pass@10 +7.1 [3.4,11.4] (HOLDS), pass@1 +2.1 ns, unfiltered +9.4 [5.2,13.9]; shuffled -0.1 / -6.6. So L beats J++ on v4 on all three models: 2B +7.1, 9B +6.5, 27B +2.1.
 
+- **ask5: specific-unstated-word ask-map in chat format, DEV only (2026-11-21).** 27B dev: J++ .6153/.3731; L .6489/.3996; J++ + specific map (lam .5) .6875/.4114; shuffled .6386/.3370; alone .5848/.1477 (gain over L mostly multihop +.10, poetry +.06; about 6 prompts). 9B dev: L .6392/.4061; specific .6338/.3948; topic+specific .6297/.4027: no gain. Fault on 9B: the answer starts with markdown bold ' **' in 87% / 81% of S0 / S1 prompts (27B 6-18%), not caught by the junk rule, so most 9B targets point at formatting. Untested fix: prefill the label plus ' **', or treat ' **' as junk. Lead for a next step; dev only, and 27B dev has misled before.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
