@@ -57,3 +57,20 @@ T_jpp_27b, scored once with --lite. Reported: L - J++ pass@10 and pass@1 per mod
 bootstrap. These splits are small and have been scored before for other lenses (9B twice, 27B once), so this is a
 secondary check, not a new primary. Predictions: 9B +3 to +5 pass@10, 27B +1 to +3; I expect at least the 27B interval
 to include zero at this size. Run names T_L_9b, T_L_27b.
+
+## Results, addendum A (scored 2026-11-21 12:17Z, once, --lite; scripts/r2_boot.py)
+Original benchmark, test split. 9B (153 prompts): J++ .5809 / .3538 -> L .6281 / .3664; L - J++ pass@10 +4.7 [+1.5,
++8.2], pass@1 +1.3 [-1.9, +4.5], unfiltered pass@10 +6.1 [+2.7, +9.8]. 27B (162 prompts): J++ .5620 / .3271 -> L .5731 /
+.3258; pass@10 +1.1 [-1.0, +3.4], pass@1 -0.1 [-3.4, +2.5], unfiltered +1.8 [-0.7, +4.3]. Mean over both models: pass@10
++2.9 [+1.0, +4.9], pass@1 +0.6 [-1.7, +2.8], unfiltered pass@10 +3.9 [+1.8, +6.2]. As predicted: 9B within +3..+5, 27B
+within +1..+3 with an interval that includes zero at this size.
+
+## Addendum B (2026-11-21 12:17Z, written and committed BEFORE any 2B chat-format ask-map exists)
+Third model, same recipe. For Qwen3.5-2B: collect ask-map targets with the same chat-template prompts and the same
+three wordings as for 9B/27B (scripts/ask3), fit the same ridge recipe, and build the lens with the same rule as L
+(weight chosen on the 2B FIT split from {0, .05, .1, .2, .3, .5, 1.0} by the largest pass@1 + pass@10). A v4 bench cache
+for 2B is built with the same inclusion rule (model correctness) as for the other models. Scored once on v4 with
+--lite by the orchestrator, J++ (2B) first.
+PRIMARY for this addendum: L(2B) - J++(2B), pass@10 filtered, macro over tasks, on v4; holds if the 95% interval
+excludes zero. Secondary: pass@1, unfiltered pass@10, shuffled-target control at the same weight.
+Prediction: +3 to +8 pass@10 (the old ask-map gave about +9 on 2B's original test split, with mostly generic words).

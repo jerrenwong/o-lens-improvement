@@ -276,6 +276,8 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
 
 - **CONFIRMED on a third fresh set (2026-11-21; auto/PREREG_v4.md; scripts/results/c5_boot.txt).** Lens L (fm27_F4.py: J++ + clean chat-format ask-map, weight chosen on FIT by pass@1 + pass@10: 0.3 on 9B, 0.2 on 27B), frozen and registered as the single primary before the v4 prompts existed: L - J++ pass@10, both models, +4.3 [2.7,6.0] (HOLDS). 9B +6.5 [3.9,9.4] (p@1 +2.4 [0.3,4.6]); 27B +2.1 [0.4,3.9] (p@1 +0.9 ns). Three sets pooled: both models p@10 +3.4 [2.5,4.3], p@1 +1.5 [0.7,2.3]; 9B +4.6 [3.2,6.1]; 27B +2.2 [1.2,3.1]. This is the project's best fairly tested lens.
 
+- **L on the ORIGINAL benchmark test split (2026-11-21; PREREG_v4 addendum A).** 9B (153): .5809/.3538 -> .6281/.3664, pass@10 +4.7 [1.5,8.2]; 27B (162): .5620/.3271 -> .5731/.3258, +1.1 [-1.0,3.4]; both models +2.9 [1.0,4.9]; pass@1 +0.6 ns.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
