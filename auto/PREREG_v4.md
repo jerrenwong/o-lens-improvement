@@ -49,3 +49,11 @@ Predictions: both models +1.5..+3.5 (actual +4.3, above); 9B +2..+4 (actual +6.5
 and I expected its interval might include zero; it does not).
 Caveat noted for honesty: on 9B the shuffled-target control at a small weight shows a small, non-significant pass@10
 lift on v4 (+2.2) with a pass@1 loss; pooled over three sets it is +0.8 [-0.4, +2.0]. L's gain is well above it.
+
+## Addendum A (2026-11-21 12:11Z, written and committed BEFORE L is scored on the original benchmark's test split)
+Additional registered check, the frozen lens L on the ORIGINAL benchmark's test split (9B: `auto/evaluate.py --split
+test`, 153 prompts; 27B: `auto/evaluate27.py --split test`, 162 prompts), against the stored J++ runs T_jpp_9b and
+T_jpp_27b, scored once with --lite. Reported: L - J++ pass@10 and pass@1 per model and mean over both, paired
+bootstrap. These splits are small and have been scored before for other lenses (9B twice, 27B once), so this is a
+secondary check, not a new primary. Predictions: 9B +3 to +5 pass@10, 27B +1 to +3; I expect at least the 27B interval
+to include zero at this size. Run names T_L_9b, T_L_27b.
