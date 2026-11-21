@@ -194,6 +194,14 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   (both 363, J++ only 881, M3 only 663 of 3,837). BENCHMARK: no transfer (dev .5738 vs J++ .5952; M alone ~.01 on
   fit; 0 prompts gained, 3 lost). Scale-up with 8,000 words and 5 text styles: agent al2 (.hf27/al2).
 
+- LOW RANK ON THE EXPERTS (lr1, user-approved; A_full experts, replicate C_full; settings picked on FIT): V0 final
+  matrix r2048 -1.4 [-5.1,+1.4]; V1 each expert r2048 -1.9 [-5.2,+0.3] (C +1.1); V2 truncate + refit weights r512 -0.2
+  (pass@1 -5.1; C -3.7, pass@1 -9.2: refit overfits the 75-prompt fold); V3 keep mean expert, truncate differences
+  r1024 +0.7 [-0.2,+1.9] (C -0.1 / -2.2). No gain. Structure: J++ = (sum w) * Ebar + sum w_k D_k; the two parts are
+  about equal in size and cancel; Ebar is high-rank (PR up to 1475), D_k low-rank (PR 16-85); truncating D_k to 16-64
+  collapses association (.37 -> .05-.17) but not multihop. '@' at L24 survives every truncation. One junk expert
+  (3-5x larger, 0.0 alone) dominates the plain mean.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
