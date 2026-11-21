@@ -258,6 +258,9 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   alone on v2: +1.8 (ns) / pass@1 -2.5; raw-recipe W -0.8 / pass@1 -4.9 [-7.9,-1.9]. The pieces do NOT add.
   Best fresh-prompt lens remains A = released J++ + ask-map (9B: v2 +3.3 [0.8,5.9], v3 +3.7 [1.2,6.4]).
 
+- **sub1 pilot, subtle-but-inferable data (2026-11-21).** 9B asked for the hidden word on the sentence and on its shuffled words. al2 sample (3,000): inferable 37.5%, given away 22.7%, subtle 17.7% (descriptions 81/52/31; dialogue 19.5/9.5/13). New "must be inferred" prompts over 992 typed concepts incl. names (8,600 sentences): inferable 28.4%, subtle 15.2%; PERSON/PLACE subtle 9-10%. Prompting for subtlety does not help; most text is simply not inferable. Concept list from the vocabulary is noisy (plurals, code tokens, non-English). Report: runs/sub1/report_v1.txt.
+- **ask2, specific-word ask-map, 9B dev (2026-11-21, dev only).** J++ .595/.385; topic ask-map .627/.404; specific-word map lam 1.0 .634/.422; both .632/.419; specific map alone .607/.345 (topic alone .425); shuffled .512. Equal to topic on 9B. Targets: 6,108 distinct words (topic 1,878), 24% visible in the prefix, 9.6% junk vectors dropped. 27B pending.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
