@@ -104,3 +104,9 @@ symphony, exploration, sports, programming) were checked against the exclusion l
 benchmarks before v4 existed. Checked now against v4's labels: one of them, "blizzard", is the hidden concept of one v4
 association prompt. That prompt is a miss for both J++ and L on all three models (best ranks: 9B 23 vs 13, 27B 11 vs 19,
 2B 588 vs 1274), so it contributes nothing to any pass@10 or pass@1 difference reported above.
+
+## Addendum C (2026-11-21 20:28Z, written and committed BEFORE the 2B lens is scored on the original test split)
+The 2B lens of addendum B (`m2b_L.py`, unchanged) on the ORIGINAL benchmark's test split for Qwen3.5-2B (108 prompts),
+against the stored J++ run T_jpp_2b (.3150 / .1772), scored once with --lite. Reported: pass@10 and pass@1 with paired
+bootstrap. Secondary check on a small split that was scored before for other lenses. Prediction: +3 to +9 pass@10.
+Run name T_L_2b.
