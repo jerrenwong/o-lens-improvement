@@ -84,3 +84,16 @@ SECONDARY: pass@1 +2.1 [-0.8, +5.5]; unfiltered pass@10 +9.4 [+5.2, +13.9]. Shuf
 pass@10 -0.1 [-3.6, +4.2], pass@1 -6.6 [-9.9, -3.8]; L - shuffled pass@10 +7.1 [+3.3, +10.9].
 Reading: the recipe carries to a third model. Prediction (+3 to +8) held. Limits: the 2B set is dominated by two
 tasks (association and typo make up 246 of 328 prompts), and on 2B's dev split the filtered gain was small (+1.4).
+
+## Post-hoc controls for L on v4 (2026-11-21 12:55Z; NOT registered; run after the results above were read; scripts/c8_run.sh)
+The registered shuffled control used C's weights. Matched controls at L's own weights (0.3 on 9B, 0.2 on 27B):
+- Shuffled-target map (c8_Lshuf.py) - J++: 9B pass@10 +0.5 [-2.2, +3.4], pass@1 -3.1 [-4.8, -1.2]; 27B pass@10 -1.6
+  [-3.2, -0.0], pass@1 -2.1 [-3.6, -0.7].
+- Constant part of the map only (c8_Lprior.py: the same vector added to every prompt) - J++: 9B +0.4 [-2.3, +3.3],
+  pass@1 -3.2; 27B -1.8 [-3.3, -0.3], pass@1 -2.7.
+- L - shuffled: 9B pass@10 +6.0 [+3.8, +8.5], pass@1 +5.5 [+3.6, +7.5]; 27B +3.7 [+2.2, +5.3], pass@1 +3.0 [+1.6, +4.5].
+  L - constant: 9B +6.1 [+3.8, +8.5]; 27B +3.9 [+2.4, +5.5].
+Reading: neither a shuffled map nor the map's constant part gives any gain at L's weights; L's gain comes from the
+passage-specific part of the map.
+Per task on v4, L - J++ pass@10: 9B association +11.6, multihop +11.0, multilingual +3.2, poetry +3.7, typo +3.2; 27B
+association +5.0, multihop -0.7, multilingual +0.8, poetry +5.4, typo 0.0.
