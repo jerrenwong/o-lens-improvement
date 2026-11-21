@@ -74,3 +74,13 @@ for 2B is built with the same inclusion rule (model correctness) as for the othe
 PRIMARY for this addendum: L(2B) - J++(2B), pass@10 filtered, macro over tasks, on v4; holds if the 95% interval
 excludes zero. Secondary: pass@1, unfiltered pass@10, shuffled-target control at the same weight.
 Prediction: +3 to +8 pass@10 (the old ask-map gave about +9 on 2B's original test split, with mostly generic words).
+
+## Results, addendum B (scored 2026-11-21 12:43Z, once, --lite; scripts/c7_run.sh; bootstrap scripts/r2_boot.py)
+Qwen3.5-2B, same recipe. Build committed before scoring (661c11d): chat-format answers junk 0.01% (11 of 91,500
+vectors); weight chosen on the 2B FIT split by the registered rule = 0.5. v4 for 2B: 328 prompts pass the same
+inclusion rule (association 121, typo 125, multilingual 47, multihop 18, poetry 17). J++ sanity: .3785 / .2081.
+PRIMARY: L(2B) - J++(2B), pass@10 filtered, on v4: 37.8 -> 44.9 = +7.1 [+3.4, +11.4]. The interval excludes zero: HOLDS.
+SECONDARY: pass@1 +2.1 [-0.8, +5.5]; unfiltered pass@10 +9.4 [+5.2, +13.9]. Shuffled control at the same weight:
+pass@10 -0.1 [-3.6, +4.2], pass@1 -6.6 [-9.9, -3.8]; L - shuffled pass@10 +7.1 [+3.3, +10.9].
+Reading: the recipe carries to a third model. Prediction (+3 to +8) held. Limits: the 2B set is dominated by two
+tasks (association and typo make up 246 of 328 prompts), and on 2B's dev split the filtered gain was small (+1.4).

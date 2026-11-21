@@ -278,6 +278,8 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
 
 - **L on the ORIGINAL benchmark test split (2026-11-21; PREREG_v4 addendum A).** 9B (153): .5809/.3538 -> .6281/.3664, pass@10 +4.7 [1.5,8.2]; 27B (162): .5620/.3271 -> .5731/.3258, +1.1 [-1.0,3.4]; both models +2.9 [1.0,4.9]; pass@1 +0.6 ns.
 
+- **Third model (2026-11-21; PREREG_v4 addendum B).** Same recipe on Qwen3.5-2B (maps .hf27/ask3/E_2b_t3.pt, candidate m2b_L.py, weight 0.5 by the registered FIT rule): v4 (328 prompts) J++ .3785/.2081 -> L .4492/.2292, pass@10 +7.1 [3.4,11.4] (HOLDS), pass@1 +2.1 ns, unfiltered +9.4 [5.2,13.9]; shuffled -0.1 / -6.6. So L beats J++ on v4 on all three models: 2B +7.1, 9B +6.5, 27B +2.1.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
