@@ -272,6 +272,8 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
 
 - **Registered 27B repair (2026-11-21; PREREG_v3 Amdt 6 / v2 Amdt 4; scripts/results/c4_boot.txt).** Cause (fm27, FIT): the map's effective weight on 27B was ~2.3x that on 9B, so the map chose the top-1 (format/topic tokens). G (fm27_F5s.py: rank 1 must be in J++'s top-10) meets its primary: G - C pass@1 on 27B +1.2 [0.2,2.2]; G - J++ pass@1 -1.3 [-2.9,0.4]. **L (fm27_F4.py: weight chosen on FIT by pass@1 + pass@10; 0.3 on 9B, 0.2 on 27B) beats J++ on both models on both fresh sets:** 27B pass@10 +1.6 [0.1,3.2] / +2.8 [1.4,4.4], pooled +2.2 [1.2,3.3], pass@1 +0.2; 9B pass@10 +3.6 [2.0,5.4], pass@1 +2.5 [0.8,4.3]; both models +2.9 [1.9,4.0] pass@10, +1.4 [0.3,2.5] pass@1. L was a registered secondary: confirm as a primary on a new fresh set.
 
+- **al3: new text for nameable concepts incl. names (2026-11-21).** 2,304 judged concepts, 110,568 sentences (93,437 new), stem-separated test of 69 unseen words (T2). Any-of-7 top-10 on T2: J++ .279; mix with the old al2 map .350; mix with al3-only map .452 (+10.2 [7.2,13.3]); mix with al2+al3 map .420 (+6.9 [4.9,9.1]). PERSON .250 -> .438, PLACE .317 -> .494. New text is 59% inferable (old 37%). Benchmark dev: no gain (.6031 vs .5952; FIT below J++). Results scripts/al3/results/.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,

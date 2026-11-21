@@ -1,0 +1,728 @@
+{
+ "cands": 3186,
+ "cand_counts": {
+  "kept al2j": 1068,
+  "kept v2j": 2118,
+  "canon ignored (not case only)": 3,
+  "canon used (case only)": 8
+ },
+ "drops": {
+  "exclusion list (plural/singular variant)": 5,
+  "few-shot word": 2,
+  "case-insensitive duplicate": 875
+ },
+ "drop_examples": {
+  "exclusion list (plural/singular variant)": [
+   "cloth",
+   "ski",
+   "tear",
+   "knee",
+   "SARS"
+  ],
+  "few-shot word": [
+   "jealous",
+   "loneliness"
+  ]
+ },
+ "table": {
+  "STATE": {
+   "train": 130,
+   "al2": 77,
+   "near": 6,
+   "test": 6,
+   "val": 7,
+   "new": 72
+  },
+  "ALL": {
+   "train": 2064,
+   "al2": 1151,
+   "near": 84,
+   "val": 87,
+   "new": 1153,
+   "test": 69
+  },
+  "al2 words": {
+   "train": 1027,
+   "near": 57,
+   "val": 42,
+   "test": 25
+  },
+  "PLACE": {
+   "train": 419,
+   "al2": 99,
+   "near": 13,
+   "new": 363,
+   "test": 18,
+   "val": 12
+  },
+  "THING": {
+   "train": 1075,
+   "al2": 694,
+   "val": 51,
+   "near": 36,
+   "test": 29,
+   "new": 497
+  },
+  "EVENT": {
+   "near": 16,
+   "al2": 169,
+   "train": 243,
+   "test": 9,
+   "val": 8,
+   "new": 107
+  },
+  "PERSON": {
+   "train": 197,
+   "al2": 112,
+   "near": 13,
+   "val": 9,
+   "test": 7,
+   "new": 114
+  },
+  "new words": {
+   "near": 27,
+   "train": 1037,
+   "val": 45,
+   "test": 44
+  }
+ },
+ "near_by_origin": {
+  "('test', 'al2')": 27,
+  "('val', 'al2')": 30,
+  "('test', 'new')": 14,
+  "('val', 'new')": 13
+ },
+ "near_examples": [
+  [
+   "battle",
+   "test",
+   [
+    "battlefield",
+    "battles"
+   ]
+  ],
+  [
+   "President",
+   "val",
+   [
+    "presidency",
+    "presidential"
+   ]
+  ],
+  [
+   "flight",
+   "val",
+   [
+    "flights"
+   ]
+  ],
+  [
+   "fight",
+   "val",
+   [
+    "fighter",
+    "fighters",
+    "fighting"
+   ]
+  ],
+  [
+   "screen",
+   "val",
+   [
+    "screened",
+    "screening",
+    "screenings"
+   ]
+  ],
+  [
+   "Conference",
+   "val",
+   [
+    "confession"
+   ]
+  ],
+  [
+   "worried",
+   "val",
+   [
+    "worries"
+   ]
+  ],
+  [
+   "fur",
+   "test",
+   [
+    "furious",
+    "furnace",
+    "furniture"
+   ]
+  ],
+  [
+   "critic",
+   "val",
+   [
+    "critical",
+    "critically",
+    "criticised"
+   ]
+  ],
+  [
+   "journal",
+   "val",
+   [
+    "journalist",
+    "journalists",
+    "journals"
+   ]
+  ],
+  [
+   "Senate",
+   "test",
+   [
+    "senator",
+    "senators"
+   ]
+  ],
+  [
+   "Treaty",
+   "val",
+   [
+    "treat",
+    "treated",
+    "treaties"
+   ]
+  ],
+  [
+   "historian",
+   "test",
+   [
+    "historians",
+    "historic",
+    "historical"
+   ]
+  ],
+  [
+   "lunch",
+   "val",
+   [
+    "lunches"
+   ]
+  ],
+  [
+   "treasure",
+   "val",
+   [
+    "treason",
+    "treasures",
+    "treasury"
+   ]
+  ],
+  [
+   "mole",
+   "test",
+   [
+    "molecular",
+    "molecule"
+   ]
+  ],
+  [
+   "architect",
+   "test",
+   [
+    "architects",
+    "architectural",
+    "architecture"
+   ]
+  ],
+  [
+   "poem",
+   "val",
+   [
+    "poems"
+   ]
+  ],
+  [
+   "crash",
+   "test",
+   [
+    "crashed",
+    "crashes",
+    "crashing"
+   ]
+  ],
+  [
+   "butter",
+   "test",
+   [
+    "butterflies"
+   ]
+  ],
+  [
+   "cooking",
+   "val",
+   [
+    "cookie",
+    "cookies"
+   ]
+  ],
+  [
+   "package",
+   "test",
+   [
+    "packages",
+    "packaging"
+   ]
+  ],
+  [
+   "documentary",
+   "val",
+   [
+    "document",
+    "documentaries",
+    "documentation"
+   ]
+  ],
+  [
+   "migration",
+   "val",
+   [
+    "migraine",
+    "migrants",
+    "migrated"
+   ]
+  ],
+  [
+   "thirsty",
+   "test",
+   [
+    "thirst"
+   ]
+  ],
+  [
+   "sheet",
+   "val",
+   [
+    "sheets"
+   ]
+  ],
+  [
+   "lime",
+   "val",
+   [
+    "limestone"
+   ]
+  ],
+  [
+   "snack",
+   "val",
+   [
+    "snacks"
+   ]
+  ],
+  [
+   "photo",
+   "test",
+   [
+    "photographed",
+    "photographs",
+    "photography"
+   ]
+  ],
+  [
+   "photograph",
+   "test",
+   [
+    "photographed",
+    "photographs",
+    "photography"
+   ]
+  ],
+  [
+   "shelter",
+   "val",
+   [
+    "shelters"
+   ]
+  ],
+  [
+   "microscope",
+   "test",
+   [
+    "microphone",
+    "microwave"
+   ]
+  ],
+  [
+   "pup",
+   "val",
+   [
+    "pupil",
+    "pupils",
+    "pups"
+   ]
+  ],
+  [
+   "quarterback",
+   "test",
+   [
+    "quarter",
+    "quarterly",
+    "quarters"
+   ]
+  ],
+  [
+   "mosque",
+   "val",
+   [
+    "mosquitoes"
+   ]
+  ],
+  [
+   "reporter",
+   "test",
+   [
+    "reported",
+    "reportedly",
+    "reporters"
+   ]
+  ],
+  [
+   "screenplay",
+   "val",
+   [
+    "screened",
+    "screening",
+    "screenings"
+   ]
+  ],
+  [
+   "folder",
+   "val",
+   [
+    "folded"
+   ]
+  ],
+  [
+   "politician",
+   "val",
+   [
+    "polite",
+    "political",
+    "politicians"
+   ]
+  ],
+  [
+   "poet",
+   "val",
+   [
+    "poetry",
+    "poets"
+   ]
+  ],
+  [
+   "referee",
+   "test",
+   [
+    "refer",
+    "referenced",
+    "references"
+   ]
+  ],
+  [
+   "freezer",
+   "val",
+   [
+    "freezing"
+   ]
+  ],
+  [
+   "glove",
+   "test",
+   [
+    "gloves"
+   ]
+  ],
+  [
+   "photographer",
+   "test",
+   [
+    "photographed",
+    "photographs",
+    "photography"
+   ]
+  ],
+  [
+   "coaster",
+   "test",
+   [
+    "coast",
+    "coastal",
+    "coastline"
+   ]
+  ],
+  [
+   "isolation",
+   "test",
+   [
+    "isolate",
+    "isolated"
+   ]
+  ],
+  [
+   "heroin",
+   "val",
+   [
+    "heroic"
+   ]
+  ],
+  [
+   "surgeon",
+   "test",
+   [
+    "surge"
+   ]
+  ],
+  [
+   "fracture",
+   "test",
+   [
+    "fraction",
+    "fractured"
+   ]
+  ],
+  [
+   "mane",
+   "test",
+   [
+    "maneuvers"
+   ]
+  ],
+  [
+   "stripe",
+   "test",
+   [
+    "strip",
+    "stripes",
+    "strips"
+   ]
+  ],
+  [
+   "ceasefire",
+   "test",
+   [
+    "ceased"
+   ]
+  ],
+  [
+   "inauguration",
+   "val",
+   [
+    "inaugural"
+   ]
+  ],
+  [
+   "rebellion",
+   "test",
+   [
+    "rebel",
+    "rebels"
+   ]
+  ],
+  [
+   "shrine",
+   "val",
+   [
+    "shrink"
+   ]
+  ],
+  [
+   "inn",
+   "test",
+   [
+    "inner",
+    "innocence",
+    "innocent"
+   ]
+  ],
+  [
+   "medic",
+   "val",
+   [
+    "medical",
+    "medication",
+    "medicinal"
+   ]
+  ],
+  [
+   "musical",
+   "test",
+   [
+    "musician",
+    "musicians"
+   ]
+  ],
+  [
+   "insulin",
+   "test",
+   [
+    "insulation"
+   ]
+  ],
+  [
+   "fuse",
+   "test",
+   [
+    "fused"
+   ]
+  ],
+  [
+   "Pharmacy",
+   "val",
+   [
+    "pharmaceutical"
+   ]
+  ],
+  [
+   "unconscious",
+   "val",
+   [
+    "unconstitutional"
+   ]
+  ],
+  [
+   "plum",
+   "test",
+   [
+    "plumber"
+   ]
+  ],
+  [
+   "frost",
+   "test",
+   [
+    "frosting"
+   ]
+  ],
+  [
+   "villa",
+   "test",
+   [
+    "villagers"
+   ]
+  ],
+  [
+   "limb",
+   "val",
+   [
+    "limbs"
+   ]
+  ],
+  [
+   "wilderness",
+   "val",
+   [
+    "wilde"
+   ]
+  ],
+  [
+   "Princeton",
+   "test",
+   [
+    "prince",
+    "princess",
+    "principally"
+   ]
+  ],
+  [
+   "silicone",
+   "test",
+   [
+    "silica"
+   ]
+  ],
+  [
+   "Reno",
+   "test",
+   [
+    "renovated",
+    "renovation",
+    "renovations"
+   ]
+  ],
+  [
+   "applause",
+   "val",
+   [
+    "applaud",
+    "applauded"
+   ]
+  ],
+  [
+   "Greenland",
+   "val",
+   [
+    "greenhouse"
+   ]
+  ],
+  [
+   "drowning",
+   "test",
+   [
+    "drowned"
+   ]
+  ],
+  [
+   "manifesto",
+   "test",
+   [
+    "manifestation"
+   ]
+  ],
+  [
+   "Juventus",
+   "val",
+   [
+    "juvenile"
+   ]
+  ],
+  [
+   "skillet",
+   "test",
+   [
+    "skill",
+    "skills"
+   ]
+  ],
+  [
+   "hostel",
+   "val",
+   [
+    "hosted"
+   ]
+  ],
+  [
+   "metre",
+   "val",
+   [
+    "metres"
+   ]
+  ],
+  [
+   "coop",
+   "val",
+   [
+    "cooperation",
+    "cooperative"
+   ]
+  ],
+  [
+   "scoreboard",
+   "val",
+   [
+    "score",
+    "scored"
+   ]
+  ]
+ ],
+ "n": 2304
+}

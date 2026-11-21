@@ -1,0 +1,3 @@
+a [al2 fit] M mix: chosen lam 0.1 (fit 0.4804 vs J++ 0.4964);dev_pass10: 0.5856;dev_pass1: 0.3950;
+c [al2 fit] M mix: chosen lam 0.1 (fit 0.4829 vs J++ 0.4964);dev_pass10: 0.6031;dev_pass1: 0.3950;
+b [al2 fit] M mix: chosen lam 0.1 (fit 0.4929 vs J++ 0.4964);dev_pass10: 0.5941;dev_pass1: 0.3679;

@@ -1,0 +1,88 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1037.42it/s]
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights: 100%|██████████| 427/427 [00:00<00:00, 4740.28it/s]
+08:35:06 pass 0: jobs 13824; short 13824; missing sentences 93461; accepted 17131
+08:35:10 pass 0: todo jobs 13824, batches 656, samples 121109
+08:36:44 pass 0 batch 1/656 samples 119 94s (1.3/s)
+08:37:04 CUDA OOM, retry 1 in 60 s; free 15297 MiB
+08:38:07 CUDA OOM, retry 2 in 60 s; free 15603 MiB
+08:40:30 CUDA OOM, retry 1 in 60 s; free 15141 MiB
+08:41:33 CUDA OOM, retry 2 in 60 s; free 15541 MiB
+08:42:34 CUDA OOM, retry 3 in 60 s; free 16553 MiB
+=== restart 08:43:43 (adaptive batch)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1089.93it/s]
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights: 100%|██████████| 427/427 [00:00<00:00, 6269.80it/s]
+08:44:25 pass 0: jobs 13824; short 13788; missing sentences 93224; accepted 17368
+08:44:29 pass 0: todo jobs 13788, batches 879, samples 120800
+08:45:42 pass 0 batch 1/879 samples 140 74s (1.9/s); cap 144 seqs; peak 26.8 GiB
+08:47:04 pass 0 batch 2/879 samples 280 156s (1.8/s); cap 144 seqs; peak 28.2 GiB
+08:48:31 pass 0 batch 3/879 samples 420 242s (1.7/s); cap 144 seqs; peak 28.2 GiB
+08:48:33 pass 0 batch 4/879 samples 560 244s (2.3/s); cap 144 seqs; peak 28.2 GiB
+08:50:11 pass 0 batch 5/879 samples 700 343s (2.0/s); cap 144 seqs; peak 28.3 GiB
+08:51:51 pass 0 batch 26/879 samples 3640 443s (8.2/s); cap 144 seqs; peak 28.3 GiB
+08:54:29 pass 0 batch 51/879 samples 7140 601s (11.9/s); cap 144 seqs; peak 28.3 GiB
+08:56:29 pass 0 batch 76/879 samples 10640 720s (14.8/s); cap 144 seqs; peak 28.3 GiB
+09:01:05 pass 0 batch 101/879 samples 14022 997s (14.1/s); cap 144 seqs; peak 28.4 GiB
+09:03:34 pass 0 batch 126/879 samples 17522 1146s (15.3/s); cap 144 seqs; peak 28.4 GiB
+09:05:46 pass 0 batch 151/879 samples 21022 1278s (16.5/s); cap 144 seqs; peak 28.4 GiB
+09:08:43 pass 0 batch 176/879 samples 24494 1454s (16.8/s); cap 144 seqs; peak 28.4 GiB
+09:11:49 pass 0 batch 201/879 samples 27984 1640s (17.1/s); cap 144 seqs; peak 28.4 GiB
+09:14:49 pass 0 batch 226/879 samples 31408 1820s (17.3/s); cap 144 seqs; peak 28.4 GiB
+09:16:42 pass 0 batch 251/879 samples 34908 1934s (18.1/s); cap 144 seqs; peak 28.4 GiB
+09:24:01 pass 0 batch 276/879 samples 38095 2372s (16.1/s); cap 144 seqs; peak 28.4 GiB
+09:27:53 pass 0 batch 301/879 samples 41460 2604s (15.9/s); cap 144 seqs; peak 28.4 GiB
+09:29:08 pass 0 batch 326/879 samples 44960 2679s (16.8/s); cap 144 seqs; peak 28.4 GiB
+09:31:56 pass 0 batch 351/879 samples 48418 2847s (17.0/s); cap 144 seqs; peak 28.4 GiB
+09:34:59 pass 0 batch 376/879 samples 51918 3030s (17.1/s); cap 144 seqs; peak 28.4 GiB
+09:36:59 pass 0 batch 401/879 samples 55418 3150s (17.6/s); cap 144 seqs; peak 28.4 GiB
+09:41:29 pass 0 batch 426/879 samples 58697 3420s (17.2/s); cap 144 seqs; peak 28.4 GiB
+09:44:05 pass 0 batch 451/879 samples 62075 3576s (17.4/s); cap 144 seqs; peak 28.4 GiB
+09:47:55 pass 0 batch 476/879 samples 65411 3807s (17.2/s); cap 144 seqs; peak 28.4 GiB
+09:49:18 pass 0 batch 501/879 samples 68781 3889s (17.7/s); cap 144 seqs; peak 28.4 GiB
+09:50:12 pass 0 batch 526/879 samples 72281 3944s (18.3/s); cap 144 seqs; peak 28.4 GiB
+09:52:08 pass 0 batch 551/879 samples 75681 4060s (18.6/s); cap 144 seqs; peak 28.4 GiB
+09:54:29 pass 0 batch 576/879 samples 79051 4200s (18.8/s); cap 144 seqs; peak 28.4 GiB
+09:56:56 pass 0 batch 601/879 samples 82451 4348s (19.0/s); cap 144 seqs; peak 28.4 GiB
+09:59:24 pass 0 batch 626/879 samples 85765 4495s (19.1/s); cap 144 seqs; peak 28.4 GiB
+10:00:46 pass 0 batch 651/879 samples 89265 4578s (19.5/s); cap 144 seqs; peak 28.4 GiB
+10:02:11 pass 0 batch 676/879 samples 92765 4662s (19.9/s); cap 144 seqs; peak 28.4 GiB
+10:04:18 pass 0 batch 701/879 samples 96269 4790s (20.1/s); cap 144 seqs; peak 28.4 GiB
+10:05:21 pass 0 batch 726/879 samples 99769 4852s (20.6/s); cap 144 seqs; peak 28.4 GiB
+10:06:27 pass 0 batch 751/879 samples 103273 4918s (21.0/s); cap 144 seqs; peak 28.5 GiB
+10:10:30 pass 0 batch 776/879 samples 106622 5162s (20.7/s); cap 144 seqs; peak 28.5 GiB
+10:14:14 pass 0 batch 801/879 samples 110052 5386s (20.4/s); cap 144 seqs; peak 28.5 GiB
+10:17:28 pass 0 batch 826/879 samples 113510 5580s (20.3/s); cap 144 seqs; peak 28.5 GiB
+10:19:17 pass 0 batch 851/879 samples 117010 5689s (20.6/s); cap 144 seqs; peak 28.5 GiB
+10:20:30 pass 0 batch 876/879 samples 120380 5761s (20.9/s); cap 144 seqs; peak 28.5 GiB
+10:20:37 pass 0 batch 879/879 samples 120800 5769s (20.9/s); cap 144 seqs; peak 28.5 GiB
+10:20:47 pass 1: jobs 13824; short 318; missing sentences 583; accepted 110009
+10:20:47 pass 1: todo jobs 318, batches 29, samples 1457
+10:22:47 pass 1 batch 1/29 samples 125 121s (1.0/s); cap 144 seqs; peak 28.5 GiB
+10:24:00 pass 1 batch 2/29 samples 152 194s (0.8/s); cap 144 seqs; peak 28.5 GiB
+10:25:17 pass 1 batch 3/29 samples 218 270s (0.8/s); cap 144 seqs; peak 28.5 GiB
+10:25:18 pass 1 batch 4/29 samples 254 271s (0.9/s); cap 144 seqs; peak 28.5 GiB
+10:25:27 pass 1 batch 5/29 samples 264 281s (0.9/s); cap 144 seqs; peak 28.5 GiB
+10:48:08 pass 1 batch 26/29 samples 1235 1642s (0.8/s); cap 144 seqs; peak 28.7 GiB
+10:51:27 pass 1 batch 29/29 samples 1457 1840s (0.8/s); cap 144 seqs; peak 28.7 GiB
+10:51:31 pass 2: jobs 13824; short 39; missing sentences 91; accepted 110501
+10:51:31 pass 2: todo jobs 39, batches 12, samples 214
+10:55:29 pass 2 batch 1/12 samples 3 238s (0.0/s); cap 144 seqs; peak 28.7 GiB
+10:56:11 pass 2 batch 2/12 samples 18 280s (0.1/s); cap 144 seqs; peak 28.7 GiB
+11:00:57 pass 2 batch 3/12 samples 39 566s (0.1/s); cap 144 seqs; peak 28.7 GiB
+11:01:04 pass 2 batch 4/12 samples 48 574s (0.1/s); cap 144 seqs; peak 28.7 GiB
+11:02:43 pass 2 batch 5/12 samples 54 672s (0.1/s); cap 144 seqs; peak 28.7 GiB
+11:07:32 pass 2 batch 12/12 samples 214 962s (0.2/s); cap 144 seqs; peak 28.7 GiB
+11:07:36 pass 3: jobs 13824; short 15; missing sentences 41; accepted 110551
+11:07:36 pass 3: todo jobs 15, batches 7, samples 95
+11:08:07 pass 3 batch 1/7 samples 3 31s (0.1/s); cap 144 seqs; peak 28.7 GiB
+11:08:10 pass 3 batch 2/7 samples 13 34s (0.4/s); cap 144 seqs; peak 28.7 GiB
+11:08:14 pass 3 batch 3/7 samples 20 38s (0.5/s); cap 144 seqs; peak 28.7 GiB
+11:08:15 pass 3 batch 4/7 samples 23 39s (0.6/s); cap 144 seqs; peak 28.7 GiB
+11:09:04 pass 3 batch 5/7 samples 47 88s (0.5/s); cap 144 seqs; peak 28.7 GiB
+11:10:43 pass 3 batch 7/7 samples 95 187s (0.5/s); cap 144 seqs; peak 28.7 GiB
+11:10:48 final accepted 110568; jobs by accepted count {3: 2, 4: 1, 5: 1, 6: 1, 7: 5, 8: 13814}
+11:10:48 drops {"al2|S1|prefix5": 16, "al2|S2|prefix5": 36, "al2|S3|prefix5": 20, "al2|S4|prefix5": 24, "al2|S5|prefix5": 15, "new|I2|cut": 215, "new|I2|names": 502, "new|I2|near-duplicate": 9, "new|I2|prefix5": 288, "new|I2|short": 344, "new|S1|cut": 2, "new|S1|names": 90, "new|S1|near-duplicate": 50, "new|S1|prefix5": 93, "new|S1|short": 2, "new|S2|cut": 4, "new|S2|names": 192, "new|S2|near-duplicate": 1053, "new|S2|prefix5": 616, "new|S2|short": 9, "new|S3|cut": 15, "new|S3|names": 139, "new|S3|near-duplicate": 3, "new|S3|prefix5": 110, "new|S3|short": 8, "new|S4|cut": 115, "new|S4|names": 203, "new|S4|prefix5": 105, "new|S5|cut": 3, "new|S5|names": 232, "new|S5|near-duplicate": 9, "new|S5|prefix5": 91}
+GEN_DONE

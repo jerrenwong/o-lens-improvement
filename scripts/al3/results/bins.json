@@ -1,0 +1,804 @@
+{
+ "al3 reused al2": {
+  "ALL|ALL": {
+   "n": 17131,
+   "inferable": 0.68,
+   "given_away": 0.469,
+   "subtle": 0.211
+  },
+  "ALL|S1": {
+   "n": 3435,
+   "inferable": 0.731,
+   "given_away": 0.536,
+   "subtle": 0.195
+  },
+  "ALL|S2": {
+   "n": 3404,
+   "inferable": 0.962,
+   "given_away": 0.839,
+   "subtle": 0.123
+  },
+  "ALL|S3": {
+   "n": 3433,
+   "inferable": 0.61,
+   "given_away": 0.37,
+   "subtle": 0.24
+  },
+  "ALL|S4": {
+   "n": 3425,
+   "inferable": 0.564,
+   "given_away": 0.341,
+   "subtle": 0.223
+  },
+  "ALL|S5": {
+   "n": 3434,
+   "inferable": 0.535,
+   "given_away": 0.26,
+   "subtle": 0.275
+  },
+  "EVENT|ALL": {
+   "n": 2522,
+   "inferable": 0.763,
+   "given_away": 0.508,
+   "subtle": 0.255
+  },
+  "EVENT|S1": {
+   "n": 505,
+   "inferable": 0.824,
+   "given_away": 0.58,
+   "subtle": 0.244
+  },
+  "EVENT|S2": {
+   "n": 504,
+   "inferable": 0.992,
+   "given_away": 0.867,
+   "subtle": 0.125
+  },
+  "EVENT|S3": {
+   "n": 505,
+   "inferable": 0.75,
+   "given_away": 0.396,
+   "subtle": 0.354
+  },
+  "EVENT|S4": {
+   "n": 503,
+   "inferable": 0.632,
+   "given_away": 0.414,
+   "subtle": 0.219
+  },
+  "EVENT|S5": {
+   "n": 505,
+   "inferable": 0.616,
+   "given_away": 0.285,
+   "subtle": 0.331
+  },
+  "PERSON|ALL": {
+   "n": 1653,
+   "inferable": 0.667,
+   "given_away": 0.426,
+   "subtle": 0.24
+  },
+  "PERSON|S1": {
+   "n": 332,
+   "inferable": 0.681,
+   "given_away": 0.485,
+   "subtle": 0.196
+  },
+  "PERSON|S2": {
+   "n": 327,
+   "inferable": 0.948,
+   "given_away": 0.755,
+   "subtle": 0.193
+  },
+  "PERSON|S3": {
+   "n": 332,
+   "inferable": 0.611,
+   "given_away": 0.413,
+   "subtle": 0.199
+  },
+  "PERSON|S4": {
+   "n": 330,
+   "inferable": 0.573,
+   "given_away": 0.315,
+   "subtle": 0.258
+  },
+  "PERSON|S5": {
+   "n": 332,
+   "inferable": 0.524,
+   "given_away": 0.169,
+   "subtle": 0.355
+  },
+  "PLACE|ALL": {
+   "n": 1478,
+   "inferable": 0.66,
+   "given_away": 0.451,
+   "subtle": 0.208
+  },
+  "PLACE|S1": {
+   "n": 297,
+   "inferable": 0.71,
+   "given_away": 0.512,
+   "subtle": 0.199
+  },
+  "PLACE|S2": {
+   "n": 295,
+   "inferable": 0.993,
+   "given_away": 0.861,
+   "subtle": 0.132
+  },
+  "PLACE|S3": {
+   "n": 296,
+   "inferable": 0.584,
+   "given_away": 0.355,
+   "subtle": 0.23
+  },
+  "PLACE|S4": {
+   "n": 294,
+   "inferable": 0.582,
+   "given_away": 0.316,
+   "subtle": 0.265
+  },
+  "PLACE|S5": {
+   "n": 296,
+   "inferable": 0.429,
+   "given_away": 0.213,
+   "subtle": 0.216
+  },
+  "STATE|ALL": {
+   "n": 1153,
+   "inferable": 0.62,
+   "given_away": 0.327,
+   "subtle": 0.293
+  },
+  "STATE|S1": {
+   "n": 231,
+   "inferable": 0.658,
+   "given_away": 0.364,
+   "subtle": 0.294
+  },
+  "STATE|S2": {
+   "n": 231,
+   "inferable": 0.853,
+   "given_away": 0.675,
+   "subtle": 0.177
+  },
+  "STATE|S3": {
+   "n": 230,
+   "inferable": 0.526,
+   "given_away": 0.191,
+   "subtle": 0.335
+  },
+  "STATE|S4": {
+   "n": 231,
+   "inferable": 0.545,
+   "given_away": 0.229,
+   "subtle": 0.316
+  },
+  "STATE|S5": {
+   "n": 230,
+   "inferable": 0.517,
+   "given_away": 0.174,
+   "subtle": 0.343
+  },
+  "THING|ALL": {
+   "n": 10325,
+   "inferable": 0.671,
+   "given_away": 0.484,
+   "subtle": 0.187
+  },
+  "THING|S1": {
+   "n": 2070,
+   "inferable": 0.728,
+   "given_away": 0.556,
+   "subtle": 0.172
+  },
+  "THING|S2": {
+   "n": 2047,
+   "inferable": 0.964,
+   "given_away": 0.861,
+   "subtle": 0.104
+  },
+  "THING|S3": {
+   "n": 2070,
+   "inferable": 0.588,
+   "given_away": 0.379,
+   "subtle": 0.21
+  },
+  "THING|S4": {
+   "n": 2067,
+   "inferable": 0.546,
+   "given_away": 0.344,
+   "subtle": 0.202
+  },
+  "THING|S5": {
+   "n": 2071,
+   "inferable": 0.534,
+   "given_away": 0.285,
+   "subtle": 0.249
+  }
+ },
+ "al3 all": {
+  "ALL|ALL": {
+   "n": 110568,
+   "inferable": 0.608,
+   "given_away": 0.401,
+   "subtle": 0.208
+  },
+  "ALL|I2": {
+   "n": 18432,
+   "inferable": 0.565,
+   "given_away": 0.364,
+   "subtle": 0.2
+  },
+  "ALL|S1": {
+   "n": 18432,
+   "inferable": 0.665,
+   "given_away": 0.457,
+   "subtle": 0.208
+  },
+  "ALL|S2": {
+   "n": 18408,
+   "inferable": 0.956,
+   "given_away": 0.816,
+   "subtle": 0.14
+  },
+  "ALL|S3": {
+   "n": 18432,
+   "inferable": 0.526,
+   "given_away": 0.295,
+   "subtle": 0.231
+  },
+  "ALL|S4": {
+   "n": 18432,
+   "inferable": 0.483,
+   "given_away": 0.263,
+   "subtle": 0.22
+  },
+  "ALL|S5": {
+   "n": 18432,
+   "inferable": 0.456,
+   "given_away": 0.209,
+   "subtle": 0.247
+  },
+  "EVENT|ALL": {
+   "n": 13248,
+   "inferable": 0.685,
+   "given_away": 0.445,
+   "subtle": 0.24
+  },
+  "EVENT|I2": {
+   "n": 2208,
+   "inferable": 0.526,
+   "given_away": 0.346,
+   "subtle": 0.18
+  },
+  "EVENT|S1": {
+   "n": 2208,
+   "inferable": 0.774,
+   "given_away": 0.529,
+   "subtle": 0.244
+  },
+  "EVENT|S2": {
+   "n": 2208,
+   "inferable": 0.981,
+   "given_away": 0.829,
+   "subtle": 0.152
+  },
+  "EVENT|S3": {
+   "n": 2208,
+   "inferable": 0.66,
+   "given_away": 0.357,
+   "subtle": 0.303
+  },
+  "EVENT|S4": {
+   "n": 2208,
+   "inferable": 0.607,
+   "given_away": 0.342,
+   "subtle": 0.265
+  },
+  "EVENT|S5": {
+   "n": 2208,
+   "inferable": 0.562,
+   "given_away": 0.264,
+   "subtle": 0.298
+  },
+  "PERSON|ALL": {
+   "n": 10847,
+   "inferable": 0.595,
+   "given_away": 0.396,
+   "subtle": 0.199
+  },
+  "PERSON|I2": {
+   "n": 1808,
+   "inferable": 0.58,
+   "given_away": 0.405,
+   "subtle": 0.175
+  },
+  "PERSON|S1": {
+   "n": 1808,
+   "inferable": 0.666,
+   "given_away": 0.485,
+   "subtle": 0.181
+  },
+  "PERSON|S2": {
+   "n": 1807,
+   "inferable": 0.928,
+   "given_away": 0.752,
+   "subtle": 0.177
+  },
+  "PERSON|S3": {
+   "n": 1808,
+   "inferable": 0.501,
+   "given_away": 0.317,
+   "subtle": 0.184
+  },
+  "PERSON|S4": {
+   "n": 1808,
+   "inferable": 0.455,
+   "given_away": 0.26,
+   "subtle": 0.195
+  },
+  "PERSON|S5": {
+   "n": 1808,
+   "inferable": 0.441,
+   "given_away": 0.156,
+   "subtle": 0.285
+  },
+  "PLACE|ALL": {
+   "n": 22168,
+   "inferable": 0.517,
+   "given_away": 0.34,
+   "subtle": 0.177
+  },
+  "PLACE|I2": {
+   "n": 3696,
+   "inferable": 0.609,
+   "given_away": 0.411,
+   "subtle": 0.199
+  },
+  "PLACE|S1": {
+   "n": 3696,
+   "inferable": 0.499,
+   "given_away": 0.31,
+   "subtle": 0.189
+  },
+  "PLACE|S2": {
+   "n": 3688,
+   "inferable": 0.961,
+   "given_away": 0.824,
+   "subtle": 0.137
+  },
+  "PLACE|S3": {
+   "n": 3696,
+   "inferable": 0.376,
+   "given_away": 0.19,
+   "subtle": 0.185
+  },
+  "PLACE|S4": {
+   "n": 3696,
+   "inferable": 0.325,
+   "given_away": 0.163,
+   "subtle": 0.163
+  },
+  "PLACE|S5": {
+   "n": 3696,
+   "inferable": 0.331,
+   "given_away": 0.141,
+   "subtle": 0.19
+  },
+  "STATE|ALL": {
+   "n": 7152,
+   "inferable": 0.583,
+   "given_away": 0.304,
+   "subtle": 0.279
+  },
+  "STATE|I2": {
+   "n": 1192,
+   "inferable": 0.469,
+   "given_away": 0.243,
+   "subtle": 0.226
+  },
+  "STATE|S1": {
+   "n": 1192,
+   "inferable": 0.659,
+   "given_away": 0.348,
+   "subtle": 0.311
+  },
+  "STATE|S2": {
+   "n": 1192,
+   "inferable": 0.904,
+   "given_away": 0.708,
+   "subtle": 0.195
+  },
+  "STATE|S3": {
+   "n": 1192,
+   "inferable": 0.51,
+   "given_away": 0.18,
+   "subtle": 0.331
+  },
+  "STATE|S4": {
+   "n": 1192,
+   "inferable": 0.492,
+   "given_away": 0.198,
+   "subtle": 0.294
+  },
+  "STATE|S5": {
+   "n": 1192,
+   "inferable": 0.467,
+   "given_away": 0.148,
+   "subtle": 0.319
+  },
+  "THING|ALL": {
+   "n": 57153,
+   "inferable": 0.632,
+   "given_away": 0.427,
+   "subtle": 0.205
+  },
+  "THING|I2": {
+   "n": 9528,
+   "inferable": 0.565,
+   "given_away": 0.358,
+   "subtle": 0.207
+  },
+  "THING|S1": {
+   "n": 9528,
+   "inferable": 0.704,
+   "given_away": 0.505,
+   "subtle": 0.198
+  },
+  "THING|S2": {
+   "n": 9513,
+   "inferable": 0.96,
+   "given_away": 0.835,
+   "subtle": 0.125
+  },
+  "THING|S3": {
+   "n": 9528,
+   "inferable": 0.561,
+   "given_away": 0.332,
+   "subtle": 0.229
+  },
+  "THING|S4": {
+   "n": 9528,
+   "inferable": 0.52,
+   "given_away": 0.292,
+   "subtle": 0.228
+  },
+  "THING|S5": {
+   "n": 9528,
+   "inferable": 0.481,
+   "given_away": 0.24,
+   "subtle": 0.242
+  }
+ },
+ "al3 new": {
+  "ALL|ALL": {
+   "n": 93437,
+   "inferable": 0.595,
+   "given_away": 0.388,
+   "subtle": 0.207
+  },
+  "ALL|I2": {
+   "n": 18432,
+   "inferable": 0.565,
+   "given_away": 0.364,
+   "subtle": 0.2
+  },
+  "ALL|S1": {
+   "n": 14997,
+   "inferable": 0.649,
+   "given_away": 0.439,
+   "subtle": 0.21
+  },
+  "ALL|S2": {
+   "n": 15004,
+   "inferable": 0.954,
+   "given_away": 0.81,
+   "subtle": 0.144
+  },
+  "ALL|S3": {
+   "n": 14999,
+   "inferable": 0.507,
+   "given_away": 0.278,
+   "subtle": 0.229
+  },
+  "ALL|S4": {
+   "n": 15007,
+   "inferable": 0.465,
+   "given_away": 0.245,
+   "subtle": 0.22
+  },
+  "ALL|S5": {
+   "n": 14998,
+   "inferable": 0.438,
+   "given_away": 0.197,
+   "subtle": 0.241
+  },
+  "EVENT|ALL": {
+   "n": 10726,
+   "inferable": 0.667,
+   "given_away": 0.43,
+   "subtle": 0.237
+  },
+  "EVENT|I2": {
+   "n": 2208,
+   "inferable": 0.526,
+   "given_away": 0.346,
+   "subtle": 0.18
+  },
+  "EVENT|S1": {
+   "n": 1703,
+   "inferable": 0.759,
+   "given_away": 0.514,
+   "subtle": 0.244
+  },
+  "EVENT|S2": {
+   "n": 1704,
+   "inferable": 0.977,
+   "given_away": 0.817,
+   "subtle": 0.16
+  },
+  "EVENT|S3": {
+   "n": 1703,
+   "inferable": 0.633,
+   "given_away": 0.346,
+   "subtle": 0.287
+  },
+  "EVENT|S4": {
+   "n": 1705,
+   "inferable": 0.6,
+   "given_away": 0.321,
+   "subtle": 0.279
+  },
+  "EVENT|S5": {
+   "n": 1703,
+   "inferable": 0.546,
+   "given_away": 0.258,
+   "subtle": 0.288
+  },
+  "PERSON|ALL": {
+   "n": 9194,
+   "inferable": 0.582,
+   "given_away": 0.39,
+   "subtle": 0.192
+  },
+  "PERSON|I2": {
+   "n": 1808,
+   "inferable": 0.58,
+   "given_away": 0.405,
+   "subtle": 0.175
+  },
+  "PERSON|S1": {
+   "n": 1476,
+   "inferable": 0.663,
+   "given_away": 0.485,
+   "subtle": 0.178
+  },
+  "PERSON|S2": {
+   "n": 1480,
+   "inferable": 0.924,
+   "given_away": 0.751,
+   "subtle": 0.173
+  },
+  "PERSON|S3": {
+   "n": 1476,
+   "inferable": 0.476,
+   "given_away": 0.296,
+   "subtle": 0.18
+  },
+  "PERSON|S4": {
+   "n": 1478,
+   "inferable": 0.428,
+   "given_away": 0.248,
+   "subtle": 0.181
+  },
+  "PERSON|S5": {
+   "n": 1476,
+   "inferable": 0.422,
+   "given_away": 0.153,
+   "subtle": 0.269
+  },
+  "PLACE|ALL": {
+   "n": 20690,
+   "inferable": 0.507,
+   "given_away": 0.332,
+   "subtle": 0.175
+  },
+  "PLACE|I2": {
+   "n": 3696,
+   "inferable": 0.609,
+   "given_away": 0.411,
+   "subtle": 0.199
+  },
+  "PLACE|S1": {
+   "n": 3399,
+   "inferable": 0.481,
+   "given_away": 0.293,
+   "subtle": 0.188
+  },
+  "PLACE|S2": {
+   "n": 3393,
+   "inferable": 0.958,
+   "given_away": 0.821,
+   "subtle": 0.138
+  },
+  "PLACE|S3": {
+   "n": 3400,
+   "inferable": 0.358,
+   "given_away": 0.176,
+   "subtle": 0.181
+  },
+  "PLACE|S4": {
+   "n": 3402,
+   "inferable": 0.303,
+   "given_away": 0.149,
+   "subtle": 0.154
+  },
+  "PLACE|S5": {
+   "n": 3400,
+   "inferable": 0.322,
+   "given_away": 0.134,
+   "subtle": 0.188
+  },
+  "STATE|ALL": {
+   "n": 5999,
+   "inferable": 0.576,
+   "given_away": 0.3,
+   "subtle": 0.277
+  },
+  "STATE|I2": {
+   "n": 1192,
+   "inferable": 0.469,
+   "given_away": 0.243,
+   "subtle": 0.226
+  },
+  "STATE|S1": {
+   "n": 961,
+   "inferable": 0.66,
+   "given_away": 0.344,
+   "subtle": 0.315
+  },
+  "STATE|S2": {
+   "n": 961,
+   "inferable": 0.916,
+   "given_away": 0.716,
+   "subtle": 0.2
+  },
+  "STATE|S3": {
+   "n": 962,
+   "inferable": 0.506,
+   "given_away": 0.177,
+   "subtle": 0.33
+  },
+  "STATE|S4": {
+   "n": 961,
+   "inferable": 0.479,
+   "given_away": 0.19,
+   "subtle": 0.288
+  },
+  "STATE|S5": {
+   "n": 962,
+   "inferable": 0.455,
+   "given_away": 0.142,
+   "subtle": 0.313
+  },
+  "THING|ALL": {
+   "n": 46828,
+   "inferable": 0.623,
+   "given_away": 0.414,
+   "subtle": 0.209
+  },
+  "THING|I2": {
+   "n": 9528,
+   "inferable": 0.565,
+   "given_away": 0.358,
+   "subtle": 0.207
+  },
+  "THING|S1": {
+   "n": 7458,
+   "inferable": 0.697,
+   "given_away": 0.492,
+   "subtle": 0.206
+  },
+  "THING|S2": {
+   "n": 7466,
+   "inferable": 0.958,
+   "given_away": 0.828,
+   "subtle": 0.131
+  },
+  "THING|S3": {
+   "n": 7458,
+   "inferable": 0.553,
+   "given_away": 0.319,
+   "subtle": 0.235
+  },
+  "THING|S4": {
+   "n": 7461,
+   "inferable": 0.512,
+   "given_away": 0.278,
+   "subtle": 0.235
+  },
+  "THING|S5": {
+   "n": 7457,
+   "inferable": 0.467,
+   "given_away": 0.227,
+   "subtle": 0.24
+  }
+ },
+ "al2 all words": {
+  "ALL|ALL": {
+   "n": 118892,
+   "inferable": 0.367,
+   "given_away": 0.198,
+   "subtle": 0.169
+  },
+  "ALL|S1": {
+   "n": 23826,
+   "inferable": 0.35,
+   "given_away": 0.196,
+   "subtle": 0.153
+  },
+  "ALL|S2": {
+   "n": 23692,
+   "inferable": 0.787,
+   "given_away": 0.496,
+   "subtle": 0.291
+  },
+  "ALL|S3": {
+   "n": 23812,
+   "inferable": 0.257,
+   "given_away": 0.114,
+   "subtle": 0.142
+  },
+  "ALL|S4": {
+   "n": 23797,
+   "inferable": 0.229,
+   "given_away": 0.101,
+   "subtle": 0.128
+  },
+  "ALL|S5": {
+   "n": 23765,
+   "inferable": 0.215,
+   "given_away": 0.082,
+   "subtle": 0.133
+  }
+ },
+ "al2 nameable (judged keep)": {
+  "ALL|ALL": {
+   "n": 15955,
+   "inferable": 0.694,
+   "given_away": 0.482,
+   "subtle": 0.212
+  },
+  "ALL|S1": {
+   "n": 3193,
+   "inferable": 0.744,
+   "given_away": 0.549,
+   "subtle": 0.194
+  },
+  "ALL|S2": {
+   "n": 3184,
+   "inferable": 0.965,
+   "given_away": 0.849,
+   "subtle": 0.117
+  },
+  "ALL|S3": {
+   "n": 3195,
+   "inferable": 0.628,
+   "given_away": 0.384,
+   "subtle": 0.243
+  },
+  "ALL|S4": {
+   "n": 3192,
+   "inferable": 0.58,
+   "given_away": 0.357,
+   "subtle": 0.223
+  },
+  "ALL|S5": {
+   "n": 3191,
+   "inferable": 0.554,
+   "given_away": 0.274,
+   "subtle": 0.281
+  }
+ }
+}
