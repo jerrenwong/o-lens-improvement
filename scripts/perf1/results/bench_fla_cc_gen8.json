@@ -1,0 +1,36 @@
+{
+ "mode": "fla_cc",
+ "python": "/workspace/o-lens-improvement/.venv_fast/bin/python",
+ "kernels": {
+  "module_globals": {
+   "chunk": "fla.ops.gated_delta_rule.chunk",
+   "recurrent": "fla.ops.gated_delta_rule.fused_recurrent",
+   "gated_norm": "fla.modules.norm.fused_norm_gate",
+   "conv_fn": "causal_conv1d.causal_conv1d_interface",
+   "conv_update": "causal_conv1d.causal_conv1d_interface"
+  },
+  "layer_kernels": {
+   "n_linear_layers": 24,
+   "chunk": "fla.ops.gated_delta_rule.chunk",
+   "recurrent": "fla.ops.gated_delta_rule.fused_recurrent",
+   "norm": "fla.modules.norm.fused_norm_gate",
+   "conv_fn": "causal_conv1d.causal_conv1d_interface",
+   "conv_update": "causal_conv1d.causal_conv1d_interface"
+  }
+ },
+ "gpu_at_start": "0 %, 67990 MiB",
+ "fla_version": "0.6.0",
+ "causal_conv1d": "1.7.0",
+ "gen_sample": {
+  "prompts_per_batch": 8,
+  "prompts": 256,
+  "sequences": 768,
+  "seconds": 650.9499509334564,
+  "seq_per_s": 1.179814206758438,
+  "new_tokens_per_s": 26.459791532822052,
+  "batches": 35
+ },
+ "gen_greedy64_s": 225.11026906967163,
+ "gpu_after_gen": "0 %, 56062 MiB",
+ "peak_alloc_gb": 20.069312512
+}

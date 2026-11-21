@@ -1,0 +1,48 @@
+{
+ "mode": "torch",
+ "python": "/root/jpp_lens/.venv/bin/python",
+ "kernels": {
+  "module_globals": {
+   "chunk": null,
+   "recurrent": null,
+   "gated_norm": null,
+   "conv_fn": null,
+   "conv_update": null
+  },
+  "layer_kernels": {
+   "n_linear_layers": 24,
+   "chunk": "transformers.models.qwen3_5.modeling_qwen3_5",
+   "recurrent": "transformers.models.qwen3_5.modeling_qwen3_5",
+   "norm": "transformers.models.qwen3_5.modeling_qwen3_5",
+   "conv_fn": null,
+   "conv_update": "transformers.models.qwen3_5.modeling_qwen3_5"
+  }
+ },
+ "gpu_at_start": "98 %, 66234 MiB",
+ "fla_version": "0.6.0",
+ "causal_conv1d": null,
+ "fwd_al2_bs128": {
+  "n": 2000,
+  "tokens": 42918,
+  "best_s": 6.818767070770264,
+  "tokens_per_s": 6294.099733069762,
+  "sents_per_s": 293.30815662751115
+ },
+ "fwd_al2_bs32": {
+  "n": 2000,
+  "tokens": 42918,
+  "best_s": 23.09690570831299,
+  "tokens_per_s": 1858.1709836808593,
+  "sents_per_s": 86.59168571139658
+ },
+ "gpu_after_fwd": "100 %, 71776 MiB",
+ "peak_alloc_gb": 21.83907072,
+ "fwd_fewshot_bs64": {
+  "n": 300,
+  "tokens": 61200,
+  "mean_len": 204.0,
+  "best_s": 12.47109341621399,
+  "tokens_per_s": 4907.348374155574
+ },
+ "gpu_after_fewshot": "100 %, 71576 MiB"
+}

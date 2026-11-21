@@ -1,0 +1,33 @@
+{
+ "mode": "fla",
+ "python": "/root/jpp_lens/.venv/bin/python",
+ "kernels": {
+  "module_globals": {
+   "chunk": "fla.ops.gated_delta_rule.chunk",
+   "recurrent": "fla.ops.gated_delta_rule.fused_recurrent",
+   "gated_norm": "fla.modules.norm.fused_norm_gate",
+   "conv_fn": null,
+   "conv_update": null
+  },
+  "layer_kernels": {
+   "n_linear_layers": 24,
+   "chunk": "fla.ops.gated_delta_rule.chunk",
+   "recurrent": "fla.ops.gated_delta_rule.fused_recurrent",
+   "norm": "fla.modules.norm.fused_norm_gate",
+   "conv_fn": null,
+   "conv_update": "transformers.models.qwen3_5.modeling_qwen3_5"
+  }
+ },
+ "gpu_at_start": "100 %, 56890 MiB",
+ "fla_version": "0.6.0",
+ "causal_conv1d": null,
+ "compile": {
+  "eager_s": 5.674407958984375,
+  "compiled_s": 4.899975538253784,
+  "compile_plus_first_256_s": 170.39277982711792,
+  "speedup": 1.1580482218094046,
+  "max_rel_l2_vs_eager": 0.060913920402526855
+ },
+ "gpu_after_compile": "100 %, 58426 MiB",
+ "peak_alloc_gb": 18.946318848
+}

@@ -1,0 +1,59 @@
+{
+ "mode": "fla_cc",
+ "python": "/workspace/o-lens-improvement/.venv_fast/bin/python",
+ "kernels": {
+  "module_globals": {
+   "chunk": "fla.ops.gated_delta_rule.chunk",
+   "recurrent": "fla.ops.gated_delta_rule.fused_recurrent",
+   "gated_norm": "fla.modules.norm.fused_norm_gate",
+   "conv_fn": "causal_conv1d.causal_conv1d_interface",
+   "conv_update": "causal_conv1d.causal_conv1d_interface"
+  },
+  "layer_kernels": {
+   "n_linear_layers": 24,
+   "chunk": "fla.ops.gated_delta_rule.chunk",
+   "recurrent": "fla.ops.gated_delta_rule.fused_recurrent",
+   "norm": "fla.modules.norm.fused_norm_gate",
+   "conv_fn": "causal_conv1d.causal_conv1d_interface",
+   "conv_update": "causal_conv1d.causal_conv1d_interface"
+  }
+ },
+ "gpu_at_start": "100 %, 59380 MiB",
+ "fla_version": "0.6.0",
+ "causal_conv1d": "1.7.0",
+ "fwd_al2_bs128": {
+  "n": 2000,
+  "tokens": 42918,
+  "best_s": 5.59740424156189,
+  "tokens_per_s": 7667.482666576934,
+  "sents_per_s": 357.3084797323703
+ },
+ "fwd_al2_bs32": {
+  "n": 2000,
+  "tokens": 42918,
+  "best_s": 4.660321474075317,
+  "tokens_per_s": 9209.23593763789,
+  "sents_per_s": 429.1549437363293
+ },
+ "gpu_after_fwd": "99 %, 58644 MiB",
+ "peak_alloc_gb": 24.29270784,
+ "fwd_fewshot_bs64": {
+  "n": 300,
+  "tokens": 61200,
+  "mean_len": 204.0,
+  "best_s": 3.7406976222991943,
+  "tokens_per_s": 16360.584623352644
+ },
+ "gpu_after_fewshot": "100 %, 63998 MiB",
+ "gen_sample": {
+  "prompts_per_batch": 24,
+  "prompts": 256,
+  "sequences": 768,
+  "seconds": 432.32604360580444,
+  "seq_per_s": 1.776437046434944,
+  "new_tokens_per_s": 39.81485791703736,
+  "batches": 15
+ },
+ "gen_greedy64_s": 314.5479700565338,
+ "gpu_after_gen": "98 %, 67638 MiB"
+}

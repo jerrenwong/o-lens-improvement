@@ -7,3 +7,15 @@ a9_e1A_full	rc=1	wall_s=29.2	peak_gpu_mib=15690
 a9_check	rc=0	wall_s=76.9	peak_gpu_mib=30666
 b_fla	rc=1	wall_s=277.4	peak_gpu_mib=18936
 b_fla	rc=1	wall_s=342.2	peak_gpu_mib=24794
+b_torch	rc=1	wall_s=485.0	peak_gpu_mib=24940
+b_fla_cc	rc=0	wall_s=1013.0	peak_gpu_mib=24936
+b_analyze	rc=0	wall_s=107.3	peak_gpu_mib=7952
+b_torch_cheap	rc=0	wall_s=478.4	peak_gpu_mib=23312
+b_fla_compile	rc=0	wall_s=406.9	peak_gpu_mib=19242
+a9_e1A_full2	rc=0	wall_s=160.1	peak_gpu_mib=22752
+b_fla_gen	rc=0	wall_s=987.1	peak_gpu_mib=25018
+b_analyze2	rc=0	wall_s=92.7	peak_gpu_mib=7952
+b_torch_gen8	rc=0	wall_s=868.9	peak_gpu_mib=22004
+b_fla_gen8	rc=0	wall_s=884.4	peak_gpu_mib=21576
+b_fla_cc_gen8	rc=0	wall_s=1008.8	peak_gpu_mib=21586
+b_ab	rc=0	wall_s=900.4	peak_gpu_mib=24690

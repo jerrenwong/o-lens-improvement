@@ -1,0 +1,36 @@
+{
+ "mode": "torch",
+ "python": "/root/jpp_lens/.venv/bin/python",
+ "kernels": {
+  "module_globals": {
+   "chunk": null,
+   "recurrent": null,
+   "gated_norm": null,
+   "conv_fn": null,
+   "conv_update": null
+  },
+  "layer_kernels": {
+   "n_linear_layers": 24,
+   "chunk": "transformers.models.qwen3_5.modeling_qwen3_5",
+   "recurrent": "transformers.models.qwen3_5.modeling_qwen3_5",
+   "norm": "transformers.models.qwen3_5.modeling_qwen3_5",
+   "conv_fn": null,
+   "conv_update": "transformers.models.qwen3_5.modeling_qwen3_5"
+  }
+ },
+ "gpu_at_start": "99 %, 72822 MiB",
+ "fla_version": "0.6.0",
+ "causal_conv1d": null,
+ "gen_sample": {
+  "prompts_per_batch": 8,
+  "prompts": 256,
+  "sequences": 768,
+  "seconds": 596.0094418525696,
+  "seq_per_s": 1.2885701904534164,
+  "new_tokens_per_s": 28.843502791776928,
+  "batches": 35
+ },
+ "gen_greedy64_s": 174.9087975025177,
+ "gpu_after_gen": "100 %, 70104 MiB",
+ "peak_alloc_gb": 20.708050944
+}
