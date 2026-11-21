@@ -97,3 +97,10 @@ Reading: neither a shuffled map nor the map's constant part gives any gain at L'
 passage-specific part of the map.
 Per task on v4, L - J++ pass@10: 9B association +11.6, multihop +11.0, multilingual +3.2, poetry +3.7, typo +3.2; 27B
 association +5.0, multihop -0.7, multilingual +0.8, poetry +5.4, typo 0.0.
+
+## Leak audit note (2026-11-21, after all v4 scoring; no rescoring)
+The ask-map's 12 few-shot example answers (fishing, politics, baking, kindness, eruption, finance, illness, blizzard,
+symphony, exploration, sports, programming) were checked against the exclusion list built from the original, v2 and v3
+benchmarks before v4 existed. Checked now against v4's labels: one of them, "blizzard", is the hidden concept of one v4
+association prompt. That prompt is a miss for both J++ and L on all three models (best ranks: 9B 23 vs 13, 27B 11 vs 19,
+2B 588 vs 1274), so it contributes nothing to any pass@10 or pass@1 difference reported above.
