@@ -253,6 +253,11 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   unfiltered +2.8 to +4.2, all significant); labelled fits of raw-recipe experts .475-.483 (3 draws), of
   natural-format experts .512-.526.
 
+- STACK (s1; PREREG_v2 amendment 2, registered): label-free weights (natural-format experts) + ask-map vs released J++
+  on v2 9B = +2.8 [-0.1,+5.9] (ns); vs ask-map on the released lens -0.4, pass@1 -3.5 [-6.0,-1.0]. Label-free weights
+  alone on v2: +1.8 (ns) / pass@1 -2.5; raw-recipe W -0.8 / pass@1 -4.9 [-7.9,-1.9]. The pieces do NOT add.
+  Best fresh-prompt lens remains A = released J++ + ask-map (9B: v2 +3.3 [0.8,5.9], v3 +3.7 [1.2,6.4]).
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
