@@ -1,0 +1,12 @@
+"""ask6 (d): control, J++ + lam * shuffled-target E_spec at (a)'s FIT-chosen lam."""
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ask6_lib import Lens, lam_a, load_maps, s6_path  # noqa: E402
+
+
+def build(ctx):
+    lam = lam_a(ctx)
+    print(f"[ask6 d] lam {lam} (from (a))", flush=True)
+    return Lens(ctx.JPP, None, load_maps(s6_path(ctx, shuf=True), ctx.device), 0.0, lam)
