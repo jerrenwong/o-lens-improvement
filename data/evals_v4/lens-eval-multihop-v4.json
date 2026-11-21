@@ -1,0 +1,941 @@
+{
+  "items": [
+    {
+      "name": "babylon-capital",
+      "prompt": "Fact: The capital city of the country where the ancient city of Babylon was located is ",
+      "target": "Baghdad",
+      "intermediates": [
+        "Iraq"
+      ]
+    },
+    {
+      "name": "palmyra-capital",
+      "prompt": "Fact: The capital city of the country where the ancient ruins of Palmyra stand is ",
+      "target": "Damascus",
+      "intermediates": [
+        "Syria"
+      ]
+    },
+    {
+      "name": "kilimanjaro-capital",
+      "prompt": "Fact: The capital city of the country where Mount Kilimanjaro stands is ",
+      "target": "Dodoma",
+      "intermediates": [
+        "Tanzania"
+      ]
+    },
+    {
+      "name": "dubrovnik-capital",
+      "prompt": "Fact: The capital city of the country where the walled city of Dubrovnik lies is ",
+      "target": "Zagreb",
+      "intermediates": [
+        "Croatia"
+      ]
+    },
+    {
+      "name": "reggae-capital",
+      "prompt": "Fact: The capital city of the island country where reggae music originated is ",
+      "target": "Kingston",
+      "intermediates": [
+        "Jamaica"
+      ]
+    },
+    {
+      "name": "carthage-capital",
+      "prompt": "Fact: The capital city of the country where the ancient city of Carthage stood is ",
+      "target": "Tunis",
+      "intermediates": [
+        "Tunisia"
+      ]
+    },
+    {
+      "name": "galapagos-capital",
+      "prompt": "Fact: The capital city of the country that owns the Galápagos Islands is ",
+      "target": "Quito",
+      "intermediates": [
+        "Ecuador"
+      ]
+    },
+    {
+      "name": "snowdon-capital",
+      "prompt": "Fact: The capital city of the country of the United Kingdom where Mount Snowdon lies is ",
+      "target": "Cardiff",
+      "intermediates": [
+        "Wales"
+      ]
+    },
+    {
+      "name": "aphrodite-capital",
+      "prompt": "Fact: The capital city of the island country where the goddess Aphrodite was said to have been born is ",
+      "target": "Nicosia",
+      "intermediates": [
+        "Cyprus"
+      ]
+    },
+    {
+      "name": "stalin-capital",
+      "prompt": "Fact: The capital city of the country in the Caucasus where Joseph Stalin was born is ",
+      "target": "Tbilisi",
+      "intermediates": [
+        "Georgia"
+      ]
+    },
+    {
+      "name": "pilsner-capital",
+      "prompt": "Fact: The capital city of the country where Pilsner beer originated is ",
+      "target": "Prague",
+      "intermediates": [
+        "Czech"
+      ]
+    },
+    {
+      "name": "worldcup2022-capital",
+      "prompt": "Fact: The capital city of the country that hosted the 2022 FIFA World Cup is ",
+      "target": "Doha",
+      "intermediates": [
+        "Qatar"
+      ]
+    },
+    {
+      "name": "sofia-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Sofia is ",
+      "target": "Bulgarian",
+      "intermediates": [
+        "Bulgaria"
+      ]
+    },
+    {
+      "name": "dhaka-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Dhaka is ",
+      "target": "Bengali",
+      "intermediates": [
+        "Bangladesh"
+      ]
+    },
+    {
+      "name": "yerevan-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Yerevan is ",
+      "target": "Armenian",
+      "intermediates": [
+        "Armenia"
+      ]
+    },
+    {
+      "name": "vilnius-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Vilnius is ",
+      "target": "Lithuanian",
+      "intermediates": [
+        "Lithuania"
+      ]
+    },
+    {
+      "name": "bratislava-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Bratislava is ",
+      "target": "Slovak",
+      "intermediates": [
+        "Slovakia"
+      ]
+    },
+    {
+      "name": "tirana-language",
+      "prompt": "Fact: The language spoken in the country whose capital is Tirana is ",
+      "target": "Albanian",
+      "intermediates": [
+        "Albania"
+      ]
+    },
+    {
+      "name": "kualalumpur-currency",
+      "prompt": "Fact: The currency used in the country whose capital is Kuala Lumpur is the ",
+      "target": "ringgit",
+      "intermediates": [
+        "Malaysia"
+      ]
+    },
+    {
+      "name": "bogota-currency",
+      "prompt": "Fact: The currency used in the country whose capital is Bogotá is the ",
+      "target": "peso",
+      "intermediates": [
+        "Colombia"
+      ]
+    },
+    {
+      "name": "riga-currency",
+      "prompt": "Fact: The currency used in the country whose capital is Riga is the ",
+      "target": "euro",
+      "intermediates": [
+        "Latvia"
+      ]
+    },
+    {
+      "name": "kampala-continent",
+      "prompt": "Fact: The continent where the country whose capital is Kampala is located is ",
+      "target": "Africa",
+      "intermediates": [
+        "Uganda"
+      ]
+    },
+    {
+      "name": "asuncion-continent",
+      "prompt": "Fact: The continent where the country whose capital is Asunción is located is ",
+      "target": "South",
+      "intermediates": [
+        "Paraguay"
+      ]
+    },
+    {
+      "name": "antananarivo-ocean",
+      "prompt": "Fact: The ocean surrounding the island country whose capital is Antananarivo is the ",
+      "target": "Indian",
+      "intermediates": [
+        "Madagascar"
+      ]
+    },
+    {
+      "name": "tripoli-sea",
+      "prompt": "Fact: The sea along the northern coast of the country whose capital is Tripoli is the ",
+      "target": "Mediterranean",
+      "intermediates": [
+        "Libya"
+      ]
+    },
+    {
+      "name": "mogadishu-ocean",
+      "prompt": "Fact: The ocean on the eastern coast of the country whose capital is Mogadishu is the ",
+      "target": "Indian",
+      "intermediates": [
+        "Somalia"
+      ]
+    },
+    {
+      "name": "suva-ocean",
+      "prompt": "Fact: The ocean surrounding the island country whose capital is Suva is the ",
+      "target": "Pacific",
+      "intermediates": [
+        "Fiji"
+      ]
+    },
+    {
+      "name": "seattle-capital",
+      "prompt": "Fact: The capital city of the US state whose largest city is Seattle is ",
+      "target": "Olympia",
+      "intermediates": [
+        "Washington"
+      ]
+    },
+    {
+      "name": "neworleans-capital",
+      "prompt": "Fact: The capital city of the US state whose largest city is New Orleans is ",
+      "target": "Baton",
+      "intermediates": [
+        "Louisiana"
+      ]
+    },
+    {
+      "name": "yellowstone-capital",
+      "prompt": "Fact: The capital city of the US state where most of Yellowstone National Park lies is ",
+      "target": "Cheyenne",
+      "intermediates": [
+        "Wyoming"
+      ]
+    },
+    {
+      "name": "milwaukee-capital",
+      "prompt": "Fact: The capital city of the US state whose largest city is Milwaukee is ",
+      "target": "Madison",
+      "intermediates": [
+        "Wisconsin"
+      ]
+    },
+    {
+      "name": "anchorage-capital",
+      "prompt": "Fact: The capital city of the US state whose largest city is Anchorage is ",
+      "target": "Juneau",
+      "intermediates": [
+        "Alaska"
+      ]
+    },
+    {
+      "name": "gatewayarch-capital",
+      "prompt": "Fact: The capital city of the US state where the Gateway Arch stands is ",
+      "target": "Jefferson",
+      "intermediates": [
+        "Missouri"
+      ]
+    },
+    {
+      "name": "craterlake-capital",
+      "prompt": "Fact: The capital city of the US state where Crater Lake is located is ",
+      "target": "Salem",
+      "intermediates": [
+        "Oregon"
+      ]
+    },
+    {
+      "name": "magicflute-country",
+      "prompt": "Fact: The country where the composer of The Magic Flute was born is ",
+      "target": "Austria",
+      "intermediates": [
+        "Mozart"
+      ]
+    },
+    {
+      "name": "solitude-nationality",
+      "prompt": "Fact: The nationality of the author of One Hundred Years of Solitude is ",
+      "target": "Colombian",
+      "intermediates": [
+        "Marquez"
+      ]
+    },
+    {
+      "name": "meltingclocks-nationality",
+      "prompt": "Fact: The nationality of the painter of The Persistence of Memory, with its melting clocks, is ",
+      "target": "Spanish",
+      "intermediates": [
+        "Dali"
+      ]
+    },
+    {
+      "name": "relativity-country",
+      "prompt": "Fact: The country where the physicist who developed the theory of relativity was born is ",
+      "target": "Germany",
+      "intermediates": [
+        "Einstein"
+      ]
+    },
+    {
+      "name": "origin-nationality",
+      "prompt": "Fact: The nationality of the naturalist who wrote On the Origin of Species is ",
+      "target": "English",
+      "intermediates": [
+        "Darwin"
+      ]
+    },
+    {
+      "name": "waterlilies-nationality",
+      "prompt": "Fact: The nationality of the painter of the Water Lilies series is ",
+      "target": "French",
+      "intermediates": [
+        "Monet"
+      ]
+    },
+    {
+      "name": "voyage1492-country",
+      "prompt": "Fact: The country where the explorer who sailed to the Americas in 1492 was born is ",
+      "target": "Italy",
+      "intermediates": [
+        "Columbus"
+      ]
+    },
+    {
+      "name": "telephone-nationality",
+      "prompt": "Fact: The nationality of the inventor credited with the first practical telephone is ",
+      "target": "Scottish",
+      "intermediates": [
+        "Bell"
+      ]
+    },
+    {
+      "name": "brandenburg-nationality",
+      "prompt": "Fact: The nationality of the composer of the Brandenburg Concertos is ",
+      "target": "German",
+      "intermediates": [
+        "Bach"
+      ]
+    },
+    {
+      "name": "sherlock-nationality",
+      "prompt": "Fact: The nationality of the author who created Sherlock Holmes is ",
+      "target": "Scottish",
+      "intermediates": [
+        "Doyle"
+      ]
+    },
+    {
+      "name": "mermaid-nationality",
+      "prompt": "Fact: The nationality of the author of the fairy tale The Little Mermaid is ",
+      "target": "Danish",
+      "intermediates": [
+        "Andersen"
+      ]
+    },
+    {
+      "name": "aida-country",
+      "prompt": "Fact: The country where the composer of the opera Aida was born is ",
+      "target": "Italy",
+      "intermediates": [
+        "Verdi"
+      ]
+    },
+    {
+      "name": "dynamite-nationality",
+      "prompt": "Fact: The nationality of the chemist who invented dynamite is ",
+      "target": "Swedish",
+      "intermediates": [
+        "Nobel"
+      ]
+    },
+    {
+      "name": "corolla-country",
+      "prompt": "Fact: The country where the carmaker that makes the Corolla is based is ",
+      "target": "Japan",
+      "intermediates": [
+        "Toyota"
+      ]
+    },
+    {
+      "name": "flatpack-country",
+      "prompt": "Fact: The country where the flat-pack furniture company with the blue and yellow logo was founded is ",
+      "target": "Sweden",
+      "intermediates": [
+        "IKEA"
+      ]
+    },
+    {
+      "name": "bricks-country",
+      "prompt": "Fact: The country where the company that makes the plastic toy bricks with studs is based is ",
+      "target": "Denmark",
+      "intermediates": [
+        "Lego"
+      ]
+    },
+    {
+      "name": "beetle-country",
+      "prompt": "Fact: The country where the carmaker that built the Beetle and the Golf is based is ",
+      "target": "Germany",
+      "intermediates": [
+        "Volkswagen"
+      ]
+    },
+    {
+      "name": "andes-continent",
+      "prompt": "Fact: The continent where the woolly animal of the Andes that is known for spitting comes from is ",
+      "target": "South",
+      "intermediates": [
+        "llama"
+      ]
+    },
+    {
+      "name": "guacamole-color",
+      "prompt": "Fact: The color of the inside of the fruit used to make guacamole is ",
+      "target": "green",
+      "intermediates": [
+        "avocado"
+      ]
+    },
+    {
+      "name": "popeye-color",
+      "prompt": "Fact: The color of the vegetable Popeye eats to get strong is ",
+      "target": "green",
+      "intermediates": [
+        "spinach"
+      ]
+    },
+    {
+      "name": "nevermore-color",
+      "prompt": "Fact: The color of the bird that says \"Nevermore\" in Edgar Allan Poe's poem is ",
+      "target": "black",
+      "intermediates": [
+        "raven"
+      ]
+    },
+    {
+      "name": "jackolantern-color",
+      "prompt": "Fact: The color of the vegetable that is carved into a jack-o'-lantern is ",
+      "target": "orange",
+      "intermediates": [
+        "pumpkin"
+      ]
+    },
+    {
+      "name": "lemonade-color",
+      "prompt": "Fact: The color of the fruit that lemonade is made from is ",
+      "target": "yellow",
+      "intermediates": [
+        "lemon"
+      ]
+    },
+    {
+      "name": "ganesha-legs",
+      "prompt": "Fact: The number of legs on the animal whose head the Hindu god Ganesha has is ",
+      "target": "4",
+      "intermediates": [
+        "elephant"
+      ]
+    },
+    {
+      "name": "usbird-legs",
+      "prompt": "Fact: The number of legs on the bird that is the national symbol of the United States is ",
+      "target": "2",
+      "intermediates": [
+        "eagle"
+      ]
+    },
+    {
+      "name": "bambi-legs",
+      "prompt": "Fact: The number of legs on the animal Bambi from the Disney film is ",
+      "target": "4",
+      "intermediates": [
+        "deer"
+      ]
+    },
+    {
+      "name": "neigh-legs",
+      "prompt": "Fact: The number of legs on the animal that says neigh is ",
+      "target": "4",
+      "intermediates": [
+        "horse"
+      ]
+    },
+    {
+      "name": "malaria-legs",
+      "prompt": "Fact: The number of legs on the insect that spreads malaria is ",
+      "target": "6",
+      "intermediates": [
+        "mosquito"
+      ]
+    },
+    {
+      "name": "atomic-28-symbol",
+      "prompt": "Fact: The chemical symbol for the element with atomic number 28 is ",
+      "target": "Ni",
+      "intermediates": [
+        "nickel"
+      ]
+    },
+    {
+      "name": "atomic-22-symbol",
+      "prompt": "Fact: The chemical symbol for the element with atomic number 22 is ",
+      "target": "Ti",
+      "intermediates": [
+        "titanium"
+      ]
+    },
+    {
+      "name": "atomic-24-symbol",
+      "prompt": "Fact: The chemical symbol for the element with atomic number 24 is ",
+      "target": "Cr",
+      "intermediates": [
+        "chromium"
+      ]
+    },
+    {
+      "name": "atomic-12-symbol",
+      "prompt": "Fact: The chemical symbol for the element with atomic number 12 is ",
+      "target": "Mg",
+      "intermediates": [
+        "magnesium"
+      ]
+    },
+    {
+      "name": "chem-chips-Z",
+      "prompt": "Fact: The atomic number of the element that computer chips are mainly made from is ",
+      "target": "14",
+      "intermediates": [
+        "silicon"
+      ]
+    },
+    {
+      "name": "letterpos-fluorine-symbol",
+      "prompt": "Fact: The position in the alphabet of the chemical symbol for fluorine is ",
+      "target": "6",
+      "intermediates": [
+        "F"
+      ]
+    },
+    {
+      "name": "letterpos-phosphorus-symbol",
+      "prompt": "Fact: The position in the alphabet of the chemical symbol for phosphorus is ",
+      "target": "16",
+      "intermediates": [
+        "P"
+      ]
+    },
+    {
+      "name": "letterpos-tungsten-symbol",
+      "prompt": "Fact: The position in the alphabet of the chemical symbol for tungsten is ",
+      "target": "23",
+      "intermediates": [
+        "W"
+      ]
+    },
+    {
+      "name": "wisdom-bird",
+      "prompt": "Fact: The bird sacred to the Greek goddess of wisdom is the ",
+      "target": "owl",
+      "intermediates": [
+        "Athena"
+      ]
+    },
+    {
+      "name": "odin-weapon",
+      "prompt": "Fact: The weapon carried by the Norse god after whom Wednesday is named is a ",
+      "target": "spear",
+      "intermediates": [
+        "Odin"
+      ]
+    },
+    {
+      "name": "breathing-organs-count",
+      "prompt": "Fact: In humans, the number of the organs used for breathing is ",
+      "target": "2",
+      "intermediates": [
+        "lungs"
+      ]
+    },
+    {
+      "name": "yieldsign-sides",
+      "prompt": "Fact: The number of sides on the shape of a yield sign is ",
+      "target": "3",
+      "intermediates": [
+        "triangle"
+      ]
+    },
+    {
+      "name": "allblacks-players",
+      "prompt": "Fact: The number of players per side on the field in the sport played by the New Zealand All Blacks is ",
+      "target": "15",
+      "intermediates": [
+        "rugby"
+      ]
+    },
+    {
+      "name": "carlsen-pieces",
+      "prompt": "Fact: The number of pieces each player starts with in the board game Magnus Carlsen plays is ",
+      "target": "16",
+      "intermediates": [
+        "chess"
+      ]
+    },
+    {
+      "name": "games1896-rings",
+      "prompt": "Fact: The number of interlocking rings in the symbol of the sporting event revived in Athens in 1896 is ",
+      "target": "5",
+      "intermediates": [
+        "Olympics"
+      ]
+    },
+    {
+      "name": "armstrong-valves",
+      "prompt": "Fact: The number of valves on the instrument Louis Armstrong played is ",
+      "target": "3",
+      "intermediates": [
+        "trumpet"
+      ]
+    },
+    {
+      "name": "rhyme-run-plusthree",
+      "prompt": "Fact: Three more than the number whose name rhymes with run is ",
+      "target": "4",
+      "intermediates": [
+        "one"
+      ]
+    },
+    {
+      "name": "rhyme-glue-fivetimes",
+      "prompt": "Fact: Five times the number whose name rhymes with glue is ",
+      "target": "10",
+      "intermediates": [
+        "two"
+      ]
+    },
+    {
+      "name": "rhyme-floor-squared",
+      "prompt": "Fact: The square of the number whose name rhymes with floor is ",
+      "target": "16",
+      "intermediates": [
+        "four"
+      ]
+    },
+    {
+      "name": "rhyme-drive-plustwo",
+      "prompt": "Fact: Two more than the number whose name rhymes with drive is ",
+      "target": "7",
+      "intermediates": [
+        "five"
+      ]
+    },
+    {
+      "name": "rhyme-plate-minusthree",
+      "prompt": "Fact: Three less than the number whose name rhymes with plate is ",
+      "target": "5",
+      "intermediates": [
+        "eight"
+      ]
+    },
+    {
+      "name": "rhyme-wine-minustwo",
+      "prompt": "Fact: Two less than the number whose name rhymes with wine is ",
+      "target": "7",
+      "intermediates": [
+        "nine"
+      ]
+    },
+    {
+      "name": "rhyme-deer-sense",
+      "prompt": "Fact: The body part whose name rhymes with 'deer' is used to ",
+      "target": "hear",
+      "intermediates": [
+        "ear"
+      ]
+    },
+    {
+      "name": "rhyme-dish-gills",
+      "prompt": "Fact: The animal whose name rhymes with 'dish' breathes through its ",
+      "target": "gills",
+      "intermediates": [
+        "fish"
+      ]
+    },
+    {
+      "name": "dual-beach-opposite",
+      "prompt": "Fact: The opposite of the season of long days and beach holidays is \"",
+      "target": "winter",
+      "intermediates": [
+        "summer"
+      ]
+    },
+    {
+      "name": "dbl-vinegar-antonym",
+      "prompt": "Fact: The antonym of how vinegar tastes is \"",
+      "target": "sweet",
+      "intermediates": [
+        "sour"
+      ]
+    },
+    {
+      "name": "dbl-giraffe-antonym",
+      "prompt": "Fact: The antonym of how you would describe a giraffe's neck is \"",
+      "target": "short",
+      "intermediates": [
+        "long"
+      ]
+    },
+    {
+      "name": "dbl-ant-antonym",
+      "prompt": "Fact: The antonym of how you would describe the size of an ant is \"",
+      "target": "big",
+      "intermediates": [
+        "small"
+      ]
+    },
+    {
+      "name": "dbl-newborn-antonym",
+      "prompt": "Fact: The antonym of how you would describe a newborn baby's age is \"",
+      "target": "old",
+      "intermediates": [
+        "young"
+      ]
+    },
+    {
+      "name": "dbl-sandpaper-antonym",
+      "prompt": "Fact: The antonym of how sandpaper feels to the touch is \"",
+      "target": "smooth",
+      "intermediates": [
+        "rough"
+      ]
+    },
+    {
+      "name": "dbl-library-antonym",
+      "prompt": "Fact: The antonym of how people are expected to be in a library is \"",
+      "target": "loud",
+      "intermediates": [
+        "quiet"
+      ]
+    },
+    {
+      "name": "firstletter-eiffel-city",
+      "prompt": "Fact: The first letter of the name of the city where the Eiffel Tower stands is ",
+      "target": "P",
+      "intermediates": [
+        "Paris"
+      ]
+    },
+    {
+      "name": "firstletter-hot-desert",
+      "prompt": "Fact: The first letter of the name of the largest hot desert in the world is ",
+      "target": "S",
+      "intermediates": [
+        "Sahara"
+      ]
+    },
+    {
+      "name": "firstletter-kremlin-city",
+      "prompt": "Fact: The first letter of the name of the city where the Kremlin stands is ",
+      "target": "M",
+      "intermediates": [
+        "Moscow"
+      ]
+    },
+    {
+      "name": "firstletter-europe-ocean",
+      "prompt": "Fact: The first letter of the name of the ocean that separates Europe from North America is ",
+      "target": "A",
+      "intermediates": [
+        "Atlantic"
+      ]
+    },
+    {
+      "name": "succ-bloom-season",
+      "prompt": "Fact: The season that comes immediately after the one when most flowers bloom is ",
+      "target": "summer",
+      "intermediates": [
+        "spring"
+      ]
+    },
+    {
+      "name": "roman-guitar-strings",
+      "prompt": "Fact: Written as a Roman numeral, the number of strings on a standard guitar is ",
+      "target": "VI",
+      "intermediates": [
+        "6",
+        "six"
+      ]
+    },
+    {
+      "name": "double-spider-legs",
+      "prompt": "Fact: Double the number of legs on a spider is ",
+      "target": "16",
+      "intermediates": [
+        "8",
+        "eight"
+      ]
+    },
+    {
+      "name": "half-hexagon-sides",
+      "prompt": "Fact: Half the number of sides on a hexagon is ",
+      "target": "3",
+      "intermediates": [
+        "6",
+        "six"
+      ]
+    },
+    {
+      "name": "square-triangle-sides",
+      "prompt": "Fact: The square of the number of sides on a triangle is ",
+      "target": "9",
+      "intermediates": [
+        "3",
+        "three"
+      ]
+    },
+    {
+      "name": "roman-hand-fingers",
+      "prompt": "Fact: Written as a Roman numeral, the number of fingers on one hand is ",
+      "target": "V",
+      "intermediates": [
+        "5",
+        "five"
+      ]
+    },
+    {
+      "name": "plusone-week-days",
+      "prompt": "Fact: One more than the number of days in a week is ",
+      "target": "8",
+      "intermediates": [
+        "7",
+        "seven"
+      ]
+    },
+    {
+      "name": "triple-bicycle-wheels",
+      "prompt": "Fact: Triple the number of wheels on a bicycle is ",
+      "target": "6",
+      "intermediates": [
+        "2",
+        "two"
+      ]
+    },
+    {
+      "name": "nhop4-dog-planet",
+      "prompt": "Count the horns on a unicorn. The planet at that position from the Sun is Mercury. Count the legs on a dog. The planet at that position from the Sun is ",
+      "target": "Mars",
+      "intermediates": [
+        "4",
+        "four"
+      ]
+    },
+    {
+      "name": "nhop4-triangle-planet",
+      "prompt": "Count the wings on a bird. The planet at that position from the Sun is Venus. Count the sides on a triangle. The planet at that position from the Sun is ",
+      "target": "Earth",
+      "intermediates": [
+        "3",
+        "three"
+      ]
+    },
+    {
+      "name": "nhop4-starfish-planet",
+      "prompt": "Count the legs on a cat. The planet at that position from the Sun is Mars. Count the arms on a starfish. The planet at that position from the Sun is ",
+      "target": "Jupiter",
+      "intermediates": [
+        "5",
+        "five"
+      ]
+    },
+    {
+      "name": "nhop4-beetle-planet",
+      "prompt": "Count the lights on a traffic light. The planet at that position from the Sun is Earth. Count the legs on a beetle. The planet at that position from the Sun is ",
+      "target": "Saturn",
+      "intermediates": [
+        "6",
+        "six"
+      ]
+    },
+    {
+      "name": "nhop4-dwarfs-planet",
+      "prompt": "Count the points on a pentagram. The planet at that position from the Sun is Jupiter. Count the dwarfs in the story of Snow White. The planet at that position from the Sun is ",
+      "target": "Uranus",
+      "intermediates": [
+        "7",
+        "seven"
+      ]
+    },
+    {
+      "name": "nhop4-scorpion-planet",
+      "prompt": "Count the strings on a ukulele. The planet at that position from the Sun is Mars. Count the legs on a scorpion. The planet at that position from the Sun is ",
+      "target": "Neptune",
+      "intermediates": [
+        "8",
+        "eight"
+      ]
+    },
+    {
+      "name": "nhop4-owl-planet",
+      "prompt": "Count the faces on a cube. The planet at that position from the Sun is Saturn. Count the eyes on an owl. The planet at that position from the Sun is ",
+      "target": "Venus",
+      "intermediates": [
+        "2",
+        "two"
+      ]
+    },
+    {
+      "name": "nhop4-moon-planet",
+      "prompt": "Count the ears on a rabbit. The planet at that position from the Sun is Venus. Count the moons of Earth. The planet at that position from the Sun is ",
+      "target": "Mercury",
+      "intermediates": [
+        "1",
+        "one"
+      ]
+    },
+    {
+      "name": "nhop4-tripod-planet",
+      "prompt": "Count the wheels on a car. The planet at that position from the Sun is Mars. Count the legs on a tripod. The planet at that position from the Sun is ",
+      "target": "Earth",
+      "intermediates": [
+        "3",
+        "three"
+      ]
+    },
+    {
+      "name": "nhop4-seasons-planet",
+      "prompt": "Count the humps on a dromedary camel. The planet at that position from the Sun is Mercury. Count the seasons in a year. The planet at that position from the Sun is ",
+      "target": "Mars",
+      "intermediates": [
+        "4",
+        "four"
+      ]
+    }
+  ]
+}

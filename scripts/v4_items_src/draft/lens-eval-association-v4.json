@@ -1,0 +1,851 @@
+{
+  "items": [
+    {
+      "name": "shy",
+      "prompt": "When the teacher called on him, his face went red to the ears, and he spent the whole school play hidden behind the curtain holding the props.",
+      "intermediates": [
+        "shy"
+      ]
+    },
+    {
+      "name": "lazy",
+      "prompt": "He let the dishes pile up for a week and used the remote to switch off the lamp because the switch was across the room.",
+      "intermediates": [
+        "lazy"
+      ]
+    },
+    {
+      "name": "surprise",
+      "prompt": "She opened the front door in her old sweatpants, the lights snapped on, and thirty people jumped out from behind the sofa shouting her name.",
+      "intermediates": [
+        "surprise"
+      ]
+    },
+    {
+      "name": "gratitude",
+      "prompt": "Every Christmas for forty years she sent a card to the nurse who had sat with her through the night her son was born.",
+      "intermediates": [
+        "gratitude"
+      ]
+    },
+    {
+      "name": "despair",
+      "prompt": "He sat on the floor of the empty flat with the eviction notice in his hand and could not think of a single person left to call.",
+      "intermediates": [
+        "despair"
+      ]
+    },
+    {
+      "name": "terror",
+      "prompt": "Something scratched at the cabin door in the dark, and she stopped breathing, pressing both hands over her mouth so it would not hear her.",
+      "intermediates": [
+        "terror"
+      ]
+    },
+    {
+      "name": "suspicion",
+      "prompt": "Her husband had started showering the moment he got home and taking his phone into the bathroom, and she began to read his receipts.",
+      "intermediates": [
+        "suspicion"
+      ]
+    },
+    {
+      "name": "fever",
+      "prompt": "The boy was shivering under three blankets while his forehead burned, and his mother kept a wet cloth on it and checked the thermometer every hour.",
+      "intermediates": [
+        "fever"
+      ]
+    },
+    {
+      "name": "thirsty",
+      "prompt": "After six hours walking in the heat, the water bottle had been empty since noon, and his tongue felt like a piece of old leather.",
+      "intermediates": [
+        "thirsty"
+      ]
+    },
+    {
+      "name": "dizzy",
+      "prompt": "She got off the spinning teacups, took three steps sideways, and had to grab the railing while the whole fairground kept turning.",
+      "intermediates": [
+        "dizzy"
+      ]
+    },
+    {
+      "name": "stubborn",
+      "prompt": "The old man refused to sell the house even when the developers built a shopping mall on all four sides of it.",
+      "intermediates": [
+        "stubborn"
+      ]
+    },
+    {
+      "name": "sad",
+      "prompt": "The little girl stood at the window all afternoon watching the rain, still holding the collar of the dog they had buried that morning.",
+      "intermediates": [
+        "sad"
+      ]
+    },
+    {
+      "name": "shock",
+      "prompt": "The doctor kept talking, but she had stopped hearing anything after the first sentence, and she sat very still staring at the poster on the wall.",
+      "intermediates": [
+        "shock"
+      ]
+    },
+    {
+      "name": "Washington",
+      "prompt": "As a boy he supposedly could not tell a lie about the cherry tree, and years later he crossed an icy river on Christmas night to surprise the enemy.",
+      "intermediates": [
+        "Washington"
+      ]
+    },
+    {
+      "name": "Caesar",
+      "prompt": "On the Ides of March he walked into the senate despite the warnings, and his friend was among the men holding a dagger.",
+      "intermediates": [
+        "Caesar"
+      ]
+    },
+    {
+      "name": "Jesus",
+      "prompt": "At the wedding the wine ran out, and the carpenter's son told the servants to fill the jars with water.",
+      "intermediates": [
+        "Jesus"
+      ]
+    },
+    {
+      "name": "Moses",
+      "prompt": "He came down the mountain carrying two stone tablets and found his people dancing around a golden calf.",
+      "intermediates": [
+        "Moses"
+      ]
+    },
+    {
+      "name": "Hercules",
+      "prompt": "To pay for his crimes the hero had to strangle a lion, clean a king's stables in a day, and fight a monster that grew two heads for each one he cut off.",
+      "intermediates": [
+        "Hercules"
+      ]
+    },
+    {
+      "name": "Romeo",
+      "prompt": "He climbed the orchard wall at night to stand beneath her balcony, though her family would have killed him for the name he carried.",
+      "intermediates": [
+        "Romeo"
+      ]
+    },
+    {
+      "name": "Hulk",
+      "prompt": "The mild scientist warned them not to make him angry, and a moment later his shirt split open and his skin turned green.",
+      "intermediates": [
+        "Hulk"
+      ]
+    },
+    {
+      "name": "Thor",
+      "prompt": "The god of the storm threw his hammer across the sky, and it always flew back into his hand.",
+      "intermediates": [
+        "Thor"
+      ]
+    },
+    {
+      "name": "Lennon",
+      "prompt": "He was shot outside his apartment building in New York, and the next morning crowds stood in the park singing a song asking people to imagine there was no heaven.",
+      "intermediates": [
+        "Lennon"
+      ]
+    },
+    {
+      "name": "Victoria",
+      "prompt": "She wore black for forty years after her husband died, and an entire era of stiff collars and strict manners was named after her.",
+      "intermediates": [
+        "Victoria"
+      ]
+    },
+    {
+      "name": "Messi",
+      "prompt": "The small Argentine boy needed hormone injections to grow, and a club in Barcelona offered him a contract written on a paper napkin.",
+      "intermediates": [
+        "Messi"
+      ]
+    },
+    {
+      "name": "Ali",
+      "prompt": "He said he would float like a butterfly and sting like a bee, and in the jungle of Zaire he leaned on the ropes until the bigger man ran out of punches.",
+      "intermediates": [
+        "Ali"
+      ]
+    },
+    {
+      "name": "Bolt",
+      "prompt": "He was already looking sideways and slowing down before the finish line, and he still set a world record in the hundred meters.",
+      "intermediates": [
+        "Bolt"
+      ]
+    },
+    {
+      "name": "Buddha",
+      "prompt": "The prince left the palace, sat beneath a fig tree, and swore he would not get up until he understood the cause of suffering.",
+      "intermediates": [
+        "Buddha"
+      ]
+    },
+    {
+      "name": "Adam",
+      "prompt": "He was the first man in the garden, and when the woman handed him the fruit from the forbidden tree, he took a bite.",
+      "intermediates": [
+        "Adam"
+      ]
+    },
+    {
+      "name": "Achilles",
+      "prompt": "His mother dipped him in the river to make him invulnerable, holding him by one heel, and that was where the arrow found him at Troy.",
+      "intermediates": [
+        "Achilles"
+      ]
+    },
+    {
+      "name": "Monroe",
+      "prompt": "She stood over the subway grate in a white dress, held the skirt down as it blew up around her, and sang a breathy birthday song to the president.",
+      "intermediates": [
+        "Monroe"
+      ]
+    },
+    {
+      "name": "Tokyo",
+      "prompt": "Men in white gloves pushed the commuters into the packed train, and outside the station a crossing filled with thousands of people every time the light changed.",
+      "intermediates": [
+        "Tokyo"
+      ]
+    },
+    {
+      "name": "Amsterdam",
+      "prompt": "She nearly got run over by a bicycle for the third time that morning, while houseboats rocked on the canal beside her.",
+      "intermediates": [
+        "Amsterdam"
+      ]
+    },
+    {
+      "name": "Australia",
+      "prompt": "They had a barbecue on the beach for Christmas, and a kangaroo hopped across the road on the drive home.",
+      "intermediates": [
+        "Australia"
+      ]
+    },
+    {
+      "name": "Brazil",
+      "prompt": "The whole country stopped work to watch the yellow shirts play, and on the hill above Rio the statue held its arms open over the beaches.",
+      "intermediates": [
+        "Brazil"
+      ]
+    },
+    {
+      "name": "Iceland",
+      "prompt": "They bathed in a steaming blue lagoon in the middle of a lava field, and that night green lights danced across the sky above the glaciers.",
+      "intermediates": [
+        "Iceland"
+      ]
+    },
+    {
+      "name": "Scotland",
+      "prompt": "A man in a kilt played the bagpipes outside the castle in the drizzle, and the guide swore there was a monster in the loch.",
+      "intermediates": [
+        "Scotland"
+      ]
+    },
+    {
+      "name": "Switzerland",
+      "prompt": "The trains left at exactly the minute printed on the timetable, and the banker in the village kept his chocolate and his secrets in the same vault.",
+      "intermediates": [
+        "Switzerland"
+      ]
+    },
+    {
+      "name": "Jerusalem",
+      "prompt": "Within a few hundred meters of old stone, people were praying at a wall, ringing church bells and calling from a minaret.",
+      "intermediates": [
+        "Jerusalem"
+      ]
+    },
+    {
+      "name": "Florida",
+      "prompt": "Retirees in golf carts drove past alligators sunning themselves beside the pond, and a hurricane warning was on the news again.",
+      "intermediates": [
+        "Florida"
+      ]
+    },
+    {
+      "name": "Mars",
+      "prompt": "The rover sent back pictures of a red dusty plain under a pink sky, and the engineers celebrated when it found traces of ancient water.",
+      "intermediates": [
+        "Mars"
+      ]
+    },
+    {
+      "name": "Uber",
+      "prompt": "She watched the little car on the map drive the wrong way around the block twice, and then the driver gave her four stars.",
+      "intermediates": [
+        "Uber"
+      ]
+    },
+    {
+      "name": "Tinder",
+      "prompt": "He spent the evening swiping left on the couch, and his match turned out to look nothing like her photos.",
+      "intermediates": [
+        "Tinder"
+      ]
+    },
+    {
+      "name": "Twitter",
+      "prompt": "The billionaire bought the little blue bird, fired half the staff, and renamed it after a single letter.",
+      "intermediates": [
+        "Twitter"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "prompt": "He started out watching a video on how to fix a leaking tap and at three in the morning was still watching cats falling off furniture.",
+      "intermediates": [
+        "YouTube"
+      ]
+    },
+    {
+      "name": "Nike",
+      "prompt": "The shoes had the familiar swoosh on the side, and the slogan on the poster told him to just do it.",
+      "intermediates": [
+        "Nike"
+      ]
+    },
+    {
+      "name": "Wikipedia",
+      "prompt": "The student copied the whole essay from the free online encyclopedia, footnotes and all, and the teacher found it in thirty seconds.",
+      "intermediates": [
+        "Wikipedia"
+      ]
+    },
+    {
+      "name": "Ferrari",
+      "prompt": "The red car with the prancing horse on the hood roared through Monaco, and the boy at the barrier covered his ears and grinned.",
+      "intermediates": [
+        "Ferrari"
+      ]
+    },
+    {
+      "name": "Rolex",
+      "prompt": "He pushed his sleeve back to check the time so everyone at the table could see the gold watch with the little crown on its face.",
+      "intermediates": [
+        "Rolex"
+      ]
+    },
+    {
+      "name": "Barbie",
+      "prompt": "The girl owned the plastic dream house, the pink convertible and eleven outfits for a doll with impossibly long legs.",
+      "intermediates": [
+        "Barbie"
+      ]
+    },
+    {
+      "name": "Bitcoin",
+      "prompt": "He bought ten thousand coins for a pizza in 2010, and he still could not talk about it without putting his head in his hands.",
+      "intermediates": [
+        "Bitcoin"
+      ]
+    },
+    {
+      "name": "plumber",
+      "prompt": "Water was pouring from under the sink when he finally arrived, knelt on the kitchen floor and showed a little too much of his back.",
+      "intermediates": [
+        "plumber"
+      ]
+    },
+    {
+      "name": "lawyer",
+      "prompt": "She billed the client in six-minute slices, objected twice before lunch, and told him to say nothing at all to the police.",
+      "intermediates": [
+        "lawyer"
+      ]
+    },
+    {
+      "name": "butler",
+      "prompt": "He opened the door in white gloves, took the guests' coats without a word, and announced that dinner was served.",
+      "intermediates": [
+        "butler"
+      ]
+    },
+    {
+      "name": "astronaut",
+      "prompt": "She floated upside down in the cabin, ate dinner out of a pouch, and watched the sun rise sixteen times a day.",
+      "intermediates": [
+        "astronaut"
+      ]
+    },
+    {
+      "name": "magician",
+      "prompt": "He pulled a rabbit out of the empty hat, sawed his assistant in half, and asked a child in the front row to pick a card.",
+      "intermediates": [
+        "magician"
+      ]
+    },
+    {
+      "name": "clown",
+      "prompt": "He had a red nose, enormous shoes and a flower on his lapel that squirted water, and the younger children screamed and hid behind their parents.",
+      "intermediates": [
+        "clown"
+      ]
+    },
+    {
+      "name": "barber",
+      "prompt": "He stropped the razor on the leather, wrapped a hot towel around the customer's face and asked him what he thought of the match.",
+      "intermediates": [
+        "barber"
+      ]
+    },
+    {
+      "name": "landlord",
+      "prompt": "The heating had been broken since November, and the man who owned the building still came by on the first of the month to collect the rent.",
+      "intermediates": [
+        "landlord"
+      ]
+    },
+    {
+      "name": "referee",
+      "prompt": "He blew the whistle, pointed to the spot, and pulled a red card from his pocket while forty thousand fans jeered at him.",
+      "intermediates": [
+        "referee"
+      ]
+    },
+    {
+      "name": "witness",
+      "prompt": "She had seen the whole thing from the bus stop, and now she had to stand up in court and point at the man in the grey suit.",
+      "intermediates": [
+        "witness"
+      ]
+    },
+    {
+      "name": "hostage",
+      "prompt": "They kept him blindfolded in a cellar for six weeks while men on the phone argued about how much he was worth.",
+      "intermediates": [
+        "hostage"
+      ]
+    },
+    {
+      "name": "pirate",
+      "prompt": "He had a patch over one eye, a parrot on his shoulder and a map with a large X marked on a small island.",
+      "intermediates": [
+        "pirate"
+      ]
+    },
+    {
+      "name": "monk",
+      "prompt": "He rose at three to chant in the cold chapel, had taken a vow of silence, and spent his afternoons brewing beer for the abbey.",
+      "intermediates": [
+        "monk"
+      ]
+    },
+    {
+      "name": "queen",
+      "prompt": "She waved from the golden carriage, her face was on every coin in the country, and the corgis followed her around the palace.",
+      "intermediates": [
+        "queen"
+      ]
+    },
+    {
+      "name": "dog",
+      "prompt": "It waited by the front door every evening at six, tail thumping the floor, and went wild when it heard the key in the lock.",
+      "intermediates": [
+        "dog"
+      ]
+    },
+    {
+      "name": "snake",
+      "prompt": "Something long and scaly slid out from under the rock, flicking its forked tongue, and the hikers stood very still.",
+      "intermediates": [
+        "snake"
+      ]
+    },
+    {
+      "name": "owl",
+      "prompt": "It turned its head almost all the way round, stared at them with two huge yellow eyes, and gave a long hoot from the barn rafters.",
+      "intermediates": [
+        "owl"
+      ]
+    },
+    {
+      "name": "elephant",
+      "prompt": "The herd walked slowly to the river, the mothers spraying the calves with water from their trunks.",
+      "intermediates": [
+        "elephant"
+      ]
+    },
+    {
+      "name": "pigeon",
+      "prompt": "The old woman on the park bench threw breadcrumbs, and within a minute a hundred grey birds were cooing around her feet.",
+      "intermediates": [
+        "pigeon"
+      ]
+    },
+    {
+      "name": "spider",
+      "prompt": "She saw something with eight hairy legs scuttle across the bathroom floor and was standing on the toilet seat before she knew it.",
+      "intermediates": [
+        "spider"
+      ]
+    },
+    {
+      "name": "penguin",
+      "prompt": "On the ice the fathers stood huddled together through the winter, each balancing an egg on its feet, waddling a little when the wind shifted.",
+      "intermediates": [
+        "penguin"
+      ]
+    },
+    {
+      "name": "library",
+      "prompt": "Every chair at the long tables was taken by students, and the woman at the front desk shushed them whenever someone laughed.",
+      "intermediates": [
+        "library"
+      ]
+    },
+    {
+      "name": "pharmacy",
+      "prompt": "She handed the prescription across the counter, waited on a plastic chair, and the man in the white coat read out her name.",
+      "intermediates": [
+        "pharmacy"
+      ]
+    },
+    {
+      "name": "supermarket",
+      "prompt": "His cart had a wheel that pulled to the left, and only one of the twelve checkout lanes was open.",
+      "intermediates": [
+        "supermarket"
+      ]
+    },
+    {
+      "name": "attic",
+      "prompt": "She pulled down the folding ladder, climbed up into the dust under the roof beams, and found her grandmother's wedding dress in a trunk.",
+      "intermediates": [
+        "attic"
+      ]
+    },
+    {
+      "name": "basement",
+      "prompt": "The washing machine rattled down there next to the boiler, and the single bulb on the stairs had been broken for years.",
+      "intermediates": [
+        "basement"
+      ]
+    },
+    {
+      "name": "playground",
+      "prompt": "The children queued for the slide, fought over the swings, and a toddler sat crying in the sandbox.",
+      "intermediates": [
+        "playground"
+      ]
+    },
+    {
+      "name": "cinema",
+      "prompt": "The lights dimmed, the man behind them rustled his popcorn bag, and someone's phone screen lit up in the dark.",
+      "intermediates": [
+        "cinema"
+      ]
+    },
+    {
+      "name": "circus",
+      "prompt": "The striped tent went up in the field overnight, and by evening the acrobats were flying above the ring while the lion tamer cracked his whip.",
+      "intermediates": [
+        "circus"
+      ]
+    },
+    {
+      "name": "flood",
+      "prompt": "The river came over its banks during the night, and in the morning they rowed past the second-story windows of the bakery.",
+      "intermediates": [
+        "flood"
+      ]
+    },
+    {
+      "name": "blizzard",
+      "prompt": "The snow came sideways so thick they could not see the hood of the car, and the highway was closed for three days.",
+      "intermediates": [
+        "blizzard"
+      ]
+    },
+    {
+      "name": "hurricane",
+      "prompt": "They boarded up the windows with plywood, filled the bathtub with water and listened to the radio as the storm with a woman's name came ashore.",
+      "intermediates": [
+        "hurricane"
+      ]
+    },
+    {
+      "name": "wildfire",
+      "prompt": "The hills behind the town glowed orange all night, ash fell like snow on the cars, and the order came to leave before morning.",
+      "intermediates": [
+        "wildfire"
+      ]
+    },
+    {
+      "name": "tsunami",
+      "prompt": "The sea suddenly pulled back far beyond the reef, the fish flapped on the wet sand, and the old fisherman began to run uphill.",
+      "intermediates": [
+        "tsunami"
+      ]
+    },
+    {
+      "name": "avalanche",
+      "prompt": "A loud crack came from the slope above the skiers, and a white wall came rushing down the mountain toward them.",
+      "intermediates": [
+        "avalanche"
+      ]
+    },
+    {
+      "name": "rainbow",
+      "prompt": "The shower passed, the sun came out behind them, and the children pointed at the coloured arch over the hills looking for the pot of gold.",
+      "intermediates": [
+        "rainbow"
+      ]
+    },
+    {
+      "name": "eviction",
+      "prompt": "The sheriff knocked at eight, and by noon their sofa, their beds and the children's toys were sitting on the sidewalk in the rain.",
+      "intermediates": [
+        "eviction"
+      ]
+    },
+    {
+      "name": "breakup",
+      "prompt": "She said they needed to talk, handed back his hoodie, and that weekend he ate a whole tub of ice cream listening to sad songs.",
+      "intermediates": [
+        "breakup"
+      ]
+    },
+    {
+      "name": "audition",
+      "prompt": "She walked onto the empty stage, the director looked up from his papers and said she had sixteen bars, and she started to sing.",
+      "intermediates": [
+        "audition"
+      ]
+    },
+    {
+      "name": "exam",
+      "prompt": "The hall was silent except for pens scratching, the clock at the front said ten minutes left, and he had only answered half the questions.",
+      "intermediates": [
+        "exam"
+      ]
+    },
+    {
+      "name": "honeymoon",
+      "prompt": "The newlyweds flew to the Maldives the day after the wedding, with cans still tied to the bumper of the car they had left at the airport.",
+      "intermediates": [
+        "honeymoon"
+      ]
+    },
+    {
+      "name": "Halloween",
+      "prompt": "Children dressed as witches and skeletons rang the doorbell holding out bags, and a carved pumpkin grinned on every step.",
+      "intermediates": [
+        "Halloween"
+      ]
+    },
+    {
+      "name": "Christmas",
+      "prompt": "They decorated the tree, hung stockings over the fireplace, and the children could not sleep for listening for reindeer on the roof.",
+      "intermediates": [
+        "Christmas"
+      ]
+    },
+    {
+      "name": "quarantine",
+      "prompt": "For fourteen days they were not allowed to leave the flat, and the neighbors left groceries outside the door and waved from a distance.",
+      "intermediates": [
+        "quarantine"
+      ]
+    },
+    {
+      "name": "riot",
+      "prompt": "Shop windows were smashed, a car was burning in the middle of the street, and police in helmets fired tear gas into the crowd.",
+      "intermediates": [
+        "riot"
+      ]
+    },
+    {
+      "name": "verdict",
+      "prompt": "The jury filed back in after two days, the foreman stood up with a slip of paper, and the whole courtroom held its breath.",
+      "intermediates": [
+        "verdict"
+      ]
+    },
+    {
+      "name": "key",
+      "prompt": "She turned her bag upside down on the doormat, the door was locked, and through the window she could see them on the kitchen table.",
+      "intermediates": [
+        "key"
+      ]
+    },
+    {
+      "name": "alarm",
+      "prompt": "It went off at six with a shriek, he slapped the snooze button, and it went off again nine minutes later.",
+      "intermediates": [
+        "alarm"
+      ]
+    },
+    {
+      "name": "scissors",
+      "prompt": "The little boy gave himself a haircut in the bathroom, and his mother found a pile of curls on the floor.",
+      "intermediates": [
+        "scissors"
+      ]
+    },
+    {
+      "name": "telescope",
+      "prompt": "On the clear night he pointed the long brass tube at the sky and saw the rings of Saturn for the first time.",
+      "intermediates": [
+        "telescope"
+      ]
+    },
+    {
+      "name": "piano",
+      "prompt": "She practiced the same scales on the black and white keys every afternoon while the metronome ticked on the lid.",
+      "intermediates": [
+        "piano"
+      ]
+    },
+    {
+      "name": "sword",
+      "prompt": "The knight drew the blade from the stone, and the whole crowd knelt before the boy who would be king.",
+      "intermediates": [
+        "sword"
+      ]
+    },
+    {
+      "name": "kite",
+      "prompt": "On the windy hill the boy let out more and more string until the diamond of red paper was a tiny dot above the trees.",
+      "intermediates": [
+        "kite"
+      ]
+    },
+    {
+      "name": "balloon",
+      "prompt": "The little girl let go of the string by accident, and the red rubber ball of helium floated up over the fair until it disappeared.",
+      "intermediates": [
+        "balloon"
+      ]
+    },
+    {
+      "name": "parachute",
+      "prompt": "He jumped from the plane at four thousand meters, counted to five, and pulled the cord, and nothing happened.",
+      "intermediates": [
+        "parachute"
+      ]
+    },
+    {
+      "name": "karma",
+      "prompt": "He laughed when the man ahead of him slipped on the ice, and ten steps later he slipped on it himself.",
+      "intermediates": [
+        "karma"
+      ]
+    },
+    {
+      "name": "irony",
+      "prompt": "The fire station burned down, and the man who sold safety helmets broke his leg on the way to the trade fair.",
+      "intermediates": [
+        "irony"
+      ]
+    },
+    {
+      "name": "gravity",
+      "prompt": "An apple fell from the tree onto the young man's head, and he began to wonder why things always fall down and never up.",
+      "intermediates": [
+        "gravity"
+      ]
+    },
+    {
+      "name": "loyalty",
+      "prompt": "For ten years after the old man died, the dog went to the station every evening to wait for the train he used to come home on.",
+      "intermediates": [
+        "loyalty"
+      ]
+    },
+    {
+      "name": "sacrifice",
+      "prompt": "She worked two night jobs and never bought herself a new coat so that her son could be the first in the family to go to college.",
+      "intermediates": [
+        "sacrifice"
+      ]
+    },
+    {
+      "name": "gossip",
+      "prompt": "The women at the hair salon leaned in close and whispered about who had been seen leaving the pastor's house at midnight.",
+      "intermediates": [
+        "gossip"
+      ]
+    },
+    {
+      "name": "bureaucracy",
+      "prompt": "To get the form stamped he needed a certificate, and to get the certificate he needed the form already stamped.",
+      "intermediates": [
+        "bureaucracy"
+      ]
+    },
+    {
+      "name": "Schnee",
+      "prompt": "Am Morgen war alles weiß, die Kinder bauten einen Mann mit einer Karottennase, und die Schule fiel aus.",
+      "intermediates": [
+        "Schnee"
+      ]
+    },
+    {
+      "name": "Regen",
+      "prompt": "Es tropfte den ganzen Tag gegen die Fensterscheiben, und auf dem Weg zur Arbeit sprang sie über jede Pfütze.",
+      "intermediates": [
+        "Regen"
+      ]
+    },
+    {
+      "name": "nieve",
+      "prompt": "Por la mañana las montañas estaban blancas, y los niños salieron con trineos a deslizarse por la ladera.",
+      "intermediates": [
+        "nieve"
+      ]
+    },
+    {
+      "name": "perro",
+      "prompt": "Cada tarde movía la cola junto a la puerta, ladraba al cartero y traía la pelota a los pies del abuelo.",
+      "intermediates": [
+        "perro"
+      ]
+    },
+    {
+      "name": "luna",
+      "prompt": "Esa noche estaba llena y redonda sobre el mar, tan brillante que se podía leer sin lámpara en la terraza.",
+      "intermediates": [
+        "luna"
+      ]
+    },
+    {
+      "name": "mare",
+      "prompt": "D'estate prendevano il treno per la costa, stendevano l'asciugamano sulla sabbia e facevano il bagno tra le onde.",
+      "intermediates": [
+        "mare"
+      ]
+    },
+    {
+      "name": "praia",
+      "prompt": "Passaram o domingo na areia debaixo do guarda-sol, com os pés na água e um coco gelado na mão.",
+      "intermediates": [
+        "praia"
+      ]
+    },
+    {
+      "name": "fromage",
+      "prompt": "À la fin du repas, on a apporté un plateau de camembert, de brie et de roquefort, avec du pain et un verre de rouge.",
+      "intermediates": [
+        "fromage"
+      ]
+    },
+    {
+      "name": "soleil",
+      "prompt": "Sur la terrasse, elle a mis ses lunettes noires et de la crème sur le nez, car à midi il brûlait la peau en quelques minutes.",
+      "intermediates": [
+        "soleil"
+      ]
+    }
+  ]
+}

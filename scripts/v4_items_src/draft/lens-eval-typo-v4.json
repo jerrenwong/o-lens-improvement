@@ -1,0 +1,879 @@
+{
+  "items": [
+    {
+      "name": "typo-absence",
+      "prompt": "Nobody at the office noticed her week-long absense",
+      "intermediates": [
+        "absence"
+      ]
+    },
+    {
+      "name": "typo-acceptable",
+      "prompt": "The manager said that arriving late once in a while was acceptible",
+      "intermediates": [
+        "acceptable"
+      ]
+    },
+    {
+      "name": "typo-accidentally",
+      "prompt": "He deleted all the photos from his phone accidentaly",
+      "intermediates": [
+        "accidentally"
+      ]
+    },
+    {
+      "name": "typo-acquire",
+      "prompt": "The large tech firm announced plans to aquire",
+      "intermediates": [
+        "acquire"
+      ]
+    },
+    {
+      "name": "typo-aggressive",
+      "prompt": "Whenever the mail carrier came by, the neighbor's dog became agressive",
+      "intermediates": [
+        "aggressive"
+      ]
+    },
+    {
+      "name": "typo-athlete",
+      "prompt": "She trained every morning to become a professional athelete",
+      "intermediates": [
+        "athlete"
+      ]
+    },
+    {
+      "name": "typo-awkward",
+      "prompt": "After the fight, dinner with her parents felt really akward",
+      "intermediates": [
+        "awkward"
+      ]
+    },
+    {
+      "name": "typo-bizarre",
+      "prompt": "The painting in the hallway looked completely bizzare",
+      "intermediates": [
+        "bizarre"
+      ]
+    },
+    {
+      "name": "typo-commitment",
+      "prompt": "Adopting a dog is a serious long-term committment",
+      "intermediates": [
+        "commitment"
+      ]
+    },
+    {
+      "name": "typo-consensus",
+      "prompt": "After hours of debate the board finally reached a concensus",
+      "intermediates": [
+        "consensus"
+      ]
+    },
+    {
+      "name": "typo-curiosity",
+      "prompt": "The kitten crawled into the box out of pure curiousity",
+      "intermediates": [
+        "curiosity"
+      ]
+    },
+    {
+      "name": "typo-deceive",
+      "prompt": "The con artist wore a fake uniform to decieve",
+      "intermediates": [
+        "deceive"
+      ]
+    },
+    {
+      "name": "typo-describe",
+      "prompt": "The witness struggled to find the words to discribe",
+      "intermediates": [
+        "describe"
+      ]
+    },
+    {
+      "name": "typo-desirable",
+      "prompt": "Homes near the park are considered highly desireable",
+      "intermediates": [
+        "desirable"
+      ]
+    },
+    {
+      "name": "typo-eighth",
+      "prompt": "The old man lives alone on the eigth",
+      "intermediates": [
+        "eighth"
+      ]
+    },
+    {
+      "name": "typo-equipment",
+      "prompt": "Before the climb they checked all of their safety equiptment",
+      "intermediates": [
+        "equipment"
+      ]
+    },
+    {
+      "name": "typo-exceed",
+      "prompt": "The cost of repairing the roof is expected to excede",
+      "intermediates": [
+        "exceed"
+      ]
+    },
+    {
+      "name": "typo-fiery",
+      "prompt": "The chef was famous for his hot and firey",
+      "intermediates": [
+        "fiery"
+      ]
+    },
+    {
+      "name": "typo-fluorescent",
+      "prompt": "The waiting room was lit by flickering flourescent",
+      "intermediates": [
+        "fluorescent"
+      ]
+    },
+    {
+      "name": "typo-gauge",
+      "prompt": "The mechanic tapped the broken fuel guage",
+      "intermediates": [
+        "gauge"
+      ]
+    },
+    {
+      "name": "typo-glamorous",
+      "prompt": "Life as a movie star is not always as glamarous",
+      "intermediates": [
+        "glamorous"
+      ]
+    },
+    {
+      "name": "typo-harass",
+      "prompt": "The new law makes it illegal for debt collectors to harrass",
+      "intermediates": [
+        "harass"
+      ]
+    },
+    {
+      "name": "typo-heroes",
+      "prompt": "The firefighters were welcomed home as heros",
+      "intermediates": [
+        "heroes"
+      ]
+    },
+    {
+      "name": "typo-ignorance",
+      "prompt": "The professor was shocked by the students' ignorence",
+      "intermediates": [
+        "ignorance"
+      ]
+    },
+    {
+      "name": "typo-indispensable",
+      "prompt": "In any kitchen, a sharp knife is absolutely indispensible",
+      "intermediates": [
+        "indispensable"
+      ]
+    },
+    {
+      "name": "typo-kernel",
+      "prompt": "At the bottom of the bowl he found one unpopped popcorn kernal",
+      "intermediates": [
+        "kernel"
+      ]
+    },
+    {
+      "name": "typo-liaison",
+      "prompt": "She works as the company's press liason",
+      "intermediates": [
+        "liaison"
+      ]
+    },
+    {
+      "name": "typo-maneuver",
+      "prompt": "The pilot pulled off a risky last-second manuver",
+      "intermediates": [
+        "maneuver"
+      ]
+    },
+    {
+      "name": "typo-mathematics",
+      "prompt": "He was brilliant at physics but terrible at mathmatics",
+      "intermediates": [
+        "mathematics"
+      ]
+    },
+    {
+      "name": "typo-occurrence",
+      "prompt": "Power cuts in the village are a daily occurence",
+      "intermediates": [
+        "occurrence"
+      ]
+    },
+    {
+      "name": "typo-perseverance",
+      "prompt": "Climbing the mountain took months of training and perseverence",
+      "intermediates": [
+        "perseverance"
+      ]
+    },
+    {
+      "name": "typo-playwright",
+      "prompt": "The new comedy was written by a young Irish playwrite",
+      "intermediates": [
+        "playwright"
+      ]
+    },
+    {
+      "name": "typo-presence",
+      "prompt": "The children were nervous in the king's presense",
+      "intermediates": [
+        "presence"
+      ]
+    },
+    {
+      "name": "typo-questionnaire",
+      "prompt": "Before the interview she had to fill out a long questionaire",
+      "intermediates": [
+        "questionnaire"
+      ]
+    },
+    {
+      "name": "typo-reference",
+      "prompt": "Her old boss agreed to write her a job refrence",
+      "intermediates": [
+        "reference"
+      ]
+    },
+    {
+      "name": "typo-referred",
+      "prompt": "She could not find the old report that her boss had refered",
+      "intermediates": [
+        "referred"
+      ]
+    },
+    {
+      "name": "typo-rhyme",
+      "prompt": "The poem was short, but every line had a perfect rhime",
+      "intermediates": [
+        "rhyme"
+      ]
+    },
+    {
+      "name": "typo-seize",
+      "prompt": "The rebels waited for the right moment to sieze",
+      "intermediates": [
+        "seize"
+      ]
+    },
+    {
+      "name": "typo-siege",
+      "prompt": "The castle held out for months during the long seige",
+      "intermediates": [
+        "siege"
+      ]
+    },
+    {
+      "name": "typo-tomatoes",
+      "prompt": "In her garden she grew peppers, beans and juicy red tomatos",
+      "intermediates": [
+        "tomatoes"
+      ]
+    },
+    {
+      "name": "typo-writing",
+      "prompt": "Nobody could read the prescription because of the doctor's messy writting",
+      "intermediates": [
+        "writing"
+      ]
+    },
+    {
+      "name": "typo-bureau",
+      "prompt": "He hid the letters in the top drawer of the old bureu",
+      "intermediates": [
+        "bureau"
+      ]
+    },
+    {
+      "name": "typo-deterrent",
+      "prompt": "The tall fence around the yard acts as a strong deterent",
+      "intermediates": [
+        "deterrent"
+      ]
+    },
+    {
+      "name": "typo-difference",
+      "prompt": "The twins look so alike that I can never tell the diffrence",
+      "intermediates": [
+        "difference"
+      ]
+    },
+    {
+      "name": "typo-disastrous",
+      "prompt": "The first attempt to launch the new product was disasterous",
+      "intermediates": [
+        "disastrous"
+      ]
+    },
+    {
+      "name": "typo-ecstasy",
+      "prompt": "When she heard she had won, she screamed in pure ecstacy",
+      "intermediates": [
+        "ecstasy"
+      ]
+    },
+    {
+      "name": "typo-exhaust",
+      "prompt": "The old truck left a cloud of black smoke from its exaust",
+      "intermediates": [
+        "exhaust"
+      ]
+    },
+    {
+      "name": "typo-gorgeous",
+      "prompt": "The view from the top of the hill was absolutely gorgous",
+      "intermediates": [
+        "gorgeous"
+      ]
+    },
+    {
+      "name": "typo-grief",
+      "prompt": "After her husband died she was overwhelmed with greif",
+      "intermediates": [
+        "grief"
+      ]
+    },
+    {
+      "name": "typo-guidance",
+      "prompt": "The young lawyer asked her mentor for guidence",
+      "intermediates": [
+        "guidance"
+      ]
+    },
+    {
+      "name": "typo-happiness",
+      "prompt": "Money cannot buy true happyness",
+      "intermediates": [
+        "happiness"
+      ]
+    },
+    {
+      "name": "typo-hypocrisy",
+      "prompt": "He criticized others for lying, which was pure hypocracy",
+      "intermediates": [
+        "hypocrisy"
+      ]
+    },
+    {
+      "name": "typo-irresistible",
+      "prompt": "The smell of warm cinnamon rolls was irresistable",
+      "intermediates": [
+        "irresistible"
+      ]
+    },
+    {
+      "name": "typo-knowledgeable",
+      "prompt": "The tour guide was friendly and very knowledgable",
+      "intermediates": [
+        "knowledgeable"
+      ]
+    },
+    {
+      "name": "typo-lieutenant",
+      "prompt": "The young soldier reported directly to his lieutenent",
+      "intermediates": [
+        "lieutenant"
+      ]
+    },
+    {
+      "name": "typo-millionaire",
+      "prompt": "He won the lottery and became a millionare",
+      "intermediates": [
+        "millionaire"
+      ]
+    },
+    {
+      "name": "typo-mischief",
+      "prompt": "The bored children were always getting into mischeif",
+      "intermediates": [
+        "mischief"
+      ]
+    },
+    {
+      "name": "typo-nuisance",
+      "prompt": "The barking dog next door is a real nusiance",
+      "intermediates": [
+        "nuisance"
+      ]
+    },
+    {
+      "name": "typo-omission",
+      "prompt": "The editor apologized for the ommission",
+      "intermediates": [
+        "omission"
+      ]
+    },
+    {
+      "name": "typo-pigeon",
+      "prompt": "An old man in the park was feeding a pidgeon",
+      "intermediates": [
+        "pigeon"
+      ]
+    },
+    {
+      "name": "typo-potatoes",
+      "prompt": "For dinner we had grilled fish with mashed potatos",
+      "intermediates": [
+        "potatoes"
+      ]
+    },
+    {
+      "name": "typo-prejudice",
+      "prompt": "The novel tells the story of a family fighting against racial predjudice",
+      "intermediates": [
+        "prejudice"
+      ]
+    },
+    {
+      "name": "typo-principal",
+      "prompt": "The boy who threw the eraser was sent to the office of the pricipal",
+      "intermediates": [
+        "principal"
+      ]
+    },
+    {
+      "name": "typo-pursue",
+      "prompt": "After college she moved to New York to persue",
+      "intermediates": [
+        "pursue"
+      ]
+    },
+    {
+      "name": "typo-relief",
+      "prompt": "When the test results came back negative, she felt a wave of releif",
+      "intermediates": [
+        "relief"
+      ]
+    },
+    {
+      "name": "typo-resistance",
+      "prompt": "The invading army met very little resistence",
+      "intermediates": [
+        "resistance"
+      ]
+    },
+    {
+      "name": "typo-sophomore",
+      "prompt": "Her younger brother is now a high school sophmore",
+      "intermediates": [
+        "sophomore"
+      ]
+    },
+    {
+      "name": "typo-surgeon",
+      "prompt": "The operation was performed by a famous heart surgon",
+      "intermediates": [
+        "surgeon"
+      ]
+    },
+    {
+      "name": "typo-tendency",
+      "prompt": "He has an annoying tendancy",
+      "intermediates": [
+        "tendency"
+      ]
+    },
+    {
+      "name": "typo-tournament",
+      "prompt": "Our chess club won the regional tournement",
+      "intermediates": [
+        "tournament"
+      ]
+    },
+    {
+      "name": "typo-vicious",
+      "prompt": "The guard dog behind the fence was known to be viscious",
+      "intermediates": [
+        "vicious"
+      ]
+    },
+    {
+      "name": "typo-yacht",
+      "prompt": "The billionaire spent the summer sailing on his private yaht",
+      "intermediates": [
+        "yacht"
+      ]
+    },
+    {
+      "name": "typo-wield",
+      "prompt": "Only the true heir could lift the sword and weild",
+      "intermediates": [
+        "wield"
+      ]
+    },
+    {
+      "name": "typo-neither",
+      "prompt": "I asked if he wanted tea or juice, but he wanted niether",
+      "intermediates": [
+        "neither"
+      ]
+    },
+    {
+      "name": "typo-weight",
+      "prompt": "The doctor told him he needed to lose some wieght",
+      "intermediates": [
+        "weight"
+      ]
+    },
+    {
+      "name": "typo-freight",
+      "prompt": "The long train was carrying coal and other frieght",
+      "intermediates": [
+        "freight"
+      ]
+    },
+    {
+      "name": "typo-accommodate",
+      "prompt": "The small inn had only enough rooms to accomodate",
+      "intermediates": [
+        "accommodate"
+      ]
+    },
+    {
+      "name": "typo-committed",
+      "prompt": "The detectives still do not know who the crime was commited",
+      "intermediates": [
+        "committed"
+      ]
+    },
+    {
+      "name": "typo-bicycle",
+      "prompt": "He rode to work every day on his old bicyle",
+      "intermediates": [
+        "bicycle"
+      ]
+    },
+    {
+      "name": "typo-blanket",
+      "prompt": "The baby fell asleep wrapped in a warm blankit",
+      "intermediates": [
+        "blanket"
+      ]
+    },
+    {
+      "name": "typo-pillow",
+      "prompt": "He fell asleep as soon as his head hit the pilow",
+      "intermediates": [
+        "pillow"
+      ]
+    },
+    {
+      "name": "typo-carpet",
+      "prompt": "The dog tracked mud all over the new carpit",
+      "intermediates": [
+        "carpet"
+      ]
+    },
+    {
+      "name": "typo-garage",
+      "prompt": "Dad keeps all his tools in the garrage",
+      "intermediates": [
+        "garage"
+      ]
+    },
+    {
+      "name": "typo-cheese",
+      "prompt": "The mouse in the cartoon was always stealing chesse",
+      "intermediates": [
+        "cheese"
+      ]
+    },
+    {
+      "name": "typo-chicken",
+      "prompt": "For dinner we had rice and roasted chiken",
+      "intermediates": [
+        "chicken"
+      ]
+    },
+    {
+      "name": "typo-pocket",
+      "prompt": "He found an old coin in his coat pockt",
+      "intermediates": [
+        "pocket"
+      ]
+    },
+    {
+      "name": "typo-jacket",
+      "prompt": "It was cold outside, so she put on her jaket",
+      "intermediates": [
+        "jacket"
+      ]
+    },
+    {
+      "name": "typo-ticket",
+      "prompt": "He had to pay a fine because he lost his train tickit",
+      "intermediates": [
+        "ticket"
+      ]
+    },
+    {
+      "name": "typo-river",
+      "prompt": "The children skipped stones across the rivr",
+      "intermediates": [
+        "river"
+      ]
+    },
+    {
+      "name": "typo-beach",
+      "prompt": "We spent the whole day building sandcastles on the baech",
+      "intermediates": [
+        "beach"
+      ]
+    },
+    {
+      "name": "typo-winter",
+      "prompt": "The lake behind our house freezes over every wintr",
+      "intermediates": [
+        "winter"
+      ]
+    },
+    {
+      "name": "typo-summer",
+      "prompt": "The kids cheered because school was finally out for the sumer",
+      "intermediates": [
+        "summer"
+      ]
+    },
+    {
+      "name": "typo-rabbit",
+      "prompt": "The kids begged their parents to let them keep the rabit",
+      "intermediates": [
+        "rabbit"
+      ]
+    },
+    {
+      "name": "typo-turtle",
+      "prompt": "In the fable, the race was won by the slow but steady turtel",
+      "intermediates": [
+        "turtle"
+      ]
+    },
+    {
+      "name": "typo-horse",
+      "prompt": "She learned to ride a horce",
+      "intermediates": [
+        "horse"
+      ]
+    },
+    {
+      "name": "typo-candle",
+      "prompt": "The power went out, so they lit a candel",
+      "intermediates": [
+        "candle"
+      ]
+    },
+    {
+      "name": "typo-mirror",
+      "prompt": "She checked her makeup in the miror",
+      "intermediates": [
+        "mirror"
+      ]
+    },
+    {
+      "name": "typo-hammer",
+      "prompt": "He hit his thumb with the hamer",
+      "intermediates": [
+        "hammer"
+      ]
+    },
+    {
+      "name": "typo-puzzle",
+      "prompt": "The family spent the evening doing a big jigsaw puzle",
+      "intermediates": [
+        "puzzle"
+      ]
+    },
+    {
+      "name": "typo-rocket",
+      "prompt": "The astronauts climbed aboard the rokcet",
+      "intermediates": [
+        "rocket"
+      ]
+    },
+    {
+      "name": "typo-engine",
+      "prompt": "The mechanic said there was something wrong with the enigne",
+      "intermediates": [
+        "engine"
+      ]
+    },
+    {
+      "name": "typo-uncle",
+      "prompt": "We spent Christmas at the house of my favorite uncel",
+      "intermediates": [
+        "uncle"
+      ]
+    },
+    {
+      "name": "typo-nephew",
+      "prompt": "She bought a toy train for her little nephwe",
+      "intermediates": [
+        "nephew"
+      ]
+    },
+    {
+      "name": "typo-niece",
+      "prompt": "At the party he introduced me to his neice",
+      "intermediates": [
+        "niece"
+      ]
+    },
+    {
+      "name": "typo-grandmother",
+      "prompt": "Every Sunday we drive out to the countryside to see my grandmohter",
+      "intermediates": [
+        "grandmother"
+      ]
+    },
+    {
+      "name": "typo-dessert",
+      "prompt": "After the main course the waiter asked if we wanted any desert",
+      "intermediates": [
+        "dessert"
+      ]
+    },
+    {
+      "name": "typo-butter",
+      "prompt": "She spread some jam and buter",
+      "intermediates": [
+        "butter"
+      ]
+    },
+    {
+      "name": "typo-pepper",
+      "prompt": "Please pass the salt and peper",
+      "intermediates": [
+        "pepper"
+      ]
+    },
+    {
+      "name": "typo-onion",
+      "prompt": "Her eyes watered as she chopped the onoin",
+      "intermediates": [
+        "onion"
+      ]
+    },
+    {
+      "name": "typo-carrot",
+      "prompt": "The snowman had a nose made from a carot",
+      "intermediates": [
+        "carrot"
+      ]
+    },
+    {
+      "name": "typo-lemon",
+      "prompt": "He likes his tea with a slice of lemmon",
+      "intermediates": [
+        "lemon"
+      ]
+    },
+    {
+      "name": "typo-juice",
+      "prompt": "For breakfast he drinks a glass of orange jucie",
+      "intermediates": [
+        "juice"
+      ]
+    },
+    {
+      "name": "typo-valley",
+      "prompt": "The farm sits at the bottom of a green vally",
+      "intermediates": [
+        "valley"
+      ]
+    },
+    {
+      "name": "typo-tunnel",
+      "prompt": "The train slowed down as it entered the tunel",
+      "intermediates": [
+        "tunnel"
+      ]
+    },
+    {
+      "name": "typo-station",
+      "prompt": "We will meet you at the train staion",
+      "intermediates": [
+        "station"
+      ]
+    },
+    {
+      "name": "typo-captain",
+      "prompt": "The sailors obeyed every order from their captian",
+      "intermediates": [
+        "captain"
+      ]
+    },
+    {
+      "name": "typo-police",
+      "prompt": "Someone heard a scream and called the polise",
+      "intermediates": [
+        "police"
+      ]
+    },
+    {
+      "name": "typo-birthday",
+      "prompt": "We baked a chocolate cake for her birthdy",
+      "intermediates": [
+        "birthday"
+      ]
+    },
+    {
+      "name": "typo-wedding",
+      "prompt": "Hundreds of guests came to the royal weding",
+      "intermediates": [
+        "wedding"
+      ]
+    },
+    {
+      "name": "typo-hungry",
+      "prompt": "We skipped lunch and now I'm really hungy",
+      "intermediates": [
+        "hungry"
+      ]
+    },
+    {
+      "name": "typo-tired",
+      "prompt": "After the long hike everyone was very tierd",
+      "intermediates": [
+        "tired"
+      ]
+    },
+    {
+      "name": "typo-careful",
+      "prompt": "The road is icy, so please be carful",
+      "intermediates": [
+        "careful"
+      ]
+    },
+    {
+      "name": "typo-dangerous",
+      "prompt": "Swimming in that river during a storm is very dangerus",
+      "intermediates": [
+        "dangerous"
+      ]
+    },
+    {
+      "name": "typo-heavy",
+      "prompt": "She could not lift the suitcase because it was too hevy",
+      "intermediates": [
+        "heavy"
+      ]
+    },
+    {
+      "name": "typo-empty",
+      "prompt": "By the time we got to the party the fridge was already emtpy",
+      "intermediates": [
+        "empty"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+ "created": "2026-11-21",
+ "note": "v4 hidden-concept benchmark prompts; FROZEN - no edits after this manifest. Schema identical to jpp_lens data/jlens/evaluations/lens-eval-<task>.json; load by copying to lens-eval-<task>.json (see scripts/v4_bench_cache.py). Written blind to lens outputs.",
+ "files": {
+  "lens-eval-association-v4.json": {
+   "task": "association",
+   "items": 121,
+   "md5": "124008d79cba09f8261ac23fb19d68f5"
+  },
+  "lens-eval-multihop-v4.json": {
+   "task": "multihop",
+   "items": 115,
+   "md5": "b39c3a6ce509d75a3952927fd4aa5729"
+  },
+  "lens-eval-multilingual-v4.json": {
+   "task": "multilingual",
+   "items": 120,
+   "md5": "28db2663298d7590afa5964ab4fcba3f"
+  },
+  "lens-eval-poetry-v4.json": {
+   "task": "poetry",
+   "items": 133,
+   "md5": "e90fdf790d56ade43a1520d971fb60cb"
+  },
+  "lens-eval-typo-v4.json": {
+   "task": "typo",
+   "items": 125,
+   "md5": "38707e6365726fbb3f4a6dddc5984d3a"
+  }
+ }
+}

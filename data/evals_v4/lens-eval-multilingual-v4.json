@@ -1,0 +1,1324 @@
+{
+  "items": [
+    {
+      "name": "spanish-opposite-friend-enemy",
+      "prompt": "Lo contrario de \"amigo\" es \"",
+      "target": "enemigo",
+      "intermediates": [
+        "Spanish",
+        "opposite",
+        "friend",
+        "enemy"
+      ]
+    },
+    {
+      "name": "german-opposite-friend-enemy",
+      "prompt": "Das Gegenteil von \"Freund\" ist \"",
+      "target": "Feind",
+      "intermediates": [
+        "German",
+        "opposite",
+        "friend",
+        "enemy"
+      ]
+    },
+    {
+      "name": "russian-opposite-friend-enemy",
+      "prompt": "Противоположность слова \"друг\" — \"",
+      "target": "враг",
+      "intermediates": [
+        "Russian",
+        "opposite",
+        "friend",
+        "enemy"
+      ]
+    },
+    {
+      "name": "french-opposite-war-peace",
+      "prompt": "Le contraire de \"guerre\" est \"",
+      "target": "paix",
+      "intermediates": [
+        "French",
+        "opposite",
+        "war",
+        "peace"
+      ]
+    },
+    {
+      "name": "italian-opposite-war-peace",
+      "prompt": "Il contrario di \"guerra\" è \"",
+      "target": "pace",
+      "intermediates": [
+        "Italian",
+        "opposite",
+        "war",
+        "peace"
+      ]
+    },
+    {
+      "name": "polish-opposite-war-peace",
+      "prompt": "Przeciwieństwo słowa \"wojna\" to \"",
+      "target": "pokój",
+      "intermediates": [
+        "Polish",
+        "opposite",
+        "war",
+        "peace"
+      ]
+    },
+    {
+      "name": "italian-opposite-east-west",
+      "prompt": "Il contrario di \"est\" è \"",
+      "target": "ovest",
+      "intermediates": [
+        "Italian",
+        "opposite",
+        "east",
+        "west"
+      ]
+    },
+    {
+      "name": "dutch-opposite-east-west",
+      "prompt": "Het tegenovergestelde van \"oost\" is \"",
+      "target": "west",
+      "intermediates": [
+        "Dutch",
+        "opposite",
+        "east",
+        "west"
+      ]
+    },
+    {
+      "name": "japanese-opposite-east-west",
+      "prompt": "「東」の反対は「",
+      "target": "西",
+      "intermediates": [
+        "Japanese",
+        "opposite",
+        "east",
+        "west"
+      ]
+    },
+    {
+      "name": "german-opposite-wide-narrow",
+      "prompt": "Das Gegenteil von \"breit\" ist \"",
+      "target": "schmal",
+      "intermediates": [
+        "German",
+        "opposite",
+        "wide",
+        "narrow"
+      ]
+    },
+    {
+      "name": "portuguese-opposite-wide-narrow",
+      "prompt": "O contrário de \"largo\" é \"",
+      "target": "estreito",
+      "intermediates": [
+        "Portuguese",
+        "opposite",
+        "wide",
+        "narrow"
+      ]
+    },
+    {
+      "name": "czech-opposite-wide-narrow",
+      "prompt": "Opak slova \"široký\" je \"",
+      "target": "úzký",
+      "intermediates": [
+        "Czech",
+        "opposite",
+        "wide",
+        "narrow"
+      ]
+    },
+    {
+      "name": "french-opposite-question-answer",
+      "prompt": "Le contraire de \"question\" est \"",
+      "target": "réponse",
+      "intermediates": [
+        "French",
+        "opposite",
+        "question",
+        "answer"
+      ]
+    },
+    {
+      "name": "german-opposite-question-answer",
+      "prompt": "Das Gegenteil von \"Frage\" ist \"",
+      "target": "Antwort",
+      "intermediates": [
+        "German",
+        "opposite",
+        "question",
+        "answer"
+      ]
+    },
+    {
+      "name": "swedish-opposite-question-answer",
+      "prompt": "Motsatsen till \"fråga\" är \"",
+      "target": "svar",
+      "intermediates": [
+        "Swedish",
+        "opposite",
+        "question",
+        "answer"
+      ]
+    },
+    {
+      "name": "italian-opposite-start-end",
+      "prompt": "Il contrario di \"inizio\" è \"",
+      "target": "fine",
+      "intermediates": [
+        "Italian",
+        "opposite",
+        "start",
+        "end"
+      ]
+    },
+    {
+      "name": "spanish-opposite-start-end",
+      "prompt": "Lo contrario de \"principio\" es \"",
+      "target": "fin",
+      "intermediates": [
+        "Spanish",
+        "opposite",
+        "start",
+        "end"
+      ]
+    },
+    {
+      "name": "russian-opposite-start-end",
+      "prompt": "Противоположность слова \"начало\" — \"",
+      "target": "конец",
+      "intermediates": [
+        "Russian",
+        "opposite",
+        "start",
+        "end"
+      ]
+    },
+    {
+      "name": "dutch-opposite-come-go",
+      "prompt": "Het tegenovergestelde van \"komen\" is \"",
+      "target": "gaan",
+      "intermediates": [
+        "Dutch",
+        "opposite",
+        "come",
+        "go"
+      ]
+    },
+    {
+      "name": "portuguese-opposite-come-go",
+      "prompt": "O contrário de \"vir\" é \"",
+      "target": "ir",
+      "intermediates": [
+        "Portuguese",
+        "opposite",
+        "come",
+        "go"
+      ]
+    },
+    {
+      "name": "chinese-opposite-come-go",
+      "prompt": "\"来\"的反义词是\"",
+      "target": "去",
+      "intermediates": [
+        "Chinese",
+        "opposite",
+        "come",
+        "go"
+      ]
+    },
+    {
+      "name": "spanish-opposite-laugh-cry",
+      "prompt": "Lo contrario de \"reír\" es \"",
+      "target": "llorar",
+      "intermediates": [
+        "Spanish",
+        "opposite",
+        "laugh",
+        "cry"
+      ]
+    },
+    {
+      "name": "french-opposite-laugh-cry",
+      "prompt": "Le contraire de \"rire\" est \"",
+      "target": "pleurer",
+      "intermediates": [
+        "French",
+        "opposite",
+        "laugh",
+        "cry"
+      ]
+    },
+    {
+      "name": "italian-opposite-laugh-cry",
+      "prompt": "Il contrario di \"ridere\" è \"",
+      "target": "piangere",
+      "intermediates": [
+        "Italian",
+        "opposite",
+        "laugh",
+        "cry"
+      ]
+    },
+    {
+      "name": "german-opposite-morning-evening",
+      "prompt": "Das Gegenteil von \"Morgen\" ist \"",
+      "target": "Abend",
+      "intermediates": [
+        "German",
+        "opposite",
+        "morning",
+        "evening"
+      ]
+    },
+    {
+      "name": "polish-opposite-morning-evening",
+      "prompt": "Przeciwieństwo słowa \"ranek\" to \"",
+      "target": "wieczór",
+      "intermediates": [
+        "Polish",
+        "opposite",
+        "morning",
+        "evening"
+      ]
+    },
+    {
+      "name": "norwegian-opposite-morning-evening",
+      "prompt": "Det motsatte av \"morgen\" er \"",
+      "target": "kveld",
+      "intermediates": [
+        "Norwegian",
+        "opposite",
+        "morning",
+        "evening"
+      ]
+    },
+    {
+      "name": "spanish-opposite-many-few",
+      "prompt": "Lo contrario de \"muchos\" es \"",
+      "target": "pocos",
+      "intermediates": [
+        "Spanish",
+        "opposite",
+        "many",
+        "few"
+      ]
+    },
+    {
+      "name": "italian-opposite-many-few",
+      "prompt": "Il contrario di \"molti\" è \"",
+      "target": "pochi",
+      "intermediates": [
+        "Italian",
+        "opposite",
+        "many",
+        "few"
+      ]
+    },
+    {
+      "name": "dutch-opposite-many-few",
+      "prompt": "Het tegenovergestelde van \"veel\" is \"",
+      "target": "weinig",
+      "intermediates": [
+        "Dutch",
+        "opposite",
+        "many",
+        "few"
+      ]
+    },
+    {
+      "name": "french-opposite-beautiful-ugly",
+      "prompt": "Le contraire de \"beau\" est \"",
+      "target": "laid",
+      "intermediates": [
+        "French",
+        "opposite",
+        "beautiful",
+        "ugly"
+      ]
+    },
+    {
+      "name": "portuguese-opposite-beautiful-ugly",
+      "prompt": "O contrário de \"bonito\" é \"",
+      "target": "feio",
+      "intermediates": [
+        "Portuguese",
+        "opposite",
+        "beautiful",
+        "ugly"
+      ]
+    },
+    {
+      "name": "german-opposite-beautiful-ugly",
+      "prompt": "Das Gegenteil von \"schön\" ist \"",
+      "target": "hässlich",
+      "intermediates": [
+        "German",
+        "opposite",
+        "beautiful",
+        "ugly"
+      ]
+    },
+    {
+      "name": "spanish-opposite-remember-forget",
+      "prompt": "Lo contrario de \"recordar\" es \"",
+      "target": "olvidar",
+      "intermediates": [
+        "Spanish",
+        "opposite",
+        "remember",
+        "forget"
+      ]
+    },
+    {
+      "name": "italian-opposite-remember-forget",
+      "prompt": "Il contrario di \"ricordare\" è \"",
+      "target": "dimenticare",
+      "intermediates": [
+        "Italian",
+        "opposite",
+        "remember",
+        "forget"
+      ]
+    },
+    {
+      "name": "danish-opposite-remember-forget",
+      "prompt": "Det modsatte af \"huske\" er \"",
+      "target": "glemme",
+      "intermediates": [
+        "Danish",
+        "opposite",
+        "remember",
+        "forget"
+      ]
+    },
+    {
+      "name": "german-opposite-safe-dangerous",
+      "prompt": "Das Gegenteil von \"sicher\" ist \"",
+      "target": "gefährlich",
+      "intermediates": [
+        "German",
+        "opposite",
+        "safe",
+        "dangerous"
+      ]
+    },
+    {
+      "name": "polish-opposite-safe-dangerous",
+      "prompt": "Przeciwieństwo słowa \"bezpieczny\" to \"",
+      "target": "niebezpieczny",
+      "intermediates": [
+        "Polish",
+        "opposite",
+        "safe",
+        "dangerous"
+      ]
+    },
+    {
+      "name": "indonesian-opposite-safe-dangerous",
+      "prompt": "Lawan kata \"aman\" adalah \"",
+      "target": "berbahaya",
+      "intermediates": [
+        "Indonesian",
+        "opposite",
+        "safe",
+        "dangerous"
+      ]
+    },
+    {
+      "name": "french-color-strawberry-red",
+      "prompt": "La couleur de la fraise est le \"",
+      "target": "rouge",
+      "intermediates": [
+        "French",
+        "color",
+        "strawberry",
+        "red"
+      ]
+    },
+    {
+      "name": "polish-color-strawberry-red",
+      "prompt": "Kolor truskawki to \"",
+      "target": "czerwony",
+      "intermediates": [
+        "Polish",
+        "color",
+        "strawberry",
+        "red"
+      ]
+    },
+    {
+      "name": "portuguese-color-strawberry-red",
+      "prompt": "A cor do morango é \"",
+      "target": "vermelho",
+      "intermediates": [
+        "Portuguese",
+        "color",
+        "strawberry",
+        "red"
+      ]
+    },
+    {
+      "name": "spanish-color-frog-green",
+      "prompt": "El color de la rana es \"",
+      "target": "verde",
+      "intermediates": [
+        "Spanish",
+        "color",
+        "frog",
+        "green"
+      ]
+    },
+    {
+      "name": "german-color-frog-green",
+      "prompt": "Die Farbe eines Frosches ist \"",
+      "target": "grün",
+      "intermediates": [
+        "German",
+        "color",
+        "frog",
+        "green"
+      ]
+    },
+    {
+      "name": "dutch-color-frog-green",
+      "prompt": "De kleur van een kikker is \"",
+      "target": "groen",
+      "intermediates": [
+        "Dutch",
+        "color",
+        "frog",
+        "green"
+      ]
+    },
+    {
+      "name": "italian-color-carrot-orange",
+      "prompt": "Il colore della carota è \"",
+      "target": "arancione",
+      "intermediates": [
+        "Italian",
+        "color",
+        "carrot",
+        "orange"
+      ]
+    },
+    {
+      "name": "spanish-color-carrot-orange",
+      "prompt": "El color de la zanahoria es \"",
+      "target": "naranja",
+      "intermediates": [
+        "Spanish",
+        "color",
+        "carrot",
+        "orange"
+      ]
+    },
+    {
+      "name": "russian-color-carrot-orange",
+      "prompt": "Цвет моркови — \"",
+      "target": "оранжевый",
+      "intermediates": [
+        "Russian",
+        "color",
+        "carrot",
+        "orange"
+      ]
+    },
+    {
+      "name": "german-color-elephant-gray",
+      "prompt": "Die Farbe des Elefanten ist \"",
+      "target": "grau",
+      "intermediates": [
+        "German",
+        "color",
+        "elephant",
+        "gray"
+      ]
+    },
+    {
+      "name": "french-color-elephant-gray",
+      "prompt": "La couleur de l'éléphant est le \"",
+      "target": "gris",
+      "intermediates": [
+        "French",
+        "color",
+        "elephant",
+        "gray"
+      ]
+    },
+    {
+      "name": "czech-color-elephant-gray",
+      "prompt": "Barva slona je \"",
+      "target": "šedá",
+      "intermediates": [
+        "Czech",
+        "color",
+        "elephant",
+        "gray"
+      ]
+    },
+    {
+      "name": "japanese-color-sun-yellow",
+      "prompt": "太陽の色は「",
+      "target": "黄色",
+      "intermediates": [
+        "Japanese",
+        "color",
+        "sun",
+        "yellow"
+      ]
+    },
+    {
+      "name": "swedish-color-sun-yellow",
+      "prompt": "Solens färg är \"",
+      "target": "gul",
+      "intermediates": [
+        "Swedish",
+        "color",
+        "sun",
+        "yellow"
+      ]
+    },
+    {
+      "name": "polish-color-sun-yellow",
+      "prompt": "Kolor słońca to \"",
+      "target": "żółty",
+      "intermediates": [
+        "Polish",
+        "color",
+        "sun",
+        "yellow"
+      ]
+    },
+    {
+      "name": "spanish-number-six-five",
+      "prompt": "Antes del \"seis\" viene el \"",
+      "target": "cinco",
+      "intermediates": [
+        "Spanish",
+        "number",
+        "six",
+        "five"
+      ]
+    },
+    {
+      "name": "dutch-number-six-five",
+      "prompt": "Voor \"zes\" komt \"",
+      "target": "vijf",
+      "intermediates": [
+        "Dutch",
+        "number",
+        "six",
+        "five"
+      ]
+    },
+    {
+      "name": "polish-number-six-five",
+      "prompt": "Przed \"sześć\" jest \"",
+      "target": "pięć",
+      "intermediates": [
+        "Polish",
+        "number",
+        "six",
+        "five"
+      ]
+    },
+    {
+      "name": "german-number-eight-seven",
+      "prompt": "Vor \"acht\" kommt \"",
+      "target": "sieben",
+      "intermediates": [
+        "German",
+        "number",
+        "eight",
+        "seven"
+      ]
+    },
+    {
+      "name": "italian-number-eight-seven",
+      "prompt": "Prima dell'\"otto\" viene il \"",
+      "target": "sette",
+      "intermediates": [
+        "Italian",
+        "number",
+        "eight",
+        "seven"
+      ]
+    },
+    {
+      "name": "russian-number-eight-seven",
+      "prompt": "Перед \"восемь\" идёт \"",
+      "target": "семь",
+      "intermediates": [
+        "Russian",
+        "number",
+        "eight",
+        "seven"
+      ]
+    },
+    {
+      "name": "french-number-eleven-twelve",
+      "prompt": "Après \"onze\" vient \"",
+      "target": "douze",
+      "intermediates": [
+        "French",
+        "number",
+        "eleven",
+        "twelve"
+      ]
+    },
+    {
+      "name": "portuguese-number-eleven-twelve",
+      "prompt": "Depois do \"onze\" vem o \"",
+      "target": "doze",
+      "intermediates": [
+        "Portuguese",
+        "number",
+        "eleven",
+        "twelve"
+      ]
+    },
+    {
+      "name": "danish-number-eleven-twelve",
+      "prompt": "Efter \"elleve\" kommer \"",
+      "target": "tolv",
+      "intermediates": [
+        "Danish",
+        "number",
+        "eleven",
+        "twelve"
+      ]
+    },
+    {
+      "name": "swedish-number-five-four",
+      "prompt": "Före \"fem\" kommer \"",
+      "target": "fyra",
+      "intermediates": [
+        "Swedish",
+        "number",
+        "five",
+        "four"
+      ]
+    },
+    {
+      "name": "french-number-five-four",
+      "prompt": "Avant \"cinq\" vient \"",
+      "target": "quatre",
+      "intermediates": [
+        "French",
+        "number",
+        "five",
+        "four"
+      ]
+    },
+    {
+      "name": "portuguese-number-five-four",
+      "prompt": "Antes do \"cinco\" vem o \"",
+      "target": "quatro",
+      "intermediates": [
+        "Portuguese",
+        "number",
+        "five",
+        "four"
+      ]
+    },
+    {
+      "name": "spanish-month-february-january",
+      "prompt": "El mes antes de febrero es \"",
+      "target": "enero",
+      "intermediates": [
+        "Spanish",
+        "month",
+        "February",
+        "January"
+      ]
+    },
+    {
+      "name": "german-month-february-january",
+      "prompt": "Der Monat vor Februar ist \"",
+      "target": "Januar",
+      "intermediates": [
+        "German",
+        "month",
+        "February",
+        "January"
+      ]
+    },
+    {
+      "name": "italian-month-february-january",
+      "prompt": "Il mese prima di febbraio è \"",
+      "target": "gennaio",
+      "intermediates": [
+        "Italian",
+        "month",
+        "February",
+        "January"
+      ]
+    },
+    {
+      "name": "french-month-july-june",
+      "prompt": "Le mois avant juillet est \"",
+      "target": "juin",
+      "intermediates": [
+        "French",
+        "month",
+        "July",
+        "June"
+      ]
+    },
+    {
+      "name": "polish-month-july-june",
+      "prompt": "Miesiąc przed lipcem to \"",
+      "target": "czerwiec",
+      "intermediates": [
+        "Polish",
+        "month",
+        "July",
+        "June"
+      ]
+    },
+    {
+      "name": "dutch-month-july-june",
+      "prompt": "De maand voor juli is \"",
+      "target": "juni",
+      "intermediates": [
+        "Dutch",
+        "month",
+        "July",
+        "June"
+      ]
+    },
+    {
+      "name": "portuguese-month-september-august",
+      "prompt": "O mês antes de setembro é \"",
+      "target": "agosto",
+      "intermediates": [
+        "Portuguese",
+        "month",
+        "September",
+        "August"
+      ]
+    },
+    {
+      "name": "russian-month-september-august",
+      "prompt": "Месяц перед сентябрём — \"",
+      "target": "август",
+      "intermediates": [
+        "Russian",
+        "month",
+        "September",
+        "August"
+      ]
+    },
+    {
+      "name": "swedish-month-november-october",
+      "prompt": "Månaden före november är \"",
+      "target": "oktober",
+      "intermediates": [
+        "Swedish",
+        "month",
+        "November",
+        "October"
+      ]
+    },
+    {
+      "name": "czech-month-november-october",
+      "prompt": "Měsíc před listopadem je \"",
+      "target": "říjen",
+      "intermediates": [
+        "Czech",
+        "month",
+        "November",
+        "October"
+      ]
+    },
+    {
+      "name": "spanish-capital-portugal-lisbon",
+      "prompt": "La capital de Portugal es \"",
+      "target": "Lisboa",
+      "intermediates": [
+        "Spanish",
+        "capital",
+        "Portugal",
+        "Lisbon"
+      ]
+    },
+    {
+      "name": "german-capital-portugal-lisbon",
+      "prompt": "Die Hauptstadt von Portugal ist \"",
+      "target": "Lissabon",
+      "intermediates": [
+        "German",
+        "capital",
+        "Portugal",
+        "Lisbon"
+      ]
+    },
+    {
+      "name": "french-capital-austria-vienna",
+      "prompt": "La capitale de l'Autriche est \"",
+      "target": "Vienne",
+      "intermediates": [
+        "French",
+        "capital",
+        "Austria",
+        "Vienna"
+      ]
+    },
+    {
+      "name": "italian-capital-austria-vienna",
+      "prompt": "La capitale dell'Austria è \"",
+      "target": "Vienna",
+      "intermediates": [
+        "Italian",
+        "capital",
+        "Austria",
+        "Vienna"
+      ]
+    },
+    {
+      "name": "dutch-capital-poland-warsaw",
+      "prompt": "De hoofdstad van Polen is \"",
+      "target": "Warschau",
+      "intermediates": [
+        "Dutch",
+        "capital",
+        "Poland",
+        "Warsaw"
+      ]
+    },
+    {
+      "name": "russian-capital-poland-warsaw",
+      "prompt": "Столица Польши — \"",
+      "target": "Варшава",
+      "intermediates": [
+        "Russian",
+        "capital",
+        "Poland",
+        "Warsaw"
+      ]
+    },
+    {
+      "name": "portuguese-capital-sweden-stockholm",
+      "prompt": "A capital da Suécia é \"",
+      "target": "Estocolmo",
+      "intermediates": [
+        "Portuguese",
+        "capital",
+        "Sweden",
+        "Stockholm"
+      ]
+    },
+    {
+      "name": "spanish-capital-sweden-stockholm",
+      "prompt": "La capital de Suecia es \"",
+      "target": "Estocolmo",
+      "intermediates": [
+        "Spanish",
+        "capital",
+        "Sweden",
+        "Stockholm"
+      ]
+    },
+    {
+      "name": "polish-capital-norway-oslo",
+      "prompt": "Stolicą Norwegii jest \"",
+      "target": "Oslo",
+      "intermediates": [
+        "Polish",
+        "capital",
+        "Norway",
+        "Oslo"
+      ]
+    },
+    {
+      "name": "chinese-capital-norway-oslo",
+      "prompt": "\"挪威\"的首都是\"",
+      "target": "奥斯陆",
+      "intermediates": [
+        "Chinese",
+        "capital",
+        "Norway",
+        "Oslo"
+      ]
+    },
+    {
+      "name": "spanish-day-wednesday-tuesday",
+      "prompt": "El día antes del miércoles es el \"",
+      "target": "martes",
+      "intermediates": [
+        "Spanish",
+        "day",
+        "Wednesday",
+        "Tuesday"
+      ]
+    },
+    {
+      "name": "german-day-wednesday-tuesday",
+      "prompt": "Der Tag vor Mittwoch ist \"",
+      "target": "Dienstag",
+      "intermediates": [
+        "German",
+        "day",
+        "Wednesday",
+        "Tuesday"
+      ]
+    },
+    {
+      "name": "italian-day-saturday-friday",
+      "prompt": "Il giorno prima di sabato è \"",
+      "target": "venerdì",
+      "intermediates": [
+        "Italian",
+        "day",
+        "Saturday",
+        "Friday"
+      ]
+    },
+    {
+      "name": "polish-day-saturday-friday",
+      "prompt": "Dzień przed sobotą to \"",
+      "target": "piątek",
+      "intermediates": [
+        "Polish",
+        "day",
+        "Saturday",
+        "Friday"
+      ]
+    },
+    {
+      "name": "french-day-thursday-wednesday",
+      "prompt": "Le jour avant jeudi est \"",
+      "target": "mercredi",
+      "intermediates": [
+        "French",
+        "day",
+        "Thursday",
+        "Wednesday"
+      ]
+    },
+    {
+      "name": "dutch-day-thursday-wednesday",
+      "prompt": "De dag voor donderdag is \"",
+      "target": "woensdag",
+      "intermediates": [
+        "Dutch",
+        "day",
+        "Thursday",
+        "Wednesday"
+      ]
+    },
+    {
+      "name": "french-season-summer-spring",
+      "prompt": "La saison avant l'été est le \"",
+      "target": "printemps",
+      "intermediates": [
+        "French",
+        "season",
+        "summer",
+        "spring"
+      ]
+    },
+    {
+      "name": "italian-season-summer-spring",
+      "prompt": "La stagione prima dell'estate è la \"",
+      "target": "primavera",
+      "intermediates": [
+        "Italian",
+        "season",
+        "summer",
+        "spring"
+      ]
+    },
+    {
+      "name": "spanish-season-winter-autumn",
+      "prompt": "La estación antes del invierno es el \"",
+      "target": "otoño",
+      "intermediates": [
+        "Spanish",
+        "season",
+        "winter",
+        "autumn"
+      ]
+    },
+    {
+      "name": "german-season-winter-autumn",
+      "prompt": "Die Jahreszeit vor dem Winter ist der \"",
+      "target": "Herbst",
+      "intermediates": [
+        "German",
+        "season",
+        "winter",
+        "autumn"
+      ]
+    },
+    {
+      "name": "spanish-family-son-brother",
+      "prompt": "El hijo de mi madre es mi \"",
+      "target": "hermano",
+      "intermediates": [
+        "Spanish",
+        "family",
+        "son",
+        "brother"
+      ]
+    },
+    {
+      "name": "german-family-son-brother",
+      "prompt": "Der Sohn meiner Mutter ist mein \"",
+      "target": "Bruder",
+      "intermediates": [
+        "German",
+        "family",
+        "son",
+        "brother"
+      ]
+    },
+    {
+      "name": "french-family-father-uncle",
+      "prompt": "Le frère de mon père est mon \"",
+      "target": "oncle",
+      "intermediates": [
+        "French",
+        "family",
+        "father",
+        "uncle"
+      ]
+    },
+    {
+      "name": "italian-family-father-uncle",
+      "prompt": "Il fratello di mio padre è mio \"",
+      "target": "zio",
+      "intermediates": [
+        "Italian",
+        "family",
+        "father",
+        "uncle"
+      ]
+    },
+    {
+      "name": "portuguese-family-mother-aunt",
+      "prompt": "A irmã da minha mãe é a minha \"",
+      "target": "tia",
+      "intermediates": [
+        "Portuguese",
+        "family",
+        "mother",
+        "aunt"
+      ]
+    },
+    {
+      "name": "dutch-family-mother-aunt",
+      "prompt": "De zus van mijn moeder is mijn \"",
+      "target": "tante",
+      "intermediates": [
+        "Dutch",
+        "family",
+        "mother",
+        "aunt"
+      ]
+    },
+    {
+      "name": "spanish-body-speak-mouth",
+      "prompt": "Hablamos con la \"",
+      "target": "boca",
+      "intermediates": [
+        "Spanish",
+        "body",
+        "speak",
+        "mouth"
+      ]
+    },
+    {
+      "name": "german-body-speak-mouth",
+      "prompt": "Wir sprechen mit dem \"",
+      "target": "Mund",
+      "intermediates": [
+        "German",
+        "body",
+        "speak",
+        "mouth"
+      ]
+    },
+    {
+      "name": "french-body-breathe-lungs",
+      "prompt": "Nous respirons avec nos \"",
+      "target": "poumons",
+      "intermediates": [
+        "French",
+        "body",
+        "breathe",
+        "lungs"
+      ]
+    },
+    {
+      "name": "italian-body-breathe-lungs",
+      "prompt": "Respiriamo con i \"",
+      "target": "polmoni",
+      "intermediates": [
+        "Italian",
+        "body",
+        "breathe",
+        "lungs"
+      ]
+    },
+    {
+      "name": "portuguese-body-kiss-lips",
+      "prompt": "Beijamos com os \"",
+      "target": "lábios",
+      "intermediates": [
+        "Portuguese",
+        "body",
+        "kiss",
+        "lips"
+      ]
+    },
+    {
+      "name": "dutch-body-kiss-lips",
+      "prompt": "We kussen met onze \"",
+      "target": "lippen",
+      "intermediates": [
+        "Dutch",
+        "body",
+        "kiss",
+        "lips"
+      ]
+    },
+    {
+      "name": "french-taste-vinegar-sour",
+      "prompt": "Le vinaigre a un goût \"",
+      "target": "acide",
+      "intermediates": [
+        "French",
+        "taste",
+        "vinegar",
+        "sour"
+      ]
+    },
+    {
+      "name": "german-taste-vinegar-sour",
+      "prompt": "Essig schmeckt \"",
+      "target": "sauer",
+      "intermediates": [
+        "German",
+        "taste",
+        "vinegar",
+        "sour"
+      ]
+    },
+    {
+      "name": "italian-taste-pepper-spicy",
+      "prompt": "Il peperoncino ha un sapore \"",
+      "target": "piccante",
+      "intermediates": [
+        "Italian",
+        "taste",
+        "pepper",
+        "spicy"
+      ]
+    },
+    {
+      "name": "portuguese-taste-pepper-spicy",
+      "prompt": "A pimenta tem um sabor \"",
+      "target": "picante",
+      "intermediates": [
+        "Portuguese",
+        "taste",
+        "pepper",
+        "spicy"
+      ]
+    },
+    {
+      "name": "spanish-young-sheep-lamb",
+      "prompt": "La cría de la oveja se llama \"",
+      "target": "cordero",
+      "intermediates": [
+        "Spanish",
+        "young",
+        "sheep",
+        "lamb"
+      ]
+    },
+    {
+      "name": "dutch-young-sheep-lamb",
+      "prompt": "Het jong van een schaap heet een \"",
+      "target": "lam",
+      "intermediates": [
+        "Dutch",
+        "young",
+        "sheep",
+        "lamb"
+      ]
+    },
+    {
+      "name": "german-young-cow-calf",
+      "prompt": "Das Junge einer Kuh nennt man \"",
+      "target": "Kalb",
+      "intermediates": [
+        "German",
+        "young",
+        "cow",
+        "calf"
+      ]
+    },
+    {
+      "name": "french-young-cow-calf",
+      "prompt": "Le petit de la vache s'appelle un \"",
+      "target": "veau",
+      "intermediates": [
+        "French",
+        "young",
+        "cow",
+        "calf"
+      ]
+    },
+    {
+      "name": "polish-half-twenty-ten",
+      "prompt": "Połowa z dwudziestu to \"",
+      "target": "dziesięć",
+      "intermediates": [
+        "Polish",
+        "half",
+        "twenty",
+        "ten"
+      ]
+    },
+    {
+      "name": "portuguese-half-twenty-ten",
+      "prompt": "A metade de vinte é \"",
+      "target": "dez",
+      "intermediates": [
+        "Portuguese",
+        "half",
+        "twenty",
+        "ten"
+      ]
+    },
+    {
+      "name": "dutch-double-ten-twenty",
+      "prompt": "Het dubbele van tien is \"",
+      "target": "twintig",
+      "intermediates": [
+        "Dutch",
+        "double",
+        "ten",
+        "twenty"
+      ]
+    },
+    {
+      "name": "french-double-ten-twenty",
+      "prompt": "Le double de dix est \"",
+      "target": "vingt",
+      "intermediates": [
+        "French",
+        "double",
+        "ten",
+        "twenty"
+      ]
+    }
+  ]
+}
