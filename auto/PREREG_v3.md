@@ -66,3 +66,13 @@ SECONDARY
 - Still to score on v3 (registered): T (bag-of-visible-words control, amendment 4) and W (generated-data expert
   weights, amendment 3).
 Reading: the gain is a 9B effect; on 27B there is no pass@10 gain and top-1 gets worse.
+
+## Results, registered secondary W (amendment 3), scored 2026-11-21 00:38Z (9B, 475 v3 prompts)
+- W (our recipe experts, weights fitted on 4,000 generated hidden-word sentences, no labels): .5268 / .2974, unf .5221.
+- Same experts with weights fitted the authors' way on the 75 labelled prompts (A_full): .4746 / .2888, unf .4567.
+- Released J++: .5194 / .2906, unf .4873.
+- W - A_full: +5.2 [+2.2,+8.4] pass@10; +0.9 [-2.4,+4.3] pass@1; +6.5 [+3.4,+9.7] unfiltered.
+- W - released: +0.8 [-1.8,+3.5]; +0.6 [-2.7,+4.1]; +3.5 [+0.8,+6.3] unfiltered.
+- A_full - released: -4.4 [-7.0,-2.1].
+Note: on the OLD dev split the order was reversed (W - A_full = -3.8 [-9.4,+1.8]); the labelled fit fold shares templates
+with the old dev/test prompts, and its advantage does not carry to fresh prompts.

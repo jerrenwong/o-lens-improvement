@@ -220,6 +220,16 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   partly a fit to the benchmark's formats. CAVEAT for al1/al2: their J++ baseline had benchmark-tuned weights; a
   rerun against generated-fit J++ is requested from al2.
 
+- FAIR BASELINE for the translation map (al2 follow-up): on al2's 400 unseen test words, any of 7 layers top-10:
+  released J++ .186; refit experts + benchmark-fit weights .156; refit experts + GENERATED-fit weights .243; M_all
+  .281; mixes with 0.3*M_all: .378 / .367 / .401. So against a J++ tuned on the same kind of text the map adds +.158
+  (82% of the +.192 over released). Unseen style S3: gen-fit J++ .172, M_noS3 .131, mix .278 (+.106).
+- W ON FRESH PROMPTS v3 (registered secondary; 9B, 475 prompts): generated-fit weights W .5268 vs the same experts
+  with benchmark-fit weights .4746 = +5.2 [+2.2,+8.4]; vs released J++ .5194 = +0.8 [-1.8,+3.5] (unfiltered +3.5
+  [+0.8,+6.3]). On the old dev split W was -3.8 vs benchmark-fit weights: the labelled fold's advantage is specific to
+  the old benchmark's templates. => a LABEL-FREE J++ (weights from generated hidden-word sentences) matches the
+  released lens on fresh prompts.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
