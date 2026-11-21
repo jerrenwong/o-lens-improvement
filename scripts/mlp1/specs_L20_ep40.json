@@ -1,0 +1,15 @@
+[
+ {
+  "kind": "D",
+  "width": 4096,
+  "lr": 3e-05,
+  "drop": 0.1
+ },
+ {
+  "kind": "C",
+  "width": 4096,
+  "lr": 3e-05,
+  "data": "mean",
+  "noise": 1.0
+ }
+]

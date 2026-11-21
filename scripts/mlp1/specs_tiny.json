@@ -1,0 +1,1 @@
+[{"kind":"B","lr":1e-4},{"kind":"C","width":1024,"lr":1e-4,"drop":0.1},{"kind":"D","width":4096,"lr":1e-4},{"kind":"C","width":1024,"lr":1e-4,"data":"mean","noise":0.5,"save":true}]

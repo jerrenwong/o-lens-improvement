@@ -1,0 +1,68 @@
+[
+ {
+  "kind": "B",
+  "width": 0,
+  "lr": 0.001,
+  "wd": 0.0,
+  "drop": 0.0,
+  "data": "sent",
+  "noise": 0.0,
+  "subset": "all",
+  "seed": 0
+ },
+ {
+  "kind": "C",
+  "width": 4096,
+  "lr": 3e-05,
+  "wd": 0.0,
+  "drop": 0.0,
+  "data": "mean",
+  "noise": 1.0,
+  "subset": "all",
+  "seed": 0
+ },
+ {
+  "kind": "D",
+  "width": 4096,
+  "lr": 3e-05,
+  "wd": 0.0,
+  "drop": 0.1,
+  "data": "sent",
+  "noise": 0.0,
+  "subset": "all",
+  "seed": 0
+ },
+ {
+  "kind": "P",
+  "width": 0,
+  "lr": 0.01,
+  "wd": 0.0,
+  "drop": 0.0,
+  "data": "sent",
+  "noise": 0.0,
+  "subset": "all",
+  "seed": 0
+ },
+ {
+  "kind": "L",
+  "width": 4096,
+  "lr": 0.0003,
+  "wd": 0.0,
+  "drop": 0.0,
+  "data": "sent",
+  "noise": 0.0,
+  "subset": "all",
+  "seed": 0
+ },
+ {
+  "kind": "Q",
+  "width": 0,
+  "lr": 0.003,
+  "wd": 0.0,
+  "drop": 0.0,
+  "data": "sent",
+  "noise": 0.0,
+  "subset": "all",
+  "seed": 0
+ }
+]

@@ -1,0 +1,1437 @@
+{
+ "layer": 20,
+ "val10": {
+  "A": 0.1662,
+  "B_lr0.001_wd0_dr0_sent_all_s0": 0.1902,
+  "C1024_lr0.0001_wd0_dr0_sent_all_s0": 0.2039,
+  "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": 0.2113,
+  "P0_lr0.01_wd0_dr0_sent_all_s0": 0.2022,
+  "L4096_lr0.0003_wd0_dr0_sent_all_s0": 0.1815
+ },
+ "decomp|C1024_lr0.0001_wd0_dr0_sent_all_s0": {
+  "linear_part": 0.1663,
+  "linear_plus_mean_branch": 0.2037,
+  "full": 0.2039,
+  "branch_rms_over_out_rms": 0.2401,
+  "branch_var_share": 0.0327
+ },
+ "decomp|L4096_lr0.0003_wd0_dr0_sent_all_s0": {
+  "linear_part": 0.171,
+  "linear_plus_mean_branch": 0.2001,
+  "full": 0.1815,
+  "branch_rms_over_out_rms": 0.7676,
+  "branch_var_share": 0.9255
+ },
+ "hub": {
+  "A": {
+   "distinct_top1": 3316,
+   "top20_share": 0.0913,
+   "most_common": [
+    [
+     "\u30b9\u30dd\u30f3\u30b5\u30fc\u30b5\u30a4\u30c8",
+     95
+    ],
+    [
+     "\u306e\u304b\u3082\u3057\u308c",
+     73
+    ],
+    [
+     "Ilmais",
+     42
+    ],
+    [
+     "denun",
+     42
+    ],
+    [
+     "\u6316\u6398\u516c\u53f8",
+     37
+    ],
+    [
+     "Ejem",
+     33
+    ],
+    [
+     "Ouver",
+     24
+    ],
+    [
+     "\u6536\u85cf\u672c\u7ad9",
+     21
+    ]
+   ]
+  },
+  "B_lr0.001_wd0_dr0_sent_all_s0": {
+   "distinct_top1": 4050,
+   "top20_share": 0.0312,
+   "most_common": [
+    [
+     "unanimously",
+     19
+    ],
+    [
+     "migrated",
+     15
+    ],
+    [
+     "adolescence",
+     14
+    ],
+    [
+     "retired",
+     11
+    ],
+    [
+     "postseason",
+     10
+    ],
+    [
+     "differing",
+     10
+    ],
+    [
+     "dissolved",
+     10
+    ],
+    [
+     "disqualified",
+     9
+    ]
+   ]
+  },
+  "C1024_lr0.0001_wd0_dr0_sent_all_s0": {
+   "distinct_top1": 3657,
+   "top20_share": 0.0418,
+   "most_common": [
+    [
+     "1",
+     43
+    ],
+    [
+     "in",
+     25
+    ],
+    [
+     "unanimously",
+     20
+    ],
+    [
+     "migrated",
+     12
+    ],
+    [
+     "retired",
+     12
+    ],
+    [
+     "postseason",
+     11
+    ],
+    [
+     "adolescence",
+     11
+    ],
+    [
+     "dictatorship",
+     11
+    ]
+   ]
+  },
+  "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": {
+   "distinct_top1": 3352,
+   "top20_share": 0.0306,
+   "most_common": [
+    [
+     "toxic",
+     13
+    ],
+    [
+     "anxious",
+     10
+    ],
+    [
+     "dissolved",
+     10
+    ],
+    [
+     "fascism",
+     10
+    ],
+    [
+     "adolescence",
+     9
+    ],
+    [
+     "killer",
+     9
+    ],
+    [
+     "growth",
+     9
+    ],
+    [
+     "criticised",
+     9
+    ]
+   ]
+  },
+  "P0_lr0.01_wd0_dr0_sent_all_s0": {
+   "distinct_top1": 3850,
+   "top20_share": 0.0382,
+   "most_common": [
+    [
+     "1",
+     29
+    ],
+    [
+     "in",
+     21
+    ],
+    [
+     "unanimously",
+     19
+    ],
+    [
+     "migrated",
+     12
+    ],
+    [
+     "adolescence",
+     12
+    ],
+    [
+     "retired",
+     12
+    ],
+    [
+     "and",
+     11
+    ],
+    [
+     "postseason",
+     11
+    ]
+   ]
+  },
+  "L4096_lr0.0003_wd0_dr0_sent_all_s0": {
+   "distinct_top1": 4144,
+   "top20_share": 0.0262,
+   "most_common": [
+    [
+     "anxious",
+     10
+    ],
+    [
+     "humble",
+     9
+    ],
+    [
+     "migrated",
+     9
+    ],
+    [
+     "adolescence",
+     9
+    ],
+    [
+     "dissolved",
+     9
+    ],
+    [
+     "censorship",
+     9
+    ],
+    [
+     "unanimously",
+     9
+    ],
+    [
+     "Turns",
+     8
+    ]
+   ]
+  }
+ },
+ "examples": [
+  {
+   "word": "folklore",
+   "style": 2,
+   "sent": "These are traditional stories and beliefs that pass from generation to generation within a culture.",
+   "A": [
+    "traditions",
+    "myths",
+    "Tradition",
+    "rituals",
+    "mythology",
+    "tradizioni"
+   ],
+   "A_rank": 19,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "traditions",
+    "myths",
+    "Tradition",
+    "rituals",
+    "doctrines",
+    "legends"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 16,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "traditions",
+    "myths",
+    "Tradition",
+    "rituals",
+    "mythology",
+    "tradition"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 17,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "traditions",
+    "beliefs",
+    "mythology",
+    "myths",
+    "teachings",
+    "cultures"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 16,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "traditions",
+    "myths",
+    "Tradition",
+    "rituals",
+    "doctrines",
+    "conventions"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 16,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "traditions",
+    "myths",
+    "doctrines",
+    "conventions",
+    "mythology",
+    "beliefs"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 15
+  },
+  {
+   "word": "Sar",
+   "style": 2,
+   "sent": "It refers to a line of latitude located far to the north, roughly where the bottom of the Mediterranean Sea begins.",
+   "A": [
+    "northern",
+    "southeastern",
+    "Northern",
+    "southwestern",
+    "Hemisphere",
+    "northeastern"
+   ],
+   "A_rank": 141008,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "northern",
+    "Northern",
+    "southeastern",
+    "hemisphere",
+    "Northern",
+    "Hemisphere"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 138516,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "northern",
+    "Northern",
+    "hemisphere",
+    "southeastern",
+    "Northern",
+    "southern"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 54882,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "southeast",
+    "southern",
+    "southeastern",
+    "northeastern",
+    "southwestern",
+    "northwest"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 10078,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "northern",
+    "hemisphere",
+    "Northern",
+    "Northern",
+    "southeastern",
+    "southern"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 59969,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "Northern",
+    "Southern",
+    "northern",
+    "Pole",
+    "southern",
+    "Northern"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 115838
+  },
+  {
+   "word": "sermon",
+   "style": 4,
+   "sent": "The preacher's voice boomed through the sanctuary, drumming in the ears of the congregation. The wind stopped and the rain paused to let everyone hear the words clearly.",
+   "A": [
+    "Gospel",
+    "gospel",
+    "\u798f\u97f3",
+    "theological",
+    "ospel",
+    "preached"
+   ],
+   "A_rank": 26,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "Gospel",
+    "gospel",
+    "\u798f\u97f3",
+    "theological",
+    "ospel",
+    "Pastor"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 25,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "Gospel",
+    "gospel",
+    "theological",
+    "\u798f\u97f3",
+    "pastor",
+    "Scripture"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 21,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "gospel",
+    "holy",
+    "preaching",
+    "spiritual",
+    "blessed",
+    "chapel"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 21,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "Gospel",
+    "gospel",
+    "\u798f\u97f3",
+    "theological",
+    "pastor",
+    "Scripture"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 18,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "Gospel",
+    "gospel",
+    "theological",
+    "\u798f\u97f3",
+    "theology",
+    "Christianity"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 49
+  },
+  {
+   "word": "folklore",
+   "style": 1,
+   "sent": "The old women told stories of spirits hiding in the trees, though no one believed the tales.",
+   "A": [
+    "myths",
+    "mythical",
+    "rumours",
+    "mythology",
+    "presunto",
+    "rumored"
+   ],
+   "A_rank": 20,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "myths",
+    "mythology",
+    "mythical",
+    "myth",
+    "\u795e\u8bdd",
+    "legends"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 17,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "myths",
+    "myth",
+    "mythical",
+    "mythology",
+    "legends",
+    "\u795e\u8bdd"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 9,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "myths",
+    "mythology",
+    "legends",
+    "myth",
+    "beliefs",
+    "folklore"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 6,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "myths",
+    "myth",
+    "legends",
+    "mythical",
+    "mythology",
+    "curses"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 9,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "myths",
+    "legends",
+    "mythical",
+    "Extras",
+    "curses",
+    "mythology"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 13
+  },
+  {
+   "word": "seeker",
+   "style": 4,
+   "sent": "She scanned the horizon for the missing ship with her binoculars. Minutes turned into hours as she refused to give up the search.",
+   "A": [
+    "Seeking",
+    "persegu",
+    "pursued",
+    "disastr",
+    "pursuing",
+    "\u5c0b\u6c42"
+   ],
+   "A_rank": 233,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "Seeking",
+    "seeking",
+    "sought",
+    "seek",
+    "Seek",
+    "persegu"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 83,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "seeking",
+    "Seeking",
+    "sought",
+    "pursuing",
+    "Seek",
+    "\u5bfb\u6c42"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 35,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "determined",
+    "seeking",
+    "continues",
+    "searching",
+    "diligently",
+    "waited"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 8156,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "seeking",
+    "Seeking",
+    "sought",
+    "Seek",
+    "pursuing",
+    "seek"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 29,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "Seeking",
+    "EventListener",
+    "Disposition",
+    "seeks",
+    "sought",
+    "persisted"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 910
+  },
+  {
+   "word": "Covenant",
+   "style": 2,
+   "sent": "It is a special type of formal promise or agreement, often between people or groups, that must be kept.",
+   "A": [
+    "agreements",
+    "agreement",
+    "Agreement",
+    "\u534f\u8bae\u7684",
+    "\u534f\u8bae",
+    "treaty"
+   ],
+   "A_rank": 57,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "agreements",
+    "agreement",
+    "treaty",
+    "Agreement",
+    "\u534f\u8bae",
+    "\u534f\u8bae\u7684"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 34,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "agreement",
+    "agreements",
+    "treaty",
+    "\u534f\u8bae",
+    "Agreement",
+    "contracts"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 23,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "oath",
+    "legally",
+    "decree",
+    "obligation",
+    "pledge",
+    "obligations"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 66,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "agreements",
+    "agreement",
+    "treaty",
+    "Agreement",
+    "\u534f\u8bae",
+    "contracts"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 19,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "agreement",
+    "treaty",
+    "Agreement",
+    "Treaty",
+    "agreements",
+    "oath"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 13
+  },
+  {
+   "word": "migration",
+   "style": 4,
+   "sent": "The birds arrived in the south with their young ones on their backs. They had spent the whole winter flying north to the cold to find the food they needed to survive.",
+   "A": [
+    "migrated",
+    "migrants",
+    "migrating",
+    "_migration",
+    "survived",
+    "migrate"
+   ],
+   "A_rank": 7,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "migrated",
+    "migrants",
+    "_migration",
+    "migrating",
+    "survived",
+    "survival"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 10,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "migrated",
+    "migrants",
+    "survival",
+    "migration",
+    "survive",
+    "migrate"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 4,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "migrants",
+    "migrated",
+    "migrant",
+    "survival",
+    "survive",
+    "migrate"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 60,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "migrated",
+    "migrants",
+    "migration",
+    "survival",
+    "migrate",
+    "migr"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 3,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "migrated",
+    "flown",
+    "migrants",
+    "turista",
+    "_migration",
+    "migrating"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 49
+  },
+  {
+   "word": "drawn",
+   "style": 5,
+   "sent": "\"The attic is full of spiderwebs, so we definitely don't want to spend too much time up there.\"",
+   "A": [
+    "\u30b9\u30dd\u30f3\u30b5\u30fc\u30b5\u30a4\u30c8",
+    "denun",
+    "obsta",
+    "porno",
+    "\u5f71\u5e7d",
+    "Ilmais"
+   ],
+   "A_rank": 237244,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "vicinity",
+    "danger",
+    "dangerous",
+    "\u5371\u96aa",
+    "Danger",
+    "dangers"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 230736,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "vicinity",
+    "danger",
+    "dangerous",
+    "Danger",
+    "danger",
+    "Danger"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 232942,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "unlikely",
+    "vicinity",
+    "Cemetery",
+    "haven",
+    "huge",
+    "scene"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 2393,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "vicinity",
+    "Deadly",
+    "gov",
+    "realm",
+    "lifetime",
+    "Vulner"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 235766,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "terrible",
+    "darker",
+    "danger",
+    "Dancing",
+    "Tiny",
+    "settling"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 18622
+  },
+  {
+   "word": "wholly",
+   "style": 5,
+   "sent": "\"This apology isn't enough; I am completely and totally sorry.\"",
+   "A": [
+    "apologise",
+    "revan",
+    "perjan",
+    "\u58f0\u660e\u8005",
+    "Geile",
+    "\u6316\u6398\u516c\u53f8"
+   ],
+   "A_rank": 14154,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "revan",
+    "immensely",
+    "luder",
+    "perjan",
+    "\u7533\u544a",
+    "apologies"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 3452,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "apologies",
+    "immensely",
+    "apologise",
+    "sorry",
+    "apologize",
+    "apologized"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 74,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "wholly",
+    "utterly",
+    "entirely",
+    "greatly",
+    "absolutely",
+    "utter"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 1,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "apologies",
+    "immensely",
+    "apologise",
+    "sorry",
+    "enormously",
+    "revan"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 139,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "rejoice",
+    "forgiven",
+    "urging",
+    "altogether",
+    "utterly",
+    "urged"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 36
+  },
+  {
+   "word": "administered",
+   "style": 1,
+   "sent": "The nurse carefully injected the medicine into the patient's arm before checking his chart.",
+   "A": [
+    "properly",
+    "procedures",
+    "Procedures",
+    "improperly",
+    "discharge",
+    "discretion"
+   ],
+   "A_rank": 9635,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "properly",
+    "procedures",
+    "Procedures",
+    "discharge",
+    "improperly",
+    "discretion"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 11461,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "properly",
+    "procedures",
+    "in",
+    "discharge",
+    "Procedures",
+    "1"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 14544,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "properly",
+    "procedure",
+    "procedures",
+    "patient",
+    "doctor",
+    "nursing"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 2403,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "properly",
+    "procedures",
+    "in",
+    "Procedures",
+    "discharge",
+    "1"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 17778,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "properly",
+    "carefully",
+    "correctly",
+    "Care",
+    "ensure",
+    "Patient"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 4196
+  },
+  {
+   "word": "retire",
+   "style": 3,
+   "sent": "After forty years of climbing ladders, he traded his tool belt for a pair of reading glasses and spent the afternoon with his grandchildren.",
+   "A": [
+    "retired",
+    "retiring",
+    "retire",
+    "retirement",
+    "Retirement",
+    "\u9000\u4f11"
+   ],
+   "A_rank": 3,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "retired",
+    "retiring",
+    "retire",
+    "retirement",
+    "Retirement",
+    "\u9000\u4f11"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 3,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "retired",
+    "retiring",
+    "retire",
+    "retirement",
+    "Retirement",
+    "\u9000\u4f11"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 3,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "retired",
+    "retirement",
+    "retire",
+    "retiring",
+    "Retirement",
+    "Recreation"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 3,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "retired",
+    "retiring",
+    "retire",
+    "retirement",
+    "Retirement",
+    "\u9000\u4f11"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 3,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "retired",
+    "retirement",
+    "Retirement",
+    "retiring",
+    "retire",
+    "\u9000\u4f11"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 5
+  },
+  {
+   "word": "definite",
+   "style": 5,
+   "sent": "\"I'm absolutely certain I left my umbrella on the porch; it won't come back.\"",
+   "A": [
+    "esperan",
+    "expects",
+    "(Expected",
+    "diduga",
+    "Expect",
+    "vanished"
+   ],
+   "A_rank": 191170,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "expects",
+    "Expect",
+    "esperan",
+    "expecting",
+    "commission",
+    "diduga"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 161217,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "expecting",
+    "Expect",
+    "expects",
+    "expectations",
+    "expectation",
+    "\u671f\u671b"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 30885,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "realise",
+    "forgetting",
+    "forgot",
+    "gotten",
+    "certainly",
+    "sometime"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 5152,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "Expect",
+    "Estimates",
+    "expecting",
+    "commission",
+    "expects",
+    "expects"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 37622,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "withdrew",
+    "didn",
+    "withdrawn",
+    "withdraw",
+    "Expect",
+    "anything"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 4217
+  },
+  {
+   "word": "gear",
+   "style": 4,
+   "sent": "The driver shifted the stick down as the car stalled on the hill. He screamed for a little more power before they started up again.",
+   "A": [
+    "speeds",
+    "\u63d0\u901f",
+    "_speed",
+    "speed",
+    "speed",
+    "peed"
+   ],
+   "A_rank": 77040,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "speeds",
+    "speed",
+    "_speed",
+    "motors",
+    "\u63d0\u901f",
+    "Motors"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 37307,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "speeds",
+    "speed",
+    "speed",
+    "\u63d0\u901f",
+    "motors",
+    "_speed"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 4806,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "motors",
+    "pressures",
+    "laps",
+    "tires",
+    "stall",
+    "motor"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 233,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "speeds",
+    "speed",
+    "motors",
+    "\u63d0\u901f",
+    "speed",
+    "Speed"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 3214,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "motors",
+    "Motors",
+    "Stall",
+    "vers",
+    "Vers",
+    "turn"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 533
+  },
+  {
+   "word": "edge",
+   "style": 3,
+   "sent": "The ship listed heavily in the harbor, its hull scraping against the sand as the tide slowly receded.",
+   "A": [
+    "sinking",
+    "anchored",
+    "harbour",
+    "Harbour",
+    "sailed",
+    "sank"
+   ],
+   "A_rank": 57695,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "anchored",
+    "Harbour",
+    "harbour",
+    "sinking",
+    "dock",
+    "marina"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 9886,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "sinking",
+    "dock",
+    "anchored",
+    "sank",
+    "harbour",
+    "anch"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 2724,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "downwards",
+    "Harbour",
+    "lower",
+    "lowered",
+    "vast",
+    "naval"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 1618,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "sinking",
+    "dock",
+    "anchored",
+    "Harbour",
+    "harbour",
+    "sank"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 1335,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "Naval",
+    "Bay",
+    "downwards",
+    "sinking",
+    "Semi",
+    "naval"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 2599
+  },
+  {
+   "word": "disputes",
+   "style": 2,
+   "sent": "Arguments and disagreements happen when people have different ideas, opinions or goals.",
+   "A": [
+    "controversies",
+    "disagreements",
+    "disputes",
+    "conflicts",
+    "contradictions",
+    "relationships"
+   ],
+   "A_rank": 3,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "controversies",
+    "disagreements",
+    "conflicts",
+    "situations",
+    "disputes",
+    "contradictions"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 5,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "controversies",
+    "disagreements",
+    "conflicts",
+    "disputes",
+    "situations",
+    "contradictions"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 4,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "opinions",
+    "controversies",
+    "arguments",
+    "conflicts",
+    "debates",
+    "disagreed"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 58,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "controversies",
+    "disagreements",
+    "disputes",
+    "conflicts",
+    "situations",
+    "contradictions"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 3,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "opinions",
+    "controversies",
+    "situations",
+    "disagreements",
+    "relationships",
+    "criticisms"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 12
+  },
+  {
+   "word": "onwards",
+   "style": 5,
+   "sent": "\"We must pick up the pace, for the path is steep and we can't stop now.\"",
+   "A": [
+    "continued",
+    "exped",
+    "\u4e0d\u65ad\u63a2\u7d22",
+    "\u4e0d\u4e45\u7684\u5c06\u6765",
+    "\u79ef\u6781\u63a2\u7d22",
+    "exploration"
+   ],
+   "A_rank": 83155,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "continued",
+    "further",
+    "exped",
+    "Continued",
+    "Noble",
+    "immediately"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 33563,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "in",
+    "and",
+    "further",
+    "a",
+    "for",
+    "to"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 30894,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "conquer",
+    "advancing",
+    "reign",
+    "frontier",
+    "conquest",
+    "farther"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 5894,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "in",
+    "and",
+    "at",
+    "for",
+    "to",
+    "further"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 32378,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "Quest",
+    "sustained",
+    "confined",
+    "Rig",
+    "nearer",
+    "rigid"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 133164
+  },
+  {
+   "word": "encouraged",
+   "style": 3,
+   "sent": "After he read her letter, the teacher stood in front of the class and spoke loudly about her achievements and future potential.",
+   "A": [
+    "praised",
+    "asserted",
+    "proclaimed",
+    "touted",
+    "endorsed",
+    "thanked"
+   ],
+   "A_rank": 7,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "praised",
+    "asserted",
+    "proclaimed",
+    "praise",
+    "praising",
+    "encouragement"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 7,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "praised",
+    "asserted",
+    "proclaimed",
+    "encouraged",
+    "cited",
+    "declared"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 4,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "credited",
+    "praised",
+    "proclaimed",
+    "praising",
+    "acknowledged",
+    "praise"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 25,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "praised",
+    "asserted",
+    "cited",
+    "proclaimed",
+    "encouraged",
+    "praise"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 5,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "praised",
+    "credited",
+    "endorsed",
+    "praising",
+    "praise",
+    "praises"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 7
+  },
+  {
+   "word": "direction",
+   "style": 3,
+   "sent": "The captain raised his hand to signal the team to turn left, moving away from the old house and toward the new road.",
+   "A": [
+    "\u8f49\u5411",
+    "koord",
+    "\u8f49\u79fb",
+    "Insn",
+    "mdir",
+    "\u9526\u6d9b"
+   ],
+   "A_rank": 2986,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "\u8f49\u5411",
+    "\u8f6c\u5411",
+    "turned",
+    "turned",
+    "\u8f49\u79fb",
+    "Turning"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 1642,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "directed",
+    "\u8f6c\u5411",
+    "\u8f49\u5411",
+    "turned",
+    "Turning",
+    "Directed"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 603,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "proceed",
+    "heading",
+    "turn",
+    "turned",
+    "exit",
+    "indicate"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 267,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "directed",
+    "turned",
+    "\u8f6c\u5411",
+    "Turning",
+    "Directed",
+    "turned"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 489,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "Reserve",
+    "heading",
+    "defer",
+    "directed",
+    "Alternate",
+    "\u8f6c\u5411"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 1096
+  },
+  {
+   "word": "obviously",
+   "style": 3,
+   "sent": "The pitcher threw the ball over the batter's head, and the crowd erupted while the coach screamed from the dugout.",
+   "A": [
+    "Ejem",
+    "revan",
+    "Ouver",
+    "denun",
+    "Ilmais",
+    "\u0441\u0441\u043e\u0440\u0430"
+   ],
+   "A_rank": 111392,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "hitting",
+    "Fans",
+    "kicked",
+    "joked",
+    "protes",
+    "Offensive"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 30848,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "hitting",
+    "Fans",
+    "Fans",
+    "hitter",
+    "kicked",
+    "joked"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 17828,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "offense",
+    "kick",
+    "shots",
+    "yelled",
+    "shot",
+    "hit"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 1309,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "hitting",
+    "Fans",
+    "Offensive",
+    "hitter",
+    "Fans",
+    "hitters"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 9545,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "hitting",
+    "Giants",
+    "shouted",
+    "kickoff",
+    "Spurs",
+    "Pirates"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 17661
+  },
+  {
+   "word": "triggers",
+   "style": 2,
+   "sent": "This word refers to the action that causes a machine, feeling or situation to start.",
+   "A": [
+    "initiating",
+    "initiation",
+    "ensuing",
+    "Generating",
+    "initiate",
+    "Generating"
+   ],
+   "A_rank": 1505,
+   "B_lr0.001_wd0_dr0_sent_all_s0": [
+    "initiation",
+    "initiating",
+    "ensuing",
+    "Init",
+    "initiate",
+    "Generating"
+   ],
+   "B_lr0.001_wd0_dr0_sent_all_s0_rank": 755,
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0": [
+    "initiating",
+    "initiation",
+    "initiate",
+    "Init",
+    "ensuing",
+    "Generating"
+   ],
+   "C1024_lr0.0001_wd0_dr0_sent_all_s0_rank": 296,
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0": [
+    "triggering",
+    "initiating",
+    "induce",
+    "inducing",
+    "initiated",
+    "cause"
+   ],
+   "D4096_lr3e-05_wd0_dr0.1_sent_all_s0_rank": 7,
+   "P0_lr0.01_wd0_dr0_sent_all_s0": [
+    "initiating",
+    "initiation",
+    "initiate",
+    "Init",
+    "Generating",
+    "Generating"
+   ],
+   "P0_lr0.01_wd0_dr0_sent_all_s0_rank": 367,
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0": [
+    "Become",
+    "Begins",
+    "Activation",
+    "starts",
+    "Generating",
+    "organising"
+   ],
+   "L4096_lr0.0003_wd0_dr0_sent_all_s0_rank": 5147
+  }
+ ]
+}

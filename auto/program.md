@@ -268,6 +268,8 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
 
 - **Registered re-test of the ask-map with clean prompts (2026-11-21; PREREG_v3 Amdt 5 / v2 Amdt 3; lens C = ask3_A.py; runs/c3_boot.txt).** 9B: C - J++ pass@10 +2.4 [0.4,4.8] (v3), +3.1 [1.1,5.2] (v2), pooled +2.7 [1.3,4.3]; pass@1 +2.6 / +3.1, pooled +2.8 [1.4,4.3]; C - A within noise; shuffled flat. Leak caveat removed; the 9B claim now rests on C. 27B: pass@10 +0.6 / +1.1 (ns), pass@1 -3.1 [-5.4,-0.8] / -1.8; unfiltered +2.3 [0.7,4.0] pooled. Fixing 27B's blank-line targets did not rescue 27B. Primary (both models) on v3: +1.5 [-0.0,+3.1], not met; v2 +2.1 [0.6,3.6]. --lite scoring reproduces stored J++ ranks exactly.
 
+- **mlp1: nonlinear translation map (2026-11-21).** Test words any-of-7 top-10, 3 seeds: ridge .2815; linear cross-entropy .3269; residual MLP .3375; scratch MLP .3451; control P0 = ridge frozen + one trained output shift .3469. In the mix with label-free J++: .401 / .413 / .411 / .422-.426 (lam 3) / .419. The ReLU adds nothing (C - P0 -1.0 [-1.7,-0.2]); the gain is an input-independent shift that suppresses junk tokens (+6.5 alone, +1.8 [0.6,3.0] in the mix). All maps memorise train words (.92-1.0 vs .17-.22). Benchmark dev unchanged. bf16 tie rule inflates al2 numbers 0.2-0.8 pts. Results scripts/mlp1/results/.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
