@@ -263,6 +263,9 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
 
 - **27B ask-map was fit on blank-line targets (found 2026-11-21, ask2).** On Qwen3.6-27B the raw next token after the few-shot topic question is '\n\n' for 98/71/95% of prefixes (three old formats); 21,859 of 30.5k prefixes are junk in all three. The "elicited word" in earlier 27B logs was best-after-masking. 9B is clean (5/3/0%). This likely explains the small 27B gain. Fix under test (ask3): prompt formats that force a word (quote-ended, chat template + prefill).
 
+- **Leak in the registered ask-map prompts (found 2026-11-21).** Formats E1 and E2 of scripts/e2_collect.py use seven benchmark concept words as few-shot example answers (volcano, business, medicine, snow, music, football, weather); E0's four (fishing, politics, baking, kindness) are clean. Dev by single format: E0 .6118/.4103, E1 .6392/.4253, E2 .6230/.3945 (J++ .5952/.3850). The registered fresh-set gains (+3.3, +3.7 on 9B) therefore need a clean refit before they are quoted without a caveat. Fix in progress (ask3 step 4): same recipe, chat-template prompts, clean examples; then a registered fresh-set test.
+- **27B answers nothing without the chat template (ask3, 2026-11-21).** Raw few-shot prompt: junk top-1 .975; chat template (thinking off) with the assistant turn prefilled "One-word topic:": .000, 111 distinct words in 200 prefixes (48 before). Quoted formats give word pieces. Chosen: chat + prefill, three wordings with clean examples.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
