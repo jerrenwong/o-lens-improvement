@@ -44,3 +44,14 @@ SECONDARY
 - Per task (J++ -> A): 9B association 61 -> 71, multihop 76 -> 82, multilingual 74 -> 78, poetry 12 -> 9, typo 97 -> 97;
   27B association 76 -> 78, multihop 70 -> 72, multilingual 76 -> 77, poetry 16 -> 16, typo 99 -> 98.
 Note: v2 association prompts are easier than the originals (J++ 61% / 76% vs 29% / 39%).
+
+## Amendment 2 (2026-11-21 02:30Z, written BEFORE any label-free-weight lens is scored on v2)
+Label-free expert weights (w1) have been scored on v3 only. v2 is therefore an untouched test for them.
+Candidate S ("stack"): natural-format experts with weights fitted on generated hidden-word sentences
+(`runs/w1/jpp_Cfull_Wtrain.pt`, chosen because it scored highest on v3) + lam * ask-map E_9b, lam chosen on the
+original benchmark's fit split by the e2_A rule (`auto/candidates/s1_stack.py`). No other tuning.
+- PRIMARY: S - released J++ on the v2 9B test prompts, filtered pass@10, paired bootstrap (r2_boot.py).
+- Secondary: the label-free lens alone (CW) - released; S - A (released + ask-map, V2_e2_A_9b); the same two with the
+  raw-recipe experts (`runs/w1/jpp_Afull_Wtrain.pt`: W, SW); pass@1 and unfiltered for all.
+- Post-hoc (flagged): S and SW on v3, where the label-free lenses were already scored.
+- Known limit: v2's scene prompts are easier than the original's (J++ 61% vs 29%).
