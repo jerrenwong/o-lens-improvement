@@ -76,3 +76,12 @@ Reading: the gain is a 9B effect; on 27B there is no pass@10 gain and top-1 gets
 - A_full - released: -4.4 [-7.0,-2.1].
 Note: on the OLD dev split the order was reversed (W - A_full = -3.8 [-9.4,+1.8]); the labelled fit fold shares templates
 with the old dev/test prompts, and its advantage does not carry to fresh prompts.
+
+## Results, registered secondary T (amendment 4), scored 2026-11-21 00:46-00:53Z (9B, 475 v3 prompts; runs V3_T_9b, V3_T05_9b)
+The standalone scorer reproduces V3_jpp_9b and V3_e2_A_9b exactly (0 of 5,152 rank rows differ).
+- T (J++ + 0.2 * bag-of-visible-words map): .5286 / .3040, unf .5046. T at lam 0.5: .5301 / .2885.
+- T - J++: +1.0 [-1.3,+3.4] (lam 0.5: +1.1 [-1.4,+3.9]). A - T: +2.7 [+1.1,+4.4]; unfiltered +1.8 [+0.2,+3.6].
+- Concept slots gained over J++: A 46, T 25, both 17. Association: A 9, T 1. Multilingual: A 25, T 18 (11 shared).
+Reading: on fresh prompts the visible-words map does NOT reproduce the ask-map's gain (it did on the old dev split,
+.6282 vs .6265). About a third of A's gains are matched by visible words, mostly on multilingual prompts; the gain on
+scene prompts needs the model's activations.

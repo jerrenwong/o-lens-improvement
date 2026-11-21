@@ -230,6 +230,11 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   the old benchmark's templates. => a LABEL-FREE J++ (weights from generated hidden-word sentences) matches the
   released lens on fresh prompts.
 
+- CORRECTION (registered T on v3, 9B): the bag-of-visible-words map gives +1.0 [-1.3,+3.4] over J++ on fresh prompts,
+  while the ask-map gives +3.7; A - T = +2.7 [+1.1,+4.4]. Only 17 of A's 46 gained concept slots are also gained by T
+  (association: 1 of 9). So the old-dev finding "a bag of visible words gets the whole gain" does not hold on fresh
+  prompts: roughly a third of the ask-map's gain is a visible-text topic guess, the rest needs activations.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
