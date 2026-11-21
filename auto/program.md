@@ -211,6 +211,15 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   alone .051; on association M reads the literal last event (poverty -> purchases) and cannot output names (names
   are excluded from its training words).
 
+- J++ EXPERT WEIGHTS FROM GENERATED DATA (w1; data/evals_gen, runs/w1; wrapper scripts/w1_jpp2.py reproduces the
+  authors' fit bit-identically on fit:0; chunked fitter for memory): weights fitted on 4,000 generated hidden-word
+  sentences are stable across disjoint subsets (cos .85-.99 from L8) but differ from benchmark-fit weights (cos
+  .04-.90). On held-out GENERATED words: A experts .199 -> .295 (+9.6 [+7.3,+12.0]); C experts .254 -> .313 (+5.9).
+  On the BENCHMARK dev: A -3.8 [-9.4,+1.8], pass@1 -10.8 [-18.1,-3.2] (typo, multihop lost); C -2.3, pass@1 -8.1.
+  Spread across W-a/b/c on dev still 3.4 points. => J++'s weights are distribution-specific; the released lens is
+  partly a fit to the benchmark's formats. CAVEAT for al1/al2: their J++ baseline had benchmark-tuned weights; a
+  rerun against generated-fit J++ is requested from al2.
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,
