@@ -66,3 +66,8 @@ Released J++ .6427 (V2_jpp_9b). lam chosen on fit = 1.0 for both stacks.
 Reading: the two pieces do not add. Label-free weights + ask-map = ask-map on the released lens at pass@10 and is
 worse at pass@1 on v2. Label-free weights lose top-1 on v2 (-2.5 to -4.9). Best lens on fresh prompts stays
 A = released J++ + ask-map.
+
+## Amendment 3 (2026-11-21 08:38Z, written and committed BEFORE any ask3 lens is scored on v2 or v3)
+Same registration as PREREG_v3.md Amendment 5 (clean chat-format ask-map C = `ask3_A.py`, control
+`ask3_C_shuf.py`, both models, --lite scoring with the J++ reproduction guard). On v2 the test C - J++ (pass@10
+filtered, macro over tasks, mean over 9B and 27B) is the registered replication; secondaries as listed there.

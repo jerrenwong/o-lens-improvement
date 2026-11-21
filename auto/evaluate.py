@@ -69,6 +69,9 @@ def main() -> None:
     ap.add_argument("--split", default="dev", choices=["dev", "test", "heldout"])
     ap.add_argument("--name", default=None)
     ap.add_argument("--orchestrator", action="store_true")
+    ap.add_argument("--lite", action="store_true",
+                    help="load only the final norm + LM head + tokenizer (scripts/perf1/lite_model.py); "
+                         "candidates that need forward passes fail with a clear error")
     args = ap.parse_args()
     if args.split in ("test", "heldout") and not args.orchestrator:
         sys.exit(f"--split {args.split} is reserved for the orchestrator (pass --orchestrator)")
@@ -102,9 +105,14 @@ def main() -> None:
     assert not set(idx) & set(fit_idx)
 
     # ---- model and ctx
-    model = get_hf_model(args.model, attn_implementation="sdpa")
-    for p in model._hf_model.parameters():
-        p.requires_grad_(False)
+    if args.lite:  # perf1: same unembed code and weights, no decoder layers loaded
+        sys.path.insert(0, str(ROOT / "scripts" / "perf1"))
+        from lite_model import get_lite_model, lite_blocked
+        model = get_lite_model(args.model)
+    else:
+        model = get_hf_model(args.model, attn_implementation="sdpa")
+        for p in model._hf_model.parameters():
+            p.requires_grad_(False)
 
     def lens_dict(path):
         L = load_lens_file(str(ROOT / path), hf_model_name=args.model)
@@ -121,8 +129,9 @@ def main() -> None:
     ctx = SimpleNamespace(
         model=model, J=lens_dict(cfg["J"]), JPP=lens_dict(cfg["JPP"]), fit=fit,
         dict_path=lambda layer, space: str(ROOT / cfg["dicts"](layer, space)),
-        wikitext=lambda wsplit, n: wikitext_windows(model.tokenizer, wsplit, n, 128, Path("/root/cache"),
-                                                   para_start=True),
+        wikitext=(lite_blocked("ctx.wikitext") if args.lite else
+                  lambda wsplit, n: wikitext_windows(model.tokenizer, wsplit, n, 128, Path("/root/cache"),
+                                                     para_start=True)),
         readout_layers=list(cfg["layers"]), device=dev,
     )
     si = torch.as_tensor(idx, dtype=torch.long)
@@ -175,7 +184,7 @@ def main() -> None:
     (out_dir / "summary.json").write_text(json.dumps(dict(
         lens=str(lens_path), model=args.model, split=args.split, pass10=p10, pass1=p1, pass10_unf=p10u,
         pass1_unf=p1u, per_task_pass10=per_task, build_seconds=build_s, peak_vram_gb=peak_gb,
-        n_items=len(idx), total_seconds=total_s), indent=1))
+        n_items=len(idx), total_seconds=total_s, **({"lite": True} if args.lite else {})), indent=1))
 
     pre = args.split
 

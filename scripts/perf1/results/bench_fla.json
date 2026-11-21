@@ -1,0 +1,48 @@
+{
+ "mode": "fla",
+ "python": "/root/jpp_lens/.venv/bin/python",
+ "kernels": {
+  "module_globals": {
+   "chunk": "fla.ops.gated_delta_rule.chunk",
+   "recurrent": "fla.ops.gated_delta_rule.fused_recurrent",
+   "gated_norm": "fla.modules.norm.fused_norm_gate",
+   "conv_fn": null,
+   "conv_update": null
+  },
+  "layer_kernels": {
+   "n_linear_layers": 24,
+   "chunk": "fla.ops.gated_delta_rule.chunk",
+   "recurrent": "fla.ops.gated_delta_rule.fused_recurrent",
+   "norm": "fla.modules.norm.fused_norm_gate",
+   "conv_fn": null,
+   "conv_update": "transformers.models.qwen3_5.modeling_qwen3_5"
+  }
+ },
+ "gpu_at_start": "95 %, 48856 MiB",
+ "fla_version": "0.6.0",
+ "causal_conv1d": null,
+ "fwd_al2_bs128": {
+  "n": 2000,
+  "tokens": 42918,
+  "best_s": 4.043351173400879,
+  "tokens_per_s": 10614.462647304883,
+  "sents_per_s": 494.6392025399545
+ },
+ "fwd_al2_bs32": {
+  "n": 2000,
+  "tokens": 42918,
+  "best_s": 4.202438592910767,
+  "tokens_per_s": 10212.641791458846,
+  "sents_per_s": 475.9141521719952
+ },
+ "gpu_after_fwd": "0 %, 49814 MiB",
+ "peak_alloc_gb": 19.993769472,
+ "fwd_fewshot_bs64": {
+  "n": 300,
+  "tokens": 61200,
+  "mean_len": 204.0,
+  "best_s": 4.3949034214019775,
+  "tokens_per_s": 13925.220677654199
+ },
+ "gpu_after_fewshot": "100 %, 52552 MiB"
+}

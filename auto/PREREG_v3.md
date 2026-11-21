@@ -96,3 +96,31 @@ Labelled (benchmark-fit) weights: A_full .4746, A_64a .4806, A_64b .4829 (each -
 Reading: the +5 over the labelled fit is reproducible for the raw-recipe experts (three labelled draws all near .48,
 four label-free fits near .53). For the natural-format experts the two are close. Label-free weights are never worse
 than the released lens on fresh prompts and are better unfiltered.
+
+## Amendment 5 (2026-11-21 08:38Z, written and committed BEFORE any ask3 lens is scored on v2 or v3)
+Why. Two faults were found in the registered ask-map A on 2026-11-21. (1) Prompt leak: formats E1 and E2 used seven
+benchmark concept words as few-shot example answers (volcano, business, medicine, snow, music, football, weather).
+(2) On Qwen3.6-27B the model's next token after the raw few-shot question was a blank line for 98/71/95% of prefixes
+(it opens a think block), so the 27B map was fit on blank-line states.
+Lens C (`auto/candidates/ask3_A.py`, both models): J++ + lam * E_t3. E_t3 is the same ridge recipe as A, with targets
+elicited through the chat template (thinking off, assistant turn prefilled with the question label), three wordings
+whose example answers are not on the benchmark concept list (fishing, politics, baking, kindness; eruption, finance,
+illness, blizzard; symphony, exploration, sports, programming). lam is chosen on the FIT split from
+{0.1,0.2,0.3,0.5,1.0,2.0} at build time (dev runs chose 0.2 on 9B and 0.5 on 27B). Control: `ask3_C_shuf.py`
+(shuffled targets, same lam). Dev scores already seen: 9B C .6309/.3961 (A .6265/.4042, J++ .5952/.3850); 27B C
+.6595/.3961 (A .6609/.3940, J++ .6153/.3731).
+PRIMARY (one test on v3; the same test on v2 is the registered replication): C - J++, pass@10 with the readout
+filter, macro over tasks, mean over Qwen3.5-9B and Qwen3.6-27B, paired bootstrap (items resampled within task, 5000
+draws, same draws for all lenses).
+SECONDARY (reported whatever they show): per model C - J++; C - A per model and pooled (A = the registered runs
+V*_e2_A_9b and V*_m27_A_27b); pass@1; unfiltered pass@10; C - shuffled; v2 + v3 pooled.
+Reading rule, fixed now. If C - J++ excludes zero and C - A is within noise on 9B, the leak caveat is removed and the
+claim rests on C. If C - J++ on 9B does not exclude zero on either set, the registered A result is reported with the
+caveat that part of it may come from the leaked example words. For 27B: a C - J++ interval excluding zero would make
+the ask-map a two-model result; otherwise 27B stays "no gain".
+My predictions: 9B C - J++ between +2 and +4, C - A within +-2; 27B C - J++ between 0 and +2, unfiltered better than A.
+Scoring mode. Runs use `--lite` (scripts/perf1/lite_model.py: only the final norm, LM head and tokenizer are loaded;
+unembed verified bitwise equal to the full model on 9B, /root/perf1/a9_check.log) because the 27B model no longer
+fits beside other jobs. Guard: J++ (`jpp.py`) is rescored with --lite on each set and model first and must reproduce
+the stored per-item ranks of V*_jpp_* exactly; if any differ, every run of this amendment is redone without --lite.
+Run names: V{2,3}_jpplite_{9b,27b}, V{2,3}_C3_{9b,27b}, V{2,3}_C3shuf_{9b,27b}.

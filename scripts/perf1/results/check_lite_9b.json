@@ -1,0 +1,49 @@
+{
+ "model": "Qwen/Qwen3.5-9B",
+ "lite_load_s": 17.655062437057495,
+ "lite_alloc_gb": 2.034245632,
+ "full_load_s": 28.32438850402832,
+ "norm_class_same": true,
+ "head_class_same": true,
+ "norm_weight_equal": true,
+ "head_weight_equal": true,
+ "dtypes": [
+  "torch.bfloat16",
+  "torch.bfloat16",
+  "torch.bfloat16",
+  "torch.bfloat16"
+ ],
+ "norm_eps": [
+  1e-06,
+  1e-06
+ ],
+ "attrs_equal": {
+  "d_model": true,
+  "n_layers": true,
+  "softcap": true
+ },
+ "unembed_rows_checked": 2581,
+ "unembed_rows_not_bitwise_equal_chunk1": 0,
+ "unembed_chunks_not_bitwise_equal_chunk64": 0,
+ "final_linear_equal": true,
+ "tokenizer": {
+  "cls_same": true,
+  "add_bos": [
+   false,
+   false
+  ],
+  "len_equal": true,
+  "vocab_equal": true,
+  "encodings_equal": true,
+  "batch_equal": true
+ },
+ "blocked": {
+  "layers": "raises LiteModelError",
+  "forward": "raises LiteModelError",
+  "_hf_model": "raises LiteModelError",
+  "input_device": "raises LiteModelError",
+  "encode": "raises LiteModelError"
+ },
+ "full_peak_alloc_gb": 31.258404864,
+ "ALL_OK": true
+}
