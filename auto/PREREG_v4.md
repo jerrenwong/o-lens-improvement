@@ -24,3 +24,28 @@ it holds only through 9B (27B interval includes zero), it is reported as a 9B ga
 fails, the v2/v3 secondary result is reported as not replicated.
 My predictions: both models +1.5 to +3.5; 9B +2 to +4; 27B +0.5 to +3 (I expect the 27B interval may include zero on a
 single set of about 500 prompts).
+
+## Results (scored 2026-11-21 12:08Z, once, by scripts/c5_run.sh with --lite; bootstrap scripts/c5_boot.py -> scripts/results/c5_boot.txt)
+v4 set: 614 prompts frozen and committed (99de122) before scoring; 482 scored on 9B, 520 on 27B. J++ sanity run first:
+9B .5395 / .3175, 27B .5890 / .3507. L chose lam 0.3 on 9B and 0.2 on 27B at build time, as before.
+PRIMARY: L - J++, pass@10 filtered, mean over 9B and 27B: 56.4 -> 60.7 = +4.3 [+2.7, +6.0] (bootstrap p < 0.001). The
+interval excludes zero: the registered primary HOLDS.
+SECONDARY
+- Per model, L - J++: 9B pass@10 +6.5 [+3.9, +9.4], pass@1 +2.4 [+0.3, +4.6], unfiltered pass@10 +7.3 [+4.8, +10.0];
+  27B pass@10 +2.1 [+0.4, +3.9], pass@1 +0.9 [-0.5, +2.4], unfiltered pass@10 +2.8 [+0.9, +4.7]. Prompts where L is
+  better / worse than J++ (pass@10): 9B 44 / 8, 27B 27 / 15.
+- Both models, L - J++: pass@1 +1.7 [+0.3, +3.0]; unfiltered pass@10 +5.0 [+3.5, +6.7].
+- C - J++ (weight chosen for pass@10 only): 9B +4.1 [+2.1, +6.3], 27B +1.4 [-1.1, +3.9]; pass@1 9B +1.6, 27B -2.0
+  [-4.1, +0.1]. G - J++: as C on pass@10; pass@1 27B -1.7 [-3.7, +0.3]. L - C: pass@10 both models +1.6 [+0.4, +2.8];
+  pass@1 on 27B +2.9 [+1.1, +4.7].
+- Shuffled control (C's weights) - J++: 9B +2.2 [-0.0, +4.6] pass@10 and -1.7 [-3.4, -0.1] pass@1; 27B -5.1 [-7.4,
+  -2.9] and -8.1.
+- v2 + v3 + v4 pooled, L - J++: both models pass@10 +3.4 [+2.5, +4.3], pass@1 +1.5 [+0.7, +2.3], unfiltered pass@10
+  +4.2 [+3.3, +5.1]; 9B pass@10 +4.6 [+3.2, +6.1], pass@1 +2.5 [+1.1, +3.9]; 27B pass@10 +2.2 [+1.2, +3.1], pass@1 +0.4
+  [-0.5, +1.4].
+Reading, by the rule fixed above: the primary holds, and 27B's own interval excludes zero on v4 as well. L improves J++
+on both models on three fresh prompt sets. On 27B the gain is in the top 10; the best guess is unchanged.
+Predictions: both models +1.5..+3.5 (actual +4.3, above); 9B +2..+4 (actual +6.5, above); 27B +0.5..+3 (actual +2.1,
+and I expected its interval might include zero; it does not).
+Caveat noted for honesty: on 9B the shuffled-target control at a small weight shows a small, non-significant pass@10
+lift on v4 (+2.2) with a pass@1 loss; pooled over three sets it is +0.8 [-0.4, +2.0]. L's gain is well above it.
