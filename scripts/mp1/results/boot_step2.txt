@@ -1,0 +1,12 @@
+Jrel|mean                        - Jrel|last                  (0.084, 0.063, 0.104)
+Jgen|mean                        - Jgen|last                  (0.069, 0.048, 0.088)
+Jgen|half                        - Jgen|last                  (0.08, 0.063, 0.097)
+Jgen|half                        - Jgen|mean                  (0.011, 0.001, 0.021)
+M_mean                           - M_all                      (0.028, 0.017, 0.039)
+M_half                           - M_all                      (0.007, -0.004, 0.018)
+mix|Jgen+M_mean (mean)           - mix|Jgen+M_all (last)      (0.08, 0.064, 0.097)
+mix|Jgen(last)+M_mean(mean)      - mix|Jgen+M_all (last)      (0.047, 0.037, 0.056)
+mix|Jgen+M_mean (mean)           - Jgen|mean                  (0.169, 0.146, 0.193)
+mix|Jgen+M_mean_shuf (mean)      - Jgen|mean                  (-0.003, -0.018, 0.013)
+Jgen|mean Jgen|last [-0.001, 0.019, 0.031, 0.056, 0.112, 0.104, 0.068]
+M_mean M_all [0.073, 0.041, 0.059, 0.072, 0.043, 0.026, 0.024]

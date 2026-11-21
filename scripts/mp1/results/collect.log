@@ -1,0 +1,30 @@
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1005.59it/s]
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights: 100%|██████████| 427/427 [00:00<00:00, 5888.73it/s]
+00:48:22 model loaded; 118892 sentences; tokens mean 21.5 min 6 max 45 total 2553873
+00:54:30 phase1 forward 362s
+00:55:08 L4 saved; norms {'tok0': 21.589037880796294, 'rest_mean': 15.45538148408189, 'max': 21.798473694778263, 'mean_vec': 14.322983741760254, 'half_vec': 13.808920860290527}; check {'cos_min': 0.9999997615814209, 'cos_mean_vs_last': 0.9274663329124451, 'cos_half_vs_last': 0.9275197982788086}
+00:55:34 L8 saved; norms {'tok0': 54.00213941722267, 'rest_mean': 24.81584906227531, 'max': 54.002139466505845, 'mean_vec': 21.548912048339844, 'half_vec': 21.11701202392578}; check {'cos_min': 0.9999999403953552, 'cos_mean_vs_last': 0.8805593848228455, 'cos_half_vs_last': 0.8861914277076721}
+00:55:56 L12 saved; norms {'tok0': 73.81337964868047, 'rest_mean': 32.82459137355744, 'max': 73.81337933655371, 'mean_vec': 28.245058059692383, 'half_vec': 28.248544692993164}; check {'cos_min': 1.0, 'cos_mean_vs_last': 0.8490082025527954, 'cos_half_vs_last': 0.8564532995223999}
+00:56:20 L16 saved; norms {'tok0': 71.05231007020687, 'rest_mean': 39.28191082455832, 'max': 71.05231195939517, 'mean_vec': 31.788705825805664, 'half_vec': 32.927040100097656}; check {'cos_min': 1.000000238418579, 'cos_mean_vs_last': 0.7768484950065613, 'cos_half_vs_last': 0.7899256944656372}
+00:56:41 L20 saved; norms {'tok0': 52.465986047575406, 'rest_mean': 66.03710961262446, 'max': 72.71091137305206, 'mean_vec': 46.15452575683594, 'half_vec': 50.32284927368164}; check {'cos_min': 1.0000004768371582, 'cos_mean_vs_last': 0.6055728197097778, 'cos_half_vs_last': 0.6187314987182617}
+00:57:04 L24 saved; norms {'tok0': 106.6026618773221, 'rest_mean': 115.13209796246227, 'max': 126.82041084296738, 'mean_vec': 79.02786254882812, 'half_vec': 85.43131256103516}; check {'cos_min': 1.0000003576278687, 'cos_mean_vs_last': 0.633518397808075, 'cos_half_vs_last': 0.6347008943557739}
+00:57:32 L28 saved; norms {'tok0': 130.4145157238446, 'rest_mean': 176.5808709108047, 'max': 193.0259632993201, 'mean_vec': 131.9574432373047, 'half_vec': 140.7595977783203}; check {'cos_min': 1.000000238418579, 'cos_mean_vs_last': 0.7229523658752441, 'cos_half_vs_last': 0.720843493938446}
+Traceback (most recent call last):
+  File "/root/mp1/mp1_collect.py", line 167, in <module>
+    r = retry(one2, sub)
+        ^^^^^^^^^^^^^^^^
+  File "/workspace/o-lens-improvement/scripts/al2/al2_common.py", line 99, in retry
+    return fn(*a, **k)
+           ^^^^^^^^^^^
+  File "/root/mp1/mp1_collect.py", line 140, in one2
+    v = H.reshape(B * n, d) @ J.T
+                              ^^^
+AttributeError: 'dict' object has no attribute 'T'
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1073.95it/s]
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights: 100%|██████████| 427/427 [00:00<00:00, 6797.18it/s]
+00:59:12 model loaded; 118892 sentences; tokens mean 21.5 min 6 max 45 total 2553873
+01:01:34 phase2 per-token 136s
+01:01:35 done 179s
+COLLECT_DONE

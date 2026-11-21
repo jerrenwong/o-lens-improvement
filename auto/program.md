@@ -235,6 +235,15 @@ Qualitative findings, Qwen3.5-9B (fit+dev, 231 prompts):
   (association: 1 of 9). So the old-dev finding "a bag of visible words gets the whole gain" does not hold on fresh
   prompts: roughly a third of the ask-map's gain is a visible-text topic guess, the rest needs activations.
 
+- TOKEN-MEAN READING (mp1; scripts/mp1, .hf27/mp1): on al2's 400 unseen test words, top-10 any of 7 layers, last token
+  -> mean over all tokens: released J++ .186 -> .270; generated-fit J++ .243 -> .312 (+.069 [.048,.088]); map .281 ->
+  .309 (M refit on means); mix (gen-fit J++ + 0.3 map) .401 -> .481 (+.080 [.064,.097]); shuffled-map mix .310. Best
+  single position is WORSE than the last token (.16): the gain is from averaging. J++ gains at L16-28, the map at
+  every layer; dialogue style gains most (.176 -> .324). BENCHMARK dev (changes the convention: reads the whole
+  prompt): J++ on the mean alone .512 (-8.3 [-14.3,-2.6]; it reads surface words: wine, table, flag);
+  J(readout) + 0.3 J(mean) .618 = +2.3 [+0.5,+4.3]; J(readout) + 0.1 M_mean +0.5 [-1.6,+2.7].
+  NOTE: do not run `fleet ls` / `fleet refresh` for wong-olens2 (resets its address; re-enter 31.24.80.45:10607).
+
 ## What is already known (do not rediscover)
 Scores are pass@10 on the old held-out split (dev + test together), 9B unless stated.
 - Logit lens 32.4. J-lens 38.6. J++ 58.8 (J++ unfiltered 55.9). J++ per task: association 29, multihop 91,

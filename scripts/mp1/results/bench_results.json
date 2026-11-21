@@ -1,0 +1,1310 @@
+{
+ "check_fit": {
+  "n": 75,
+  "tokens_ok": 75,
+  "min_cos_hook_vs_bench": 0.9998875260353088,
+  "mean_tokens": 16.773333333333333,
+  "max_tokens": 37
+ },
+ "check_dev": {
+  "n": 156,
+  "tokens_ok": 156,
+  "min_cos_hook_vs_bench": 0.9998652935028076,
+  "mean_tokens": 16.224358974358974,
+  "max_tokens": 35
+ },
+ "fit_pass10": {
+  "1_Jread": 0.5298,
+  "2_Jmean": 0.4569,
+  "6_Mmean_alone": 0.0177,
+  "4_JJ_lam0.3": 0.5469,
+  "4_JJ_lam1.0": 0.543,
+  "5_JM_lam0.1": 0.4639,
+  "5_JM_lam0.3": 0.4102,
+  "5_JM_lam1.0": 0.2469
+ },
+ "lam4": 0.3,
+ "lam5": 0.1,
+ "dev": {
+  "1_Jread": {
+   "pass10": 0.5952,
+   "pass1": 0.385,
+   "per10": {
+    "association": 0.3171,
+    "multihop": 0.9643,
+    "multilingual": 0.6889,
+    "poetry": 0.0312,
+    "typo": 0.9744
+   },
+   "per1": {
+    "association": 0.1463,
+    "multihop": 0.5,
+    "multilingual": 0.4528,
+    "poetry": 0.0312,
+    "typo": 0.7949
+   }
+  },
+  "2_Jmean": {
+   "pass10": 0.5121,
+   "pass1": 0.2172,
+   "per10": {
+    "association": 0.2439,
+    "multihop": 0.7857,
+    "multilingual": 0.6222,
+    "poetry": 0.0625,
+    "typo": 0.8462
+   },
+   "per1": {
+    "association": 0.0488,
+    "multihop": 0.2857,
+    "multilingual": 0.3667,
+    "poetry": 0.0,
+    "typo": 0.3846
+   }
+  },
+  "6_Mmean_alone": {
+   "pass10": 0.0429,
+   "pass1": 0.0033,
+   "per10": {
+    "association": 0.0,
+    "multihop": 0.0714,
+    "multilingual": 0.0917,
+    "poetry": 0.0,
+    "typo": 0.0513
+   },
+   "per1": {
+    "association": 0.0,
+    "multihop": 0.0,
+    "multilingual": 0.0167,
+    "poetry": 0.0,
+    "typo": 0.0
+   }
+  },
+  "4_JJ_lam0.3": {
+   "pass10": 0.6178,
+   "pass1": 0.401,
+   "per10": {
+    "association": 0.3659,
+    "multihop": 0.9643,
+    "multilingual": 0.7222,
+    "poetry": 0.0625,
+    "typo": 0.9744
+   },
+   "per1": {
+    "association": 0.1951,
+    "multihop": 0.5714,
+    "multilingual": 0.4694,
+    "poetry": 0.0,
+    "typo": 0.7692
+   }
+  },
+  "4_JJ_lam1.0": {
+   "pass10": 0.6174,
+   "pass1": 0.3698,
+   "per10": {
+    "association": 0.3659,
+    "multihop": 0.9286,
+    "multilingual": 0.7556,
+    "poetry": 0.0625,
+    "typo": 0.9744
+   },
+   "per1": {
+    "association": 0.1707,
+    "multihop": 0.5,
+    "multilingual": 0.4861,
+    "poetry": 0.0,
+    "typo": 0.6923
+   }
+  },
+  "5_JM_lam0.1": {
+   "pass10": 0.6004,
+   "pass1": 0.4048,
+   "per10": {
+    "association": 0.2927,
+    "multihop": 0.9643,
+    "multilingual": 0.7083,
+    "poetry": 0.0625,
+    "typo": 0.9744
+   },
+   "per1": {
+    "association": 0.0976,
+    "multihop": 0.5714,
+    "multilingual": 0.4778,
+    "poetry": 0.0312,
+    "typo": 0.8462
+   }
+  },
+  "5_JM_lam0.3": {
+   "pass10": 0.5293,
+   "pass1": 0.3246,
+   "per10": {
+    "association": 0.2683,
+    "multihop": 0.7857,
+    "multilingual": 0.6639,
+    "poetry": 0.0312,
+    "typo": 0.8974
+   },
+   "per1": {
+    "association": 0.0488,
+    "multihop": 0.4286,
+    "multilingual": 0.4278,
+    "poetry": 0.0,
+    "typo": 0.7179
+   }
+  },
+  "5_JM_lam1.0": {
+   "pass10": 0.2955,
+   "pass1": 0.0963,
+   "per10": {
+    "association": 0.0488,
+    "multihop": 0.4286,
+    "multilingual": 0.4361,
+    "poetry": 0.0,
+    "typo": 0.5641
+   },
+   "per1": {
+    "association": 0.0,
+    "multihop": 0.1429,
+    "multilingual": 0.2361,
+    "poetry": 0.0,
+    "typo": 0.1026
+   }
+  },
+  "3_best_of_both": {
+   "pass10": 0.6458,
+   "pass1": 0.4225,
+   "per10": {
+    "association": 0.3902,
+    "multihop": 0.9643,
+    "multilingual": 0.7806,
+    "poetry": 0.0938,
+    "typo": 1.0
+   },
+   "per1": {
+    "association": 0.1707,
+    "multihop": 0.5714,
+    "multilingual": 0.5444,
+    "poetry": 0.0312,
+    "typo": 0.7949
+   }
+  },
+  "4_JJ": {
+   "pass10": 0.6178,
+   "pass1": 0.401,
+   "per10": {
+    "association": 0.3659,
+    "multihop": 0.9643,
+    "multilingual": 0.7222,
+    "poetry": 0.0625,
+    "typo": 0.9744
+   },
+   "per1": {
+    "association": 0.1951,
+    "multihop": 0.5714,
+    "multilingual": 0.4694,
+    "poetry": 0.0,
+    "typo": 0.7692
+   }
+  },
+  "5_JM": {
+   "pass10": 0.6004,
+   "pass1": 0.4048,
+   "per10": {
+    "association": 0.2927,
+    "multihop": 0.9643,
+    "multilingual": 0.7083,
+    "poetry": 0.0625,
+    "typo": 0.9744
+   },
+   "per1": {
+    "association": 0.0976,
+    "multihop": 0.5714,
+    "multilingual": 0.4778,
+    "poetry": 0.0312,
+    "typo": 0.8462
+   }
+  }
+ },
+ "dev_unf": {
+  "1_Jread": 0.5718,
+  "2_Jmean": 0.4866
+ },
+ "ci": {
+  "1_Jread": {
+   "p10": [
+    0.5952,
+    0.5556,
+    0.634
+   ],
+   "p1": [
+    0.385,
+    0.3191,
+    0.4486
+   ]
+  },
+  "2_Jmean": {
+   "p10": [
+    0.5121,
+    0.4477,
+    0.5702
+   ],
+   "p1": [
+    0.2172,
+    0.1607,
+    0.2782
+   ]
+  },
+  "3_best_of_both": {
+   "p10": [
+    0.6458,
+    0.6035,
+    0.6884
+   ],
+   "p1": [
+    0.4225,
+    0.3559,
+    0.4867
+   ]
+  },
+  "4_JJ": {
+   "p10": [
+    0.6178,
+    0.5758,
+    0.6574
+   ],
+   "p1": [
+    0.401,
+    0.3351,
+    0.465
+   ]
+  },
+  "5_JM": {
+   "p10": [
+    0.6004,
+    0.5601,
+    0.6392
+   ],
+   "p1": [
+    0.4048,
+    0.3389,
+    0.4654
+   ]
+  },
+  "6_Mmean_alone": {
+   "p10": [
+    0.0429,
+    0.0167,
+    0.0784
+   ],
+   "p1": [
+    0.0033,
+    0.0,
+    0.0083
+   ]
+  }
+ },
+ "boot_vs_1": {
+  "2_Jmean": {
+   "p10": [
+    -0.0831,
+    -0.1431,
+    -0.0259
+   ],
+   "p1": [
+    -0.1679,
+    -0.2379,
+    -0.0932
+   ]
+  },
+  "3_best_of_both": {
+   "p10": [
+    0.0506,
+    0.0261,
+    0.0803
+   ],
+   "p1": [
+    0.0375,
+    0.0149,
+    0.0726
+   ]
+  },
+  "4_JJ": {
+   "p10": [
+    0.0227,
+    0.005,
+    0.0434
+   ],
+   "p1": [
+    0.016,
+    -0.0191,
+    0.0574
+   ]
+  },
+  "5_JM": {
+   "p10": [
+    0.0053,
+    -0.0156,
+    0.0271
+   ],
+   "p1": [
+    0.0198,
+    -0.0126,
+    0.0596
+   ]
+  }
+ },
+ "assoc_changes": [
+  {
+   "item": "air-h",
+   "concept": "air",
+   "r1": 6,
+   "r2": 2,
+   "r4": 1,
+   "r5": 12
+  },
+  {
+   "item": "field-h",
+   "concept": "field",
+   "r1": 44,
+   "r2": 5,
+   "r4": 15,
+   "r5": 77
+  },
+  {
+   "item": "fr-pere",
+   "concept": "père",
+   "r1": 138,
+   "r2": 5,
+   "r4": 27,
+   "r5": 110
+  },
+  {
+   "item": "game-h",
+   "concept": "game",
+   "r1": 2,
+   "r2": 12,
+   "r4": 1,
+   "r5": 3
+  },
+  {
+   "item": "horror",
+   "concept": "horror",
+   "r1": 1,
+   "r2": 180,
+   "r4": 5,
+   "r5": 3
+  },
+  {
+   "item": "neighbors",
+   "concept": "neighbors",
+   "r1": 14,
+   "r2": 20,
+   "r4": 27,
+   "r5": 9
+  },
+  {
+   "item": "office-h",
+   "concept": "office",
+   "r1": 15,
+   "r2": 4,
+   "r4": 10,
+   "r5": 17
+  },
+  {
+   "item": "pregnant",
+   "concept": "pregnant",
+   "r1": 5,
+   "r2": 170,
+   "r4": 6,
+   "r5": 4
+  },
+  {
+   "item": "science-h",
+   "concept": "science",
+   "r1": 1,
+   "r2": 175,
+   "r4": 1,
+   "r5": 1
+  },
+  {
+   "item": "search-h",
+   "concept": "search",
+   "r1": 8,
+   "r2": 30,
+   "r4": 5,
+   "r5": 17
+  },
+  {
+   "item": "time-h",
+   "concept": "time",
+   "r1": 12,
+   "r2": 11,
+   "r4": 9,
+   "r5": 15
+  },
+  {
+   "item": "underwater",
+   "concept": "underwater",
+   "r1": 4,
+   "r2": 205,
+   "r4": 2,
+   "r5": 2
+  }
+ ],
+ "assoc_n_concepts": 41,
+ "assoc_layer_hits10": {
+  "1_Jread": {
+   "4": 0,
+   "8": 6,
+   "12": 8,
+   "16": 7,
+   "20": 6,
+   "24": 0,
+   "28": 0
+  },
+  "2_Jmean": {
+   "4": 0,
+   "8": 3,
+   "12": 3,
+   "16": 7,
+   "20": 9,
+   "24": 4,
+   "28": 4
+  },
+  "6_Mmean_alone": {
+   "4": 0,
+   "8": 0,
+   "12": 0,
+   "16": 0,
+   "20": 0,
+   "24": 0,
+   "28": 0
+  }
+ },
+ "qual": [
+  {
+   "item": "pregnant",
+   "text": "She turned down the wine with a small smile and kept one hand on the table edge, not quite touching her stomach.",
+   "concepts": [
+    "pregnant"
+   ],
+   "L": {
+    "12": {
+     "J_read": {
+      "top": [
+       "her",
+       "herself",
+       "she",
+       "pregnancy",
+       "pregnant",
+       "She",
+       "women",
+       "breast"
+      ],
+      "ranks": {
+       "pregnant": 5
+      }
+     },
+     "J_mean": {
+      "top": [
+       "herself",
+       "her",
+       "she",
+       "dinner",
+       "half",
+       "at",
+       "wine",
+       "on"
+      ],
+      "ranks": {
+       "pregnant": 170
+      }
+     },
+     "M_mean": {
+      "top": [
+       "declined",
+       "拒絕",
+       "rejecting",
+       "rejected",
+       "touched",
+       "Rejected",
+       "touches",
+       "disliked"
+      ],
+      "ranks": {
+       "pregnant": 310
+      }
+     }
+    },
+    "20": {
+     "J_read": {
+      "top": [
+       "@s",
+       "@g",
+       "s",
+       "The",
+       "<|endoftext|>",
+       "call",
+       "@example",
+       "is"
+      ],
+      "ranks": {
+       "pregnant": 141
+      }
+     },
+     "J_mean": {
+      "top": [
+       "cup",
+       "drink",
+       "table",
+       "wine",
+       "girl",
+       "hand",
+       "finger",
+       "arm"
+      ],
+      "ranks": {
+       "pregnant": 1457
+      }
+     },
+     "M_mean": {
+      "top": [
+       "touching",
+       "touched",
+       "touch",
+       "declined",
+       "touches",
+       "rejecting",
+       "touches",
+       "Touches"
+      ],
+      "ranks": {
+       "pregnant": 421
+      }
+     }
+    }
+   }
+  },
+  {
+   "item": "poverty",
+   "text": "She did the math twice before the cashier scanned the last item, and put the cereal back without explaining.",
+   "concepts": [
+    "poverty"
+   ],
+   "L": {
+    "12": {
+     "J_read": {
+      "top": [
+       "her",
+       "without",
+       "herself",
+       "because",
+       "she",
+       "no",
+       "/",
+       "a"
+      ],
+      "ranks": {
+       "poverty": 2485
+      }
+     },
+     "J_mean": {
+      "top": [
+       "herself",
+       "her",
+       "shop",
+       "she",
+       "back",
+       "at",
+       "on",
+       "and"
+      ],
+      "ranks": {
+       "poverty": 11232
+      }
+     },
+     "M_mean": {
+      "top": [
+       "Purchase",
+       "Purchase",
+       "purchases",
+       "purchase",
+       "purchase",
+       "bought",
+       "Buying",
+       "purchased"
+      ],
+      "ranks": {
+       "poverty": 136212
+      }
+     }
+    },
+    "20": {
+     "J_read": {
+      "top": [
+       "The",
+       "was",
+       "called",
+       "is",
+       "one",
+       "<|im_end|>",
+       "home",
+       "call"
+      ],
+      "ranks": {
+       "poverty": 14418
+      }
+     },
+     "J_mean": {
+      "top": [
+       "check",
+       "line",
+       "number",
+       "girl",
+       "call",
+       "account",
+       "shop",
+       "box"
+      ],
+      "ranks": {
+       "poverty": 26006
+      }
+     },
+     "M_mean": {
+      "top": [
+       "purchase",
+       "Purchase",
+       "purchase",
+       "Buying",
+       "purchases",
+       "Purchase",
+       "-buy",
+       "bought"
+      ],
+      "ranks": {
+       "poverty": 96506
+      }
+     }
+    }
+   }
+  },
+  {
+   "item": "proposal",
+   "text": "He touched his jacket pocket for the fourth time that evening, rehearsing the words again while the waiter cleared the plates.",
+   "concepts": [
+    "proposal"
+   ],
+   "L": {
+    "12": {
+     "J_read": {
+      "top": [
+       "dinner",
+       "conversation",
+       "his",
+       "evening",
+       "restaurant",
+       "minutes",
+       "night",
+       "scene"
+      ],
+      "ranks": {
+       "proposal": 20834
+      }
+     },
+     "J_mean": {
+      "top": [
+       "his",
+       "dinner",
+       "night",
+       "evening",
+       "and",
+       "before",
+       "on",
+       "himself"
+      ],
+      "ranks": {
+       "proposal": 17263
+      }
+     },
+     "M_mean": {
+      "top": [
+       "スポンサーサイト",
+       "Serving",
+       "servire",
+       "のかもしれ",
+       "abox",
+       "remb",
+       "影幽",
+       "Pocket"
+      ],
+      "ranks": {
+       "proposal": 25190
+      }
+     }
+    },
+    "20": {
+     "J_read": {
+      "top": [
+       "Dinner",
+       "@g",
+       "@s",
+       "dinner",
+       "@example",
+       "call",
+       "gold",
+       "men"
+      ],
+      "ranks": {
+       "proposal": 12698
+      }
+     },
+     "J_mean": {
+      "top": [
+       "gold",
+       "phone",
+       "call",
+       "empty",
+       "card",
+       "face",
+       "automatic",
+       "line"
+      ],
+      "ranks": {
+       "proposal": 14755
+      }
+     },
+     "M_mean": {
+      "top": [
+       "répét",
+       "repeating",
+       "Pocket",
+       "-repeat",
+       "repeated",
+       "repeat",
+       "Serving",
+       "重复"
+      ],
+      "ranks": {
+       "proposal": 36135
+      }
+     }
+    }
+   }
+  },
+  {
+   "item": "relief",
+   "text": "She read the line twice before she let herself breathe, and the paper shook a little as she set it down.",
+   "concepts": [
+    "relief"
+   ],
+   "L": {
+    "12": {
+     "J_read": {
+      "top": [
+       "herself",
+       "confirmation",
+       "her",
+       "she",
+       "confirming",
+       "confirmed",
+       "message",
+       "nothing"
+      ],
+      "ranks": {
+       "relief": 253
+      }
+     },
+     "J_mean": {
+      "top": [
+       "herself",
+       "her",
+       "she",
+       "at",
+       "and",
+       "in",
+       "on",
+       "before"
+      ],
+      "ranks": {
+       "relief": 510
+      }
+     },
+     "M_mean": {
+      "top": [
+       "realised",
+       "文学网",
+       "shocked",
+       "realise",
+       "reads",
+       "shaken",
+       "Reviewed",
+       "Véri"
+      ],
+      "ranks": {
+       "relief": 75805
+      }
+     }
+    },
+    "20": {
+     "J_read": {
+      "top": [
+       "call",
+       "S",
+       "No",
+       "A",
+       "K",
+       "N",
+       "name",
+       "M"
+      ],
+      "ranks": {
+       "relief": 2257
+      }
+     },
+     "J_mean": {
+      "top": [
+       "paper",
+       "reading",
+       "girl",
+       "line",
+       "call",
+       "letter",
+       "p",
+       "page"
+      ],
+      "ranks": {
+       "relief": 1599
+      }
+     },
+     "M_mean": {
+      "top": [
+       "trembling",
+       "realised",
+       "shook",
+       "のかもしれ",
+       "shaken",
+       "shaking",
+       "déro",
+       "breathed"
+      ],
+      "ranks": {
+       "relief": 15269
+      }
+     }
+    }
+   }
+  },
+  {
+   "item": "lincoln",
+   "text": "He folded the two pages back into his coat — the other man had spoken for two hours, and he would need about two minutes.",
+   "concepts": [
+    "Lincoln"
+   ],
+   "L": {
+    "12": {
+     "J_read": {
+      "top": [
+       "time",
+       "his",
+       "at",
+       "minutes",
+       "one",
+       "to",
+       "himself",
+       "he"
+      ],
+      "ranks": {
+       "Lincoln": 1701
+      }
+     },
+     "J_mean": {
+      "top": [
+       "and",
+       "himself",
+       "half",
+       "to",
+       "his",
+       "at",
+       "of",
+       "in"
+      ],
+      "ranks": {
+       "Lincoln": 4809
+      }
+     },
+     "M_mean": {
+      "top": [
+       "folded",
+       "speeches",
+       "lectures",
+       "fold",
+       "talked",
+       "Fold",
+       "Fold",
+       "conversations"
+      ],
+      "ranks": {
+       "Lincoln": 108889
+      }
+     }
+    },
+    "20": {
+     "J_read": {
+      "top": [
+       "@g",
+       "Val",
+       "call",
+       "Little",
+       "one",
+       "men",
+       "@s",
+       "small"
+      ],
+      "ranks": {
+       "Lincoln": 21573
+      }
+     },
+     "J_mean": {
+      "top": [
+       "one",
+       "card",
+       "back",
+       "call",
+       "time",
+       "face",
+       "One",
+       "paper"
+      ],
+      "ranks": {
+       "Lincoln": 15650
+      }
+     },
+     "M_mean": {
+      "top": [
+       "diserta",
+       "gén",
+       "Attra",
+       "Ejem",
+       "serter",
+       "durations",
+       "elpers",
+       "prezi"
+      ],
+      "ranks": {
+       "Lincoln": 214355
+      }
+     }
+    }
+   }
+  },
+  {
+   "item": "obama",
+   "text": "The portraits on the wall had all been one color, and the desk was smaller than he'd expected when he sat down that first January morning.",
+   "concepts": [
+    "Obama"
+   ],
+   "L": {
+    "12": {
+     "J_read": {
+      "top": [
+       "space",
+       "staff",
+       "room",
+       "The",
+       "small",
+       "size",
+       "empty",
+       "It"
+      ],
+      "ranks": {
+       "Obama": 8907
+      }
+     },
+     "J_mean": {
+      "top": [
+       "room",
+       "and",
+       "of",
+       "in",
+       "at",
+       "on",
+       "one",
+       "to"
+      ],
+      "ranks": {
+       "Obama": 21173
+      }
+     },
+     "M_mean": {
+      "top": [
+       "brighter",
+       "sharper",
+       "nicer",
+       "narrower",
+       "thinner",
+       "quicker",
+       "warmer",
+       "happier"
+      ],
+      "ranks": {
+       "Obama": 54278
+      }
+     }
+    },
+    "20": {
+     "J_read": {
+      "top": [
+       "now",
+       "@d",
+       "little",
+       "Now",
+       "Little",
+       "small",
+       "Old",
+       "old"
+      ],
+      "ranks": {
+       "Obama": 22128
+      }
+     },
+     "J_mean": {
+      "top": [
+       "room",
+       "desk",
+       "white",
+       "color",
+       "black",
+       "line",
+       "office",
+       "face"
+      ],
+      "ranks": {
+       "Obama": 19325
+      }
+     },
+     "M_mean": {
+      "top": [
+       "スポンサーサイト",
+       "bigger",
+       "Ilmais",
+       "Istitu",
+       "-gallery",
+       "organised",
+       "edImage",
+       "ARGER"
+      ],
+      "ranks": {
+       "Obama": 46834
+      }
+     }
+    }
+   }
+  },
+  {
+   "item": "churchill",
+   "text": "He lit another cigar in the war room and leaned into the microphone, knowing the sirens above ground were doing half his work for him.",
+   "concepts": [
+    "Churchill"
+   ],
+   "L": {
+    "12": {
+     "J_read": {
+      "top": [
+       "war",
+       "his",
+       "radio",
+       "panic",
+       "War",
+       "himself",
+       "one",
+       "he"
+      ],
+      "ranks": {
+       "Churchill": 1628
+      }
+     },
+     "J_mean": {
+      "top": [
+       "and",
+       "air",
+       "smoke",
+       "radio",
+       "night",
+       "at",
+       "on",
+       "his"
+      ],
+      "ranks": {
+       "Churchill": 6583
+      }
+     },
+     "M_mean": {
+      "top": [
+       "helicopt",
+       "Показа",
+       "cigaret",
+       "Есте",
+       "warta",
+       "のかもしれ",
+       "Еги",
+       "pouc"
+      ],
+      "ranks": {
+       "Churchill": 152492
+      }
+     }
+    },
+    "20": {
+     "J_read": {
+      "top": [
+       "@s",
+       "call",
+       "@g",
+       "@d",
+       "@m",
+       "Val",
+       "war",
+       "Iron"
+      ],
+      "ranks": {
+       "Churchill": 3990
+      }
+     },
+     "J_mean": {
+      "top": [
+       "call",
+       "air",
+       "smoke",
+       "line",
+       "war",
+       "signal",
+       "fire",
+       "black"
+      ],
+      "ranks": {
+       "Churchill": 7386
+      }
+     },
+     "M_mean": {
+      "top": [
+       "cigaret",
+       "denun",
+       "Встре",
+       "cigarette",
+       "让更多读者",
+       "Представи",
+       "Показа",
+       "Porno"
+      ],
+      "ranks": {
+       "Churchill": 165908
+      }
+     }
+    }
+   }
+  },
+  {
+   "item": "armstrong",
+   "text": "His boot sank an inch into the gray dust and the flag behind him wouldn't hang right with nothing there to move it.",
+   "concepts": [
+    "Armstrong"
+   ],
+   "L": {
+    "12": {
+     "J_read": {
+      "top": [
+       "empty",
+       "nothing",
+       "someone",
+       "his",
+       "nearby",
+       "no",
+       "he",
+       "dead"
+      ],
+      "ranks": {
+       "Armstrong": 10109
+      }
+     },
+     "J_mean": {
+      "top": [
+       "at",
+       "on",
+       "in",
+       "back",
+       "and",
+       "to",
+       "behind",
+       "shot"
+      ],
+      "ranks": {
+       "Armstrong": 12578
+      }
+     },
+     "M_mean": {
+      "top": [
+       "wind",
+       "windy",
+       "slash",
+       "marsh",
+       "sank",
+       "embedded",
+       "_pull",
+       "sinking"
+      ],
+      "ranks": {
+       "Armstrong": 167016
+      }
+     }
+    },
+    "20": {
+     "J_read": {
+      "top": [
+       "empty",
+       "silent",
+       "@g",
+       "Empty",
+       "@s",
+       "No",
+       "desert",
+       "silence"
+      ],
+      "ranks": {
+       "Armstrong": 5352
+      }
+     },
+     "J_mean": {
+      "top": [
+       "flag",
+       "wind",
+       "air",
+       "field",
+       "foot",
+       "Flag",
+       "dust",
+       "line"
+      ],
+      "ranks": {
+       "Armstrong": 9741
+      }
+     },
+     "M_mean": {
+      "top": [
+       "windy",
+       "wind",
+       "wind",
+       "_wind",
+       "风的",
+       "Flag",
+       "Winds",
+       "-flag"
+      ],
+      "ranks": {
+       "Armstrong": 155170
+      }
+     }
+    }
+   }
+  }
+ ]
+}
