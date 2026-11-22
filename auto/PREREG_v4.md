@@ -129,3 +129,17 @@ The more conservative of the two differences is the one to quote.
 Unit-scaled J++ on Qwen3.5-2B: original test split .3150 / .1772 (raw J++: .3150 / .1772, identical); v4 .3785 / .2081
 (raw J++ pass@10 .378). The registered 2B differences are unchanged by the choice of reference: original test +13.3
 [+5.9, +20.3], v4 +7.1 [+3.4, +11.4]. The bf16 scale effect seen on 2B dev (+2.5 pass@10) does not appear on these sets.
+
+## Addendum E (2026-11-22 20:08Z, written and committed BEFORE any held-out scoring of these lenses): the two-question A-lens
+The user's simpler definition for presentation. A-lens = the plain average of two ridge regression maps' unit outputs,
+one for the "One-word topic:" question (.hf27/ask3/E_<tag>_t3.pt, the map of lens L) and one for the "Unstated word:"
+question (.hf27/ask5/E_<tag>_s5.pt); no weight between them. Frozen in auto/candidates/alens.py at this commit.
+Five rows per model: J-lens, J++, A-lens alone, J-lens + A-lens, J++ + A-lens (the two sums: unit(base h) + lam * a(h),
+lam on FIT by the usual rule over {0,.05,.1,.2,.3,.5,1,2}). Scored once each, by the orchestrator, on the ORIGINAL test
+split and on v4, for Qwen3.5-9B and Qwen3.6-27B (2B has no unstated-word map yet). Paired bootstrap of J++ + A vs J++,
+J + A vs J, J++ + A vs L, A alone vs J and vs J++.
+What was seen before freezing: on the 9B DEV split, J++ + the same averaged map with a grid up to 1.0 scored .628/.420
+(L .639/.406) and the averaged map alone .530/.063. The definition was chosen for simplicity, not from these numbers.
+Caveats to carry with any result: the unstated-word map's wording was developed with the dev split in view (ask5/ask6);
+these test sets have been scored before with other lenses (this is a further look, of a newly frozen lens).
+Predictions: J++ + A within +-2 of L on both sets; J + A above J by more than 10 points; A alone below J++.
