@@ -43,3 +43,29 @@ The unstated-word map is built exactly like the topic map (same passages, the mo
 grid) with the wordings and clean example answers of scripts/ask5/ask5_collect.py; the same label-free format check
 and single fallback apply. Rows scored once on the test split and on v4: J-lens, J++, A-lens alone, J-lens + A-lens,
 J++ + A-lens (lam on FIT, grid {0,.05,.1,.2,.3,.5,1,2}). The PRIMARY outcome stays L (topic map only) minus J++.
+
+## Results: allenai/Olmo-3-7B-Instruct (scored 2026-11-22 22:44Z, once each, --lite; scripts/xm1_heldout_olmo7b.sh; intervals in scripts/results/xm1_olmo7b_boot.txt)
+Benchmark kept: test 112 items (association 38, multihop 6, multilingual 10, poetry 20, typo 38); v4 340. Format check passed
+(non-word first token 2.2% topic, 11.5% unstated); no fallback used. lam (FIT): L 0.2; J++ + A 0.2; J + A 0.5.
+pass@10 / pass@1:            test            v4
+  J-lens                     .314 / .106     .296 / .123
+  J++ (unit)                 .385 / .265     .312 / .154
+  L = J++ + ask-map          .410 / .281     .410 / .199
+  shuffled-answer control    .400 / .194     .343 / .127
+  constant-only control      .400 / .189     .324 / .139
+  A-lens alone               .372 / .042     .412 / .052
+  J-lens + A-lens            .448 / .228     .431 / .188
+  J++ + A-lens               .427 / .286     .410 / .195
+PRIMARY L - J++ pass@10: test +2.6 [+0.5, +5.6]; v4 +9.8 [+5.4, +14.7] (pass@1: +1.6 [-7.5, +11.1]; +4.5 [+2.2, +6.7]).
+L - shuffled: test +1.1 [-1.0, +3.1], v4 +6.8 [+3.4, +10.8]; L - constant: test +1.1 [-0.9, +3.2], v4 +8.6 [+4.7, +13.1]
+(pass@1: L beats both controls on both sets, +6.0 to +9.2, all intervals above 0).
+By the registered reading: SUPPORTED on v4 (interval above 0, both controls beaten). On the test split L beats J++ but
+not the controls at pass@10 (it does at pass@1). Predictions: +2..+7 on v4 -> observed +9.8 (above); controls within
++-1.5 -> shuffled +3.1 [-1.0, +7.5] on v4 (outside the band, interval includes 0), others inside.
+Secondary (amendment 1): J++ + A - J++: test +4.2 [+1.0, +8.6], v4 +9.8 [+5.4, +14.6]; J + A - J: +13.5 [5.5, 22.2],
++13.5 [9.4, 18.3]; A alone - J++: test -1.3 [-12.5, +10.3], v4 +10.0 [+2.8, +16.9]; J + A - J++: test +6.4 [+0.4, +14.0],
+v4 +11.9 [+5.5, +18.4] (pass@1 -3.7 ns, +3.4 [+0.1, +7.1]); J++ + A - L: +1.7, +0.0.
+Notes: J++ for Olmo is our fit with the authors' default recipe (no released Olmo lens); it is weak on association
+(3%). Olmo answers few multihop/multilingual prompts correctly, so those task cells have 6-23 items.
+google/gemma-4-12B-it could not be run (loads as Gemma4UnifiedForConditionalGeneration; the authors' LRP patcher
+rejects its MLP class) -> the registered reserve google/gemma-4-E4B-it is used.
