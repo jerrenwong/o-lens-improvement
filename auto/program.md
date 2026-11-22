@@ -345,3 +345,8 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   fit pass@10 full/P/N/(P - a*pooled): L20 .31/.21/.15/.27, L28 .25/.15/.15/.14, others full .18-.24 vs P .12-.18 vs
   P-a*pooled .16-.20. N decoded = punctuation early, sentence openers/pronouns late; only at the last layer it carries
   the model's next token. So J++ = positive experts contrasted against the average Jacobian.
+- FIT-TIME PATH REMOVAL (dp1, dev only; runs/dp1/tables.md): the skip path is exactly I in the fitted matrix (targets are
+  summed; computed S = I, also under LRP rules), so "skip removed at fit" == J - I. pass@10/pass@1: 2B J-lens 42.9/20.1 ->
+  40.5/24.7; 9B J-lens 41.3/20.8 -> 35.0/18.1 (-6.3 [-11.4,-1.6]); 2B J++ refit 46.7/25.8 -> 42.5/32.0 (ns). Removing the
+  whole same-position term: -14 / -16 on J-lens (next-token match -> 0, more punctuation), -1.7 on J++. Content-word
+  targets only: +-0.5 on J-lens, +3.1 [-1.2,+8.8] on 2B J++. J++ weight-fit noise ~3.5 points. Not a lead.
