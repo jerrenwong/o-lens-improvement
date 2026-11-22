@@ -1,0 +1,100 @@
+===== 9b TEST
+
+filtered pass@10
+     T_al_JPP_9b - T_al_JPP0_9b    +5.0  [ +1.4,  +8.9]
+       T_al_J_9b - T_al_J0_9b     +20.2  [+14.0, +27.1]
+     T_al_JPP_9b - T_L_9b          +0.3  [ -1.9,  +2.7]
+    T_al_none_9b - T_al_J0_9b     +14.6  [ +7.8, +21.8]
+    T_al_none_9b - T_al_JPP0_9b    -8.3  [-14.7,  -2.4]
+       T_al_J_9b - T_al_JPP0_9b    -2.8  [ -8.4,  +2.3]
+
+filtered pass@1
+     T_al_JPP_9b - T_al_JPP0_9b    +0.4  [ -5.0,  +5.1]
+       T_al_J_9b - T_al_J0_9b      +7.1  [ +2.9, +11.3]
+     T_al_JPP_9b - T_L_9b          -0.8  [ -5.6,  +3.1]
+    T_al_none_9b - T_al_J0_9b     -17.3  [-24.0, -11.1]
+    T_al_none_9b - T_al_JPP0_9b   -32.8  [-39.4, -25.9]
+       T_al_J_9b - T_al_JPP0_9b    -8.3  [-14.1,  -3.2]
+
+unfiltered pass@10
+     T_al_JPP_9b - T_al_JPP0_9b    +6.6  [ +3.0, +10.5]
+       T_al_J_9b - T_al_J0_9b     +21.2  [+15.4, +27.5]
+     T_al_JPP_9b - T_L_9b          +0.5  [ -0.2,  +1.6]
+    T_al_none_9b - T_al_J0_9b     +16.8  [+10.1, +23.9]
+    T_al_none_9b - T_al_JPP0_9b    -6.7  [-12.6,  -1.1]
+       T_al_J_9b - T_al_JPP0_9b    -2.3  [ -7.7,  +2.5]
+===== 9b V4
+
+filtered pass@10
+    V4_al_JPP_9b - V4_al_JPP0_9b   +9.1  [ +6.1, +12.5]
+      V4_al_J_9b - V4_al_J0_9b    +18.5  [+14.7, +22.3]
+    V4_al_JPP_9b - V4_L_9b         +2.6  [ +0.7,  +4.5]
+   V4_al_none_9b - V4_al_J0_9b    +10.3  [ +6.3, +14.4]
+   V4_al_none_9b - V4_al_JPP0_9b   -6.4  [ -9.9,  -2.8]
+      V4_al_J_9b - V4_al_JPP0_9b   +1.8  [ -1.1,  +4.9]
+
+filtered pass@1
+    V4_al_JPP_9b - V4_al_JPP0_9b   +1.3  [ -1.2,  +3.9]
+      V4_al_J_9b - V4_al_J0_9b     +8.3  [ +5.7, +11.1]
+    V4_al_JPP_9b - V4_L_9b         -1.0  [ -2.5,  +0.3]
+   V4_al_none_9b - V4_al_J0_9b    -12.2  [-14.9,  -9.5]
+   V4_al_none_9b - V4_al_JPP0_9b  -28.0  [-31.3, -24.8]
+      V4_al_J_9b - V4_al_JPP0_9b   -7.6  [-10.5,  -4.6]
+
+unfiltered pass@10
+    V4_al_JPP_9b - V4_al_JPP0_9b   +9.9  [ +6.8, +13.1]
+      V4_al_J_9b - V4_al_J0_9b    +21.0  [+17.3, +24.7]
+    V4_al_JPP_9b - V4_L_9b         +2.6  [ +0.8,  +4.5]
+   V4_al_none_9b - V4_al_J0_9b    +12.9  [ +8.7, +17.2]
+   V4_al_none_9b - V4_al_JPP0_9b   -6.5  [-10.2,  -2.8]
+      V4_al_J_9b - V4_al_JPP0_9b   +1.6  [ -1.2,  +4.6]
+===== 27b TEST
+
+filtered pass@10
+    T_al_JPP_27b - T_al_JPP0_27b   +2.0  [ -1.0,  +5.1]
+      T_al_J_27b - T_al_J0_27b    +18.5  [+12.8, +24.5]
+    T_al_JPP_27b - T_L_27b         +0.9  [ -1.3,  +3.1]
+   T_al_none_27b - T_al_J0_27b    +10.1  [ +2.2, +18.1]
+   T_al_none_27b - T_al_JPP0_27b  -12.5  [-18.2,  -6.6]
+      T_al_J_27b - T_al_JPP0_27b   -4.1  [ -9.0,  +1.0]
+
+filtered pass@1
+    T_al_JPP_27b - T_al_JPP0_27b   -0.4  [ -4.2,  +3.1]
+      T_al_J_27b - T_al_J0_27b    +10.7  [ +6.0, +15.6]
+    T_al_JPP_27b - T_L_27b         -0.2  [ -2.7,  +2.3]
+   T_al_none_27b - T_al_J0_27b     -2.5  [ -8.0,  +3.1]
+   T_al_none_27b - T_al_JPP0_27b  -22.0  [-28.1, -16.5]
+      T_al_J_27b - T_al_JPP0_27b   -8.8  [-14.2,  -3.3]
+
+unfiltered pass@10
+    T_al_JPP_27b - T_al_JPP0_27b   +5.0  [ +1.2,  +9.0]
+      T_al_J_27b - T_al_J0_27b    +26.5  [+20.9, +32.5]
+    T_al_JPP_27b - T_L_27b         +3.2  [ +0.5,  +6.5]
+   T_al_none_27b - T_al_J0_27b    +16.3  [ +9.1, +23.6]
+   T_al_none_27b - T_al_JPP0_27b  -11.7  [-17.5,  -5.9]
+      T_al_J_27b - T_al_JPP0_27b   -1.4  [ -6.9,  +4.1]
+===== 27b V4
+
+filtered pass@10
+   V4_al_JPP_27b - V4_al_JPP0_27b  +4.8  [ +2.5,  +7.2]
+     V4_al_J_27b - V4_al_J0_27b   +22.0  [+18.7, +25.2]
+   V4_al_JPP_27b - V4_L_27b        +2.7  [ +1.3,  +4.3]
+  V4_al_none_27b - V4_al_J0_27b    +9.6  [ +5.7, +13.5]
+  V4_al_none_27b - V4_al_JPP0_27b -11.2  [-14.6,  -7.8]
+     V4_al_J_27b - V4_al_JPP0_27b  +1.1  [ -1.6,  +3.9]
+
+filtered pass@1
+   V4_al_JPP_27b - V4_al_JPP0_27b  +2.7  [ +0.7,  +4.8]
+     V4_al_J_27b - V4_al_J0_27b    +8.0  [ +5.3, +10.9]
+   V4_al_JPP_27b - V4_L_27b        +1.7  [ +0.3,  +3.2]
+  V4_al_none_27b - V4_al_J0_27b    -8.1  [-11.1,  -5.0]
+  V4_al_none_27b - V4_al_JPP0_27b -26.0  [-29.1, -22.9]
+     V4_al_J_27b - V4_al_JPP0_27b  -9.9  [-12.6,  -7.2]
+
+unfiltered pass@10
+   V4_al_JPP_27b - V4_al_JPP0_27b  +5.9  [ +3.5,  +8.4]
+     V4_al_J_27b - V4_al_J0_27b   +24.9  [+21.5, +28.2]
+   V4_al_JPP_27b - V4_L_27b        +3.1  [ +1.7,  +4.8]
+  V4_al_none_27b - V4_al_J0_27b   +13.3  [ +9.4, +17.1]
+  V4_al_none_27b - V4_al_JPP0_27b -12.9  [-16.4,  -9.5]
+     V4_al_J_27b - V4_al_JPP0_27b  -1.4  [ -4.1,  +1.3]

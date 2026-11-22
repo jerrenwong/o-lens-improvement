@@ -143,3 +143,18 @@ What was seen before freezing: on the 9B DEV split, J++ + the same averaged map 
 Caveats to carry with any result: the unstated-word map's wording was developed with the dev split in view (ask5/ask6);
 these test sets have been scored before with other lenses (this is a further look, of a newly frozen lens).
 Predictions: J++ + A within +-2 of L on both sets; J + A above J by more than 10 points; A alone below J++.
+
+## Results, addendum E (scored 2026-11-22 21:43Z, once each, --lite; scripts/al1/run.sh; intervals in scripts/results/al1_boot.txt)
+pass@10 / pass@1.                    9B test (153)   9B v4 (482)    27B test (162)  27B v4 (520)
+  J-lens                             .351 / .200     .372 / .160    .336 / .132     .381 / .171
+  J++                                .581 / .354     .539 / .318    .562 / .327     .589 / .350
+  A-lens alone                       .498 / .026     .475 / .038    .437 / .107     .477 / .090
+  J-lens + A-lens (lam 1.0)          .553 / .271     .557 / .243    .521 / .239     .601 / .251
+  J++ + A-lens (lam 0.5)             .631 / .358     .630 / .331    .582 / .323     .637 / .377
+Differences in pass@10 [95%]: J++ + A minus J++: 9B +5.0 [1.4,8.9] / +9.1 [6.1,12.5]; 27B +2.0 [-1.0,5.1] / +4.8 [2.5,7.2].
+J + A minus J: +20.2, +18.5, +18.5, +22.0 (all intervals above +12). J++ + A minus L: 9B +0.3 [-1.9,2.7] / +2.6 [0.7,4.5];
+27B +0.9 [-1.3,3.1] / +2.7 [1.3,4.3]. A alone minus J-lens: +14.6, +10.3, +10.1, +9.6 (all above 0); minus J++: -8.3,
+-6.4, -12.5, -11.2. J + A minus J++: -2.8 [-8.4,2.3], +1.8 [-1.1,4.9], -4.1 [-9.0,1.0], +1.1 [-1.6,3.9] (pass@1: -8.3,
+-7.6, -8.8, -9.9, all below 0). pass@1 of J++ + A minus J++: +0.4, +1.3, -0.4 (ns), 27B v4 +2.7 [0.7,4.8].
+Predictions: "J + A above J by more than 10" and "A alone below J++" held; "J++ + A within +-2 of L" held on the two
+test splits and was exceeded on v4 (+2.6, +2.7).
