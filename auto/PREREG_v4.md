@@ -158,3 +158,8 @@ J + A minus J: +20.2, +18.5, +18.5, +22.0 (all intervals above +12). J++ + A min
 -7.6, -8.8, -9.9, all below 0). pass@1 of J++ + A minus J++: +0.4, +1.3, -0.4 (ns), 27B v4 +2.7 [0.7,4.8].
 Predictions: "J + A above J by more than 10" and "A alone below J++" held; "J++ + A within +-2 of L" held on the two
 test splits and was exceeded on v4 (+2.6, +2.7).
+
+## Addendum E, extension to Qwen3.5-2B (2026-11-22 23:44Z; before the 2B unstated-word map exists or any 2B A-lens row is scored)
+The same five rows (auto/candidates/alens.py, unchanged) for Qwen3.5-2B once its unstated-word map is built exactly as
+for 9B/27B (scripts/s2b). Scored once each by the orchestrator on the original 2B test split (108) and on v4 (328).
+Same comparisons. Prediction: J++ + A above J++ on both sets; J + A above J by more than 8 points.
