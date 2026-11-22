@@ -124,3 +124,8 @@ comparisons used raw J++ as the reference. Re-check: score the unit-scaled J++ (
 once on (a) the original 2B test split (name T_jppu_2b) and (b) v4 for 2B (V4_jppu_2b), and report L minus unit-scaled
 J++ with the paired bootstrap, next to the registered L minus raw J++. No lens is changed; this only replaces the reference.
 The more conservative of the two differences is the one to quote.
+
+## Results, addendum D (scored 2026-11-22 05:00Z, once each, --lite)
+Unit-scaled J++ on Qwen3.5-2B: original test split .3150 / .1772 (raw J++: .3150 / .1772, identical); v4 .3785 / .2081
+(raw J++ pass@10 .378). The registered 2B differences are unchanged by the choice of reference: original test +13.3
+[+5.9, +20.3], v4 +7.1 [+3.4, +11.4]. The bf16 scale effect seen on 2B dev (+2.5 pass@10) does not appear on these sets.
