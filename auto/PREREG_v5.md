@@ -69,3 +69,26 @@ Notes: J++ for Olmo is our fit with the authors' default recipe (no released Olm
 (3%). Olmo answers few multihop/multilingual prompts correctly, so those task cells have 6-23 items.
 google/gemma-4-12B-it could not be run (loads as Gemma4UnifiedForConditionalGeneration; the authors' LRP patcher
 rejects its MLP class) -> the registered reserve google/gemma-4-E4B-it is used.
+
+## Results: google/gemma-4-E4B-it, the registered reserve (scored 2026-11-22 23:42Z, once each, --lite; scripts/xm1_heldout_gemma4e4b.sh; scripts/results/xm1_gemma4e4b_boot.txt)
+Benchmark kept: test 119 items (association 41, multihop 11, multilingual 26, poetry 3, typo 38); v4 367. Format check passed
+(1.1% topic, 10.0% unstated pooled); no fallback used. lam (FIT): L 1.0 (top of the grid); J++ + A 0.5; J + A 2.0.
+pass@10 / pass@1:            test            v4
+  J-lens                     .333 / .155     .357 / .221
+  J++ (unit)                 .366 / .241     .430 / .255
+  L = J++ + ask-map          .392 / .184     .488 / .238
+  shuffled-answer control    .343 / .164     .440 / .170
+  constant-only control      .374 / .185     .452 / .175
+  A-lens alone               .290 / .041     .312 / .053
+  J-lens + A-lens            .380 / .193     .475 / .226
+  J++ + A-lens               .409 / .212     .483 / .259
+PRIMARY L - J++ pass@10: test +2.6 [-2.5, +7.1]; v4 +5.8 [+3.0, +9.0]. L - shuffled: +4.9 [+0.1, +9.0], +4.8 [+1.3, +8.4];
+L - constant: +1.9 [-3.7, +6.7], +3.7 [+0.4, +6.7]. By the registered reading: SUPPORTED on v4; not on the test split.
+pass@1: L - J++ test -5.7 [-10.5, -2.0] (a LOSS), v4 -1.7 [-5.7, +1.7]; the controls lose more (-5.6 to -8.4).
+Predictions: +1..+6 on v4 -> +5.8 (inside); controls within +-1.5 -> +1.0, +2.1 on v4 (one just outside, ns).
+Secondary: J++ + A - J++: test +4.3 [+2.0, +6.9], v4 +5.3 [+2.6, +8.4] (pass@1 -2.9 [-6.9, -0.4], +0.4 ns);
+J + A - J: +4.8 [-1.5, +11.2], +11.8 [+8.6, +15.4]; A alone - J: -4.3 ns, -4.5 ns; A alone - J++: -7.6, -11.8.
+Note: poetry has 3 test items for this model (it answers 8 of 98 couplets correctly).
+
+## Summary across the two new families (v4, pass@10, L - J++): Olmo-3-7B +9.8 [5.4, 14.7]; gemma-4-E4B +5.8 [3.0, 9.0];
+both beat both controls on v4. On the small original test splits: +2.6 [0.5, 5.6] and +2.6 [-2.5, 7.1].
