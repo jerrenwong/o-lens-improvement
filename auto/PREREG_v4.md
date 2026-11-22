@@ -116,3 +116,11 @@ Qwen3.5-2B, original benchmark test split (108 prompts): J++ .3150 / .1772 -> le
 rule). pass@10 +13.3 [+5.9, +20.3]; pass@1 +4.7 [-0.9, +11.2]; unfiltered pass@10 +15.0 [+7.2, +22.9]. Above the predicted
 +3..+9. Note: the registration commit (a6cf469) was made before scoring; its push hit a stale git lock and was repeated
 right after the run.
+
+## Addendum D (2026-11-22 04:51Z, written and committed BEFORE scoring): reference re-check for 2B
+st1 found that the LM head computes in bf16, so rescaling a lens's output changes near-tie ranks on Qwen3.5-2B (dev: J++ raw
+.525/.294, unit-scaled .550/.289; 9B and 27B unaffected). Lens L is unit(J++ h) + lam*unit(E h + b); the registered 2B
+comparisons used raw J++ as the reference. Re-check: score the unit-scaled J++ (auto/candidates/st1_jppu.py = lam 0 of L)
+once on (a) the original 2B test split (name T_jppu_2b) and (b) v4 for 2B (V4_jppu_2b), and report L minus unit-scaled
+J++ with the paired bootstrap, next to the registered L minus raw J++. No lens is changed; this only replaces the reference.
+The more conservative of the two differences is the one to quote.
