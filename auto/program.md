@@ -381,3 +381,9 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   gives 61.4-62.0 (9B), 64.0 (27B), i.e. ~2-2.5 of the gain and none of the p@1; the input-dependent part needs >= ~3k
   passages. On held-out sets (v4, registered) the same controls give ~0 or negative. Dev gains of 2-3 points are not
   evidence for a new map. More passages: closed route.
+- ASK-ONLY LENS (ao1, dev only; scripts/ao1, runs/ao1): no next-token Jacobian. 9B: Jacobian toward the asked answer
+  (J++ recipe) + cleaned topic map = .600/.349 (J++ .595/.385, ns; J-lens .415/.208); + unstated-word map .610-.617 /
+  .366-.383; controls (constant-only / shuffled map) .549 / .531. The unstated-word regression map ALONE reaches
+  .599 p@10 on 9B (p@1 .054) and .585 on 27B. 2B ask-only .498/.358 < J++ .550. More passages for J_ask (128 vs 40): no
+  change. Ask Jacobians as extra experts in J++'s weight fit: no gain beyond layer-permuted controls. Does not beat
+  J++ + ask-map (.639/.406).
