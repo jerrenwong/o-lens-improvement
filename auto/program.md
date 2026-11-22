@@ -375,3 +375,9 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   label nor actual rhyme readable at the line break (J++ 1-2/16), only right before the word. Association: other-token
   hits at chance; model rarely produces the concept unasked (27B: 4/12 only when asked). Multilingual: 10/16 (9B), 7/12
   (27B) missed concepts are readable at the source token (chance ~2) -> the only real headroom, needs other positions.
+- ASK-MAP STABILITY AND DATA SIZE (rb1, dev only; scripts/rb1, .hf27/rb1): two disjoint halves of the passages give the
+  same lens (9B +0.5, 27B +2.3 ns; both beat J++). Lens p@10 is flat in n (9B 62.5 at 300 passages -> 63.9 at 30.5k; 27B
+  63.3 -> 64.9) although the map alone rises 6% -> 40%. On DEV a constant-only vector (mean target) with lam from fit
+  gives 61.4-62.0 (9B), 64.0 (27B), i.e. ~2-2.5 of the gain and none of the p@1; the input-dependent part needs >= ~3k
+  passages. On held-out sets (v4, registered) the same controls give ~0 or negative. Dev gains of 2-3 points are not
+  evidence for a new map. More passages: closed route.
