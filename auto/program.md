@@ -350,3 +350,10 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   40.5/24.7; 9B J-lens 41.3/20.8 -> 35.0/18.1 (-6.3 [-11.4,-1.6]); 2B J++ refit 46.7/25.8 -> 42.5/32.0 (ns). Removing the
   whole same-position term: -14 / -16 on J-lens (next-token match -> 0, more punctuation), -1.7 on J++. Content-word
   targets only: +-0.5 on J-lens, +3.1 [-1.2,+8.8] on 2B J++. J++ weight-fit noise ~3.5 points. Not a lead.
+- CLEANED ASK TARGETS (st1, dev only; scripts/st1, .hf27/st1): target = model's answer distribution (word tokens, top 50,
+  temperature). Push-backs to a hidden state hurt (P1 weighted unembeddings over-counts; P2 least squares loses ranking).
+  Training the map through the decoder with KL (P3; P3v = softmax over the whole vocab) gives a much better map ALONE
+  (p@10 +7 to +12, top-1 never a non-word) but, added to J++, only 27B +2.4 [-0.7,+5.9], 9B +0.4, 2B -1.7 vs the current
+  ask-map. Temperature irrelevant.
+- BF16 SCALE NOISE: unembed computes in bf16, so rescaling a lens's output changes near-tie ranks. 2B J++: raw .525/.294
+  vs unit-scaled .550/.289 dev; 9B/27B unaffected. Use unit(J++ h) as the reference for any lens built on unit(J++ h).
