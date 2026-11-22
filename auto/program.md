@@ -357,3 +357,10 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   ask-map. Temperature irrelevant.
 - BF16 SCALE NOISE: unembed computes in bf16, so rescaling a lens's output changes near-tie ranks. 2B J++: raw .525/.294
   vs unit-scaled .550/.289 dev; 9B/27B unaffected. Use unit(J++ h) as the reference for any lens built on unit(J++ h).
+- CORRECTION to the ex1 bullet (ex2, dev only; runs/ex2/report.md): J++ is NOT "experts minus the average, reading from
+  deviations". The fitted weights keep a positive share of the pooled lens (c/sum|w| .22-.36, all 49 layer-fits), no more
+  cancellation than random signs. Removing the remaining average costs 36-40 points (also on the released lenses);
+  weights forced to sum to zero are far worse than the pooled lens. J++ sits at an interior optimum of "amount of
+  average": adding average back is flat up to beta ~.5-1, then falls to the pooled lens (-13..-15 on 9B). One-scalar
+  P - 0.75*a*Jbar recovers 60-102% of the gain over pooled on 9B, 25-88% on 2B. Sign pattern unstable across fit
+  resamples. "N ~ pooled" holds for any non-negative expert mix (not evidence).
