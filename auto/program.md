@@ -364,3 +364,8 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   average": adding average back is flat up to beta ~.5-1, then falls to the pooled lens (-13..-15 on 9B). One-scalar
   P - 0.75*a*Jbar recovers 60-102% of the gain over pooled on 9B, 25-88% on 2B. Sign pattern unstable across fit
   resamples. "N ~ pooled" holds for any non-negative expert mix (not evidence).
+- JACOBIAN TOWARD THE ASKED ANSWER (ja1, dev only; scripts/ja1, runs/ja1): J of the answer-position final state w.r.t. all
+  passage tokens, applied at one token. Reads concepts alone (2B: plain .21/.12, LRP .24/.13, full J++ recipe .37/.21,
+  wrong-passage control .17/.08; 9B: LRP .44/.19, full recipe .50/.31) but adds nothing to J++ (9B .602/.398 and
+  .596/.396 vs J++ .595/.385; ridge ask-map lens .639/.406). Not data-limited (split-half cos .96-.99; 248 passages or 3
+  wordings = same). Late-layer gradient goes to the question tokens, not the passage.
