@@ -369,3 +369,9 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   wrong-passage control .17/.08; 9B: LRP .44/.19, full recipe .50/.31) but adds nothing to J++ (9B .602/.398 and
   .596/.396 vs J++ .595/.385; ridge ask-map lens .639/.406). Not data-limited (split-half cos .96-.99; 248 passages or 3
   wordings = same). Late-layer gradient goes to the question tokens, not the passage.
+- READER OVERLAP + WHERE THE UNREAD CONCEPTS ARE (dev overlap from existing runs; ex3 fit-only, runs/ex3): union of all
+  readers on dev = .670 (9B) / .684 (27B) vs J++ .595 / .615 and the additive mixes .64-.67; interleaving lists is worse.
+  Missed by all: poetry ~80-88%, association ~45-50%. On FIT: poetry label = model's own greedy rhyme in 4-5/16; neither
+  label nor actual rhyme readable at the line break (J++ 1-2/16), only right before the word. Association: other-token
+  hits at chance; model rarely produces the concept unasked (27B: 4/12 only when asked). Multilingual: 10/16 (9B), 7/12
+  (27B) missed concepts are readable at the source token (chance ~2) -> the only real headroom, needs other positions.
