@@ -35,3 +35,11 @@ L minus J++, pass@10, on the original test split and on v4, per new model. Secon
 Supported for a model if L minus J++ is positive with an interval excluding 0 on v4 (the larger set) and L minus both
 controls is positive. Not supported if the interval includes 0 or the controls match L. Either outcome is reported.
 Predictions: Olmo-3-7B +2 to +7 on v4; gemma-4-12B +1 to +6; controls within +-1.5.
+
+## Amendment 1 (2026-11-22 20:09Z; before any new model has been scored on its test split or on v4)
+Added at the user's request, as registered SECONDARY rows for each new model: the two-question A-lens family frozen in
+auto/candidates/alens.py (PREREG_v4 addendum E): A-lens = plain average of the topic map and an "Unstated word:" map.
+The unstated-word map is built exactly like the topic map (same passages, the model's own chat template, same ridge
+grid) with the wordings and clean example answers of scripts/ask5/ask5_collect.py; the same label-free format check
+and single fallback apply. Rows scored once on the test split and on v4: J-lens, J++, A-lens alone, J-lens + A-lens,
+J++ + A-lens (lam on FIT, grid {0,.05,.1,.2,.3,.5,1,2}). The PRIMARY outcome stays L (topic map only) minus J++.
