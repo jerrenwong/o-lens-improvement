@@ -163,3 +163,14 @@ test splits and was exceeded on v4 (+2.6, +2.7).
 The same five rows (auto/candidates/alens.py, unchanged) for Qwen3.5-2B once its unstated-word map is built exactly as
 for 9B/27B (scripts/s2b). Scored once each by the orchestrator on the original 2B test split (108) and on v4 (328).
 Same comparisons. Prediction: J++ + A above J++ on both sets; J + A above J by more than 8 points.
+
+## Results, addendum E extension to Qwen3.5-2B (scored 2026-11-23 00:15Z, once each, --lite; scripts/al1/run_2b.sh; scripts/results/al1_boot_2b.txt)
+Unstated-word map for 2B built by scripts/s2b (format: first answer token is the bold marker in 82% of passages for the
+second phrasing; pooled non-word share 31%; map fitted as for 9B). lam (FIT): J++ + A 0.3; J + A 1.0.
+pass@10 / pass@1:            test (108)      v4 (328)
+  J-lens                     .296 / .118     .351 / .175
+  J++                        .315 / .177     .379 / .208
+  A-lens alone               .459 / .067     .333 / .085
+  J-lens + A-lens            .449 / .150     .430 / .207
+  J++ + A-lens               .441 / .194     .423 / .227
+(differences with intervals: see the bootstrap file; summary line is added to the page and LOG.)
