@@ -174,3 +174,16 @@ pass@10 / pass@1:            test (108)      v4 (328)
   J-lens + A-lens            .449 / .150     .430 / .207
   J++ + A-lens               .441 / .194     .423 / .227
 (differences with intervals: see the bootstrap file; summary line is added to the page and LOG.)
+
+## Addendum F (2026-11-23 00:43Z; registered before the text-only maps exist): text-only control for the A-lens
+Question: how much of the A-lens's gain needs the model's activations, and how much is a topic guess from the visible text?
+T-lens = the A-lens recipe with ONE change: the regression input is the mean INPUT EMBEDDING of the tokens up to the
+readout position (no forward pass through the model's blocks), instead of the layer activation at the readout token.
+Same passages, same two questions x three phrasings, same targets, same ridge grid and validation rule, same averaging
+of the two maps, same lam rule. One map (not per layer), used at every readout layer.
+Rows per model: J++ + T-lens, J-lens + T-lens, T-lens alone; compared with the already-scored J++ + A-lens, J + A, A alone.
+Models: Qwen3.5-2B, 9B, Qwen3.6-27B, Olmo-3-7B-Instruct, gemma-4-E4B-it. Agents: DEV only. The orchestrator scores each
+row once on the original test split and on v4. Paired bootstrap: (J++ + A) - (J++ + T), (J++ + T) - J++, (J + A) - (J + T).
+Reading: the share of the A-lens gain that the T-lens reproduces is "text"; the rest needs activations. Earlier
+evidence (v3, 9B, one-question map): text-only +1.0 [-1.3, +3.4] vs ask-map +3.7; difference +2.7 [+1.1, +4.4].
+Prediction: J++ + T above J++ by 0 to +3 on v4; J++ + A above J++ + T on v4 for every model.
