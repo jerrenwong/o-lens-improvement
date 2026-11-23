@@ -187,3 +187,10 @@ row once on the original test split and on v4. Paired bootstrap: (J++ + A) - (J+
 Reading: the share of the A-lens gain that the T-lens reproduces is "text"; the rest needs activations. Earlier
 evidence (v3, 9B, one-question map): text-only +1.0 [-1.3, +3.4] vs ask-map +3.7; difference +2.7 [+1.1, +4.4].
 Prediction: J++ + T above J++ by 0 to +3 on v4; J++ + A above J++ + T on v4 for every model.
+
+## Addendum F: status (2026-11-23 02:01Z)
+Stopped at the user's direction before any held-out scoring: the T-lens rows were scored on DEV only (9B, 2B, Olmo-3-7B,
+gemma-4-E4B; 27B not built). No T-lens row was scored on a test split or on v4. DEV summary, pass@10,
+(J++ + A) - (J++ + T): 9B +0.6 [-1.4, +2.5]; 2B +4.6 [+0.3, +10.6]; Olmo +2.0 [-0.0, +4.5]; gemma +7.0 [+2.6, +12.4];
+(J + A) - (J + T): 9B +8.3 [+4.3, +12.5]; 2B +3.7 [-3.8, +11.3]; Olmo +7.1 [+3.5, +11.0]; gemma +7.6 [+2.4, +12.3].
+The question this addendum asked is therefore OPEN on held-out data.

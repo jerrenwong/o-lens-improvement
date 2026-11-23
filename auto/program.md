@@ -387,3 +387,8 @@ Scores are pass@10 on the old held-out split (dev + test together), 9B unless st
   .599 p@10 on 9B (p@1 .054) and .585 on 27B. 2B ask-only .498/.358 < J++ .550. More passages for J_ask (128 vs 40): no
   change. Ask Jacobians as extra experts in J++'s weight fit: no gain beyond layer-permuted controls. Does not beat
   J++ + ask-map (.639/.406).
+- TEXT-ONLY TWIN OF THE A-LENS (tl1, DEV only; stopped by the user before held-out scoring; scripts/tl1, .hf27/tl1):
+  T-lens = A-lens recipe with the mean input embedding as the regression input. T alone 6-10% p@10. With J++ as base it
+  reproduces most of the A-lens DEV gain on 9B and Olmo (A - T +0.6, +2.0, ns), not on 2B (+4.6) or Gemma (+7.0); with
+  the J-lens as base A is ahead by +7 to +8 on 9B/Olmo/Gemma. Mechanism: topical re-ranking of J++'s near misses.
+  Held-out comparison never run -> open caveat on "the A-lens reads the model".
