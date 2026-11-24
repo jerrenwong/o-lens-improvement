@@ -294,3 +294,14 @@ Alone, CE98 minus CE28: pass@10 +2.3 [-1.4, 6.7], +2.9 [0.3, 5.6], -1.3 [-10.2, 
 Against the dev expectation (+1.5 to +2, intervals touching 0): held-out gain is the same sign in all four cells and a little larger; three of four
 pass@10 intervals exclude 0 and the fourth touches it. Note: the first launch of this run began before the registration commit had succeeded;
 it was stopped before any evaluator wrote a result, the commit (b8cdb18) was pushed, and the run was restarted.
+
+## Amendment 8 (registered 2026-11-25, before scoring): Experiment 3 five-column table on held-out
+Columns (all K=10, T=1; maps .hf27/w7/E_<tag>_{topic,spec}_<mode>_k10.pt): C1 residual state (ridge; already scored under f4, Amendment 6),
+C2 probability, no target filter (`all`); C3 probability + junk filter (`nomerge`; identical maps to the Amendment 3 CE maps, already
+scored under f4: runs w2ho_*_ce_*_f4_*; NOT rescored); C4 probability + merged duplicates (`mergeall`); C5 probability + junk filter +
+merged duplicates (`merge`). New runs, once each: COLS="all mergeall merge" LVS=f4 bash scripts/w7/heldout_runs.sh {2b,9b} -> rows
+A-lens alone and J++ + A-lens, test and v4 (the script also recomputes J++ alone under a new run name; that row is deterministic and
+already scored, and its earlier value is the one reported). Paired bootstrap 5000 draws for C2-C1, C3-C2, C4-C2, C5-C2, C5-C3.
+Dev expectation, stated before scoring (runs/w7/boot_main_f4.txt): under f4, with J++, all five within about 1-2 points of each other with
+intervals including 0; alone, C2/C3 above C1 at top 1; merging (C4, C5) neutral or slightly negative. No column is selected by this run;
+the sweeps over K and temperature were flat on dev and are not taken to held-out.

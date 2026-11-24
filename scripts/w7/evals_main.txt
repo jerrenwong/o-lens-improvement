@@ -1,0 +1,52 @@
+w7_2b_JPP0_f1|ALENS_BASE=JPP0|Qwen/Qwen3.5-2B|f1
+w7_2b_ridge_none_f1|ALENS_BASE=none|Qwen/Qwen3.5-2B|f1
+w7_2b_ce_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w2/E_2b_topic_ce_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w2/E_2b_spec_ce_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_all_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_all_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_all_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_nomerge_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_nomerge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_nomerge_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_mergeall_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_mergeall_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_mergeall_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_merge_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_merge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_merge_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_ridge_JPP_f1|ALENS_BASE=JPP|Qwen/Qwen3.5-2B|f1
+w7_2b_ce_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w2/E_2b_topic_ce_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w2/E_2b_spec_ce_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_all_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_all_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_all_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_nomerge_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_nomerge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_nomerge_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_mergeall_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_mergeall_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_mergeall_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_merge_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_merge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_merge_k10.pt|Qwen/Qwen3.5-2B|f1
+w7_2b_JPP0_f4|ALENS_BASE=JPP0|Qwen/Qwen3.5-2B|f4
+w7_2b_ridge_none_f4|ALENS_BASE=none|Qwen/Qwen3.5-2B|f4
+w7_2b_ce_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w2/E_2b_topic_ce_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w2/E_2b_spec_ce_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_2b_all_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_all_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_all_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_2b_nomerge_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_nomerge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_nomerge_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_2b_mergeall_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_mergeall_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_mergeall_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_2b_merge_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_merge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_merge_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_2b_ridge_JPP_f4|ALENS_BASE=JPP|Qwen/Qwen3.5-2B|f4
+w7_2b_ce_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w2/E_2b_topic_ce_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w2/E_2b_spec_ce_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_2b_all_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_all_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_all_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_2b_nomerge_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_nomerge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_nomerge_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_2b_mergeall_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_mergeall_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_mergeall_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_2b_merge_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_2b_topic_merge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_2b_spec_merge_k10.pt|Qwen/Qwen3.5-2B|f4
+w7_9b_JPP0_f1|ALENS_BASE=JPP0|Qwen/Qwen3.5-9B|f1
+w7_9b_ridge_none_f1|ALENS_BASE=none|Qwen/Qwen3.5-9B|f1
+w7_9b_ce_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w2/E_9b_topic_ce_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w2/E_9b_spec_ce_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_all_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_all_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_all_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_nomerge_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_nomerge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_nomerge_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_mergeall_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_mergeall_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_mergeall_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_merge_none_f1|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_merge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_merge_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_ridge_JPP_f1|ALENS_BASE=JPP|Qwen/Qwen3.5-9B|f1
+w7_9b_ce_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w2/E_9b_topic_ce_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w2/E_9b_spec_ce_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_all_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_all_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_all_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_nomerge_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_nomerge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_nomerge_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_mergeall_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_mergeall_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_mergeall_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_merge_JPP_f1|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_merge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_merge_k10.pt|Qwen/Qwen3.5-9B|f1
+w7_9b_JPP0_f4|ALENS_BASE=JPP0|Qwen/Qwen3.5-9B|f4
+w7_9b_ridge_none_f4|ALENS_BASE=none|Qwen/Qwen3.5-9B|f4
+w7_9b_ce_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w2/E_9b_topic_ce_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w2/E_9b_spec_ce_k10.pt|Qwen/Qwen3.5-9B|f4
+w7_9b_all_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_all_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_all_k10.pt|Qwen/Qwen3.5-9B|f4
+w7_9b_nomerge_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_nomerge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_nomerge_k10.pt|Qwen/Qwen3.5-9B|f4
+w7_9b_mergeall_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_mergeall_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_mergeall_k10.pt|Qwen/Qwen3.5-9B|f4
+w7_9b_merge_none_f4|ALENS_BASE=none ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_merge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_merge_k10.pt|Qwen/Qwen3.5-9B|f4
+w7_9b_ridge_JPP_f4|ALENS_BASE=JPP|Qwen/Qwen3.5-9B|f4
+w7_9b_ce_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w2/E_9b_topic_ce_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w2/E_9b_spec_ce_k10.pt|Qwen/Qwen3.5-9B|f4
+w7_9b_all_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_all_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_all_k10.pt|Qwen/Qwen3.5-9B|f4
+w7_9b_nomerge_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_nomerge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_nomerge_k10.pt|Qwen/Qwen3.5-9B|f4
+w7_9b_mergeall_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_mergeall_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_mergeall_k10.pt|Qwen/Qwen3.5-9B|f4
+w7_9b_merge_JPP_f4|ALENS_BASE=JPP ALENS_E=/workspace/o-lens-improvement/.hf27/w7/E_9b_topic_merge_k10.pt ALENS_E2=/workspace/o-lens-improvement/.hf27/w7/E_9b_spec_merge_k10.pt|Qwen/Qwen3.5-9B|f4
