@@ -305,3 +305,18 @@ already scored, and its earlier value is the one reported). Paired bootstrap 500
 Dev expectation, stated before scoring (runs/w7/boot_main_f4.txt): under f4, with J++, all five within about 1-2 points of each other with
 intervals including 0; alone, C2/C3 above C1 at top 1; merging (C4, C5) neutral or slightly negative. No column is selected by this run;
 the sweeps over K and temperature were flat on dev and are not taken to held-out.
+
+## Results: Amendment 8 (Experiment 3 five columns; scored once 2026-11-25 ~23:00-01:30Z pod time, f4, --lite; runs/w7/heldout.json)
+pass@10 / pass@1, A-lens alone | J++ + A-lens (C1 and C3 from Amendment 6 runs):
+           9B v4                       9B test                     2B v4                       2B test
+  C1  52.2/21.2 | 65.8/34.1     51.6/27.9 | 66.2/38.6     36.9/16.0 | 43.3/25.8     49.8/13.9 | 42.6/20.1
+  C2  57.5/28.3 | 66.4/36.5     55.1/29.9 | 65.5/42.7     46.5/23.1 | 46.9/27.5     47.1/19.3 | 46.6/19.7
+  C3  58.2/28.2 | 68.4/35.5     55.4/29.7 | 65.4/40.7     46.4/22.8 | 46.8/27.5     47.1/17.1 | 46.1/19.7
+  C4  58.0/27.8 | 68.3/39.1     56.3/26.5 | 63.8/37.9     45.5/22.3 | 46.1/27.2     44.5/16.8 | 43.1/18.0
+  C5  59.3/27.8 | 65.8/37.8     55.7/26.3 | 63.7/38.1     47.2/22.0 | 45.4/27.7     43.9/17.0 | 42.3/18.5
+With J++, pass@10 (9B v4, 9B test, 2B v4, 2B test): C2-C1 +0.6 [-0.9, 2.0], -0.7 [-4.3, 2.0], +3.6 [1.2, 6.6], +4.0 [0.0, 9.6];
+  C3-C2 +1.9 [0.5, 3.6], -0.1, -0.1, -0.5; C5-C3 -2.6 [-5.2, -0.1], -1.7 [-6.3, 2.3], -1.5 [-3.0, 0.3], -3.8 [-9.5, 0.0];
+  C4-C2 +1.8 [0.1, 3.9], -1.7 [-4.7, 1.1], -0.8 [-1.7, 0.1], -3.5 [-9.3, 0.6].
+  pass@1 C2-C1: +2.4 [1.2, 3.8], +4.1 [1.0, 8.1], +1.7 [-1.3, 4.0], -0.5.
+Against the dev expectation: columns within 1-2 points with J++: mostly yes (largest: C5 below C3 by 1.5-3.8, same sign in all four cells,
+one interval excluding 0); merging neutral or slightly negative: yes; probability above residual alone: yes on v4, mixed on 2B test.
