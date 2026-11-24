@@ -160,3 +160,24 @@ Absolute (v4, f1, pass@10 / pass@1): 9B J++ 53.9/31.8, J++ + ridge 63.0/33.1, J+
 Against predictions: CE alone pass@1 gain >= 10 under f1: yes on v4 (+24.2, +14.3) and 2B test (+10.4); "J++ + CE minus J++ + ridge within
 [-2, +3] with an interval including 0 on most cells": WRONG in the favourable direction: intervals exclude 0 on every v4 cell and the gain is
 +2.6 to +3.9. Part (B) (competitor-subtracted readout) was not scored on held-out, as registered.
+
+
+## Amendment 4 (2026-11-24 ~11:20Z, committed before scoring): Jacobian ("J++-style") A-lens, Qwen3.5-9B
+To-do item "A-lens but using the J++ method rather than L2 loss". For each of the two A-lens questions a Jacobian is fitted from the
+passage tokens to the final-layer state at the answer position of the question prompt (scripts/ja1, scripts/ao1, scripts/w3; 128
+passages; J++ backward rules). Two versions: "full recipe" (8 k-means experts + expert weights fitted on the labelled FIT split:
+runs/ao1/9b/lens/topA5_n128.pt + runs/w3/9b/lens/unsA5_n128.pt) and "K1" (one pooled matrix per question, label-free: topK1_n128.pt +
+unsK1_n128.pt). Jacobian A-lens = mean of the two unit-normalised outputs (auto/candidates/w3_alone.py); added to J++ with lam chosen on
+FIT by the frozen alens rule (w3_add.py). Held-out, once each, --lite, scripts/w3/heldout_runs.sh: test + v4, filters f1 (primary) and f2;
+rows Jacobian A-lens alone and J++ + Jacobian A-lens, for full recipe and K1. Reference rows on the same items: w1_9b_{JPP0,none,JPP}_<f>_<set>
+(J++, ridge A-lens alone, J++ + ridge A-lens) and w2ho_9b_ce_{none,JPP}_<f>_<set> (cross-entropy A-lens).
+Comparisons: PRIMARY J++ + Jacobian A-lens (full) minus J++ + ridge A-lens; the same for K1; Jacobian alone minus ridge alone and minus
+cross-entropy alone; J++ + Jacobian minus J++.
+Seen beforehand (dev, f1, top-10 / top-1): J++ 59.5/38.5; ridge alone 53.0/6.3, + J++ 62.8/42.0; Jacobian full alone 54.3/35.1, + J++
+60.9/40.1 (lam 1.0); K1 alone 47.8/26.2, + J++ 58.5/35.3 (lam 0.5); single questions (full): topic 48.3/31.1, unstated 53.8/38.5.
+2B (64 passages, dev): no Jacobian version improves on J++. Outputs: the Jacobian version never ranks " **"/<|im_end|> first; it lists
+case/language variants of passage words.
+Caveats: the full recipe uses labelled fit prompts for its expert weights (the ridge and cross-entropy A-lens do not); 9B only (the 2B
+248-passage fit was still running at registration and is not part of this registered run).
+Predictions: J++ + Jacobian (full) minus J++ + ridge is negative or within +-2 at pass@10 on both sets; K1 + J++ does not beat J++;
+Jacobian full alone beats ridge alone at pass@1 by > 15 points under f1 and is below cross-entropy alone at pass@10.
