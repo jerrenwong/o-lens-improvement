@@ -151,6 +151,53 @@ def _pair_tensors(candidates: list[dict[str, list[int]]], device):
     return rows.to(device), cand_idx.to(device), cand_valid.to(device), labels
 
 
+def group_candidate_ranks(logits_PV: Tensor, candidates: list[dict[str, list[int]]], group_ids: Tensor) -> list[dict[str, int]]:
+    """w1 (filter level f3, auto/filters.py): like :func:`candidate_ranks`, but over token GROUPS
+    (``group_ids[v]`` = group of vocab id v). Rank = 1 + number of distinct groups, other than the
+    groups that hold one of the intermediate's candidate ids, whose best member logit is strictly
+    greater than the best candidate logit."""
+    if logits_PV.shape[0] != len(candidates):
+        raise ValueError(f"{logits_PV.shape[0]} logit rows but {len(candidates)} candidate dicts")
+    rows, cand_idx, cand_valid, labels = _pair_tensors(candidates, logits_PV.device)
+    ranks = _group_ranks_from_pairs(logits_PV, rows, cand_idx, cand_valid, group_ids)
+    out: list[dict[str, int]] = [{} for _ in candidates]
+    for (p, inter), r in zip(labels, ranks.tolist(), strict=True):
+        out[p][inter] = int(r)
+    return out
+
+
+def _group_ranks_from_pairs(logits_PV: Tensor, rows: Tensor, cand_idx: Tensor, cand_valid: Tensor,
+                            group_ids: Tensor) -> Tensor:
+    if rows.numel() == 0:
+        return torch.zeros(0, dtype=torch.long)
+    dev = logits_PV.device
+    gid = group_ids.to(dev)
+    G = int(gid.max()) + 1
+    cand_logits = logits_PV[rows[:, None], cand_idx].masked_fill(~cand_valid, float("-inf"))
+    best = cand_logits.max(dim=1).values  # [K]
+    # candidate groups per pair, de-duplicated, padded with the pair's first group (counted once)
+    cg = gid[cand_idx]  # [K, C]
+    cg = torch.where(cand_valid, cg, cg[:, :1])
+    cg_sorted = cg.sort(dim=1).values
+    first = torch.ones_like(cg_sorted, dtype=torch.bool)
+    first[:, 1:] = cg_sorted[:, 1:] != cg_sorted[:, :-1]
+    ranks = torch.empty(rows.shape[0], dtype=torch.long, device=dev)
+    urows = rows.unique()
+    for start in range(0, urows.numel(), 16):
+        ur = urows[start : start + 16]
+        L = logits_PV[ur]
+        gmax = torch.full((ur.numel(), G), float("-inf"), device=dev, dtype=L.dtype)
+        gmax.scatter_reduce_(1, gid[None].expand_as(L), L, reduce="amax", include_self=True)
+        pos = torch.searchsorted(ur, rows)
+        sel = (rows[:, None] == ur[None]).any(1).nonzero().squeeze(1)
+        gm = gmax[pos[sel]]  # [k, G]
+        b = best[sel]
+        above = (gm > b[:, None]).sum(1)
+        cand_above = ((gm.gather(1, cg_sorted[sel]) > b[:, None]) & first[sel]).sum(1)
+        ranks[sel] = above - cand_above + 1
+    return ranks.cpu()
+
+
 def _ranks_from_pairs(logits_PV: Tensor, rows: Tensor, cand_idx: Tensor, cand_valid: Tensor) -> Tensor:
     if rows.numel() == 0:
         return torch.zeros(0, dtype=torch.long)
@@ -176,12 +223,15 @@ def readout_rows(
     filtered: bool,
     items: list[int] | None = None,
     chunk_size: int = DEFAULT_CHUNK,
+    group_ids: Tensor | None = None,
 ) -> list[dict]:
     """Harness-schema rows for ``items`` (bench indices, default all) at ``layer``.
 
     ``vecs_PF`` are the lens outputs in the final-layer basis (pre final norm). Either one row
     per bench item (``len == bench.num_items``; rows ``items`` are used) or one row per entry of
-    ``items`` in that order. ``filtered`` applies ``bench.excluded_ids`` (Readout Filtering)."""
+    ``items`` in that order. ``filtered`` applies ``bench.excluded_ids`` (Readout Filtering).
+    ``group_ids`` (w1 level f3, only used when ``filtered``): rank over token groups
+    (:func:`group_candidate_ranks`); ``None`` keeps the token rank."""
     idx = bench.index() if items is None else list(items)
     if vecs_PF.shape[0] == bench.num_items:
         sel = vecs_PF if items is None else vecs_PF[torch.as_tensor(idx, dtype=torch.long, device=vecs_PF.device)]
@@ -201,7 +251,10 @@ def readout_rows(
         chunk_items = idx[c * chunk_size : c * chunk_size + logits.shape[0]]
         cands = [bench.candidates[i] for i in chunk_items]
         pr, ci, cv, labels = _pair_tensors(cands, logits.device)
-        ranks = _ranks_from_pairs(logits, pr, ci, cv)
+        if filtered and group_ids is not None:
+            ranks = _group_ranks_from_pairs(logits, pr, ci, cv, group_ids)
+        else:
+            ranks = _ranks_from_pairs(logits, pr, ci, cv)
         for (p, inter), r in zip(labels, ranks.tolist(), strict=True):
             i = chunk_items[p]
             rows_out.append(

@@ -92,3 +92,31 @@ Note: poetry has 3 test items for this model (it answers 8 of 98 couplets correc
 
 ## Summary across the two new families (v4, pass@10, L - J++): Olmo-3-7B +9.8 [5.4, 14.7]; gemma-4-E4B +5.8 [3.0, 9.0];
 both beat both controls on v4. On the small original test splits: +2.6 [0.5, 5.6] and +2.6 [-2.5, 7.1].
+
+
+## Amendment 2 (2026-11-24 ~07:35Z, committed before any held-out scoring under f2/f3): stronger token filtering, all lenses
+Why: the benchmark filter (f1: tokens with no letter or digit, minus accepted answers of all six tasks) lets " **", "<|im_end|>",
+"@g"-style tokens through. They are the A-lens's commonest first guesses (" **" first in 503/525 fit rows on 9B), so f1 treats the
+lenses unequally. The user asked for a stronger filter applied to every lens, including tokens containing "@", " **" and <|im_end|>.
+Levels (auto/filters.py, fixed before any f2/f3 number was seen; the "@" rule was added by the user before any f2/f3 run):
+  f1 = current benchmark filter (unchanged; reproduces 29/29 stored runs exactly).
+  f2 = f1 + all special/added tokens + symbol-only tokens that f1 spared only for the unused sixth task + any token containing "@";
+       an accepted answer of an item in the five scored tasks is never masked (the spared set is empty in practice).
+  f3 = f2 + count each word once: tokens grouped by normal form (strip whitespace and one leading _ / U+2581 / U+0120, lower-case,
+       drop one trailing "s" if >= 3 letters remain); rank = 1 + number of other groups whose best member beats the concept's best
+       candidate. Known side effect of the plural rule: "class" -> "clas".
+Rows (frozen auto/candidates/alens.py through the wrapper auto/candidates/w1_alens.py): J-lens (J0), J++ (JPP0), A-lens alone (none),
+J-lens + A-lens (J), J++ + A-lens (JPP). lam is re-chosen on the FIT split under each level by the frozen rule.
+Models: Qwen3.5-2B, Qwen3.5-9B, Qwen3.6-27B, Olmo-3-7B-Instruct, gemma-4-E4B-it. Sets: original test split and v4 (614 prompts).
+All three levels are reported for every row, model and set; no level is selected. Scored once each, --lite,
+scripts/w1/heldout_runs.sh, run names w1_<tag>_<row>_<level>_{test,v4}. Bootstrap: scripts/r2_boot.py (5000 paired draws).
+Comparisons reported per level: J++ + A-lens minus J++ (primary); J-lens + A-lens minus J-lens; A-lens alone minus J-lens;
+A-lens alone minus J++; and, for each row, f2 minus f1 and f3 minus f1 (unpaired across filters is not meaningful for the bootstrap
+as coded, so level effects are reported as point differences with each level's own interval for the lens-vs-lens comparisons).
+Seen beforehand (dev split, runs/w1/dev_table.md): f2 lifts the A-lens rows' top-1 a lot (9B A-lens alone .063 -> .296) and their
+top-10 by 2-5 points; J-lens / J++ rows barely move under f2 and gain 1-4 points top-10 under f3. J++ + A-lens minus J++ on dev,
+top-10: f1 2B -1.1, 9B +3.3, 27B +6.4, Olmo +10.3, Gemma +7.0; f3 2B +2.0, 9B +4.2, 27B +3.9, Olmo +15.3, Gemma +15.4.
+Caveats: these held-out sets have been scored before with f1 (this is a further use); f2/f3 are our own scoring rules, not the
+benchmark's; f1 numbers remain the comparable-to-literature ones. Predictions (v4, top-10, J++ + A-lens minus J++): the f1 values
+repeat the earlier registered run (+4.4 to +9.8); under f2 and f3 the gain stays positive on all five models and grows on the
+models where " **"/<|im_end|> crowd the A-lens output most (Gemma, Olmo); A-lens alone top-1 rises by at least 5 points under f2.

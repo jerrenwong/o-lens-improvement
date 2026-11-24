@@ -100,6 +100,8 @@ def main() -> None:
     ap.add_argument("--split", default="test", choices=["test"])  # v4: test = all included v4 items
     ap.add_argument("--name", default=None)
     ap.add_argument("--orchestrator", action="store_true")
+    ap.add_argument("--filter", default="f1", choices=["f1", "f2", "f3"],  # w1 (auto/filters.py)
+                    help="token filter level of the filtered score; f1 = benchmark filter (default, unchanged)")
     ap.add_argument("--lite", action="store_true",
                     help="load only the final norm + LM head + tokenizer (scripts/perf1/lite_model.py); "
                          "candidates that need forward passes fail with a clear error")
@@ -155,6 +157,11 @@ def main() -> None:
         L = load_lens_file(str(ROOT / path), hf_model_name=args.model)
         return {int(l): v.to(dev).float() for l, v in L.jacobians_L_dict_FN.items()}
 
+    # w1: filter level (auto/filters.py). f1 leaves the benches untouched; f2/f3 replace their excluded_ids.
+    _fs = importlib.util.spec_from_file_location("w1_filters", ROOT / "auto" / "filters.py")
+    _fm = importlib.util.module_from_spec(_fs); _fs.loader.exec_module(_fm); sys.modules["w1_filters"] = _fm
+    FL = _fm.Filters(model.tokenizer, model._lm_head.weight.shape[0], [bench, bench_v4])
+    FLT = FL.apply(args.filter)
     fi = torch.as_tensor(fit_idx, dtype=torch.long)
     fit = SimpleNamespace(
         resid={l: v[fi].to(dev).float() for l, v in bench.resid.items()},
@@ -162,6 +169,7 @@ def main() -> None:
         eval_slugs=[bench.eval_slugs[i] for i in fit_idx],
         item_names=[bench.item_names[i] for i in fit_idx],
         excluded_ids=bench.excluded_ids.clone(),
+        group_ids=FLT.group_ids, filter_level=args.filter,  # w1: f3 groups (None at f1/f2)
     )
     ctx = SimpleNamespace(
         model=model, J=lens_dict(cfg["J"]), JPP=lens_dict(cfg["JPP"]), fit=fit,
@@ -169,7 +177,7 @@ def main() -> None:
         wikitext=(lite_blocked("ctx.wikitext") if args.lite else
                   lambda wsplit, n: wikitext_windows(model.tokenizer, wsplit, n, 128, Path("/root/cache"),
                                                      para_start=True)),
-        readout_layers=list(cfg["layers"]), device=dev,
+        readout_layers=list(cfg["layers"]), device=dev, filters=FL,  # w1
     )
     si = torch.as_tensor(idx, dtype=torch.long)
     rows_resid = {l: v[si].to(dev).float() for l, v in bench_v4.resid.items()}
@@ -215,7 +223,7 @@ def main() -> None:
     rows = {True: [], False: []}
     for layer, v in vecs.items():
         for f in (True, False):
-            rows[f] += readout_rows(name, layer, bench_v4, v, model, filtered=f, items=idx, chunk_size=1)
+            rows[f] += readout_rows(name, layer, bench_v4, v, model, filtered=f, items=idx, chunk_size=1, group_ids=FLT.group_ids)
     write_csv(out_dir / "readout_filtered.csv", rows[True])
     write_csv(out_dir / "readout_unfiltered.csv", rows[False])
     p10, per_task = pass_at_k(rows[True], 10)
@@ -226,7 +234,7 @@ def main() -> None:
     (out_dir / "summary.json").write_text(json.dumps(dict(
         lens=str(lens_path), model=args.model, split="v4-" + args.split, pass10=p10, pass1=p1, pass10_unf=p10u,
         pass1_unf=p1u, per_task_pass10=per_task, build_seconds=build_s, peak_vram_gb=peak_gb,
-        n_items=len(idx), total_seconds=total_s, **({"lite": True} if args.lite else {})), indent=1))
+        n_items=len(idx), total_seconds=total_s, filter=args.filter, **({"lite": True} if args.lite else {})), indent=1))
 
     pre = "v4_" + args.split
 
