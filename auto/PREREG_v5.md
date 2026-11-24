@@ -181,3 +181,19 @@ Caveats: the full recipe uses labelled fit prompts for its expert weights (the r
 248-passage fit was still running at registration and is not part of this registered run).
 Predictions: J++ + Jacobian (full) minus J++ + ridge is negative or within +-2 at pass@10 on both sets; K1 + J++ does not beat J++;
 Jacobian full alone beats ridge alone at pass@1 by > 15 points under f1 and is below cross-entropy alone at pass@10.
+
+
+## Results: Amendment 2 (stronger filter levels; scored 2026-11-24 07:38-11:05Z, once each, --lite; full table runs/w1/heldout_table.md)
+J++ + A-lens minus J++, pass@10 [95% CI], v4 (new prompts):          f1                  f2                   f3
+  Qwen3.5-2B                                                    +4.4 [+2.3, +7.3]   +4.6 [+2.4, +7.5]    +4.6 [+1.9, +8.1]
+  Qwen3.5-9B                                                    +9.1 [+6.1, +12.5]  +10.4 [+7.2, +13.8]  +7.2 [+4.6, +10.0]
+  Qwen3.6-27B                                                   +4.8 [+2.5, +7.2]   +5.0 [+2.8, +7.4]    +2.1 [+0.6, +3.8]
+  Olmo-3-7B                                                     +9.8 [+5.4, +14.6]  +9.8 [+5.8, +14.3]   +11.9 [+7.5, +16.6]
+  gemma-4-E4B                                                   +5.3 [+2.6, +8.4]   +9.2 [+5.6, +13.1]   +9.6 [+5.9, +13.6]
+test split: 2B +12.6 / +12.6 / +6.4 [+0.9, +13.3]; 9B +5.0 / +5.7 / +7.1; 27B +2.0 [-1.0, +5.1] / +2.1 [-0.8, +5.3] / +3.2 [+0.4, +6.6];
+  Olmo +4.2 / +4.2 / +10.6; Gemma +4.3 / +10.7 / +10.5 (all intervals exclude 0 except 27B f1 and f2).
+The f1 column reproduces the earlier registered numbers exactly. The gain is positive on all 30 model x set x level cells and its interval
+excludes 0 on 28 (27B test f1, f2 do not). pass@1 differences are mostly within noise; Gemma test stays negative (-2.9 to -3.4).
+A-lens alone, pass@1 on v4, f1 -> f2: 9B 3.8 -> 21.2; Gemma 5.3 -> 12.6 (prediction "rises by at least 5 points": met where checked).
+Against predictions: gain positive under f2 and f3 on all five models: yes. "Grows on Gemma and Olmo": Gemma yes (+5.3 -> +9.2 -> +9.6);
+Olmo unchanged under f2, larger under f3. Not predicted: on 27B the gain shrinks under f3 (+4.8 -> +2.1).
