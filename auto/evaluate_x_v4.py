@@ -100,7 +100,7 @@ def main() -> None:
     ap.add_argument("--split", default="test", choices=["test"])  # v4: test = all included v4 items
     ap.add_argument("--name", default=None)
     ap.add_argument("--orchestrator", action="store_true")
-    ap.add_argument("--filter", default="f1", choices=["f1", "f2", "f3"],  # w1 (auto/filters.py)
+    ap.add_argument("--filter", default="f1", choices=["f1", "f2", "f3", "f4"],  # w1 (auto/filters.py)
                     help="token filter level of the filtered score; f1 = benchmark filter (default, unchanged)")
     ap.add_argument("--lite", action="store_true",
                     help="load only the final norm + LM head + tokenizer (scripts/perf1/lite_model.py); "

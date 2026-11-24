@@ -19,7 +19,8 @@ def build(ctx):
     levels = [("f", f.excluded_ids, None), ("u", None, None)]  # f = benchmark token filter, u = no filter
     if FL is not None:  # w1
         f2, f3 = FL.get("f2"), FL.get("f3")
-        levels += [("f2", f2.excluded_ids, None), ("f3", f3.excluded_ids, f3.group_ids)]
+        f4 = FL.get("f4")
+        levels += [("f2", f2.excluded_ids, None), ("f3", f3.excluded_ids, f3.group_ids), ("f4", f4.excluded_ids, f4.group_ids)]
         out["filters"] = dict(level_of_f=getattr(f, "filter_level", "f1"), n_masked_f2=len(f2.excluded_ids), n_groups_f3=f3.n_groups)
     for L in ctx.readout_layers:
         vec = lens.transport(f.resid[L], L)

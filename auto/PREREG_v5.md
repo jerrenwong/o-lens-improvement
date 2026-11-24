@@ -232,3 +232,14 @@ auto/candidates/w3_f.py). Reference rows: w1_<tag>_{JPP0,none,JPP}_f3_<set>. Sam
 Nothing is selected on this run; it changes the scoring rule of already registered comparisons. It is a further use of both held-out sets.
 Prediction: same signs as under f2 (J++ + CE above J++ + ridge by 1-4 points at pass@10; J++ + Jacobian full below J++ + ridge at pass@10,
 above at pass@1).
+
+
+## Amendment 6 (2026-11-24 ~15:55Z, committed before scoring): full filter f4 = f3 + markup fragments; all reported rows
+The user asked that markup fragments ("&quot", "<b", "&amp") be removed as well as "@" tokens, and that every reported table use the
+full filter. f4 (auto/filters.py) = f3 plus every token whose decoded text contains "&", "<" or ">", minus accepted answers of scored
+items; ranks over word groups as in f3. Defined before any f4 number was seen; nothing is tuned on it.
+Scored once each, --lite, test and v4 (scripts/f4_heldout.sh): (a) the five A-lens-family rows of Amendment 2 on all five models
+(w1_<tag>_<row>_f4_<set>); (b) the cross-entropy A-lens rows and controls of Amendment 3 on 2B and 9B (w2ho_<tag>_<var>_<row>_f4_<set>);
+(c) the Jacobian A-lens rows of Amendment 4 on 9B (w3ho_9b_ja<v>_<mode>_f4_<set>). lam re-chosen on FIT under f4 (ranks over groups).
+Same comparisons as Amendments 2-4. This is a further use of both held-out sets; f1 remains the literature-comparable filter, f4 is
+our reporting filter from now on. Prediction: f4 differs from f3 by under 1 point on almost every cell (few top-10 entries are markup).

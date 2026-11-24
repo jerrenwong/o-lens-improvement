@@ -11,6 +11,8 @@
       is 1 + the number of distinct groups, other than the groups holding one of its candidate ids, whose best
       member's logit is strictly greater than the concept's best candidate logit (olens.readout.group_candidate_ranks).
       Top-k lists for display: the best member of each of the top k groups (group_topk).
+  f4  f3, plus every token whose decoded text contains "&", "<" or ">" (markup fragments: "&quot", "<b", "&amp"),
+      minus the same spared set. This is "the full filter" used on the project pages from 24 Nov.
 
     FL = Filters(model.tokenizer, V, [bench, ...])     # snapshots each bench's f1 excluded_ids at construction
     F = FL.get("f2")                                   # SimpleNamespace(level, excluded_ids, group_ids, n_groups)
@@ -21,7 +23,8 @@ from types import SimpleNamespace
 
 import torch
 
-LEVELS = ("f1", "f2", "f3")
+LEVELS = ("f1", "f2", "f3", "f4")
+MARKUP_CHARS = ("&", "<", ">")  # f4: HTML / markup fragments such as "&quot", "<b", "</", "&amp" (user request, 24 Nov)
 TASKS = ("association", "multihop", "multilingual", "poetry", "typo")
 MARKERS = ("_", "▁", "Ġ")  # "_", SentencePiece "▁", byte-level BPE "Ġ"
 
@@ -103,11 +106,12 @@ class Filters:
             at = {i for i, t in enumerate(texts) if "@" in t}
             spec = {i for i in special_ids(self.tokenizer) if i < self.V}
             spared = spared_ids(self.benches)
-            ex = torch.tensor(sorted((base | nonsem | spec | at) - spared), dtype=torch.long)
+            markup = {i for i, t in enumerate(texts) if any(c in t for c in MARKUP_CHARS)} if level == "f4" else set()
+            ex = torch.tensor(sorted((base | nonsem | spec | at | markup) - spared), dtype=torch.long)
             F = SimpleNamespace(level=level, excluded_ids=ex, group_ids=None, n_groups=None,
-                                parts=dict(f1=len(base), nonsem=len(nonsem), special=len(spec), at=len(at),
+                                parts=dict(f1=len(base), nonsem=len(nonsem), special=len(spec), at=len(at), markup=len(markup),
                                            spared_in_union=len((base | nonsem | spec | at) & spared)))
-            if level == "f3":
+            if level in ("f3", "f4"):
                 F.group_ids, F.n_groups = group_ids_of(texts)
         self._cache[level] = F
         return F
