@@ -144,3 +144,19 @@ Caveats: K was chosen on dev (156 / 109 items); the dev gain over the ridge vers
 the ridge A-lens loses most of its non-word first guesses anyway, so the CE advantage may shrink there. 27B not fitted.
 Predictions: A-lens-CE alone beats ridge alone at pass@1 by >= 10 points on both sets and models under f1 and by less under f2;
 J++ + CE minus J++ + ridge is within [-2, +3] at pass@10 with an interval that includes 0 on most cells.
+
+
+## Results: Amendment 3 (scored 2026-11-24 08:40-10:20Z, once each, --lite; scripts/w2/heldout_runs.sh; full table runs/w2/heldout_table.md)
+PRIMARY J++ + A-lens-CE minus J++ + ridge A-lens, pass@10 / pass@1 [95% CI], filter f1:
+  9B v4  +2.6 [+1.2, +4.3] / +2.5 [+1.3, +3.8]        2B v4  +3.9 [+1.0, +7.6] / +4.7 [+2.5, +7.5]
+  2B test +2.0 [+0.5, +4.0] / -0.0 [-1.7, +1.6]       (9B test: see table file)
+  under f2: 9B v4 +1.3 [+0.4, +2.4] / +2.2 [+1.1, +3.6]; 9B test +1.2 [+0.0, +2.9] / +4.7 [+1.4, +8.9]; 2B v4 +3.6 [+0.7, +7.3] / +4.3 [+2.3, +7.1].
+A-lens-CE alone minus ridge alone (f1): 9B v4 +10.0 [+7.2, +13.1] / +24.2 [+20.6, +28.0]; 2B v4 +12.4 [+8.4, +17.0] / +14.3 [+10.3, +18.8];
+  under f2 the gap shrinks as predicted: 9B v4 +5.5 [+3.2, +8.0] / +6.8 [+4.7, +9.2]; 2B v4 +10.5 / +6.8.
+J++ + A-lens-CE minus J++ (f1): 9B v4 +11.8 [+8.4, +15.2] / +3.9 [+1.4, +6.5]; 2B v4 +8.3 [+4.5, +12.8] / +6.5 [+3.5, +10.0].
+Controls (f1, v4): J++ + CE minus shuffled CE: 9B +10.0 [+7.2, +13.1], 2B +6.0 [+3.8, +8.1]; minus constant CE: 9B +7.9 [+5.5, +10.4], 2B +4.0 [+1.5, +7.0].
+Absolute (v4, f1, pass@10 / pass@1): 9B J++ 53.9/31.8, J++ + ridge 63.0/33.1, J++ + CE 65.7/35.7, CE alone 57.5/28.0 (above J++ at pass@10);
+  2B J++ 37.9/20.8, J++ + ridge 42.3/22.7, J++ + CE 46.2/27.3, CE alone 45.7/22.8.
+Against predictions: CE alone pass@1 gain >= 10 under f1: yes on v4 (+24.2, +14.3) and 2B test (+10.4); "J++ + CE minus J++ + ridge within
+[-2, +3] with an interval including 0 on most cells": WRONG in the favourable direction: intervals exclude 0 on every v4 cell and the gain is
++2.6 to +3.9. Part (B) (competitor-subtracted readout) was not scored on held-out, as registered.
