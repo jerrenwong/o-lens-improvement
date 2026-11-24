@@ -265,3 +265,15 @@ Jacobian A-lens (9B, f4, v4): alone full 61.5 / 35.9, K1 59.1 / 33.5; + J++ full
 Against predictions: f4 within 1 point of f3 on almost every cell: yes (largest change seen: 9B v4 J++ + A-lens 65.3 -> 65.8).
 Under the full filter the CE advantage over the ridge A-lens added to J++ stays clear of 0 at pass@10 on v4 for both models, but is no
 longer clear at pass@1 and vanishes on the 9B test split: part of the earlier f1 advantage was junk that the scoring filter now removes.
+
+## Amendment 7 (registered 2026-11-24, before scoring): cross-entropy A-lens fitted on ~98k passages (Experiment 3.4)
+Question: does fitting the linear cross-entropy A-lens (K=10, same recipe as Amendment 3) on 98,000 public passages instead of 28,500
+improve held-out scores? Configuration chosen on dev only (runs/w9/table.md): lin_ce_98k, maps .hf27/w9/maps/E_<tag>_{topic,spec}_lin_ce_98k.pt,
+candidate auto/candidates/w9_alens.py, lam by the frozen fit-split rule at the filter level. The MLP map is NOT taken to held-out
+(dev gain over linear rests on 1-2 items; most layers early-stopped at step 0).
+Runs (once each, --lite, filter f4): scripts/w9/heldout.sh 2b 9b -> rows A-lens alone and J++ + A-lens, test and v4.
+Comparisons (paired bootstrap, 5000 draws, pass@10 and pass@1): against the 28.5k cross-entropy rows and the ridge rows already scored
+under f4 (Amendment 6: runs w2/f4 `ce`, `JPP+ce`, `ridge`, `JPP+ridge`) and J++ alone.
+Dev expectation, stated before scoring: J++ + CE-98k minus J++ + CE-28.5k about +1.5 to +2 points pass@10, intervals likely touching 0;
+alone rows about equal. No thresholds; sizes and intervals reported as they come. Passages overlapping any benchmark prompt text were
+excluded when building the set (runs/w9/data_card.md).
