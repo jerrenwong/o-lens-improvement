@@ -221,3 +221,14 @@ WRONG on v4 (+8.0 [+5.1, +11.0]); it held on dev. "Jacobian full alone beats rid
 cross-entropy alone at pass@10": not on v4 (+1.0, ns), yes on test (-3.6, ns).
 Reading: the Jacobian A-lens trades pass@10 for pass@1. Added to J++ it has the best first guess of any combination on v4 (39.7) but fewer
 concepts in the top 10 than the ridge or cross-entropy A-lens. The label-free K1 version is close to the full recipe on v4.
+
+
+## Amendment 5 (2026-11-24 ~15:20Z, committed before scoring): the cross-entropy and Jacobian A-lens rows under filter f3
+The user asked for every reported table to use the full token filter (f3 of Amendment 2). Amendments 3 and 4 scored their rows under
+f1 and f2 only. This adds, once each, --lite (scripts/f3_heldout.sh): cross-entropy A-lens K=10 (alone, + J++, and the shuffled and
+constant controls + J++) on Qwen3.5-2B and 9B, and the Jacobian A-lens (full recipe and K1; alone and + J++) on Qwen3.5-9B; test and v4;
+filter f3; lam re-chosen on FIT with ranks over token groups (auto/candidates/w1_alens.py with ALENS_E/ALENS_E2 set to the CE maps;
+auto/candidates/w3_f.py). Reference rows: w1_<tag>_{JPP0,none,JPP}_f3_<set>. Same comparisons as Amendments 3 and 4.
+Nothing is selected on this run; it changes the scoring rule of already registered comparisons. It is a further use of both held-out sets.
+Prediction: same signs as under f2 (J++ + CE above J++ + ridge by 1-4 points at pass@10; J++ + Jacobian full below J++ + ridge at pass@10,
+above at pass@1).
