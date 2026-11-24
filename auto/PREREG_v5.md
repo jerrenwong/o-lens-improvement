@@ -120,3 +120,27 @@ Caveats: these held-out sets have been scored before with f1 (this is a further 
 benchmark's; f1 numbers remain the comparable-to-literature ones. Predictions (v4, top-10, J++ + A-lens minus J++): the f1 values
 repeat the earlier registered run (+4.4 to +9.8); under f2 and f3 the gain stays positive on all five models and grows on the
 models where " **"/<|im_end|> crowd the A-lens output most (Gemma, Olmo); A-lens alone top-1 rises by at least 5 points under f2.
+
+
+## Amendment 3 (2026-11-24 ~08:35Z, committed before scoring): cross-entropy A-lens ("A-lens-CE"); competitor-subtracted readout not sent
+To-do item "fit probability instead of logits". Two things were tried on dev/fit only (scripts/w2/, report in the card):
+(A) A-lens-CE: each of the two A-lens maps is trained with KL(p || softmax over the whole vocabulary of the decoded map output),
+    p = the model's own answer distribution restricted to word tokens, top-K, temperature 1 (st1 P3v recipe, now also for the
+    unstated-word question); A-lens-CE = mean of the two unit-normalised map outputs, combined exactly as in the frozen alens.py
+    (auto/candidates/w2_alens_ce.py; maps .hf27/w2/E_<tag>_{topic,spec}_ce_k10.pt). K chosen on dev among {10, 50, 200}: K = 10.
+(B) Competitor-subtracted readout (score_X = z_X - alpha * sum_Y q(Y|X) z_Y from co-prediction statistics): null or harmful on dev for
+    every lens and every cut (top-k 5/20, top-p 0.9, temperature 0.5, words only); fit-chosen alpha is 0 in most cells and every
+    alpha > 0 lowers dev pass@10 except one cell. DECISION: (B) is NOT scored on held-out; it is reported as a dev-split null.
+Held-out run for (A), once each, --lite, scripts/w2/heldout_runs.sh: models Qwen3.5-2B and Qwen3.5-9B; sets test and v4; filters f1
+(primary, the benchmark's) and f2 (Amendment 2); rows A-lens-CE alone, J++ + A-lens-CE (lam on FIT, frozen rule), and two controls
+combined with J++: shuffled-target CE map, constant-only CE map. Reference rows from Amendment 2's run (same items):
+w1_<tag>_{none,JPP,JPP0}_<level>_<set> = ridge A-lens alone, J++ + ridge A-lens, J++.
+Comparisons (r2_boot.py, 5000 paired draws), per model, set and filter: PRIMARY J++ + A-lens-CE minus J++ + ridge A-lens (pass@10 and
+pass@1); A-lens-CE alone minus ridge A-lens alone; J++ + A-lens-CE minus J++; J++ + A-lens-CE minus each control.
+Seen beforehand (dev, f1, top-10 / top-1): 9B J++ .595/.385; ridge alone .530/.063, CE alone .572/.332; J++ + ridge .628/.420,
+J++ + CE .638/.430; controls + J++ .615/.393 and .613/.393. 2B J++ .550/.289; ridge alone .421/.143, CE alone .464/.280;
+J++ + ridge .539/.302, J++ + CE .557/.322; controls .489/.313 and .512/.308. CE maps never output a non-word first (ridge: 68-97%).
+Caveats: K was chosen on dev (156 / 109 items); the dev gain over the ridge version when added to J++ is only 1-2 points; under f2
+the ridge A-lens loses most of its non-word first guesses anyway, so the CE advantage may shrink there. 27B not fitted.
+Predictions: A-lens-CE alone beats ridge alone at pass@1 by >= 10 points on both sets and models under f1 and by less under f2;
+J++ + CE minus J++ + ridge is within [-2, +3] at pass@10 with an interval that includes 0 on most cells.
