@@ -243,3 +243,25 @@ Scored once each, --lite, test and v4 (scripts/f4_heldout.sh): (a) the five A-le
 (c) the Jacobian A-lens rows of Amendment 4 on 9B (w3ho_9b_ja<v>_<mode>_f4_<set>). lam re-chosen on FIT under f4 (ranks over groups).
 Same comparisons as Amendments 2-4. This is a further use of both held-out sets; f1 remains the literature-comparable filter, f4 is
 our reporting filter from now on. Prediction: f4 differs from f3 by under 1 point on almost every cell (few top-10 entries are markup).
+
+
+## Results: Amendments 5 and 6 (f3 for CE/Jacobian; full filter f4 for all rows; scored 2026-11-24 15:20-16:35Z, once each, --lite)
+Numbers: runs/f4_page.json (scripts/f4_page_numbers.py), runs/f3_page.json. f4, v4 (new prompts), pass@10 / pass@1:
+                2B            9B            27B           Olmo-7B       Gemma-E4B
+  J-lens        35.5 / 17.8   40.5 / 16.6   41.7 / 19.7   32.3 / 12.6   37.4 / 22.3
+  J++           38.8 / 21.1   58.2 / 32.1   61.2 / 35.1   36.7 / 15.4   43.6 / 25.5
+  A-lens alone  36.9 / 16.0   52.2 / 21.2   50.7 / 17.3   45.0 / 20.9   35.3 / 12.7
+  J + A-lens    45.3 / 20.2   58.7 / 26.6   59.2 / 29.6   51.7 / 22.0   50.2 / 23.9
+  J++ + A-lens  43.3 / 25.8   65.8 / 34.1   63.3 / 36.9   48.5 / 23.0   53.2 / 26.2
+J++ + A-lens minus J++ (pass@10): v4 +4.6 [1.9, 8.1], +7.6 [5.0, 10.7], +2.1 [0.6, 3.8], +11.9 [7.5, 16.6], +9.6 [5.9, 13.6];
+  test +6.4 [0.9, 13.3], +7.1 [2.8, 12.0], +3.2 [0.4, 6.6], +10.6 [4.1, 18.1], +10.5 [4.9, 17.0]: all ten intervals exclude 0.
+  pass@1 v4: +4.7 [1.4, 8.3], +2.0 [-0.6, 4.5], +1.9 [0.5, 3.3], +7.6 [4.5, 11.3], +0.7 [-4.0, 5.0].
+Cross-entropy A-lens (f4): J++ + CE minus J++ + ridge: 9B v4 +2.6 [0.9, 4.3] / +1.4 [-0.1, 2.9]; 2B v4 +3.5 [1.1, 6.4] / +1.7 [-1.3, 4.0];
+  9B test -0.8 [-3.2, 1.5] / +2.1 [-1.8, 6.4]; 2B test +3.5 [-0.5, 9.0] / -0.5. J++ + CE: 9B v4 68.4 / 35.5, 2B v4 46.8 / 27.5.
+  CE alone minus ridge alone, v4: 9B +5.9 [3.6, 8.5] / +7.0 [4.9, 9.4]; 2B +9.5 [6.1, 13.6] / +6.8 [3.8, 10.3].
+  J++ + CE minus shuffled control, v4 pass@10: 9B +14.3 [11.2, 17.6]; 2B +6.3 [4.2, 8.4].
+Jacobian A-lens (9B, f4, v4): alone full 61.5 / 35.9, K1 59.1 / 33.5; + J++ full 63.9 / 40.0, K1 62.9 / 34.8;
+  J++ + Jacobian full minus J++ + ridge: -1.9 [-5.1, 1.0] / +5.9 [3.2, 8.8]; minus J++ + CE: -4.5 [-7.7, -1.5] / +4.6 [1.7, 7.6].
+Against predictions: f4 within 1 point of f3 on almost every cell: yes (largest change seen: 9B v4 J++ + A-lens 65.3 -> 65.8).
+Under the full filter the CE advantage over the ridge A-lens added to J++ stays clear of 0 at pass@10 on v4 for both models, but is no
+longer clear at pass@1 and vanishes on the 9B test split: part of the earlier f1 advantage was junk that the scoring filter now removes.
