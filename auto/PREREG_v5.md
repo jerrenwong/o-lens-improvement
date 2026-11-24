@@ -197,3 +197,27 @@ excludes 0 on 28 (27B test f1, f2 do not). pass@1 differences are mostly within 
 A-lens alone, pass@1 on v4, f1 -> f2: 9B 3.8 -> 21.2; Gemma 5.3 -> 12.6 (prediction "rises by at least 5 points": met where checked).
 Against predictions: gain positive under f2 and f3 on all five models: yes. "Grows on Gemma and Olmo": Gemma yes (+5.3 -> +9.2 -> +9.6);
 Olmo unchanged under f2, larger under f3. Not predicted: on 27B the gain shrinks under f3 (+4.8 -> +2.1).
+
+
+## Results: Amendment 4 (Jacobian A-lens, Qwen3.5-9B; scored 2026-11-24 11:20-11:27Z, once each, --lite; table runs/w3/heldout_table.md)
+pass@10 / pass@1, f1:            test (153)        v4 (482)
+  J++                            58.1 / 35.4       53.9 / 31.8
+  ridge A-lens alone             49.8 /  2.6       47.5 /  3.8
+  cross-entropy A-lens alone     55.0 / 28.0       57.5 / 28.0
+  Jacobian A-lens alone, full    51.4 / 35.2       58.6 / 35.7
+  Jacobian A-lens alone, K1      45.7 / 25.0       57.6 / 33.5
+  J++ + ridge A-lens             63.1 / 35.8       63.0 / 33.1
+  J++ + cross-entropy A-lens     64.5 / 40.7       65.7 / 35.7
+  J++ + Jacobian A-lens, full    57.9 / 39.7       61.0 / 39.7
+  J++ + Jacobian A-lens, K1      60.5 / 37.6       61.9 / 36.0
+PRIMARY J++ + Jacobian (full) minus J++ + ridge: test -5.2 [-10.6, -0.4] / +3.9 [-0.9, +9.2]; v4 -2.1 [-5.5, +1.2] / +6.6 [+3.9, +9.4].
+K1: test -2.6 [-6.1, +0.8] / +1.8; v4 -1.1 [-4.7, +2.4] / +2.9 [+0.7, +5.3].
+J++ + Jacobian (full) minus J++: test -0.2 [-4.7, +3.6] / +4.3 [-0.5, +9.1]; v4 +7.1 [+3.9, +10.3] / +7.9 [+5.1, +10.8]. K1 minus J++: v4 +8.0 [+5.1, +11.0] / +4.2 [+1.9, +6.8].
+J++ + Jacobian (full) minus J++ + cross-entropy: test -6.6 [-12.0, -1.8] / -1.0; v4 -4.7 [-7.9, -1.6] / +4.0 [+1.2, +6.9].
+Alone: Jacobian full minus ridge: v4 +11.1 [+7.1, +15.1] / +31.9 [+28.6, +35.4]; minus cross-entropy: v4 +1.0 [-3.0, +5.1] / +7.7 [+3.8, +11.5].
+f2: same pattern (v4: J++ + Jacobian full minus J++ + ridge -3.5 [-6.8, -0.4] / +5.8 [+3.0, +8.6]).
+Against predictions: "J++ + Jacobian (full) minus J++ + ridge negative or within +-2 at pass@10": yes (-5.2, -2.1). "K1 + J++ does not beat J++":
+WRONG on v4 (+8.0 [+5.1, +11.0]); it held on dev. "Jacobian full alone beats ridge alone at pass@1 by > 15 under f1": yes (+32). "Below
+cross-entropy alone at pass@10": not on v4 (+1.0, ns), yes on test (-3.6, ns).
+Reading: the Jacobian A-lens trades pass@10 for pass@1. Added to J++ it has the best first guess of any combination on v4 (39.7) but fewer
+concepts in the top 10 than the ridge or cross-entropy A-lens. The label-free K1 version is close to the full recipe on v4.
