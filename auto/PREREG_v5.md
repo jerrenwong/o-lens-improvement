@@ -277,3 +277,20 @@ under f4 (Amendment 6: runs w2/f4 `ce`, `JPP+ce`, `ridge`, `JPP+ridge`) and J++ 
 Dev expectation, stated before scoring: J++ + CE-98k minus J++ + CE-28.5k about +1.5 to +2 points pass@10, intervals likely touching 0;
 alone rows about equal. No thresholds; sizes and intervals reported as they come. Passages overlapping any benchmark prompt text were
 excluded when building the set (runs/w9/data_card.md).
+
+## Results: Amendment 7 (CE A-lens on 98k passages; scored once 2026-11-24 ~20:20-20:50Z, f4, --lite; runs/w9/heldout.json)
+pass@10 / pass@1        9B test       9B v4         2B test       2B v4
+  J++                   59.1 / 37.4   58.2 / 32.1   36.2 / 18.0   38.8 / 21.1
+  J++ + ridge A-lens    66.2 / 38.6   65.8 / 34.1   42.6 / 20.1   43.3 / 25.8
+  J++ + CE 28.5k        65.4 / 40.7   68.4 / 35.5   46.1 / 19.7   46.8 / 27.5
+  J++ + CE 98k          67.8 / 39.2   71.4 / 37.9   50.0 / 20.9   47.8 / 28.1
+  CE 28.5k alone        55.4 / 29.7   58.2 / 28.2   47.1 / 17.1   46.4 / 22.8
+  CE 98k alone          57.6 / 31.2   61.1 / 33.3   45.8 / 15.8   50.3 / 23.8
+J++ + CE98 minus J++ + CE28: pass@10 +2.4 [0.0, 5.0], +3.0 [1.2, 5.1], +3.9 [0.3, 9.4], +1.0 [0.3, 1.7];
+                             pass@1  -1.4 [-5.4, 1.8], +2.5 [1.0, 3.9], +1.3 [0.0, 3.8], +0.6 [-0.1, 1.4].
+J++ + CE98 minus J++ + ridge: pass@10 +1.6 [-0.9, 4.4], +5.6 [3.2, 8.2], +7.3 [1.5, 13.8], +4.5 [2.0, 7.4].
+J++ + CE98 minus J++: pass@10 +8.7 [3.8, 14.2], +13.2 [9.9, 16.8], +13.8 [6.6, 20.8], +9.0 [5.2, 13.5].
+Alone, CE98 minus CE28: pass@10 +2.3 [-1.4, 6.7], +2.9 [0.3, 5.6], -1.3 [-10.2, 6.7], +3.9 [0.9, 7.4].
+Against the dev expectation (+1.5 to +2, intervals touching 0): held-out gain is the same sign in all four cells and a little larger; three of four
+pass@10 intervals exclude 0 and the fourth touches it. Note: the first launch of this run began before the registration commit had succeeded;
+it was stopped before any evaluator wrote a result, the commit (b8cdb18) was pushed, and the run was restarted.
