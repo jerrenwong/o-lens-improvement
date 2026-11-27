@@ -12,7 +12,7 @@ held-out-only rows are never read); probes = raw text, read at its LAST token (m
 Ranks and top lists: filter f4 (auto/filters.py, word groups), whatever --filter the lens was built under (recorded).
 Probe words with no single-token form are matched by their first token piece (>= 3 chars; forms[].kind = "piece");
 per probe: is_next (accepted form in the model's own f4 next-token top 10), scorable (some usable form).
-Writes runs/qual/<tag>/<slug of QUAL_NAME>.json (format: scripts/qual/qualfmt.py). UNTESTED as of 2026-11-27.
+Writes runs/qual/<tag>/<slug of QUAL_NAME>.json (format: scripts/qual/qualfmt.py). Tested on 9B 2026-11-27 (q1).
 """
 import datetime
 import importlib.util
@@ -84,9 +84,20 @@ def load_candidate(path):
     return mod
 
 
-def env_used(path):
-    src = Path(path).read_text()
-    names = set(re.findall(r"environ(?:\.get)?[\[(]\s*[\"']([A-Z0-9_]+)[\"']", src))
+def env_used(path, depth=2):
+    """Env vars read by the candidate file AND by the sibling candidate modules it imports (w9_alens.py -> alens.py:
+    ALENS_E / ALENS_E2 / ALENS_BASE), up to `depth` import levels (fix 2026-11-27: wrapper candidates recorded {})."""
+    names, seen, todo = set(), set(), [(Path(path), 0)]
+    while todo:
+        p, d = todo.pop()
+        if p in seen or not p.exists():
+            continue
+        seen.add(p)
+        src = p.read_text()
+        names |= set(re.findall(r"environ(?:\.get)?[\[(]\s*[\"']([A-Z0-9_]+)[\"']", src))
+        if d < depth:
+            for m in re.findall(r"^\s*(?:from\s+(\w+)\s+import|import\s+(\w+))", src, re.M):
+                todo.append((p.parent / f"{m[0] or m[1]}.py", d + 1))
     return {k: os.environ[k] for k in sorted(names) if k in os.environ}
 
 
