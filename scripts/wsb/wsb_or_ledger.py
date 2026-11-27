@@ -74,6 +74,12 @@ def _install():
     async def openrouter_once(*a, **k):
         if stop and os.path.exists(stop):
             raise llm.JudgeConfigError(f"spend cap reached ({stop} exists): no new OpenRouter call")
+        # openai/* reasoning models on OpenRouter reject `temperature` under require_parameters (404 "No endpoints
+        # found"); the benchmark's own OpenAI-direct route drops it too (llm.py: "dropping temperature ... (OpenAI
+        # reasoning models)"), so drop it here unless WSB_OR_KEEP_TEMPERATURE=1.
+        if (str(k.get("model", "")).startswith("openai/") and k.get("temperature") is not None
+                and os.environ.get("WSB_OR_KEEP_TEMPERATURE") != "1"):
+            k["temperature"] = None
         return await orig_once(*a, **k)
 
     llm._chat_result = chat_result

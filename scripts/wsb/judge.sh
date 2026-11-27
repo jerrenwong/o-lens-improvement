@@ -75,7 +75,8 @@ EFF_B=(judge_effort=default)
 
 export WSB_OR_LEDGER=$OUT/or_ledger.jsonl WSB_OR_STOP=$OUT/STOP
 export WSB_TOKEN_LEDGER=$OUT/anthropic_ledger.jsonl        # stays empty: proves no Claude call was made
-export WSB_SLOTS=/tmp/wsb_slots_$$:$SLOTS
+# FIX: honour a caller's WSB_SLOTS so several judge.sh (arms) in parallel share one cap
+export WSB_SLOTS=${WSB_SLOTS:-/tmp/wsb_slots_$$:$SLOTS}
 [ "$IS_LUNA" = 1 ] && export WSBENCH_OPENROUTER_MAX_OUT=32000
 unset WSBENCH_OPENAI_ROUTE
 [ -e "$OUT/STOP" ] && { echo "$OUT/STOP exists (spend cap hit earlier): remove it to continue"; exit 2; }

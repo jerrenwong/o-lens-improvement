@@ -58,7 +58,9 @@ from wsbench.produce.render import display_tokens  # noqa: E402
 from wsbench.readouts import sidecar_path, write_sidecar  # noqa: E402
 
 R = "/workspace/o-lens-improvement"
-SNAP = f"{R}/.hf27/hub/models--Qwen--Qwen3.6-27B/snapshots/1cda14dd71a3f47115850eb790f416f165da1cb5"
+# FIX 2026-11-27: the /workspace snapshot holds 0-byte placeholders (no symlinks on /workspace); use the pod-local
+# cache built by scripts/fix_hf27_links.py (symlinks into the blobs on /workspace), or WSB_SNAP (e.g. a /dev/shm copy)
+SNAP = os.environ.get("WSB_SNAP", "/root/hf27/hub/models--Qwen--Qwen3.6-27B/snapshots/1cda14dd71a3f47115850eb790f416f165da1cb5")
 GRID = list(range(20, 61, 4))
 ALENS_LAYERS = [24, 32, 40, 48, 56]
 K = 10
@@ -232,6 +234,8 @@ if a.allow_bf16:
     wheres.append(store.Store(a.store, DEFAULT_REVISION, "bf16"))
 
 sum_path = f"{out_dir}/_make_readouts_summary.json"
+T_ALL, N_ALL = time.time(), 0
+torch.cuda.reset_peak_memory_stats()
 summary = json.load(open(sum_path)) if os.path.exists(sum_path) else {}
 for fam in fams:
     t0 = time.time()
@@ -264,10 +268,16 @@ for fam in fams:
                 c = cells[i]
                 rows[i] = {"id": c.id, "layer": c.layer, "pos": c.pos, "token": c.token,
                            "tokens": display_tokens(tok, ids[j]), "scores": [round(x, 4) for x in vals[j]]}
-            if ref is not None and n_val < a.validate:
-                for i in bi[: a.validate - n_val][:: max(1, len(bi) // 64)]:
-                    n_val += 1
-                    n_eq += ref.read(cells[i].h.float(), l).tokens == rows[i]["tokens"]
+        if ref is not None and idx:  # validation spread over every layer and the whole family (seeded sample)
+            import random
+            per_l = -(-a.validate // len(LAYERS))
+            for i in random.Random(f"{fam}{l}").sample(idx, min(per_l, len(idx))):
+                n_val += 1
+                same = ref.read(cells[i].h.float(), l).tokens == rows[i]["tokens"]
+                n_eq += same
+                if not same and n_val - n_eq <= 3:
+                    print("  MISMATCH", fam, cells[i].id, l, cells[i].pos, ref.read(cells[i].h.float(), l).tokens,
+                          rows[i]["tokens"], flush=True)
     p = f"{out_dir}/{fam}.jsonl"
     sc = sidecar_path(p)
     if os.path.exists(sc):
@@ -283,3 +293,8 @@ for fam in fams:
                         **({"validated": n_val, "identical_lists": n_eq} if ref is not None else {}))
     print(fam, {k: (len(v) if k == "items_missing" else v) for k, v in summary[fam].items()}, flush=True)
     json.dump(summary, open(sum_path, "w"), indent=1)
+    N_ALL += len(cells)
+dt = time.time() - T_ALL
+print(f"DONE {name}: {N_ALL} cells in {dt:.0f}s = {N_ALL / max(dt, 1e-9):.0f} cells/s; peak GPU memory "
+      f"{torch.cuda.max_memory_allocated() / 2**30:.1f} GiB allocated, {torch.cuda.max_memory_reserved() / 2**30:.1f} GiB reserved",
+      flush=True)

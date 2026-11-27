@@ -29,7 +29,9 @@ from wsbench.produce import dataset, store
 from wsbench.produce.backend import DEFAULT_REVISION, Backend
 
 R = "/workspace/o-lens-improvement"
-SNAP = f"{R}/.hf27/hub/models--Qwen--Qwen3.6-27B/snapshots/1cda14dd71a3f47115850eb790f416f165da1cb5"
+# FIX 2026-11-27: the /workspace snapshot holds 0-byte placeholders (no symlinks on /workspace); use the pod-local
+# cache built by scripts/fix_hf27_links.py (symlinks into the blobs on /workspace), or WSB_SNAP (e.g. a /dev/shm copy)
+SNAP = os.environ.get("WSB_SNAP", "/root/hf27/hub/models--Qwen--Qwen3.6-27B/snapshots/1cda14dd71a3f47115850eb790f416f165da1cb5")
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--families", default="fast")
