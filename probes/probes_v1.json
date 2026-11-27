@@ -1,0 +1,2569 @@
+{
+  "version": 1,
+  "categories": {
+    "implied-object": "A situation implies an unnamed object the speaker or character is using or looking for (cactus-style).",
+    "bridge-entity": "Two-step factual prompt; the unstated intermediate entity is the concept, not the final answer.",
+    "described-entity": "A definition or description of a thing, place or person whose name is never given.",
+    "implied-cause": "A scene shows only consequences; the concept is the unstated cause or event.",
+    "implied-emotion": "Behaviour or body language implies a character's unnamed emotion or state.",
+    "implied-intention": "Preparations imply what a character is about to do or secretly plans.",
+    "list-category": "A list of items whose shared category or common property is never named.",
+    "foreign-language": "Non-English text implying a word; accepted in English or in the text's own language.",
+    "garbled-word": "A misspelled, scrambled, truncated or obfuscated word; the concept is the intended word.",
+    "riddle-metaphor": "Riddles, metaphors and euphemisms that stand for an unstated literal concept.",
+    "control": "Plain text with no particular hidden concept; shows what a lens prints when there is nothing to find."
+  },
+  "probes": [
+    {
+      "id": "implied-object-01",
+      "category": "implied-object",
+      "difficulty": "medium",
+      "text": "I am thirsty, the sun is scorching. Should I bite through this thorny thing?",
+      "accepted": [
+        "cactus"
+      ],
+      "near": [
+        "desert",
+        "plant",
+        "thorn"
+      ],
+      "note": "user's example"
+    },
+    {
+      "id": "implied-object-02",
+      "category": "implied-object",
+      "difficulty": "easy",
+      "text": "The door is locked and I have patted every pocket twice. Where on earth did I put them?",
+      "accepted": [
+        "keys",
+        "key"
+      ],
+      "near": [
+        "lock",
+        "door",
+        "pocket"
+      ]
+    },
+    {
+      "id": "implied-object-03",
+      "category": "implied-object",
+      "difficulty": "easy",
+      "text": "He struck it against the side of the box and a small flame flared up between his fingers.",
+      "accepted": [
+        "match",
+        "matches"
+      ],
+      "near": [
+        "fire",
+        "lighter",
+        "candle"
+      ]
+    },
+    {
+      "id": "implied-object-04",
+      "category": "implied-object",
+      "difficulty": "easy",
+      "text": "Hold it by the handle, press the bristles against your teeth and move it in small circles for two minutes.",
+      "accepted": [
+        "toothbrush",
+        "brush"
+      ],
+      "near": [
+        "toothpaste",
+        "dentist",
+        "mouth"
+      ],
+      "note": "instruction style"
+    },
+    {
+      "id": "implied-object-05",
+      "category": "implied-object",
+      "difficulty": "easy",
+      "text": "It kept buzzing on the nightstand, screen glowing, until I finally reached over and swiped to silence the alarm.",
+      "accepted": [
+        "phone",
+        "smartphone"
+      ],
+      "near": [
+        "clock",
+        "alarm",
+        "call"
+      ]
+    },
+    {
+      "id": "implied-object-06",
+      "category": "implied-object",
+      "difficulty": "easy",
+      "text": "The rain was coming down hard, so she pressed the button on the handle and it sprang open above her head.",
+      "accepted": [
+        "umbrella"
+      ],
+      "near": [
+        "rain",
+        "coat",
+        "hood"
+      ]
+    },
+    {
+      "id": "implied-object-07",
+      "category": "implied-object",
+      "difficulty": "medium",
+      "text": "Before the photo, she checked her lipstick in the little round thing she always carried in her purse.",
+      "accepted": [
+        "mirror"
+      ],
+      "near": [
+        "reflection",
+        "makeup",
+        "glass"
+      ]
+    },
+    {
+      "id": "implied-object-08",
+      "category": "implied-object",
+      "difficulty": "medium",
+      "text": "We pitched it between two pines, hammered in the pegs, and zipped ourselves inside just as the storm arrived.",
+      "accepted": [
+        "tent"
+      ],
+      "near": [
+        "camping",
+        "shelter",
+        "cabin"
+      ]
+    },
+    {
+      "id": "implied-object-09",
+      "category": "implied-object",
+      "difficulty": "medium",
+      "text": "The carpenter marked the line, then pushed and pulled the toothed blade back and forth until the plank dropped in two.",
+      "accepted": [
+        "saw"
+      ],
+      "near": [
+        "wood",
+        "knife",
+        "hammer"
+      ]
+    },
+    {
+      "id": "implied-object-10",
+      "category": "implied-object",
+      "difficulty": "medium",
+      "text": "\"I can't pay,\" I told the cashier. \"I left it on the kitchen table with all my cards inside.\"",
+      "accepted": [
+        "wallet",
+        "purse"
+      ],
+      "near": [
+        "money",
+        "cash",
+        "bag"
+      ],
+      "note": "dialogue"
+    },
+    {
+      "id": "implied-object-11",
+      "category": "implied-object",
+      "difficulty": "hard",
+      "text": "Grandpa took them out every night and left them grinning in a glass of water beside the bed.",
+      "accepted": [
+        "teeth",
+        "dentures"
+      ],
+      "near": [
+        "mouth",
+        "dentist",
+        "smile"
+      ]
+    },
+    {
+      "id": "implied-object-12",
+      "category": "implied-object",
+      "difficulty": "hard",
+      "text": "Her arm was broken in two places, so the doctor wrapped it in wet white bandages that set hard within the hour.",
+      "accepted": [
+        "cast",
+        "plaster"
+      ],
+      "near": [
+        "bandage",
+        "splint",
+        "bone"
+      ]
+    },
+    {
+      "id": "implied-object-13",
+      "category": "implied-object",
+      "difficulty": "hard",
+      "text": "In the morning the tooth was gone from under the pillow, and something small, round and shiny lay in its place.",
+      "accepted": [
+        "coin",
+        "money"
+      ],
+      "near": [
+        "fairy",
+        "silver",
+        "gift"
+      ],
+      "note": "tooth fairy, then coin"
+    },
+    {
+      "id": "implied-object-14",
+      "category": "implied-object",
+      "difficulty": "hard",
+      "text": "She wound it every morning by its tiny crown, held it to her ear, and smiled at the steady ticking on her wrist.",
+      "accepted": [
+        "watch",
+        "wristwatch"
+      ],
+      "near": [
+        "clock",
+        "time",
+        "bracelet"
+      ]
+    },
+    {
+      "id": "implied-object-15",
+      "category": "implied-object",
+      "difficulty": "hard",
+      "text": "The referee looked at the player who had just committed his second serious foul and reached slowly into his chest pocket.",
+      "accepted": [
+        "card"
+      ],
+      "near": [
+        "red",
+        "penalty",
+        "whistle"
+      ],
+      "note": "second foul, sending off, card"
+    },
+    {
+      "id": "bridge-entity-01",
+      "category": "bridge-entity",
+      "difficulty": "medium",
+      "text": "The population of the largest country in the world is",
+      "accepted": [
+        "China"
+      ],
+      "near": [
+        "Russia",
+        "India",
+        "Asia"
+      ],
+      "note": "user's example; Russia (area) or India also defensible"
+    },
+    {
+      "id": "bridge-entity-02",
+      "category": "bridge-entity",
+      "difficulty": "easy",
+      "text": "The author of Hamlet was born in the town of",
+      "accepted": [
+        "Shakespeare"
+      ],
+      "near": [
+        "Stratford",
+        "England",
+        "playwright"
+      ],
+      "note": "user's example; answer Stratford"
+    },
+    {
+      "id": "bridge-entity-03",
+      "category": "bridge-entity",
+      "difficulty": "easy",
+      "text": "The currency used in the country whose capital is Tokyo is called the",
+      "accepted": [
+        "Japan",
+        "Japanese"
+      ],
+      "near": [
+        "yen",
+        "Asia",
+        "Korea"
+      ],
+      "note": "answer: yen"
+    },
+    {
+      "id": "bridge-entity-04",
+      "category": "bridge-entity",
+      "difficulty": "easy",
+      "text": "The scientist who developed the theory of general relativity was born in the country of",
+      "accepted": [
+        "Einstein"
+      ],
+      "near": [
+        "Germany",
+        "physics",
+        "Newton"
+      ],
+      "note": "answer: Germany"
+    },
+    {
+      "id": "bridge-entity-05",
+      "category": "bridge-entity",
+      "difficulty": "easy",
+      "text": "The capital of the country shaped like a boot is",
+      "accepted": [
+        "Italy",
+        "Italian"
+      ],
+      "near": [
+        "Rome",
+        "Europe",
+        "Spain"
+      ],
+      "note": "answer: Rome"
+    },
+    {
+      "id": "bridge-entity-06",
+      "category": "bridge-entity",
+      "difficulty": "easy",
+      "text": "The company that makes the iPhone has its headquarters in the city of",
+      "accepted": [
+        "Apple"
+      ],
+      "near": [
+        "Cupertino",
+        "California",
+        "Google"
+      ],
+      "note": "answer: Cupertino"
+    },
+    {
+      "id": "bridge-entity-07",
+      "category": "bridge-entity",
+      "difficulty": "medium",
+      "text": "The language spoken in the country where the Eiffel Tower stands is",
+      "accepted": [
+        "France",
+        "Paris"
+      ],
+      "near": [
+        "French",
+        "Europe",
+        "Italy"
+      ],
+      "note": "answer: French"
+    },
+    {
+      "id": "bridge-entity-08",
+      "category": "bridge-entity",
+      "difficulty": "medium",
+      "text": "The river that flows through the capital of Egypt empties into the",
+      "accepted": [
+        "Nile",
+        "Cairo"
+      ],
+      "near": [
+        "Mediterranean",
+        "Africa",
+        "Amazon"
+      ],
+      "note": "answer: Mediterranean"
+    },
+    {
+      "id": "bridge-entity-09",
+      "category": "bridge-entity",
+      "difficulty": "medium",
+      "text": "The home planet of the superhero who works as a reporter under the name Clark Kent is called",
+      "accepted": [
+        "Superman"
+      ],
+      "near": [
+        "Krypton",
+        "Batman",
+        "hero"
+      ],
+      "note": "answer: Krypton"
+    },
+    {
+      "id": "bridge-entity-10",
+      "category": "bridge-entity",
+      "difficulty": "medium",
+      "text": "The painter of the Mona Lisa spent his final years in the country of",
+      "accepted": [
+        "Leonardo",
+        "Vinci"
+      ],
+      "near": [
+        "Italy",
+        "Michelangelo",
+        "Renaissance"
+      ],
+      "note": "answer: France"
+    },
+    {
+      "id": "bridge-entity-11",
+      "category": "bridge-entity",
+      "difficulty": "hard",
+      "text": "The teacher of the philosopher who tutored Alexander the Great was",
+      "accepted": [
+        "Aristotle"
+      ],
+      "near": [
+        "Plato",
+        "Socrates",
+        "Greek"
+      ],
+      "note": "answer: Plato"
+    },
+    {
+      "id": "bridge-entity-12",
+      "category": "bridge-entity",
+      "difficulty": "hard",
+      "text": "The woman who won Nobel Prizes in both physics and chemistry was born in the country of",
+      "accepted": [
+        "Curie",
+        "Marie"
+      ],
+      "near": [
+        "Poland",
+        "radium",
+        "Einstein"
+      ],
+      "note": "answer: Poland"
+    },
+    {
+      "id": "bridge-entity-13",
+      "category": "bridge-entity",
+      "difficulty": "hard",
+      "text": "The wife of the president who was shot at Ford's Theatre was named",
+      "accepted": [
+        "Lincoln",
+        "Abraham"
+      ],
+      "near": [
+        "Mary",
+        "Kennedy",
+        "Booth"
+      ],
+      "note": "answer: Mary"
+    },
+    {
+      "id": "bridge-entity-14",
+      "category": "bridge-entity",
+      "difficulty": "hard",
+      "text": "The animal on the flag of the state where Hollywood is located is a",
+      "accepted": [
+        "California"
+      ],
+      "near": [
+        "bear",
+        "Angeles",
+        "Texas"
+      ],
+      "note": "answer: bear"
+    },
+    {
+      "id": "bridge-entity-15",
+      "category": "bridge-entity",
+      "difficulty": "hard",
+      "text": "The chemical symbol of the only metal that is liquid at room temperature is",
+      "accepted": [
+        "mercury"
+      ],
+      "near": [
+        "Hg",
+        "silver",
+        "metal"
+      ],
+      "note": "answer: Hg"
+    },
+    {
+      "id": "described-entity-01",
+      "category": "described-entity",
+      "difficulty": "easy",
+      "text": "A large grey animal with a long trunk, big floppy ears and ivory tusks.",
+      "accepted": [
+        "elephant",
+        "elephants"
+      ],
+      "near": [
+        "mammoth",
+        "Africa",
+        "rhino"
+      ]
+    },
+    {
+      "id": "described-entity-02",
+      "category": "described-entity",
+      "difficulty": "easy",
+      "text": "It is the yellow curved fruit that monkeys are always shown peeling in cartoons.",
+      "accepted": [
+        "banana",
+        "bananas"
+      ],
+      "near": [
+        "fruit",
+        "monkey",
+        "peel"
+      ]
+    },
+    {
+      "id": "described-entity-03",
+      "category": "described-entity",
+      "difficulty": "easy",
+      "text": "This black-and-white bird cannot fly, waddles across Antarctic ice and swims after fish.",
+      "accepted": [
+        "penguin",
+        "penguins"
+      ],
+      "near": [
+        "Antarctica",
+        "seal",
+        "bird"
+      ]
+    },
+    {
+      "id": "described-entity-04",
+      "category": "described-entity",
+      "difficulty": "easy",
+      "text": "Which instrument has eighty-eight black and white keys and is played sitting on a bench?",
+      "accepted": [
+        "piano"
+      ],
+      "near": [
+        "keyboard",
+        "organ",
+        "music"
+      ],
+      "note": "question"
+    },
+    {
+      "id": "described-entity-05",
+      "category": "described-entity",
+      "difficulty": "easy",
+      "text": "Name the board game with kings, queens, bishops and knights on sixty-four squares.",
+      "accepted": [
+        "chess"
+      ],
+      "near": [
+        "checkers",
+        "pawn",
+        "board"
+      ],
+      "note": "instruction"
+    },
+    {
+      "id": "described-entity-06",
+      "category": "described-entity",
+      "difficulty": "medium",
+      "text": "The detective of Baker Street who plays the violin and solves crimes with his friend Doctor Watson.",
+      "accepted": [
+        "Sherlock",
+        "Holmes"
+      ],
+      "near": [
+        "detective",
+        "London",
+        "Doyle"
+      ]
+    },
+    {
+      "id": "described-entity-07",
+      "category": "described-entity",
+      "difficulty": "medium",
+      "text": "An ancient stone tomb built for a pharaoh, with a square base and four triangular faces meeting at a point.",
+      "accepted": [
+        "pyramid",
+        "pyramids"
+      ],
+      "near": [
+        "Egypt",
+        "sphinx",
+        "temple"
+      ]
+    },
+    {
+      "id": "described-entity-08",
+      "category": "described-entity",
+      "difficulty": "medium",
+      "text": "The force that pulls everything toward the centre of the Earth and keeps the Moon in its orbit.",
+      "accepted": [
+        "gravity"
+      ],
+      "near": [
+        "force",
+        "Newton",
+        "weight"
+      ]
+    },
+    {
+      "id": "described-entity-09",
+      "category": "described-entity",
+      "difficulty": "medium",
+      "text": "The German city that was split in two by a wall for almost three decades during the Cold War.",
+      "accepted": [
+        "Berlin"
+      ],
+      "near": [
+        "Germany",
+        "Munich",
+        "wall"
+      ]
+    },
+    {
+      "id": "described-entity-10",
+      "category": "described-entity",
+      "difficulty": "medium",
+      "text": "The season when leaves turn orange and drop from the trees, days shorten, and children go back to school.",
+      "accepted": [
+        "autumn",
+        "fall"
+      ],
+      "near": [
+        "winter",
+        "October",
+        "season"
+      ]
+    },
+    {
+      "id": "described-entity-11",
+      "category": "described-entity",
+      "difficulty": "hard",
+      "text": "The gas that makes up most of the air we breathe, though our bodies cannot use it directly.",
+      "accepted": [
+        "nitrogen"
+      ],
+      "near": [
+        "oxygen",
+        "air",
+        "gas"
+      ],
+      "note": "oxygen is the tempting wrong answer"
+    },
+    {
+      "id": "described-entity-12",
+      "category": "described-entity",
+      "difficulty": "hard",
+      "text": "The author of a dystopian novel about Big Brother and a fable in which pigs take over a farm.",
+      "accepted": [
+        "Orwell"
+      ],
+      "near": [
+        "Huxley",
+        "dystopia",
+        "novelist"
+      ]
+    },
+    {
+      "id": "described-entity-13",
+      "category": "described-entity",
+      "difficulty": "hard",
+      "text": "The imaginary line that circles the globe halfway between the two poles.",
+      "accepted": [
+        "equator"
+      ],
+      "near": [
+        "latitude",
+        "tropics",
+        "hemisphere"
+      ]
+    },
+    {
+      "id": "described-entity-14",
+      "category": "described-entity",
+      "difficulty": "hard",
+      "text": "The Turkish city that sits on two continents and was once called Constantinople.",
+      "accepted": [
+        "Istanbul"
+      ],
+      "near": [
+        "Turkey",
+        "Ankara",
+        "Byzantium"
+      ]
+    },
+    {
+      "id": "described-entity-15",
+      "category": "described-entity",
+      "difficulty": "hard",
+      "text": "The hormone that the pancreas releases to bring blood sugar down.",
+      "accepted": [
+        "insulin"
+      ],
+      "near": [
+        "diabetes",
+        "glucose",
+        "hormone"
+      ]
+    },
+    {
+      "id": "implied-cause-01",
+      "category": "implied-cause",
+      "difficulty": "easy",
+      "text": "The streets were shining wet, gutters gurgled, and everyone hurried past under umbrellas.",
+      "accepted": [
+        "rain",
+        "raining",
+        "rained",
+        "rainy"
+      ],
+      "near": [
+        "wet",
+        "weather",
+        "water"
+      ]
+    },
+    {
+      "id": "implied-cause-02",
+      "category": "implied-cause",
+      "difficulty": "easy",
+      "text": "Sirens wailed, smoke poured from the upstairs windows, and people stood on the pavement watching the trucks unroll their hoses.",
+      "accepted": [
+        "fire",
+        "burning",
+        "blaze"
+      ],
+      "near": [
+        "smoke",
+        "firefighters",
+        "flames"
+      ]
+    },
+    {
+      "id": "implied-cause-03",
+      "category": "implied-cause",
+      "difficulty": "easy",
+      "text": "There were balloons on the gate, a cake with candles on the table, and a pile of wrapped presents.",
+      "accepted": [
+        "birthday",
+        "party"
+      ],
+      "near": [
+        "celebration",
+        "gift",
+        "anniversary"
+      ]
+    },
+    {
+      "id": "implied-cause-04",
+      "category": "implied-cause",
+      "difficulty": "easy",
+      "text": "When we woke, everything outside was white, the cars were buried, and school had been cancelled.",
+      "accepted": [
+        "snow",
+        "snowstorm",
+        "blizzard",
+        "snowed"
+      ],
+      "near": [
+        "winter",
+        "ice",
+        "cold"
+      ]
+    },
+    {
+      "id": "implied-cause-05",
+      "category": "implied-cause",
+      "difficulty": "easy",
+      "text": "The plates rattled off the shelves, the ground shook for a full minute, and cracks ran up the walls.",
+      "accepted": [
+        "earthquake",
+        "quake"
+      ],
+      "near": [
+        "tremor",
+        "disaster",
+        "shaking"
+      ]
+    },
+    {
+      "id": "implied-cause-06",
+      "category": "implied-cause",
+      "difficulty": "medium",
+      "text": "\"Half the office is coughing, the pharmacy is out of tissues, and three colleagues stayed home today with a fever,\" she told me.",
+      "accepted": [
+        "flu",
+        "sick",
+        "illness",
+        "virus",
+        "cold"
+      ],
+      "near": [
+        "doctor",
+        "cough",
+        "epidemic"
+      ],
+      "note": "dialogue"
+    },
+    {
+      "id": "implied-cause-07",
+      "category": "implied-cause",
+      "difficulty": "medium",
+      "text": "The lights flickered once and died, the fridge fell silent, and the whole street went dark at the same moment.",
+      "accepted": [
+        "power",
+        "blackout",
+        "outage",
+        "electricity"
+      ],
+      "near": [
+        "dark",
+        "storm",
+        "fuse"
+      ]
+    },
+    {
+      "id": "implied-cause-08",
+      "category": "implied-cause",
+      "difficulty": "medium",
+      "text": "He came back from the beach with his shoulders bright pink and peeling, wincing whenever his shirt touched them.",
+      "accepted": [
+        "sunburn",
+        "sun",
+        "burn",
+        "burned",
+        "sunburned"
+      ],
+      "near": [
+        "beach",
+        "skin",
+        "tan"
+      ]
+    },
+    {
+      "id": "implied-cause-09",
+      "category": "implied-cause",
+      "difficulty": "medium",
+      "text": "The fields were cracked and brown, the wells had run dry, and the cattle were growing thin.",
+      "accepted": [
+        "drought"
+      ],
+      "near": [
+        "dry",
+        "famine",
+        "heat"
+      ]
+    },
+    {
+      "id": "implied-cause-10",
+      "category": "implied-cause",
+      "difficulty": "medium",
+      "text": "The whole town smelled of sulphur, grey ash fell on the rooftops, and the mountain above us was glowing.",
+      "accepted": [
+        "volcano",
+        "eruption",
+        "volcanic",
+        "erupting"
+      ],
+      "near": [
+        "lava",
+        "ash",
+        "mountain"
+      ]
+    },
+    {
+      "id": "implied-cause-11",
+      "category": "implied-cause",
+      "difficulty": "hard",
+      "text": "The road ahead was a sea of red brake lights and nobody had moved for twenty minutes; somewhere in front, blue lights were flashing.",
+      "accepted": [
+        "accident",
+        "crash",
+        "collision"
+      ],
+      "near": [
+        "traffic",
+        "jam",
+        "police"
+      ],
+      "note": "traffic is the first step, accident the second"
+    },
+    {
+      "id": "implied-cause-12",
+      "category": "implied-cause",
+      "difficulty": "hard",
+      "text": "By morning the tulips had been eaten down to the stems, and there were small hoofprints all over the flower bed at the edge of the woods.",
+      "accepted": [
+        "deer"
+      ],
+      "near": [
+        "goat",
+        "sheep",
+        "rabbit"
+      ]
+    },
+    {
+      "id": "implied-cause-13",
+      "category": "implied-cause",
+      "difficulty": "hard",
+      "text": "The harbour water drew back far beyond the low-tide line, leaving boats on the mud, minutes after the ground had trembled.",
+      "accepted": [
+        "tsunami",
+        "wave"
+      ],
+      "near": [
+        "earthquake",
+        "flood",
+        "tide"
+      ]
+    },
+    {
+      "id": "implied-cause-14",
+      "category": "implied-cause",
+      "difficulty": "hard",
+      "text": "The cat sat beside the open cage looking pleased with itself, and a few yellow feathers drifted across the floor.",
+      "accepted": [
+        "bird",
+        "canary"
+      ],
+      "near": [
+        "eaten",
+        "prey",
+        "pet"
+      ]
+    },
+    {
+      "id": "implied-cause-15",
+      "category": "implied-cause",
+      "difficulty": "hard",
+      "text": "That night compass needles swung uselessly, radios crackled with static, and auroras were seen as far south as Spain.",
+      "accepted": [
+        "solar",
+        "sun",
+        "storm",
+        "flare"
+      ],
+      "near": [
+        "aurora",
+        "magnetic",
+        "space"
+      ],
+      "note": "solar storm"
+    },
+    {
+      "id": "implied-emotion-01",
+      "category": "implied-emotion",
+      "difficulty": "easy",
+      "text": "His stomach growled loudly; he hadn't eaten since yesterday, and the smell from the bakery was almost painful.",
+      "accepted": [
+        "hungry",
+        "hunger",
+        "starving"
+      ],
+      "near": [
+        "food",
+        "bread",
+        "appetite"
+      ]
+    },
+    {
+      "id": "implied-emotion-02",
+      "category": "implied-emotion",
+      "difficulty": "easy",
+      "text": "She yawned for the fifth time, her eyelids drooping, her head sinking slowly toward the desk.",
+      "accepted": [
+        "tired",
+        "sleepy",
+        "exhausted",
+        "sleep",
+        "fatigue"
+      ],
+      "near": [
+        "bored",
+        "bed",
+        "night"
+      ]
+    },
+    {
+      "id": "implied-emotion-03",
+      "category": "implied-emotion",
+      "difficulty": "easy",
+      "text": "\"Stop asking me! I said no, and I am sick of repeating myself!\" he shouted, slamming the door.",
+      "accepted": [
+        "angry",
+        "anger",
+        "furious",
+        "mad",
+        "rage"
+      ],
+      "near": [
+        "upset",
+        "annoyed",
+        "frustrated"
+      ],
+      "note": "dialogue"
+    },
+    {
+      "id": "implied-emotion-04",
+      "category": "implied-emotion",
+      "difficulty": "easy",
+      "text": "Tears rolled down her face as she held the old collar; the house was so quiet without her dog.",
+      "accepted": [
+        "sad",
+        "grief",
+        "sadness",
+        "sorrow",
+        "mourning"
+      ],
+      "near": [
+        "death",
+        "lonely",
+        "crying"
+      ]
+    },
+    {
+      "id": "implied-emotion-05",
+      "category": "implied-emotion",
+      "difficulty": "easy",
+      "text": "Her hands were shaking, her heart pounded, and she could not make herself look under the bed where the noise had come from.",
+      "accepted": [
+        "scared",
+        "afraid",
+        "fear",
+        "terrified",
+        "frightened"
+      ],
+      "near": [
+        "monster",
+        "dark",
+        "nervous"
+      ]
+    },
+    {
+      "id": "implied-emotion-06",
+      "category": "implied-emotion",
+      "difficulty": "medium",
+      "text": "He watched his best friend dance with the girl he liked and felt something sour twist in his chest.",
+      "accepted": [
+        "jealous",
+        "jealousy",
+        "envy",
+        "envious"
+      ],
+      "near": [
+        "love",
+        "bitter",
+        "hurt"
+      ]
+    },
+    {
+      "id": "implied-emotion-07",
+      "category": "implied-emotion",
+      "difficulty": "medium",
+      "text": "She tripped on the stage steps in front of the whole school, and her cheeks burned as the laughter spread.",
+      "accepted": [
+        "embarrassed",
+        "ashamed",
+        "embarrassment",
+        "shame",
+        "humiliated"
+      ],
+      "near": [
+        "blush",
+        "awkward",
+        "shy"
+      ]
+    },
+    {
+      "id": "implied-emotion-08",
+      "category": "implied-emotion",
+      "difficulty": "medium",
+      "text": "He checked his watch again, tapped his foot, sighed, and glared at the queue that had not moved in ten minutes.",
+      "accepted": [
+        "impatient",
+        "impatience",
+        "annoyed",
+        "frustrated"
+      ],
+      "near": [
+        "waiting",
+        "bored",
+        "angry"
+      ]
+    },
+    {
+      "id": "implied-emotion-09",
+      "category": "implied-emotion",
+      "difficulty": "medium",
+      "text": "She watched her daughter walk across the stage to collect the diploma and felt her chest swell.",
+      "accepted": [
+        "proud",
+        "pride"
+      ],
+      "near": [
+        "happy",
+        "joy",
+        "love"
+      ]
+    },
+    {
+      "id": "implied-emotion-10",
+      "category": "implied-emotion",
+      "difficulty": "medium",
+      "text": "The lecture was in its third hour; he doodled spirals in the margin, watched the clock, and counted the ceiling tiles.",
+      "accepted": [
+        "bored",
+        "boredom",
+        "boring"
+      ],
+      "near": [
+        "tired",
+        "dull",
+        "impatient"
+      ]
+    },
+    {
+      "id": "implied-emotion-11",
+      "category": "implied-emotion",
+      "difficulty": "hard",
+      "text": "He couldn't meet her eyes; every time she thanked him for looking after the vase, he remembered the pieces hidden in the bin.",
+      "accepted": [
+        "guilty",
+        "guilt",
+        "ashamed",
+        "shame"
+      ],
+      "near": [
+        "broken",
+        "lie",
+        "secret"
+      ]
+    },
+    {
+      "id": "implied-emotion-12",
+      "category": "implied-emotion",
+      "difficulty": "hard",
+      "text": "She read the same sign for the third time, turned the map upside down, and realised none of the street names matched.",
+      "accepted": [
+        "lost",
+        "confused"
+      ],
+      "near": [
+        "direction",
+        "wrong",
+        "tourist"
+      ]
+    },
+    {
+      "id": "implied-emotion-13",
+      "category": "implied-emotion",
+      "difficulty": "hard",
+      "text": "She stared at the lottery ticket, then at the screen, then at the ticket again, mouth open, unable to speak.",
+      "accepted": [
+        "shocked",
+        "surprised",
+        "shock",
+        "stunned",
+        "disbelief"
+      ],
+      "near": [
+        "won",
+        "lucky",
+        "jackpot"
+      ]
+    },
+    {
+      "id": "implied-emotion-14",
+      "category": "implied-emotion",
+      "difficulty": "hard",
+      "text": "Since moving abroad she ate dinner by herself every night, the phone never rang, and the weekends were the hardest.",
+      "accepted": [
+        "lonely",
+        "loneliness",
+        "alone",
+        "isolated",
+        "homesick"
+      ],
+      "near": [
+        "sad",
+        "friends",
+        "missing"
+      ]
+    },
+    {
+      "id": "implied-emotion-15",
+      "category": "implied-emotion",
+      "difficulty": "hard",
+      "text": "He told everyone the promotion didn't matter to him, then sat in his car in the parking lot for an hour without starting the engine.",
+      "accepted": [
+        "disappointed",
+        "disappointment",
+        "upset",
+        "hurt",
+        "sad"
+      ],
+      "near": [
+        "angry",
+        "depressed",
+        "rejected"
+      ],
+      "note": "words say one thing, behaviour another"
+    },
+    {
+      "id": "implied-intention-01",
+      "category": "implied-intention",
+      "difficulty": "easy",
+      "text": "She put on her goggles, stepped up to the edge of the pool, and took a deep breath.",
+      "accepted": [
+        "swim",
+        "dive",
+        "jump",
+        "swimming"
+      ],
+      "near": [
+        "water",
+        "race",
+        "splash"
+      ]
+    },
+    {
+      "id": "implied-intention-02",
+      "category": "implied-intention",
+      "difficulty": "easy",
+      "text": "He brushed his teeth, set the alarm for six, switched off the lamp, and pulled the blanket up to his chin.",
+      "accepted": [
+        "sleep",
+        "asleep",
+        "sleeping"
+      ],
+      "near": [
+        "bed",
+        "night",
+        "dream"
+      ]
+    },
+    {
+      "id": "implied-intention-03",
+      "category": "implied-intention",
+      "difficulty": "easy",
+      "text": "First lay out flour, eggs, sugar and butter. Grease the tin. Turn the oven on to warm up. Now you are ready to",
+      "accepted": [
+        "bake",
+        "baking",
+        "cake"
+      ],
+      "near": [
+        "cook",
+        "recipe",
+        "bread"
+      ],
+      "note": "instructions, ends mid-sentence"
+    },
+    {
+      "id": "implied-intention-04",
+      "category": "implied-intention",
+      "difficulty": "easy",
+      "text": "He knelt down in the middle of the restaurant, opened a small velvet box, and looked up at her.",
+      "accepted": [
+        "marry",
+        "propose",
+        "proposal",
+        "marriage",
+        "engagement"
+      ],
+      "near": [
+        "ring",
+        "wedding",
+        "love"
+      ]
+    },
+    {
+      "id": "implied-intention-05",
+      "category": "implied-intention",
+      "difficulty": "easy",
+      "text": "I grabbed my wallet and the list from the fridge door: we were out of milk, bread and eggs.",
+      "accepted": [
+        "store",
+        "shop",
+        "shopping",
+        "supermarket",
+        "grocery"
+      ],
+      "near": [
+        "buy",
+        "market",
+        "food"
+      ]
+    },
+    {
+      "id": "implied-intention-06",
+      "category": "implied-intention",
+      "difficulty": "medium",
+      "text": "The prisoner had spent months loosening the bars with a spoon, and tonight the guards were distracted by the storm.",
+      "accepted": [
+        "escape",
+        "flee",
+        "escaping",
+        "breakout"
+      ],
+      "near": [
+        "freedom",
+        "run",
+        "tunnel"
+      ]
+    },
+    {
+      "id": "implied-intention-07",
+      "category": "implied-intention",
+      "difficulty": "medium",
+      "text": "He waited until the shopkeeper turned away, glanced at the camera, and slid the watch into his sleeve.",
+      "accepted": [
+        "steal",
+        "theft",
+        "stealing",
+        "thief",
+        "stolen"
+      ],
+      "near": [
+        "crime",
+        "rob",
+        "shoplifting"
+      ]
+    },
+    {
+      "id": "implied-intention-08",
+      "category": "implied-intention",
+      "difficulty": "medium",
+      "text": "She typed two short paragraphs thanking her manager for the past five years, printed the letter, and walked toward his office.",
+      "accepted": [
+        "resign",
+        "quit",
+        "resignation",
+        "leaving",
+        "leave"
+      ],
+      "near": [
+        "job",
+        "fired",
+        "notice"
+      ]
+    },
+    {
+      "id": "implied-intention-09",
+      "category": "implied-intention",
+      "difficulty": "medium",
+      "text": "He stood outside her door holding flowers, rehearsing how to say that the argument had been his fault.",
+      "accepted": [
+        "apologize",
+        "sorry",
+        "apology",
+        "apologise",
+        "forgive"
+      ],
+      "near": [
+        "regret",
+        "guilt",
+        "love"
+      ]
+    },
+    {
+      "id": "implied-intention-10",
+      "category": "implied-intention",
+      "difficulty": "medium",
+      "text": "The cat crouched low in the grass, tail twitching, eyes locked on the sparrow a few feet away.",
+      "accepted": [
+        "pounce",
+        "attack",
+        "jump",
+        "catch",
+        "hunt"
+      ],
+      "near": [
+        "prey",
+        "kill",
+        "leap"
+      ]
+    },
+    {
+      "id": "implied-intention-11",
+      "category": "implied-intention",
+      "difficulty": "hard",
+      "text": "He told his wife he was working late, but he had booked a table for forty and invited all her old friends.",
+      "accepted": [
+        "surprise",
+        "party"
+      ],
+      "near": [
+        "birthday",
+        "secret",
+        "celebration"
+      ]
+    },
+    {
+      "id": "implied-intention-12",
+      "category": "implied-intention",
+      "difficulty": "hard",
+      "text": "She emptied the joint account in small withdrawals, quietly renewed her passport, and bought a one-way ticket under her maiden name.",
+      "accepted": [
+        "leave",
+        "flee",
+        "escape",
+        "disappear",
+        "leaving"
+      ],
+      "near": [
+        "divorce",
+        "run",
+        "vanish"
+      ]
+    },
+    {
+      "id": "implied-intention-13",
+      "category": "implied-intention",
+      "difficulty": "hard",
+      "text": "The chess master studied the board, smiled faintly, and offered up his queen for nothing.",
+      "accepted": [
+        "trap",
+        "sacrifice",
+        "checkmate",
+        "trick"
+      ],
+      "near": [
+        "bait",
+        "gambit",
+        "win"
+      ]
+    },
+    {
+      "id": "implied-intention-14",
+      "category": "implied-intention",
+      "difficulty": "hard",
+      "text": "The general ordered the fires kept burning in the empty camp all night while his army slipped silently away to the north.",
+      "accepted": [
+        "retreat",
+        "deceive",
+        "escape",
+        "trick",
+        "decoy"
+      ],
+      "near": [
+        "ambush",
+        "flee",
+        "enemy"
+      ]
+    },
+    {
+      "id": "implied-intention-15",
+      "category": "implied-intention",
+      "difficulty": "hard",
+      "text": "He stood at the edge of the frozen lake with an auger, a short rod, and a bucket of minnows.",
+      "accepted": [
+        "fish",
+        "fishing"
+      ],
+      "near": [
+        "ice",
+        "catch",
+        "bait"
+      ]
+    },
+    {
+      "id": "list-category-01",
+      "category": "list-category",
+      "difficulty": "easy",
+      "text": "apple, pear, plum, cherry, peach",
+      "accepted": [
+        "fruit",
+        "fruits"
+      ],
+      "near": [
+        "tree",
+        "food",
+        "vegetable"
+      ],
+      "note": "user's example, extended"
+    },
+    {
+      "id": "list-category-02",
+      "category": "list-category",
+      "difficulty": "easy",
+      "text": "red, green, blue, yellow, purple",
+      "accepted": [
+        "color",
+        "colors",
+        "colour",
+        "colours"
+      ],
+      "near": [
+        "paint",
+        "rainbow",
+        "shade"
+      ]
+    },
+    {
+      "id": "list-category-03",
+      "category": "list-category",
+      "difficulty": "easy",
+      "text": "March, July, October, January, May are all",
+      "accepted": [
+        "month",
+        "months"
+      ],
+      "near": [
+        "year",
+        "calendar",
+        "season"
+      ],
+      "note": "ends mid-sentence"
+    },
+    {
+      "id": "list-category-04",
+      "category": "list-category",
+      "difficulty": "easy",
+      "text": "Shopping list for the shed: hammer, screwdriver, wrench, pliers, drill.",
+      "accepted": [
+        "tool",
+        "tools"
+      ],
+      "near": [
+        "hardware",
+        "toolbox",
+        "repair"
+      ]
+    },
+    {
+      "id": "list-category-05",
+      "category": "list-category",
+      "difficulty": "easy",
+      "text": "France, Brazil, Kenya, Japan, Canada",
+      "accepted": [
+        "country",
+        "countries",
+        "nation",
+        "nations"
+      ],
+      "near": [
+        "world",
+        "continent",
+        "flag"
+      ]
+    },
+    {
+      "id": "list-category-06",
+      "category": "list-category",
+      "difficulty": "medium",
+      "text": "violin, cello, harp, guitar, banjo",
+      "accepted": [
+        "instrument",
+        "instruments",
+        "string",
+        "strings",
+        "music"
+      ],
+      "near": [
+        "orchestra",
+        "band",
+        "sound"
+      ]
+    },
+    {
+      "id": "list-category-07",
+      "category": "list-category",
+      "difficulty": "medium",
+      "text": "Things you will find in this room: a whisk, a colander, a ladle, a cutting board and a spice rack.",
+      "accepted": [
+        "kitchen"
+      ],
+      "near": [
+        "cooking",
+        "chef",
+        "restaurant"
+      ]
+    },
+    {
+      "id": "list-category-08",
+      "category": "list-category",
+      "difficulty": "medium",
+      "text": "Paris, Cairo, Lima, Ottawa, Canberra, Nairobi",
+      "accepted": [
+        "capital",
+        "capitals",
+        "city",
+        "cities"
+      ],
+      "near": [
+        "country",
+        "government",
+        "town"
+      ]
+    },
+    {
+      "id": "list-category-09",
+      "category": "list-category",
+      "difficulty": "medium",
+      "text": "What do a bee, a wasp, a scorpion and a jellyfish have in common? They all",
+      "accepted": [
+        "sting",
+        "stings",
+        "stinging",
+        "venom"
+      ],
+      "near": [
+        "poison",
+        "pain",
+        "bite"
+      ],
+      "note": "ends mid-sentence"
+    },
+    {
+      "id": "list-category-10",
+      "category": "list-category",
+      "difficulty": "medium",
+      "text": "Sahara, Gobi, Kalahari, Mojave, Atacama",
+      "accepted": [
+        "desert",
+        "deserts"
+      ],
+      "near": [
+        "sand",
+        "dry",
+        "dune"
+      ]
+    },
+    {
+      "id": "list-category-11",
+      "category": "list-category",
+      "difficulty": "hard",
+      "text": "bat, ball, club, racket, stick, puck",
+      "accepted": [
+        "sport",
+        "sports",
+        "game",
+        "games",
+        "equipment"
+      ],
+      "near": [
+        "play",
+        "team",
+        "athlete"
+      ],
+      "note": "several items are ambiguous alone"
+    },
+    {
+      "id": "list-category-12",
+      "category": "list-category",
+      "difficulty": "hard",
+      "text": "ostrich, penguin, emu, kiwi, cassowary",
+      "accepted": [
+        "bird",
+        "birds",
+        "flightless"
+      ],
+      "near": [
+        "fly",
+        "wings",
+        "feathers"
+      ]
+    },
+    {
+      "id": "list-category-13",
+      "category": "list-category",
+      "difficulty": "hard",
+      "text": "moth, owl, bat, hedgehog, firefly",
+      "accepted": [
+        "night",
+        "nocturnal",
+        "dark"
+      ],
+      "near": [
+        "sleep",
+        "moon",
+        "animals"
+      ]
+    },
+    {
+      "id": "list-category-14",
+      "category": "list-category",
+      "difficulty": "hard",
+      "text": "mercury, bromine, water, olive oil, milk",
+      "accepted": [
+        "liquid",
+        "liquids",
+        "fluid"
+      ],
+      "near": [
+        "wet",
+        "pour",
+        "drink"
+      ]
+    },
+    {
+      "id": "list-category-15",
+      "category": "list-category",
+      "difficulty": "hard",
+      "text": "Titanic, Lusitania, Bismarck, Andrea Doria",
+      "accepted": [
+        "ship",
+        "ships",
+        "sank",
+        "sunk",
+        "shipwreck"
+      ],
+      "near": [
+        "ocean",
+        "iceberg",
+        "disaster"
+      ]
+    },
+    {
+      "id": "foreign-language-01",
+      "category": "foreign-language",
+      "difficulty": "easy",
+      "text": "Las calles están mojadas y todo el mundo lleva paraguas porque hoy hay mucha",
+      "accepted": [
+        "rain",
+        "lluvia"
+      ],
+      "near": [
+        "agua",
+        "water",
+        "tormenta"
+      ],
+      "note": "Spanish, ends before the word"
+    },
+    {
+      "id": "foreign-language-02",
+      "category": "foreign-language",
+      "difficulty": "easy",
+      "text": "Il miaule, il ronronne sur mes genoux et il chasse les souris : c'est mon",
+      "accepted": [
+        "cat",
+        "chat"
+      ],
+      "near": [
+        "chien",
+        "animal",
+        "kitten"
+      ],
+      "note": "French, ends before the word"
+    },
+    {
+      "id": "foreign-language-03",
+      "category": "foreign-language",
+      "difficulty": "easy",
+      "text": "Sie ist gelb, steht am Himmel und wärmt uns am Tag: die",
+      "accepted": [
+        "sun",
+        "Sonne"
+      ],
+      "near": [
+        "Licht",
+        "Stern",
+        "sky"
+      ],
+      "note": "German, ends before the word"
+    },
+    {
+      "id": "foreign-language-04",
+      "category": "foreign-language",
+      "difficulty": "easy",
+      "text": "Ho molta sete, per favore dammi un bicchiere di",
+      "accepted": [
+        "water",
+        "acqua"
+      ],
+      "near": [
+        "vino",
+        "drink",
+        "sete"
+      ],
+      "note": "Italian, ends before the word"
+    },
+    {
+      "id": "foreign-language-05",
+      "category": "foreign-language",
+      "difficulty": "easy",
+      "text": "它有四条腿，会汪汪叫，是人类最忠实的朋友。",
+      "accepted": [
+        "dog",
+        "狗"
+      ],
+      "near": [
+        "pet",
+        "猫",
+        "animal"
+      ],
+      "note": "Chinese"
+    },
+    {
+      "id": "foreign-language-06",
+      "category": "foreign-language",
+      "difficulty": "medium",
+      "text": "Зимой он падает с неба, белый, холодный и пушистый, и покрывает все улицы.",
+      "accepted": [
+        "snow",
+        "снег"
+      ],
+      "near": [
+        "зима",
+        "winter",
+        "лёд"
+      ],
+      "note": "Russian"
+    },
+    {
+      "id": "foreign-language-07",
+      "category": "foreign-language",
+      "difficulty": "medium",
+      "text": "Ele pegou a prancha, correu para a praia e esperou a onda perfeita. O esporte favorito dele é o",
+      "accepted": [
+        "surf",
+        "surfe",
+        "surfing"
+      ],
+      "near": [
+        "mar",
+        "beach",
+        "onda"
+      ],
+      "note": "Portuguese, ends before the word"
+    },
+    {
+      "id": "foreign-language-08",
+      "category": "foreign-language",
+      "difficulty": "medium",
+      "text": "Den har fyra hjul, en ratt och en motor, och pappa kör den till jobbet varje morgon.",
+      "accepted": [
+        "car",
+        "bil"
+      ],
+      "near": [
+        "buss",
+        "vehicle",
+        "väg"
+      ],
+      "note": "Swedish"
+    },
+    {
+      "id": "foreign-language-09",
+      "category": "foreign-language",
+      "difficulty": "medium",
+      "text": "한국 사람들이 거의 매일 먹는, 배추와 고춧가루로 만든 매운 발효 음식입니다.",
+      "accepted": [
+        "kimchi",
+        "김치"
+      ],
+      "near": [
+        "cabbage",
+        "food",
+        "배추"
+      ],
+      "note": "Korean"
+    },
+    {
+      "id": "foreign-language-10",
+      "category": "foreign-language",
+      "difficulty": "medium",
+      "text": "في الليل نراه في السماء، مرة هلالاً ومرة بدراً، وهو يدور حول الأرض.",
+      "accepted": [
+        "moon",
+        "القمر",
+        "قمر"
+      ],
+      "near": [
+        "نجم",
+        "star",
+        "night"
+      ],
+      "note": "Arabic"
+    },
+    {
+      "id": "foreign-language-11",
+      "category": "foreign-language",
+      "difficulty": "hard",
+      "text": "No pude dormir en toda la noche por el calor y por ese zumbido junto a mi oreja; por la mañana tenía picaduras en los brazos.",
+      "accepted": [
+        "mosquito",
+        "mosquitos",
+        "mosquitoes"
+      ],
+      "near": [
+        "insecto",
+        "bug",
+        "fly"
+      ],
+      "note": "Spanish; same word in both languages"
+    },
+    {
+      "id": "foreign-language-12",
+      "category": "foreign-language",
+      "difficulty": "hard",
+      "text": "Ha guidato l'orchestra per trent'anni: bastava un gesto della sua bacchetta e cento musicisti iniziavano insieme.",
+      "accepted": [
+        "conductor",
+        "direttore",
+        "maestro"
+      ],
+      "near": [
+        "musica",
+        "music",
+        "composer"
+      ],
+      "note": "Italian"
+    },
+    {
+      "id": "foreign-language-13",
+      "category": "foreign-language",
+      "difficulty": "hard",
+      "text": "Hij trapt elke dag door de regen naar zijn werk, zet hem op slot bij het station en heeft al twee keer een lekke band gehad.",
+      "accepted": [
+        "bicycle",
+        "bike",
+        "fiets"
+      ],
+      "near": [
+        "wiel",
+        "cycling",
+        "auto"
+      ],
+      "note": "Dutch"
+    },
+    {
+      "id": "foreign-language-14",
+      "category": "foreign-language",
+      "difficulty": "hard",
+      "text": "春になると日本中の公園でピンクの花が咲き、人々はその木の下でお弁当を食べます。",
+      "accepted": [
+        "sakura",
+        "cherry",
+        "桜",
+        "さくら"
+      ],
+      "near": [
+        "花見",
+        "blossom",
+        "spring"
+      ],
+      "note": "Japanese"
+    },
+    {
+      "id": "foreign-language-15",
+      "category": "foreign-language",
+      "difficulty": "hard",
+      "text": "Sabah kahvaltısında ince belli bardakta içilir, sıcak ve koyu kırmızıdır; Türkler günde birkaç bardak içer.",
+      "accepted": [
+        "tea",
+        "çay"
+      ],
+      "near": [
+        "kahve",
+        "coffee",
+        "drink"
+      ],
+      "note": "Turkish"
+    },
+    {
+      "id": "garbled-word-01",
+      "category": "garbled-word",
+      "difficulty": "easy",
+      "text": "For breakfast I had toast and a big glass of fresh ornage",
+      "accepted": [
+        "orange"
+      ],
+      "near": [
+        "juice",
+        "fruit",
+        "lemon"
+      ],
+      "note": "transposed letters"
+    },
+    {
+      "id": "garbled-word-02",
+      "category": "garbled-word",
+      "difficulty": "easy",
+      "text": "We wish you all a very merry Chrsitmas",
+      "accepted": [
+        "Christmas"
+      ],
+      "near": [
+        "holiday",
+        "Xmas",
+        "Santa"
+      ],
+      "note": "transposed letters"
+    },
+    {
+      "id": "garbled-word-03",
+      "category": "garbled-word",
+      "difficulty": "easy",
+      "text": "My sister sings and plays the gutiar",
+      "accepted": [
+        "guitar"
+      ],
+      "near": [
+        "music",
+        "piano",
+        "bass"
+      ],
+      "note": "transposed letters"
+    },
+    {
+      "id": "garbled-word-04",
+      "category": "garbled-word",
+      "difficulty": "easy",
+      "text": "Next week we fly to Italy, and I can't wait to see the Colosseum in Rmoe",
+      "accepted": [
+        "Rome"
+      ],
+      "near": [
+        "Roman",
+        "Milan",
+        "Italy"
+      ],
+      "note": "transposed letters"
+    },
+    {
+      "id": "garbled-word-05",
+      "category": "garbled-word",
+      "difficulty": "easy",
+      "text": "After the crash he was rushed straight to the hsopital",
+      "accepted": [
+        "hospital"
+      ],
+      "near": [
+        "doctor",
+        "ambulance",
+        "clinic"
+      ],
+      "note": "transposed letters"
+    },
+    {
+      "id": "garbled-word-06",
+      "category": "garbled-word",
+      "difficulty": "medium",
+      "text": "I'm locked out of my account because I forgot my p4ssw0rd",
+      "accepted": [
+        "password"
+      ],
+      "near": [
+        "login",
+        "account",
+        "security"
+      ],
+      "note": "leetspeak"
+    },
+    {
+      "id": "garbled-word-07",
+      "category": "garbled-word",
+      "difficulty": "medium",
+      "text": "When I grow up I want to fly rockets and be an astronot",
+      "accepted": [
+        "astronaut"
+      ],
+      "near": [
+        "space",
+        "rocket",
+        "pilot"
+      ],
+      "note": "phonetic spelling"
+    },
+    {
+      "id": "garbled-word-08",
+      "category": "garbled-word",
+      "difficulty": "medium",
+      "text": "The secret ingredient in grandma's cookies is c h o c o l a t e",
+      "accepted": [
+        "chocolate"
+      ],
+      "near": [
+        "cocoa",
+        "sugar",
+        "sweet"
+      ],
+      "note": "spaced-out letters"
+    },
+    {
+      "id": "garbled-word-09",
+      "category": "garbled-word",
+      "difficulty": "medium",
+      "text": "She folded the letter, licked the stamp and slid everything into the envel",
+      "accepted": [
+        "envelope"
+      ],
+      "near": [
+        "letter",
+        "mail",
+        "stamp"
+      ],
+      "note": "truncated word"
+    },
+    {
+      "id": "garbled-word-10",
+      "category": "garbled-word",
+      "difficulty": "medium",
+      "text": "The forecast says tomorrow afternoon there will be heavy thndrstrms",
+      "accepted": [
+        "thunderstorms",
+        "thunderstorm",
+        "thunder",
+        "storm",
+        "storms"
+      ],
+      "near": [
+        "rain",
+        "lightning",
+        "weather"
+      ],
+      "note": "vowels removed"
+    },
+    {
+      "id": "garbled-word-11",
+      "category": "garbled-word",
+      "difficulty": "hard",
+      "text": "Whisk the eggs, then fold in two cups of sifted flwr",
+      "accepted": [
+        "flour"
+      ],
+      "near": [
+        "flower",
+        "sugar",
+        "dough"
+      ],
+      "note": "context must pick flour over flower"
+    },
+    {
+      "id": "garbled-word-12",
+      "category": "garbled-word",
+      "difficulty": "hard",
+      "text": "The organ played as the bride walked slowly down the isle",
+      "accepted": [
+        "aisle"
+      ],
+      "near": [
+        "island",
+        "church",
+        "wedding"
+      ],
+      "note": "real-word error"
+    },
+    {
+      "id": "garbled-word-13",
+      "category": "garbled-word",
+      "difficulty": "hard",
+      "text": "Spelled backwards the word is 'nogard': a fire-breathing creature of legend.",
+      "accepted": [
+        "dragon",
+        "dragons"
+      ],
+      "near": [
+        "monster",
+        "knight",
+        "lizard"
+      ],
+      "note": "reversed"
+    },
+    {
+      "id": "garbled-word-14",
+      "category": "garbled-word",
+      "difficulty": "hard",
+      "text": "Unscramble the letters TPLANE to get a body that orbits a star:",
+      "accepted": [
+        "planet",
+        "planets"
+      ],
+      "near": [
+        "orbit",
+        "Earth",
+        "moon"
+      ],
+      "note": "anagram"
+    },
+    {
+      "id": "garbled-word-15",
+      "category": "garbled-word",
+      "difficulty": "hard",
+      "text": "She was awarded the Nobel Prize for her work in fiziks",
+      "accepted": [
+        "physics"
+      ],
+      "near": [
+        "science",
+        "chemistry",
+        "physicist"
+      ],
+      "note": "phonetic spelling"
+    },
+    {
+      "id": "riddle-metaphor-01",
+      "category": "riddle-metaphor",
+      "difficulty": "easy",
+      "text": "I have hands but cannot clap, a face but no eyes, and I tell you something all day long. What am I?",
+      "accepted": [
+        "clock",
+        "watch"
+      ],
+      "near": [
+        "time",
+        "hour",
+        "wall"
+      ],
+      "note": "riddle"
+    },
+    {
+      "id": "riddle-metaphor-02",
+      "category": "riddle-metaphor",
+      "difficulty": "easy",
+      "text": "I follow you everywhere on sunny days, copy every move, and vanish when the light goes out. What am I?",
+      "accepted": [
+        "shadow"
+      ],
+      "near": [
+        "light",
+        "dark",
+        "reflection"
+      ],
+      "note": "riddle"
+    },
+    {
+      "id": "riddle-metaphor-03",
+      "category": "riddle-metaphor",
+      "difficulty": "easy",
+      "text": "I have a spine and many leaves, but I am not a tree; open me and I will tell you a story. What am I?",
+      "accepted": [
+        "book",
+        "books"
+      ],
+      "near": [
+        "novel",
+        "page",
+        "library"
+      ],
+      "note": "riddle"
+    },
+    {
+      "id": "riddle-metaphor-04",
+      "category": "riddle-metaphor",
+      "difficulty": "easy",
+      "text": "I have teeth but never bite, and I glide through your hair each morning. What am I?",
+      "accepted": [
+        "comb",
+        "brush"
+      ],
+      "near": [
+        "barber",
+        "mirror",
+        "scissors"
+      ],
+      "note": "riddle"
+    },
+    {
+      "id": "riddle-metaphor-05",
+      "category": "riddle-metaphor",
+      "difficulty": "easy",
+      "text": "We were so sorry to hear that your grandfather passed away last night; he is in a better place now.",
+      "accepted": [
+        "died",
+        "death",
+        "dead",
+        "die"
+      ],
+      "near": [
+        "funeral",
+        "grief",
+        "heaven"
+      ],
+      "note": "euphemism"
+    },
+    {
+      "id": "riddle-metaphor-06",
+      "category": "riddle-metaphor",
+      "difficulty": "medium",
+      "text": "After the merger, the company announced it was letting two hundred people go as part of a restructuring.",
+      "accepted": [
+        "fired",
+        "layoffs",
+        "layoff",
+        "dismissed",
+        "redundant"
+      ],
+      "near": [
+        "job",
+        "unemployed",
+        "cuts"
+      ],
+      "note": "euphemism"
+    },
+    {
+      "id": "riddle-metaphor-07",
+      "category": "riddle-metaphor",
+      "difficulty": "medium",
+      "text": "\"Excuse me, I need to powder my nose. Where is the ladies' room?\"",
+      "accepted": [
+        "toilet",
+        "bathroom",
+        "restroom",
+        "washroom"
+      ],
+      "near": [
+        "makeup",
+        "mirror",
+        "sink"
+      ],
+      "note": "euphemism, dialogue"
+    },
+    {
+      "id": "riddle-metaphor-08",
+      "category": "riddle-metaphor",
+      "difficulty": "medium",
+      "text": "The city's arteries were clogged again at rush hour, and nothing on wheels was moving.",
+      "accepted": [
+        "traffic",
+        "roads",
+        "cars",
+        "jam",
+        "congestion"
+      ],
+      "near": [
+        "highway",
+        "street",
+        "blood"
+      ],
+      "note": "metaphor"
+    },
+    {
+      "id": "riddle-metaphor-09",
+      "category": "riddle-metaphor",
+      "difficulty": "medium",
+      "text": "The curtain of night fell, and a thousand tiny lanterns were lit across the black ceiling above the camp.",
+      "accepted": [
+        "stars",
+        "star"
+      ],
+      "near": [
+        "sky",
+        "moon",
+        "night"
+      ],
+      "note": "metaphor"
+    },
+    {
+      "id": "riddle-metaphor-10",
+      "category": "riddle-metaphor",
+      "difficulty": "medium",
+      "text": "The ship of the desert knelt down so the traders could load its hump with salt.",
+      "accepted": [
+        "camel",
+        "camels"
+      ],
+      "near": [
+        "caravan",
+        "horse",
+        "desert"
+      ],
+      "note": "metaphor"
+    },
+    {
+      "id": "riddle-metaphor-11",
+      "category": "riddle-metaphor",
+      "difficulty": "hard",
+      "text": "Every autumn the old man on the hill takes off his green coat, stands bare through the cold months, and dresses again in spring.",
+      "accepted": [
+        "tree",
+        "trees",
+        "oak"
+      ],
+      "near": [
+        "leaves",
+        "forest",
+        "winter"
+      ],
+      "note": "personification"
+    },
+    {
+      "id": "riddle-metaphor-12",
+      "category": "riddle-metaphor",
+      "difficulty": "hard",
+      "text": "Grandmother says the stork will visit our house again in March, and she has already started knitting tiny socks.",
+      "accepted": [
+        "baby",
+        "pregnant",
+        "birth",
+        "born",
+        "pregnancy"
+      ],
+      "near": [
+        "child",
+        "mother",
+        "infant"
+      ],
+      "note": "euphemism"
+    },
+    {
+      "id": "riddle-metaphor-13",
+      "category": "riddle-metaphor",
+      "difficulty": "hard",
+      "text": "I am eaten by rust, swords were forged from me, and my symbol comes from the Latin word ferrum. What am I?",
+      "accepted": [
+        "iron"
+      ],
+      "near": [
+        "steel",
+        "metal",
+        "Fe"
+      ],
+      "note": "riddle with world knowledge"
+    },
+    {
+      "id": "riddle-metaphor-14",
+      "category": "riddle-metaphor",
+      "difficulty": "hard",
+      "text": "My uncle is a guest of the state for the next five years; we visit him on Sundays and talk through a glass window.",
+      "accepted": [
+        "prison",
+        "jail",
+        "prisoner",
+        "imprisoned"
+      ],
+      "near": [
+        "crime",
+        "sentence",
+        "police"
+      ],
+      "note": "euphemism"
+    },
+    {
+      "id": "riddle-metaphor-15",
+      "category": "riddle-metaphor",
+      "difficulty": "hard",
+      "text": "The black gold beneath the sand made the small kingdom rich within a single generation.",
+      "accepted": [
+        "oil",
+        "petroleum"
+      ],
+      "near": [
+        "gas",
+        "wealth",
+        "desert"
+      ],
+      "note": "metaphor"
+    },
+    {
+      "id": "control-01",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "The meeting has been moved to Thursday afternoon at the usual place.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-02",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "She said that it was fine and that we could talk about it later.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-03",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "There are several ways to do this, and none of them is clearly better than the others.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-04",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "Please read the following instructions carefully before you continue.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-05",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "He walked to the window, looked outside for a moment, and then sat back down.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-06",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "In general, the results were similar across all of the groups we looked at.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-07",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "I think so, but I'm not completely sure; let me check and get back to you.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-08",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "\"Okay,\" she said. \"So what do you want to do next?\"",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-09",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "Thank you for your message. We will reply as soon as we can.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-10",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "It was an ordinary day, and nothing in particular happened.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-11",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "The table below lists the items in the order in which they were received.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-12",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "Well, that depends on what you mean, and on who you ask.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-13",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "Anyway, as I mentioned before, the main thing is that we",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-14",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "This section describes the changes made since the previous version.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    },
+    {
+      "id": "control-15",
+      "category": "control",
+      "difficulty": "easy",
+      "text": "Gracias por tu mensaje, te respondo mañana por la tarde.",
+      "accepted": [],
+      "near": [],
+      "note": "no hidden concept expected"
+    }
+  ]
+}
