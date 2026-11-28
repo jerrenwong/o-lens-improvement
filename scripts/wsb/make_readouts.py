@@ -155,7 +155,8 @@ elif a.lens == "jpp":
     def scores(H, l):
         return norm(unit(H @ JPP[l].T)) @ W_U.T
 elif a.lens in ("alens", "jpp+alens"):
-    E1 = load_maps(f"{R}/.hf27/ask3/E_27b_t3.pt")
+    # WSB_ALENS_U=1: unstated-word question only (both slots = the s5 map), i.e. the A-lens without the topic map
+    E1 = load_maps(f"{R}/.hf27/ask5/E_27b_s5.pt" if os.environ.get("WSB_ALENS_U") == "1" else f"{R}/.hf27/ask3/E_27b_t3.pt")
     E2 = load_maps(f"{R}/.hf27/ask5/E_27b_s5.pt")
     assert all(l in E1 and l in E2 for l in LAYERS), "A-lens maps missing a layer"
     JPP = load_JPP() if a.lens == "jpp+alens" else None
