@@ -1,0 +1,2960 @@
+{
+ "version": 2,
+ "categories": {
+  "implied-object": "A tool or everyday object is used or missed but never named; the scene's theme words (near_wrong) are different words from the object.",
+  "implied-person-role": "A profession or role is implied only by what the person does or says; the role word never appears.",
+  "implied-place": "A common-noun place (not a proper name) is implied by what happens there; scene words that a topic reader would print are in near_wrong.",
+  "bridge-entity": "Two-step factual statement ending in a complete clause; the concept is the unnamed intermediate entity, not the stated fact.",
+  "referent": "An entity is introduced under a description, never named, then referred to by a pronoun or possessive; the concept is its name.",
+  "implied-material-or-substance": "What something is made of, or what is being poured, drawn or collected, is implied by process details and never named.",
+  "implied-event": "A one-word event is implied through side details; the obvious scene words (near_wrong) are different words.",
+  "distractor-theme": "A strong surface theme (near_wrong) that is NOT the concept; the concept is one specific unnamed thing inside the scene.",
+  "negation-or-contrast": "The concept is the thing that is absent, missing or opposite to what everyone else has; never named.",
+  "second-language": "Unnamed objects described in Spanish, French, German, Italian, Portuguese, Chinese or Russian; accepted in English, and in the source language where that word is in the single-token list.",
+  "control": "Plain text with no particular hidden concept; shows what a lens prints when there is nothing to find."
+ },
+ "probes": [
+  {
+   "id": "v2-implied-object-01",
+   "category": "implied-object",
+   "difficulty": "medium",
+   "text": "The kitten was stuck on the garage roof again, so Dad fetched the long aluminium thing from the shed, leaned it against the gutter and went up rung by rung.",
+   "accepted": [
+    "ladder"
+   ],
+   "near": [
+    "stairs",
+    "steps",
+    "scaffold"
+   ],
+   "near_wrong": [
+    "roof",
+    "kitten",
+    "garage",
+    "climb"
+   ],
+   "note": "theme: pet rescue; object only called 'thing'"
+  },
+  {
+   "id": "v2-implied-object-02",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "When the power failed she felt along the shelf for the box she kept for birthdays, struck a match, and soon a small flame was dripping wax onto a saucer while she finished her chapter.",
+   "accepted": [
+    "candle",
+    "candles"
+   ],
+   "near": [
+    "lamp",
+    "lantern",
+    "torch"
+   ],
+   "near_wrong": [
+    "fire",
+    "match",
+    "dark",
+    "power"
+   ],
+   "note": "two steps: birthday box + dripping wax"
+  },
+  {
+   "id": "v2-implied-object-03",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "The mayor stepped up to the red ribbon stretched across the new footbridge, smiled for the cameras, and with one snip of the oversized pair in his hand declared it open.",
+   "accepted": [
+    "scissors"
+   ],
+   "near": [
+    "knife",
+    "blade",
+    "shears"
+   ],
+   "near_wrong": [
+    "ribbon",
+    "ceremony",
+    "bridge",
+    "mayor"
+   ],
+   "note": "theme: opening ceremony"
+  },
+  {
+   "id": "v2-implied-object-04",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "Grandma licked the end of the thread, squinted, and on the third try got it through the tiny eye; a minute later the loose button was back on my coat.",
+   "accepted": [
+    "needle",
+    "needles"
+   ],
+   "near": [
+    "pin",
+    "sewing",
+    "stitch"
+   ],
+   "near_wrong": [
+    "thread",
+    "button",
+    "coat"
+   ],
+   "note": "object only via 'tiny eye'"
+  },
+  {
+   "id": "v2-implied-object-05",
+   "category": "implied-object",
+   "difficulty": "medium",
+   "text": "He stepped out of the shower dripping, reached for the rail, and found it empty; his sister had taken the last dry one to the beach.",
+   "accepted": [
+    "towel",
+    "towels"
+   ],
+   "near": [
+    "robe",
+    "cloth",
+    "blanket"
+   ],
+   "near_wrong": [
+    "shower",
+    "bathroom",
+    "water",
+    "beach"
+   ],
+   "note": "object absent from the scene"
+  },
+  {
+   "id": "v2-implied-object-06",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "The paramedic said the cyclist had been lucky: the thing strapped under his chin had cracked clean in two, and his skull had not.",
+   "accepted": [
+    "helmet",
+    "helmets"
+   ],
+   "near": [
+    "cap",
+    "hat",
+    "armor"
+   ],
+   "near_wrong": [
+    "bicycle",
+    "accident",
+    "head",
+    "crash"
+   ],
+   "note": "theme: accident"
+  },
+  {
+   "id": "v2-implied-object-07",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "It had snowed all night. Before breakfast I was already out on the driveway, bending, scooping and tossing, until my back ached and the car was free.",
+   "accepted": [
+    "shovel"
+   ],
+   "near": [
+    "spade",
+    "plow",
+    "rake"
+   ],
+   "near_wrong": [
+    "snow",
+    "winter",
+    "driveway",
+    "cold"
+   ],
+   "note": "tool never referred to at all"
+  },
+  {
+   "id": "v2-implied-object-08",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "Mum shook it, slipped it under my tongue and told me not to talk. A minute later she held it to the window, read the thin silver line and said, \"Thirty-nine. No school for you.\"",
+   "accepted": [
+    "thermometer"
+   ],
+   "near": [
+    "temperature",
+    "gauge",
+    "degrees"
+   ],
+   "near_wrong": [
+    "fever",
+    "sick",
+    "school",
+    "illness"
+   ],
+   "note": "theme: illness"
+  },
+  {
+   "id": "v2-implied-object-09",
+   "category": "implied-object",
+   "difficulty": "medium",
+   "text": "The coach put it to his lips, gave one sharp blast, and twenty boys stopped running and turned to look at him.",
+   "accepted": [
+    "whistle"
+   ],
+   "near": [
+    "horn",
+    "trumpet",
+    "shout"
+   ],
+   "near_wrong": [
+    "football",
+    "training",
+    "team",
+    "sport"
+   ],
+   "note": "theme: sport"
+  },
+  {
+   "id": "v2-implied-object-10",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "The inspector was working his way down the carriage. I searched my coat, my bag, even my book; I knew I had bought one at the machine, and he was already taking out his pad of fines.",
+   "accepted": [
+    "ticket",
+    "tickets"
+   ],
+   "near": [
+    "pass",
+    "fare",
+    "receipt"
+   ],
+   "near_wrong": [
+    "train",
+    "railway",
+    "travel",
+    "station"
+   ],
+   "note": "theme: train travel"
+  },
+  {
+   "id": "v2-implied-object-11",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "The roof leaked in three places, so we put one under each drip, lay awake listening to the plink of water on tin, and took turns carrying them by their handles to the sink.",
+   "accepted": [
+    "bucket",
+    "buckets"
+   ],
+   "near": [
+    "bowl",
+    "basin",
+    "pail"
+   ],
+   "near_wrong": [
+    "rain",
+    "roof",
+    "leak",
+    "storm"
+   ],
+   "note": "theme: leaking roof"
+  },
+  {
+   "id": "v2-implied-object-12",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "The well was deep and the pail was no use on its own, so she knotted three bedsheets end to end to do the job of the thing that had rotted through.",
+   "accepted": [
+    "rope",
+    "ropes"
+   ],
+   "near": [
+    "chain",
+    "cord",
+    "string"
+   ],
+   "near_wrong": [
+    "well",
+    "water",
+    "bucket",
+    "sheets"
+   ],
+   "note": "object replaced by a substitute"
+  },
+  {
+   "id": "v2-implied-object-13",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "\"Underline the title neatly,\" said the teacher. Mine had snapped in my bag, so I borrowed my neighbour's and ran the pencil along its straight edge.",
+   "accepted": [
+    "ruler",
+    "rulers"
+   ],
+   "near": [
+    "line",
+    "measure",
+    "tape"
+   ],
+   "near_wrong": [
+    "school",
+    "teacher",
+    "pencil",
+    "homework"
+   ],
+   "note": "theme: classroom"
+  },
+  {
+   "id": "v2-implied-object-14",
+   "category": "implied-object",
+   "difficulty": "hard",
+   "text": "He lathered his chin, tilted his face toward the bathroom light, and drew it carefully down his cheek, wincing at the first nick.",
+   "accepted": [
+    "razor"
+   ],
+   "near": [
+    "blade",
+    "knife",
+    "shaver"
+   ],
+   "near_wrong": [
+    "beard",
+    "soap",
+    "bathroom",
+    "face"
+   ],
+   "note": "theme: morning routine"
+  },
+  {
+   "id": "v2-implied-object-15",
+   "category": "implied-object",
+   "difficulty": "medium",
+   "text": "The engine had died and the current was carrying us toward the rocks, so the skipper heaved the heavy iron hook overboard and waited for the chain to pull tight.",
+   "accepted": [
+    "anchor",
+    "anchors"
+   ],
+   "near": [
+    "mooring",
+    "weight",
+    "buoy"
+   ],
+   "near_wrong": [
+    "boat",
+    "ship",
+    "rocks",
+    "engine"
+   ],
+   "note": "theme: boat in trouble"
+  },
+  {
+   "id": "v2-implied-person-role-01",
+   "category": "implied-person-role",
+   "difficulty": "medium",
+   "text": "\"Open wide,\" she said, tilting the lamp over my face. \"The one at the back will need a filling, and you really must start flossing.\"",
+   "accepted": [
+    "dentist"
+   ],
+   "near": [
+    "doctor",
+    "nurse",
+    "teeth"
+   ],
+   "note": "role via speech"
+  },
+  {
+   "id": "v2-implied-person-role-02",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "He was the only man on the pitch nobody cheered for; whenever he raised his arm and pointed to the spot, half the stadium howled at him.",
+   "accepted": [
+    "referee",
+    "referees"
+   ],
+   "near": [
+    "umpire",
+    "linesman",
+    "judge"
+   ],
+   "note": "theme: football"
+  },
+  {
+   "id": "v2-implied-person-role-03",
+   "category": "implied-person-role",
+   "difficulty": "medium",
+   "text": "\"We will be starting our descent shortly,\" said the calm voice over the speakers. \"I have switched on the seatbelt sign, and local time is ten past four.\"",
+   "accepted": [
+    "pilot",
+    "captain"
+   ],
+   "near": [
+    "crew",
+    "steward",
+    "driver"
+   ],
+   "note": "role via announcement"
+  },
+  {
+   "id": "v2-implied-person-role-04",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "He recited the specials from memory, topped up our glasses without being asked, and pretended not to notice how small a tip my uncle left.",
+   "accepted": [
+    "waiter",
+    "server"
+   ],
+   "near": [
+    "chef",
+    "bartender",
+    "butler"
+   ],
+   "note": "theme: restaurant"
+  },
+  {
+   "id": "v2-implied-person-role-05",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "She listened to both sides for three days, then put on her glasses, read out a sentence of twelve years, and brought the little wooden hammer down once.",
+   "accepted": [
+    "judge"
+   ],
+   "near": [
+    "lawyer",
+    "jury",
+    "magistrate"
+   ],
+   "note": "theme: court"
+  },
+  {
+   "id": "v2-implied-person-role-06",
+   "category": "implied-person-role",
+   "difficulty": "medium",
+   "text": "He lay under our sink for ten minutes with a wrench, charged ninety euros, and the tap has not dripped since.",
+   "accepted": [
+    "plumber"
+   ],
+   "near": [
+    "mechanic",
+    "handyman",
+    "electrician"
+   ],
+   "note": "theme: repair"
+  },
+  {
+   "id": "v2-implied-person-role-07",
+   "category": "implied-person-role",
+   "difficulty": "medium",
+   "text": "Every month he asks the same question, \"Short at the sides?\", then ties the cape round my neck and starts snipping.",
+   "accepted": [
+    "barber"
+   ],
+   "near": [
+    "hairdresser",
+    "stylist",
+    "tailor"
+   ],
+   "note": "hairdresser is also right but is not a single token"
+  },
+  {
+   "id": "v2-implied-person-role-08",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "She stamped the due date inside each cover, slid the three novels across the desk, and whispered that they had to come back within two weeks.",
+   "accepted": [
+    "librarian"
+   ],
+   "near": [
+    "teacher",
+    "clerk",
+    "bookseller"
+   ],
+   "note": "theme: books"
+  },
+  {
+   "id": "v2-implied-person-role-09",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "She carried the old man down the ladder over her shoulder, pulled off her mask, and went straight back in through the smoke for his dog.",
+   "accepted": [
+    "firefighter",
+    "firefighters"
+   ],
+   "near": [
+    "fireman",
+    "paramedic",
+    "rescuer"
+   ],
+   "note": "theme: fire"
+  },
+  {
+   "id": "v2-implied-person-role-10",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "The two presidents never understood a word the other said; everything passed through the quiet woman sitting between them, who repeated each sentence in the other's tongue.",
+   "accepted": [
+    "interpreter",
+    "translator"
+   ],
+   "near": [
+    "diplomat",
+    "secretary",
+    "language"
+   ],
+   "note": "theme: diplomacy"
+  },
+  {
+   "id": "v2-implied-person-role-11",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "He spent the whole summer on the high pasture with two dogs and a crook, counting four hundred woolly heads every evening before dark.",
+   "accepted": [
+    "shepherd"
+   ],
+   "near": [
+    "farmer",
+    "herder",
+    "cowboy"
+   ],
+   "note": "animals never named either"
+  },
+  {
+   "id": "v2-implied-person-role-12",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "He read the doctor's scribble twice, counted twenty-eight tablets into a small bottle, stuck on a label, and told me to take one after meals.",
+   "accepted": [
+    "pharmacist"
+   ],
+   "near": [
+    "chemist",
+    "doctor",
+    "nurse"
+   ],
+   "note": "distractor role 'doctor' is in the text"
+  },
+  {
+   "id": "v2-implied-person-role-13",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "For ninety minutes he was the only one of the eleven allowed to use his hands, and in the last of them he dived left and pushed the penalty round the post.",
+   "accepted": [
+    "goalkeeper",
+    "goalie",
+    "keeper"
+   ],
+   "near": [
+    "striker",
+    "defender",
+    "referee"
+   ],
+   "note": "two steps: eleven + hands"
+  },
+  {
+   "id": "v2-implied-person-role-14",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "She floated to the window with her pouch of coffee and watched her sixteenth sunrise of the day slide across the Pacific.",
+   "accepted": [
+    "astronaut",
+    "astronauts"
+   ],
+   "near": [
+    "pilot",
+    "cosmonaut",
+    "space"
+   ],
+   "note": "two steps: floating + sixteen sunrises"
+  },
+  {
+   "id": "v2-implied-person-role-15",
+   "category": "implied-person-role",
+   "difficulty": "hard",
+   "text": "He crouched by the body, noticed mud on the dead man's left shoe only, and told the constable that the butler had been lying.",
+   "accepted": [
+    "detective",
+    "inspector",
+    "detectives"
+   ],
+   "near": [
+    "police",
+    "Sherlock",
+    "investigator"
+   ],
+   "note": "theme: crime"
+  },
+  {
+   "id": "v2-implied-place-01",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "Nobody spoke above a whisper. Students bent over long tables, pages turned, and somewhere among the shelves a trolley squeaked as a woman put returned novels back in order.",
+   "accepted": [
+    "library",
+    "libraries"
+   ],
+   "near": [
+    "bookstore",
+    "archive",
+    "school"
+   ],
+   "near_wrong": [
+    "books",
+    "reading",
+    "quiet",
+    "study"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-02",
+   "category": "implied-place",
+   "difficulty": "medium",
+   "text": "We took off our shoes and belts, put the laptops in grey trays, and then walked for ten minutes past perfume shops to gate B14.",
+   "accepted": [
+    "airport",
+    "airports"
+   ],
+   "near": [
+    "station",
+    "terminal",
+    "harbor"
+   ],
+   "near_wrong": [
+    "security",
+    "travel",
+    "shopping",
+    "flight"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-03",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "Rows of grey stones stretched under the yew trees. She pulled a few weeds, set down fresh lilies, and stood for a while reading his name and the two dates.",
+   "accepted": [
+    "cemetery",
+    "graveyard"
+   ],
+   "near": [
+    "grave",
+    "tomb",
+    "churchyard"
+   ],
+   "near_wrong": [
+    "death",
+    "flowers",
+    "garden",
+    "stone"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-04",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "Six strangers stood shoulder to shoulder, staring at the numbers above the door and saying nothing, until a soft ping let two of them out on nine.",
+   "accepted": [
+    "elevator",
+    "lift"
+   ],
+   "near": [
+    "stairs",
+    "lobby",
+    "corridor"
+   ],
+   "near_wrong": [
+    "office",
+    "building",
+    "hotel",
+    "floor"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-05",
+   "category": "implied-place",
+   "difficulty": "medium",
+   "text": "At five in the morning the windows were already steamed up; inside, trays of warm loaves and croissants slid onto the racks, and the whole street smelled of crust.",
+   "accepted": [
+    "bakery"
+   ],
+   "near": [
+    "kitchen",
+    "cafe",
+    "shop"
+   ],
+   "near_wrong": [
+    "bread",
+    "morning",
+    "baking",
+    "breakfast"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-06",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "Everyone rose when she came in. The accused stared at the table, twelve citizens filed into their box, and a clerk asked a pale witness to raise his right hand.",
+   "accepted": [
+    "courtroom",
+    "court"
+   ],
+   "near": [
+    "tribunal",
+    "trial",
+    "hearing"
+   ],
+   "near_wrong": [
+    "crime",
+    "law",
+    "justice",
+    "jury"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-07",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "For eleven weeks the crew saw no daylight. They slept in bunks between the torpedoes, spoke softly, and listened to the sonar while whales passed somewhere overhead.",
+   "accepted": [
+    "submarine",
+    "submarines"
+   ],
+   "near": [
+    "ship",
+    "vessel",
+    "navy"
+   ],
+   "near_wrong": [
+    "ocean",
+    "crew",
+    "war",
+    "whales"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-08",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "There were no clocks and no windows. Chips clicked, a little white ball rattled round a wheel, and a man in a bow tie swept my last stack away.",
+   "accepted": [
+    "casino",
+    "casinos"
+   ],
+   "near": [
+    "Vegas",
+    "club",
+    "hotel"
+   ],
+   "near_wrong": [
+    "gambling",
+    "money",
+    "roulette",
+    "poker"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-09",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "Outside it was snowing, but under the glass roof the air was warm and damp, and rows of tomato seedlings stood in trays beside the orchids.",
+   "accepted": [
+    "greenhouse"
+   ],
+   "near": [
+    "garden",
+    "nursery",
+    "conservatory"
+   ],
+   "near_wrong": [
+    "plants",
+    "winter",
+    "snow",
+    "tomato"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-10",
+   "category": "implied-place",
+   "difficulty": "medium",
+   "text": "The lights went down, someone behind us rustled a bag of popcorn, and the trailers began on the huge screen.",
+   "accepted": [
+    "cinema",
+    "theater",
+    "theatre",
+    "cinemas"
+   ],
+   "near": [
+    "stadium",
+    "hall",
+    "television"
+   ],
+   "near_wrong": [
+    "movie",
+    "film",
+    "popcorn",
+    "screen"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-11",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "We climbed the ladder to the loft and lay in the hay, listening to the cows shifting below and the swallows coming and going through the big double doors.",
+   "accepted": [
+    "barn"
+   ],
+   "near": [
+    "stable",
+    "shed",
+    "farmhouse"
+   ],
+   "near_wrong": [
+    "farm",
+    "cows",
+    "hay",
+    "animals"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-12",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "A guard told the boy not to touch. Behind a velvet rope stood a marble emperor without a nose, and in the next room schoolchildren sat sketching a mummy in its glass case.",
+   "accepted": [
+    "museum",
+    "museums"
+   ],
+   "near": [
+    "gallery",
+    "exhibition",
+    "palace"
+   ],
+   "near_wrong": [
+    "art",
+    "history",
+    "statue",
+    "Egypt"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-13",
+   "category": "implied-place",
+   "difficulty": "medium",
+   "text": "Coloured light fell through the tall windows onto the wooden benches. An old woman lit a small flame beneath a statue, crossed herself, and knelt.",
+   "accepted": [
+    "church",
+    "cathedral",
+    "chapel"
+   ],
+   "near": [
+    "temple",
+    "mosque",
+    "monastery"
+   ],
+   "near_wrong": [
+    "prayer",
+    "religion",
+    "candle",
+    "faith"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-14",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "The doors hissed shut and we plunged into the dark. Strangers swayed together, holding the overhead bar, while a recorded voice announced the next stop and cables flickered past the windows.",
+   "accepted": [
+    "subway",
+    "metro",
+    "underground",
+    "train"
+   ],
+   "near": [
+    "tram",
+    "station",
+    "tunnel"
+   ],
+   "near_wrong": [
+    "commute",
+    "city",
+    "travel",
+    "crowd"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-place-15",
+   "category": "implied-place",
+   "difficulty": "hard",
+   "text": "I pulled down the folding stairs and climbed up under the rafters, where it was hot and dusty and Grandpa's trunks sat beside a box of Christmas decorations.",
+   "accepted": [
+    "attic",
+    "loft"
+   ],
+   "near": [
+    "basement",
+    "cellar",
+    "roof"
+   ],
+   "near_wrong": [
+    "dust",
+    "house",
+    "storage",
+    "Christmas"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-bridge-entity-01",
+   "category": "bridge-entity",
+   "difficulty": "medium",
+   "text": "The country whose flag shows a red maple leaf has two official languages, English and French.",
+   "accepted": [
+    "Canada"
+   ],
+   "near": [
+    "Ottawa",
+    "Quebec",
+    "America"
+   ],
+   "note": "flag -> country; stated fact: languages"
+  },
+  {
+   "id": "v2-bridge-entity-02",
+   "category": "bridge-entity",
+   "difficulty": "medium",
+   "text": "The company founded by Bill Gates has its headquarters in a suburb of Seattle.",
+   "accepted": [
+    "Microsoft"
+   ],
+   "near": [
+    "Windows",
+    "Apple",
+    "Redmond"
+   ],
+   "note": "founder -> company"
+  },
+  {
+   "id": "v2-bridge-entity-03",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The capital of the country where the pyramids of Giza stand lies on the banks of the longest river in Africa.",
+   "accepted": [
+    "Egypt",
+    "Cairo"
+   ],
+   "near": [
+    "Nile",
+    "Sudan",
+    "pharaoh"
+   ],
+   "note": "two unnamed hops: country, then capital"
+  },
+  {
+   "id": "v2-bridge-entity-04",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The first man to walk on the Moon grew up in a small town in Ohio.",
+   "accepted": [
+    "Armstrong",
+    "Neil"
+   ],
+   "near": [
+    "Apollo",
+    "Aldrin",
+    "astronaut"
+   ],
+   "note": "description -> person"
+  },
+  {
+   "id": "v2-bridge-entity-05",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The currency of the country that hosted the 2016 Summer Olympics is called the real.",
+   "accepted": [
+    "Brazil"
+   ],
+   "near": [
+    "Rio",
+    "Argentina",
+    "Portuguese"
+   ],
+   "note": "event -> country; stated fact: currency"
+  },
+  {
+   "id": "v2-bridge-entity-06",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The country where Machu Picchu was built has a long desert coast on the Pacific.",
+   "accepted": [
+    "Peru"
+   ],
+   "near": [
+    "Inca",
+    "Lima",
+    "Chile"
+   ],
+   "note": "landmark -> country"
+  },
+  {
+   "id": "v2-bridge-entity-07",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The author of the Harry Potter novels wrote much of the first book in the cafés of Edinburgh.",
+   "accepted": [
+    "Rowling"
+   ],
+   "near": [
+    "Hogwarts",
+    "Tolkien",
+    "Joanne"
+   ],
+   "note": "work -> author"
+  },
+  {
+   "id": "v2-bridge-entity-08",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The scientist who discovered penicillin came back from holiday to find mould killing the bacteria in one of his dishes.",
+   "accepted": [
+    "Fleming"
+   ],
+   "near": [
+    "Alexander",
+    "Pasteur",
+    "antibiotic"
+   ],
+   "note": "discovery -> person"
+  },
+  {
+   "id": "v2-bridge-entity-09",
+   "category": "bridge-entity",
+   "difficulty": "medium",
+   "text": "The country whose capital is Canberra has more kangaroos than people.",
+   "accepted": [
+    "Australia"
+   ],
+   "near": [
+    "Sydney",
+    "Zealand",
+    "Melbourne"
+   ],
+   "note": "capital -> country"
+  },
+  {
+   "id": "v2-bridge-entity-10",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The painter of Guernica helped invent Cubism and lived most of his long life in France.",
+   "accepted": [
+    "Picasso"
+   ],
+   "near": [
+    "Pablo",
+    "Dali",
+    "Spanish"
+   ],
+   "note": "work -> painter"
+  },
+  {
+   "id": "v2-bridge-entity-11",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The largest city in the country famous for tulips, windmills and wooden shoes is built on a ring of canals.",
+   "accepted": [
+    "Netherlands",
+    "Holland",
+    "Dutch",
+    "Amsterdam"
+   ],
+   "near": [
+    "Belgium",
+    "Rotterdam",
+    "Venice"
+   ],
+   "note": "two unnamed hops: country, then city"
+  },
+  {
+   "id": "v2-bridge-entity-12",
+   "category": "bridge-entity",
+   "difficulty": "medium",
+   "text": "The president whose face is on the one-dollar bill spent his last years on his farm at Mount Vernon.",
+   "accepted": [
+    "Washington"
+   ],
+   "near": [
+    "George",
+    "Lincoln",
+    "Jefferson"
+   ],
+   "note": "banknote -> president"
+  },
+  {
+   "id": "v2-bridge-entity-13",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The band that John Lennon and Paul McCartney played in gave its last public concert on a London rooftop.",
+   "accepted": [
+    "Beatles"
+   ],
+   "near": [
+    "Liverpool",
+    "Ringo",
+    "Stones"
+   ],
+   "note": "members -> band"
+  },
+  {
+   "id": "v2-bridge-entity-14",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The man who runs the company that makes the Model S also owns a rocket company.",
+   "accepted": [
+    "Tesla",
+    "Musk"
+   ],
+   "near": [
+    "Elon",
+    "SpaceX",
+    "Ford"
+   ],
+   "note": "two unnamed hops: company, then person"
+  },
+  {
+   "id": "v2-bridge-entity-15",
+   "category": "bridge-entity",
+   "difficulty": "hard",
+   "text": "The capital of the country where vodka and nesting dolls come from was burned during Napoleon's invasion in 1812.",
+   "accepted": [
+    "Russia",
+    "Moscow"
+   ],
+   "near": [
+    "Kremlin",
+    "Soviet",
+    "Ukraine"
+   ],
+   "note": "two unnamed hops: country, then capital"
+  },
+  {
+   "id": "v2-referent-01",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "The planet with the brightest rings is so light it would float in a big enough bathtub. Its largest moon has lakes of liquid methane.",
+   "accepted": [
+    "Saturn"
+   ],
+   "near": [
+    "Jupiter",
+    "Titan",
+    "Uranus"
+   ],
+   "note": "possessive 'Its'"
+  },
+  {
+   "id": "v2-referent-02",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "The largest animal that has ever lived feeds on some of the smallest. When she surfaced beside our boat, her breath shot nine metres into the air.",
+   "accepted": [
+    "whale",
+    "whales"
+   ],
+   "near": [
+    "dolphin",
+    "shark",
+    "elephant"
+   ],
+   "note": "pronoun 'she'"
+  },
+  {
+   "id": "v2-referent-03",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "A Corsican artillery officer crowned himself emperor in 1804. Eleven years later he lost everything in a muddy field in Belgium.",
+   "accepted": [
+    "Napoleon"
+   ],
+   "near": [
+    "Bonaparte",
+    "Waterloo",
+    "Caesar"
+   ],
+   "note": "pronoun 'he'"
+  },
+  {
+   "id": "v2-referent-04",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "It is the hardest natural substance known, pure carbon squeezed deep underground. She wore one on her left hand and turned it nervously whenever he was late.",
+   "accepted": [
+    "diamond",
+    "diamonds"
+   ],
+   "near": [
+    "ring",
+    "crystal",
+    "gold"
+   ],
+   "note": "'one' refers back; 'ring' is the tempting near miss"
+  },
+  {
+   "id": "v2-referent-05",
+   "category": "referent",
+   "difficulty": "medium",
+   "text": "The highest point on Earth was first reached in 1953. Every spring, hundreds of climbers still queue along its final ridge.",
+   "accepted": [
+    "Everest"
+   ],
+   "near": [
+    "Himalaya",
+    "Nepal",
+    "mountain"
+   ],
+   "note": "possessive 'its'"
+  },
+  {
+   "id": "v2-referent-06",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "A young naturalist spent five years sailing around the world on a small survey ship. The finches he collected on the way changed biology for ever.",
+   "accepted": [
+    "Darwin"
+   ],
+   "near": [
+    "Charles",
+    "evolution",
+    "Beagle"
+   ],
+   "note": "pronoun 'he'"
+  },
+  {
+   "id": "v2-referent-07",
+   "category": "referent",
+   "difficulty": "medium",
+   "text": "The old city is built on more than a hundred small islands in a lagoon. Its streets are water, and its taxis are boats.",
+   "accepted": [
+    "Venice"
+   ],
+   "near": [
+    "Italy",
+    "gondola",
+    "Amsterdam"
+   ],
+   "note": "possessive 'its'"
+  },
+  {
+   "id": "v2-referent-08",
+   "category": "referent",
+   "difficulty": "medium",
+   "text": "The organ is about the size of a fist and never rests. Hers had been racing ever since the phone rang.",
+   "accepted": [
+    "heart"
+   ],
+   "near": [
+    "pulse",
+    "chest",
+    "lungs"
+   ],
+   "note": "'Hers' refers back"
+  },
+  {
+   "id": "v2-referent-09",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "The little hunter has eight legs and makes its own silk. I found it waiting, motionless, at the centre of its trap in the corner of the window.",
+   "accepted": [
+    "spider",
+    "spiders"
+   ],
+   "near": [
+    "web",
+    "insect",
+    "bug"
+   ],
+   "note": "pronoun 'it'"
+  },
+  {
+   "id": "v2-referent-10",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "A lawyer trained in London led his country to independence without firing a shot. He once walked to the sea to make salt, and thousands followed him.",
+   "accepted": [
+    "Gandhi"
+   ],
+   "near": [
+    "India",
+    "Nehru",
+    "Mahatma"
+   ],
+   "note": "pronoun 'He'"
+  },
+  {
+   "id": "v2-referent-11",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "A young cartoonist from Missouri drew a cheerful mouse in 1928. The theme parks that carry his name now welcome millions of visitors a year.",
+   "accepted": [
+    "Disney"
+   ],
+   "near": [
+    "Mickey",
+    "Walt",
+    "Pixar"
+   ],
+   "note": "'his name'"
+  },
+  {
+   "id": "v2-referent-12",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "The world's biggest online shop began in a garage, selling only books. Its founder named it after a river.",
+   "accepted": [
+    "Amazon"
+   ],
+   "near": [
+    "Bezos",
+    "Google",
+    "eBay"
+   ],
+   "note": "two steps: shop description + river name"
+  },
+  {
+   "id": "v2-referent-13",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "A sailor from Genoa persuaded the Spanish queen to pay for three ships. He died still believing he had reached Asia.",
+   "accepted": [
+    "Columbus"
+   ],
+   "near": [
+    "Christopher",
+    "Magellan",
+    "America"
+   ],
+   "note": "pronoun 'He'"
+  },
+  {
+   "id": "v2-referent-14",
+   "category": "referent",
+   "difficulty": "medium",
+   "text": "The fourth planet from the Sun looks rusty red from here. Several rovers are crawling across it at this moment.",
+   "accepted": [
+    "Mars"
+   ],
+   "near": [
+    "Venus",
+    "Jupiter",
+    "Martian"
+   ],
+   "note": "pronoun 'it'"
+  },
+  {
+   "id": "v2-referent-15",
+   "category": "referent",
+   "difficulty": "hard",
+   "text": "The prime minister who led Britain through the Second World War loved cigars and painting. He also won the Nobel Prize in Literature.",
+   "accepted": [
+    "Churchill"
+   ],
+   "near": [
+    "Winston",
+    "Thatcher",
+    "London"
+   ],
+   "note": "pronoun 'He'"
+  },
+  {
+   "id": "v2-implied-material-or-substance-01",
+   "category": "implied-material-or-substance",
+   "difficulty": "medium",
+   "text": "She lifted the frame out of the hive, sliced off the wax caps, and the thick golden stuff ran slowly down into the jar.",
+   "accepted": [
+    "honey"
+   ],
+   "near": [
+    "syrup",
+    "nectar",
+    "bees"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-02",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "She wet her hands, slapped the grey lump onto the spinning wheel, and pulled its walls up into a tall vase ready for the kiln.",
+   "accepted": [
+    "clay"
+   ],
+   "near": [
+    "pottery",
+    "ceramic",
+    "mud"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-03",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "He dipped the long pipe into the furnace, gathered a glowing orange blob, and blew gently until it swelled into a clear bubble.",
+   "accepted": [
+    "glass"
+   ],
+   "near": [
+    "crystal",
+    "bottle",
+    "vase"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-04",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "The saddler cut the tanned hide into strips, punched holes along the edge, and stitched a belt that would outlast its owner.",
+   "accepted": [
+    "leather"
+   ],
+   "near": [
+    "suede",
+    "skin",
+    "fabric"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-05",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "After shearing, the fleece was washed, carded and spun, and by winter Grandma had knitted it into three thick jumpers.",
+   "accepted": [
+    "wool"
+   ],
+   "near": [
+    "yarn",
+    "cotton",
+    "sheep"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-06",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "Two thousand years ago a Chinese court official pulped rags and bark in water, lifted a thin layer on a screen and let it dry; scribes no longer needed bamboo strips.",
+   "accepted": [
+    "paper"
+   ],
+   "near": [
+    "parchment",
+    "papyrus",
+    "book"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-07",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "The truck's drum kept turning as the grey sludge slid down the chute into the foundations; by the next morning it was hard enough to walk on.",
+   "accepted": [
+    "concrete",
+    "cement"
+   ],
+   "near": [
+    "mortar",
+    "asphalt",
+    "stone"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-08",
+   "category": "implied-material-or-substance",
+   "difficulty": "medium",
+   "text": "The nurse tied a band round my arm, found the vein, and three small tubes filled dark red while I studied the ceiling.",
+   "accepted": [
+    "blood"
+   ],
+   "near": [
+    "sample",
+    "plasma",
+    "needle"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-09",
+   "category": "implied-material-or-substance",
+   "difficulty": "medium",
+   "text": "They picked the grapes in September, crushed them, and left the juice in oak barrels in the cellar for two years before anyone was allowed a glass.",
+   "accepted": [
+    "wine"
+   ],
+   "near": [
+    "vineyard",
+    "alcohol",
+    "champagne"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-10",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "The sea was let into shallow ponds and left under the sun; weeks later the workers raked up the white crystals and bagged them for the dinner table.",
+   "accepted": [
+    "salt"
+   ],
+   "near": [
+    "sugar",
+    "sodium",
+    "mineral"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-11",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "The workers cut a spiral groove in the bark and collected the milky sap in cups; a year later it was rolling down a motorway as a set of tyres.",
+   "accepted": [
+    "rubber"
+   ],
+   "near": [
+    "latex",
+    "plastic",
+    "resin"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-12",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "The caterpillars ate mulberry leaves for a month and then spun their cocoons; unwound, each one gave a kilometre of shining thread for the emperor's robes.",
+   "accepted": [
+    "silk"
+   ],
+   "near": [
+    "cotton",
+    "satin",
+    "fabric"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-13",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "It was light, cheap and made from oil, and it would still be lying on that beach in four hundred years; the turtle had mistaken the bag for a jellyfish.",
+   "accepted": [
+    "plastic"
+   ],
+   "near": [
+    "nylon",
+    "rubbish",
+    "pollution"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-14",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "The children tipped it out of their shoes at the door all summer; by August there was a small dune of it in the hallway and more in every bed.",
+   "accepted": [
+    "sand"
+   ],
+   "near": [
+    "dust",
+    "dirt",
+    "beach"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-material-or-substance-15",
+   "category": "implied-material-or-substance",
+   "difficulty": "hard",
+   "text": "She finished third, and the medal they hung around her neck was neither of the two precious metals.",
+   "accepted": [
+    "bronze"
+   ],
+   "near": [
+    "silver",
+    "gold",
+    "copper"
+   ],
+   "note": "two steps: third place + not gold or silver"
+  },
+  {
+   "id": "v2-implied-event-01",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "My aunt cried into a tissue, the organist had to start over, and my brother kept patting his pocket to check that the two gold bands were still there.",
+   "accepted": [
+    "wedding",
+    "marriage",
+    "weddings"
+   ],
+   "near": [
+    "ceremony",
+    "bride",
+    "engagement"
+   ],
+   "near_wrong": [
+    "church",
+    "ring",
+    "music",
+    "family"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-02",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "Everyone wore black. My cousins carried the long wooden box out to the car, and afterwards there were sandwiches and stories about how he used to laugh.",
+   "accepted": [
+    "funeral",
+    "burial"
+   ],
+   "near": [
+    "wake",
+    "mourning",
+    "death"
+   ],
+   "near_wrong": [
+    "family",
+    "church",
+    "coffin",
+    "black"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-03",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "The schools were closed for the day. People queued with their identity cards, stepped behind a curtain one at a time, and the counting went on long past midnight.",
+   "accepted": [
+    "election",
+    "elections",
+    "vote",
+    "voting"
+   ],
+   "near": [
+    "referendum",
+    "ballot",
+    "poll"
+   ],
+   "near_wrong": [
+    "school",
+    "politics",
+    "government",
+    "queue"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-04",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "At noon the birds fell silent and the streetlights flickered on. We put on the cardboard glasses and watched a black disc slide across until only a thin bright ring was left.",
+   "accepted": [
+    "eclipse"
+   ],
+   "near": [
+    "solar",
+    "moon",
+    "sunset"
+   ],
+   "near_wrong": [
+    "night",
+    "dark",
+    "sky",
+    "birds"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-05",
+   "category": "implied-event",
+   "difficulty": "medium",
+   "text": "They wore long gowns and flat square caps. One by one their names were read out, they shook the dean's hand, and at the end three hundred caps flew into the air.",
+   "accepted": [
+    "graduation"
+   ],
+   "near": [
+    "ceremony",
+    "diploma",
+    "degree"
+   ],
+   "near_wrong": [
+    "university",
+    "school",
+    "student",
+    "college"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-06",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "\"Do I hear four thousand? Four thousand from the lady in green. Going once, going twice.\" The little hammer came down, and the painting was hers.",
+   "accepted": [
+    "auction",
+    "auctions"
+   ],
+   "near": [
+    "sale",
+    "bidding",
+    "bid"
+   ],
+   "near_wrong": [
+    "art",
+    "painting",
+    "money",
+    "price"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-07",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "At kilometre thirty-five his legs turned to stone. Strangers held out cups of water and shouted the number pinned to his chest; only seven more to go.",
+   "accepted": [
+    "marathon",
+    "race"
+   ],
+   "near": [
+    "running",
+    "sprint",
+    "jogging"
+   ],
+   "near_wrong": [
+    "water",
+    "pain",
+    "legs",
+    "street"
+   ],
+   "note": "two steps: 35 + 7 = 42 km"
+  },
+  {
+   "id": "v2-implied-event-08",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "No trains ran on Tuesday. The drivers stood outside the depot with placards and a brazier, and said they would stay there until the company offered more.",
+   "accepted": [
+    "strike",
+    "strikes"
+   ],
+   "near": [
+    "protest",
+    "union",
+    "walkout"
+   ],
+   "near_wrong": [
+    "train",
+    "railway",
+    "transport",
+    "delay"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-09",
+   "category": "implied-event",
+   "difficulty": "medium",
+   "text": "By the third day of rain the river was in the high street. We carried the sofa upstairs, and neighbours rowed past the bedroom window in a dinghy.",
+   "accepted": [
+    "flood",
+    "flooding",
+    "floods"
+   ],
+   "near": [
+    "storm",
+    "tsunami",
+    "disaster"
+   ],
+   "near_wrong": [
+    "rain",
+    "river",
+    "boat",
+    "water"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-10",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "There was a crack like a rifle shot high on the slope, then a white roar. When it was over, the rescue dogs began sniffing for the two skiers.",
+   "accepted": [
+    "avalanche"
+   ],
+   "near": [
+    "landslide",
+    "blizzard",
+    "snowstorm"
+   ],
+   "near_wrong": [
+    "snow",
+    "mountain",
+    "skiing",
+    "winter"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-11",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "They sat at opposite ends of the lawyer's table and went down the list: she would keep the house, he the car, and the children would spend alternate weekends with each.",
+   "accepted": [
+    "divorce"
+   ],
+   "near": [
+    "separation",
+    "custody",
+    "breakup"
+   ],
+   "near_wrong": [
+    "lawyer",
+    "family",
+    "house",
+    "children"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-12",
+   "category": "implied-event",
+   "difficulty": "medium",
+   "text": "Two hundred desks stood in rows in the sports hall. A woman paced up and down, the clock ticked, and nobody was allowed to turn the paper over until nine exactly.",
+   "accepted": [
+    "exam",
+    "exams",
+    "examination",
+    "test"
+   ],
+   "near": [
+    "quiz",
+    "lesson",
+    "homework"
+   ],
+   "near_wrong": [
+    "school",
+    "clock",
+    "silence",
+    "students"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-13",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "We nailed plywood over the windows and filled the bathtub with water. The whole coast had been told to drive inland; by evening the palms were bent flat and the roof had begun to lift.",
+   "accepted": [
+    "hurricane",
+    "hurricanes",
+    "storm"
+   ],
+   "near": [
+    "cyclone",
+    "typhoon",
+    "tornado"
+   ],
+   "near_wrong": [
+    "beach",
+    "coast",
+    "weather",
+    "rain"
+   ],
+   "note": "cyclone and typhoon are also right but are not single tokens"
+  },
+  {
+   "id": "v2-implied-event-14",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "Three men in masks came in just before closing, made the tellers lie on the floor, and were gone with two heavy bags in under four minutes.",
+   "accepted": [
+    "robbery"
+   ],
+   "near": [
+    "heist",
+    "theft",
+    "burglary"
+   ],
+   "near_wrong": [
+    "bank",
+    "money",
+    "police",
+    "crime"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-implied-event-15",
+   "category": "implied-event",
+   "difficulty": "hard",
+   "text": "For a month nobody in the house ate or drank while it was light. At sunset the street filled with the smell of lentil soup and dates, and the whole family sat down together.",
+   "accepted": [
+    "Ramadan"
+   ],
+   "near": [
+    "fasting",
+    "Eid",
+    "Islam"
+   ],
+   "near_wrong": [
+    "food",
+    "dinner",
+    "sunset",
+    "family"
+   ],
+   "note": ""
+  },
+  {
+   "id": "v2-distractor-theme-01",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "The forecast had promised a stiff westerly and for once it was right: clouds raced and the grass lay flat. Tom let out more string, and the red diamond climbed until it was a speck.",
+   "accepted": [
+    "kite"
+   ],
+   "near": [
+    "balloon",
+    "glider",
+    "toy"
+   ],
+   "near_wrong": [
+    "wind",
+    "weather",
+    "cloud",
+    "storm"
+   ],
+   "note": "surface theme: weather"
+  },
+  {
+   "id": "v2-distractor-theme-02",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "The ward smelled of disinfectant and the nurses were changing shift. Grandad refused to be pushed anywhere; he glared at the folded thing with the two big wheels and reached for his stick.",
+   "accepted": [
+    "wheelchair"
+   ],
+   "near": [
+    "chair",
+    "walker",
+    "crutches"
+   ],
+   "near_wrong": [
+    "hospital",
+    "nurse",
+    "medical",
+    "patient"
+   ],
+   "note": "surface theme: hospital"
+  },
+  {
+   "id": "v2-distractor-theme-03",
+   "category": "distractor-theme",
+   "difficulty": "medium",
+   "text": "The maths lesson dragged. Chalk squeaked, the teacher droned, thirty pairs of eyes watched the clock. Then it rang out in the corridor, and every chair scraped back at once.",
+   "accepted": [
+    "bell",
+    "bells"
+   ],
+   "near": [
+    "alarm",
+    "buzzer",
+    "siren"
+   ],
+   "near_wrong": [
+    "school",
+    "teacher",
+    "lesson",
+    "clock"
+   ],
+   "note": "surface theme: school"
+  },
+  {
+   "id": "v2-distractor-theme-04",
+   "category": "distractor-theme",
+   "difficulty": "medium",
+   "text": "It was a perfect beach day: surfers, ice cream, children with buckets. Then a grey triangular fin cut across the bay, the lifeguard screamed through his megaphone, and the water emptied in seconds.",
+   "accepted": [
+    "shark",
+    "sharks"
+   ],
+   "near": [
+    "dolphin",
+    "whale",
+    "fish"
+   ],
+   "near_wrong": [
+    "beach",
+    "surf",
+    "summer",
+    "swimming"
+   ],
+   "note": "surface theme: beach holiday"
+  },
+  {
+   "id": "v2-distractor-theme-05",
+   "category": "distractor-theme",
+   "difficulty": "medium",
+   "text": "The night was moonless and Saturn stood high in the south. She bent to the eyepiece, turned the little focusing wheel, and suddenly the rings were sharp enough to count.",
+   "accepted": [
+    "telescope"
+   ],
+   "near": [
+    "binoculars",
+    "microscope",
+    "lens"
+   ],
+   "near_wrong": [
+    "Saturn",
+    "stars",
+    "planet",
+    "night"
+   ],
+   "note": "surface theme: astronomy"
+  },
+  {
+   "id": "v2-distractor-theme-06",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "The roses were wilting and the lawn had gone yellow after three weeks without rain. He uncoiled the long green thing from its reel, screwed it onto the tap and stood there spraying until dusk.",
+   "accepted": [
+    "hose",
+    "hoses"
+   ],
+   "near": [
+    "pipe",
+    "sprinkler",
+    "bucket"
+   ],
+   "near_wrong": [
+    "garden",
+    "roses",
+    "rain",
+    "drought"
+   ],
+   "note": "surface theme: garden in a dry spell"
+  },
+  {
+   "id": "v2-distractor-theme-07",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "School was cancelled and the hill behind the church was white from top to bottom. We dragged it up by its cord, piled on three at a time, and screamed all the way down.",
+   "accepted": [
+    "sled"
+   ],
+   "near": [
+    "sledge",
+    "toboggan",
+    "skis"
+   ],
+   "near_wrong": [
+    "snow",
+    "winter",
+    "hill",
+    "school"
+   ],
+   "note": "surface theme: snow day; sledge and toboggan are not single tokens"
+  },
+  {
+   "id": "v2-distractor-theme-08",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "The lamb was perfect, the wine even better, and the waiter had been charming all evening. Then he brought the little leather folder on a saucer, and my father went quiet when he opened it.",
+   "accepted": [
+    "bill",
+    "check",
+    "bills"
+   ],
+   "near": [
+    "receipt",
+    "price",
+    "tip"
+   ],
+   "near_wrong": [
+    "restaurant",
+    "dinner",
+    "food",
+    "wine"
+   ],
+   "note": "surface theme: restaurant meal"
+  },
+  {
+   "id": "v2-distractor-theme-09",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "We had been singing along to the radio for two hours of empty desert highway when something went bang and the car began to wobble. Dad got the jack and the spare out of the boot.",
+   "accepted": [
+    "tire",
+    "tyre",
+    "tires",
+    "wheel"
+   ],
+   "near": [
+    "puncture",
+    "engine",
+    "brake"
+   ],
+   "near_wrong": [
+    "car",
+    "road",
+    "highway",
+    "desert"
+   ],
+   "note": "surface theme: road trip"
+  },
+  {
+   "id": "v2-distractor-theme-10",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "The taxi was on time, the bags were under the weight limit, and the queue at the desk was short. Then the agent held out her hand, and I pictured the little burgundy booklet lying on my desk at home.",
+   "accepted": [
+    "passport",
+    "passports"
+   ],
+   "near": [
+    "ticket",
+    "visa",
+    "document"
+   ],
+   "near_wrong": [
+    "airport",
+    "flight",
+    "travel",
+    "luggage"
+   ],
+   "note": "surface theme: air travel"
+  },
+  {
+   "id": "v2-distractor-theme-11",
+   "category": "distractor-theme",
+   "difficulty": "medium",
+   "text": "The fire had burned down to embers and the marshmallows were gone. Lena tuned the six strings by ear, strummed a chord, and everyone around the circle began to sing.",
+   "accepted": [
+    "guitar",
+    "guitars"
+   ],
+   "near": [
+    "banjo",
+    "violin",
+    "ukulele"
+   ],
+   "near_wrong": [
+    "fire",
+    "camping",
+    "night",
+    "song"
+   ],
+   "note": "surface theme: campfire"
+  },
+  {
+   "id": "v2-distractor-theme-12",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "Monday, nine o'clock, forty unread emails and a meeting nobody wanted. No one in the office said a word until the machine in the corner had stopped gurgling and each of us held a steaming mug.",
+   "accepted": [
+    "coffee"
+   ],
+   "near": [
+    "caffeine",
+    "espresso",
+    "drink"
+   ],
+   "near_wrong": [
+    "office",
+    "work",
+    "meeting",
+    "email"
+   ],
+   "note": "surface theme: office"
+  },
+  {
+   "id": "v2-distractor-theme-13",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "The shelling had stopped for the night and rain dripped into the trench. He unfolded the two worn pages again and read her handwriting by a candle stub, as he had every night since Christmas.",
+   "accepted": [
+    "letter",
+    "letters"
+   ],
+   "near": [
+    "note",
+    "diary",
+    "postcard"
+   ],
+   "near_wrong": [
+    "war",
+    "soldier",
+    "battle",
+    "trench"
+   ],
+   "note": "surface theme: war"
+  },
+  {
+   "id": "v2-distractor-theme-14",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "Onions sizzled, the stock was simmering, and the recipe said to dice the carrots finely. She reached for the wooden block, drew out the biggest one and tested its edge with her thumb.",
+   "accepted": [
+    "knife",
+    "knives"
+   ],
+   "near": [
+    "blade",
+    "cleaver",
+    "scissors"
+   ],
+   "near_wrong": [
+    "cooking",
+    "kitchen",
+    "food",
+    "recipe"
+   ],
+   "note": "surface theme: cooking"
+  },
+  {
+   "id": "v2-distractor-theme-15",
+   "category": "distractor-theme",
+   "difficulty": "hard",
+   "text": "It had poured for a week and the lane to school was a chain of puddles. Mila pulled on the tall yellow rubber pair by the door and splashed through every one on the way.",
+   "accepted": [
+    "boots"
+   ],
+   "near": [
+    "shoes",
+    "wellies",
+    "raincoat"
+   ],
+   "near_wrong": [
+    "rain",
+    "puddle",
+    "water",
+    "weather"
+   ],
+   "note": "surface theme: rain"
+  },
+  {
+   "id": "v2-negation-or-contrast-01",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "Every other guest at the garden party opened theirs when the first drops fell; Clara, who had left hers on the bus, simply stood there getting soaked.",
+   "accepted": [
+    "umbrella"
+   ],
+   "near": [
+    "raincoat",
+    "hood",
+    "coat"
+   ],
+   "near_wrong": [
+    "rain",
+    "wet",
+    "storm",
+    "party"
+   ],
+   "note": "absent object"
+  },
+  {
+   "id": "v2-negation-or-contrast-02",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "He took one sip of the lemonade and his whole face puckered. \"I knew I had forgotten something,\" said his sister. \"I only put in the lemons and the water.\"",
+   "accepted": [
+    "sugar"
+   ],
+   "near": [
+    "honey",
+    "sweetener",
+    "syrup"
+   ],
+   "near_wrong": [
+    "lemon",
+    "drink",
+    "sour",
+    "juice"
+   ],
+   "note": "missing ingredient"
+  },
+  {
+   "id": "v2-negation-or-contrast-03",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "The cell had a bed, a bucket and a door, and after a month he could no longer tell day from night; there was nothing in any of the four walls to look out through.",
+   "accepted": [
+    "window",
+    "windows"
+   ],
+   "near": [
+    "glass",
+    "opening",
+    "daylight"
+   ],
+   "near_wrong": [
+    "prison",
+    "cell",
+    "dark",
+    "night"
+   ],
+   "note": "absent feature"
+  },
+  {
+   "id": "v2-negation-or-contrast-04",
+   "category": "negation-or-contrast",
+   "difficulty": "medium",
+   "text": "He had the nails, he had the boards, and half the fence was already down. What he did not have was anything to drive them in with, so he picked up a flat stone.",
+   "accepted": [
+    "hammer"
+   ],
+   "near": [
+    "mallet",
+    "tool",
+    "axe"
+   ],
+   "near_wrong": [
+    "nails",
+    "fence",
+    "wood",
+    "stone"
+   ],
+   "note": "missing tool"
+  },
+  {
+   "id": "v2-negation-or-contrast-05",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "The envelope was sealed and addressed in her best handwriting, but the clerk pushed it back across the counter and tapped the bare top right corner.",
+   "accepted": [
+    "stamp",
+    "stamps",
+    "postage"
+   ],
+   "near": [
+    "postmark",
+    "sticker",
+    "seal"
+   ],
+   "near_wrong": [
+    "letter",
+    "envelope",
+    "mail",
+    "post"
+   ],
+   "note": "missing item"
+  },
+  {
+   "id": "v2-negation-or-contrast-06",
+   "category": "negation-or-contrast",
+   "difficulty": "medium",
+   "text": "Everyone else at the table lifted noodles with two thin sticks as if it were nothing. After his third dropped dumpling, the tourist asked the waiter for the thing with prongs that he used at home.",
+   "accepted": [
+    "fork",
+    "forks"
+   ],
+   "near": [
+    "spoon",
+    "knife",
+    "chopsticks"
+   ],
+   "near_wrong": [
+    "noodles",
+    "restaurant",
+    "food",
+    "Chinese"
+   ],
+   "note": "contrast with what the others use"
+  },
+  {
+   "id": "v2-negation-or-contrast-07",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "The lorry came down the mountain road faster and faster. The driver stamped on the pedal again and again, nothing slowed it, and he steered for the gravel escape lane.",
+   "accepted": [
+    "brakes",
+    "brake"
+   ],
+   "near": [
+    "clutch",
+    "engine",
+    "steering"
+   ],
+   "near_wrong": [
+    "truck",
+    "road",
+    "mountain",
+    "speed"
+   ],
+   "note": "failed part"
+  },
+  {
+   "id": "v2-negation-or-contrast-08",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "Two identical seedlings, same soil, same water. The one on the windowsill grew tall and green; the one she kept in the closed cupboard turned pale and died within weeks.",
+   "accepted": [
+    "light",
+    "sunlight",
+    "sunshine"
+   ],
+   "near": [
+    "darkness",
+    "shade",
+    "warmth"
+   ],
+   "near_wrong": [
+    "plant",
+    "water",
+    "soil",
+    "garden"
+   ],
+   "note": "the one thing the second plant lacked"
+  },
+  {
+   "id": "v2-negation-or-contrast-09",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "The band packed up at midnight and the hall fell silent, but the old couple went on turning slowly across the floor, in step with something only the two of them could still hear.",
+   "accepted": [
+    "music",
+    "song",
+    "melody"
+   ],
+   "near": [
+    "rhythm",
+    "sound",
+    "waltz"
+   ],
+   "near_wrong": [
+    "silence",
+    "dancing",
+    "night",
+    "couple"
+   ],
+   "note": "absent thing"
+  },
+  {
+   "id": "v2-negation-or-contrast-10",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "The portrait shows the queen with her sceptre, her orb and her ermine robe, but bare-headed; the painter was told to leave out the one thing she had pawned to pay the army.",
+   "accepted": [
+    "crown"
+   ],
+   "near": [
+    "tiara",
+    "jewels",
+    "throne"
+   ],
+   "near_wrong": [
+    "queen",
+    "royal",
+    "portrait",
+    "king"
+   ],
+   "note": "absent object"
+  },
+  {
+   "id": "v2-negation-or-contrast-11",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "The other runners laced up at the start line. Tomas just stretched his toes on the warm asphalt; he had never owned a pair, and he won anyway.",
+   "accepted": [
+    "shoes",
+    "shoe",
+    "sneakers"
+   ],
+   "near": [
+    "socks",
+    "boots",
+    "sandals"
+   ],
+   "near_wrong": [
+    "running",
+    "race",
+    "marathon",
+    "feet"
+   ],
+   "note": "absent object"
+  },
+  {
+   "id": "v2-negation-or-contrast-12",
+   "category": "negation-or-contrast",
+   "difficulty": "medium",
+   "text": "All her cousins were in the lake, shrieking and diving off the jetty. Mia sat on the planks with her feet dangling; nobody had ever taught her how.",
+   "accepted": [
+    "swim",
+    "swimming"
+   ],
+   "near": [
+    "float",
+    "drown",
+    "surf"
+   ],
+   "near_wrong": [
+    "lake",
+    "water",
+    "summer",
+    "cousins"
+   ],
+   "note": "missing skill"
+  },
+  {
+   "id": "v2-negation-or-contrast-13",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "In July you could not see the house across the road through the old oak. Now, in December, every one of its windows is visible between the black branches.",
+   "accepted": [
+    "leaves",
+    "foliage"
+   ],
+   "near": [
+    "tree",
+    "autumn",
+    "green"
+   ],
+   "near_wrong": [
+    "winter",
+    "house",
+    "window",
+    "December"
+   ],
+   "note": "two steps: what was there in July and is gone"
+  },
+  {
+   "id": "v2-negation-or-contrast-14",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "The fire alarm shrieked through the building and everyone ran for the stairs except Mr Novak, who went on calmly reading until a colleague tapped his shoulder and pointed.",
+   "accepted": [
+    "deaf"
+   ],
+   "near": [
+    "hearing",
+    "blind",
+    "mute"
+   ],
+   "near_wrong": [
+    "fire",
+    "alarm",
+    "noise",
+    "emergency"
+   ],
+   "note": "missing sense"
+  },
+  {
+   "id": "v2-negation-or-contrast-15",
+   "category": "negation-or-contrast",
+   "difficulty": "hard",
+   "text": "The whole family tore into the roast lamb. Ines filled her plate with potatoes, beans and salad, as she had done at every meal since she turned twelve.",
+   "accepted": [
+    "vegetarian",
+    "vegan"
+   ],
+   "near": [
+    "diet",
+    "meat",
+    "vegetables"
+   ],
+   "near_wrong": [
+    "dinner",
+    "family",
+    "food",
+    "lamb"
+   ],
+   "note": "contrast with the rest of the table"
+  },
+  {
+   "id": "v2-second-language-01",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "Mi abuelo lo lleva en la muñeca desde hace cuarenta años; cada noche le da cuerda, y gracias a él nunca ha perdido un tren.",
+   "accepted": [
+    "watch",
+    "reloj",
+    "clock"
+   ],
+   "near": [
+    "time",
+    "hora",
+    "pulsera"
+   ],
+   "note": "Spanish; source word reloj accepted"
+  },
+  {
+   "id": "v2-second-language-02",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "El río bajaba demasiado crecido para cruzarlo a pie, así que caminamos dos kilómetros hasta la vieja construcción de piedra con tres arcos y pasamos al otro lado.",
+   "accepted": [
+    "bridge",
+    "puente"
+   ],
+   "near": [
+    "river",
+    "tunnel",
+    "ford"
+   ],
+   "note": "Spanish; source word puente accepted"
+  },
+  {
+   "id": "v2-second-language-03",
+   "category": "second-language",
+   "difficulty": "medium",
+   "text": "Cuando sonó el himno, todos miramos hacia el mástil, donde la tela roja y amarilla subía despacio y empezaba a ondear con el viento.",
+   "accepted": [
+    "flag",
+    "bandera",
+    "flags"
+   ],
+   "near": [
+    "anthem",
+    "banner",
+    "Spain"
+   ],
+   "note": "Spanish; source word bandera accepted"
+  },
+  {
+   "id": "v2-second-language-04",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "Sans elles, je ne peux pas lire le menu ; je les ai encore oubliées sur la table de nuit, alors ma fille me lit la carte à voix haute.",
+   "accepted": [
+    "glasses",
+    "spectacles",
+    "lunettes"
+   ],
+   "near": [
+    "eyes",
+    "lenses",
+    "yeux"
+   ],
+   "note": "French; source word lunettes accepted"
+  },
+  {
+   "id": "v2-second-language-05",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "Le naufragé a roulé son message, l'a glissé à l'intérieur par le goulot, a enfoncé le bouchon et a lancé le tout dans les vagues.",
+   "accepted": [
+    "bottle",
+    "bouteille",
+    "bottles"
+   ],
+   "near": [
+    "jar",
+    "glass",
+    "verre"
+   ],
+   "note": "French; source word bouteille accepted"
+  },
+  {
+   "id": "v2-second-language-06",
+   "category": "second-language",
+   "difficulty": "medium",
+   "text": "Im Urlaub hängt sie ihm immer um den Hals; vor jedem Denkmal bleibt er stehen, schaut durch den Sucher und drückt auf den Auslöser.",
+   "accepted": [
+    "camera",
+    "Kamera"
+   ],
+   "near": [
+    "photo",
+    "Foto",
+    "lens"
+   ],
+   "note": "German; source word Kamera accepted"
+  },
+  {
+   "id": "v2-second-language-07",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "Jeden Morgen liegt sie vor der Tür; Opa liest zuerst den Sportteil, dann die Todesanzeigen, und zum Schluss löst er das Kreuzworträtsel.",
+   "accepted": [
+    "newspaper",
+    "Zeitung"
+   ],
+   "near": [
+    "magazine",
+    "news",
+    "paper"
+   ],
+   "note": "German; source word Zeitung accepted"
+  },
+  {
+   "id": "v2-second-language-08",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "La nonna ha infilato la teglia, ha chiuso lo sportello e ci ha proibito di aprirlo per quaranta minuti, altrimenti la torta si sgonfia.",
+   "accepted": [
+    "oven",
+    "forno"
+   ],
+   "near": [
+    "stove",
+    "kitchen",
+    "microwave"
+   ],
+   "note": "Italian; source word forno accepted"
+  },
+  {
+   "id": "v2-second-language-09",
+   "category": "second-language",
+   "difficulty": "medium",
+   "text": "È partito dal binario tre con venti minuti di ritardo; dal finestrino guardavo scorrere le colline mentre il controllore chiedeva i biglietti.",
+   "accepted": [
+    "train",
+    "treno"
+   ],
+   "near": [
+    "bus",
+    "station",
+    "railway"
+   ],
+   "note": "Italian; source word treno accepted"
+  },
+  {
+   "id": "v2-second-language-10",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "A sopa chegou a fumegar, mas o empregado esqueceu-se de trazer aquilo com que se come; fiquei a olhar para o prato com um garfo e uma faca na mão.",
+   "accepted": [
+    "spoon",
+    "colher"
+   ],
+   "near": [
+    "fork",
+    "knife",
+    "soup"
+   ],
+   "note": "Portuguese; missing object; source word colher accepted"
+  },
+  {
+   "id": "v2-second-language-11",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "No aeroporto fiquei uma hora a ver o tapete rolante dar voltas; a minha, azul e com uma fita vermelha na pega, nunca apareceu.",
+   "accepted": [
+    "suitcase",
+    "luggage",
+    "baggage",
+    "mala"
+   ],
+   "near": [
+    "backpack",
+    "bolsa",
+    "airport"
+   ],
+   "note": "Portuguese; source word mala accepted"
+  },
+  {
+   "id": "v2-second-language-12",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "元宵节的晚上，孩子们提着它们走在街上，红红的纸里面点着小小的火，把整条巷子都照亮了。",
+   "accepted": [
+    "lantern"
+   ],
+   "near": [
+    "lamp",
+    "candle",
+    "festival"
+   ],
+   "note": "Chinese; source word not in the single-token list"
+  },
+  {
+   "id": "v2-second-language-13",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "夏天一回到家，他就拉开它的门，站在冷气前面找西瓜和汽水，妈妈总是喊他快点关上。",
+   "accepted": [
+    "fridge",
+    "refrigerator"
+   ],
+   "near": [
+    "freezer",
+    "kitchen",
+    "cooler"
+   ],
+   "note": "Chinese; source word not in the single-token list"
+  },
+  {
+   "id": "v2-second-language-14",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "На улице было минус двадцать, и бабушка три раза обмотала его вокруг моей шеи, так что наружу торчал только нос.",
+   "accepted": [
+    "scarf"
+   ],
+   "near": [
+    "coat",
+    "hat",
+    "collar"
+   ],
+   "note": "Russian; source word not in the single-token list"
+  },
+  {
+   "id": "v2-second-language-15",
+   "category": "second-language",
+   "difficulty": "hard",
+   "text": "Малыш разжал пальцы, ниточка выскользнула, и он, красный и круглый, поплыл вверх над площадью, пока не превратился в точку в небе.",
+   "accepted": [
+    "balloon",
+    "balloons"
+   ],
+   "near": [
+    "kite",
+    "ball",
+    "bubble"
+   ],
+   "note": "Russian; source word not in the single-token list"
+  },
+  {
+   "id": "v2-control-01",
+   "category": "control",
+   "difficulty": "control",
+   "text": "I will send you the details once I have heard back from them.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-02",
+   "category": "control",
+   "difficulty": "control",
+   "text": "There was nothing unusual about the way it had been arranged.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-03",
+   "category": "control",
+   "difficulty": "control",
+   "text": "As far as I can tell, both options would work equally well.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-04",
+   "category": "control",
+   "difficulty": "control",
+   "text": "He nodded, said he understood, and went back to what he had been doing.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-05",
+   "category": "control",
+   "difficulty": "control",
+   "text": "The second part is longer than the first, but it follows the same pattern.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-06",
+   "category": "control",
+   "difficulty": "control",
+   "text": "\"Sure,\" he replied. \"Just let me know when you are ready.\"",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-07",
+   "category": "control",
+   "difficulty": "control",
+   "text": "Please keep a copy of this page in case you need it again.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-08",
+   "category": "control",
+   "difficulty": "control",
+   "text": "We talked for a while about nothing in particular, and then it was time to go.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-09",
+   "category": "control",
+   "difficulty": "control",
+   "text": "For most people this makes very little difference either way.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-10",
+   "category": "control",
+   "difficulty": "control",
+   "text": "The rest of the afternoon passed in much the same way as before.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-11",
+   "category": "control",
+   "difficulty": "control",
+   "text": "Note that the order of the steps does not matter in this case.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-12",
+   "category": "control",
+   "difficulty": "control",
+   "text": "She thought about it for a moment and decided to leave things as they were.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected"
+  },
+  {
+   "id": "v2-control-13",
+   "category": "control",
+   "difficulty": "control",
+   "text": "No lo sé, quizá sea mejor dejarlo para otro día y hablarlo con calma.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected; Spanish"
+  },
+  {
+   "id": "v2-control-14",
+   "category": "control",
+   "difficulty": "control",
+   "text": "Ich melde mich später noch einmal bei Ihnen, wenn ich mehr dazu weiß.",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected; German"
+  },
+  {
+   "id": "v2-control-15",
+   "category": "control",
+   "difficulty": "control",
+   "text": "好的，那我们以后有时间的时候再慢慢说吧。",
+   "accepted": [],
+   "near": [],
+   "note": "no hidden concept expected; Chinese"
+  }
+ ]
+}
