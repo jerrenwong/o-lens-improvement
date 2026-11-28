@@ -333,7 +333,7 @@ def build(ctx):
                 model_tag=tag, filter="f4", layers=layers, k_top=topk, built=built,
                 date=datetime.date.today().isoformat(), source="auto/candidates/qual_dump.py", sets=counts,
                 probes_file=probes_path, knows_prompt=KNOWS_SUFFIX)
-    out = R / "runs" / "qual" / tag / f"{slug(name)}.json"
+    out = R / os.environ.get("QUAL_OUTDIR", f"runs/qual/{tag}") / f"{slug(name)}.json"  # ej1: QUAL_OUTDIR (e.g. runs/qual/9b_v2)
     out.parent.mkdir(parents=True, exist_ok=True)
     s = json.dumps({"format": "qual-dump", "version": 1, "meta": meta, "items": items}, ensure_ascii=False,
                    separators=(",", ":"))

@@ -5,7 +5,7 @@
 #        fleet run <pod> qual_9b_jppa --cd /workspace/o-lens-improvement -- \
 #          "bash scripts/qual/dump.sh 9b auto/candidates/alens.py 'J++ + A-lens' ALENS_BASE=JPP"
 # VAR=value pairs are the candidate's own env vars. Env overrides: QUAL_PROBES (default probes/probes_v1.json),
-# QUAL_SETS (default bench-fit,bench-dev,probes), QUAL_TOPK (20), FILTER (evaluator --filter, default f4), PY.
+# QUAL_OUTDIR (output dir, default runs/qual/<tag>), QUAL_SETS (default bench-fit,bench-dev,probes), QUAL_TOPK (20), FILTER (evaluator --filter, default f4), PY.
 # Output: runs/qual/<tag>/<slug>.json; the evaluator also scores the dev split as usual (auto/runs/qual_<tag>_<slug>/).
 # Then: python3 scripts/qual/compare.py runs/qual/<tag>/<old>.json runs/qual/<tag>/<new>.json --md
 set -euo pipefail
@@ -21,4 +21,4 @@ echo "qual dump: $model | $lens | $name -> runs/qual/$tag/$slug.json"
 env "$@" QUAL_LENS="$lens" QUAL_NAME="$name" QUAL_PROBES="$probes" \
   "$PY" auto/evaluate.py --lens auto/candidates/qual_dump.py --model "$model" --filter "${FILTER:-f4}" \
   --name "qual_${tag}_${slug}"
-ls -la "runs/qual/$tag/$slug.json"
+ls -la "${QUAL_OUTDIR:-runs/qual/$tag}/$slug.json"
